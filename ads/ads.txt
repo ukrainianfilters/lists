@@ -1,0 +1,325 @@
+! [uBlock Origin; Adblock Plus 3.2]
+! Title: Ukrainian Ad Filter
+! Description: Removes ads from Ukrainian websites
+! Version: 20240801.1 (24.08.1)
+! Last modified: Thu, 01 August 2024 23:55 EEST
+! Expires: 5 days
+! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
+!
+! Homepage: https://github.com/serhiyguryev/ukrainian-filters
+! Issues: https://github.com/serhiyguryev/ukrainian-filters/issues
+!
+! !!!!!!!!!!!!!!!
+! ADVERTISING NETWORKS
+! !!!!!!!!!!!!!!!
+!
+||a4.censor.net^
+||mediatraffic.com.ua^
+! !!!!!!!!!!!!!!!
+||cdn.umh.ua^$third-party
+||exchange.informer.ua^$third-party
+||mediabrama.com^$third-party
+||membrana.media^$third-party
+||receivedachest.com^$third-party
+||sinoptik.ua/informers_js.php?*$third-party
+||smi.pp.ua^$third-party
+||stteeruptowind.com^$third-party
+||worldwidegg.com^$document,third-party
+! !!!!!!!!!!!!!!!
+/^(?!.*(getsitecontrol.com|gravitec.media|gravitec.net)).*$/$xmlhttprequest,third-party,script,stylesheet,domain=buhgalter.com.ua|buhgalter911.com|football.ua
+!
+! !!!!!!!!!!!!!!!
+! SCRIPTS
+! !!!!!!!!!!!!!!!
+!
+||*content-loader.com/*^$script
+||*css-load.com/*^$script
+||*html-load.com/*^$script
+||*img-load.com/*^$script
+||*error-report.com/*^$document,subdocument,xmlhttprequest,script
+! !!!!!!!!!!!!!!!
+bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,football-ukraine.com,gazeta.ua,hvylya.net,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,nv.ua,pravda.com.ua,sportanalytic.com,ukr.net##^script:has-text('"Shadow')
+eurointegration.com.ua##^script[onload*="error-report.com"]
+football.ua,football-ukraine.com,xsport.ua##^script:has-text(zone_)
+football24.ua##^script:has-text('manageMembranaAdvWrappers')
+itc.ua##^script:has-text('/images/banners/')
+zaxid.net##^script:has-text('mobileBrandingMainInited')
+zn.ua##^script:has-text('banners_types')
+!
+! !!!!!!!!!!!!!!!
+! GENERAL RULES
+! !!!!!!!!!!!!!!!
+!
+##.nts-video-wrapper
+!
+! !!!!!!!!!!!!!!!
+! PAGE-SPECIFIC RULES
+! !!!!!!!!!!!!!!!
+!
+24tv.ua,football24.ua,sport24.ua,zaxid.net##[class*="adv-"]
+buhgalter.com.ua,buhgalter911.com##div[data-ad="active"]:remove()
+chytomo.com,defence-ua.com,glavcom.ua,zn.ua##div[class^="banner"]
+dev.ua,itc.ua,xsport.ua##.partners
+football-ukraine.com,kyiv24.news,zaxid.net##div#SinoptikInformer
+football.ua,konkurent.ua,ukurier.gov.ua##.banner
+football24.ua,zaxid.net##[id*="AdvWrapper"]
+konkurent.ua,xsport.ua##div[class^="bookmaker"]
+unian.info,unian.net,unian.ua,vctr.media##.banner-container
+! !!!!!!!!!!!!!!!
+24tv.ua##app-default-news.news-wrapper:has(app-custom-adv-label > div > div.custom-adv-label)
+24tv.ua##app-video-adv-block
+24tv.ua##div.video-dv-wrapper
+ain.ua,ain.business##.small-white-block
+ain.ua,ain.business##div[class^="big-ad-"]
+ain.ua###subbody:style(top: 0 !important)
+ain.ua##body > *:style(pointer-events: auto !important)
+ain.ua##body:style(background-image: none !important; background-color: #eff1f2 !important; margin-top: 0 !important; pointer-events: none !important)
+apostrophe.ua##.advertinline
+apostrophe.ua##.bnr
+apostrophe.ua##.newscomp
+buhgalter.com.ua,buhgalter911.com##body.access *:style(filter: none !important)
+buhgalter.com.ua,buhgalter911.com##body.access div[id^="access-au"]
+buhgalter.com.ua,buhgalter911.com##body.access:style(overflow: auto !important; position: relative !important)
+buhgalter.com.ua##div.rec
+buhgalter.com.ua##div#top-line
+censor.net##.right-sidebar div[style^="width: 300px; "]
+censor.net##div.container.d-print-none:has(script[src^="//a4.censor.net/js/"])
+champion.com.ua##div.section_news_adv
+champion.com.ua##div[class*="_banner_"]
+champion.com.ua##div[class$="_banner"]
+defence-ua.com##.share-news
+defence-ua.com##div.content > br:nth-of-type(-n+2)
+defence-ua.com##div.content > div.banner.text-center:remove()
+defence-ua.com##div.content > hr:nth-of-type(-n+2)
+defence-ua.com##div.text-center:has(ins)
+defence-ua.com##section[class^="banner"]
+dev.ua##.island[style^="padding: 2rem 0;"]
+dev.ua##div.afterheader-widget
+dev.ua##div.partners-wrapper
+dev.ua##div.section-aside:has(ins.adsbygoogle):remove()
+dou.ua##div.b-adv-events
+dou.ua##div.b-dou-vacancies
+dou.ua##div.b-sponsors
+dou.ua##div.b-sticky-right-side:has(> div > div > div > div > h4.title.__hot)
+dou.ua##div.banner-fp
+dou.ua##div[id$="-adv-id"]
+dumskaya.net##.hideprint
+dumskaya.net##noindex
+epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]:remove()
+epravda.com.ua,pravda.com.ua##blockquote.club_banner
+epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(PROMOTED))
+epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(АНОНС))
+epravda.com.ua,pravda.com.ua##div[class*="adv_"]:remove()
+epravda.com.ua,pravda.com.ua##div[class*="banner_"]:remove()
+eurointegration.com.ua##a[href="https://www.ukr.net/"]
+eurointegration.com.ua##div.unit_header-banner
+euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
+fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"]):remove()
+fakty.com.ua##div.pip-video-wrapper
+fakty.com.ua##div[class^="promo-layer"]
+flatfy.ua,lun.ua##div.DonateBanner
+flatfy.ua,lun.ua##div.feed-layout__item-holder:has(button[data-event-action="new_building_ads"])
+flatfy.ua,lun.ua##div.feed-layout__item-holder:has(div.bird-select-advertisement)
+focus.ua##div.o-block
+focus.ua##div.u-d-h-600:has(div[id*="ScriptRoot"])
+focus.ua##div[data-ad-title]:remove()
+fondy.ua##div.wpbs-ad-banner
+football-ukraine.com##div.view:has-text(РЕКЛАМА):remove()
+football-ukraine.com##div[class$="-ad"]:remove()
+football.ua##.banner ~ .separator
+football.ua##.top-banner
+football.ua##div[id^="zone_"]:remove()
+football24.ua###adv_info_banner
+football24.ua##aside.adv-insert + div.media_embed
+football24.ua##aside.adv-insert + p:empty + div.responsive-embed
+football24.ua##aside.adv-insert + p:has(img)
+football24.ua##div.news-text > p:has(strong > a[rel*="sponsored"])
+football24.ua##div.next-article:has(div.custom-adv-label) aside.adv-insert + p:has(img)
+football24.ua##div.next-article[id*="favbet"]
+football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
+football24.ua##li.news-list-item:has(span.custom-label:has-text(Партнерський матеріал))
+football24.ua##p.insert:has(a[rel*="sponsored"])
+football24.ua##p.insert.cke-markup:has-text(FAVBET)
+football24.ua##p.insert.cke-markup:has-text(Реклама:)
+football24.ua##ul:has(p.insert > b:has-text(Реклама))
+football24.ua##ul:has(p.insert > b:has-text(Реклама)) + p:has(img)
+football24.ua##ul.news-list > li:has(article > a.title:has-text(FAVBET))
+forbes.ua##div:has(> div[class*="modal-interact-with-background"])
+forbes.ua##div[id^="adpartner-"]
+gazeta.ua##.informer
+gazeta.ua##a[href="#comments"]
+glavcom.ua##div.sunsite_actions[data-action="banners"]
+glavcom.ua##div.sunsite_actions[data-action="voteboxes"]
+happymonday.ua##a[style="z-index: 0; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;"]:remove()
+happymonday.ua##body:style(background-image: none !important; padding-top: 0 !important;)
+happymonday.ua##div.adv
+happymonday.ua##div.top-banner
+hromadske.radio##div.banner-block
+hromadske.radio##div.banner-block-mb
+hromadske.radio##div.mobile-banner
+i.ua##.baner
+i.ua##.clear.logo_container
+i.ua##.news_premium_item
+i.ua##.partner_links
+i.ua###Premium
+inforesist.org##.advert
+inforesist.org##.dw_focus_widget_news_ticker
+inforesist.org##.partners-adv
+itc.ua##.featured-statti:has(a[href*="/partnerskij-proekt/"])
+itc.ua##[data-course]
+itc.ua##div.featured-in-new > div.row
+itc.ua##div.hidden-sm:has(div[id*="-banner-"]):remove()
+itc.ua##div.hidden-sm:has(img[src*="/images/banners/"]):remove()
+itc.ua##div.jobs-vacancy
+itc.ua##div.post.block-in-loop.category-partnerskij-proekt
+itc.ua##div.sponsor
+itc.ua##div.visible-sm:has(div[id*="-banner-"]):remove()
+itc.ua##div[class*="widget-partners-blogs"]
+itc.ua##li.widget-container:has(.jobs-vacancy)
+itc.ua##li.widget-container:has(.partner-blog):remove()
+itc.ua##li.widget-sticky:has(div[id^="div-gpt-ad-"]):remove()
+itc.ua##li[class*="widget_execphp"]:remove()
+itc.ua##li[id^="partner-posts"]:remove()
+itc.ua##p.intro[style*="background: linear-gradient"]
+korrespondent.net##.article:has(em.advertising)
+korrespondent.net##.unit-side-informer
+korrespondent.net##div[class$="-banner"]
+krymr.com##div.media-block-wrap:has(h2:has-text(НОВИНИ ПАРТНЕРІВ)):remove()
+krymr.com##div.slide-in-wg
+krymr.com##div.wsw__embed:has(div.promo)
+kyiv24.news##.site-header:style(top: 0 !important)
+kyiv24.news##div.main-wrapper:style(margin-top: 0 !important)
+kyiv24.news##section.google-news
+kyivindependent.com##div.bottomPopupBanner
+kyivindependent.com##iframe[data-engage-slug^="popupjoinus"]
+kyivpost.com##div.col-xl-2.d-xl-block:has(> a > img[alt="Kador Group"])
+kyivpost.com##div.section-title:has-text(Sponsored content)
+kyivpost.com##div[class^="ad-wrapper"]:remove()
+liga.net##article.is-partners
+liga.net##div.ad
+liga.net##div.article-footer__widget.b-blocks
+liga.net##div.article-footer__widget.b-subs
+mc.today##[data-coursestyle]
+mc.today##div.company-slider
+mc.today##div.mobile-hide:not(.widget-popular, .widget-popular-title):remove()
+mc.today##div.widget-vacancy
+meta.ua##div[class^="banner-zone"]
+meteofor.com.ua##div.placeholder.h1:has(div[id^="div-gpt-ad-"])
+meteofor.com.ua##section.section-media:has(div[id^="div-gpt-ad-"])
+meteofor.com.ua##section.section-rss
+mezha.media##.block-novyny-partneriv
+mezha.media##div.news-item:has(a[rel="author"]:has-text(Promoted))
+mezha.media##div#wrapper > div:has(a.banner-link)
+nachasi.com##div.sticky-zone:has-text(Блоги компаній)
+nachasi.com##div.style_poster__MF3pg:has(.style_content__3CPKg)
+nachasi.com##div[id*="comments-"]
+novyny.live##div.sidebar.sidebar-article:has(.adsbygoogle)
+nv.ua##body.branding:style(padding-top: 20px !important)
+nv.ua##div[id^="async_spec"]:has(section[data-type="advertising"])
+obozrevatel.com##.headerBiding
+obozrevatel.com##.videoOfDay
+obozrevatel.com##aside.asideBanner.--left
+obozrevatel.com##aside.asideBanner.--right
+obozrevatel.com##aside.headerBiding:has(div[class*="_970"]):remove()
+obozrevatel.com##div.recommendation
+obozrevatel.com##div[id^="carouselLast-slide"]:has(article.newsImg > div.banner)
+obozrevatel.com##div[id^="carouselmostViewed-slide"]:has(article.newsImg > div.banner)
+ostro.org##div.page-wrapper.hide-mob:has(div.container.page-container)
+ostro.org##div.press-reliz
+ostro.org##div[class^="banner-"]:remove()
+ostro.org##div[id^="banner-"]:remove()
+pravda.com.ua##article.article_pr
+pravda.com.ua##div.article.article_sp
+pravda.com.ua##div.promoted_article
+pravda.com.ua##div.unit_bottom_banner:remove()
+pravda.com.ua##div.unit_center_top_banner:has(> div.unit_center_banner > div.article > div.article_body > div.article_content > div.article_description:has-text(За підтримки))
+pravda.com.ua##div.unit_top-banner:remove()
+pravda.com.ua##div.ym-video--wrapper:has(div.ym-video--title:has-text(ВІДЕО ДНЯ))
+pravda.com.ua##div[class$="_side_banner"]:has(div[class*="nts-ad-"])
+prom.ua##div[style*="cloud-cgi/static/catalog-ui/js/build/portal-portable/maskWeb-5Wgei.png"]
+rbc.ua##.vidverto-wrapper
+rbc.ua##[id^="admixer-"]
+rbc.ua##[id^="bn_"]
+rubryka.com##div.single-page__banners
+rubryka.com##div.single-page__social
+rubryka.com##div[class*="advertisment"]
+rubryka.com##div[style="padding: 0 0 30px"]
+sinoptik.ua##head > style:empty:style(all: inherit !important)
+slovoidilo.ua##div.branding-main
+slovoidilo.ua##div.te-center:has(ins.adsbygoogle)
+sport.ua##div.best_bookies
+sport.ua##div.item:has-text(СТАВКА ДНЯ)
+sport.ua##div.news-promo-feed
+sport.ua##div.partners-block
+sport.ua##div.wrap > center:has(div[id^="zone_"])
+sport.ua##div#footer__text
+sport24.ua##app-default-news:has(app-adv-news-label)
+sportanalytic.com##div.block:has-text(Партнер)
+sportanalytic.com##div.fb_iframe_widget:remove()
+sportanalytic.com##div.wblock:has-text(Інші новини)
+sportanalytic.com##div#news:has-text(Картина дня)
+storinka.com.ua##div.share
+storinka.com.ua##div.widget:not([class$="hidden-xs"])
+sud.ua##div.b-bblock-social:remove()
+sud.ua##div.b-news-list:has-text(Сьогодні день народження святкують)
+sud.ua##div.bbone-list
+tabletki.ua##div.com__panel-container:has(a[rel*="sponsored"])
+tabletki.ua##h3.com__panel-header:has-text('реклама')
+telegraf.com.ua##.tgr-ads
+telegraf.com.ua##div.s-content__ratio:has(script[id^="_vidverto-"]):remove()
+telegraf.com.ua##div[data-text="Новини партнерів"]
+texty.org.ua##.ad-banner-aside:remove()
+thepage.ua##div.news-list__item:has(div[class*="news-tag company_news"])
+thepage.ua##div.news-list__item:has(div[class*="news-tag partner_material"])
+tribuna.com##div.card__content > div:has(div[class*="Alternative_banner__"])
+tribuna.com##div.card__postscript-banners
+tribuna.com##div[class^="CommonLayout_common-layout__right-column_"]:has(div[class*="Alternative_banner__"])
+tribuna.com##div[class^="Home_home-page__right-column_"] > div:nth-of-type(-n+3)
+tribuna.com##div[class^="IdealMedia_ideal-media_"]
+tribuna.com##div[class^="Main_main-layout__empty-block_"]:has(div[class*="Alternative_banner__"])
+tribuna.com##div[class^="Main_main-layout__footer-wrapper__ads_"]
+tribuna.com##div#comments:remove()
+tsn.ua##.c-aside__port
+tsn.ua##aside.c-section:has(h2.c-section__title > a:has-text(Пресрелізи))
+tsn.ua##aside.u-divider--t:has(iframe[src*="/banners/partner-news"])
+tsn.ua##aside.u-hide--sdmd:has(> div:has-text(Реклама))
+tsn.ua##div.l-row.l-flex > div.l-col.l-col--sm.l-gap:has(aside.c-aside__port)
+tsn.ua##div.l-row.l-flex.u-fx--nowrap > div.l-gap.l-col.l-col--sm:has(aside.c-aside__port)
+tsn.ua##div[class*="-sidebar__gap"]:has(iframe[src="https://tsn.ua/banners/sidebar"])
+tsn.ua##section.c-section:has(h2.c-section__title:has-text(Новини партнерів))
+ua-football.com##.asside:has(div.topBook)
+ua-football.com##div.adl_cmp_consent-dialog-module_backdrop
+ua-football.com##li.gray-block.promo-btn__item
+ua.news##aside[class^="promo"]
+ukr.net##.fixed-block > div[class] ~ div
+ukr.net##.placeholder
+ukranews.com##.mailing-block
+ukranews.com##div#container[data-detachable-player]:has-text(Зараз дивляться)
+ukranews.com##noindex:has(.ad)
+ukranews.com##noindex:has(.advertising)
+ukrfootball.ua##.saduf:has(iframe)
+ukrfootball.ua##section.best_game_sec
+ukrinform.ua##.socialBlockSlide
+ukrinform.ua##div.googleCompanion
+ukrinform.ua##div.partner
+unian.info,unian.net,unian.ua##.newsfeed__banner
+unian.info,unian.net,unian.ua##.partner-news
+unn.ua##div[class^="informer_informer_"]
+unn.ua##div[id^="ads-sidebar"]
+village.com.ua##.post-additions
+vogue.ua##div[id^="admixer_"]
+work.ua##div.card:has(div.gamification-progress-content)
+xsport.ua##div.site:style(margin-top: 20px !important)
+yesport.com.ua##app-adv-placeholder
+zaxid.net##.news-list-col > .news-list
+zaxid.net##div[id^="slot300x"]
+zaxid.net##div#header_advt-wrapper
+zn.ua##[data-action="banners"]
+zn.ua##div.after-material-wrap-banners
+zn.ua##div.recent-events:has(img[data-src$="telegram_.svg"])
+zn.ua##div[class^="advertising"]
+zn.ua##div[class^="banner_"]
+znaj.ua##.c-press-release
+znaj.ua##div.ai-placement
+znaj.ua##div.b-popular-article
+znaj.ua##div.subscribe-in-article
