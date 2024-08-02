@@ -1,0 +1,86 @@
+! [uBlock Origin; Adblock Plus 3.2]
+! Title: Ukrainian Privacy Filter
+! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
+! Version: 20240729.1 (24.07.24)
+! Last modified: Mon, 29 July 2024 16:46 EEST
+! Expires: 5 days
+! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
+!
+! Homepage: https://github.com/serhiyguryev/ukrainian-filters
+! Issues: https://github.com/serhiyguryev/ukrainian-filters/issues
+!
+! !!!!!!!!!!!!!!!
+! TRACKERS
+! !!!!!!!!!!!!!!!
+!
+! facebook.com
+||connect.facebook.net^$third-party,domain=5.ua|ain.business|ain.ua|apostrophe.ua|armyinform.com.ua|bigmir.net|cert.gov.ua|champion.com.ua|chytomo.com|defence-ua.com|dumskaya.net|epravda.com.ua|espreso.tv|eurointegration.com.ua|euromaidanpress.com|football.ua|football24.ua|holosameryky.com|hvylya.net|imi.org.ua|inforesist.org|interfax.com.ua|ipay.ua|isport.ua|istpravda.com.ua|kyiv24.news|kyivindependent.com|kyivpost.com|mc.today|mezha.net|mil.in.ua|nachasi.com|nv.ua|ostro.org|petrimazepa.com|platfor.ma|pravda.com.ua|radiosvoboda.org|rubryka.com|slovnyk.ua|slovoidilo.ua|sportanalytic.com|storinka.com.ua|sud.ua|suspilne.media|tribuna.com|tsn.ua|ukrinform.ua|village.com.ua|xsport.ua|zaxid.net
+
+||graph.facebook.com^$third-party,domain=glavcom.ua|petrimazepa.com|platfor.ma|slovoidilo.ua|ukrinform.ua|universalbank.com.ua|zn.ua
+||facebook.com/plugins/likebox.php?*$third-party,domain=fn.ua
+||facebook.com/plugins/post.php?*$third-party,domain=radiosvoboda.org
+! piano.io
+||api-esp-eu.piano.io^$third-party,domain=fakty.com.ua
+! onesignal.com
+||cdn.onesignal.com^$third-party
+! zendesk.com
+||alfabankua.zendesk.com^$third-party
+! disqus.com
+||disqus.com^$third-party
+! sharethis.com
+||sharethis.com^$third-party
+! fixidle.com
+||fixidle.com^$third-party
+! inmobi.com
+||cmp.inmobi.com^$third-party
+! quantcast.com
+||cmp.quantcast.com^$third-party
+! mail.ru
+||connect.mail.ru^$third-party
+! vk.com
+||vk.com/share.php?*$third-party
+! ok.ru
+||connect.ok.ru^$third-party
+! !!!!!!!!!!!!!!!
+bigmir.net##div.widget:has(div.widget-socials):remove()
+!
+! !!!!!!!!!!!!!!!
+! COMMENTS
+! !!!!!!!!!!!!!!!
+!
+5.ua,apostrophe.ua,champion.com.ua,interfax.com.ua,mil.in.ua##.fb-comments:remove()
+dev.ua,mezha.media,radiosvoboda.org###comments:remove()
+espreso.tv,zaxid.net##.facebook-comments:remove()
+! !!!!!!!!!!!!!!!
+5.ua##h2:has-text(ПРОКОМЕНТУЙТЕ):remove()
+9to5linux.com###disqus_thread:remove()
+bigmir.net##div#phnx-onready_comments_templates-index:remove()
+censor.net##.news-comments-wrapp:remove()
+defence-ua.com###comments_container:remove()
+epravda.com.ua##.block_comments:remove()
+football.ua###commentsArea:remove()
+football24.ua##.comments_button:remove()
+football24.ua###comments-widget:remove()
+gazeta.ua##div.article:has(.comment-wrapper):remove()
+glavcom.ua##div.comments
+inforesist.org##.visible-lg:has(.ir-fb-show-comments):remove()
+isport.ua###phnx-onready_comments_templates-index:remove()
+itc.ua###itc-comments:remove()
+konkurent.ua##div.comments_article:remove()
+krymr.com##div#comments:remove()
+krymr.com##p.link-comments
+kyivpost.com##.comments-block:remove()
+liga.net###fb-comm-block:remove()
+pravda.com.ua##.post__comments:remove()
+pravda.com.ua##.post_comments:remove()
+slovoidilo.ua##.commentars:remove()
+speka.media##.comments:remove()
+sport.ua##div.comments.news-comments:remove()
+sport.ua##div#last-comments.comments-block
+sportanalytic.com##div.wblock:has-text(Коментарі)
+ua-football.com##div.own-comm-widget:remove()
+ukurier.gov.ua##.article-comments:remove()
+xsport.ua###comment-block:remove()
+zn.ua##.comments-box:remove()
+! !!!!!!!!!!!!!!!
+user/js/glavcom_komments.min.js$script,domain=glavcom.ua
