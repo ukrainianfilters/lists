@@ -1,0 +1,152 @@
+! [uBlock Origin; Adblock Plus 3.2]
+! Title: Ukrainian Annoyance Filter
+! Description: Blocks irritating elements on Ukrainian and some popular foreign websites (cookie notices, pop-ups, banners etc.)
+! Version: 20240723.1 (24.07.19)
+! Last modified: Tue, 23 July 2024 20:46 EEST
+! Expires: 5 days
+! Licence: https://github.com/serhiyguryev/ukrainian-filters/blob/main/LICENSE
+!
+! Homepage: https://github.com/serhiyguryev/ukrainian-filters
+! Issues: https://github.com/serhiyguryev/ukrainian-filters/issues
+!
+! !!!!!!!!!!!!!!!
+! GENERAL RULES
+! !!!!!!!!!!!!!!!
+!
+##.cky-consent-container
+##.cky-overlay
+##.cookie_banner
+##.cookie-label
+##.cookie-label-wrapprer
+##.cookie-toast
+##.cookie-toast-wrap
+##.cookie-toaster
+##.cookies-wrap
+##.cookies-wrapper
+##.CookieWarning
+##.js-cookie
+##.js-cookies
+##[data-testid="consent-banner"]
+##[type="cookie-notification"]
+###cl-consent
+###cmplz-cookiebanner-container
+###cookie-banner
+###cookie-consent
+###cookie-notice
+###cookieBar
+###cookieBox
+###cookieChoiceInfo
+###cookieConsent
+###cookiePopupWrapper
+###cookiePrompt
+###cookiePromptWrapper
+###cookiesdiv
+###CookiesDiv
+###EU_Cookie_Message
+###gdpr-disclaimer
+###onetrust-consent-sdk
+##dialog.cookie-policy
+!
+! !!!!!!!!!!!!!!!
+! UKRAINIAN WEBSITES
+!  > Page-Specific Rules
+! !!!!!!!!!!!!!!!
+!
+comfy.ua,dom.ria.com,gwaramedia.com,happymonday.ua,moyo.ua,rozetka.com.ua###credential_picker_container
+diia.gov.ua,u24.gov.ua,vogue.ua##.cookies
+! !!!!!!!!!!!!!!!
+ain.ua###PopupSignupForm_0
+anc.ua##div.cookies--popup-background
+anc.ua##div.dropdown-accept-city
+antoshka.ua##div.promotion-popup
+auchan.ua##div.cookie-agreement-wrapper
+auchan.ua##div.right-banner_root__35ahv
+babel.ua##.js-cookies-modal:has(.c-cookies-box)
+bankvostok.com.ua##div.cookies-accept-block
+bi.ua##div.cookiePopup
+censor.net##.stpd_cmp
+censor.net###usage_notice
+comfy.ua##div.ask-city-desktop
+comfy.ua##div.info-popup__content
+comfy.ua##div.weblayer--box-subscription-1
+creativestates.net##div[class^="Cookies_cookies__"]
+diia.gov.ua##div.cookies-banner-wrapper
+dom.ria.com##div.c-notifier:has(input[id="gdpr_settings"])
+dostup.org.ua,dostup.pravda.com.ua##.sp-show
+eba.com.ua##div.user-cookie-notice
+epravda.com.ua,pravda.com.ua##div#checkUPcookies
+football24.ua##.privete-polisy
+fozzyshop.ua###iqitcookielaw
+holosameryky.com##div.slide-in-wg
+konkurent.ua##div.popupCookie
+kyivpost.com##.stpd_cmp
+kyivstar.ua##div[class*="RegionalityPopover_regionality"]
+ligazakon.net##div.wrapper-banner-by-tag
+ligazakon.net##section#main_popup_modal
+mywatershop.com.ua##section.modal_cookies
+novadigital.com##div.npd-cookies
+novapay.ua##div.cookies.show-cookies
+novaposhta.ua##div#popup_info
+novyny.live##div.cookie.show
+olx.ua##div[data-testid="cookies-overlay__container"]
+portmone.com.ua##.ptm-banner__cat-fish
+portmone.com.ua##app-cookies-modal
+privatbank.ua##+js(set-cookie, analytics_allowed, 0)
+privatbank.ua##+js(set-cookie, marketing_allowed, 0)
+privatbank.ua##div.cookies
+radiosvoboda.org##div.slide-in-wg
+rbc.ua##.privacy
+ringoo.ua##div.cookie
+samsung.com##div.cookie-bar
+silpo.ua##.cookie-banner
+sud.ua##.bottom_style_bnr
+tascombank.ua##div.cookie-message
+telegraf.com.ua##.c-cookies
+ukrgasbank.com##div.cookies-popup
+ukrposhta.ua##.cookie-message
+volia.com##.agreeCookie\.component__cookieWrapper
+wayforpay.com###cookiesNoticeContainer
+zaxid.net###pushNotificationBanner
+znaj.ua##div.privacy-policy
+!
+! !!!!!!!!!!!!!!!
+! POPULAR FOREIGN WEBSITES
+!  > Page-Specific Rules
+! !!!!!!!!!!!!!!!
+!
+adobe.com,dribbble.com,dropbox.com,freepik.com,patreon.com,quora.com,rebrandly.com,reddit.com,stackoverflow.com,twitter.com,x.com###credential_picker_container
+booking.com##.google-one-tap
+! !!!!!!!!!!!!!!!
+artstation.com###google_onetap_container
+bbc.com##div:has(> div > div > ul > li > button[data-cookie-banner="accept"])
+bbc.com##div[class*="-ConsentBanner"]
+behance.net###google-login-container
+behance.net##div[class^="Banner-bannerContainer"]
+behance.net##div[class^="FloatingChecklist"]
+deepl.com##.w-full:has(div[class^="ProBanner"])
+deepl.com##aside[aria-labelledby="career-banner-heading"]
+deepl.com##div.min-h-0.min-w-0:has(button[aria-label="Close"])
+deepl.com##div.p-8:has(aside[class^="Quotes-module"])
+deepl.com##div[data-testid="dl-cookieBanner"]
+deepl.com##main.relative.mx-auto > div.absolute.empty\:hidden
+developer.chrome.com,web.dev##devsite-cookie-notification-bar
+developer.mozilla.org##.top-banner
+dribbble.com##.announcements
+dribbble.com##.sticky-pro-upsell-widget
+forbes.com###ketch-consent-overlay
+forbes.com###lanyard_root
+github.com##global-banner[id^="universe24_"]
+google.com##iframe#google-hats-survey
+itsfoss.com##.apester-unit
+mozilla.org##.mzp-c-sticky-promo
+theverge.com##+js(set-cookie, _duet_gdpr_acknowledged, 1)
+tumblr.com##.tmblr-iframe--gdpr-banner
+virustotal.com##.footer-notifications
+virustotal.com##div#mainContent > privacy-policy-changes-banner
+!
+! !!!!!!!!!!!!!!!
+! POPULAR FOREIGN WEBSITES
+!  > Exceptions
+! !!!!!!!!!!!!!!!
+!
+cnn.com#@##onetrust-consent-sdk
