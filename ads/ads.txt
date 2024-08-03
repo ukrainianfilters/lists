@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240803.2 (24.08.6)
-! Last modified: Sat, 03 August 2024 11:57 EEST
+! Version: 20240803.3 (24.08.7)
+! Last modified: Sat, 03 August 2024 12:29 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -62,7 +62,7 @@ buhgalter.com.ua,buhgalter911.com##div[data-ad="active"]:remove()
 champion.com.ua,chytomo.com,defence-ua.com,glavcom.ua,zn.ua##div[class^="banner"]
 champion.com.ua,epravda.com.ua,eurointegration.com.ua,istpravda.com.ua,pravda.com.ua##[class$="_banner"]:remove()
 dev.ua,itc.ua,xsport.ua##.partners
-eurointegration.com.ua,football.ua,hromadske.radio,istpravda.com.ua,korrespondent.net##[class$="-banner"]:remove()
+eurointegration.com.ua,football.ua,hromadske.radio,istpravda.com.ua,korrespondent.net,pravda.com.ua##[class$="-banner"]:remove()
 football-ukraine.com,kyiv24.news,zaxid.net##div#SinoptikInformer
 football.ua,konkurent.ua,ukurier.gov.ua##.banner
 football24.ua,zaxid.net##[id*="AdvWrapper"]
