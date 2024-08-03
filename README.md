@@ -42,6 +42,9 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.tx
 https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt
 ```
 
+> [!NOTE]
+> Всі вищезазначені списки фільтрів містять коментар `! Expires: 2 days` який задає інтервал автоматичного оновлення кожні 2 дні. У разі необхідності списки також можна оновлювати вручну.
+
 ## Сумісність з браузерами та розширеннями
 
 Фільтри `Ukrainian Ad Filter`, `Ukrainian Annoyance Filter` та `Ukrainian Privacy Filter` створені з використанням специфічного синтаксису фільтрації розширення [uBlock Origin](https://github.com/gorhill/uBlock) (uBO), при цьому, більшість правил фільтрації все ж сумісні як з іншими популярними сторонніми розширеннями, так і з браузерами з вбудованими модулями фільтрації контенту.
@@ -81,9 +84,6 @@ https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main
 1. У меню `Settings` відкрити розділ меню `Brave Shields & privacy` й змінити налаштування `Block trackers & ads` на `Aggressive`
 2. У розділі меню `Brave Shields & privacy` відкрити `Content filtering`, далі `Add custom filter list` і у поле вводу вставити скопійовані адреси необхідних фільтрів, зберігши зміни шляхом натискання на кнопку `Add`.
 </details>
-
-> [!NOTE]
-> Всі вищезазначені списки фільтрів містять коментар `! Expires: 2 days` який задає інтервал автоматичного оновлення кожні 2 дні. У разі необхідності списки також можна оновлювати вручну.
 
 ## Співпраця
 
