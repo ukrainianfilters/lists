@@ -42,6 +42,8 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.tx
 https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt
 ```
 
+Додаткові формати списків: [domain-based blocklist](https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/domains.txt), [hosts-based blocklist](https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/hosts.txt), [dnsmasq](https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/dnsmasq.txt).
+
 ## Сумісність з браузерами та розширеннями
 
 Фільтри `Ukrainian Ad Filter`, `Ukrainian Annoyance Filter` та `Ukrainian Privacy Filter` створені з використанням специфічного синтаксису фільтрації розширення [uBlock Origin](https://github.com/gorhill/uBlock) (uBO), при цьому, більшість правил фільтрації все ж сумісні як з іншими популярними сторонніми розширеннями, так і з браузерами з вбудованими модулями фільтрації контенту.
@@ -51,7 +53,7 @@ https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main
 Альтернативою для мобільних пристроїв, що працюють на базі ОС Android та iOS, може стати використання браузера [Brave](https://brave.com/), який має власний модуль фільтрації контенту та підтримує [синтаксис фільтрації](https://support.brave.com/hc/en-us/articles/6449369961741-How-do-I-manage-Ad-Block-filters-in-Brave) розширення uBlock Origin.
 
 > [!WARNING]
-> Починаючи з версії 0.5, розробники розширення **Adblock** [вирішили прибрати](https://web.archive.org/web/20111206122411/http://adblockplus.org/en/faq_features#siteblock) функцію блокування веб-сторінок (strict blocking). Це означає, що ані **Adblock**, ані **Adblock Plus** не можуть блокувати доступ до шкідливих веб-ресурсів на рівні доменного ім'я. Розширення **AdGuard** так само має проблеми з обробкою правил фільтрації ([Issue #2760](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2760)), навіть тих, що прямо прописані в документації цього розширення. Відповідно, ці розширення не можуть забезпечити обробку правил фільтрації, що повністю відповідають вимогам сучасних версій синтаксису Adblock, тому вони не є сумісними з фільтром `Ukrainian Security Filter (Український безпековий фільтр)`.
+> Починаючи з версії 0.5, розробники розширення **Adblock** [вирішили прибрати](https://web.archive.org/web/20111206122411/http://adblockplus.org/en/faq_features#siteblock) функцію блокування веб-сторінок (strict blocking). Це означає, що ані **Adblock**, ані **Adblock Plus** не можуть блокувати доступ до веб-ресурсів на рівні доменного ім'я. Розширення **AdGuard** так само має проблеми з обробкою правил фільтрації ([Issue #2760](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2760)), навіть тих, що прописані в документації цього розширення. Відповідно, ці розширення не є сумісними з нашими фільтрами.
 
 ## Як імпортувати фільтри
 
@@ -65,6 +67,8 @@ https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main
 
 Додаткова інструкція доступна за адресою: [https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
 </details>
+
+> Android-версія браузера Firefox повноцінно підтримує сторонні розширення, серед яких є і uBlock Origin.
 
 ### Brave
 
