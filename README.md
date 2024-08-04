@@ -68,7 +68,7 @@ https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main
 Додаткова інструкція доступна за адресою: [https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
 </details>
 
-> Починаючи з грудня 2023 року Android-версія браузера Firefox повноцінно підтримує сторонні розширення, серед яких є і uBlock Origin.
+> Android-версія браузера Firefox повноцінно підтримує сторонні розширення, серед яких є і uBlock Origin.
 
 ### Brave
 
