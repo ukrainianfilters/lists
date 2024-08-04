@@ -42,6 +42,8 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.tx
 https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt
 ```
 
+Додаткові формати списків: [domain-based blocklist](https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/domains.txt), [hosts-based blocklist](https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/hosts.txt), [dnsmasq](https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/dnsmasq.txt).
+
 ## Сумісність з браузерами та розширеннями
 
 Фільтри `Ukrainian Ad Filter`, `Ukrainian Annoyance Filter` та `Ukrainian Privacy Filter` створені з використанням специфічного синтаксису фільтрації розширення [uBlock Origin](https://github.com/gorhill/uBlock) (uBO), при цьому, більшість правил фільтрації все ж сумісні як з іншими популярними сторонніми розширеннями, так і з браузерами з вбудованими модулями фільтрації контенту.
@@ -65,6 +67,9 @@ https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main
 
 Додаткова інструкція доступна за адресою: [https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web](https://github.com/gorhill/uBlock/wiki/Filter-lists-from-around-the-web)
 </details>
+
+> [!TIP]
+> Починаючи з грудня 2023 року Android-версія браузера Firefox повноцінно підтримує сторонні розширення, серед яких є і uBlock Origin.
 
 ### Brave
 
