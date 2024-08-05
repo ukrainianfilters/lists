@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240803.4 (24.08.8)
-! Last modified: Sat, 03 August 2024 17:49 EEST
+! Version: 20240805.1 (24.08.9)
+! Last modified: Mon, 05 August 2024 14:30 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -26,8 +26,6 @@
 ||stteeruptowind.com^$third-party
 ||worldwidegg.com^$document,third-party
 ! !!!!!!!!!!!!!!!
-/^(?!.*(getsitecontrol.com|google.com|googleadservices.com|googleapis.com|googleoptimize.com|googlesyndication.com|googletagmanager.com|googletagservices.com|google-analytics.com|gravitec.media|gravitec.net)).*$/$xmlhttprequest,third-party,script,domain=buhgalter.com.ua|buhgalter911.com|censor.net|football.ua|hromadske.radio|istpravda.com.ua|itc.ua
-! !!!!!!!!!!!!!!!
 ||itc.ua/info-dir/?p4g_api_type_=text&p4g_partner_*$subdocument
 !
 ! !!!!!!!!!!!!!!!
@@ -39,9 +37,8 @@
 ||*html-load.com/*^$script
 ||*img-load.com/*^$script
 ||*error-report.com/*^$document,subdocument,xmlhttprequest,script
-! Shadow
-bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,football-ukraine.com,gazeta.ua,hvylya.net,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,nv.ua,pravda.com.ua,sportanalytic.com,ukr.net##^script:has-text('"Shadow')
 ! !!!!!!!!!!!!!!!
+bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,football-ukraine.com,gazeta.ua,hvylya.net,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,nv.ua,pravda.com.ua,sportanalytic.com,ukr.net##^script:has-text('"Shadow')
 eurointegration.com.ua##^script:has-text('-banner')
 eurointegration.com.ua##^script[onload*="error-report.com"]
 football.ua,football-ukraine.com,xsport.ua##^script:has-text(zone_)
