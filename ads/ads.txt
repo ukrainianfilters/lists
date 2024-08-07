@@ -77,6 +77,7 @@ konkurent.ua,xsport.ua##div[class^="bookmaker"]
 ! div#SinoptikInformer
 football-ukraine.com,kyiv24.news,zaxid.net##div#SinoptikInformer
 ! !!!!!!!!!!!!!!!
+24tv.ua##.adv-wrapper
 24tv.ua##app-default-news.news-wrapper:has(app-custom-adv-label > div > div.custom-adv-label)
 24tv.ua##app-default-publications:has(a:has-text('Спецпроєкти'))
 24tv.ua##app-main-page-adv-block
