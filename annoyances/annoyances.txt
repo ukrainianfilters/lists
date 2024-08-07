@@ -54,7 +54,7 @@
 ! !!!!!!!!!!!!!!!
 !
 comfy.ua,dom.ria.com,gwaramedia.com,happymonday.ua,moyo.ua,rozetka.com.ua###credential_picker_container
-diia.gov.ua,u24.gov.ua,vogue.ua##.cookies
+diia.gov.ua,novyny.pro,u24.gov.ua,vogue.ua##.cookies
 ! !!!!!!!!!!!!!!!
 ain.ua##div.cookie-popup
 anc.ua##div.cookies--popup-background
