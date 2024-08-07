@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240805.1 (24.08.9)
-! Last modified: Mon, 05 August 2024 14:30 EEST
+! Version: 20240807.1 (24.08.10)
+! Last modified: Wed, 07 August 2024 22:39 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -18,6 +18,7 @@
 ! !!!!!!!!!!!!!!!
 ||cdn.umh.ua^$third-party
 ||exchange.informer.ua^$third-party
+||go2net.com.ua^$third-party
 ||mediabrama.com^$third-party
 ||membrana.media^$third-party
 ||receivedachest.com^$third-party
@@ -37,18 +38,15 @@
 ||*html-load.com/*^$script
 ||*img-load.com/*^$script
 ||*error-report.com/*^$document,subdocument,xmlhttprequest,script
+! zfctrack.net / znctrack.net
+bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,pravda.com.ua,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
 ! !!!!!!!!!!!!!!!
-bigmir.net,censor.net,epravda.com.ua,eurointegration.com.ua,football-ukraine.com,gazeta.ua,hvylya.net,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,nv.ua,pravda.com.ua,sportanalytic.com,ukr.net##^script:has-text('"Shadow')
-eurointegration.com.ua##^script:has-text('-banner')
 eurointegration.com.ua##^script[onload*="error-report.com"]
-football.ua,football-ukraine.com,xsport.ua##^script:has-text(zone_)
-football24.ua##^script:has-text('manageMembranaAdvWrappers')
-inforesist.org##^script:has-text('partners-adv')
-itc.ua##^script:has-text('/images/banners/')
-village.com.ua##^script:has-text('banner_name')
-village.com.ua##^script:has-text('globalAmlAds')
-zaxid.net##^script:has-text('mobileBrandingMainInited')
-zn.ua##^script:has-text('banners_types')
+eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
+football24.ua##+js(remove-node-text, script, manageMembranaAdvWrappers)
+itc.ua##+js(remove-node-text, script, /images/banners/)
+zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
+zn.ua##+js(remove-node-text, script, banners_types)
 !
 ! !!!!!!!!!!!!!!!
 ! GENERAL RULES
@@ -84,8 +82,8 @@ football-ukraine.com,kyiv24.news,zaxid.net##div#SinoptikInformer
 24tv.ua##app-video-adv-block
 24tv.ua##app-without-ads.news-wrapper:has(app-custom-adv-label > div > div.custom-adv-label)
 24tv.ua##div.video-dv-wrapper
-agroportal.ua##a[href^="/"][target="_blank"]
 agroportal.ua##.fixedBlock
+agroportal.ua##a[href^="/"][target="_blank"]
 apostrophe.ua##.advertinline
 apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
