@@ -78,6 +78,7 @@ eba.com.ua##div.user-cookie-notice
 epravda.com.ua,pravda.com.ua##div#checkUPcookies
 football24.ua##.privete-polisy
 fozzyshop.ua###iqitcookielaw
+gsm.in.ua##.notice--cookie
 holosameryky.com##div.slide-in-wg
 konkurent.ua##div.popupCookie
 kyivpost.com##.stpd_cmp
