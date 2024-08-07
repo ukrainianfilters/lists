@@ -24,7 +24,7 @@ Before creating a report:
 3) Disable NoScript, Ghostery, Disconnect, HTTPS Everywhere, Privacy Badger, AntiBanner, VPN extensions and retest (check) the website with which you have problems.
 -->
 
-#### Вкажіть веб-сайт(и), з якими у вас виникли проблеми / List the website(s) you're having issues with:
+#### Вкажіть веб-сайт(и), з якими у вас виникли проблеми / List the website(s) you're having issues with
 
 <!-- Вкажіть URL-адресу веб-сайту (ОБОВ'ЯЗКОВО) -->
 <!-- Будь ласка, вставляйте URL-адресу сайту в кодовий тег (ОБОВ'ЯЗКОВО) -->
@@ -60,29 +60,18 @@ Before creating a report:
 
 **Desktop:**
 
-- ОС (OS): [e.g. Windows]
-- Версія (Version): [e.g. 10]
-
-- Браузер (Web browser): [e.g. Firefox]
-- Версія (Version): [e.g. 128.0.3]
-
-- Розширення блокування реклами (Ad block extension): [e.g. uBlock Origin]
-- Версія (Version): [e.g. 1.59.0]
+- ОС (OS): [e.g. Windows 10]
+- Браузер (Web browser): [e.g. Firefox 128.0.3]
+- Розширення блокування реклами (Ad block extension): [e.g. uBlock Origin 1.59.0]
 
 **Smartphone:**
 
 - Пристрій / Device: [e.g. Samsung Galaxy A35]
+- ОС (OS): [e.g. Android 14]
+- Браузер (Web browser): [e.g. Firefox 127]
+- Розширення блокування реклами (Ad block extension): [e.g. uBlock Origin 1.59.0]
 
-- ОС (OS): [e.g. Android]
-- Версія (Version): [e.g. 14]
-
-- Браузер (Web browser): [e.g. Firefox]
-- Версія (Version): [e.g. 127]
-
-- Розширення блокування реклами (Ad block extension): [e.g. uBlock Origin]
-- Версія (Version): [e.g. 1.59.0]
-
-#### Додаткова інформація / More information:
+#### Додаткова інформація / More information
 
 <!-- Додайте тут будь-що інше, що може бути корисним для оперативного усунення проблеми -->
 
