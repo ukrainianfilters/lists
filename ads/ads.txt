@@ -1,7 +1,7 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240808.2 (24.08.13)
+! Version: 20240808.3 (24.08.14)
 ! Last modified: Thu, 08 August 2024 11:21 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
@@ -48,7 +48,6 @@ eurointegration.com.ua##^script[onload*="error-report.com"]
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 football24.ua##+js(remove-node-text, script, manageMembranaAdvWrappers)
 itc.ua##+js(remove-node-text, script, /images/banners/)
-starlight.digital##+js(set-constant, Object.prototype.ottExt, null)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 zn.ua##+js(remove-node-text, script, banners_types)
 !
@@ -269,6 +268,7 @@ sportanalytic.com##div.block:has-text(Партнер)
 sportanalytic.com##div.fb_iframe_widget:remove()
 sportanalytic.com##div.wblock:has-text(Інші новини)
 sportanalytic.com##div#news:has-text(Картина дня)
+starlight.digital##+js(set-constant, Object.prototype.ottExt, null)
 storinka.com.ua##div.share
 storinka.com.ua##div.widget:not([class$="hidden-xs"])
 sud.ua##div.b-bblock-social:remove()
@@ -280,6 +280,7 @@ tabloid.pravda.com.ua##.alko
 tabloid.pravda.com.ua##.background-video[data-video-urls*="legend-transcode"]
 tabloid.pravda.com.ua##.koz-box
 tabloid.pravda.com.ua##.kr-loo-box
+tabloid.pravda.com.ua##div.layout_split_sidebar:has(.article_pr + .article_pr + .article_pr + .article_pr + .article_pr + .article_pr)
 telegraf.com.ua##.tgr-ads
 telegraf.com.ua##div.s-content__ratio:has(script[id^="_vidverto-"]):remove()
 telegraf.com.ua##div[data-text="Новини партнерів"]
