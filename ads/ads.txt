@@ -129,6 +129,7 @@ euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
 fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"]):remove()
 fakty.com.ua##div.pip-video-wrapper
 fakty.com.ua##div[class^="promo-layer"]
+firtka.if.ua##[class*="advert"]
 flatfy.ua,lun.ua##div.DonateBanner
 flatfy.ua,lun.ua##div.feed-layout__item-holder:has(button[data-event-action="new_building_ads"])
 flatfy.ua,lun.ua##div.feed-layout__item-holder:has(div.bird-select-advertisement)
