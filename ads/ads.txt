@@ -269,6 +269,10 @@ sud.ua##div.b-news-list:has-text(Сьогодні день народження 
 sud.ua##div.bbone-list
 tabletki.ua##div.com__panel-container:has(a[rel*="sponsored"])
 tabletki.ua##h3.com__panel-header:has-text('реклама')
+tabloid.pravda.com.ua##.alko
+tabloid.pravda.com.ua##.background-video[data-video-urls*="legend-transcode"]
+tabloid.pravda.com.ua##.koz-box
+tabloid.pravda.com.ua##.kr-loo-box
 telegraf.com.ua##.tgr-ads
 telegraf.com.ua##div.s-content__ratio:has(script[id^="_vidverto-"]):remove()
 telegraf.com.ua##div[data-text="Новини партнерів"]
