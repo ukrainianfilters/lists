@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240807.2 (24.08.11)
-! Last modified: Wed, 07 August 2024 23:08 EEST
+! Version: 20240808.1 (24.08.12)
+! Last modified: Thu, 08 August 2024 09:56 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -75,7 +75,7 @@ dev.ua,inforesist.org,itc.ua,sport.ua,xsport.ua##[class^="partners"]
 ! div[class^="bookmaker"]
 konkurent.ua,xsport.ua##div[class^="bookmaker"]
 ! div#SinoptikInformer
-football-ukraine.com,kyiv24.news,zaxid.net##div#SinoptikInformer
+football-ukraine.com,gk-press.if.ua,kyiv24.news,zaxid.net##div#SinoptikInformer
 ! !!!!!!!!!!!!!!!
 24tv.ua##.adv-wrapper
 24tv.ua##app-default-news.news-wrapper:has(app-custom-adv-label > div > div.custom-adv-label)
@@ -158,9 +158,6 @@ forbes.ua##div:has(> div[class*="modal-interact-with-background"])
 forbes.ua##div[id^="adpartner-"]
 gazeta.ua##.informer
 gazeta.ua##a[href="#comments"]
-gk-press.if.ua##.widget_media_image
-gk-press.if.ua###left-sidebar > .widget_text
-gk-press.if.ua##div[style="text-align: center"] > [href][target="_blank"]
 glavcom.ua##div.sunsite_actions[data-action="banners"]
 glavcom.ua##div.sunsite_actions[data-action="voteboxes"]
 happymonday.ua##a[style="z-index: 0; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;"]:remove()
@@ -273,10 +270,6 @@ sud.ua##div.b-news-list:has-text(Сьогодні день народження 
 sud.ua##div.bbone-list
 tabletki.ua##div.com__panel-container:has(a[rel*="sponsored"])
 tabletki.ua##h3.com__panel-header:has-text('реклама')
-tabloid.pravda.com.ua##.alko
-tabloid.pravda.com.ua##.background-video[data-video-urls*="legend-transcode"]
-tabloid.pravda.com.ua##.koz-box
-tabloid.pravda.com.ua##.kr-loo-box
 telegraf.com.ua##.tgr-ads
 telegraf.com.ua##div.s-content__ratio:has(script[id^="_vidverto-"]):remove()
 telegraf.com.ua##div[data-text="Новини партнерів"]
@@ -338,3 +331,10 @@ znaj.ua##.c-press-release
 znaj.ua##div.ai-placement
 znaj.ua##div.b-popular-article
 znaj.ua##div.subscribe-in-article
+tabloid.pravda.com.ua##.alko
+tabloid.pravda.com.ua##.background-video[data-video-urls*="legend-transcode"]
+tabloid.pravda.com.ua##.koz-box
+tabloid.pravda.com.ua##.kr-loo-box
+gk-press.if.ua##.widget_media_image
+gk-press.if.ua###left-sidebar > .widget_text
+gk-press.if.ua##div[style="text-align: center"] > [href][target="_blank"]
