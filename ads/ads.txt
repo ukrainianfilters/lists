@@ -22,6 +22,7 @@
 ||go2net.com.ua^$third-party
 ||mediabrama.com^$third-party
 ||membrana.media^$third-party
+||pixel.tvstitch.com^$third-party
 ||receivedachest.com^$third-party
 ||sinoptik.ua/informers_js.php^$third-party
 ||smi.pp.ua^$third-party
@@ -47,6 +48,7 @@ eurointegration.com.ua##^script[onload*="error-report.com"]
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 football24.ua##+js(remove-node-text, script, manageMembranaAdvWrappers)
 itc.ua##+js(remove-node-text, script, /images/banners/)
+starlight.digital##+js(set-constant, Object.prototype.ottExt, null)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 zn.ua##+js(remove-node-text, script, banners_types)
 !
