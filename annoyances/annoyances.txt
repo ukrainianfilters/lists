@@ -105,6 +105,7 @@ silpo.ua##.cookie-banner
 sud.ua##.bottom_style_bnr
 tascombank.ua##div.cookie-message
 telegraf.com.ua##.c-cookies
+teleportal.ua##.cookie_container
 ukrgasbank.com##div.cookies-popup
 ukrposhta.ua##.cookie-message
 volia.com##.agreeCookie\.component__cookieWrapper
