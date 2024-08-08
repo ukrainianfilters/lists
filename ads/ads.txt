@@ -16,6 +16,7 @@
 ||a4.censor.net^
 ||mediatraffic.com.ua^
 ! !!!!!!!!!!!!!!!
+||bidder.smartytouch.co^$third-party
 ||cdn.umh.ua^$third-party
 ||exchange.informer.ua^$third-party
 ||go2net.com.ua^$third-party
