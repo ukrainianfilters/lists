@@ -48,6 +48,7 @@ eurointegration.com.ua##^script[onload*="error-report.com"]
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 football24.ua##+js(remove-node-text, script, manageMembranaAdvWrappers)
 itc.ua##+js(remove-node-text, script, /images/banners/)
+starlight.digital##+js(set-constant, Object.prototype.ottExt, null)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 zn.ua##+js(remove-node-text, script, banners_types)
 !
@@ -268,7 +269,6 @@ sportanalytic.com##div.block:has-text(Партнер)
 sportanalytic.com##div.fb_iframe_widget:remove()
 sportanalytic.com##div.wblock:has-text(Інші новини)
 sportanalytic.com##div#news:has-text(Картина дня)
-starlight.digital##+js(set-constant, Object.prototype.ottExt, null)
 storinka.com.ua##div.share
 storinka.com.ua##div.widget:not([class$="hidden-xs"])
 sud.ua##div.b-bblock-social:remove()
