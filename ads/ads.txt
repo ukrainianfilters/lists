@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240809.4 (24.08.18)
-! Last modified: Fri, 09 August 2024 13:57 EEST
+! Version: 24.08.19
+! Last modified: Fri, 09 August 2024 15:31 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -63,7 +63,7 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ! !!!!!!!!!!!!!!!
 !
 ! div[class^="banner"]
-champion.com.ua,chytomo.com,defence-ua.com,football.ua,glavcom.ua,konkurent.ua,ukurier.gov.ua,village.com.ua,zn.ua##div[class^="banner"]
+champion.com.ua,chytomo.com,defence-ua.com,football.ua,glavcom.ua,konkurent.ua,meta.ua,ukurier.gov.ua,unian.ua,village.com.ua,zn.ua##div[class^="banner"]
 ! [class$="_banner"]
 champion.com.ua,epravda.com.ua,eurointegration.com.ua,istpravda.com.ua,pravda.com.ua##[class$="_banner"]:remove()
 ! [class$="-banner"]
@@ -75,7 +75,7 @@ football24.ua,zaxid.net##[id*="AdvWrapper"]
 ! [class^="partners"]
 dev.ua,inforesist.org,itc.ua,sport.ua,xsport.ua##[class^="partners"]
 ! div[class^="bookmaker"]
-konkurent.ua,xsport.ua##div[class^="bookmaker"]
+konkurent.ua,meta.ua,xsport.ua##div[class^="bookmaker"]
 ! div#SinoptikInformer
 football-ukraine.com,gk-press.if.ua,kyiv24.news,zaxid.net##div#SinoptikInformer
 ! !!!!!!!!!!!!!!!
@@ -222,7 +222,10 @@ mc.today##[data-coursestyle]
 mc.today##div.company-slider
 mc.today##div.mobile-hide:not(.widget-popular, .widget-popular-title):remove()
 mc.today##div.widget-vacancy
-meta.ua##div[class^="banner-zone"]
+meta.ua##div.adl_cmp_consent-dialog-module_backdrop
+meta.ua##div.banner-zone
+meta.ua##div.sidebar__ads
+meta.ua##div.subscriptions
 meteofor.com.ua##div.placeholder.h1:has(div[id^="div-gpt-ad-"])
 meteofor.com.ua##section.section-media:has(div[id^="div-gpt-ad-"])
 meteofor.com.ua##section.section-rss
@@ -260,7 +263,8 @@ rubryka.com##div.single-page__banners
 rubryka.com##div.single-page__social
 rubryka.com##div[class*="advertisment"]
 rubryka.com##div[style="padding: 0 0 30px"]
-sinoptik.ua##head > style:empty:style(all: inherit !important)
+sinoptik.ua##div.informerTop
+sinoptik.ua##div#centerBanners:remove()
 slovoidilo.ua##div.branding-main
 slovoidilo.ua##div.te-center:has(ins.adsbygoogle)
 speka.media##div.max-w-material-l:has(h3.socials__title)
@@ -325,6 +329,9 @@ ukrinform.ua##div.googleCompanion
 ukrinform.ua##div.partner
 unian.info,unian.net,unian.ua##.newsfeed__banner
 unian.info,unian.net,unian.ua##.partner-news
+unian.ua##a.support-unian
+unian.ua##div.newsfeed-box.banner
+unian.ua##li.newsfeed__item:has(span.blue-marker:has-text(НК))
 unn.ua##div[class^="informer_informer_"]
 unn.ua##div[id^="ads-sidebar"]
 vctr.media##.banner-container
