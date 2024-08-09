@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.20
-! Last modified: Fri, 09 August 2024 21:53 EEST
+! Version: 24.08.21
+! Last modified: Fri, 09 August 2024 22:34 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -30,8 +30,6 @@
 ||stteeruptowind.com^$third-party
 ||traffsender.com^$third-party
 ||worldwidegg.com^$document,third-party
-! >>>
-||itc.ua/info-dir/?p4g_api_type_=text&p4g_partner_*$subdocument
 !
 ! !!!!!!!!!!!!!!!
 ! SCRIPTS
@@ -199,7 +197,6 @@ i.ua###Premium
 inforesist.org##.advert
 inforesist.org##.dw_focus_widget_news_ticker
 itc.ua##.featured-statti:has(a[href*="/partnerskij-proekt/"])
-itc.ua##.nadavi-widget:remove()
 itc.ua##[data-course]
 itc.ua##div.featured-in-new > div.row
 itc.ua##div.hidden-sm:has(div[id*="-banner-"]):remove()
