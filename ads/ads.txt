@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240809.2 (24.08.16)
-! Last modified: Fri, 09 August 2024 11:46 EEST
+! Version: 20240809.3 (24.08.17)
+! Last modified: Fri, 09 August 2024 13:28 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -91,6 +91,7 @@ agroportal.ua##a[href^="/"][target="_blank"]
 apostrophe.ua##.advertinline
 apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
+babel.ua##aside.c-subs-box.c-subs-social
 buhgalter.com.ua,buhgalter911.com##body.access *:style(filter: none !important)
 buhgalter.com.ua,buhgalter911.com##body.access div[id^="access-au"]
 buhgalter.com.ua,buhgalter911.com##body.access:style(overflow: auto !important; position: relative !important)
@@ -126,6 +127,7 @@ epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(СПЕЦПРОЄК
 epravda.com.ua,pravda.com.ua##div[class*="adv_"]:remove()
 epravda.com.ua,pravda.com.ua##div[class*="banner_"]:remove()
 epravda.com.ua##div.article_advertising
+espreso.tv##div.news-tape-item:has(div.mark-block:has-text(Партнерський матеріал))
 eurointegration.com.ua##a[href="https://www.ukr.net/"]
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
 fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"]):remove()
@@ -174,6 +176,7 @@ happymonday.ua##div.top-banner
 hromadske.radio##div.banner-block
 hromadske.radio##div.banner-block-mb
 hromadske.radio##div[class^="ModalBanner"]
+hromadske.ua##section.c-news-section:has(h2.c-heading__title:has-text(Партнерські матеріали))
 i.ua##.baner
 i.ua##.clear.logo_container
 i.ua##.news_premium_item
@@ -339,10 +342,17 @@ zaxid.net##.news-list-col > .news-list
 zaxid.net##div[id^="slot300x"]
 zaxid.net##div#header_advt-wrapper:remove()
 zn.ua##[data-action="banners"]
+zn.ua##aside.content__news > div.news-support
+zn.ua##aside.content__news > div.news-support + div.content-title
+zn.ua##aside.content__news > div.social-box
+zn.ua##aside.content__news > div.social-box + div.content-title
+zn.ua##aside.content__news > div.youtube-news
 zn.ua##div.after-material-wrap-banners
+zn.ua##div.content-news__item.blue_stream:has(.tg_ico_fixed)
 zn.ua##div.recent-events:has(img[data-src$="telegram_.svg"])
 zn.ua##div[class^="advertising"]
 zn.ua##div[class^="banner_"]
+zn.ua##section.archive-main
 znaj.ua##.c-press-release
 znaj.ua##div.ai-placement
 znaj.ua##div.b-popular-article
