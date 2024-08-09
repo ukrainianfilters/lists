@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian and some popular foreign websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.08.19
-! Last modified: Fri, 09 August 2024 15:31 EEST
+! Version: 24.08.20
+! Last modified: Fri, 09 August 2024 21:53 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -13,14 +13,18 @@
 ! GENERAL RULES
 ! !!!!!!!!!!!!!!!
 !
+! >>>
+! Cookie consent banners
 ##.cky-consent-container
 ##.cky-overlay
+##.cookie
 ##.cookie_banner
 ##.cookie-label
 ##.cookie-label-wrapprer
 ##.cookie-toast
 ##.cookie-toast-wrap
 ##.cookie-toaster
+##.cookies
 ##.cookies-wrap
 ##.cookies-wrapper
 ##.CookieWarning
@@ -47,16 +51,15 @@
 ###gdpr-disclaimer
 ###onetrust-consent-sdk
 ##dialog.cookie-policy
+! >>>
+! "Sign In With Google" pop-up container
+###credential_picker_container
 !
 ! !!!!!!!!!!!!!!!
 ! UKRAINIAN WEBSITES
 !  > Page-Specific Rules
 ! !!!!!!!!!!!!!!!
 !
-comfy.ua,dom.ria.com,gwaramedia.com,happymonday.ua,moyo.ua,rozetka.com.ua###credential_picker_container
-diia.gov.ua,novyny.pro,u24.gov.ua,vogue.ua##.cookies
-! !!!!!!!!!!!!!!!
-agroportal.ua##.cookie
 ain.ua##div.cookie-popup
 anc.ua##div.cookies--popup-background
 anc.ua##div.dropdown-accept-city
@@ -77,6 +80,7 @@ dom.ria.com##div.c-notifier:has(input[id="gdpr_settings"])
 dostup.org.ua,dostup.pravda.com.ua##.sp-show
 eba.com.ua##div.user-cookie-notice
 epravda.com.ua,pravda.com.ua##div#checkUPcookies
+flashscore.ua##div.otPlaceholder
 football24.ua##.privete-polisy
 fozzyshop.ua###iqitcookielaw
 gsm.in.ua##.notice--cookie
@@ -87,31 +91,32 @@ kyivstar.ua##div[class*="RegionalityPopover_regionality"]
 ligazakon.net##div.wrapper-banner-by-tag
 ligazakon.net##section#main_popup_modal
 meta.ua##div.adl_cmp_consent-dialog-module_backdrop
+mgmotor.com.ua##div.cookie-show
+morshynska.ua##div.cookie_block
 mywatershop.com.ua##section.modal_cookies
 novadigital.com##div.npd-cookies
 novapay.ua##div.cookies.show-cookies
 novaposhta.ua##div#popup_info
-novyny.live##div.cookie.show
 olx.ua##div[data-testid="cookies-overlay__container"]
 portmone.com.ua##.ptm-banner__cat-fish
 portmone.com.ua##app-cookies-modal
 privatbank.ua##+js(set-cookie, analytics_allowed, 0)
 privatbank.ua##+js(set-cookie, marketing_allowed, 0)
-privatbank.ua##div.cookies
 radiosvoboda.org##div.slide-in-wg
 rbc.ua##.privacy
-ringoo.ua##div.cookie
 samsung.com##div.cookie-bar
 silpo.ua##.cookie-banner
 speka.media##div.js-cookie-banner
+sport.ua##div.adl_cmp_consent-dialog-module_backdrop
 sud.ua##.bottom_style_bnr
+sweet.tv##div.cookie__popup
 tascombank.ua##div.cookie-message
 telegraf.com.ua##.c-cookies
 teleportal.ua##.cookie_container
 texty.org.ua##div.donate-banner
+u24.gov.ua##app-cookie-dialog
 ukrgasbank.com##div.cookies-popup
 ukrposhta.ua##.cookie-message
-unian.ua##div.cookies
 volia.com##.agreeCookie\.component__cookieWrapper
 wayforpay.com###cookiesNoticeContainer
 zaxid.net###pushNotificationBanner
@@ -122,12 +127,7 @@ znaj.ua##div.privacy-policy
 !  > Page-Specific Rules
 ! !!!!!!!!!!!!!!!
 !
-adobe.com,dribbble.com,dropbox.com,freepik.com,patreon.com,quora.com,rebrandly.com,reddit.com,stackoverflow.com,twitter.com,x.com###credential_picker_container
-booking.com##.google-one-tap
-! !!!!!!!!!!!!!!!
 artstation.com###google_onetap_container
-bbc.com##div:has(> div > div > ul > li > button[data-cookie-banner="accept"])
-bbc.com##div[class*="-ConsentBanner"]
 behance.net###google-login-container
 behance.net##div[class^="Banner-bannerContainer"]
 behance.net##div[class^="FloatingChecklist"]
@@ -141,14 +141,7 @@ developer.chrome.com,web.dev##devsite-cookie-notification-bar
 developer.mozilla.org##.top-banner
 dribbble.com##.announcements
 dribbble.com##.sticky-pro-upsell-widget
-forbes.com###ketch-consent-overlay
-forbes.com###lanyard_root
-github.com##global-banner[id^="universe24_"]
-google.com##iframe#google-hats-survey
-itsfoss.com##.apester-unit
 mozilla.org##.mzp-c-sticky-promo
-theverge.com##+js(set-cookie, _duet_gdpr_acknowledged, 1)
-tumblr.com##.tmblr-iframe--gdpr-banner
 virustotal.com##.footer-notifications
 virustotal.com##div#mainContent > privacy-policy-changes-banner
 !
