@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.19
-! Last modified: Fri, 09 August 2024 15:31 EEST
+! Version: 24.08.20
+! Last modified: Fri, 09 August 2024 21:53 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -13,9 +13,10 @@
 ! ADVERTISING NETWORKS
 ! !!!!!!!!!!!!!!!
 !
+! >>>
 ||a4.censor.net^
 ||mediatraffic.com.ua^
-! !!!!!!!!!!!!!!!
+! >>>
 ||bidder.smartytouch.co^$third-party
 ||cdn.umh.ua^$third-party
 ||exchange.informer.ua^$third-party
@@ -29,7 +30,7 @@
 ||stteeruptowind.com^$third-party
 ||traffsender.com^$third-party
 ||worldwidegg.com^$document,third-party
-! !!!!!!!!!!!!!!!
+! >>>
 ||itc.ua/info-dir/?p4g_api_type_=text&p4g_partner_*$subdocument
 !
 ! !!!!!!!!!!!!!!!
@@ -41,12 +42,14 @@
 ||*html-load.com/*^$script
 ||*img-load.com/*^$script
 ||*error-report.com/*^$document,subdocument,xmlhttprequest,script
+! >>>
 ! zfctrack.net / znctrack.net
 bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,pravda.com.ua,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
 ! !!!!!!!!!!!!!!!
 eurointegration.com.ua##^script[onload*="error-report.com"]
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 football24.ua##+js(remove-node-text, script, manageMembranaAdvWrappers)
+football24.ua##+js(remove-node-text, script, zone_)
 itc.ua##+js(remove-node-text, script, /images/banners/)
 starlight.digital##+js(set-constant, Object.prototype.ottExt, null)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
@@ -62,23 +65,34 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ! PAGE-SPECIFIC RULES
 ! !!!!!!!!!!!!!!!
 !
+! >>>
 ! div[class^="banner"]
 champion.com.ua,chytomo.com,defence-ua.com,football.ua,glavcom.ua,konkurent.ua,meta.ua,ukurier.gov.ua,unian.ua,village.com.ua,zn.ua##div[class^="banner"]
+! >>>
 ! [class$="_banner"]
 champion.com.ua,epravda.com.ua,eurointegration.com.ua,istpravda.com.ua,pravda.com.ua##[class$="_banner"]:remove()
+! >>>
 ! [class$="-banner"]
 eurointegration.com.ua,football.ua,hromadske.radio,istpravda.com.ua,korrespondent.net,pravda.com.ua##[class$="-banner"]:remove()
+! >>>
+! [class*="_banner_"]
+champion.com.ua,tribuna.com##div[class*="_banner_"]
+! >>>
 ! [class*="adv-"]
 football24.ua,sport24.ua,zaxid.net##[class*="adv-"]
+! >>>
 ! [id*="AdvWrapper"]
 football24.ua,zaxid.net##[id*="AdvWrapper"]
+! >>>
 ! [class^="partners"]
 dev.ua,inforesist.org,itc.ua,sport.ua,xsport.ua##[class^="partners"]
+! >>>
 ! div[class^="bookmaker"]
 konkurent.ua,meta.ua,xsport.ua##div[class^="bookmaker"]
+! >>>
 ! div#SinoptikInformer
 football-ukraine.com,gk-press.if.ua,kyiv24.news,zaxid.net##div#SinoptikInformer
-! !!!!!!!!!!!!!!!
+! >>>
 24tv.ua##.adv-wrapper
 24tv.ua##app-default-news.news-wrapper:has(app-custom-adv-label > div > div.custom-adv-label)
 24tv.ua##app-default-publications:has(a:has-text('Спецпроєкти'))
@@ -102,7 +116,6 @@ censor.net##.right-sidebar div[style^="width: 300px; "]
 censor.net##div.container.d-print-none:has(script[src^="//a4.censor.net/js/"])
 censor.net##div.row.d-print-none:has(script[src^="//a4.censor.net/js/"])
 champion.com.ua##div.section_news_adv
-champion.com.ua##div[class*="_banner_"]
 defence-ua.com##.share-news
 defence-ua.com##div.content > br:nth-of-type(-n+2)
 defence-ua.com##div.content > div.banner.text-center:remove()
@@ -120,6 +133,7 @@ dou.ua##div.banner-fp
 dou.ua##div[id$="-adv-id"]
 dumskaya.net##.hideprint
 dumskaya.net##noindex
+dynamo.kiev.ua##div#corpMagnet
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]:remove()
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(PROMOTED))
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(АНОНС))
@@ -130,9 +144,9 @@ epravda.com.ua##div.article_advertising
 espreso.tv##div.news-tape-item:has(div.mark-block:has-text(Партнерський матеріал))
 eurointegration.com.ua##a[href="https://www.ukr.net/"]
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
+euromaidanpress.com##div.kompreno
 fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"]):remove()
 fakty.com.ua##div.pip-video-wrapper
-fakty.com.ua##div[class^="promo-layer"]
 firtka.if.ua##[class*="advert"]
 flatfy.ua,lun.ua##div.DonateBanner
 flatfy.ua,lun.ua##div.feed-layout__item-holder:has(button[data-event-action="new_building_ads"])
@@ -151,6 +165,7 @@ football24.ua##aside.adv-insert + p:has(img)
 football24.ua##div.news-text > p:has(strong > a[rel*="sponsored"])
 football24.ua##div.next-article:has(div.custom-adv-label) aside.adv-insert + p:has(img)
 football24.ua##div.next-article[id*="favbet"]
+football24.ua##div[id^="zone_"]
 football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
 football24.ua##li.news-list-item:has(span.custom-label:has-text(Партнерський матеріал))
 football24.ua##p.insert:has(a[rel*="sponsored"])
@@ -162,7 +177,6 @@ football24.ua##ul.news-list > li:has(article > a.title:has-text(FAVBET))
 forbes.ua##div:has(> div[class*="modal-interact-with-background"])
 forbes.ua##div[id^="adpartner-"]
 gazeta.ua##.informer
-gazeta.ua##a[href="#comments"]
 gk-press.if.ua##.widget_media_image
 gk-press.if.ua###left-sidebar > .widget_text
 gk-press.if.ua##div[style="text-align: center"] > [href][target="_blank"]
@@ -234,7 +248,6 @@ mezha.media##div.news-item:has(a[rel="author"]:has-text(Promoted))
 mezha.media##div#wrapper > div:has(a.banner-link)
 nachasi.com##div.sticky-zone:has-text(Блоги компаній)
 nachasi.com##div.style_poster__MF3pg:has(.style_content__3CPKg)
-nachasi.com##div[id*="comments-"]
 novyny.live##div.sidebar.sidebar-article:has(.adsbygoogle)
 nv.ua##body.branding:style(padding-top: 20px !important)
 nv.ua##div[id^="async_spec"]:has(section[data-type="advertising"])
@@ -298,12 +311,11 @@ thepage.ua##div.news-list__item:has(div[class*="news-tag company_news"])
 thepage.ua##div.news-list__item:has(div[class*="news-tag partner_material"])
 tribuna.com##div.card__content > div:has(div[class*="Alternative_banner__"])
 tribuna.com##div.card__postscript-banners
+tribuna.com##div[class*="_ads_"]
 tribuna.com##div[class^="CommonLayout_common-layout__right-column_"]:has(div[class*="Alternative_banner__"])
 tribuna.com##div[class^="Home_home-page__right-column_"] > div:nth-of-type(-n+3)
 tribuna.com##div[class^="IdealMedia_ideal-media_"]
 tribuna.com##div[class^="Main_main-layout__empty-block_"]:has(div[class*="Alternative_banner__"])
-tribuna.com##div[class^="Main_main-layout__footer-wrapper__ads_"]
-tribuna.com##div#comments:remove()
 tsn.ua##.c-aside__port
 tsn.ua##aside.c-section:has(h2.c-section__title > a:has-text(Пресрелізи))
 tsn.ua##aside.u-divider--t:has(iframe[src*="/banners/partner-news"])
@@ -314,6 +326,8 @@ tsn.ua##div[class*="-sidebar__gap"]:has(iframe[src="https://tsn.ua/banners/sideb
 tsn.ua##section.c-section:has(h2.c-section__title:has-text(Новини партнерів))
 ua-football.com##.asside:has(div.topBook)
 ua-football.com##div.adl_cmp_consent-dialog-module_backdrop
+ua-football.com##div.bonuses
+ua-football.com##li.dropdown.header-bonus
 ua-football.com##li.gray-block.promo-btn__item
 ua.news##aside[class^="promo"]
 ukr.net##.fixed-block > div[class] ~ div
@@ -350,6 +364,8 @@ youcontrol.com.ua##.banner-yc
 zaxid.net##.news-list-col > .news-list
 zaxid.net##div[id^="slot300x"]
 zaxid.net##div#header_advt-wrapper:remove()
+zbirna.com##div.sidebar-home-link:has(img[alt="Найкращі онлайн казино України"])
+zbirna.com##section.best_game_sec
 zn.ua##[data-action="banners"]
 zn.ua##aside.content__news > div.news-support
 zn.ua##aside.content__news > div.news-support + div.content-title
