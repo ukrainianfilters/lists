@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 20240809.3 (24.08.17)
-! Last modified: Fri, 09 August 2024 13:28 EEST
+! Version: 20240809.4 (24.08.18)
+! Last modified: Fri, 09 August 2024 13:57 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -243,6 +243,7 @@ obozrevatel.com##aside.headerBiding:has(div[class*="_970"]):remove()
 obozrevatel.com##div.recommendation
 obozrevatel.com##div[id^="carouselLast-slide"]:has(article.newsImg > div.banner)
 obozrevatel.com##div[id^="carouselmostViewed-slide"]:has(article.newsImg > div.banner)
+opendatabot.ua##aside#odb-open-in-app
 ostro.org##div.page-wrapper.hide-mob:has(div.container.page-container)
 ostro.org##div.press-reliz
 ostro.org##div[class^="banner-"]:remove()
@@ -262,6 +263,7 @@ rubryka.com##div[style="padding: 0 0 30px"]
 sinoptik.ua##head > style:empty:style(all: inherit !important)
 slovoidilo.ua##div.branding-main
 slovoidilo.ua##div.te-center:has(ins.adsbygoogle)
+speka.media##div.max-w-material-l:has(h3.socials__title)
 sport.ua##div.best_bookies
 sport.ua##div.item:has-text(СТАВКА ДНЯ)
 sport.ua##div.news-promo-feed
