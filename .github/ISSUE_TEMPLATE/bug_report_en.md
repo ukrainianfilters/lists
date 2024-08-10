@@ -16,22 +16,22 @@ Before creating a report:
 3) Disable NoScript, Ghostery, Disconnect, HTTPS Everywhere, Privacy Badger, AntiBanner, VPN extensions and retest (check) the website with which you have problems.
 -->
 
-#### List the website(s) you're having issues with
+### List the website(s) you're having issues with
 
 <!-- Website URL is REQUIRED -->
 <!-- Wrap the website URL in a code tag please (REQUIRED) -->
 <!-- Warn if it is a website with NSFW content -->
 
-#### What happens?
+### What happens?
 
 <!-- Describe the problems that you encounter when visiting the site and indicate the steps to reproduce these problems -->
 
-#### Screenshot(s)
+### Screenshot(s)
 
 <!-- Screenshot(s) to visually describe the issues -->
 <!-- Post links instead of inline images for screenshots containing adult material -->
 
-#### Filter lists you're using
+### Filter lists you're using
 
 **Which third-party adblock lists do you use?**
 
@@ -43,7 +43,7 @@ Before creating a report:
 <!-- e.g. Ukrainian Ad Filter, Ukrainian Annoyance Filter, Ukrainian Privacy Filter, Ukrainian Security Filter
      specify the version and date of creation for these lists (REQUIRED) -->
 
-#### Software you use
+### Software you use
 
 **Desktop:**
 
@@ -58,6 +58,6 @@ Before creating a report:
 - Web browser / version: [e.g. Firefox 127]
 - Ad block extension / version: [e.g. uBlock Origin 1.59.0]
 
-#### More information
+### More information
 
 <!-- Add anything else here that may be helpful in resolving the issue quickly -->
