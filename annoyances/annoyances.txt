@@ -1,13 +1,14 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian and some popular foreign websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.08.22
-! Last modified: Sat, 10 August 2024 13:08 EEST
+! Version: 24.08.24
+! Last modified: Sat, 10 August 2024 23:45 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
 ! Homepage: https://github.com/ukrainianfilters/lists
 ! Issues: https://github.com/ukrainianfilters/lists/issues
+!
 !
 ! !!!!!!!!!!!!!!!
 ! GENERAL RULES
@@ -54,6 +55,7 @@
 ! >>>
 ! "Sign In With Google" pop-up container
 ###credential_picker_container
+!
 !
 ! !!!!!!!!!!!!!!!
 ! UKRAINIAN WEBSITES
@@ -123,6 +125,9 @@ volia.com##.agreeCookie\.component__cookieWrapper
 wayforpay.com###cookiesNoticeContainer
 zaxid.net###pushNotificationBanner
 znaj.ua##div.privacy-policy
+! >>>
+||*/js/remodal.js^$script,domain=agroter.com.ua
+!
 !
 ! !!!!!!!!!!!!!!!
 ! POPULAR FOREIGN WEBSITES
@@ -144,8 +149,10 @@ developer.mozilla.org##.top-banner
 dribbble.com##.announcements
 dribbble.com##.sticky-pro-upsell-widget
 mozilla.org##.mzp-c-sticky-promo
+reddit.com###credential_picker_container
 virustotal.com##.footer-notifications
 virustotal.com##div#mainContent > privacy-policy-changes-banner
+!
 !
 ! !!!!!!!!!!!!!!!
 ! POPULAR FOREIGN WEBSITES
