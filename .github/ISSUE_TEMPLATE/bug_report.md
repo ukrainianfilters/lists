@@ -33,15 +33,15 @@ assignees: serhiyguryev
 
 ### Списки фільтрів, які ви використовуєте
 
-**Які сторонні списки блокувань ви використовуєте?**
-
-<!-- наприклад, ABP filters, EasyList, EasyPrivacy, Fanboy's Annoyance List тощо
-     вкажіть версію (за наявності) та (або) дату створення для цих списків блокувань -->
-
 **Які саме Ukrainian Filters (Українські фільтри) ви використовуєте?**
 
 <!-- наприклад, Ukrainian Ad Filter, Ukrainian Annoyance Filter, Ukrainian Privacy Filter, Ukrainian Security Filter
      вкажіть версію та дату створення для цих списків (ОБОВ'ЯЗКОВО) -->
+
+**Які сторонні списки блокувань ви використовуєте?**
+
+<!-- наприклад, ABP filters, EasyList, EasyPrivacy, Fanboy's Annoyance List тощо
+     вкажіть версію (за наявності) та (або) дату створення для цих списків блокувань -->
 
 ### Програмне забезпечення, що використовується
 
