@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian and some popular foreign websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.08.27
-! Last modified: Sun, 11 August 2024 17:51 EEST
+! Version: 24.08.28
+! Last modified: Sun, 11 August 2024 19:06 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -101,6 +101,8 @@ football24.ua##.privete-polisy
 fozzyshop.ua###iqitcookielaw
 gsm.in.ua##.notice--cookie
 holosameryky.com##div.slide-in-wg
+jakosport.com.ua##div.notice-module
+jakosport.com.ua##div[aria-label="cookieconsent"]
 konkurent.ua##div.popupCookie
 kyivpost.com##.stpd_cmp
 kyivstar.ua##div[class*="RegionalityPopover_regionality"]
@@ -108,6 +110,8 @@ ligazakon.net##div.wrapper-banner-by-tag
 ligazakon.net##section#main_popup_modal
 luxoptica.ua##div#yourTown.modal
 medis.com.ua##div.privacy-policy
+medspace.lviv.ua##div[aria-label="cookieconsent"]
+meest.com##div.cookies-banner
 meta.ua##div.adl_cmp_consent-dialog-module_backdrop
 mgmotor.com.ua##div.cookie-show
 morshynska.ua##div.cookie_block
@@ -116,6 +120,9 @@ novadigital.com##div.npd-cookies
 novapay.ua##div.cookies.show-cookies
 novaposhta.ua##div#popup_info
 olx.ua##div[data-testid="cookies-overlay__container"]
+podorozhnyk.ua##div.chat-bot
+podorozhnyk.ua##div.cookie-agreement
+podorozhnyk.ua##div.mobile-app-popup
 portmone.com.ua##.ptm-banner__cat-fish
 portmone.com.ua##app-cookies-modal
 privatbank.ua##+js(set-cookie, analytics_allowed, 0)
@@ -124,6 +131,7 @@ radiosvoboda.org##div.slide-in-wg
 rbc.ua##.privacy
 ria.com###gdpr-notifier
 samsung.com##div.cookie-bar
+shakhtar.com###using-cookie-warning
 silpo.ua##.cookie-banner
 speka.media##div.js-cookie-banner
 sport.ua##div.adl_cmp_consent-dialog-module_backdrop
@@ -133,6 +141,7 @@ tascombank.ua##div.cookie-message
 telegraf.com.ua##.c-cookies
 teleportal.ua##.cookie_container
 texty.org.ua##div.donate-banner
+truskavetska.com.ua##div.cookiealert
 u24.gov.ua##app-cookie-dialog
 ukrgasbank.com##div.cookies-popup
 ukrposhta.ua##.cookie-message
