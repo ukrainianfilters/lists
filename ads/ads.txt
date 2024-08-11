@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.24
-! Last modified: Sat, 10 August 2024 23:45 EEST
+! Version: 24.08.25
+! Last modified: Sun, 11 August 2024 14:33 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -50,6 +50,7 @@ eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 football24.ua##+js(remove-node-text, script, manageMembranaAdvWrappers)
 football24.ua##+js(remove-node-text, script, zone_)
 itc.ua##+js(remove-node-text, script, /images/banners/)
+liga.net##+js(remove-node-text, script, div-gpt-ad)
 sinoptik.ua##+js(remove-node-text, script, "Shadow, stay, 1)
 sinoptik.ua##+js(remove-node-text, script, adpartner_init)
 sinoptik.ua##+js(remove-node-text, script, AdsLoader)
@@ -235,10 +236,15 @@ kyivindependent.com##iframe[data-engage-slug^="popupjoinus"]
 kyivpost.com##div.col-xl-2.d-xl-block:has(> a > img[alt="Kador Group"])
 kyivpost.com##div.section-title:has-text(Sponsored content)
 kyivpost.com##div[class^="ad-wrapper"]:remove()
+lb.ua##[class^="adv-banner"]
+lb.ua##div.cookie-info
+lb.ua##div.layout-anons
+liga.net###addBlockModal
 liga.net##article.is-partners
 liga.net##div.ad
 liga.net##div.article-footer__widget.b-blocks
 liga.net##div.article-footer__widget.b-subs
+liga.net##div.banner:remove()
 magnolia-tv.com##div#SinoptikInformer
 mc.today##[data-coursestyle]
 mc.today##div.company-slider
