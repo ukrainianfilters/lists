@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian and some popular foreign websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.08.24
-! Last modified: Sat, 10 August 2024 23:45 EEST
+! Version: 24.08.25
+! Last modified: Sun, 11 August 2024 14:33 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -50,11 +50,14 @@
 ###CookiesDiv
 ###EU_Cookie_Message
 ###gdpr-disclaimer
-###onetrust-consent-sdk
 ##dialog.cookie-policy
 ! >>>
 ! "Sign In With Google" pop-up container
 ###credential_picker_container
+! >>>
+! OneTrust Cookie Consent
+###onetrust-consent-sdk
+||cdn.cookielaw.org^$script
 !
 !
 ! !!!!!!!!!!!!!!!
@@ -77,6 +80,8 @@ comfy.ua##div.ask-city-desktop
 comfy.ua##div.info-popup__content
 comfy.ua##div.weblayer--box-subscription-1
 creativestates.net##div[class^="Cookies_cookies__"]
+darnytsia.ua##div[class^="dar-Cookies"]
+darnytsia.ua##div[class^="dar-Popup"]
 diia.gov.ua##div.cookies-banner-wrapper
 dom.ria.com##div.c-notifier:has(input[id="gdpr_settings"])
 dostup.org.ua,dostup.pravda.com.ua##.sp-show
@@ -93,6 +98,7 @@ kyivpost.com##.stpd_cmp
 kyivstar.ua##div[class*="RegionalityPopover_regionality"]
 ligazakon.net##div.wrapper-banner-by-tag
 ligazakon.net##section#main_popup_modal
+luxoptica.ua##div#yourTown.modal
 medis.com.ua##div.privacy-policy
 meta.ua##div.adl_cmp_consent-dialog-module_backdrop
 mgmotor.com.ua##div.cookie-show
@@ -152,11 +158,3 @@ mozilla.org##.mzp-c-sticky-promo
 reddit.com###credential_picker_container
 virustotal.com##.footer-notifications
 virustotal.com##div#mainContent > privacy-policy-changes-banner
-!
-!
-! !!!!!!!!!!!!!!!
-! POPULAR FOREIGN WEBSITES
-!  > Exceptions
-! !!!!!!!!!!!!!!!
-!
-cnn.com#@##onetrust-consent-sdk
