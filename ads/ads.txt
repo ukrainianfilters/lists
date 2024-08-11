@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.25
-! Last modified: Sun, 11 August 2024 14:33 EEST
+! Version: 24.08.27
+! Last modified: Sun, 11 August 2024 17:51 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -56,6 +56,7 @@ sinoptik.ua##+js(remove-node-text, script, adpartner_init)
 sinoptik.ua##+js(remove-node-text, script, AdsLoader)
 starlight.digital##+js(set-constant, Object.prototype.ottExt, null)
 trueua.info##+js(remove-node-text, script, go.rcvlink.com/static/main.js)
+ukr.net##+js(remove-node-text, script, mixadvert)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 zn.ua##+js(remove-node-text, script, banners_types)
 !
@@ -108,6 +109,7 @@ defence-ua.com##div.content > hr:nth-of-type(-n+2)
 defence-ua.com##div.text-center:has(ins)
 defence-ua.com##div[class^="banner"]
 defence-ua.com##section[class^="banner"]
+detector.media##div.md_banner_zone
 dev.ua##.island[style^="padding: 2rem 0;"]
 dev.ua##[class^="partners"]
 dev.ua##div.afterheader-widget
@@ -363,7 +365,8 @@ ua-football.com##li.dropdown.header-bonus
 ua-football.com##li.gray-block.promo-btn__item
 ua.news##aside[class^="promo"]
 ukr.net##.fixed-block > div[class] ~ div
-ukr.net##.placeholder
+ukr.net##div.advertisement-block:remove()
+ukr.net##div.placeholder:has(.advertisement-block):remove()
 ukranews.com##.mailing-block
 ukranews.com##div#container[data-detachable-player]:has-text(Зараз дивляться)
 ukranews.com##noindex:has(.ad)
@@ -382,6 +385,9 @@ unian.ua##div[class^="banner"]
 unian.ua##li.newsfeed__item:has(span.blue-marker:has-text(НК))
 unn.ua##div[class^="informer_informer_"]
 unn.ua##div[id^="ads-sidebar"]
+v-variant.com.ua##div.donate-item_articles
+v-variant.com.ua##div.pum-overlay
+v-variant.com.ua##div.top-banner
 vctr.media##.banner-container
 village.com.ua##.post-additions
 village.com.ua##.post-block:has(.banner):style(min-height: 0 !important)
