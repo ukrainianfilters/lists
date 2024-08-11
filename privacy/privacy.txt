@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 24.08.24
-! Last modified: Sat, 10 August 2024 23:45 EEST
+! Version: 24.08.25
+! Last modified: Sun, 11 August 2024 14:33 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -17,10 +17,14 @@
 ||stattracking.pw^
 ! >>>
 ! facebook.com
-||connect.facebook.net^$third-party,domain=5.ua|agroter.com.ua|ain.business|ain.ua|apostrophe.ua|armyinform.com.ua|bigmir.net|cert.gov.ua|champion.com.ua|chytomo.com|defence-ua.com|dumskaya.net|dynamo.kiev.ua|epravda.com.ua|espreso.tv|eurointegration.com.ua|euromaidanpress.com|football.ua|football24.ua|gk-press.if.ua|holosameryky.com|hvylya.net|imi.org.ua|inforesist.org|interfax.com.ua|ipay.ua|isport.ua|istpravda.com.ua|kyiv24.news|kyivindependent.com|kyivpost.com|kyivstar.ua|magnolia-tv.com|mc.today|mezha.net|mil.in.ua|nachasi.com|nv.ua|ostro.org|petrimazepa.com|platfor.ma|pravda.com.ua|radiosvoboda.org|rubryka.com|slovnyk.ua|slovoidilo.ua|sportanalytic.com|sprotyv.info|storinka.com.ua|sud.ua|suspilne.media|tehnofan.com.ua|telegraf.com.ua|tribuna.com|trueua.info|tsn.ua|ukrinform.ua|village.com.ua|xsport.ua|zaxid.net
-||graph.facebook.com^$third-party,domain=gk-press.if.ua|glavcom.ua|magnolia-tv.com|petrimazepa.com|platfor.ma|slovoidilo.ua|ukrinform.ua|universalbank.com.ua|zn.ua
 ||facebook.com/plugins/likebox.php?*$third-party,domain=fn.ua
 ||facebook.com/plugins/post.php?*$third-party,domain=radiosvoboda.org
+! >>>
+! connect.facebook.net
+||connect.facebook.net^$third-party,domain=5.ua|agroter.com.ua|ain.business|ain.ua|apostrophe.ua|armyinform.com.ua|bigmir.net|cert.gov.ua|champion.com.ua|chytomo.com|defence-ua.com|dumskaya.net|dynamo.kiev.ua|epravda.com.ua|espreso.tv|eurointegration.com.ua|euromaidanpress.com|football.ua|football24.ua|gk-press.if.ua|holosameryky.com|hvylya.net|imi.org.ua|inforesist.org|interfax.com.ua|ipay.ua|isport.ua|istpravda.com.ua|kyiv24.news|kyivindependent.com|kyivpost.com|kyivstar.ua|lb.ua|magnolia-tv.com|mc.today|mezha.net|mil.in.ua|nachasi.com|nv.ua|ostro.org|petrimazepa.com|platfor.ma|pravda.com.ua|radiosvoboda.org|rubryka.com|slovnyk.ua|slovoidilo.ua|sportanalytic.com|sprotyv.info|storinka.com.ua|sud.ua|suspilne.media|tehnofan.com.ua|telegraf.com.ua|tribuna.com|trueua.info|tsn.ua|ukrinform.ua|village.com.ua|xsport.ua|zaxid.net
+! >>>
+! graph.facebook.com
+||graph.facebook.com^$third-party,domain=gk-press.if.ua|glavcom.ua|lb.ua|magnolia-tv.com|petrimazepa.com|platfor.ma|slovoidilo.ua|ukrinform.ua|universalbank.com.ua|zn.ua
 ! >>>
 ! piano.io
 ||api-esp-eu.piano.io^$third-party,domain=fakty.com.ua
