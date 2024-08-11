@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian and some popular foreign websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.08.26
-! Last modified: Sun, 11 August 2024 16:46 EEST
+! Version: 24.08.27
+! Last modified: Sun, 11 August 2024 17:51 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -23,6 +23,7 @@
 ! >>>
 ! Cookiebot
 ||consent.cookiebot.com^$script
+! >>>
 ##.cky-consent-container
 ##.cky-overlay
 ##.cookie
@@ -74,6 +75,7 @@ anc.ua##div.dropdown-accept-city
 antoshka.ua##div.promotion-popup
 auchan.ua##div.cookie-agreement-wrapper
 auchan.ua##div.right-banner_root__35ahv
+auto.ria.com###gdpr-notifier
 babel.ua##.js-cookies-modal:has(.c-cookies-box)
 bankvostok.com.ua##div.cookies-accept-block
 bi.ua##div.cookiePopup
@@ -85,7 +87,9 @@ comfy.ua##div.weblayer--box-subscription-1
 creativestates.net##div[class^="Cookies_cookies__"]
 darnytsia.ua##div[class^="dar-Cookies"]
 darnytsia.ua##div[class^="dar-Popup"]
+detector.media##div.msg_cooky_blk
 diia.gov.ua##div.cookies-banner-wrapper
+dom.ria.com##div:has(> div.mainContainer > div > div > div > div[data-tm="open-cookies-settings"])
 dom.ria.com##div.c-notifier:has(input[id="gdpr_settings"])
 dostup.org.ua,dostup.pravda.com.ua##.sp-show
 drovae.gov.ua##div[class^="cookies_cookies__"]
@@ -118,6 +122,7 @@ privatbank.ua##+js(set-cookie, analytics_allowed, 0)
 privatbank.ua##+js(set-cookie, marketing_allowed, 0)
 radiosvoboda.org##div.slide-in-wg
 rbc.ua##.privacy
+ria.com###gdpr-notifier
 samsung.com##div.cookie-bar
 silpo.ua##.cookie-banner
 speka.media##div.js-cookie-banner
@@ -133,6 +138,7 @@ ukrgasbank.com##div.cookies-popup
 ukrposhta.ua##.cookie-message
 volia.com##.agreeCookie\.component__cookieWrapper
 wayforpay.com###cookiesNoticeContainer
+zapchasti.ria.com###gdpr-notifier
 zaxid.net###pushNotificationBanner
 znaj.ua##div.privacy-policy
 ! >>>
