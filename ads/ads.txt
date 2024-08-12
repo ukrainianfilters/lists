@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.31
-! Last modified: Mon, 12 August 2024 13:22 EEST
+! Version: 24.08.32
+! Last modified: Mon, 12 August 2024 20:50 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -45,6 +45,7 @@
 ! zfctrack.net / znctrack.net
 bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,pravda.com.ua,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
 ! >>>
+dev.ua##+js(remove-node-text, script, globalAmlAds)
 eurointegration.com.ua##^script[onload*="error-report.com"]
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 football24.ua##+js(remove-node-text, script, manageMembranaAdvWrappers)
@@ -110,17 +111,19 @@ defence-ua.com##div.text-center:has(ins)
 defence-ua.com##div[class^="banner"]
 defence-ua.com##section[class^="banner"]
 detector.media##div.md_banner_zone
-dev.ua##.island[style^="padding: 2rem 0;"]
-dev.ua##[class^="partners"]
 dev.ua##div.afterheader-widget
+dev.ua##div.island:has(> div.island__body > div[data-sender="admixer"]):remove()
+dev.ua##div.partners-wrapper
 dev.ua##div.section-aside:has(ins.adsbygoogle):remove()
 dou.ua##div.b-adv-events
 dou.ua##div.b-dou-vacancies
 dou.ua##div.b-sponsors
-dou.ua##div.b-sticky-right-side:has(> div > div > div > div > h4.title.__hot)
-dou.ua##div.banner-fp
-dou.ua##div[id$="-adv-id"]
-dumskaya.net##.hideprint
+dou.ua##div#max-header-adv-id:has(a[href^="https://dou.ua/goto/?id="])
+dou.ua##div#topinfo
+dumskaya.net##div.hideprint
+dumskaya.net##div[style="background:#fff;"]:has(a.ad):remove()
+dumskaya.net##div#tops:remove()
+dumskaya.net##nav.nav:style(padding-top: 0 !important)
 dumskaya.net##noindex
 dynamo.kiev.ua##div#corpMagnet
 epochtimes.com.ua##aside:has(> iframe[src$="/sinoptik.html"])
@@ -260,7 +263,6 @@ mc.today##[data-coursestyle]
 mc.today##div.company-slider
 mc.today##div.mobile-hide:not(.widget-popular, .widget-popular-title):remove()
 mc.today##div.widget-vacancy
-meta.ua##div.adl_cmp_consent-dialog-module_backdrop
 meta.ua##div.banner-zone
 meta.ua##div.sidebar__ads
 meta.ua##div.subscriptions
@@ -332,8 +334,11 @@ sud.ua##div.b-sidebar-adv:remove()
 sud.ua##div.bbone-list
 sud.ua##div.col.sidebar > div > div.b-news-publist
 sud.ua##ul > li > div.b-news-item:has(a[href="https://t.me/sudua"])
-tabletki.ua##div.com__panel-container:has(a[rel*="sponsored"])
-tabletki.ua##h3.com__panel-header:has-text('реклама')
+tabletki.ua##div.adunit
+tabletki.ua##div.col:has(> aside > div.tabletki-adunit)
+tabletki.ua##div.col:has(> div.card > aside > div.tabletki-adunit)
+tabletki.ua##div.filter-advert
+tabletki.ua##div.row:has(> aside > div.tabletki-adunit)
 tabloid.pravda.com.ua##.alko
 tabloid.pravda.com.ua##.background-video[data-video-urls*="legend-transcode"]
 tabloid.pravda.com.ua##.koz-box
