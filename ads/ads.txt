@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.29
-! Last modified: Sun, 11 August 2024 19:22 EEST
+! Version: 24.08.31
+! Last modified: Mon, 12 August 2024 13:22 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -123,6 +123,7 @@ dou.ua##div[id$="-adv-id"]
 dumskaya.net##.hideprint
 dumskaya.net##noindex
 dynamo.kiev.ua##div#corpMagnet
+epochtimes.com.ua##aside:has(> iframe[src$="/sinoptik.html"])
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]:remove()
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(PROMOTED))
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(АНОНС))
@@ -204,6 +205,7 @@ inforesist.org##.dw_focus_widget_news_ticker
 inforesist.org##[class^="partners"]
 istpravda.com.ua##[class$="_banner"]:remove()
 istpravda.com.ua##[class$="-banner"]:remove()
+it-rating.ua##a.stickybl
 itc.ua##.featured-statti:has(a[href*="/partnerskij-proekt/"])
 itc.ua##[class^="partners"]
 itc.ua##[data-course]
@@ -221,6 +223,8 @@ itc.ua##li.widget-sticky:has(div[id^="div-gpt-ad-"]):remove()
 itc.ua##li[class*="widget_execphp"]:remove()
 itc.ua##li[id^="partner-posts"]:remove()
 itc.ua##p.intro[style*="background: linear-gradient"]
+itvua.tv##.adwrapper
+itvua.tv##[class*="banner"]
 konkurent.ua##div[class^="banner"]
 konkurent.ua##div[class^="bookmaker"]
 korrespondent.net##.article:has(em.advertising)
@@ -229,10 +233,13 @@ korrespondent.net##[class$="-banner"]
 krymr.com##div.media-block-wrap:has(h2:has-text(НОВИНИ ПАРТНЕРІВ)):remove()
 krymr.com##div.slide-in-wg
 krymr.com##div.wsw__embed:has(div.promo)
+kurs.com.ua###catfishWrap
+kurs.com.ua##div:not(div#bottomWrap).advertising:remove()
 kyiv24.news##.site-header:style(top: 0 !important)
 kyiv24.news##div.main-wrapper:style(margin-top: 0 !important)
 kyiv24.news##div#SinoptikInformer
 kyiv24.news##section.google-news
+kyivdictionary.com##div.grafiati-link
 kyivindependent.com##div.bottomPopupBanner
 kyivindependent.com##iframe[data-engage-slug^="popupjoinus"]
 kyivpost.com##div.col-xl-2.d-xl-block:has(> a > img[alt="Kador Group"])
@@ -390,10 +397,12 @@ v-variant.com.ua##div.donate-item_articles
 v-variant.com.ua##div.pum-overlay
 v-variant.com.ua##div.top-banner
 vctr.media##.banner-container
+vechirniy.kyiv.ua##div.page-promo
 village.com.ua##.post-additions
 village.com.ua##.post-block:has(.banner):style(min-height: 0 !important)
 village.com.ua##.post-block.post-block-featured:has(.g-sp-badge:has-text('ПРОМО'))
 village.com.ua##div[class^="banner"]
+visnyk-irpin.com.ua##div.widget_media_image
 vogue.ua##div[id^="admixer_"]
 work.ua##div.card:has(div.gamification-progress-content)
 xsport.ua##[class^="partners"]

@@ -20,7 +20,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 
 ### Ukrainian Annoyance Filter
 
-Фільтр блокує дратівливі елементи на українських та деяких популярних іноземних сайтах (повідомлення про файли cookie, спливаючі вікна, банери тощо).
+Фільтр блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо).
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
@@ -28,11 +28,13 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 
 ### Ukrainian Privacy Filter
 
-Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в Інтернеті. Цей фільтр видаляє скрипти та html-елементи систем коментування (Disqus, Facebook Comments Plugin тощо) на новинних та деяких інших сайтах. Якщо для вас це неприйнятно, не використовуйте цей фільтр.
+Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в Інтернеті.
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
 ```
+
+> Фільтр видаляє скрипти та html-елементи систем коментування (Disqus, Facebook Comments Plugin тощо) на новинних сайтах. Якщо для вас це неприйнятно, не використовуйте цей фільтр.
 
 ### Ukrainian Security Filter (Український безпековий фільтр)
 
