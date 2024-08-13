@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.32
-! Last modified: Mon, 12 August 2024 20:50 EEST
+! Version: 24.08.33
+! Last modified: Tue, 13 August 2024 19:08 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -43,21 +43,32 @@
 ||*error-report.com/*^$document,subdocument,xmlhttprequest,script
 ! >>>
 ! zfctrack.net / znctrack.net
-bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,liga.net,meteofor.com.ua,pravda.com.ua,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
+bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
 ! >>>
-dev.ua##+js(remove-node-text, script, globalAmlAds)
+! Google Publisher Tag (GPT)
+football.ua,football24.ua,itc.ua,ivona.ua##+js(remove-node-text, script, googletag)
+! >>>
+! Admixer
+dev.ua,vogue.ua##+js(remove-node-text, script, globalAmlAds)
+! >>>
+! Mixadvert
+ukr.net##+js(remove-node-text, script, mixadvert)
+! >>>
+! Membrana Media
+football24.ua##+js(remove-node-text, script, membrana.media)
+! >>>
+! umh.ua
+football.ua,football24.ua,ivona.ua##+js(remove-node-text, script, /libs/e.js)
+! >>>
 eurointegration.com.ua##^script[onload*="error-report.com"]
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 football24.ua##+js(remove-node-text, script, manageMembranaAdvWrappers)
-football24.ua##+js(remove-node-text, script, zone_)
 itc.ua##+js(remove-node-text, script, /images/banners/)
-liga.net##+js(remove-node-text, script, div-gpt-ad)
 sinoptik.ua##+js(remove-node-text, script, "Shadow, stay, 1)
 sinoptik.ua##+js(remove-node-text, script, adpartner_init)
 sinoptik.ua##+js(remove-node-text, script, AdsLoader)
 starlight.digital##+js(set-constant, Object.prototype.ottExt, null)
 trueua.info##+js(remove-node-text, script, go.rcvlink.com/static/main.js)
-ukr.net##+js(remove-node-text, script, mixadvert)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 zn.ua##+js(remove-node-text, script, banners_types)
 !
@@ -159,16 +170,17 @@ football.ua##.banner ~ .separator
 football.ua##[class$="-banner"]
 football.ua##div[class^="banner"]
 football.ua##div[id^="zone_"]:remove()
+football24.ua##[class*="adv_"]
 football24.ua##[class*="adv-"]
 football24.ua##[id*="AdvWrapper"]
-football24.ua###adv_info_banner
 football24.ua##aside.adv-insert + div.media_embed
 football24.ua##aside.adv-insert + p:empty + div.responsive-embed
 football24.ua##aside.adv-insert + p:has(img)
+football24.ua##div.mobileBrandingPlace
 football24.ua##div.news-text > p:has(strong > a[rel*="sponsored"])
 football24.ua##div.next-article:has(div.custom-adv-label) aside.adv-insert + p:has(img)
 football24.ua##div.next-article[id*="favbet"]
-football24.ua##div[id^="zone_"]
+football24.ua##div[id^="zone_"]:remove()
 football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
 football24.ua##li.news-list-item:has(span.custom-label:has-text(Партнерський матеріал))
 football24.ua##p.insert:has(a[rel*="sponsored"])
@@ -212,7 +224,6 @@ it-rating.ua##a.stickybl
 itc.ua##.featured-statti:has(a[href*="/partnerskij-proekt/"])
 itc.ua##[class^="partners"]
 itc.ua##[data-course]
-itc.ua##div.featured-in-new > div.row
 itc.ua##div.hidden-sm:has(div[id*="-banner-"]):remove()
 itc.ua##div.hidden-sm:has(img[src*="/images/banners/"]):remove()
 itc.ua##div.jobs-vacancy
@@ -228,6 +239,9 @@ itc.ua##li[id^="partner-posts"]:remove()
 itc.ua##p.intro[style*="background: linear-gradient"]
 itvua.tv##.adwrapper
 itvua.tv##[class*="banner"]
+ivona.ua##div.col-sm-6:has(span:has-text(Реклама))
+ivona.ua##div[class^="banner"]
+ivona.ua##div[id^="zone_"]:remove()
 konkurent.ua##div[class^="banner"]
 konkurent.ua##div[class^="bookmaker"]
 korrespondent.net##.article:has(em.advertising)
@@ -380,6 +394,7 @@ ua.news##aside[class^="promo"]
 ukr.net##.fixed-block > div[class] ~ div
 ukr.net##div.advertisement-block:remove()
 ukr.net##div.placeholder:has(.advertisement-block):remove()
+ukr.net##div.placeholder:has(> img[alt="Advertisement"])
 ukranews.com##.mailing-block
 ukranews.com##div#container[data-detachable-player]:has-text(Зараз дивляться)
 ukranews.com##noindex:has(.ad)
@@ -408,8 +423,7 @@ village.com.ua##.post-block:has(.banner):style(min-height: 0 !important)
 village.com.ua##.post-block.post-block-featured:has(.g-sp-badge:has-text('ПРОМО'))
 village.com.ua##div[class^="banner"]
 visnyk-irpin.com.ua##div.widget_media_image
-vogue.ua##div[id^="admixer_"]
-work.ua##div.card:has(div.gamification-progress-content)
+vogue.ua##div.box__bnr:has(> div.bnr_wrap)
 xsport.ua##[class^="partners"]
 xsport.ua##div.site:style(margin-top: 20px !important)
 xsport.ua##div[class^="bookmaker"]
