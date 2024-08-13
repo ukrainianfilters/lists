@@ -61,7 +61,7 @@ https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main
 
 ### uBlock Origin
 
-[uBlock Origin](https://github.com/gorhill/uBlock) (uBO) — це платформонезалежне розширення для фільтрації контенту (блокує рекламу, трекери, майнери, дратівливі елементи, шкідливі сайти) для Firefox та інших браузерів, що засновані на [Chromium](https://uk.wikipedia.org/wiki/Chromium) (зокрема, Google Chrome, Opera, Microsoft Edge, Brave).
+[uBlock Origin](https://github.com/gorhill/uBlock) (uBO) — це платформонезалежне розширення фільтрації контенту (блокує рекламу, трекери, майнери, дратівливі елементи, шкідливі сайти) для Firefox та інших браузерів, що засновані на [Chromium](https://uk.wikipedia.org/wiki/Chromium) (зокрема, Google Chrome, Opera, Microsoft Edge, Brave).
 
 <details>
 <summary>Windows, macOS, Linux та Android</summary>
