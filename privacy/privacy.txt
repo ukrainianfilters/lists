@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 24.08.39
-! Last modified: Wed, 14 August 2024 13:52 EEST
+! Version: 24.08.40
+! Last modified: Wed, 14 August 2024 18:55 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -15,7 +15,6 @@
 ! !!!!!!!!!!!!!!!
 !
 ||stattracking.pw^
-||search.com.ua/analytics/js/*^$script,domain=search.com.ua
 ! >>>
 ! facebook.com
 ||facebook.com/plugins/likebox.php?*$third-party,domain=fn.ua
@@ -60,6 +59,7 @@
 ! ok.ru
 ||connect.ok.ru^$third-party
 ! >>>
+||search.com.ua/analytics/js/*^$script,domain=search.com.ua
 bigmir.net##div.widget:has(div.widget-socials):remove()
 !
 !
@@ -67,6 +67,8 @@ bigmir.net##div.widget:has(div.widget-socials):remove()
 ! COMMENTS
 ! !!!!!!!!!!!!!!!
 !
+user/js/glavcom_komments.min.js$script,domain=glavcom.ua
+! >>>
 5.ua##.fb-comments:remove()
 5.ua##h2:has-text(ПРОКОМЕНТУЙТЕ):remove()
 9to5linux.com###disqus_thread:remove()
@@ -112,5 +114,3 @@ ukurier.gov.ua##.article-comments:remove()
 xsport.ua###comment-block:remove()
 zaxid.net##.facebook-comments:remove()
 zn.ua##.comments-box:remove()
-! >>>
-user/js/glavcom_komments.min.js$script,domain=glavcom.ua
