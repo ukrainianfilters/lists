@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.40
-! Last modified: Wed, 14 August 2024 18:55 EEST
+! Version: 24.08.41
+! Last modified: Wed, 14 August 2024 20:18 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -46,10 +46,10 @@
 bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
 ! >>>
 ! Google Publisher Tag (GPT)
-football.ua,football24.ua,itc.ua,ivona.ua##+js(remove-node-text, script, googletag)
+5.ua,apostrophe.ua,football.ua,football24.ua,itc.ua,ivona.ua##+js(remove-node-text, script, googletag)
 ! >>>
 ! Admixer
-dev.ua,vogue.ua##+js(remove-node-text, script, globalAmlAds)
+apostrophe.ua,chas.news,dev.ua,vogue.ua##+js(remove-node-text, script, globalAmlAds)
 ! >>>
 ! Mixadvert
 ukr.net##+js(remove-node-text, script, mixadvert)
@@ -106,9 +106,14 @@ zn.ua##+js(remove-node-text, script, banners_types)
 24tv.ua##app-video-adv-block
 24tv.ua##app-without-ads.news-wrapper:has(app-custom-adv-label > div > div.custom-adv-label)
 24tv.ua##div.video-dv-wrapper
+5.ua##div[class^="banner"]:has(div[id^="div-gpt-ad-"]):remove()
+5.ua##div[class$="banner"]:has(div[id^="div-gpt-ad-"]):remove()
+agronews.ua##div[class*="banner"]
+agronews.ua##div[class^="baner-"]
+agropolit.com##div.header__banner-wrap
 agroportal.ua##.fixedBlock
 agroportal.ua##a[href^="/"][target="_blank"]
-apostrophe.ua##.advertinline
+apostrophe.ua##.advertinline:remove()
 apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
 babel.ua##aside.c-subs-box.c-subs-social
@@ -127,6 +132,8 @@ champion.com.ua##div.section_news_adv
 champion.com.ua##div[class*="_banner_"]
 champion.com.ua##div[class^="banner"]
 chytomo.com##div[class^="banner"]
+dailylviv.com##.rightBanner
+dailylviv.com##div[id^="google_banner"]
 defence-ua.com##.share-news
 defence-ua.com##div.content > br:nth-of-type(-n+2)
 defence-ua.com##div.content > div.banner.text-center:remove()
@@ -134,6 +141,7 @@ defence-ua.com##div.content > hr:nth-of-type(-n+2)
 defence-ua.com##div.text-center:has(ins)
 defence-ua.com##div[class^="banner"]
 defence-ua.com##section[class^="banner"]
+detector.media##div.banner_brend
 detector.media##div.md_banner_zone
 dev.ua##div.afterheader-widget
 dev.ua##div.island:has(> div.island__body > div[data-sender="admixer"]):remove()
