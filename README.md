@@ -48,7 +48,7 @@ https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main
 
 ## Сумісність з браузерами та розширеннями
 
-Фільтри `Ukrainian Ad Filter`, `Ukrainian Annoyance Filter` та `Ukrainian Privacy Filter` створені з використанням синтаксису фільтрації розширення [uBlock Origin](https://github.com/gorhill/uBlock) (uBO).
+Фільтри `Ukrainian Ad Filter`, `Ukrainian Annoyance Filter` та `Ukrainian Privacy Filter` створені з використанням синтаксису фільтрації розширення [uBlock Origin](https://ublockorigin.com/) (uBO).
 
 Користувачам персональних комп'ютерів та мобільних пристроїв на базі ОС Android ми рекомендуємо використовувати розширення [uBlock Origin](https://ublockorigin.com/) разом з браузером [Firefox](https://www.mozilla.org/firefox/).
 
@@ -61,7 +61,7 @@ https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main
 
 ### uBlock Origin
 
-[uBlock Origin](https://github.com/gorhill/uBlock) (uBO) — це платформонезалежне розширення фільтрації контенту (блокує рекламу, трекери, майнери, дратівливі елементи, шкідливі сайти) для Firefox та інших браузерів, що засновані на [Chromium](https://uk.wikipedia.org/wiki/Chromium) (зокрема, Google Chrome, Opera, Microsoft Edge, Brave).
+[uBlock Origin](https://ublockorigin.com/) (uBO) — платформонезалежне розширення фільтрації контенту для Firefox та інших браузерів, що засновані на [Chromium](https://uk.wikipedia.org/wiki/Chromium) (зокрема, Google Chrome, Opera, Microsoft Edge, Brave). Переваги цього розширення: вільне програмне забезпечення з відкритим кодом, ефективне використання процесора та пам'яті, об'єктивно найкращий вибір з точки зору функціональних можливостей та гнучкості налаштувань.
 
 <details>
 <summary>Windows, macOS, Linux та Android</summary>
