@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.42
-! Last modified: Wed, 14 August 2024 22:18 EEST
+! Version: 24.08.43
+! Last modified: Wed, 14 August 2024 22:44 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -47,7 +47,7 @@
 bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
 ! >>>
 ! Google Publisher Tag (GPT)
-5.ua,apostrophe.ua,fakty.com.ua,focus.ua,football.ua,football24.ua,galinfo.com.ua,glavred.net,itc.ua,ivona.ua##+js(remove-node-text, script, googletag)
+5.ua,apostrophe.ua,fakty.com.ua,focus.ua,football.ua,football24.ua,galinfo.com.ua,glavred.net,interfax.com.ua,itc.ua,ivona.ua##+js(remove-node-text, script, googletag)
 ! >>>
 ! Admixer
 apostrophe.ua,chas.news,dev.ua,vogue.ua##+js(remove-node-text, script, globalAmlAds)
@@ -251,6 +251,8 @@ i.ua###Premium
 inforesist.org##.advert
 inforesist.org##.dw_focus_widget_news_ticker
 inforesist.org##[class^="partners"]
+interfax.com.ua##div.ad:remove()
+interfax.com.ua##div.ads:remove()
 istpravda.com.ua##[class$="_banner"]:remove()
 istpravda.com.ua##[class$="-banner"]:remove()
 it-rating.ua##a.stickybl
