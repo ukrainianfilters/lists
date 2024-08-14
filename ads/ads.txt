@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.41
-! Last modified: Wed, 14 August 2024 20:18 EEST
+! Version: 24.08.42
+! Last modified: Wed, 14 August 2024 22:18 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -28,6 +28,7 @@
 ||sinoptik.ua/informers_js.php^$third-party
 ||smi.pp.ua^$third-party
 ||stteeruptowind.com^$third-party
+||traffim.com^$third-party
 ||traffsender.com^$third-party
 ||worldwidegg.com^$document,third-party
 !
@@ -46,7 +47,7 @@
 bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
 ! >>>
 ! Google Publisher Tag (GPT)
-5.ua,apostrophe.ua,football.ua,football24.ua,itc.ua,ivona.ua##+js(remove-node-text, script, googletag)
+5.ua,apostrophe.ua,fakty.com.ua,focus.ua,football.ua,football24.ua,galinfo.com.ua,glavred.net,itc.ua,ivona.ua##+js(remove-node-text, script, googletag)
 ! >>>
 ! Admixer
 apostrophe.ua,chas.news,dev.ua,vogue.ua##+js(remove-node-text, script, globalAmlAds)
@@ -55,7 +56,7 @@ apostrophe.ua,chas.news,dev.ua,vogue.ua##+js(remove-node-text, script, globalAml
 ukr.net##+js(remove-node-text, script, mixadvert)
 ! >>>
 ! Membrana Media
-football24.ua##+js(remove-node-text, script, membrana.media)
+focus.ua,football24.ua##+js(remove-node-text, script, membrana.media)
 ! >>>
 ! umh.ua
 football.ua,football24.ua,ivona.ua##+js(remove-node-text, script, /libs/e.js)
@@ -157,6 +158,7 @@ dumskaya.net##div[style="background:#fff;"]:has(a.ad):remove()
 dumskaya.net##div#tops:remove()
 dumskaya.net##nav.nav:style(padding-top: 0 !important)
 dumskaya.net##noindex
+dw.com##div.advertisement
 dynamo.kiev.ua##div#corpMagnet
 epochtimes.com.ua##aside:has(> iframe[src$="/sinoptik.html"])
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]:remove()
@@ -178,6 +180,7 @@ expres.online##div.advertisement
 expres.online##div#SinoptikInformer
 fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"]):remove()
 fakty.com.ua##div.pip-video-wrapper
+fakty.com.ua##div[class^="promo-layer"]:remove()
 firtka.if.ua##[class*="advert"]
 flatfy.ua,lun.ua##div.DonateBanner
 flatfy.ua,lun.ua##div.feed-layout__item-holder:has(button[data-event-action="new_building_ads"])
@@ -213,6 +216,10 @@ football24.ua##ul:has(p.insert > b:has-text(Реклама)) + p:has(img)
 football24.ua##ul.news-list > li:has(article > a.title:has-text(FAVBET))
 forbes.ua##div:has(> div[class*="modal-interact-with-background"])
 forbes.ua##div[id^="adpartner-"]
+galinfo.com.ua##[id^="bannplace"]:remove()
+galinfo.com.ua##[id^="candyplace"]:remove()
+galinfo.com.ua##div#SinoptikInformer
+galinfo.com.ua##span.i728:remove()
 gazeta.ua##.informer
 gk-press.if.ua##.widget_media_image
 gk-press.if.ua###left-sidebar > .widget_text
@@ -221,6 +228,10 @@ gk-press.if.ua##div#SinoptikInformer
 glavcom.ua##div.sunsite_actions[data-action="banners"]
 glavcom.ua##div.sunsite_actions[data-action="voteboxes"]
 glavcom.ua##div[class^="banner"]
+glavred.net##div.bnr-block
+glavred.net##div.bnr-block--gray
+glavred.net##div.main-partners:remove()
+glavred.net##div.partner-news:remove()
 happymonday.ua##a[style="z-index: 0; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;"]:remove()
 happymonday.ua##body:style(background-image: none !important; padding-top: 0 !important;)
 happymonday.ua##div.adv
