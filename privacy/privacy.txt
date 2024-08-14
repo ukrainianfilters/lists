@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 24.08.38
-! Last modified: Wed, 14 August 2024 13:09 EEST
+! Version: 24.08.39
+! Last modified: Wed, 14 August 2024 13:52 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -22,7 +22,7 @@
 ||facebook.com/plugins/post.php?*$third-party,domain=radiosvoboda.org
 ! >>>
 ! connect.facebook.net
-||connect.facebook.net^$third-party,domain=5.ua|agroter.com.ua|ain.business|ain.ua|apostrophe.ua|armyinform.com.ua|bigmir.net|cert.gov.ua|champion.com.ua|chytomo.com|data.gov.ua|defence-ua.com|detector.media|dtek.com|dumskaya.net|dynamo.kiev.ua|elle.ua|epravda.com.ua|espreso.tv|eurointegration.com.ua|euromaidanpress.com|football.ua|football24.ua|gk-press.if.ua|holosameryky.com|hvylya.net|imi.org.ua|inforesist.org|interfax.com.ua|ipay.ua|isport.ua|istpravda.com.ua|ivona.ua|kyiv24.news|kyivindependent.com|kyivpost.com|kyivstar.ua|lb.ua|magnolia-tv.com|mc.today|mezha.net|mil.in.ua|nachasi.com|nv.ua|ostro.org|petrimazepa.com|platfor.ma|pravda.com.ua|radiosvoboda.org|rubryka.com|slovnyk.ua|slovoidilo.ua|sportanalytic.com|sprotyv.info|storinka.com.ua|sud.ua|suspilne.media|tehnofan.com.ua|telegraf.com.ua|tribuna.com|trueua.info|tsn.ua|ukrinform.ua|village.com.ua|work.ua|xsport.ua|zaxid.net
+||connect.facebook.net^$third-party,domain=5.ua|agroter.com.ua|ain.business|ain.ua|apostrophe.ua|armyinform.com.ua|bigmir.net|cert.gov.ua|champion.com.ua|chytomo.com|data.gov.ua|defence-ua.com|detector.media|dtek.com|dumskaya.net|dynamo.kiev.ua|elle.ua|epravda.com.ua|espreso.tv|eurointegration.com.ua|euromaidanpress.com|football.ua|football24.ua|gk-press.if.ua|holosameryky.com|hvylya.net|imi.org.ua|inforesist.org|interfax.com.ua|ipay.ua|isport.ua|istpravda.com.ua|ivona.ua|kyiv24.news|kyivindependent.com|kyivpost.com|kyivstar.ua|lb.ua|magnolia-tv.com|mc.today|mezha.net|mil.in.ua|nachasi.com|nv.ua|ostro.org|petrimazepa.com|platfor.ma|pravda.com.ua|radiosvoboda.org|rubryka.com|slovnyk.ua|slovoidilo.ua|sportanalytic.com|sprotyv.info|storinka.com.ua|sud.ua|suspilne.media|tehnofan.com.ua|telegraf.com.ua|tribuna.com|trueua.info|tsn.ua|ukrainer.net|ukrinform.ua|village.com.ua|work.ua|xsport.ua|zaxid.net
 ! >>>
 ! graph.facebook.com
 ||graph.facebook.com^$third-party,domain=gk-press.if.ua|glavcom.ua|lb.ua|magnolia-tv.com|petrimazepa.com|platfor.ma|slovoidilo.ua|ukrinform.ua|universalbank.com.ua|zn.ua
