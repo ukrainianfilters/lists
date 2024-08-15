@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.45
-! Last modified: Thu, 15 August 2024 09:18 EEST
+! Version: 24.08.46
+! Last modified: Thu, 15 August 2024 11:39 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -25,7 +25,6 @@
 ||membrana.media^$third-party
 ||pixel.tvstitch.com^$third-party
 ||receivedachest.com^$third-party
-||sinoptik.ua/informers_js.php^$third-party
 ||smi.pp.ua^$third-party
 ||stteeruptowind.com^$third-party
 ||traffim.com^$third-party
@@ -43,11 +42,14 @@
 ||*img-load.com/*^$script
 ||*error-report.com/*^$document,subdocument,xmlhttprequest,script
 ! >>>
+! AdRiver
+||/adriver.core.2.js^
+! >>>
 ! zfctrack.net / znctrack.net
 bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
 ! >>>
 ! Google Publisher Tag (GPT)
-5.ua,apostrophe.ua,fakty.com.ua,focus.ua,football.ua,football24.ua,galinfo.com.ua,glavred.net,interfax.com.ua,itc.ua,ivona.ua,minfin.com.ua##+js(remove-node-text, script, googletag)
+5.ua,apostrophe.ua,fakty.com.ua,focus.ua,football.ua,football24.ua,galinfo.com.ua,glavred.net,interfax.com.ua,itc.ua,ivona.ua,minfin.com.ua,novy.tv##+js(remove-node-text, script, googletag)
 ! >>>
 ! Admixer
 apostrophe.ua,chas.news,dev.ua,vogue.ua##+js(remove-node-text, script, globalAmlAds)
@@ -177,7 +179,6 @@ eurointegration.com.ua##p:has(> ins.adsbygoogle):remove()
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
 euromaidanpress.com##div.kompreno
 expres.online##div.advertisement
-expres.online##div#SinoptikInformer
 fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"]):remove()
 fakty.com.ua##div.pip-video-wrapper
 fakty.com.ua##div[class^="promo-layer"]:remove()
@@ -190,7 +191,6 @@ focus.ua##div.u-d-h-600:has(div[id*="ScriptRoot"])
 focus.ua##div[data-ad-title]:remove()
 football-ukraine.com##div.view:has-text(РЕКЛАМА):remove()
 football-ukraine.com##div[class$="-ad"]:remove()
-football-ukraine.com##div#SinoptikInformer
 football.ua##.banner ~ .separator
 football.ua##[class$="-banner"]
 football.ua##div[class^="banner"]
@@ -218,13 +218,11 @@ forbes.ua##div:has(> div[class*="modal-interact-with-background"])
 forbes.ua##div[id^="adpartner-"]
 galinfo.com.ua##[id^="bannplace"]:remove()
 galinfo.com.ua##[id^="candyplace"]:remove()
-galinfo.com.ua##div#SinoptikInformer
 galinfo.com.ua##span.i728:remove()
 gazeta.ua##.informer
 gk-press.if.ua##.widget_media_image
 gk-press.if.ua###left-sidebar > .widget_text
 gk-press.if.ua##div[style="text-align: center"] > [href][target="_blank"]
-gk-press.if.ua##div#SinoptikInformer
 glavcom.ua##div.sunsite_actions[data-action="banners"]
 glavcom.ua##div.sunsite_actions[data-action="voteboxes"]
 glavcom.ua##div[class^="banner"]
@@ -290,7 +288,6 @@ kurs.com.ua###catfishWrap
 kurs.com.ua##div:not(div#bottomWrap).advertising:remove()
 kyiv24.news##.site-header:style(top: 0 !important)
 kyiv24.news##div.main-wrapper:style(margin-top: 0 !important)
-kyiv24.news##div#SinoptikInformer
 kyiv24.news##section.google-news
 kyivdictionary.com##div.grafiati-link
 kyivindependent.com##div.bottomPopupBanner
@@ -308,7 +305,6 @@ liga.net##div.ad
 liga.net##div.article-footer__widget.b-blocks
 liga.net##div.article-footer__widget.b-subs
 liga.net##div.banner:remove()
-magnolia-tv.com##div#SinoptikInformer
 mc.today##[data-coursestyle]
 mc.today##div.company-slider
 mc.today##div.mobile-hide:not(.widget-popular, .widget-popular-title):remove()
@@ -332,6 +328,9 @@ moviegram.com.ua##div.elementor-element:has(> div > p > a[href="mailto:redaction
 moviegram.com.ua##section.elementor-section:has(> div > div > div > div.elementor-widget-wp-widget-advads_ad_widget):remove()
 nachasi.com##div.sticky-zone:has-text(Блоги компаній)
 nachasi.com##div.style_poster__MF3pg:has(.style_content__3CPKg)
+novy.tv##div.ads-catfish-container:remove()
+novy.tv##div.ads-sidebar:remove()
+novy.tv##div#sticky-ads:remove()
 novyny.live##div.sidebar.sidebar-article:has(.adsbygoogle)
 nv.ua##body.branding:style(padding-top: 20px !important)
 nv.ua##div[id^="async_spec"]:has(section[data-type="advertising"])
@@ -390,6 +389,10 @@ sud.ua##div.b-sidebar-adv:remove()
 sud.ua##div.bbone-list
 sud.ua##div.col.sidebar > div > div.b-news-publist
 sud.ua##ul > li > div.b-news-item:has(a[href="https://t.me/sudua"])
+synonimy.info##body:style(background-image: none !important)
+synonimy.info##body:style(background-image: none !important)
+synonimy.info##div:has(> ins.adsbygoogle):remove()
+synonimy.info##div:has(> ins.adsbygoogle):remove()
 tabletki.ua##div.adunit
 tabletki.ua##div.col:has(> aside > div.tabletki-adunit)
 tabletki.ua##div.col:has(> div.card > aside > div.tabletki-adunit)
@@ -482,7 +485,6 @@ zaxid.net##[class*="adv-"]
 zaxid.net##[id*="AdvWrapper"]
 zaxid.net##div[id^="slot300x"]
 zaxid.net##div#header_advt-wrapper:remove()
-zaxid.net##div#SinoptikInformer
 zbirna.com##div.sidebar-home-link:has(img[alt="Найкращі онлайн казино України"])
 zbirna.com##section.best_game_sec
 zn.ua##[data-action="banners"]
