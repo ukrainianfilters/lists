@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.47
-! Last modified: Thu, 15 August 2024 12:42 EEST
+! Version: 24.08.49
+! Last modified: Thu, 15 August 2024 19:23 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -69,8 +69,8 @@ eurointegration.com.ua,pravda.com.ua##^script[onload*="html-load.com"]
 ! >>>
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 football24.ua##+js(remove-node-text, script, manageMembranaAdvWrappers)
+internetua.com,sinoptik.ua##+js(remove-node-text, script, "Shadow, stay, 1)
 itc.ua##+js(remove-node-text, script, /images/banners/)
-sinoptik.ua##+js(remove-node-text, script, "Shadow, stay, 1)
 sinoptik.ua##+js(remove-node-text, script, adpartner_init)
 sinoptik.ua##+js(remove-node-text, script, AdsLoader)
 starlight.digital##+js(set-constant, Object.prototype.ottExt, null)
@@ -250,6 +250,9 @@ inforesist.org##.dw_focus_widget_news_ticker
 inforesist.org##[class^="partners"]
 interfax.com.ua##div.ad:remove()
 interfax.com.ua##div.ads:remove()
+internetua.com##div.article-widget-section:has(div.MIXADVERT_NET):remove()
+internetua.com##div.banner:remove()
+internetua.com##head > style:empty:style(all: inherit !important)
 istpravda.com.ua##[class$="_banner"]:remove()
 istpravda.com.ua##[class$="-banner"]:remove()
 it-rating.ua##a.stickybl
