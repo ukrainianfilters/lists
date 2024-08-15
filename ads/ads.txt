@@ -390,8 +390,6 @@ sud.ua##div.bbone-list
 sud.ua##div.col.sidebar > div > div.b-news-publist
 sud.ua##ul > li > div.b-news-item:has(a[href="https://t.me/sudua"])
 synonimy.info##body:style(background-image: none !important)
-synonimy.info##body:style(background-image: none !important)
-synonimy.info##div:has(> ins.adsbygoogle):remove()
 synonimy.info##div:has(> ins.adsbygoogle):remove()
 tabletki.ua##div.adunit
 tabletki.ua##div.col:has(> aside > div.tabletki-adunit)
