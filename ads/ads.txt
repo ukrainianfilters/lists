@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.46
-! Last modified: Thu, 15 August 2024 11:39 EEST
+! Version: 24.08.47
+! Last modified: Thu, 15 August 2024 12:42 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -223,8 +223,7 @@ gazeta.ua##.informer
 gk-press.if.ua##.widget_media_image
 gk-press.if.ua###left-sidebar > .widget_text
 gk-press.if.ua##div[style="text-align: center"] > [href][target="_blank"]
-glavcom.ua##div.sunsite_actions[data-action="banners"]
-glavcom.ua##div.sunsite_actions[data-action="voteboxes"]
+glavcom.ua##[data-action="banners"]
 glavcom.ua##div[class^="banner"]
 glavred.net##div.bnr-block
 glavred.net##div.bnr-block--gray
@@ -281,6 +280,8 @@ konkurent.ua##div[class^="bookmaker"]
 korrespondent.net##.article:has(em.advertising)
 korrespondent.net##.unit-side-informer
 korrespondent.net##[class$="-banner"]
+kp.ua##[class*="banner"]
+kp.ua##[data-action="banners"]
 krymr.com##div.media-block-wrap:has(h2:has-text(НОВИНИ ПАРТНЕРІВ)):remove()
 krymr.com##div.slide-in-wg
 krymr.com##div.wsw__embed:has(div.promo)
