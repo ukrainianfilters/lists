@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 24.08.45
-! Last modified: Thu, 15 August 2024 09:18 EEST
+! Version: 24.08.46
+! Last modified: Thu, 15 August 2024 11:39 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -27,7 +27,7 @@
 ||graph.facebook.com^$third-party,domain=gk-press.if.ua|glavcom.ua|lb.ua|magnolia-tv.com|minfin.com.ua|petrimazepa.com|platfor.ma|slovoidilo.ua|ukrinform.ua|universalbank.com.ua|zn.ua
 ! >>>
 ! piano.io
-||api-esp-eu.piano.io^$third-party,domain=fakty.com.ua
+||api-esp-eu.piano.io^$third-party,domain=fakty.com.ua|novy.tv
 ! >>>
 ! onesignal.com
 ||cdn.onesignal.com^$third-party
@@ -61,6 +61,16 @@
 ! >>>
 ||search.com.ua/analytics/js/*^$script,domain=search.com.ua
 bigmir.net##div.widget:has(div.widget-socials):remove()
+!
+!
+! !!!!!!!!!!!!!!!
+! INFORMERS
+! !!!!!!!!!!!!!!!
+!
+! >>>
+! sinoptik.ua
+||sinoptik.ua/informers_js.php^$third-party
+expres.online,football-ukraine.com,galinfo.com.ua,gk-press.if.ua,kyiv24.news,magnolia-tv.com,zaxid.net##div#SinoptikInformer
 !
 !
 ! !!!!!!!!!!!!!!!
