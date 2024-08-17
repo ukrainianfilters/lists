@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.51
-! Last modified: Fri, 16 August 2024 13:05 EEST
+! Version: 24.08.52
+! Last modified: Sat, 17 August 2024 19:14 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -50,7 +50,7 @@
 bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
 ! >>>
 ! Google Publisher Tag (GPT)
-5.ua,apostrophe.ua,fakty.com.ua,focus.ua,football.ua,football24.ua,galinfo.com.ua,glavred.net,interfax.com.ua,itc.ua,ivona.ua,minfin.com.ua,novy.tv,slovnyk.ua##+js(remove-node-text, script, googletag)
+5.ua,apostrophe.ua,fakty.com.ua,focus.ua,football.ua,football24.ua,galinfo.com.ua,glavred.net,ictv.ua,interfax.com.ua,itc.ua,ivona.ua,minfin.com.ua,novy.tv,slovnyk.ua,smachno.ua,vikna.tv##+js(remove-node-text, script, googletag)
 ! >>>
 ! Admixer
 apostrophe.ua,chas.news,dev.ua,vogue.ua##+js(remove-node-text, script, globalAmlAds)
@@ -357,6 +357,7 @@ osvita.ua##div:has(> div.blosk-advertising-google):remove()
 osvita.ua##div:has(> ins.adsbygoogle):remove()
 osvita.ua##div.article__advertising
 osvita.ua##div[class^="baners-"]:remove()
+pingvin.pro##div.col-lg-4:has(> div > div > ins.adsbygoogle):remove()
 pravda.com.ua##.unit_sp_place:remove()
 pravda.com.ua##[class$="_banner"]:remove()
 pravda.com.ua##[class$="-banner"]:remove()
@@ -379,6 +380,7 @@ sinoptik.ua##head > style:empty:style(all: inherit !important)
 slovnyk.ua##section[class^="section-ad"]:remove()
 slovoidilo.ua##div.branding-main
 slovoidilo.ua##div.te-center:has(ins.adsbygoogle)
+smachno.ua##div.adv-block_catfish:remove()
 speka.media##div.max-w-material-l:has(h3.socials__title)
 sport.ua##[class^="partners"]
 sport.ua##div.best_bookies
@@ -479,6 +481,8 @@ v-variant.com.ua##div.pum-overlay
 v-variant.com.ua##div.top-banner
 vctr.media##.banner-container
 vechirniy.kyiv.ua##div.page-promo
+vikna.tv##div.pip-video-wrapper
+vikna.tv##div[class^="promo-"]:remove()
 village.com.ua##.post-additions
 village.com.ua##.post-block:has(.banner):style(min-height: 0 !important)
 village.com.ua##.post-block.post-block-featured:has(.g-sp-badge:has-text('ПРОМО'))
