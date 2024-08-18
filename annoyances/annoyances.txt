@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.08.52
-! Last modified: Sat, 17 August 2024 19:14 EEST
+! Version: 24.08.53
+! Last modified: Sun, 18 August 2024 15:20 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -232,6 +232,15 @@ sport.ua##div.adl_cmp_consent-dialog-module_backdrop
 stat.gov.ua##.consent-modal
 stylus.ua##div.cookie-widget
 sud.ua##.bottom_style_bnr
+sud.ua##div.b-bblock
+sud.ua##div.b-bblock-social:remove()
+sud.ua##div.b-blog-sidebar
+sud.ua##div.b-content-holder-in:style(margin-right: 200px !important)
+sud.ua##div.b-news-list:has-text(Сьогодні день народження)
+sud.ua##div.bbone-list
+sud.ua##div.col.sidebar > div > div.b-news-publist
+sud.ua##ul > li > div.b-news-item:has(a[href="https://t.me/sudua"])
+suspilne.media##div.cookies-popup-suspilne
 svitovederevo.com.ua###oct-policy
 sweet.tv##div.cookie__popup
 tabletki.ua##div.app-link.active
@@ -261,6 +270,7 @@ ukrgasbank.com##div.cookies-popup
 ukrposhta.ua##.cookie-message
 uspacy.eu,uspacy.ua##div[class^="cookiesNotification_wrapper"]
 vandalvape.life###cookie
+varosh.com.ua##div.helpus
 venus-clinic.com.ua##div.pcb
 vin.gov.ua##.consent-block
 vinnitsa.info##div:has(> div > div > img[alt="App"])
