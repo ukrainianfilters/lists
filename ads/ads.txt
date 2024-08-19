@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.53
-! Last modified: Sun, 18 August 2024 15:20 EEST
+! Version: 24.08.54
+! Last modified: Mon, 19 August 2024 20:04 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -47,10 +47,10 @@
 ||/adriver.core.2.js^
 ! >>>
 ! zfctrack.net / znctrack.net
-bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
+bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,real-vin.com,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
 ! >>>
 ! Google Publisher Tag (GPT)
-5.ua,apostrophe.ua,fakty.com.ua,focus.ua,football.ua,football24.ua,galinfo.com.ua,glavred.net,ictv.ua,interfax.com.ua,itc.ua,ivona.ua,minfin.com.ua,novy.tv,slovnyk.ua,smachno.ua,vikna.tv,zaxid.net##+js(remove-node-text, script, googletag)
+5.ua,apostrophe.ua,fakty.com.ua,focus.ua,football.ua,football24.ua,galinfo.com.ua,glavred.net,ictv.ua,interfax.com.ua,itc.ua,ivona.ua,kinoafisha.ua,minfin.com.ua,novy.tv,slovnyk.ua,smachno.ua,vikna.tv,zaxid.net##+js(remove-node-text, script, googletag)
 ! >>>
 ! Admixer
 apostrophe.ua,chas.news,dev.ua,vogue.ua##+js(remove-node-text, script, globalAmlAds)
@@ -76,6 +76,7 @@ sinoptik.ua##+js(remove-node-text, script, adpartner_init)
 sinoptik.ua##+js(remove-node-text, script, AdsLoader)
 starlight.digital##+js(set-constant, Object.prototype.ottExt, null)
 trueua.info##+js(remove-node-text, script, go.rcvlink.com/static/main.js)
+ukr.net##+js(remove-node-text, script, getSectionAdv)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 zn.ua##+js(remove-node-text, script, banners_types)
 !
@@ -135,6 +136,8 @@ champion.com.ua##[class$="_banner"]:remove()
 champion.com.ua##div.section_news_adv
 champion.com.ua##div[class*="_banner_"]
 champion.com.ua##div[class^="banner"]
+chasdiy.org##div.side-content-wrapper:remove()
+chasdiy.org##div.top-content-wrapper:remove()
 chytomo.com##div[class^="banner"]
 dailylviv.com##.rightBanner
 dailylviv.com##div[id^="google_banner"]
@@ -163,6 +166,7 @@ dumskaya.net##nav.nav:style(padding-top: 0 !important)
 dumskaya.net##noindex
 dw.com##div.advertisement
 dynamo.kiev.ua##div#corpMagnet
+elitexpert.ua##.leader-wrap-out
 epochtimes.com.ua##aside:has(> iframe[src$="/sinoptik.html"])
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]:remove()
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(PROMOTED))
@@ -246,6 +250,8 @@ i.ua##.clear.logo_container
 i.ua##.news_premium_item
 i.ua##.partner_links
 i.ua###Premium
+imena.ua##section.widget:has(img[src$="banner_300x300.jpg"])
+incrypted.com##.top-banner-airdrops
 inforesist.org##.advert
 inforesist.org##.dw_focus_widget_news_ticker
 inforesist.org##[class^="partners"]
@@ -256,6 +262,7 @@ internetua.com##div.banner:remove()
 internetua.com##head > style:empty:style(all: inherit !important)
 istpravda.com.ua##[class$="_banner"]:remove()
 istpravda.com.ua##[class$="-banner"]:remove()
+it-rating.ua##.rowBan
 it-rating.ua##a.stickybl
 itc.ua##[class^="partners"]
 itc.ua##[data-course]
@@ -279,6 +286,10 @@ itvua.tv##[class*="banner"]
 ivona.ua##div.col-sm-6:has(span:has-text(Реклама))
 ivona.ua##div[class^="banner"]
 ivona.ua##div[id^="zone_"]:remove()
+kinoafisha.ua##a.link-main-image-wrap.fixed
+kinoafisha.ua##body.with-image:style(padding-top: 20px !important)
+kinoafisha.ua##div[class^="adpartner-"]:remove()
+kinoafisha.ua##div[class^="promo"]
 konkurent.ua##div[class^="banner"]
 konkurent.ua##div[class^="bookmaker"]
 korrespondent.net##.article:has(em.advertising)
@@ -338,6 +349,7 @@ novy.tv##div.ads-catfish-container:remove()
 novy.tv##div.ads-sidebar:remove()
 novy.tv##div#sticky-ads:remove()
 novyny.live##div.sidebar.sidebar-article:has(.adsbygoogle)
+noworries.news##.header-baner
 nv.ua##body.branding:style(padding-top: 20px !important)
 nv.ua##div[id^="async_spec"]:has(section[data-type="advertising"])
 obozrevatel.com##.headerBiding
@@ -348,6 +360,8 @@ obozrevatel.com##aside.headerBiding:has(div[class*="_970"]):remove()
 obozrevatel.com##div.recommendation
 obozrevatel.com##div[id^="carouselLast-slide"]:has(article.newsImg > div.banner)
 obozrevatel.com##div[id^="carouselmostViewed-slide"]:has(article.newsImg > div.banner)
+odessa-life.od.ua##div.code-block:remove()
+odessa-life.od.ua##div[class*="adrotate"]
 opendatabot.ua##aside#odb-open-in-app
 ostro.org##div.page-wrapper.hide-mob:has(div.container.page-container)
 ostro.org##div.press-reliz
@@ -358,6 +372,8 @@ osvita.ua##div:has(> ins.adsbygoogle):remove()
 osvita.ua##div.article__advertising
 osvita.ua##div[class^="baners-"]:remove()
 pingvin.pro##div.col-lg-4:has(> div > div > ins.adsbygoogle):remove()
+players.com.ua##a[class*="banner-"]
+players.com.ua##img[class*="banner-"]
 pravda.com.ua##.unit_sp_place:remove()
 pravda.com.ua##[class$="_banner"]:remove()
 pravda.com.ua##[class$="-banner"]:remove()
@@ -368,6 +384,7 @@ predmety.in.ua##div:has(> ins.adsbygoogle):remove()
 predmety.in.ua##div[style="height:550px; weight:auto;"]:empty
 prolinux.pp.ua##section.widget_block:has(ins.adsbygoogle):remove()
 prom.ua##div[style*="cloud-cgi/static/catalog-ui/js/build/portal-portable/maskWeb-5Wgei.png"]
+psm7.com##section.psm-header-baner-container
 rbc.ua##.vidverto-wrapper
 rbc.ua##[id^="admixer-"]
 rbc.ua##[id^="bn_"]
@@ -381,6 +398,7 @@ slovnyk.ua##section[class^="section-ad"]:remove()
 slovoidilo.ua##div.branding-main
 slovoidilo.ua##div.te-center:has(ins.adsbygoogle)
 smachno.ua##div.adv-block_catfish:remove()
+socportal.info##div[x-lazyload*='adsbygoogle']:remove()
 speka.media##div.max-w-material-l:has(h3.socials__title)
 sport.ua##[class^="partners"]
 sport.ua##div.best_bookies
@@ -446,8 +464,8 @@ ua-football.com##li.gray-block.promo-btn__item
 ua.news##aside[class^="promo"]
 ukr.net##.fixed-block > div[class] ~ div
 ukr.net##div.advertisement-block:remove()
-ukr.net##div.placeholder:has(.advertisement-block):remove()
-ukr.net##div.placeholder:has(> img[alt="Advertisement"])
+ukr.net##div.placeholder:remove()
+ukr.net##div[class$="-banner"]
 ukranews.com##.mailing-block
 ukranews.com##div#container[data-detachable-player]:has-text(Зараз дивляться)
 ukranews.com##noindex:has(.ad)
