@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.08.53
-! Last modified: Sun, 18 August 2024 15:20 EEST
+! Version: 24.08.55
+! Last modified: Tue, 20 August 2024 18:27 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -96,10 +96,12 @@ bat.ua###sysCookieMessage
 bbc.com##div[class^="bbc-"]:has(> div > div > h2:has-text(файлів cookies))
 bhub.com.ua##.policy-cookies
 bi.ua##div.cookiePopup
+biolights.ua###ct-ultimate-gdpr-cookie-popup
 bmw.ua##div.container:has(> div.cookies-content)
 bmw.ua##epaas-consent-drawer-shell
 board.if.ua###cookieslayer
 bonibons.com##div#epd:has(> div#cookiesdirective)
+brovary.net.ua##aside#moove_gdpr_cookie_info_bar
 bvr.ua##.cookie-notify
 canyon.ua##div.cn-cookies
 censor.net##.stpd_cmp
@@ -128,6 +130,7 @@ eba.com.ua##div.user-cookie-notice
 eobuv.com.ua##.modal-consents
 epravda.com.ua,pravda.com.ua##div#checkUPcookies
 euromix.in.ua###lqd-gdpr
+eurostudent.ua###cookie-law-info-bar
 everlegal.ua###consent-popup
 evzuttya.com.ua##.modal-consents
 facenews.ua###pblock
@@ -142,10 +145,16 @@ fora.ua##.jss93
 fozzyshop.ua###iqitcookielaw
 gorod.dp.ua###myCookieConsent
 gsm.in.ua##.notice--cookie
+heygop.com##aside[aria-label="GDPR Cookie Banner"]
 holosameryky.com##div.slide-in-wg
 i.ua##.Disclaimer
+igns.gov.ua##aside#moove_gdpr_cookie_info_bar
+incrypted.com##.incrypted-cookie-bar
 indigo.co.ua###cookie_notification
 inter.ua##.warning
+interflora.com.ua###cookies-policy
+itest.com.ua###clearfy-cookie
+itest.com.ua##div.mypopup-modal-container
 ithillel.ua##.cookie-ntf
 ivaniura.org.ua###accept_cookies
 jakosport.com.ua##div.notice-module
@@ -166,6 +175,7 @@ liga.net##div#cookie-reminder
 ligazakon.net##div.wrapper-banner-by-tag
 ligazakon.net##div[ng-if="showNewDoc"]
 ligazakon.net##section#main_popup_modal
+logity.ua##.cookie-banner
 lorgar.ua,lorgar.com##div.fixed.bottom-0:has(a[href="/privacy-policy"])
 luxoptica.ua##div#yourTown.modal
 lvivrada.gov.ua###simpletools_nl_cookie_notice
@@ -181,18 +191,24 @@ meteoprog.com##div.adl_cmp_consent-dialog-module_backdrop
 mgmotor.com.ua##div.cookie-show
 mhp.com.ua##.cookie-modal
 mobizon.ua##.confirm-cookie-block
+molliua.com###cookies-panel
+moonart.net.ua###cookiesPopup
 morshynska.ua##div.cookie_block
 my.ua##div.dEyatA
 mywatershop.com.ua##section.modal_cookies
+nasha-farba.com.ua##.cookieWrapper
 nashformat.ua##.special-wrapper
 novadigital.com##div.npd-cookies
 novapay.ua##div.cookies.show-cookies
 novaposhta.ua##div#popup_info
 ntn.ua##.warning
+obyava.ua##.cookie-bar
+odessa-life.od.ua###moove_gdpr_cookie_info_bar
 olx.ua##div[data-testid="cookies-overlay__container"]
 pasivka.com.ua###cookies-panel:remove()
 pdmsh.ua###cookies-modal
 penguin-team.ua##.coockies__message
+pfbcredit.com.ua###cookieBanner
 podorozhnyk.ua##div.chat-bot
 podorozhnyk.ua##div.cookie-agreement
 podorozhnyk.ua##div.mobile-app-popup
@@ -203,6 +219,8 @@ privatbank.ua##+js(set-cookie, analytics_allowed, 0)
 privatbank.ua##+js(set-cookie, marketing_allowed, 0)
 probitcoin.com.ua##.js-lwpcngNotice
 prostavochka.com.ua##.messages_cookies
+psm7.com##.m-cookies
+puratos.com.ua##+js(set-cookie, functionalCookieAccepted, true)
 qmall.io##div.vue-notification-group:has(> span > div > div.notification-cookies)
 radiosvoboda.org##div.slide-in-wg
 radioua.net##.cookie-consent
@@ -218,12 +236,18 @@ robota.ua##alliance-vacancies-company-carousel
 robota.ua##div.card-banner > img
 roshen.com##div.cookies-popup
 roshen.com##div.fixed-bottom-banner
+runy.org.ua##.cookieWrapper
 samsung.com##div.cookie-bar
+santen.ua##div.gdpr_v2
 search.com.ua##.cookie-policy-notice
+serpstat.com##.cookie-consent
+sestry.eu##.gl-cookie-consent
 shakhtar.com###using-cookie-warning
 silpo.ua##.cookie-banner
 smachno.ua##div.bubleblock_wrapper
 smachno.ua##div.header_top_desctop_bnr:has(div.cookie-pop)
+smarthost.net.ua##div[aria-label="cookieconsent"]
+solarpath.com.ua##aside#moove_gdpr_cookie_info_bar
 sony.ua##div:has(> div.privacy_prompt)
 soroban.ua###policy
 soroban.ua##div#chakra-toast-manager-bottom:has(a[href="/privacy-policy"])
@@ -258,21 +282,27 @@ tickets.ua##.app-cookies
 tipok.com.ua##div#sliding-popup:has(> div.eu-cookie-compliance-banner)
 torgsoft.kiev.ua##.cookie-allow-box
 toyota.ua##.cookie-prompt
+triumf.ua##.blur
 truskavetska.com.ua##div.cookiealert
 trusteeglobal.com##div#cc--main:has(> div > div > div > div > h2:has-text(cookies))
 tucha.ua##.bl-vcustom-cookies
 u24.gov.ua##app-cookie-dialog
+uaplantbased.com.ua###policy_popup
 uaserials.pro##div:has(> div#ask_modal_overlay)
 ucu.edu.ua###cookieNotice
 ucu.edu.ua###sp-cookie-consent
+ukraine-gta.com.ua##div.u-bottomFixer:has(> ul > li.notice--cookie)
 ukraine.com.ua###gdpr-banner-cookie
 ukrgasbank.com##div.cookies-popup
+ukrpol.ua##.notifier
 ukrposhta.ua##.cookie-message
+unilab.kiev.ua##.cookieWrapper
 uspacy.eu,uspacy.ua##div[class^="cookiesNotification_wrapper"]
 vandalvape.life###cookie
 varosh.com.ua##div.helpus
 venus-clinic.com.ua##div.pcb
 vin.gov.ua##.consent-block
+vinga.ua###cookies-banner
 vinnitsa.info##div:has(> div > div > img[alt="App"])
 vinnitsa.info##div.CookieConsent
 vitaello.com.ua###consent
@@ -281,6 +311,7 @@ vseosvita.ua##.bottom-banner
 vseosvita.ua##.vo-banner
 vseosvita.ua###vr-n-sharick-open
 wayforpay.com###cookiesNoticeContainer
+web-promo.ua###cookies_popup
 whitebit.com##div#cc-main:has(> div > div > div > div > p > a[href$="/terms/cookies"])
 whiteweb.ua##div[aria-label="cookieconsent"]
 work.ua##div.card:has(div.gamification-progress-content)
@@ -288,6 +319,7 @@ yasensvit.ua##.coockies
 yasensvit.ua##.popup--tgBot__wrap
 zapchasti.ria.com###gdpr-notifier
 zaxid.net###pushNotificationBanner
+zeppelin.ua###cookieNote
 znaj.ua##div.privacy-policy
 zootovary.com##div[aria-label="cookieconsent"]
 zootovary.com##span[id^="cookieconsent"]
