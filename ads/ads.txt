@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.56
-! Last modified: Wed, 21 August 2024 14:17 EEST
+! Version: 24.08.57
+! Last modified: Thu, 22 August 2024 13:37 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -118,6 +118,7 @@ agronews.ua##div[class^="baner-"]
 agropolit.com##div.header__banner-wrap
 agroportal.ua##.fixedBlock
 agroportal.ua##a[href^="/"][target="_blank"]
+ain.ua##div[class^="adsense-"]
 apostrophe.ua##.advertinline:remove()
 apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
