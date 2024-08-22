@@ -36,7 +36,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.tx
 
 ### Ukrainian Security Filter (Український безпековий фільтр)
 
-Це [фільтр шкідливих веб-ресурсів](https://github.com/braveinnovators/ukrainian-security-filter) (фішинг, онлайн-шахрайство, шкідливе програмне забезпечення тощо), що орієнтовані на громадян України.
+Це [фільтр шкідливих веб-ресурсів](https://github.com/braveinnovators/ukrainian-security-filter) (фішинг, онлайн-шахрайство, шкідливе програмне забезпечення тощо), що орієнтовані на громадян України (розробка: [@braveinnovators](https://github.com/braveinnovators))
 
 ```
 https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt
