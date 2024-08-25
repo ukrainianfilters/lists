@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.61
-! Last modified: Fri, 23 August 2024 14:23 EEST
+! Version: 24.08.63
+! Last modified: Sun, 25 August 2024 15:06 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -99,6 +99,7 @@ zn.ua##+js(remove-node-text, script, banners_types)
 !
 ||1plus1.video/static/js/api.gpt.js^
 ||1plus1.video/ua/ab/?whole^
+||5.ua/js/banner^
 ! >>>
 1plus1.ua##div.articleHeaderAdv
 1plus1.ua##div.gridSection__list:style(max-width: none !important)
@@ -129,6 +130,7 @@ apostrophe.ua##.advertinline:remove()
 apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
 babel.ua##aside.c-subs-box.c-subs-social
+bihus.info##div.r-tram_wrap
 board.if.ua##noindex:has(div > ins.adsbygoogle)
 buhgalter.com.ua,buhgalter911.com##body.access *:style(filter: none !important)
 buhgalter.com.ua,buhgalter911.com##body.access div[id^="access-au"]
@@ -195,6 +197,12 @@ expres.online##div.advertisement
 fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"]):remove()
 fakty.com.ua##div.pip-video-wrapper
 fakty.com.ua##div[class^="promo-layer"]:remove()
+finance.ua###sticky-wrapper:has(div[id^="div-gpt-ad-"])
+finance.ua##div.bottom_banner
+finance.ua##div.minfin-banner
+finance.ua##div[class^="Advertising"]
+finance.ua##div[id^="banner-zone"]
+finance.ua##td.h-adv
 firtka.if.ua##[class*="advert"]
 flatfy.ua,lun.ua##div.DonateBanner
 flatfy.ua,lun.ua##div.feed-layout__item-holder:has(button[data-event-action="new_building_ads"])
@@ -355,6 +363,7 @@ mezha.media##div.news-item:has(a[rel="author"]:has-text(Promoted))
 mezha.media##div#wrapper > div:has(a.banner-link)
 minfin.com.ua##.mfz-post:has([data-link="rubric"]:has-text(Промо))
 minfin.com.ua##[class*="banner"]
+minfin.com.ua###special-product-offer
 minfin.com.ua##div.aside-pull-right-block:has(> div[id^="premium-"]):remove()
 minfin.com.ua##div[data-bn-slot]:remove()
 moviegram.com.ua##div.elementor-element:has(> div > p > a[href="mailto:redaction@moviegram.com.ua"])
@@ -439,6 +448,8 @@ sportanalytic.com##div.block:has-text(Партнер)
 sportanalytic.com##div.fb_iframe_widget:remove()
 sportanalytic.com##div.wblock:has-text(Інші новини)
 sportanalytic.com##div#news:has-text(Картина дня)
+sportarena.com##[data-partner]
+sportarena.com##div.nomobile:style(margin-top: unset !important)
 storinka.com.ua##div.share
 storinka.com.ua##div.widget:not([class$="hidden-xs"])
 sud.ua##div.b-sidebar-adv:remove()
