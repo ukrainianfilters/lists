@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 24.08.61
-! Last modified: Fri, 23 August 2024 14:23 EEST
+! Version: 24.08.63
+! Last modified: Sun, 25 August 2024 15:06 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -17,7 +17,7 @@
 ||stattracking.pw^
 ! >>>
 ! Google Tag Manager
-1plus1.video,ain.ua,playua.net,radiosvoboda.org,sport24.ua##+js(remove-node-text, script, gtm.start)
+1plus1.video,ain.ua,finance.ua,playua.net,radiosvoboda.org,sport24.ua##+js(remove-node-text, script, gtm.start)
 ! >>>
 ! facebook.com
 ||facebook.com/plugins/likebox.php?*$third-party,domain=fn.ua
@@ -121,6 +121,8 @@ kyivpost.com##.comments-block:remove()
 liga.net###fb-comm-block:remove()
 mezha.media###comments:remove()
 mil.in.ua##.fb-comments:remove()
+minfin.com.ua###gotoComment:remove()
+minfin.com.ua##span.write-comments
 nachasi.com##div[id*="comments-"]
 pravda.com.ua##.post__comments:remove()
 pravda.com.ua##.post_comments:remove()
