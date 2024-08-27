@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.08.63
-! Last modified: Sun, 25 August 2024 15:06 EEST
+! Version: 24.08.64
+! Last modified: Tue, 27 August 2024 21:47 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -114,6 +114,7 @@ cloud.net.ua##.cookie-modal
 club4paws.ua##div.attention:has(> div > div > button[class$="js-accept-cookies"])
 codan.com.ua##div.cookies-bar
 codes.com.ua##div.fixed-bottom:has(> div#cookie)
+columbia.ua###cookies-panel
 comfy.ua##div.ask-city-desktop
 comfy.ua##div.info-popup__content
 comfy.ua##div.weblayer--box-subscription-1
@@ -154,7 +155,9 @@ football24.ua##.privete-polisy
 fora.ua##.jss93
 fozzyshop.ua###iqitcookielaw
 freelancehunt.com###cookie-bar
+funduk.ua###cookie_inform
 gorod.dp.ua###myCookieConsent
+gorsovet.com.ua##div.cookie-consent
 gsm.in.ua##.notice--cookie
 hellohelen.com##div.cookie-box
 heygop.com##aside[aria-label="GDPR Cookie Banner"]
@@ -172,6 +175,7 @@ ivaniura.org.ua###accept_cookies
 jakosport.com.ua##div.notice-module
 jakosport.com.ua##div[aria-label="cookieconsent"]
 juscutum.com##div.popup__wrapper:has(> div > div > div.cookie-modal_component)
+kernel.ua##div[role="dialog"]:has(div#modal-cookie-policy)
 kg.ua###slidebox45
 kidstaff.com.ua###gdpr_panel
 kinobaza.com.ua##div[role="alert"]
@@ -183,6 +187,7 @@ kp.ua##.modal_policy
 kyivdictionary.com###cookies-banner-wrap
 kyivpost.com##.stpd_cmp
 kyivstar.ua##div[class*="RegionalityPopover_regionality"]
+landrover.ua##section[data-cy="cookie-banner"]
 legalitgroup.com##div#cookies-banner
 legs.com.ua##.cookie-modal
 lexus.ua##section:has(> div.cookies-consent)
@@ -212,6 +217,7 @@ mobizon.ua##.confirm-cookie-block
 molliua.com###cookies-panel
 moonart.net.ua###cookiesPopup
 morshynska.ua##div.cookie_block
+mvs.gov.ua##div.cookie-message
 my.ua##div.dEyatA
 mywatershop.com.ua##section.modal_cookies
 nasha-farba.com.ua##.cookieWrapper
