@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.63
-! Last modified: Sun, 25 August 2024 15:06 EEST
+! Version: 24.08.64
+! Last modified: Tue, 27 August 2024 21:47 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -148,6 +148,9 @@ champion.com.ua##div[class^="banner"]
 chasdiy.org##div.side-content-wrapper:remove()
 chasdiy.org##div.top-content-wrapper:remove()
 chytomo.com##div[class^="banner"]
+cloudgaminghub.net.ua##div.banner-promotions-wrapper
+cloudgaminghub.net.ua##div.widget_media_image:has(figure.wp-block-image > a[href*="boosteroid.com/go/"])
+cloudgaminghub.net.ua##div.widget_media_image:has(figure.wp-block-image > a[href*="ukrline.com.ua/?ref="])
 dailylviv.com##.rightBanner
 dailylviv.com##div[id^="google_banner"]
 defence-ua.com##.share-news
@@ -250,6 +253,8 @@ glavred.net##div.bnr-block
 glavred.net##div.bnr-block--gray
 glavred.net##div.main-partners:remove()
 glavred.net##div.partner-news:remove()
+gsminfo.com.ua##div.code-block:has(ins.adsbygoogle):remove()
+gsminfo.com.ua##div.stream-item-above-post:has(> div > ins.adsbygoogle):remove()
 guide.in.ua##div[class^="adsbygoogle-"]:remove()
 happymonday.ua##a[style="z-index: 0; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;"]:remove()
 happymonday.ua##body:style(background-image: none !important; padding-top: 0 !important;)
@@ -267,6 +272,7 @@ i.ua##.clear.logo_container
 i.ua##.news_premium_item
 i.ua##.partner_links
 i.ua###Premium
+ictv.ua##div.partner-news:remove()
 imena.ua##section.widget:has(img[src$="banner_300x300.jpg"])
 incrypted.com##.top-banner-airdrops
 inforesist.org##.advert
@@ -397,6 +403,7 @@ osvita.ua##div:has(> div.blosk-advertising-google):remove()
 osvita.ua##div:has(> ins.adsbygoogle):remove()
 osvita.ua##div.article__advertising
 osvita.ua##div[class^="baners-"]:remove()
+overclockers.ua##div[class^="ad_slot"]:remove()
 pingvin.pro##div.col-lg-4:has(> div > div > ins.adsbygoogle):remove()
 pisni.ua##div.header-banner:remove()
 players.com.ua##a[class*="banner-"]
@@ -418,6 +425,7 @@ psm7.com##section.psm-header-baner-container
 rbc.ua##.vidverto-wrapper
 rbc.ua##[id^="admixer-"]
 rbc.ua##[id^="bn_"]
+realist.online##div.advertising
 rivnepost.rv.ua##div.header-info
 rivnepost.rv.ua##div.r23243
 root-nation.com##div.backstretch
@@ -492,6 +500,7 @@ tsn.ua##div.l-row.l-flex > div.l-col.l-col--sm.l-gap:has(aside.c-aside__port)
 tsn.ua##div.l-row.l-flex.u-fx--nowrap > div.l-gap.l-col.l-col--sm:has(aside.c-aside__port)
 tsn.ua##div[class*="-sidebar__gap"]:has(iframe[src="https://tsn.ua/banners/sidebar"])
 tsn.ua##section.c-section:has(h2.c-section__title:has-text(Новини партнерів))
+ttt.ua##div.page__big-banner
 tyzhden.ua##a.new-baner
 tyzhden.ua##div.gr:remove()
 ua-football.com##.asside:has(div.topBook)
@@ -545,6 +554,7 @@ vogue.ua##div.box__bnr:has(> div.bnr_wrap)
 vseazs.com##a.vseosago
 vseazs.com##div.center_container
 vseazs.com##p[align="center"]:has-text(Наші партнери)
+vynnyky-visnyk.com.ua##div.wpb_single_image:has(> figure > div > img.vc_single_image-img)
 xsport.ua##[class^="partners"]
 xsport.ua##div.page-section__element--inner-fluent-side:style(max-width: 100% !important; margin-right: 0 !important)
 xsport.ua##div.page-section__element:has(> div[class^="bookmaker"]):remove()
