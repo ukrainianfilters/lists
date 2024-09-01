@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.08.69
-! Last modified: Wed, 28 August 2024 22:39 EEST
+! Version: 24.09.1
+! Last modified: Sun, 01 September 2024 22:11 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -86,6 +86,7 @@ alfa-tv.ua##.cook
 anc.ua##div.cookies--popup-background
 anc.ua##div.dropdown-accept-city
 antoshka.ua##div.promotion-popup
+aprint.store##div.consent-banner-root
 auchan.ua##div.cookie-agreement-wrapper
 auchan.ua##div.right-banner_root__35ahv
 auto.ria.com###gdpr-notifier
@@ -282,6 +283,7 @@ smachno.ua##div.bubleblock_wrapper
 smachno.ua##div.header_top_desctop_bnr:has(div.cookie-pop)
 smarthost.net.ua##div[aria-label="cookieconsent"]
 solarpath.com.ua##aside#moove_gdpr_cookie_info_bar
+songs.in.ua##div.widget_eu_cookie_law_widget
 sony.ua##div:has(> div.privacy_prompt)
 soroban.ua###policy
 soroban.ua##div#chakra-toast-manager-bottom:has(a[href="/privacy-policy"])
