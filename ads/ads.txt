@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.08.70
-! Last modified: Fri, 30 August 2024 12:15 EEST
+! Version: 24.09.1
+! Last modified: Sun, 01 September 2024 22:11 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -24,6 +24,7 @@
 ||go2net.com.ua^$third-party
 ||mediabrama.com^$third-party
 ||membrana.media^$third-party
+||misto.travel/templates/js$third-party
 ||pixel.tvstitch.com^$third-party
 ||receivedachest.com^$third-party
 ||smi.pp.ua^$third-party
@@ -320,6 +321,8 @@ itvua.tv##[class*="banner"]
 ivona.ua##div.col-sm-6:has(span:has-text(Реклама))
 ivona.ua##div[class^="banner"]
 ivona.ua##div[id^="zone_"]:remove()
+kagarlyk.city##div.mc-banner-placeholder
+kagarlyk.city##div.mc-top-banner
 kg.ua##a > img[src^="/sites/default/files/inline/"]
 kg.ua##img[src^="/sites/default/files/inline/"]
 kinoafisha.ua##a.link-main-image-wrap.fixed
@@ -386,6 +389,7 @@ novosti-n.org##div[class*="banner"]:remove()
 novy.tv##div.ads-catfish-container:remove()
 novy.tv##div.ads-sidebar:remove()
 novy.tv##div#sticky-ads:remove()
+novynarnia.com##div:has(> div#mt_promo_wghot):remove()
 novyny.live##div.sidebar.sidebar-article:has(.adsbygoogle)
 noworries.news##.header-baner
 nv.ua##body.branding:style(padding-top: 20px !important)
@@ -485,6 +489,7 @@ telegraf.com.ua##div.c-r:has([data-text="Реклама"])
 telegraf.com.ua##div.s-content__ratio:has(script[id^="_vidverto-"]):remove()
 telegraf.com.ua##div[data-text="Новини партнерів"]
 texty.org.ua##.ad-banner-aside:remove()
+thebuchacity.com##div[style="display: inline-block"]:has(> div > h4 > a:has-text(РЕКЛАМА))
 thepage.ua##div.news-list__item:has(div[class*="news-tag company_news"])
 thepage.ua##div.news-list__item:has(div[class*="news-tag partner_material"])
 tribuna.com##div.card__content > div:has(div[class*="Alternative_banner__"])
@@ -547,6 +552,7 @@ unn.ua##div[id^="ads-sidebar"]
 v-variant.com.ua##div.donate-item_articles
 v-variant.com.ua##div.pum-overlay
 v-variant.com.ua##div.top-banner
+varosh.com.ua##div.adv
 vctr.media##.banner-container
 vechirniy.kyiv.ua##div.page-promo
 vikna.tv##div.pip-video-wrapper
