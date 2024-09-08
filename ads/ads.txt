@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.09.8
-! Last modified: Sun, 08 September 2024 14:47 EEST
+! Version: 24.09.9
+! Last modified: Sun, 08 September 2024 22:31 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -372,6 +372,14 @@ liga.net##div.ad
 liga.net##div.article-footer__widget.b-blocks
 liga.net##div.article-footer__widget.b-subs
 liga.net##div.banner:remove()
+ligazakon.net##div.banner_placeholder:remove()
+ligazakon.net##div.item_withrekl
+ligazakon.net##div.promoblock
+ligazakon.net##div.rekl_block:remove()
+ligazakon.net##div.texts
+ligazakon.net##section.actualsinglepage_promo_product
+ligazakon.net##section.jurist_firm_sidebar_block
+ligazakon.net##section.promo_block_placeholder
 mc.today##[data-coursestyle]
 mc.today##div.company-slider
 mc.today##div.mobile-hide:not(.widget-popular, .widget-popular-title):remove()
