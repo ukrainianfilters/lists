@@ -17,7 +17,7 @@
 ||stattracking.pw^
 ! >>>
 ! Google Tag Manager
-1plus1.video,24tv.ua,ain.ua,arber.ua,bihus.info,censor.net,champion.com.ua,chytomo.com,dou.ua,dw.com,epravda.com.ua,espreso.tv,finance.ua,forbes.ua,gordonua.com,hromadske.ua,kyivindependent.com,kyivpost.com,liga.net,ligazakon.net,mezha.media,newbalance.ua,platfor.ma,playua.net,pravda.com.ua,radiosvoboda.org,sport24.ua,suspilne.media,theukrainians.org,work.uayesport.com.ua##+js(remove-node-text, script, gtm.start)
+1plus1.video,24tv.ua,ain.ua,arber.ua,bihus.info,censor.net,champion.com.ua,chytomo.com,dou.ua,dw.com,epravda.com.ua,espreso.tv,finance.ua,forbes.ua,gordonua.com,hromadske.ua,kyivindependent.com,kyivpost.com,liga.net,ligazakon.net,mezha.media,newbalance.ua,platfor.ma,playua.net,pravda.com.ua,radiosvoboda.org,sport24.ua,suspilne.media,theukrainians.org,work.ua,yesport.com.ua##+js(remove-node-text, script, gtm.start)
 ! >>>
 ! facebook.com
 ||facebook.com/plugins/likebox.php?*$third-party,domain=fn.ua
