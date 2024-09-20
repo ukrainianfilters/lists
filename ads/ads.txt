@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.09.17
-! Last modified: Wed, 18 September 2024 13:55 EEST
+! Version: 24.09.18
+! Last modified: Fri, 20 September 2024 22:12 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -102,6 +102,10 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||1plus1.video/static/js/api.gpt.js^
 ||1plus1.video/ua/ab/?whole^
 ||5.ua/js/banner^
+||mezha.media/wp-content/uploads/*/1940_180.png^
+||mezha.media/wp-content/uploads/*/640_200.png^
+! >>>
+animal.in.ua,dev.ua,gsminfo.com.ua,itsider.com.ua,moyaosvita.com.ua,osvita.ua,predmety.in.ua,rayon.in.ua,slovoidilo.ua,synonimy.info,teg.com.ua,tsikavi-fakty.com.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle):remove()
 ! >>>
 1plus1.ua##div.articleHeaderAdv
 1plus1.ua##div.gridSection__list:style(max-width: none !important)
@@ -170,7 +174,6 @@ detector.media##div.md_banner_zone
 dev.ua##div.afterheader-widget
 dev.ua##div.island:has(> div.island__body > div[data-sender="admixer"]):remove()
 dev.ua##div.partners-wrapper
-dev.ua##div.section-aside:has(ins.adsbygoogle):remove()
 dou.ua##div.b-adv-events
 dou.ua##div.b-dou-vacancies
 dou.ua##div.b-sponsors
@@ -267,7 +270,6 @@ glavred.net##div.main-partners:remove()
 glavred.net##div.partner-news:remove()
 gordonua.com##div[class^="advertising"]:remove()
 gordonua.com##div[data-action="banners"]:remove()
-gsminfo.com.ua##div.code-block:has(ins.adsbygoogle):remove()
 gsminfo.com.ua##div.stream-item-above-post:has(> div > ins.adsbygoogle):remove()
 guide.in.ua##div[class^="adsbygoogle-"]:remove()
 happymonday.ua##a[style="z-index: 0; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;"]:remove()
@@ -327,7 +329,6 @@ itc.ua##li[class*="widget_execphp"]:remove()
 itc.ua##li[id^="partner-posts"]:remove()
 itc.ua##p.intro:has(a[href*="?utm_source=itc.ua&utm_medium=branding"])
 itc.ua##p.intro[style*="background: linear-gradient"]
-itsider.com.ua##div.code-block:has(ins.adsbygoogle):remove()
 itsider.com.ua##div.xjo:has(> div[data-type="custom_code"]):remove()
 itvua.tv##.adwrapper
 itvua.tv##[class*="banner"]
@@ -395,8 +396,8 @@ meteofor.com.ua##div.placeholder.h1:has(div[id^="div-gpt-ad-"])
 meteofor.com.ua##section.section-media:has(div[id^="div-gpt-ad-"])
 meteofor.com.ua##section.section-rss
 mezha.media##.block-novyny-partneriv
+mezha.media##div:has(> a.banner-link)
 mezha.media##div.news-item:has(a[rel="author"]:has-text(Promoted))
-mezha.media##div#wrapper > div:has(a.banner-link)
 mind.ua###promo-catfish
 mind.ua##div.b-info-list__item:has(a[href$="/companynews"])
 mind.ua##div.block_mind_brand
@@ -437,10 +438,11 @@ ostro.org##div.press-reliz
 ostro.org##div[class^="banner-"]:remove()
 ostro.org##div[id^="banner-"]:remove()
 osvita.ua##div:has(> div.blosk-advertising-google):remove()
-osvita.ua##div:has(> ins.adsbygoogle):remove()
 osvita.ua##div.article__advertising
 osvita.ua##div[class^="baners-"]:remove()
 overclockers.ua##div[class^="ad_slot"]:remove()
+pidruchnyk.com.ua###sidebar
+pidruchnyk.com.ua##div[id^="admixer_"] + script:remove()
 pingvin.pro##div.col-lg-4:has(> div > div > ins.adsbygoogle):remove()
 pisni.ua##div.header-banner:remove()
 players.com.ua##a[class*="banner-"]
@@ -455,12 +457,12 @@ pravda.com.ua##article.article_pr
 pravda.com.ua##div.container_special
 pravda.com.ua##div.promoted_article
 pravda.com.ua##div.ym-video--wrapper:has(div.ym-video--title:has-text(ВІДЕО ДНЯ))
-predmety.in.ua##div:has(> ins.adsbygoogle):remove()
 predmety.in.ua##div[style="height:550px; weight:auto;"]:empty
 prolinux.pp.ua##section.widget_block:has(ins.adsbygoogle):remove()
 prom.ua##div[style*="cloud-cgi/static/catalog-ui/js/build/portal-portable/maskWeb-5Wgei.png"]
 psm7.com##section.psm-header-baner-container
 rau.ua##div[class^="advertising_slider"]:remove()
+rayon.in.ua##div.body-typical__slider:remove()
 rbc.ua##.vidverto-wrapper
 rbc.ua##[id^="admixer-"]
 rbc.ua##[id^="bn_"]
@@ -479,7 +481,6 @@ sinoptik.ua##div.informerTop
 sinoptik.ua##head > style:empty:style(all: inherit !important)
 slovnyk.ua##section[class^="section-ad"]:remove()
 slovoidilo.ua##div.branding-main
-slovoidilo.ua##div.te-center:has(ins.adsbygoogle)
 smachno.ua##div.adv-block_catfish:remove()
 socportal.info##div[x-lazyload*='adsbygoogle']:remove()
 speka.media##div.max-w-material-l:has(h3.socials__title)
@@ -501,7 +502,6 @@ storinka.com.ua##div.share
 storinka.com.ua##div.widget:not([class$="hidden-xs"])
 sud.ua##div.b-sidebar-adv:remove()
 synonimy.info##body:style(background-image: none !important)
-synonimy.info##div:has(> ins.adsbygoogle):remove()
 tabletki.ua##div.adunit
 tabletki.ua##div.col:has(> aside > div.tabletki-adunit)
 tabletki.ua##div.col:has(> div.card > aside > div.tabletki-adunit)
@@ -578,6 +578,7 @@ unian.ua##div[class^="banner"]
 unian.ua##li.newsfeed__item:has(span.blue-marker:has-text(НК))
 unn.ua##div[class^="informer_informer_"]
 unn.ua##div[id^="ads-sidebar"]
+urok.in.ua##section:has(> p > ins.adsbygoogle):remove()
 v-variant.com.ua##div.donate-item_articles
 v-variant.com.ua##div.pum-overlay
 v-variant.com.ua##div.top-banner
@@ -602,6 +603,7 @@ xsport.ua##div.page-section__element--inner-fluent-side:style(max-width: 100% !i
 xsport.ua##div.page-section__element:has(> div[class^="bookmaker"]):remove()
 xsport.ua##div.page-section__element:not(:has(div)):remove()
 xsport.ua##div.site:style(margin-top: 20px !important)
+yak-zrobyty.in.ua##aside.widget-area:remove()
 yesport.com.ua##app-adv-placeholder
 youcontrol.com.ua##.banner
 youcontrol.com.ua##.banner-more
