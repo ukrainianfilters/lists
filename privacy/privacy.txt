@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 24.09.18
-! Last modified: Fri, 20 September 2024 22:12 EEST
+! Version: 24.09.21
+! Last modified: Wed, 25 September 2024 18:43 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -17,7 +17,7 @@
 ||stattracking.pw^
 ! >>>
 ! Google Tag Manager
-1plus1.video,24tv.ua,ain.ua,arber.ua,bihus.info,censor.net,champion.com.ua,chytomo.com,dou.ua,dw.com,epravda.com.ua,espreso.tv,finance.ua,forbes.ua,gordonua.com,hromadske.ua,kyivindependent.com,kyivpost.com,liga.net,ligazakon.net,mezha.media,mmr.ua,newbalance.ua,platfor.ma,playua.net,pravda.com.ua,radiosvoboda.org,sport24.ua,suspilne.media,theukrainians.org,work.ua,yesport.com.ua,znoclub.com##+js(remove-node-text, script, gtm.start)
+1plus1.video,24tv.ua,ain.ua,arber.ua,bihus.info,censor.net,champion.com.ua,chytomo.com,dou.ua,dw.com,epravda.com.ua,espreso.tv,finance.ua,forbes.ua,gordonua.com,hromadske.ua,kyivindependent.com,kyivpost.com,liga.net,ligazakon.net,mezha.media,mmr.ua,newbalance.ua,platfor.ma,playua.net,pravda.com.ua,radiosvoboda.org,speka.media,sport24.ua,suspilne.media,theukrainians.org,work.ua,yesport.com.ua,znoclub.com##+js(remove-node-text, script, gtm.start)
 ! >>>
 ! facebook.com
 ||facebook.com/plugins/likebox.php?*$third-party,domain=fn.ua
