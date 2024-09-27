@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.09.19
-! Last modified: Sun, 22 September 2024 19:40 EEST
+! Version: 24.09.23
+! Last modified: Fri, 27 September 2024 21:29 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -308,7 +308,7 @@ istpravda.com.ua##[class$="_banner"]:remove()
 istpravda.com.ua##[class$="-banner"]:remove()
 it-rating.ua##.rowBan
 it-rating.ua##a.stickybl
-itc.ua##[class^="partners"]
+itc.ua##[class^="partners"]:remove()
 itc.ua##[data-course]
 itc.ua##div.about-noa:has(> a[href$="/vidklyuchyty-reklamu/"]):remove()
 itc.ua##div.carousel-block:has(a:has-text(Огляди партнерів))
@@ -317,18 +317,20 @@ itc.ua##div.featured-statti:has(a.oglyadi-partneriv):remove()
 itc.ua##div.hidden-sm:has(div[id*="-banner-"])
 itc.ua##div.hidden-sm:has(img[src*="/images/banners/"])
 itc.ua##div.jobs-vacancy
-itc.ua##div.popup-bottom:has(script):remove()
+itc.ua##div.popup-bottom:has(script)
 itc.ua##div.post.block-in-loop.category-partnerskij-proekt
 itc.ua##div.sponsor
 itc.ua##div.visible-sm:has(div[id*="-banner-"]):remove()
 itc.ua##div[class*="widget-partners-blogs"]
+itc.ua##div[class^="hidden-sm"]:remove()
+itc.ua##div[class^="visible-sm"]:remove()
 itc.ua##li.widget-container:has(.jobs-vacancy)
 itc.ua##li.widget-container:has(.partner-blog):remove()
 itc.ua##li.widget-sticky:has(div[id^="div-gpt-ad-"]):remove()
 itc.ua##li[class*="widget_execphp"]:remove()
 itc.ua##li[id^="partner-posts"]:remove()
-itc.ua##p.intro:has(a[href*="?utm_source=itc.ua&utm_medium=branding"])
-itc.ua##p.intro[style*="background: linear-gradient"]
+itc.ua##p.intro:has(a[href*="?utm_source=itc.ua&utm_medium=branding"]):remove()
+itc.ua##p.intro[style*="background: linear-gradient"]:remove()
 itsider.com.ua##div.xjo:has(> div[data-type="custom_code"]):remove()
 itvua.tv##.adwrapper
 itvua.tv##[class*="banner"]
