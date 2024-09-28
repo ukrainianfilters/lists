@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.09.24
-! Last modified: Fri, 27 September 2024 21:33 EEST
+! Version: 24.09.25
+! Last modified: Sat, 28 September 2024 16:26 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -277,11 +277,12 @@ happymonday.ua##body:style(background-image: none !important; padding-top: 0 !im
 happymonday.ua##div.adv
 happymonday.ua##div.attn_block
 happymonday.ua##div.top-banner
-highload.today##div.mobile-hide
-highload.today##div.mobile-show
-highload.today##div.partners
+highload.today##[class^="partners"]:remove()
+highload.today##div:has(> img[src*="/images/banners/"])
+highload.today##div.mobile-hide:remove()
+highload.today##div.mobile-show:remove()
 highload.today##div[class^="course-widget-"]
-highload.today##p.intro:has(a[href*="fav.bet"])
+highload.today##p.intro[style*="background: linear-gradient"]:remove()
 hromadske.radio##[class$="-banner"]
 hromadske.radio##div.banner-block
 hromadske.radio##div.banner-block-mb
