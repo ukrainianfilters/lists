@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.09.22
-! Last modified: Wed, 25 September 2024 19:45 EEST
+! Version: 24.10.2
+! Last modified: Wed, 02 October 2024 12:02 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -166,6 +166,7 @@ gorod.dp.ua###myCookieConsent
 gorsovet.com.ua##div.cookie-consent
 greenfort-ua.com##div[data-storage-item*="cookiename_"]
 gsm.in.ua##.notice--cookie
+harveast.com##div.cookie_notice
 hellohelen.com##div.cookie-box
 heygop.com##aside[aria-label="GDPR Cookie Banner"]
 holosameryky.com##div.slide-in-wg
@@ -197,6 +198,7 @@ kyivstar.ua##div[class*="RegionalityPopover_regionality"]
 landrover.ua##section[data-cy="cookie-banner"]
 legalitgroup.com##div#cookies-banner
 legs.com.ua##.cookie-modal
+lemtrans.com.ua##div.cookie_bar
 lexus.ua##section:has(> div.cookies-consent)
 lgseeds.com.ua###cookieModal:remove()
 librarius.pro##div[class^="CookieBanner_wrap"]
@@ -221,6 +223,7 @@ meest.com##div.cookies-banner
 meta.ua##div.adl_cmp_consent-dialog-module_backdrop
 meteoprog.com##div.adl_cmp_consent-dialog-module_backdrop
 metinvest.digital##div.cookie-popup
+metinvestholding.com###cookieConsentBanner
 mgmotor.com.ua##div.cookie-show
 mhp.com.ua##.cookie-modal
 mmr.ua##div.facebook-suggest
@@ -347,6 +350,7 @@ ukraine.com.ua###gdpr-banner-cookie
 ukrgasbank.com##div.cookies-popup
 ukrpol.ua##.notifier
 ukrposhta.ua##.cookie-message
+umgi.com##div[aria-label="cookieconsent"]
 unilab.kiev.ua##.cookieWrapper
 uspacy.eu,uspacy.ua##div[class^="cookiesNotification_wrapper"]
 vandalvape.life###cookie
