@@ -2,7 +2,7 @@
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
 ! Version: 24.10.6
-! Last modified: Thu, 03 October 2024 20:16 EEST
+! Last modified: Thu, 03 October 2024 20:19 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
