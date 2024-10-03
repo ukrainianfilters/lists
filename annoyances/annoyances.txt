@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.10.5
-! Last modified: Thu, 03 October 2024 16:26 EEST
+! Version: 24.10.6
+! Last modified: Thu, 03 October 2024 20:19 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -183,6 +183,7 @@ itest.com.ua###clearfy-cookie
 itest.com.ua##div.mypopup-modal-container
 ithillel.ua##.cookie-ntf
 ivaniura.org.ua###accept_cookies
+iveco.com###CybotCookiebotDialog
 jakosport.com.ua##div.notice-module
 jakosport.com.ua##div[aria-label="cookieconsent"]
 juscutum.com##div.popup__wrapper:has(> div > div > div.cookie-modal_component)
@@ -225,6 +226,7 @@ maudau.com.ua##div.css-pcey0x
 medis.com.ua##div.privacy-policy
 medspace.lviv.ua##div[aria-label="cookieconsent"]
 meest.com##div.cookies-banner
+mercedes-benz.ua##div[role="dialog"][aria-label="Cookie Consent Banner"]
 meta.ua##div.adl_cmp_consent-dialog-module_backdrop
 meteoprog.com##div.adl_cmp_consent-dialog-module_backdrop
 metinvest.digital##div.cookie-popup
@@ -354,6 +356,7 @@ ucu.edu.ua###cookieNotice
 ucu.edu.ua###sp-cookie-consent
 ukraine-gta.com.ua##div.u-bottomFixer:has(> ul > li.notice--cookie)
 ukraine.com.ua###gdpr-banner-cookie
+ukravto.ua##div.popup_cookies
 ukrgasbank.com##div.cookies-popup
 ukrpol.ua##.notifier
 ukrposhta.ua##.cookie-message
