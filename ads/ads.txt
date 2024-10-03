@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.10.1
-! Last modified: Wed, 02 October 2024 11:50 EEST
+! Version: 24.10.3
+! Last modified: Thu, 03 October 2024 16:03 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -102,10 +102,11 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||1plus1.video/static/js/api.gpt.js^
 ||1plus1.video/ua/ab/?whole^
 ||5.ua/js/banner^
+||informator.ua/js/frontend/ad-loaders^
 ||mezha.media/wp-content/uploads/*/1940_180.png^
 ||mezha.media/wp-content/uploads/*/640_200.png^
 ! >>>
-animal.in.ua,dev.ua,gsminfo.com.ua,itsider.com.ua,moyaosvita.com.ua,osvita.ua,predmety.in.ua,rayon.in.ua,slovoidilo.ua,synonimy.info,teg.com.ua,tsikavi-fakty.com.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle):remove()
+animal.in.ua,dev.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,moyaosvita.com.ua,museumkiev.org,osvita.ua,predmety.in.ua,rayon.in.ua,sat.net.ua,slovoidilo.ua,synonimy.info,teg.com.ua,tsikavi-fakty.com.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle):remove()
 ! >>>
 1plus1.ua##div.articleHeaderAdv
 1plus1.ua##div.gridSection__list:style(max-width: none !important)
@@ -253,6 +254,7 @@ forbes.ua##article:has(span.c-post-author__link:has-text(Партнерськи�
 forbes.ua##div.c-post-additional:has(> div > div > div.c-magazine)
 forbes.ua##div.c-post-subscribe
 forbes.ua##div[id^="adpartner-"]
+founder.ua##div.boxWidgetBanner
 galinfo.com.ua##[id^="bannplace"]:remove()
 galinfo.com.ua##[id^="candyplace"]:remove()
 galinfo.com.ua##span.i728:remove()
@@ -300,6 +302,7 @@ incrypted.com##.top-banner-airdrops
 inforesist.org##.advert
 inforesist.org##.dw_focus_widget_news_ticker
 inforesist.org##[class^="partners"]
+informator.ua##div:has(> script[src*="/js/frontend/ad-loaders/"]):remove()
 interfax.com.ua##div.ad:remove()
 interfax.com.ua##div.ads:remove()
 internetua.com##div.article-widget-section:has(div.MIXADVERT_NET):remove()
@@ -386,6 +389,7 @@ ligazakon.net##div.texts
 ligazakon.net##section.actualsinglepage_promo_product
 ligazakon.net##section.jurist_firm_sidebar_block
 ligazakon.net##section.promo_block_placeholder
+marketer.ua,forex.ua##div:has(> div > ins.adsbygoogle):remove()
 mc.today##[data-coursestyle]
 mc.today##div.company-slider
 mc.today##div.mobile-hide:not(.widget-popular, .widget-popular-title):remove()
@@ -462,8 +466,10 @@ pravda.com.ua##div.container_special
 pravda.com.ua##div.promoted_article
 pravda.com.ua##div.ym-video--wrapper:has(div.ym-video--title:has-text(ВІДЕО ДНЯ))
 predmety.in.ua##div[style="height:550px; weight:auto;"]:empty
+proidei.com##div.ads-widget-block:remove()
 prolinux.pp.ua##section.widget_block:has(ins.adsbygoogle):remove()
 prom.ua##div[style*="cloud-cgi/static/catalog-ui/js/build/portal-portable/maskWeb-5Wgei.png"]
+proslav.info##div.jeg_ad:remove()
 psm7.com##section.psm-header-baner-container
 rau.ua##div[class^="advertising_slider"]:remove()
 rayon.in.ua##div.body-typical__slider:remove()
@@ -471,6 +477,7 @@ rbc.ua##.vidverto-wrapper
 rbc.ua##[id^="admixer-"]
 rbc.ua##[id^="bn_"]
 realist.online##div.advertising
+risu.ua##div.r22207
 rivnepost.rv.ua##div.header-info
 rivnepost.rv.ua##div.r23243
 root-nation.com##div.backstretch
@@ -481,6 +488,7 @@ rubryka.com##div.single-page__banners
 rubryka.com##div.single-page__social
 rubryka.com##div[class*="advertisment"]
 rubryka.com##div[style="padding: 0 0 30px"]
+rud.ua##a.branding__link
 sinoptik.ua##div.informerTop
 sinoptik.ua##head > style:empty:style(all: inherit !important)
 slovnyk.ua##section[class^="section-ad"]:remove()
@@ -502,6 +510,7 @@ sportanalytic.com##div.wblock:has-text(Інші новини)
 sportanalytic.com##div#news:has-text(Картина дня)
 sportarena.com##[data-partner]
 sportarena.com##div.nomobile:style(margin-top: unset !important)
+sq.com.ua##sq-ad-banners
 storinka.com.ua##div.share
 storinka.com.ua##div.widget:not([class$="hidden-xs"])
 sud.ua##div.b-sidebar-adv:remove()
@@ -545,6 +554,8 @@ tsn.ua##div.l-row.l-flex.u-fx--nowrap > div.l-gap.l-col.l-col--sm:has(aside.c-as
 tsn.ua##div[class*="-sidebar__gap"]:has(iframe[src="https://tsn.ua/banners/sidebar"])
 tsn.ua##section.c-section:has(h2.c-section__title:has-text(Новини партнерів))
 ttt.ua##div.page__big-banner
+tvoemisto.tv##div.ukrnetlinks
+tvoemisto.tv##div[id^="bannplace_"]:has(script):remove()
 tyzhden.ua##a.new-baner
 tyzhden.ua##div.gr:remove()
 ua-football.com##.asside:has(div.topBook)
@@ -583,6 +594,8 @@ unian.ua##li.newsfeed__item:has(span.blue-marker:has-text(НК))
 unn.ua##div[class^="informer_informer_"]
 unn.ua##div[id^="ads-sidebar"]
 urok.in.ua##section:has(> p > ins.adsbygoogle):remove()
+uspih.in.ua##p:has(> script[src*="//jsc.idealmedia.io"]):remove()
+uspih.in.ua##p:has(> script[src*="//jsc.mgid.com"]):remove()
 v-variant.com.ua##div.donate-item_articles
 v-variant.com.ua##div.pum-overlay
 v-variant.com.ua##div.top-banner
