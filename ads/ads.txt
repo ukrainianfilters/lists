@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.10.3
-! Last modified: Thu, 03 October 2024 16:03 EEST
+! Version: 24.10.4
+! Last modified: Thu, 03 October 2024 16:14 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -107,6 +107,7 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||mezha.media/wp-content/uploads/*/640_200.png^
 ! >>>
 animal.in.ua,dev.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,moyaosvita.com.ua,museumkiev.org,osvita.ua,predmety.in.ua,rayon.in.ua,sat.net.ua,slovoidilo.ua,synonimy.info,teg.com.ua,tsikavi-fakty.com.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle):remove()
+forex.ua,gsminfo.com.ua,marketer.ua##div:has(> div > ins.adsbygoogle):remove()
 ! >>>
 1plus1.ua##div.articleHeaderAdv
 1plus1.ua##div.gridSection__list:style(max-width: none !important)
@@ -272,7 +273,6 @@ glavred.net##div.main-partners:remove()
 glavred.net##div.partner-news:remove()
 gordonua.com##div[class^="advertising"]:remove()
 gordonua.com##div[data-action="banners"]:remove()
-gsminfo.com.ua##div.stream-item-above-post:has(> div > ins.adsbygoogle):remove()
 guide.in.ua##div[class^="adsbygoogle-"]:remove()
 happymonday.ua##a[style="z-index: 0; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;"]:remove()
 happymonday.ua##body:style(background-image: none !important; padding-top: 0 !important;)
@@ -389,7 +389,6 @@ ligazakon.net##div.texts
 ligazakon.net##section.actualsinglepage_promo_product
 ligazakon.net##section.jurist_firm_sidebar_block
 ligazakon.net##section.promo_block_placeholder
-marketer.ua,forex.ua##div:has(> div > ins.adsbygoogle):remove()
 mc.today##[data-coursestyle]
 mc.today##div.company-slider
 mc.today##div.mobile-hide:not(.widget-popular, .widget-popular-title):remove()
