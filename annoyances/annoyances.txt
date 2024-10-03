@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.10.2
-! Last modified: Wed, 02 October 2024 12:02 EEST
+! Version: 24.10.3
+! Last modified: Thu, 03 October 2024 16:03 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -159,6 +159,7 @@ fonarik.ua##.notification-pechenki
 football24.ua##.privete-polisy
 fora.ua##.jss93
 forbes.ua##div.modal:has(img[src*="paywall.forbes.ua/static/content/"])
+founder.ua##div.boxCookies
 fozzyshop.ua###iqitcookielaw
 freelancehunt.com###cookie-bar
 funduk.ua###cookie_inform
@@ -211,9 +212,11 @@ ligazakon.net##section#main_popup_modal
 logity.ua##.cookie-banner
 lorgar.ua,lorgar.com##div.fixed.bottom-0:has(a[href="/privacy-policy"])
 luxoptica.ua##div#yourTown.modal
+lviv.travel##div.c-accept-message
 lvivrada.gov.ua###simpletools_nl_cookie_notice
 maanimo.ua###cookies
 marchi.com.ua##.basel-cookies-popup
+marketer.ua##div.box-cookies
 marykay.ua##.cookie-wrapper
 marykayintouch.ua##div.ui-widget:has(> c-cmt-cookie-consent)
 maudau.com.ua##div.css-pcey0x
@@ -275,6 +278,7 @@ rbc.ua##.privacy
 ria.com###gdpr-notifier
 rice.ua##.wd-cookies-popup
 ridni.org.ua##aside.cookies-banner
+risu.ua###cookies-popup
 robota.ua##.custom-vacancy-background:style(background-image: none !important; background-color: rgb(242, 245, 248) !important)
 robota.ua##alliance-resume-update-block
 robota.ua##alliance-telegram-bot-promo
@@ -283,6 +287,7 @@ robota.ua##div.card-banner > img
 root-nation.com##div.hu-wrapper[aria-labelledby="hu-cookies-notice-message"]
 roshen.com##div.cookies-popup
 roshen.com##div.fixed-bottom-banner
+rud.ua##div.subscription-module--popup
 runy.org.ua##.cookieWrapper
 samsung.com##div.cookie-bar
 santen.ua##div.gdpr_v2
