@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 24.10.3
-! Last modified: Thu, 03 October 2024 16:03 EEST
+! Version: 24.10.8
+! Last modified: Sun, 06 October 2024 15:42 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -17,11 +17,16 @@
 ||stattracking.pw^
 ! >>>
 ! Google Tag Manager
-1plus1.video,24tv.ua,ain.ua,arber.ua,bihus.info,censor.net,champion.com.ua,chytomo.com,dou.ua,dw.com,epravda.com.ua,espreso.tv,finance.ua,forbes.ua,gordonua.com,hromadske.ua,informator.ua,kyivindependent.com,kyivpost.com,liga.net,ligazakon.net,mezha.media,mmr.ua,newbalance.ua,platfor.ma,playua.net,pravda.com.ua,radiosvoboda.org,speka.media,sport24.ua,suspilne.media,theukrainians.org,work.ua,yesport.com.ua,znoclub.com##+js(remove-node-text, script, gtm.start)
+1plus1.video,24tv.ua,ain.ua,arber.ua,bihus.info,censor.net,champion.com.ua,chytomo.com,dou.ua,dw.com,epravda.com.ua,espreso.tv,finance.ua,forbes.ua,gordonua.com,hromadske.ua,informator.ua,kyivindependent.com,kyivpost.com,liga.net,ligazakon.net,mezha.media,mmr.ua,newbalance.ua,platfor.ma,playua.net,pravda.com.ua,radiosvoboda.org,speka.media,sport24.ua,suspilne.media,theukrainians.org,ukrzoloto.ua,work.ua,yesport.com.ua,znoclub.com##+js(remove-node-text, script, gtm.start)
+! >>>
+radiotrek.rv.ua##+js(remove-node-text, script, initGTM)
 ! >>>
 ! facebook.com
 ||facebook.com/plugins/likebox.php?*$third-party,domain=fn.ua
 ||facebook.com/plugins/post.php?*$third-party,domain=radiosvoboda.org
+! >>>
+dengi.ua##div.facebook-title
+dengi.ua##div.fb-social-widget:remove()
 ! >>>
 ! connect.facebook.net
 ||connect.facebook.net^$third-party,domain=5.ua|agroter.com.ua|ain.business|ain.ua|apostrophe.ua|armyinform.com.ua|bigmir.net|cert.gov.ua|champion.com.ua|chytomo.com|data.gov.ua|defence-ua.com|detector.media|dtek.com|dumskaya.net|dynamo.kiev.ua|elle.ua|epravda.com.ua|espreso.tv|eurointegration.com.ua|euromaidanpress.com|football.ua|football24.ua|galinfo.com.ua|gk-press.if.ua|gordonua.com|holosameryky.com|hvylya.net|imi.org.ua|inforesist.org|interfax.com.ua|internetua.com|ipay.ua|isport.ua|istpravda.com.ua|ivona.ua|kagarlyk.city|kg.ua|kyiv24.news|kyivindependent.com|kyivpost.com|kyivstar.ua|lb.ua|magnolia-tv.com|mc.today|mezha.net|mil.in.ua|mind.ua|moviegram.com.ua|nachasi.com|novynarnia.com|nv.ua|ostro.org|petrimazepa.com|platfor.ma|pravda.com.ua|radiosvoboda.org|rayon.in.ua|real-vin.com|rivnepost.rv.ua|rubryka.com|rud.ua|slovnyk.ua|slovoidilo.ua|sportanalytic.com|sprotyv.info|storinka.com.ua|sud.ua|suspilne.media|tehnofan.com.ua|telegraf.com.ua|tribuna.com|trueua.info|tsn.ua|ukrainer.net|ukrinform.ua|village.com.ua|womo.ua|work.ua|xsport.ua|zaxid.net|znoclub.com
