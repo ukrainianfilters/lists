@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.10.6
-! Last modified: Thu, 03 October 2024 20:19 EEST
+! Version: 24.10.8
+! Last modified: Sun, 06 October 2024 15:42 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -177,6 +177,7 @@ i.ua##.Disclaimer
 igns.gov.ua##aside#moove_gdpr_cookie_info_bar
 incrypted.com##.incrypted-cookie-bar
 indigo.co.ua###cookie_notification
+inshe.tv##div.jnews_popup_post_container
 inter.ua##.warning
 interflora.com.ua###cookies-policy
 itest.com.ua###clearfy-cookie
@@ -352,6 +353,8 @@ u24.gov.ua##app-cookie-dialog
 ua.shell##div.evidon-banner
 uaplantbased.com.ua###policy_popup
 uaserials.pro##div:has(> div#ask_modal_overlay)
+uatv.ua##div.playerlive
+uatv.ua##div.privacy-policy-block
 ucu.edu.ua###cookieNotice
 ucu.edu.ua###sp-cookie-consent
 ukraine-gta.com.ua##div.u-bottomFixer:has(> ul > li.notice--cookie)
@@ -360,6 +363,7 @@ ukravto.ua##div.popup_cookies
 ukrgasbank.com##div.cookies-popup
 ukrpol.ua##.notifier
 ukrposhta.ua##.cookie-message
+ukrzoloto.ua###cban
 umgi.com##div[aria-label="cookieconsent"]
 unilab.kiev.ua##.cookieWrapper
 uspacy.eu,uspacy.ua##div[class^="cookiesNotification_wrapper"]
