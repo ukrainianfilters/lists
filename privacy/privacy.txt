@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 24.10.8
-! Last modified: Sun, 06 October 2024 15:42 EEST
+! Version: 24.10.9
+! Last modified: Tue, 08 October 2024 18:58 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -17,7 +17,7 @@
 ||stattracking.pw^
 ! >>>
 ! Google Tag Manager
-1plus1.video,24tv.ua,ain.ua,arber.ua,bihus.info,censor.net,champion.com.ua,chytomo.com,dou.ua,dw.com,epravda.com.ua,espreso.tv,finance.ua,forbes.ua,gordonua.com,hromadske.ua,informator.ua,kyivindependent.com,kyivpost.com,liga.net,ligazakon.net,mezha.media,mmr.ua,newbalance.ua,platfor.ma,playua.net,pravda.com.ua,radiosvoboda.org,speka.media,sport24.ua,suspilne.media,theukrainians.org,ukrzoloto.ua,work.ua,yesport.com.ua,znoclub.com##+js(remove-node-text, script, gtm.start)
+1plus1.video,24tv.ua,ain.ua,arber.ua,bihus.info,censor.net,champion.com.ua,chytomo.com,dou.ua,dw.com,epravda.com.ua,espreso.tv,finance.ua,forbes.ua,gordonua.com,hromadske.ua,informator.ua,kyivindependent.com,kyivpost.com,liga.net,ligazakon.net,mezha.media,mmr.ua,newbalance.ua,platfor.ma,playua.net,pravda.com.ua,radiosvoboda.org,speka.media,sport24.ua,suspilne.media,telegraf.com.ua,theukrainians.org,ukrzoloto.ua,work.ua,yesport.com.ua,znoclub.com##+js(remove-node-text, script, gtm.start)
 ! >>>
 radiotrek.rv.ua##+js(remove-node-text, script, initGTM)
 ! >>>
