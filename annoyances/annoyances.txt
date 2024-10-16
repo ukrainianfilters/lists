@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.10.12
-! Last modified: Tue, 15 October 2024 21:00 EEST
+! Version: 24.10.15
+! Last modified: Wed, 16 October 2024 20:46 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -68,8 +68,7 @@
 !
 !
 ! !!!!!!!!!!!!!!!
-! UKRAINIAN WEBSITES
-!  > Page-Specific Rules
+! PAGE-SPECIFIC RULES
 ! !!!!!!!!!!!!!!!
 !
 ||consent.dw.com/delivery^
@@ -111,6 +110,7 @@ carta.ua##div.carta-policy-bottom
 censor.net##.stpd_cmp
 censor.net###usage_notice
 cersanit.com###cookie-bar
+cip.gov.ua##cookie-law
 city24.ua##div:has(> div > div > div > svg.linkedin)
 cloud.net.ua##.cookie-modal
 club4paws.ua##div.attention:has(> div > div > button[class$="js-accept-cookies"])
@@ -171,6 +171,7 @@ gsminfo.com.ua###share-buttons-top
 gsminfo.com.ua##div.code-block:has(> div.wenews)
 harveast.com##div.cookie_notice
 hellohelen.com##div.cookie-box
+hexagon.agency###cks
 heygop.com##aside[aria-label="GDPR Cookie Banner"]
 holosameryky.com##div.slide-in-wg
 i.ua##.Disclaimer
@@ -275,6 +276,7 @@ privatbank.ua##+js(set-cookie, analytics_allowed, 0)
 privatbank.ua##+js(set-cookie, marketing_allowed, 0)
 probitcoin.com.ua##.js-lwpcngNotice
 prostavochka.com.ua##.messages_cookies
+prozora.network##div.set-all-components:has(> div[fs-cc="banner"] > div > div.cookies_top)
 psm7.com##.m-cookies
 puratos.com.ua##+js(set-cookie, functionalCookieAccepted, true)
 qmall.io##div.vue-notification-group:has(> span > div > div.notification-cookies)
