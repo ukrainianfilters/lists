@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.10.15
-! Last modified: Wed, 16 October 2024 20:46 EEST
+! Version: 24.10.16
+! Last modified: Sat, 19 October 2024 23:57 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -78,6 +78,7 @@ js/remodal.js$script,domain=agroter.com.ua
 104.ua###privacy-policy
 1kr.ua##noindex:has([class$="cookies-box"])
 3ona51.com##div.cookiesAccept
+a-grade.com.ua##div.modalWindow--cookie
 afishadnepr.com.ua,fitness-class.com.ua,nashemisto.dp.ua,startermedia.com.ua###cookie-law-info-bar
 agrodoctor.ua###cookieswarning_block
 ain.ua##div.cookie-popup
@@ -100,9 +101,11 @@ bi.ua##div.cookiePopup
 biolights.ua###ct-ultimate-gdpr-cookie-popup
 bmw.ua##div.container:has(> div.cookies-content)
 bmw.ua##epaas-consent-drawer-shell
+board.com.ua##div.cook_ann
 board.if.ua###cookieslayer
 bonibons.com##div#epd:has(> div#cookiesdirective)
 brander.ua##div#cookie-consent-popup
+britishbook.ua###politica
 brovary.net.ua##aside#moove_gdpr_cookie_info_bar
 bvr.ua##.cookie-notify
 canyon.ua##div.cn-cookies
@@ -140,6 +143,7 @@ dtkt.ua##div.desktop-bottom-navigation
 e-likari.com.ua##div.cookie-notification
 eba.com.ua##div.user-cookie-notice
 ecomodule.com.ua##div.l-cookie
+elfashop.ua###cookies
 eobuv.com.ua##.modal-consents
 epravda.com.ua,pravda.com.ua##div#checkUPcookies
 eridon.ua##div.cook
@@ -176,8 +180,10 @@ heygop.com##aside[aria-label="GDPR Cookie Banner"]
 holosameryky.com##div.slide-in-wg
 i.ua##.Disclaimer
 igns.gov.ua##aside#moove_gdpr_cookie_info_bar
+ilounge.ua##div.signup-form-launcher
 incrypted.com##.incrypted-cookie-bar
 indigo.co.ua###cookie_notification
+inksystem.biz##div.fixed_bottom
 inshe.tv##div.jnews_popup_post_container
 inter.ua##.warning
 interflora.com.ua###cookies-policy
@@ -196,6 +202,8 @@ kinobaza.com.ua##div[role="alert"]
 kivismart.com##div.cookie-offer
 komoraczua.com###overlay:has(> div > div.cookie-policy__container)
 konkurent.ua##div.popupCookie
+kontramarka.ua##div.cc-container
+kontramarka.ua##div.promo-line
 koruna.ua###cookies_text
 kp.ua##.modal_policy
 kyivdictionary.com###cookies-banner-wrap
@@ -236,6 +244,7 @@ metinvest.digital##div.cookie-popup
 metinvestholding.com###cookieConsentBanner
 mgmotor.com.ua##div.cookie-show
 mhp.com.ua##.cookie-modal
+mills.com.ua##div.modal__accept__cookies
 mmr.ua##div.facebook-suggest
 mmr.ua##div.new-video-block
 mmr.ua##div.telegram-suggest
@@ -259,6 +268,7 @@ ntn.ua##.warning
 obyava.ua##.cookie-bar
 odessa-life.od.ua###moove_gdpr_cookie_info_bar
 olx.ua##div[data-testid="cookies-overlay__container"]
+opentalk.org.ua###popup-9095
 osvitoria.org##div.b-cookie
 pasivka.com.ua###cookies-panel:remove()
 pdmsh.ua###cookies-modal
