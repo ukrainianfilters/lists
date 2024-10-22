@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.10.17
-! Last modified: Sun, 20 October 2024 15:34 EEST
+! Version: 24.10.20
+! Last modified: Tue, 22 October 2024 18:22 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -206,6 +206,7 @@ epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(СПЕЦПРОЄК
 epravda.com.ua,pravda.com.ua##div[class*="adv_"]:remove()
 epravda.com.ua,pravda.com.ua##div[class*="banner_"]:remove()
 epravda.com.ua##[class$="_banner"]:remove()
+epravda.com.ua##body > a[href^="https://cutt.ly/"][target="_blank"]:has(picture)
 epravda.com.ua##body > a[href$="?utm_source=site_epravda&utm_medium=anons"][target="_blank"]:has(picture)
 epravda.com.ua##body > a[href$="?utm_source=site_epravda&utm_medium=banner"][target="_blank"]:has(picture)
 epravda.com.ua##div.article_advertising
@@ -477,7 +478,7 @@ pravda.com.ua##[class$="-banner"]:remove()
 pravda.com.ua##article.article_pr
 pravda.com.ua##div.container_special
 pravda.com.ua##div.promoted_article
-pravda.com.ua##div.ym-video--wrapper:has(div.ym-video--title:has-text(ВІДЕО ДНЯ))
+pravda.com.ua##div.ym-video--wrapper
 predmety.in.ua##div[style="height:550px; weight:auto;"]:empty
 proidei.com##div.ads-widget-block:remove()
 prolinux.pp.ua##section.widget_block:has(ins.adsbygoogle):remove()
