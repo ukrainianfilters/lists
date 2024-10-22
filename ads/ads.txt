@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.10.20
-! Last modified: Tue, 22 October 2024 18:22 EEST
+! Version: 24.10.21
+! Last modified: Tue, 22 October 2024 19:10 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -107,6 +107,7 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||informator.ua/js/frontend/ad-loaders^
 ||mezha.media/wp-content/uploads/*/1940_180.png^
 ||mezha.media/wp-content/uploads/*/640_200.png^
+||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ! >>>
 animal.in.ua,bibliotech.com.ua,blogchain.com.ua,dev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle):remove()
 forex.ua,gsminfo.com.ua,marketer.ua##div:has(> div > ins.adsbygoogle):remove()
@@ -575,6 +576,7 @@ tsn.ua##section.c-section:has(h2.c-section__title:has-text(Новини парт
 ttt.ua##div.page__big-banner
 tvoemisto.tv##div.ukrnetlinks
 tvoemisto.tv##div[id^="bannplace_"]:has(script):remove()
+tydyvy.com###jarvis-banner
 tyzhden.ua##a.new-baner
 tyzhden.ua##div.gr:remove()
 ua-football.com##.asside:has(div.topBook)
