@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.10.16
-! Last modified: Sat, 19 October 2024 23:57 EEST
+! Version: 24.10.22
+! Last modified: Tue, 22 October 2024 19:17 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -79,6 +79,7 @@ js/remodal.js$script,domain=agroter.com.ua
 1kr.ua##noindex:has([class$="cookies-box"])
 3ona51.com##div.cookiesAccept
 a-grade.com.ua##div.modalWindow--cookie
+accordbank.com.ua###setcookie-agreement
 afishadnepr.com.ua,fitness-class.com.ua,nashemisto.dp.ua,startermedia.com.ua###cookie-law-info-bar
 agrodoctor.ua###cookieswarning_block
 ain.ua##div.cookie-popup
@@ -86,6 +87,7 @@ alfa-tv.ua##.cook
 anc.ua##div.cookies--popup-background
 anc.ua##div.dropdown-accept-city
 antoshka.ua##div.promotion-popup
+ap-bank.com##div.b-cookieAccept
 aprint.store##div.consent-banner-root
 auchan.ua##div.cookie-agreement-wrapper
 auchan.ua##div.right-banner_root__35ahv
@@ -206,6 +208,7 @@ kontramarka.ua##div.cc-container
 kontramarka.ua##div.promo-line
 koruna.ua###cookies_text
 kp.ua##.modal_policy
+kredobank.com.ua##div.cookies-modal
 kyivdictionary.com###cookies-banner-wrap
 kyivpost.com##.stpd_cmp
 kyivstar.ua##div[class*="RegionalityPopover_regionality"]
@@ -363,6 +366,7 @@ triumf.ua##.blur
 truskavetska.com.ua##div.cookiealert
 trusteeglobal.com##div#cc--main:has(> div > div > div > div > h2:has-text(cookies))
 tucha.ua##.bl-vcustom-cookies
+tydyvy.com###popupContainer
 u24.gov.ua##app-cookie-dialog
 ua.shell##div.evidon-banner
 uaplantbased.com.ua###policy_popup
