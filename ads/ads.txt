@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.10.27
-! Last modified: Wed, 23 October 2024 20:30 EEST
+! Version: 24.10.30
+! Last modified: Mon, 28 October 2024 14:43 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -15,6 +15,7 @@
 ! !!!!!!!!!!!!!!!
 !
 ||a4.censor.net^
+||agenteimmobiliare.info^
 ||mediatraffic.com.ua^
 ||myblogshop.top^
 ||xcartpro.com^
@@ -107,9 +108,10 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||informator.ua/js/frontend/ad-loaders^
 ||mezha.media/wp-content/uploads/*/1940_180.png^
 ||mezha.media/wp-content/uploads/*/640_200.png^
+||patient-docs.com/theme/js/ads.js^
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ! >>>
-animal.in.ua,bibliotech.com.ua,blogchain.com.ua,dev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle):remove()
+animal.in.ua,bibliotech.com.ua,blogchain.com.ua,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uahistory.co,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle):remove()
 forex.ua,gsminfo.com.ua,marketer.ua##div:has(> div > ins.adsbygoogle):remove()
 ! >>>
 1plus1.ua##div.articleHeaderAdv
@@ -465,6 +467,7 @@ osvita.ua##div.article__advertising
 osvita.ua##div.banners-groups
 osvita.ua##div[class^="baners-"]:remove()
 overclockers.ua##div[class^="ad_slot"]:remove()
+patient-docs.com###sidebar_banner
 pidruchnyk.com.ua###sidebar
 pidruchnyk.com.ua##div[id^="admixer_"] + script:remove()
 pingvin.pro##div.col-lg-4:has(> div > div > ins.adsbygoogle):remove()
