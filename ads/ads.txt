@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.10.34
-! Last modified: Wed, 30 October 2024 14:55 EET
+! Version: 24.10.35
+! Last modified: Thu, 31 October 2024 20:13 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -111,7 +111,7 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||patient-docs.com/theme/js/ads.js^
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ! >>>
-animal.in.ua,bibliotech.com.ua,blogchain.com.ua,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uahistory.co,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle):remove()
+animal.in.ua,bibliotech.com.ua,blogchain.com.ua,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,mezha.net,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uahistory.co,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle):remove()
 forex.ua,gsminfo.com.ua,marketer.ua##div:has(> div > ins.adsbygoogle):remove()
 ! >>>
 1plus1.ua##div.articleHeaderAdv
@@ -192,6 +192,8 @@ dou.ua##div#max-header-adv-id:has(a[href^="https://dou.ua/goto/?id="])
 dou.ua##div#topinfo
 dou.ua##li.mini-header:has(a[rel="nofollow"][target="_blank"])
 dovidka.biz.ua##div[class^="b-r b-r--"]:remove()
+dsnews.ua##div:has(> div[data-banner])
+dsnews.ua##div.home-main-ad
 dtkt.ua##div.box-banner
 dumskaya.net##div.hideprint
 dumskaya.net##div[style="background:#fff;"]:has(a.ad):remove()
@@ -314,6 +316,8 @@ i.ua###Premium
 ictv.ua##div.partner-news:remove()
 imena.ua##section.widget:has(img[src$="banner_300x300.jpg"])
 incrypted.com##.top-banner-airdrops
+incrypted.com##div[class^="top-banner-"]
+incrypted.com##section.widget_text:has(> div > div.incrypted-banner)
 inforesist.org##.advert
 inforesist.org##.dw_focus_widget_news_ticker
 inforesist.org##[class^="partners"]
@@ -365,6 +369,17 @@ kinoafisha.ua##a.link-main-image-wrap.fixed
 kinoafisha.ua##body.with-image:style(padding-top: 20px !important)
 kinoafisha.ua##div[class^="adpartner-"]:remove()
 kinoafisha.ua##div[class^="promo"]
+ko.com.ua##a[href$="oki.com/ua/printing"]
+ko.com.ua##body > a[target="_blank"][style*="height: 100%"]
+ko.com.ua##body:style(background-image: unset !important)
+ko.com.ua##div.content > p:has(> strong > a[style="color: #d00;"])
+ko.com.ua##div.gbg > center:has(> a[target="_blank"] > img[src^="/files/region_banners/"])
+ko.com.ua##div.gbg:style(top:unset !important)
+ko.com.ua##div.pad + p
+ko.com.ua##div.pad:has(> ul.sponsors)
+ko.com.ua##table.container > tbody > tr > td.left-column
+ko.com.ua##table.container > tbody > tr > td.right-column
+ko.com.ua##td.layout_right_column > p:has(> a[target="_blank"] > img)
 konkurent.ua##div[class^="banner"]
 konkurent.ua##div[class^="bookmaker"]
 korrespondent.net##.article:has(em.advertising)
@@ -493,7 +508,9 @@ proslav.info##div.jeg_ad:remove()
 protocol.ua##div.modal_cont:has(> div.streag_close_btn_cont)
 protocol.ua##div.section9_thirdBlock:has(> div > h2:has-text(Партнери))
 protocol.ua##div[class^="baner_"]:remove()
+psm7.com##div[class*="-banner"]
 psm7.com##section.psm-header-baner-container
+psm7.com##section[class*="-banner"]
 radiotrek.rv.ua##div.ad:remove()
 radiotrek.rv.ua##div#ads
 rau.ua##div[class^="advertising_slider"]:remove()
