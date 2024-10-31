@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.10.33
-! Last modified: Tue, 29 October 2024 11:05 EET
+! Version: 24.10.35
+! Last modified: Thu, 31 October 2024 20:13 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -111,6 +111,7 @@ britishbook.ua###politica
 brovary.net.ua##aside#moove_gdpr_cookie_info_bar
 bvr.ua##.cookie-notify
 canyon.ua##div.cn-cookies
+carforhero.com###sliding-popup:has(> div.eu-cookie-compliance-banner)
 carta.ua##div.carta-policy-bottom
 censor.net##.stpd_cmp
 censor.net###usage_notice
@@ -190,6 +191,7 @@ inksystem.biz##div.fixed_bottom
 inshe.tv##div.jnews_popup_post_container
 inter.ua##.warning
 interflora.com.ua###cookies-policy
+interkassa.com##div.cookie-consent
 itest.com.ua###clearfy-cookie
 itest.com.ua##div.mypopup-modal-container
 ithillel.ua##.cookie-ntf
@@ -238,6 +240,7 @@ marketer.ua##div.box-cookies
 marykay.ua##.cookie-wrapper
 marykayintouch.ua##div.ui-widget:has(> c-cmt-cookie-consent)
 maudau.com.ua##div:has(> div > p:has-text(cookies))
+mazda.ua##div.b-header-cookie:remove()
 medis.com.ua##div.privacy-policy
 medspace.lviv.ua##div[aria-label="cookieconsent"]
 meest.com##div.cookies-banner
@@ -261,9 +264,11 @@ mriia.gov.ua##app-cookie-dialog
 mvs.gov.ua##div.cookie-message
 my.ua##div.dEyatA
 mycity.one##app-cookie-concept
+myfishka.com##div[aria-label="cookieconsent"]
 mywatershop.com.ua##section.modal_cookies
 nasha-farba.com.ua##.cookieWrapper
 nashformat.ua##.special-wrapper
+nethunt.ua##div.section-cookieNotification
 newproducts.com##div.cookies-banner
 nic.ua##div.cookie-alert
 nova-era.com.ua##div.cookie-popup
@@ -294,6 +299,7 @@ probitcoin.com.ua##.js-lwpcngNotice
 prostavochka.com.ua##.messages_cookies
 prozora.network##div.set-all-components:has(> div[fs-cc="banner"] > div > div.cookies_top)
 psm7.com##.m-cookies
+psm7.com###psm-messenger-subscribe-popup
 puratos.com.ua##+js(set-cookie, functionalCookieAccepted, true)
 qmall.io##div.vue-notification-group:has(> span > div > div.notification-cookies)
 radiosvoboda.org##div.slide-in-wg
@@ -333,6 +339,7 @@ soroban.ua###policy
 soroban.ua##div#chakra-toast-manager-bottom:has(a[href="/privacy-policy"])
 speka.media##div.js-cookie-banner
 sport.ua##div.adl_cmp_consent-dialog-module_backdrop
+starlight.media##div.cookie_popup
 stat.gov.ua##.consent-modal
 steko.ua##div.cookie-disclaimer
 stylus.ua##div.cookie-widget
@@ -346,6 +353,7 @@ sud.ua##div.bbone-list
 sud.ua##div.col.sidebar > div > div.b-news-publist
 sud.ua##ul > li > div.b-news-item:has(a[href="https://t.me/sudua"])
 suspilne.media##div.cookies-popup-suspilne
+suzuki.ua##div[class^="CookiesPopup_"]
 svitovederevo.com.ua###oct-policy
 sweet.tv##div.cookie__popup
 tabletki.ua##div.app-link.active
