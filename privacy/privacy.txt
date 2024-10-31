@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 24.10.33
-! Last modified: Tue, 29 October 2024 11:05 EET
+! Version: 24.10.35
+! Last modified: Thu, 31 October 2024 20:13 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -17,7 +17,7 @@
 ||stattracking.pw^
 ! >>>
 ! Google Tag Manager
-1plus1.video,24tv.ua,ain.ua,arber.ua,bihus.info,censor.net,champion.com.ua,chytomo.com,click.ua,colins.ua,dou.ua,dw.com,epravda.com.ua,espreso.tv,finance.ua,forbes.ua,gordonua.com,hromadske.ua,ideabank.ua,informator.ua,kontramarka.ua,ktc.ua,kyivindependent.com,kyivpost.com,liga.net,ligazakon.net,maudau.com.ua,metinvest-smc.com,mezha.media,mmr.ua,newbalance.ua,nv.ua,platfor.ma,playua.net,pravda.com.ua,radiosvoboda.org,speka.media,sport24.ua,suspilne.media,telegraf.com.ua,theukrainians.org,ukrzoloto.ua,work.ua,yesport.com.ua,znoclub.com##+js(remove-node-text, script, gtm.start)
+1plus1.video,24tv.ua,ain.ua,arber.ua,bagatolososia.kiev.ua,bihus.info,censor.net,champion.com.ua,chytomo.com,click.ua,colins.ua,ctrs.com.ua,dou.ua,dsnews.ua,dw.com,easypay.ua,epravda.com.ua,espreso.tv,finance.ua,forbes.ua,gordonua.com,hromadske.ua,ideabank.ua,iforum.ua,incrypted.com,informator.ua,kniga.biz.ua,kontramarka.ua,ktc.ua,kyivindependent.com,kyivpost.com,liga.net,ligazakon.net,maudau.com.ua,metinvest-smc.com,mezha.media,mezha.net,mmr.ua,newbalance.ua,nv.ua,pcweek.ua,platfor.ma,playua.net,pravda.com.ua,psm7.com,radiosvoboda.org,sim23.ua,speka.media,sport24.ua,sushiya.ua,suspilne.media,telegraf.com.ua,thepage.ua,theukrainians.org,ti.ua,ua.news,ukrzoloto.ua,varus.ua,vctr.media,work.ua,yakaboo.ua,yesport.com.ua,zaborona.com,znoclub.com##+js(remove-node-text, script, gtm.start)
 ! >>>
 radiotrek.rv.ua##+js(remove-node-text, script, initGTM)
 ! >>>
