@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.11.4
-! Last modified: Sun, 03 November 2024 18:29 EET
+! Version: 24.11.11
+! Last modified: Thu, 07 November 2024 15:07 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -140,6 +140,7 @@ agronews.ua##div[class^="baner-"]
 agropolit.com##div.header__banner-wrap
 agroportal.ua##.fixedBlock
 agroportal.ua##a[href^="/"][target="_blank"]
+ain.ua##div.branding-top
 ain.ua##div[class^="adsense-"]
 apostrophe.ua##.advertinline:remove()
 apostrophe.ua##.bnr
@@ -471,7 +472,10 @@ novynarnia.com##div:has(> div#mt_promo_wghot):remove()
 novyny.live##div.sidebar.sidebar-article:has(.adsbygoogle)
 noworries.news##.header-baner
 nv.ua##body.branding:style(padding-top: 20px !important)
-nv.ua##div[id^="async_spec"]:has(section[data-type="advertising"])
+nv.ua##div.active_adv:remove()
+nv.ua##div.remp-banner
+nv.ua##div[id^="async__head"]
+nv.ua##div[id^="async_spec"]
 obozrevatel.com##.headerBiding
 obozrevatel.com##.videoOfDay
 obozrevatel.com##aside.asideBanner.--left
