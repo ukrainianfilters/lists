@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.11.12
-! Last modified: Thu, 07 November 2024 15:32 EET
+! Version: 24.11.14
+! Last modified: Sat, 09 November 2024 22:22 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -252,22 +252,10 @@ football.ua##div[id^="zone_"]:remove()
 football24.ua##[class*="adv_"]
 football24.ua##[class*="adv-"]
 football24.ua##[id*="AdvWrapper"]
-football24.ua##aside.adv-insert + div.media_embed
-football24.ua##aside.adv-insert + p:empty + div.responsive-embed
-football24.ua##aside.adv-insert + p:has(img)
 football24.ua##div.mobileBrandingPlace
-football24.ua##div.news-text > p:has(strong > a[rel*="sponsored"])
-football24.ua##div.next-article:has(div.custom-adv-label) aside.adv-insert + p:has(img)
-football24.ua##div.next-article[id*="favbet"]
 football24.ua##div[id^="zone_"]:remove()
 football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
-football24.ua##li.news-list-item:has(span.custom-label:has-text(Партнерський матеріал))
-football24.ua##p.insert:has(a[rel*="sponsored"])
-football24.ua##p.insert.cke-markup:has-text(FAVBET)
-football24.ua##p.insert.cke-markup:has-text(Реклама:)
-football24.ua##ul:has(p.insert > b:has-text(Реклама))
-football24.ua##ul:has(p.insert > b:has-text(Реклама)) + p:has(img)
-football24.ua##ul.news-list > li:has(article > a.title:has-text(FAVBET))
+football24.ua##p:has(> a[rel*="sponsored"][target="_blank"] > strong)
 forbes.ua##article:has(span.c-post-author__link:has-text(Партнерський матеріал))
 forbes.ua##div.c-limited-time-offers:remove()
 forbes.ua##div.c-post-additional:has(> div > div > div.c-magazine)
