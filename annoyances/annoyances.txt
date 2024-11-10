@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.11.9
-! Last modified: Thu, 07 November 2024 14:36 EET
+! Version: 24.11.15
+! Last modified: Sun, 10 November 2024 18:29 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -74,6 +74,12 @@
 ||consent.dw.com/delivery^
 js/cookieprompt.js$script,domain=bat.ua
 js/remodal.js$script,domain=agroter.com.ua
+! >>>
+galka.if.ua##+js(remove-node-text, script, '#fb-modal')
+kyivstar.ua##+js(set-cookie, cookiesAgreement, denied)
+privatbank.ua##+js(set-cookie, analytics_allowed, 0)
+privatbank.ua##+js(set-cookie, marketing_allowed, 0)
+puratos.com.ua##+js(set-cookie, functionalCookieAccepted, true)
 ! >>>
 104.ua###privacy-policy
 1kr.ua##noindex:has([class$="cookies-box"])
@@ -215,7 +221,6 @@ kp.ua##.modal_policy
 kredobank.com.ua##div.cookies-modal
 kyivdictionary.com###cookies-banner-wrap
 kyivpost.com##.stpd_cmp
-kyivstar.ua##+js(set-cookie, cookiesAgreement, denied)
 kyivstar.ua##div[class*="RegionalityPopover_regionality"]
 landrover.ua##section[data-cy="cookie-banner"]
 legalitgroup.com##div#cookies-banner
@@ -294,14 +299,11 @@ poetryhome.ua###c_mess
 portmone.com.ua##.ptm-banner__cat-fish
 portmone.com.ua##app-cookies-modal
 primary.org.ua###cookie-law-info-bar
-privatbank.ua##+js(set-cookie, analytics_allowed, 0)
-privatbank.ua##+js(set-cookie, marketing_allowed, 0)
 probitcoin.com.ua##.js-lwpcngNotice
 prostavochka.com.ua##.messages_cookies
 prozora.network##div.set-all-components:has(> div[fs-cc="banner"] > div > div.cookies_top)
 psm7.com##.m-cookies
 psm7.com###psm-messenger-subscribe-popup
-puratos.com.ua##+js(set-cookie, functionalCookieAccepted, true)
 qmall.io##div.vue-notification-group:has(> span > div > div.notification-cookies)
 radiosvoboda.org##div.slide-in-wg
 radioua.net##.cookie-consent
