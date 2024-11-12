@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.11.17
-! Last modified: Sun, 10 November 2024 20:48 EET
+! Version: 24.11.18
+! Last modified: Tue, 12 November 2024 19:11 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -112,7 +112,7 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ! >>>
 ! div:has(> ins.adsbygoogle)
-animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uahistory.co,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle):remove()
+animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uahistory.co,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle):remove()
 ! div:has(> div > ins.adsbygoogle)
 forex.ua,gsminfo.com.ua,marketer.ua##div:has(> div > ins.adsbygoogle):remove()
 ! >>>
@@ -174,10 +174,9 @@ dailylviv.com##.rightBanner
 dailylviv.com##div[id^="google_banner"]
 defence-ua.com##.share-news
 defence-ua.com##div.content > br:nth-of-type(-n+2)
-defence-ua.com##div.content > div.banner.text-center:remove()
 defence-ua.com##div.content > hr:nth-of-type(-n+2)
-defence-ua.com##div.text-center:has(ins)
-defence-ua.com##div[class^="banner"]
+defence-ua.com##div.news-sm-block.border-top-block.mt-280:style(margin-top: 0px !important; padding-top: 0px !important; border-top: unset !important)
+defence-ua.com##div[class^="banner"]:remove()
 defence-ua.com##section[class^="banner"]
 delo.ua##a.s-content__subscribe
 delo.ua##div[data-banner]:remove()
