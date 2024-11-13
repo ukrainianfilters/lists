@@ -593,7 +593,6 @@ tribuna.com##div[class^="CommonLayout_common-layout__right-column_"]:has(div[cla
 tribuna.com##div[class^="Home_home-page__right-column_"] > div:nth-of-type(-n+3)
 tribuna.com##div[class^="IdealMedia_ideal-media_"]
 tribuna.com##div[class^="Main_main-layout__empty-block_"]:has(> div[class*="_banner_"])
-tribuna.com##div[class^="Main_main-layout__empty-block_"]:has(div[class*="Alternative_banner__"])
 trueua.info##div.categories__category:has(.okadvertisement):remove()
 trueua.info##div.okadv__block
 trueua.info##div.okadvertisement
