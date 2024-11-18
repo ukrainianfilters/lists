@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.11.23
-! Last modified: Sat, 16 November 2024 18:31 EET
+! Version: 24.11.24
+! Last modified: Mon, 18 November 2024 18:30 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -545,6 +545,8 @@ slovoidilo.ua##div.branding-main
 smachno.ua##div.adv-block_catfish:remove()
 socportal.info##div[x-lazyload*='adsbygoogle']:remove()
 speka.media##div.max-w-material-l:has(h3.socials__title)
+sport-express.ua##div.sadse
+sport-express.ua##div.widgetBestBookmakers
 sport.ua##[class^="partners"]
 sport.ua##div.best_bookies
 sport.ua##div.item:has-text(СТАВКА ДНЯ)
