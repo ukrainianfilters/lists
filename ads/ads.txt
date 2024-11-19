@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.11.26
-! Last modified: Tue, 19 November 2024 12:13 EET
+! Version: 24.11.27
+! Last modified: Tue, 19 November 2024 12:22 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -214,9 +214,9 @@ epravda.com.ua,pravda.com.ua##div[class*="adv_"]:remove()
 epravda.com.ua,pravda.com.ua##div[class*="banner_"]:remove()
 epravda.com.ua##[class$="_banner"]:remove()
 epravda.com.ua##body > a[href^="https://cutt.ly/"][target="_blank"]:has(picture)
-epravda.com.ua##body > a[href$="?&utm_medium=branding"][target="_blank"]:has(picture)
-epravda.com.ua##body > a[href$="?&utm_medium=anons"][target="_blank"]:has(picture)
-epravda.com.ua##body > a[href$="?&utm_medium=banner"][target="_blank"]:has(picture)
+epravda.com.ua##body > a[href$="&utm_medium=branding"][target="_blank"]:has(picture)
+epravda.com.ua##body > a[href$="&utm_medium=anons"][target="_blank"]:has(picture)
+epravda.com.ua##body > a[href$="&utm_medium=banner"][target="_blank"]:has(picture)
 epravda.com.ua##div.article_advertising
 esc.lviv.ua##div.jeg_ad
 espreso.tv##div.news-tape-item:has(div.mark-block:has-text(Партнерський матеріал))
