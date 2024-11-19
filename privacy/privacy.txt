@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 24.11.23
-! Last modified: Sat, 16 November 2024 18:31 EET
+! Version: 24.11.28
+! Last modified: Tue, 19 November 2024 20:43 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -17,7 +17,7 @@
 ||stattracking.pw^
 ! >>>
 ! Google Tag Manager
-1plus1.video,24tv.ua,ain.ua,arber.ua,bagatolososia.kiev.ua,bihus.info,champion.com.ua,chytomo.com,click.ua,codeua.com,colins.ua,ctrs.com.ua,dev.ua,dou.ua,dsnews.ua,dw.com,easypay.ua,epravda.com.ua,espreso.tv,finance.ua,forbes.ua,galka.if.ua,gordonua.com,hostiq.ua,hromadske.ua,ideabank.ua,iforum.ua,incrypted.com,informator.ua,istpravda.com.ua,klo.ua,kniga.biz.ua,kontramarka.ua,ktc.ua,kyivindependent.com,kyivpost.com,liga.net,ligazakon.net,maudau.com.ua,maximum.fm,meteo.ua,metinvest-smc.com,mezha.media,mezha.net,mirohost.net,mmr.ua,motto.ua,myfishka.com,newbalance.ua,novosti.dn.ua,nv.ua,okko.ua,online.ua,pcweek.ua,platfor.ma,playua.net,pravda.com.ua,psm7.com,radiosvoboda.org,rubryka.com,sim23.ua,speka.media,sport.ua,sport24.ua,sushiya.ua,suspilne.media,telegraf.com.ua,thepage.ua,theukrainians.org,ti.ua,ua.news,uklon.com.ua,ukraine.com.ua,ukrnafta.com,ukrposhta.ua,ukrzoloto.ua,upg.ua,varus.ua,vctr.media,village.com.ua,vodafone.ua,wog.ua,work.ua,yakaboo.ua,yesport.com.ua,zaborona.com,znoclub.com##+js(remove-node-text, script, 'googletagmanager.com/gtm.js?id=')
+1plus1.video,24tv.ua,ain.ua,arber.ua,bagatolososia.kiev.ua,bihus.info,champion.com.ua,chytomo.com,click.ua,codeua.com,colins.ua,ctrs.com.ua,dev.ua,dou.ua,dsnews.ua,dw.com,easypay.ua,epravda.com.ua,espreso.tv,finance.ua,forbes.ua,galka.if.ua,gordonua.com,hostiq.ua,hromadske.ua,ideabank.ua,iforum.ua,incrypted.com,informator.ua,istpravda.com.ua,klo.ua,kniga.biz.ua,kontramarka.ua,ktc.ua,kyivindependent.com,kyivpost.com,liga.net,ligazakon.net,maudau.com.ua,maximum.fm,megogo.net,meteo.ua,metinvest-smc.com,mezha.media,mezha.net,mirohost.net,mmr.ua,motto.ua,myfishka.com,newbalance.ua,novosti.dn.ua,nv.ua,okko.ua,online.ua,pcweek.ua,platfor.ma,playua.net,pravda.com.ua,psm7.com,radiosvoboda.org,rubryka.com,sim23.ua,speka.media,sport.ua,sport24.ua,sushiya.ua,suspilne.media,telegraf.com.ua,thepage.ua,theukrainians.org,ti.ua,ua.news,uklon.com.ua,ukraine.com.ua,ukrnafta.com,ukrposhta.ua,ukrzoloto.ua,upg.ua,varus.ua,vctr.media,village.com.ua,vodafone.ua,volia.com,wog.ua,work.ua,yakaboo.ua,yesport.com.ua,zaborona.com,znoclub.com##+js(remove-node-text, script, 'googletagmanager.com/gtm.js?id=')
 ! >>>
 censor.net##+js(remove-node-text, script, 'googletagmanager.com/gtag/js?id=')
 ! >>>
