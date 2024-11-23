@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.11.30
-! Last modified: Thu, 21 November 2024 14:45 EET
+! Version: 24.11.31
+! Last modified: Sat, 23 November 2024 20:20 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -260,6 +260,7 @@ football24.ua##div[id^="zone_"]:remove()
 football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
 football24.ua##p:has(> a[href^="https://tds.favbet.ua/"][target="_blank"])
 football24.ua##p:has(> a[rel*="sponsored"][target="_blank"] > strong)
+football24.ua##p:has(> strong > a[rel*="sponsored"][target="_blank"])
 forbes.ua##article:has(span.c-post-author__link:has-text(Партнерський матеріал))
 forbes.ua##div.c-limited-time-offers:remove()
 forbes.ua##div.c-post-additional:has(> div > div > div.c-magazine)
@@ -556,7 +557,10 @@ sport.ua##div.news-promo-feed
 sport.ua##div.wrap > center:has(div[id^="zone_"])
 sport.ua##div#footer__text
 sport24.ua##[class*="adv-"]
+sport24.ua##app-adv-between-news
 sport24.ua##app-default-news:has(app-adv-news-label)
+sport24.ua##div.video-dv-wrapper
+sport24.ua##p:has(> a[target="_blank"] > em:has-text(FAVBET))
 sportanalytic.com##div.block:has-text(Партнер)
 sportanalytic.com##div.fb_iframe_widget:remove()
 sportanalytic.com##div.wblock:has-text(Інші новини)
