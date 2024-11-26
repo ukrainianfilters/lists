@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.11.32
-! Last modified: Tue, 26 November 2024 14:36 EET
+! Version: 24.11.33
+! Last modified: Tue, 26 November 2024 18:51 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -176,6 +176,7 @@ fonarik.ua##.cl-floating-bar
 fonarik.ua##.notification-pechenki
 football24.ua##.privete-polisy
 fora.ua##.jss93
+fora.ua##div.cookie-banner
 forbes.ua##div.modal:has(img[src*="paywall.forbes.ua/static/content/"])
 founder.ua##div.boxCookies
 fozzyshop.ua###iqitcookielaw
@@ -261,6 +262,8 @@ meteoprog.com##div.adl_cmp_consent-dialog-module_backdrop
 metinvest-smc.com###cookieConsentBanner
 metinvest.digital##div.cookie-popup
 metinvestholding.com###cookieConsentBanner
+metro.ua##body:style(overflow: unset !important)
+metro.ua##div.row > div > div.consent-disclaimer:has(a[href="/cookies"])
 mgmotor.com.ua##div.cookie-show
 mhp.com.ua##.cookie-modal
 mills.com.ua##div.modal__accept__cookies
@@ -287,6 +290,7 @@ novadigital.com##div.npd-cookies
 novapay.ua##div.cookies.show-cookies
 novaposhta.ua##div#popup_info
 novosti.dn.ua##div.cookies_accept
+novus.ua##div.nearest-store-popup
 ntn.ua##.warning
 obyava.ua##.cookie-bar
 odessa-life.od.ua###moove_gdpr_cookie_info_bar
