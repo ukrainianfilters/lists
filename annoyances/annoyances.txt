@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.11.33
-! Last modified: Tue, 26 November 2024 18:51 EET
+! Version: 24.12.1
+! Last modified: Sun, 01 December 2024 13:47 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -203,6 +203,7 @@ inshe.tv##div.jnews_popup_post_container
 inter.ua##.warning
 interflora.com.ua###cookies-policy
 interkassa.com##div.cookie-consent
+intertop.ua##div.agreement
 itest.com.ua###clearfy-cookie
 itest.com.ua##div.mypopup-modal-container
 ithillel.ua##.cookie-ntf
@@ -211,6 +212,7 @@ iveco.com###CybotCookiebotDialog
 jakosport.com.ua##div.notice-module
 jakosport.com.ua##div[aria-label="cookieconsent"]
 juscutum.com##div.popup__wrapper:has(> div > div > div.cookie-modal_component)
+kaercher.com##div.fg-cookiesdirective
 kasta.ua##div[role="dialog"]:has(a[href$="/cookiepolicy/"])
 kernel.ua##div[role="dialog"]:has(div#modal-cookie-policy)
 kg.ua###slidebox45
@@ -272,6 +274,7 @@ mmr.ua##div.new-video-block
 mmr.ua##div.telegram-suggest
 mobizon.ua##.confirm-cookie-block
 molliua.com###cookies-panel
+moneyveo.ua##app-cookie-agreement
 moonart.net.ua###cookiesPopup
 morshynska.ua##div.cookie_block
 mriia.gov.ua##app-cookie-dialog
@@ -291,6 +294,7 @@ novapay.ua##div.cookies.show-cookies
 novaposhta.ua##div#popup_info
 novosti.dn.ua##div.cookies_accept
 novus.ua##div.nearest-store-popup
+npshopping.com##div.cookie-alert
 ntn.ua##.warning
 obyava.ua##.cookie-bar
 odessa-life.od.ua###moove_gdpr_cookie_info_bar
@@ -378,6 +382,7 @@ taps.org.ua##div#overlay
 tascombank.ua##div.cookie-message
 tcc.ua##.tm-cookies
 tdl.com.ua###bottom_message
+tefal.ua##div.cookieMessage-root-o1g
 telegraf.com.ua##.c-cookies
 teleportal.ua##.cookie_container
 texty.org.ua##div.donate-banner
