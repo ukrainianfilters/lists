@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.12.4
-! Last modified: Thu, 05 December 2024 18:49 EET
+! Version: 24.12.5
+! Last modified: Fri, 06 December 2024 00:34 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -218,10 +218,6 @@ epravda.com.ua##body > a[href$="&utm_medium=anons"][target="_blank"]:has(picture
 epravda.com.ua##body > a[href$="&utm_medium=banner"][target="_blank"]:has(picture,img)
 epravda.com.ua##body > a[href$="&utm_medium=branding"][target="_blank"]:has(picture,img)
 epravda.com.ua##div.article_advertising
-epravda.com.ua##header + nav + a[href^="https://cutt.ly/"][target="_blank"]:has(picture,img)
-epravda.com.ua##header + nav + a[href$="&utm_medium=anons"][target="_blank"]:has(picture,img)
-epravda.com.ua##header + nav + a[href$="&utm_medium=banner"][target="_blank"]:has(picture,img)
-epravda.com.ua##header + nav + a[href$="&utm_medium=branding"][target="_blank"]:has(picture,img)
 esc.lviv.ua##div.jeg_ad
 espreso.tv##div.news-tape-item:has(div.mark-block:has-text(Партнерський матеріал))
 eurointegration.com.ua##[class$="_banner"]:remove()
@@ -449,9 +445,15 @@ mezha.media##div:has(> a.banner-link)
 mezha.media##div.news-item:has(a[rel="author"]:has-text(Promoted))
 mil.in.ua##div.ads
 mind.ua###promo-catfish
-mind.ua##div.b-info-list__item:has(a[href$="/companynews"])
+mind.ua##article.article_news:has(> object > a.article__adv)
+mind.ua##article.article_news:has(> object > a[href$="/partnership"])
+mind.ua##div.b-info-block:has(> div > div > div > a.b-info-post__brand)
+mind.ua##div.b-info-list__item:has(> a[href$="/companynews"])
+mind.ua##div.b-info-list__item:has(> a[href$="/partnership"])
 mind.ua##div.block_mind_brand
+mind.ua##div.layout_wide.section_link_partner_parent
 mind.ua##div.read-also_banner
+mind.ua##div.section-container.partner
 mind.ua##div[class*="_banner"]:remove()
 mind.ua##h2.b-info-block__title:style(padding-top: 0 !important)
 minfin.com.ua##.mfz-post:has([data-link="rubric"]:has-text(Промо))
@@ -683,6 +685,7 @@ vseazs.com##a.vseosago
 vseazs.com##div.center_container
 vseazs.com##p[align="center"]:has-text(Наші партнери)
 vynnyky-visnyk.com.ua##div.wpb_single_image:has(> figure > div > img.vc_single_image-img)
+weukraine.tv##div[data-action="banners"]
 work.ua###react-video-player
 work.ua##div.hidden-print:has(> a[onclick="openReactVideoPlayer()"])
 work.ua##iframe + div.h-exception
