@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.12.5
-! Last modified: Fri, 06 December 2024 00:34 EET
+! Version: 24.12.7
+! Last modified: Thu, 12 December 2024 21:58 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -41,11 +41,11 @@
 ! SCRIPTS
 ! !!!!!!!!!!!!!!!
 !
-||*content-loader.com/*^$script
-||*css-load.com/*^$script
-||*html-load.com/*^$script
-||*img-load.com/*^$script
-||*error-report.com/*^$document,subdocument,xmlhttprequest,script
+! ||*content-loader.com/*^$script
+! ||*css-load.com/*^$script
+! ||*html-load.com/*^$script
+! ||*img-load.com/*^$script
+! ||*error-report.com/*^$document,subdocument,xmlhttprequest,script
 ! >>>
 ! AdRiver
 ||/adriver.core.2.js^
@@ -112,13 +112,13 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ! >>>
 ! div:has(> ins.adsbygoogle)
-animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uahistory.co,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle):remove()
+animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uahistory.co,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
 ! div:has(> div > ins.adsbygoogle)
-forex.ua,gsminfo.com.ua,marketer.ua##div:has(> div > ins.adsbygoogle):remove()
+forex.ua,gsminfo.com.ua,marketer.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
 1plus1.ua##div.articleHeaderAdv
 1plus1.ua##div.gridSection__list:style(max-width: none !important)
-1plus1.ua##div.idealMedia:remove()
+1plus1.ua##div.idealMedia
 1plus1.ua##div.news__items:style(max-width: none !important)
 1plus1.ua##div[class*="__adv"]
 1plus1.ua##div[class*="-adv"]
@@ -133,8 +133,8 @@ forex.ua,gsminfo.com.ua,marketer.ua##div:has(> div > ins.adsbygoogle):remove()
 24tv.ua##app-video-adv-block
 24tv.ua##app-without-ads.news-wrapper:has(app-custom-adv-label > div > div.custom-adv-label)
 24tv.ua##div.video-dv-wrapper
-5.ua##div[class^="banner"]:has(div[id^="div-gpt-ad-"]):remove()
-5.ua##div[class$="banner"]:has(div[id^="div-gpt-ad-"]):remove()
+5.ua##div[class^="banner"]:has(div[id^="div-gpt-ad-"])
+5.ua##div[class$="banner"]:has(div[id^="div-gpt-ad-"])
 agronews.ua##div[class*="banner"]
 agronews.ua##div[class^="baner-"]
 agropolit.com##div.header__banner-wrap
@@ -142,30 +142,30 @@ agroportal.ua##.fixedBlock
 agroportal.ua##a[href^="/"][target="_blank"]
 ain.ua##div.branding-top
 ain.ua##div[class^="adsense-"]
-apostrophe.ua##.advertinline:remove()
+apostrophe.ua##.advertinline
 apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
-autoconsulting.com.ua##table:has(> tbody > tr > td.title:has-text(Лічильники)):remove()
-autoconsulting.com.ua##td:has(> ins.adsbygoogle):remove()
+autoconsulting.com.ua##table:has(> tbody > tr > td.title:has-text(Лічильники))
+autoconsulting.com.ua##td:has(> ins.adsbygoogle)
 babel.ua##aside.c-subs-box.c-subs-social
-bigkyiv.com.ua##div.ads:remove()
+bigkyiv.com.ua##div.ads
 bihus.info##div.r-tram_wrap
 board.if.ua##noindex:has(div > ins.adsbygoogle)
 buhgalter.com.ua,buhgalter911.com##body.access *:style(filter: none !important)
 buhgalter.com.ua,buhgalter911.com##body.access div[id^="access-au"]
 buhgalter.com.ua,buhgalter911.com##body.access:style(overflow: auto !important; position: relative !important)
-buhgalter.com.ua,buhgalter911.com##div[data-ad="active"]:remove()
+buhgalter.com.ua,buhgalter911.com##div[data-ad="active"]
 buhgalter.com.ua##div.rec
 buhgalter.com.ua##div#top-line
 censor.net##.right-sidebar div[style^="width: 300px; "]
 censor.net##div.container.d-print-none:has(script[src^="//a4.censor.net/js/"])
 censor.net##div.row.d-print-none:has(script[src^="//a4.censor.net/js/"])
-champion.com.ua##[class$="_banner"]:remove()
+champion.com.ua##[class$="_banner"]
 champion.com.ua##div.section_news_adv
 champion.com.ua##div[class*="_banner_"]
 champion.com.ua##div[class^="banner"]
-chasdiy.org##div.side-content-wrapper:remove()
-chasdiy.org##div.top-content-wrapper:remove()
+chasdiy.org##div.side-content-wrapper
+chasdiy.org##div.top-content-wrapper
 chytomo.com##div[class^="banner"]
 cloudgaminghub.net.ua##div.banner-promotions-wrapper
 cloudgaminghub.net.ua##div.widget_media_image:has(figure.wp-block-image > a[href*="boosteroid.com/go/"])
@@ -176,16 +176,16 @@ defence-ua.com##.share-news
 defence-ua.com##div.content > br:nth-of-type(-n+2)
 defence-ua.com##div.content > hr:nth-of-type(-n+2)
 defence-ua.com##div.news-sm-block.border-top-block.mt-280:style(margin-top: 0px !important; padding-top: 0px !important; border-top: unset !important)
-defence-ua.com##div[class^="banner"]:remove()
+defence-ua.com##div[class^="banner"]
 defence-ua.com##section[class^="banner"]
 delo.ua##a.s-content__subscribe
-delo.ua##div[data-banner]:remove()
-delo.ua##div[data-sender="admixer"]:remove()
-dengi.ua##div.banner:remove()
+delo.ua##div[data-banner]
+delo.ua##div[data-sender="admixer"]
+dengi.ua##div.banner
 detector.media##div.banner_brend
 detector.media##div.md_banner_zone
 dev.ua##div.afterheader-widget
-dev.ua##div.island:has(> div.island__body > div[data-sender="admixer"]):remove()
+dev.ua##div.island:has(> div.island__body > div[data-sender="admixer"])
 dev.ua##div.partners-wrapper
 dou.ua##div.b-adv-events
 dou.ua##div.b-dou-vacancies
@@ -193,26 +193,26 @@ dou.ua##div.b-sponsors
 dou.ua##div#max-header-adv-id:has(a[href^="https://dou.ua/goto/?id="])
 dou.ua##div#topinfo
 dou.ua##li.mini-header:has(a[rel="nofollow"][target="_blank"])
-dovidka.biz.ua##div[class^="b-r b-r--"]:remove()
+dovidka.biz.ua##div[class^="b-r b-r--"]
 dsnews.ua##div:has(> div[data-banner])
 dsnews.ua##div.home-main-ad
 dtkt.ua##div.box-banner
 dumskaya.net##div.hideprint
-dumskaya.net##div[style="background:#fff;"]:has(a.ad):remove()
-dumskaya.net##div#tops:remove()
+dumskaya.net##div[style="background:#fff;"]:has(a.ad)
+dumskaya.net##div#tops
 dumskaya.net##nav.nav:style(padding-top: 0 !important)
 dumskaya.net##noindex
 dw.com##div.advertisement
 dynamo.kiev.ua##div#corpMagnet
 elitexpert.ua##.leader-wrap-out
 epochtimes.com.ua##aside:has(> iframe[src$="/sinoptik.html"])
+epravda.com.ua,eurointegration.com.ua,pravda.com.ua##[class$="_banner"]:remove()
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]:remove()
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(PROMOTED))
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(АНОНС))
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(СПЕЦПРОЄКТ))
 epravda.com.ua,pravda.com.ua##div[class*="adv_"]:remove()
 epravda.com.ua,pravda.com.ua##div[class*="banner_"]:remove()
-epravda.com.ua##[class$="_banner"]:remove()
 epravda.com.ua##body > a[href^="https://cutt.ly/"][target="_blank"]:has(picture,img)
 epravda.com.ua##body > a[href$="&utm_medium=anons"][target="_blank"]:has(picture,img)
 epravda.com.ua##body > a[href$="&utm_medium=banner"][target="_blank"]:has(picture,img)
@@ -220,16 +220,15 @@ epravda.com.ua##body > a[href$="&utm_medium=branding"][target="_blank"]:has(pict
 epravda.com.ua##div.article_advertising
 esc.lviv.ua##div.jeg_ad
 espreso.tv##div.news-tape-item:has(div.mark-block:has-text(Партнерський матеріал))
-eurointegration.com.ua##[class$="_banner"]:remove()
-eurointegration.com.ua##[class$="-banner"]:remove()
+eurointegration.com.ua,pravda.com.ua##[class$="-banner"]:remove()
 eurointegration.com.ua##a[href="https://www.ukr.net/"]
-eurointegration.com.ua##p:has(> ins.adsbygoogle):remove()
+eurointegration.com.ua##p:has(> ins.adsbygoogle)
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
 euromaidanpress.com##div.kompreno
 expres.online##div.advertisement
-fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"]):remove()
+fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"])
 fakty.com.ua##div.pip-video-wrapper
-fakty.com.ua##div[class^="promo-layer"]:remove()
+fakty.com.ua##div[class^="promo-layer"]
 finance.ua###sticky-wrapper:has(div[id^="div-gpt-ad-"])
 finance.ua##div.bottom_banner
 finance.ua##div.minfin-banner
@@ -242,13 +241,13 @@ flatfy.ua,lun.ua##div.feed-layout__item-holder:has(button[data-event-action="new
 flatfy.ua,lun.ua##div.feed-layout__item-holder:has(div.bird-select-advertisement)
 focus.ua##div.o-block
 focus.ua##div.u-d-h-600:has(div[id*="ScriptRoot"])
-focus.ua##div[data-ad-title]:remove()
-football-ukraine.com##div.view:has-text(РЕКЛАМА):remove()
-football-ukraine.com##div[class$="-ad"]:remove()
+focus.ua##div[data-ad-title]
+football-ukraine.com##div.view:has-text(РЕКЛАМА)
+football-ukraine.com##div[class$="-ad"]
 football.ua##.banner ~ .separator
 football.ua##[class$="-banner"]
 football.ua##div[class^="banner"]
-football.ua##div[id^="zone_"]:remove()
+football.ua##div[id^="zone_"]
 football24.ua##[class*="adv_"]
 football24.ua##[class*="adv-"]
 football24.ua##[id*="AdvWrapper"]
@@ -256,49 +255,49 @@ football24.ua##aside.adv-insert + div.media_embed
 football24.ua##aside.adv-insert + p:empty + div.responsive-embed
 football24.ua##aside.adv-insert + p:has(img)
 football24.ua##div.mobileBrandingPlace
-football24.ua##div[id^="zone_"]:remove()
+football24.ua##div[id^="zone_"]
 football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
 football24.ua##p:has(> a[href^="https://tds.favbet.ua/"][target="_blank"])
 football24.ua##p:has(> a[rel*="sponsored"][target="_blank"] > strong)
 football24.ua##p:has(> strong > a[rel*="sponsored"][target="_blank"])
 forbes.ua##article:has(span.c-post-author__link:has-text(Партнерський матеріал))
-forbes.ua##div.c-limited-time-offers:remove()
+forbes.ua##div.c-limited-time-offers
 forbes.ua##div.c-post-additional:has(> div > div > div.c-magazine)
 forbes.ua##div.c-post-subscribe
 forbes.ua##div[id^="adpartner-"]
 founder.ua##div.boxWidgetBanner
-galinfo.com.ua##[id^="bannplace"]:remove()
-galinfo.com.ua##[id^="candyplace"]:remove()
-galinfo.com.ua##span.i728:remove()
+galinfo.com.ua##[id^="bannplace"]
+galinfo.com.ua##[id^="candyplace"]
+galinfo.com.ua##span.i728
 galka.if.ua##div.widget:has(> section.baner-widget)
 gazeta.ua##.informer
 gk-press.if.ua##.widget_media_image
 gk-press.if.ua###left-sidebar > .widget_text
 gk-press.if.ua##div[style="text-align: center"] > [href][target="_blank"]
 glamour.kyiv.ua##div.textwidget:has(a[href*="myblogshop.top"][rel="nofollow"])
-glamour.kyiv.ua##div.textwidget:has(script):remove()
+glamour.kyiv.ua##div.textwidget:has(script)
 glavcom.ua##[data-action="banners"]
 glavcom.ua##div[class^="banner"]
 glavred.net##div.bnr-block
 glavred.net##div.bnr-block--gray
-glavred.net##div.main-partners:remove()
-glavred.net##div.partner-news:remove()
-gordonua.com##div[class^="advertising"]:remove()
-gordonua.com##div[data-action="banners"]:remove()
+glavred.net##div.main-partners
+glavred.net##div.partner-news
+gordonua.com##div[class^="advertising"]
+gordonua.com##div[data-action="banners"]
 greenforest.com.ua##div.banner-place
 gsminfo.com.ua###text-html-widget-2
-guide.in.ua##div[class^="adsbygoogle-"]:remove()
-happymonday.ua##a[style="z-index: 0; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;"]:remove()
+guide.in.ua##div[class^="adsbygoogle-"]
+happymonday.ua##a[style="z-index: 0; position: fixed; top: 0px; left: 0px; width: 100%; height: 100%;"]
 happymonday.ua##body:style(background-image: none !important; padding-top: 0 !important;)
 happymonday.ua##div.adv
 happymonday.ua##div.attn_block
 happymonday.ua##div.top-banner
-highload.today##[class^="partners"]:remove()
+highload.today##[class^="partners"]
 highload.today##div:has(> img[src*="/images/banners/"])
-highload.today##div.mobile-hide:remove()
-highload.today##div.mobile-show:remove()
+highload.today##div.mobile-hide
+highload.today##div.mobile-show
 highload.today##div[class^="course-widget-"]
-highload.today##p.intro[style*="background: linear-gradient"]:remove()
+highload.today##p.intro[style*="background: linear-gradient"]
 hromadske.radio##[class$="-banner"]
 hromadske.radio##div.banner-block
 hromadske.radio##div.banner-block-mb
@@ -310,7 +309,7 @@ i.ua##.clear.logo_container
 i.ua##.news_premium_item
 i.ua##.partner_links
 i.ua###Premium
-ictv.ua##div.partner-news:remove()
+ictv.ua##div.partner-news
 imena.ua##section.widget:has(img[src$="banner_300x300.jpg"])
 incrypted.com##.top-banner-airdrops
 incrypted.com##div[class^="top-banner-"]
@@ -318,59 +317,59 @@ incrypted.com##section.widget_text:has(> div > div.incrypted-banner)
 inforesist.org##.advert
 inforesist.org##.dw_focus_widget_news_ticker
 inforesist.org##[class^="partners"]
-informator.ua##div:has(> script[src*="/js/frontend/ad-loaders/"]):remove()
+informator.ua##div:has(> script[src*="/js/frontend/ad-loaders/"])
 inshe.tv##div.jeg_ad
-interfax.com.ua##div.ad:remove()
-interfax.com.ua##div.ads:remove()
-internetua.com##div.article-widget-section:has(div.MIXADVERT_NET):remove()
-internetua.com##div.banner:remove()
-internetua.com##div.banner2:remove()
-internetua.com##div.left-ban:remove()
-internetua.com##div.top-ban:remove()
-internetua.com##div[id^="adex-jsunit-"]:remove()
+interfax.com.ua##div.ad
+interfax.com.ua##div.ads
+internetua.com##div.article-widget-section:has(div.MIXADVERT_NET)
+internetua.com##div.banner
+internetua.com##div.banner2
+internetua.com##div.left-ban
+internetua.com##div.top-ban
+internetua.com##div[id^="adex-jsunit-"]
 internetua.com##head > style:empty:style(all: inherit !important)
-istpravda.com.ua##[class$="_banner"]:remove()
-istpravda.com.ua##[class$="-banner"]:remove()
+istpravda.com.ua##[class$="_banner"]
+istpravda.com.ua##[class$="-banner"]
 it-rating.ua##.rowBan
 it-rating.ua##a.stickybl
-itc.ua##[class^="partners"]:remove()
+itc.ua##[class^="partners"]
 itc.ua##[data-course]
 itc.ua##a:has(> img.vote-image)
 itc.ua##div.about-noa:has(> a[href$="/vidklyuchyty-reklamu/"])
 itc.ua##div.carousel-block:has(a:has-text(Огляди партнерів))
 itc.ua##div.featured-in-new > div.row
-itc.ua##div.featured-statti:has(a.oglyadi-partneriv):remove()
+itc.ua##div.featured-statti:has(a.oglyadi-partneriv)
 itc.ua##div.hidden-sm:has(div[id*="-banner-"])
 itc.ua##div.hidden-sm:has(img[src*="/images/banners/"])
 itc.ua##div.jobs-vacancy
 itc.ua##div.popup-bottom:has(script)
 itc.ua##div.post.block-in-loop.category-partnerskij-proekt
 itc.ua##div.sponsor
-itc.ua##div.visible-sm:has(div[id*="-banner-"]):remove()
+itc.ua##div.visible-sm:has(div[id*="-banner-"])
 itc.ua##div.widget-spec-projects
 itc.ua##div[class*="widget-partners-blogs"]
-itc.ua##div[class^="hidden-sm"]:remove()
-itc.ua##div[class^="visible-sm"]:remove()
+itc.ua##div[class^="hidden-sm"]
+itc.ua##div[class^="visible-sm"]
 itc.ua##li.widget-container:has(.jobs-vacancy)
-itc.ua##li.widget-container:has(.partner-blog):remove()
-itc.ua##li.widget-sticky:has(div[id^="div-gpt-ad-"]):remove()
-itc.ua##li[class*="widget_execphp"]:remove()
-itc.ua##li[id^="partner-posts"]:remove()
-itc.ua##p.intro:has(a[href*="?utm_source=itc.ua&utm_medium=branding"]):remove()
-itc.ua##p.intro[style*="background: linear-gradient"]:remove()
-itsider.com.ua##div.xjo:has(> div[data-type="custom_code"]):remove()
+itc.ua##li.widget-container:has(.partner-blog)
+itc.ua##li.widget-sticky:has(div[id^="div-gpt-ad-"])
+itc.ua##li[class*="widget_execphp"]
+itc.ua##li[id^="partner-posts"]
+itc.ua##p.intro:has(a[href*="?utm_source=itc.ua&utm_medium=branding"])
+itc.ua##p.intro[style*="background: linear-gradient"]
+itsider.com.ua##div.xjo:has(> div[data-type="custom_code"])
 itvua.tv##.adwrapper
 itvua.tv##[class*="banner"]
 ivona.ua##div.col-sm-6:has(span:has-text(Реклама))
 ivona.ua##div[class^="banner"]
-ivona.ua##div[id^="zone_"]:remove()
+ivona.ua##div[id^="zone_"]
 kagarlyk.city##div.mc-banner-placeholder
 kagarlyk.city##div.mc-top-banner
 kg.ua##a > img[src^="/sites/default/files/inline/"]
 kg.ua##img[src^="/sites/default/files/inline/"]
 kinoafisha.ua##a.link-main-image-wrap.fixed
 kinoafisha.ua##body.with-image:style(padding-top: 20px !important)
-kinoafisha.ua##div[class^="adpartner-"]:remove()
+kinoafisha.ua##div[class^="adpartner-"]
 kinoafisha.ua##div[class^="promo"]
 ko.com.ua##a[href$="oki.com/ua/printing"]
 ko.com.ua##body > a[target="_blank"][style*="height: 100%"]
@@ -390,12 +389,12 @@ korrespondent.net##.unit-side-informer
 korrespondent.net##[class$="-banner"]
 kp.ua##[class*="banner"]
 kp.ua##[data-action="banners"]
-krymr.com##div.media-block-wrap:has(h2:has-text(НОВИНИ ПАРТНЕРІВ)):remove()
+krymr.com##div.media-block-wrap:has(h2:has-text(НОВИНИ ПАРТНЕРІВ))
 krymr.com##div.slide-in-wg
 krymr.com##div.wsw__embed:has(div.promo)
 ktc.ua##div.decor-banner:has(a[href*="ktc.ua/edilo__"])
 kurs.com.ua###catfishWrap
-kurs.com.ua##div:not(div#bottomWrap).advertising:remove()
+kurs.com.ua##div:not(div#bottomWrap).advertising
 kyiv24.news##.site-header:style(top: 0 !important)
 kyiv24.news##div.main-wrapper:style(margin-top: 0 !important)
 kyiv24.news##section.google-news
@@ -404,7 +403,7 @@ kyivindependent.com##div.bottomPopupBanner
 kyivindependent.com##iframe[data-engage-slug^="popupjoinus"]
 kyivpost.com##div.col-xl-2.d-xl-block:has(> a > img[alt="Kador Group"])
 kyivpost.com##div.section-title:has-text(Sponsored content)
-kyivpost.com##div[class^="ad-wrapper"]:remove()
+kyivpost.com##div[class^="ad-wrapper"]
 lb.ua##[class^="adv-banner"]
 lb.ua##div.cookie-info
 lb.ua##div.layout-anons
@@ -415,11 +414,11 @@ liga.net##article.is-partners
 liga.net##div.ad
 liga.net##div.article-footer__widget.b-blocks
 liga.net##div.article-footer__widget.b-subs
-liga.net##div.banner:remove()
-ligazakon.net##div.banner_placeholder:remove()
+liga.net##div.banner
+ligazakon.net##div.banner_placeholder
 ligazakon.net##div.item_withrekl
 ligazakon.net##div.promoblock
-ligazakon.net##div.rekl_block:remove()
+ligazakon.net##div.rekl_block
 ligazakon.net##div.texts
 ligazakon.net##section.actualsinglepage_promo_product
 ligazakon.net##section.jurist_firm_sidebar_block
@@ -429,7 +428,7 @@ maximum.fm##div.adv-container
 maximum.fm##div.partner-recomendation
 mc.today##[data-coursestyle]
 mc.today##div.company-slider
-mc.today##div.mobile-hide:not(.widget-popular, .widget-popular-title):remove()
+mc.today##div.mobile-hide:not(.widget-popular, .widget-popular-title)
 mc.today##div.widget-vacancy
 meta.ua##div.banner-zone
 meta.ua##div.sidebar__ads
@@ -454,26 +453,26 @@ mind.ua##div.block_mind_brand
 mind.ua##div.layout_wide.section_link_partner_parent
 mind.ua##div.read-also_banner
 mind.ua##div.section-container.partner
-mind.ua##div[class*="_banner"]:remove()
+mind.ua##div[class*="_banner"]
 mind.ua##h2.b-info-block__title:style(padding-top: 0 !important)
 minfin.com.ua##.mfz-post:has([data-link="rubric"]:has-text(Промо))
 minfin.com.ua##[class*="banner"]
 minfin.com.ua###special-product-offer
-minfin.com.ua##div.aside-pull-right-block:has(> div[id^="premium-"]):remove()
-minfin.com.ua##div[data-bn-slot]:remove()
+minfin.com.ua##div.aside-pull-right-block:has(> div[id^="premium-"])
+minfin.com.ua##div[data-bn-slot]
 moviegram.com.ua##div.elementor-element:has(> div > p > a[href="mailto:redaction@moviegram.com.ua"])
-moviegram.com.ua##section.elementor-section:has(> div > div > div > div.elementor-widget-wp-widget-advads_ad_widget):remove()
+moviegram.com.ua##section.elementor-section:has(> div > div > div > div.elementor-widget-wp-widget-advads_ad_widget)
 nachasi.com##div.sticky-zone:has-text(Блоги компаній)
 nachasi.com##div.style_poster__MF3pg:has(.style_content__3CPKg)
-novosti-n.org##div[class*="banner"]:remove()
-novy.tv##div.ads-catfish-container:remove()
-novy.tv##div.ads-sidebar:remove()
-novy.tv##div#sticky-ads:remove()
-novynarnia.com##div:has(> div#mt_promo_wghot):remove()
+novosti-n.org##div[class*="banner"]
+novy.tv##div.ads-catfish-container
+novy.tv##div.ads-sidebar
+novy.tv##div#sticky-ads
+novynarnia.com##div:has(> div#mt_promo_wghot)
 novyny.live##div.sidebar.sidebar-article:has(.adsbygoogle)
 noworries.news##.header-baner
 nv.ua##body.branding:style(padding-top: 20px !important)
-nv.ua##div.active_adv:remove()
+nv.ua##div.active_adv
 nv.ua##div.remp-banner
 nv.ua##div[id^="async__head"]
 nv.ua##div[id^="async_spec"]
@@ -481,56 +480,54 @@ obozrevatel.com##.headerBiding
 obozrevatel.com##.videoOfDay
 obozrevatel.com##aside.asideBanner.--left
 obozrevatel.com##aside.asideBanner.--right
-obozrevatel.com##aside.headerBiding:has(div[class*="_970"]):remove()
+obozrevatel.com##aside.headerBiding:has(div[class*="_970"])
 obozrevatel.com##div.recommendation
 obozrevatel.com##div[id^="carouselLast-slide"]:has(article.newsImg > div.banner)
 obozrevatel.com##div[id^="carouselmostViewed-slide"]:has(article.newsImg > div.banner)
-odessa-life.od.ua##div.code-block:remove()
+odessa-life.od.ua##div.code-block
 odessa-life.od.ua##div[class*="adrotate"]
 opendatabot.ua##aside#odb-open-in-app
-opentalk.org.ua##div:has(> div.ad56):remove()
+opentalk.org.ua##div:has(> div.ad56)
 ostro.org##div.page-wrapper.hide-mob:has(div.container.page-container)
 ostro.org##div.press-reliz
-ostro.org##div[class^="banner-"]:remove()
-ostro.org##div[id^="banner-"]:remove()
-osvita.ua##div:has(> div.blosk-advertising-google):remove()
+ostro.org##div[class^="banner-"]
+ostro.org##div[id^="banner-"]
+osvita.ua##div:has(> div.blosk-advertising-google)
 osvita.ua##div.article__advertising
 osvita.ua##div.banners-groups
-osvita.ua##div[class^="baners-"]:remove()
-overclockers.ua##div[class^="ad_slot"]:remove()
+osvita.ua##div[class^="baners-"]
+overclockers.ua##div[class^="ad_slot"]
 patient-docs.com###sidebar_banner
 pidruchnyk.com.ua###sidebar
-pidruchnyk.com.ua##div[id^="admixer_"] + script:remove()
-pingvin.pro##div.col-lg-4:has(> div > div > ins.adsbygoogle):remove()
+pidruchnyk.com.ua##div[id^="admixer_"] + script
+pingvin.pro##div.col-lg-4:has(> div > div > ins.adsbygoogle)
 pingvin.pro##div.col-lg-4.col-md-6:has(> div.card > div.card-body > a[href$="/category/blogy/offers"])
-pisni.ua##div.header-banner:remove()
+pisni.ua##div.header-banner
 players.com.ua##a[class*="banner-"]
 players.com.ua##img[class*="banner-"]
 playua.net##div[class*="-advert"]
 playua.net##div[class*="a_dvert"]
-playua.net##div[class*="google-ad"]:remove()
+playua.net##div[class*="google-ad"]
 pravda.com.ua##.unit_sp_place:remove()
-pravda.com.ua##[class$="_banner"]:remove()
-pravda.com.ua##[class$="-banner"]:remove()
 pravda.com.ua##article.article_pr
 pravda.com.ua##div.container_special
 pravda.com.ua##div.promoted_article
 pravda.com.ua##div.ym-video--wrapper
 predmety.in.ua##div[style="height:550px; weight:auto;"]:empty
-proidei.com##div.ads-widget-block:remove()
-prolinux.pp.ua##section.widget_block:has(ins.adsbygoogle):remove()
+proidei.com##div.ads-widget-block
+prolinux.pp.ua##section.widget_block:has(ins.adsbygoogle)
 prom.ua##div[style*="cloud-cgi/static/catalog-ui/js/build/portal-portable/maskWeb-5Wgei.png"]
-proslav.info##div.jeg_ad:remove()
+proslav.info##div.jeg_ad
 protocol.ua##div.modal_cont:has(> div.streag_close_btn_cont)
 protocol.ua##div.section9_thirdBlock:has(> div > h2:has-text(Партнери))
-protocol.ua##div[class^="baner_"]:remove()
+protocol.ua##div[class^="baner_"]
 psm7.com##div[class*="-banner"]
 psm7.com##section.psm-header-baner-container
 psm7.com##section[class*="-banner"]
-radiotrek.rv.ua##div.ad:remove()
+radiotrek.rv.ua##div.ad
 radiotrek.rv.ua##div#ads
-rau.ua##div[class^="advertising_slider"]:remove()
-rayon.in.ua##div.body-typical__slider:remove()
+rau.ua##div[class^="advertising_slider"]
+rayon.in.ua##div.body-typical__slider
 rbc.ua##.vidverto-wrapper
 rbc.ua##[id^="admixer-"]
 rbc.ua##[id^="bn_"]
@@ -547,12 +544,13 @@ rubryka.com##div.single-page__social
 rubryka.com##div[class*="advertisment"]
 rubryka.com##div[style="padding: 0 0 30px"]
 rud.ua##a.branding__link
+sinoptik.ua##aside:has(> div > div[id^="div-gpt-ad-"])
 sinoptik.ua##div.informerTop
 sinoptik.ua##head > style:empty:style(all: inherit !important)
-slovnyk.ua##section[class^="section-ad"]:remove()
+slovnyk.ua##section[class^="section-ad"]
 slovoidilo.ua##div.branding-main
-smachno.ua##div.adv-block_catfish:remove()
-socportal.info##div[x-lazyload*='adsbygoogle']:remove()
+smachno.ua##div.adv-block_catfish
+socportal.info##div[x-lazyload*='adsbygoogle']
 speka.media##div.max-w-material-l:has(h3.socials__title)
 sport-express.ua##div.sadse
 sport-express.ua##div.widgetBestBookmakers
@@ -568,7 +566,7 @@ sport24.ua##app-default-news:has(app-adv-news-label)
 sport24.ua##div.video-dv-wrapper
 sport24.ua##p:has(> a[target="_blank"] > em:has-text(FAVBET))
 sportanalytic.com##div.block:has-text(Партнер)
-sportanalytic.com##div.fb_iframe_widget:remove()
+sportanalytic.com##div.fb_iframe_widget
 sportanalytic.com##div.wblock:has-text(Інші новини)
 sportanalytic.com##div#news:has-text(Картина дня)
 sportarena.com##[data-partner]
@@ -579,7 +577,7 @@ stopcor.org##aside.videoOfDay
 stopcor.org##div.idealmedia
 storinka.com.ua##div.share
 storinka.com.ua##div.widget:not([class$="hidden-xs"])
-sud.ua##div.b-sidebar-adv:remove()
+sud.ua##div.b-sidebar-adv
 synonimy.info##body:style(background-image: none !important)
 tabletki.ua##div.adunit
 tabletki.ua##div.col:has(> aside > div.tabletki-adunit)
@@ -593,9 +591,9 @@ tabloid.pravda.com.ua##.kr-loo-box
 tabloid.pravda.com.ua##div.layout_split_sidebar:has(.article_pr + .article_pr + .article_pr + .article_pr + .article_pr + .article_pr)
 telegraf.com.ua##[data-text="Реклама"]
 telegraf.com.ua##div.c-r:has([data-text="Реклама"])
-telegraf.com.ua##div.s-content__ratio:has(script[id^="_vidverto-"]):remove()
+telegraf.com.ua##div.s-content__ratio:has(script[id^="_vidverto-"])
 telegraf.com.ua##div[data-text="Новини партнерів"]
-texty.org.ua##.ad-banner-aside:remove()
+texty.org.ua##.ad-banner-aside
 thebuchacity.com##div[style="display: inline-block"]:has(> div > h4 > a:has-text(РЕКЛАМА))
 thepage.ua##div.news-list__item:has(div[class*="news-tag company_news"])
 thepage.ua##div.news-list__item:has(div[class*="news-tag partner_material"])
@@ -607,10 +605,10 @@ tribuna.com##div[class^="CommonLayout_common-layout__right-column_"]:has(div[cla
 tribuna.com##div[class^="Home_home-page__right-column_"] > div:nth-of-type(-n+3)
 tribuna.com##div[class^="IdealMedia_ideal-media_"]
 tribuna.com##div[class^="Main_main-layout__empty-block_"]:has(> div[class*="_banner_"])
-trueua.info##div.categories__category:has(.okadvertisement):remove()
+trueua.info##div.categories__category:has(.okadvertisement)
 trueua.info##div.okadv__block
 trueua.info##div.okadvertisement
-trueua.info##div.twitter:remove()
+trueua.info##div.twitter
 tsn.ua##.c-aside__port
 tsn.ua##aside.c-section:has(h2.c-section__title > a:has-text(Пресрелізи))
 tsn.ua##aside.u-divider--t:has(iframe[src*="/banners/partner-news"])
@@ -621,10 +619,10 @@ tsn.ua##div[class*="-sidebar__gap"]:has(iframe[src="https://tsn.ua/banners/sideb
 tsn.ua##section.c-section:has(h2.c-section__title:has-text(Новини партнерів))
 ttt.ua##div.page__big-banner
 tvoemisto.tv##div.ukrnetlinks
-tvoemisto.tv##div[id^="bannplace_"]:has(script):remove()
+tvoemisto.tv##div[id^="bannplace_"]:has(script)
 tydyvy.com###jarvis-banner
 tyzhden.ua##a.new-baner
-tyzhden.ua##div.gr:remove()
+tyzhden.ua##div.gr
 ua-football.com##.asside:has(div.topBook)
 ua-football.com##div.adl_cmp_consent-dialog-module_backdrop
 ua-football.com##div.bonuses
@@ -637,20 +635,20 @@ uapetrol.com##div.sidebar__item:has(div.adv__exam)
 uapress.kyiv.ua###sidebar
 uapress.kyiv.ua##div[data-elementor-post-type="elementor_library"]
 ukr.net##.fixed-block > div[class] ~ div
-ukr.net##div.advertisement-block:remove()
-ukr.net##div.placeholder:remove()
+ukr.net##div.advertisement-block
+ukr.net##div.placeholder
 ukr.net##div[class$="-banner"]
 ukranews.com##.mailing-block
 ukranews.com##div#container[data-detachable-player]:has-text(Зараз дивляться)
 ukranews.com##noindex:has(.ad)
 ukranews.com##noindex:has(.advertising)
-ukrdz.in.ua##section.widget:has(script[src*="//jsc.mgid.com"]):remove()
+ukrdz.in.ua##section.widget:has(script[src*="//jsc.mgid.com"])
 ukrfootball.ua##.saduf:has(iframe)
 ukrfootball.ua##section.best_game_sec
 ukrinform.ua##.socialBlockSlide
 ukrinform.ua##div.googleCompanion
 ukrinform.ua##div.partner
-ukrlib.com.ua##div.supertext2:remove()
+ukrlib.com.ua##div.supertext2
 ukrlib.com.ua##div.thebestofthebest:has(> div > span:has-text(друзі та партнери))
 ukurier.gov.ua##div[class^="banner"]
 unian.info,unian.net,unian.ua##.newsfeed__banner
@@ -661,9 +659,9 @@ unian.ua##div[class^="banner"]
 unian.ua##li.newsfeed__item:has(span.blue-marker:has-text(НК))
 unn.ua##div[class^="informer_informer_"]
 unn.ua##div[id^="ads-sidebar"]
-urok.in.ua##section:has(> p > ins.adsbygoogle):remove()
-uspih.in.ua##p:has(> script[src*="//jsc.idealmedia.io"]):remove()
-uspih.in.ua##p:has(> script[src*="//jsc.mgid.com"]):remove()
+urok.in.ua##section:has(> p > ins.adsbygoogle)
+uspih.in.ua##p:has(> script[src*="//jsc.idealmedia.io"])
+uspih.in.ua##p:has(> script[src*="//jsc.mgid.com"])
 v-variant.com.ua##div.donate-item_articles
 v-variant.com.ua##div.pum-overlay
 v-variant.com.ua##div.top-banner
@@ -671,7 +669,7 @@ varosh.com.ua##div.adv
 vctr.media##.banner-container
 vechirniy.kyiv.ua##div.page-promo
 vikna.tv##div.pip-video-wrapper
-vikna.tv##div[class^="promo-"]:remove()
+vikna.tv##div[class^="promo-"]
 village.com.ua##.post-additions
 village.com.ua##.post-block:has(.banner):style(min-height: 0 !important)
 village.com.ua##.post-block.post-block-featured:has(.g-sp-badge:has-text('ПРОМО'))
@@ -680,7 +678,7 @@ vinnitsa.info##div.advertising-card
 visnyk-irpin.com.ua##div.widget_media_image
 vogue.ua##div.box__bnr
 vogue.ua##div.timer_block
-vogue.ua##div[data-sender="admixer"]:remove()
+vogue.ua##div[data-sender="admixer"]
 vseazs.com##a.vseosago
 vseazs.com##div.center_container
 vseazs.com##p[align="center"]:has-text(Наші партнери)
@@ -692,10 +690,10 @@ work.ua##iframe + div.h-exception
 work.ua##iframe[src*="/b.php?bid="]
 xsport.ua##[class^="partners"]
 xsport.ua##div.page-section__element--inner-fluent-side:style(max-width: 100% !important; margin-right: 0 !important)
-xsport.ua##div.page-section__element:has(> div[class^="bookmaker"]):remove()
-xsport.ua##div.page-section__element:not(:has(div)):remove()
+xsport.ua##div.page-section__element:has(> div[class^="bookmaker"])
+xsport.ua##div.page-section__element:not(:has(div))
 xsport.ua##div.site:style(margin-top: 20px !important)
-yak-zrobyty.in.ua##aside.widget-area:remove()
+yak-zrobyty.in.ua##aside.widget-area
 yesport.com.ua##app-adv-placeholder
 youcontrol.com.ua##.banner
 youcontrol.com.ua##.banner-more
@@ -707,7 +705,7 @@ zaxid.net##[class*="adv-"]
 zaxid.net##[id*="AdvWrapper"]
 zaxid.net##div[id^="slot300x"]
 zaxid.net##div[id^="slotPromoinformer"]
-zaxid.net##div#header_advt-wrapper:remove()
+zaxid.net##div#header_advt-wrapper
 zbirna.com##div.sidebar-home-link:has(img[alt="Найкращі онлайн казино України"])
 zbirna.com##section.best_game_sec
 zhenskiy.kyiv.ua##div.textwidget:has(> a[href*="myblogshop.top"])
