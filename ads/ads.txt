@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.12.7
-! Last modified: Thu, 12 December 2024 21:58 EET
+! Version: 24.12.8
+! Last modified: Fri, 13 December 2024 21:18 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -15,6 +15,7 @@
 ! !!!!!!!!!!!!!!!
 !
 ||a4.censor.net^
+||ads.informator.ua^
 ||agenteimmobiliare.info^
 ||mediatraffic.com.ua^
 ||myblogshop.top^
@@ -112,7 +113,7 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ! >>>
 ! div:has(> ins.adsbygoogle)
-animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uahistory.co,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
+animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uahistory.co,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
 ! div:has(> div > ins.adsbygoogle)
 forex.ua,gsminfo.com.ua,marketer.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
@@ -544,7 +545,6 @@ rubryka.com##div.single-page__social
 rubryka.com##div[class*="advertisment"]
 rubryka.com##div[style="padding: 0 0 30px"]
 rud.ua##a.branding__link
-sinoptik.ua##aside:has(> div > div[id^="div-gpt-ad-"])
 sinoptik.ua##div.informerTop
 sinoptik.ua##head > style:empty:style(all: inherit !important)
 slovnyk.ua##section[class^="section-ad"]
@@ -593,6 +593,14 @@ telegraf.com.ua##[data-text="Реклама"]
 telegraf.com.ua##div.c-r:has([data-text="Реклама"])
 telegraf.com.ua##div.s-content__ratio:has(script[id^="_vidverto-"])
 telegraf.com.ua##div[data-text="Новини партнерів"]
+ternopoliany.te.ua###pp
+ternopoliany.te.ua###pp-bg
+ternopoliany.te.ua##div:has(> div.rek)
+ternopoliany.te.ua##div:has(> div.reklamatop)
+ternopoliany.te.ua##div.block.bmod:has(a.blockonelink > img[alt^="Реєстрація в Casino"])
+ternopoliany.te.ua##div.rek760
+ternopoliany.te.ua##div.rekinfoblock1top
+ternopoliany.te.ua##div.rekinfoblock2top
 texty.org.ua##.ad-banner-aside
 thebuchacity.com##div[style="display: inline-block"]:has(> div > h4 > a:has-text(РЕКЛАМА))
 thepage.ua##div.news-list__item:has(div[class*="news-tag company_news"])
@@ -668,6 +676,7 @@ v-variant.com.ua##div.top-banner
 varosh.com.ua##div.adv
 vctr.media##.banner-container
 vechirniy.kyiv.ua##div.page-promo
+vezha.ua##div.middle_banner
 vikna.tv##div.pip-video-wrapper
 vikna.tv##div[class^="promo-"]
 village.com.ua##.post-additions
@@ -688,6 +697,8 @@ work.ua###react-video-player
 work.ua##div.hidden-print:has(> a[onclick="openReactVideoPlayer()"])
 work.ua##iframe + div.h-exception
 work.ua##iframe[src*="/b.php?bid="]
+wz.lviv.ua##div:has(> a[href*="peredplata.ukrposhta.ua"])
+wz.lviv.ua##div[class*="uk-visible@m"]:has(> img[aria-hidden="true"])
 xsport.ua##[class^="partners"]
 xsport.ua##div.page-section__element--inner-fluent-side:style(max-width: 100% !important; margin-right: 0 !important)
 xsport.ua##div.page-section__element:has(> div[class^="bookmaker"])
