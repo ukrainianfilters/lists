@@ -28,7 +28,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 
 ### Ukrainian Privacy Filter
 
-Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в Інтернеті (зокрема, видаляються скрипти систем коментування Disqus, Facebook Comments Plugin тощо).
+Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в Інтернеті.
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
