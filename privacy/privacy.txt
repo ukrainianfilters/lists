@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 24.12.7
-! Last modified: Thu, 12 December 2024 21:58 EET
+! Version: 24.12.8
+! Last modified: Fri, 13 December 2024 21:18 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -17,11 +17,11 @@
 ||stattracking.pw^
 ! >>>
 ! Google Tag Manager
-1plus1.video,24tv.ua,add.ua,adidas.ua,ain.ua,alcomag.ua,arber.ua,ascania.energy,ascania.ua,ascania-auto.com,ascania-ff.com.ua,ascania-flora.ua,ascania-pack.com,ascania-shina.com,atbmarket.com,auchan.ua,avrora.ua,bagatolososia.kiev.ua,bayadera.ua,bihus.info,buhgalter.com.ua,buhgalter911.com,champion.com.ua,chytomo.com,city24.ua,click.ua,codeua.com,colins.ua,ctrs.com.ua,dev.ua,dou.ua,dsnews.ua,dtek.com,dw.com,easypay.ua,epravda.com.ua,espreso.tv,eurolamp.ua,f.ua,fckarpaty.org.ua,fckryvbas.com,finance.ua,forbes.ua,foxtrot.com.ua,fozzyshop.ua,galka.if.ua,gordonua.com,greendayvodka.com,hostiq.ua,hromadske.ua,ideabank.ua,iforum.ua,incrypted.com,informator.ua,intertop.ua,istpravda.com.ua,kasta.ua,klo.ua,kniga.biz.ua,kontramarka.ua,ktc.ua,kvas-bev.com.ua,kyivindependent.com,kyivpost.com,leboutique.com,liga.net,ligazakon.net,maudau.com.ua,maximum.fm,megogo.net,meteo.ua,metinvestholding.com,metinvest-smc.com,mezha.media,mezha.net,mirohost.net,mmr.ua,motto.ua,moyo.ua,myfishka.com,newbalance.ua,novosti.dn.ua,novus.ua,npshopping.com,nv.ua,okko.ua,online.ua,onlyrose.ua,pcweek.ua,platfor.ma,playua.net,polissyafc.com,pravda.com.ua,psm7.com,radiosvoboda.org,rubryka.com,samsungshop.com.ua,shakhtar.com,shopping.ua,sim23.ua,speka.media,sport.ua,sport24.ua,sushiya.ua,suspilne.media,tefal.ua,telegraf.com.ua,thepage.ua,theukrainians.org,ti.ua,ua.news,uklon.com.ua,ukraine.com.ua,ukrnafta.com,ukrposhta.ua,ukrzoloto.ua,upg.ua,varus.ua,vctr.media,village.com.ua,vodafone.ua,volia.com,wog.ua,work.ua,yakaboo.ua,yesport.com.ua,zaborona.com,zakaz.ua,zara.com,znoclub.com##+js(remove-node-text, script, 'googletagmanager.com/gtm.js?id=')
+1plus1.video,24tv.ua,add.ua,adidas.ua,ain.ua,alcomag.ua,arber.ua,ascania.energy,ascania.ua,ascania-auto.com,ascania-ff.com.ua,ascania-flora.ua,ascania-pack.com,ascania-shina.com,atbmarket.com,auchan.ua,avrora.ua,bagatolososia.kiev.ua,bayadera.ua,bihus.info,buhgalter.com.ua,buhgalter911.com,champion.com.ua,chytomo.com,city24.ua,click.ua,codeua.com,colins.ua,ctrs.com.ua,dev.ua,dou.ua,dsnews.ua,dtek.com,dw.com,easypay.ua,epravda.com.ua,espreso.tv,eurolamp.ua,f.ua,fckarpaty.org.ua,fckryvbas.com,finance.ua,forbes.ua,foxtrot.com.ua,fozzyshop.ua,galka.if.ua,gordonua.com,greendayvodka.com,hostiq.ua,hromadske.ua,ideabank.ua,iforum.ua,incrypted.com,informator.ua,intertop.ua,istpravda.com.ua,kasta.ua,klo.ua,kniga.biz.ua,kontramarka.ua,ktc.ua,kvas-bev.com.ua,kyivindependent.com,kyivpost.com,leboutique.com,liga.net,ligazakon.net,maudau.com.ua,maximum.fm,megogo.net,meteo.ua,metinvestholding.com,metinvest-smc.com,mezha.media,mezha.net,mirohost.net,mmr.ua,motto.ua,moyo.ua,myfishka.com,newbalance.ua,novosti.dn.ua,novus.ua,npshopping.com,nv.ua,okko.ua,online.ua,onlyrose.ua,ottry.com,pcweek.ua,platfor.ma,playua.net,polissyafc.com,pravda.com.ua,psm7.com,radiosvoboda.org,rubryka.com,samsungshop.com.ua,shakhtar.com,shopping.ua,sim23.ua,speka.media,sport.ua,sport24.ua,sushiya.ua,suspilne.media,tefal.ua,telegraf.com.ua,thepage.ua,theukrainians.org,ti.ua,ua.news,uklon.com.ua,ukraine.com.ua,ukrnafta.com,ukrposhta.ua,ukrzoloto.ua,upg.ua,varus.ua,vctr.media,vezha.ua,village.com.ua,vodafone.ua,volia.com,wog.ua,work.ua,yakaboo.ua,yesport.com.ua,zaborona.com,zakaz.ua,zara.com,znoclub.com##+js(remove-node-text, script, 'googletagmanager.com/gtm.js?id=')
 ! >>>
 censor.net##+js(remove-node-text, script, 'googletagmanager.com/gtag/js?id=')
 ! >>>
-fora.ua,kyivstar.ua,lifecell.ua,socar.ua,thrash.ua,tribuna.com##+js(remove-node-text, script, 'googletagmanager.com/gtm.js?id=', stay, 10000)
+buki.com.ua,fora.ua,kyivstar.ua,lifecell.ua,socar.ua,thrash.ua,tribuna.com##+js(remove-node-text, script, 'googletagmanager.com/gtm.js?id=', stay, 10000)
 ! >>>
 nv.ua##+js(remove-node-text, script, loadBlock)
 ! >>>
@@ -59,6 +59,9 @@ dengi.ua##div.fb-social-widget:remove()
 ! quantcast.com
 ||cmp.quantcast.com^$third-party
 ! >>>
+! megogo.net
+||et.megogo.net^
+! >>>
 ! mail.ru
 ||connect.mail.ru^$third-party
 ! >>>
@@ -68,6 +71,7 @@ dengi.ua##div.fb-social-widget:remove()
 ! ok.ru
 ||connect.ok.ru^$third-party
 ! >>>
+||buki.com.ua/scripts/pixel.js$script
 ||enguide.ua/analytics.js^
 ||ideabank.ua/analytics.js^
 ||moonanime.art/api/stats/^
@@ -95,65 +99,3 @@ zora-irpin.info##aside.widget_text:has(> div > div#SinoptikInformer)
 ! pogodnik.com
 ||pogodnik.com^$third-party
 real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"]):remove()
-!
-!
-! !!!!!!!!!!!!!!!
-! COMMENTS
-! !!!!!!!!!!!!!!!
-!
-user/js/glavcom_komments.min.js$script,domain=glavcom.ua
-! >>>
-1plus1.video##div.playlist-comments:remove()
-5.ua##.fb-comments:remove()
-5.ua##h2:has-text(ПРОКОМЕНТУЙТЕ):remove()
-9to5linux.com###disqus_thread:remove()
-apostrophe.ua##.fb-comments:remove()
-bigmir.net##div#phnx-onready_comments_templates-index:remove()
-censor.net##.news-comments-wrapp:remove()
-champion.com.ua##.fb-comments:remove()
-coolinfo.in.ua##div.comment-box-wrap:remove()
-defence-ua.com###comments_container:remove()
-detector.media##div.artCommentBLK:remove()
-dev.ua###comments:remove()
-dev.ua##a[href="#comments"]
-epravda.com.ua##.block_comments:remove()
-espreso.tv##.facebook-comments:remove()
-football.ua###commentsArea:remove()
-football24.ua##.comments_button:remove()
-football24.ua###comments-widget:remove()
-gazeta.ua##a[href="#comments"]
-gazeta.ua##div.article:has(.comment-wrapper):remove()
-glavcom.ua##div.comments
-inforesist.org##.visible-lg:has(.ir-fb-show-comments):remove()
-interfax.com.ua##.fb-comments:remove()
-isport.ua###phnx-onready_comments_templates-index:remove()
-itc.ua###itc-comments:remove()
-konkurent.ua##div.comments_article:remove()
-krymr.com##div#comments:remove()
-krymr.com##p.link-comments
-kyivpost.com##.comments-block:remove()
-liga.net###fb-comm-block:remove()
-mezha.media###comments:remove()
-mil.in.ua##.fb-comments:remove()
-mind.ua###comments_anchor
-minfin.com.ua###gotoComment:remove()
-minfin.com.ua##span.write-comments
-nachasi.com##div[id*="comments-"]
-playua.net##div.article-comments:remove()
-pravda.com.ua##.post__comments:remove()
-pravda.com.ua##.post_comments:remove()
-radiosvoboda.org###comments:remove()
-rayon.in.ua##div.comments-publication:remove()
-root-nation.com##div.comments:remove()
-slovoidilo.ua##.commentars:remove()
-speka.media##.comments:remove()
-sport.ua##div.comments.news-comments:remove()
-sport.ua##div#last-comments.comments-block
-sportanalytic.com##div.wblock:has-text(Коментарі)
-tribuna.com##div#comments:remove()
-ua-football.com##div.own-comm-widget:remove()
-uaprogaming.com.ua##div#comments:remove()
-ukurier.gov.ua##.article-comments:remove()
-xsport.ua###comment-block:remove()
-zaxid.net##.facebook-comments:remove()
-zn.ua##.comments-box:remove()
