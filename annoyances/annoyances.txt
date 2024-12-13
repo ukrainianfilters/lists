@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.12.6
-! Last modified: Mon, 09 December 2024 02:29 EET
+! Version: 24.12.8
+! Last modified: Fri, 13 December 2024 21:18 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -118,6 +118,7 @@ bonibons.com##div#epd:has(> div#cookiesdirective)
 brander.ua##div#cookie-consent-popup
 britishbook.ua###politica
 brovary.net.ua##aside#moove_gdpr_cookie_info_bar
+buki.com.ua##div[class^="styles_bannerWrapper__"]:has(a[href="/p/cookies/"])
 bvr.ua##.cookie-notify
 canyon.ua##div.cn-cookies
 carforhero.com###sliding-popup:has(> div.eu-cookie-compliance-banner)
@@ -213,6 +214,7 @@ jakosport.com.ua##div.notice-module
 jakosport.com.ua##div[aria-label="cookieconsent"]
 juscutum.com##div.popup__wrapper:has(> div > div > div.cookie-modal_component)
 kaercher.com##div.fg-cookiesdirective
+kanaldim.tv##div.privacy-policy-block
 kasta.ua##div[role="dialog"]:has(a[href$="/cookiepolicy/"])
 kernel.ua##div[role="dialog"]:has(div#modal-cookie-policy)
 kg.ua###slidebox45
@@ -273,6 +275,7 @@ mmr.ua##div.facebook-suggest
 mmr.ua##div.new-video-block
 mmr.ua##div.telegram-suggest
 mobizon.ua##.confirm-cookie-block
+mod.gov.ua##div[class^="fixed bottom-"]:has(a[href*="cookies-policy"])
 molliua.com###cookies-panel
 moneyveo.ua##app-cookie-agreement
 moonart.net.ua###cookiesPopup
@@ -300,8 +303,10 @@ ntn.ua##.warning
 obyava.ua##.cookie-bar
 odessa-life.od.ua###moove_gdpr_cookie_info_bar
 olx.ua##div[data-testid="cookies-overlay__container"]
+openeyesfund.com##div.cookie-consent
 opentalk.org.ua###popup-9095
 osvitoria.org##div.b-cookie
+ottry.com##div#cc--main:has(h2#c-ttl:has-text(cookie!))
 pasivka.com.ua###cookies-panel:remove()
 pdmsh.ua###cookies-modal
 penguin-team.ua##.coockies__message
