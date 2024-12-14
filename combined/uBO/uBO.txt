@@ -2,7 +2,7 @@
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
 ! Version: 24.12.9
-! Last modified: Sat, 14 December 2024 15:54 EET
+! Last modified: Sat, 14 December 2024 16:51 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -215,13 +215,13 @@ dw.com##div.advertisement
 dynamo.kiev.ua##div#corpMagnet
 elitexpert.ua##.leader-wrap-out
 epochtimes.com.ua##aside:has(> iframe[src$="/sinoptik.html"])
-epravda.com.ua,eurointegration.com.ua,pravda.com.ua##[class$="_banner"]:remove()
+epravda.com.ua,eurointegration.com.ua,pravda.com.ua##[class$="_banner"]
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]:remove()
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(PROMOTED))
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(АНОНС))
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(СПЕЦПРОЄКТ))
-epravda.com.ua,pravda.com.ua##div[class*="adv_"]:remove()
-epravda.com.ua,pravda.com.ua##div[class*="banner_"]:remove()
+epravda.com.ua,pravda.com.ua##div[class*="adv_"]
+epravda.com.ua,pravda.com.ua##div[class*="banner_"]
 epravda.com.ua##body > a[href^="https://cutt.ly/"][target="_blank"]:has(picture,img)
 epravda.com.ua##body > a[href$="&utm_medium=anons"][target="_blank"]:has(picture,img)
 epravda.com.ua##body > a[href$="&utm_medium=banner"][target="_blank"]:has(picture,img)
@@ -229,7 +229,7 @@ epravda.com.ua##body > a[href$="&utm_medium=branding"][target="_blank"]:has(pict
 epravda.com.ua##div.article_advertising
 esc.lviv.ua##div.jeg_ad
 espreso.tv##div.news-tape-item:has(div.mark-block:has-text(Партнерський матеріал))
-eurointegration.com.ua,pravda.com.ua##[class$="-banner"]:remove()
+eurointegration.com.ua,pravda.com.ua##[class$="-banner"]
 eurointegration.com.ua##a[href="https://www.ukr.net/"]
 eurointegration.com.ua##p:has(> ins.adsbygoogle)
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
@@ -517,7 +517,7 @@ players.com.ua##img[class*="banner-"]
 playua.net##div[class*="-advert"]
 playua.net##div[class*="a_dvert"]
 playua.net##div[class*="google-ad"]
-pravda.com.ua##.unit_sp_place:remove()
+pravda.com.ua##.unit_sp_place
 pravda.com.ua##article.article_pr
 pravda.com.ua##div.container_special
 pravda.com.ua##div.promoted_article
