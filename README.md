@@ -10,12 +10,12 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 ## Фільтри
 
-### Ukrainian Ad Filter
+###  Ukrainian Filters (uBlock Origin Combined List)
 
-Фільтр видаляє рекламу з українських сайтів.
+Список фільтрів, призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо).
 
 ```
-https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
+https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/uBO/uBO.txt
 ```
 
 ### Ukrainian Annoyance Filter
@@ -26,21 +26,9 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 ```
 
-### Ukrainian Privacy Filter
-
-Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в Інтернеті.
-
-```
-https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
-```
-
 ### Ukrainian Security Filter (Український безпековий фільтр)
 
 Це [фільтр шкідливих веб-ресурсів](https://github.com/braveinnovators/ukrainian-security-filter) (фішинг, онлайн-шахрайство, шкідливе програмне забезпечення тощо), що орієнтовані на громадян України (розробка: [@braveinnovators](https://github.com/braveinnovators))
-
-```
-https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt
-```
 
 Додаткові формати списків: [domain-based blocklist](https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/domains.txt), [hosts-based blocklist](https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/hosts.txt), [dnsmasq](https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/dnsmasq.txt).
 
