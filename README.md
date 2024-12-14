@@ -28,8 +28,6 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 
 ### Ukrainian Security Filter (Український безпековий фільтр)
 
-Це [фільтр шкідливих веб-ресурсів](https://github.com/braveinnovators/ukrainian-security-filter) (фішинг, онлайн-шахрайство, шкідливе програмне забезпечення тощо), що орієнтовані на громадян України (розробка: [@braveinnovators](https://github.com/braveinnovators))
-
 Додаткові формати списків: [domain-based blocklist](https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/domains.txt), [hosts-based blocklist](https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/hosts.txt), [dnsmasq](https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/dnsmasq.txt).
 
 ## Сумісність з браузерами та розширеннями
