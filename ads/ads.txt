@@ -1,4 +1,15 @@
 ! [uBlock Origin; Adblock Plus 3.2]
+! Redirect: https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/uBO/uBO.txt
+!
+! WARNING: As of December 14, 2024, this filter will no longer be supported by the developers,
+! as it has become part of the new combined filter Ukrainian Filters (uBlock Origin Combined List),
+! located at: https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/uBO/uBO.txt
+!
+! ПОПЕРЕДЖЕННЯ: з 14 грудня 2024 року цей фільтр більше не підтримується розробниками,
+! оскільки він став частиною нового комбінованого фільтра Ukrainian Filters (uBlock Origin Combined List),
+! що доступний за адресою: https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/uBO/uBO.txt
+!
+!
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
 ! Version: 24.12.8
