@@ -14,3 +14,6 @@
 
 1. Створити [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/about-forks) репозиторію [пісочниці](https://github.com/ukrainianfilters/sandbox) та додати правила до файлів (списків) з відповідними фільтрами: `ads.txt`, `annoyances.txt` або `privacy.txt`, що містяться в окремих директоріях
 2. Створити [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests) (після проходження тестування, ваші правила будуть додані безпосередньо мейнтейнерами проєкту із зазначенням авторства)
+
+> [!WARNING]
+> Щоб додати правила фільтрації до розділу `SECURITY FILTERS`, необхідно перейти до репозиторію [Ukrainian Security Filter](https://github.com/braveinnovators/ukrainian-security-filter) (це окремий проєкт, ми лише імпортуємо звідти правила фільтрації).
