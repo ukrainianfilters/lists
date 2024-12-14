@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 24.12.12
-! Last modified: Sat, 14 December 2024 22:00 EET
+! Version: 24.12.13
+! Last modified: Sat, 14 December 2024 22:22 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -231,6 +231,8 @@ epravda.com.ua##body > a[href$="&utm_medium=anons"][target="_blank"]:has(picture
 epravda.com.ua##body > a[href$="&utm_medium=banner"][target="_blank"]:has(picture,img)
 epravda.com.ua##body > a[href$="&utm_medium=branding"][target="_blank"]:has(picture,img)
 epravda.com.ua##div.article_advertising
+epravda.com.ua##div.article.article_story_grid:has(> div > div > div > span.article_section_adv)
+epravda.com.ua##div.article.article_story_grid:has(> div > div > span.article_section_adv)
 esc.lviv.ua##div.jeg_ad
 espreso.tv##div.news-tape-item:has(div.mark-block:has-text(Партнерський матеріал))
 eurointegration.com.ua,pravda.com.ua##[class$="-banner"]
@@ -526,8 +528,10 @@ playua.net##div[class*="a_dvert"]
 playua.net##div[class*="google-ad"]
 pravda.com.ua##.unit_sp_place
 pravda.com.ua##article.article_pr
+pravda.com.ua##div.article.article_story_grid:has(> div > div.article_content > span.article_label_adv)
 pravda.com.ua##div.container_special
 pravda.com.ua##div.promoted_article
+pravda.com.ua##div.section_articles:has(> div > div > h3 > a[href$="/projects/"])
 pravda.com.ua##div.ym-video--wrapper
 predmety.in.ua##div[style="height:550px; weight:auto;"]:empty
 proidei.com##div.ads-widget-block
