@@ -81,7 +81,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 
 ## Співпраця
 
-Якщо ви створили правила фільтрації та бажаєте, щоб вони були додані до списків з відповідними фільтрами, будь ласка, ознайомтеся зі [стандартами упорядкування](https://github.com/ukrainianfilters/lists/blob/main/CONTRIBUTING.md) списків та порядком роботи з пісочницею проєкту.
+Якщо ви створили правила фільтрації та бажаєте, щоб вони були додані до списків з відповідними фільтрами, будь ласка, ознайомтеся зі [стандартами упорядкування](https://github.com/ukrainianfilters/lists/blob/main/CONTRIBUTING.md) списків та порядком роботи з пісочницею проєкту. Щоб додати правила фільтрації до розділу `SECURITY FILTERS`, необхідно перейти до репозиторію [Ukrainian Security Filter](https://github.com/braveinnovators/ukrainian-security-filter) (це окремий проєкт, ми лише імпортуємо звідти правила фільтрації).
 
 Якщо ви виявили сайти, для яких відсутні правила фільтрації (ви бачите рекламу, дратівливі елементи), або на яких наші правила фільтрації працюють некоректно — [повідомте](https://github.com/ukrainianfilters/lists/issues/new/choose) нам про це.
 
