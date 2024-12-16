@@ -286,7 +286,7 @@ moonart.net.ua###cookiesPopup
 morshynska.ua##div.cookie_block
 mriia.gov.ua##app-cookie-dialog
 mvs.gov.ua##div.cookie-message
-my.ua##div.dEyatA
+my.ua##[data-policy-wrapper]
 mycity.one##app-cookie-concept
 myfishka.com##div[aria-label="cookieconsent"]
 mywatershop.com.ua##section.modal_cookies
