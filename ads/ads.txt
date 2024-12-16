@@ -1,25 +1,18 @@
 ! [uBlock Origin; Adblock Plus 3.2]
-! Redirect: https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/uBO/uBO.txt
-!
-! WARNING: As of December 14, 2024, this filter will no longer be supported by the developers,
-! as it has become part of the new combined filter Ukrainian Filters (uBlock Origin Combined List),
-! located at: https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/uBO/uBO.txt
-!
-! ПОПЕРЕДЖЕННЯ: з 14 грудня 2024 року цей фільтр більше не підтримується розробниками,
-! оскільки він став частиною нового комбінованого фільтра Ukrainian Filters (uBlock Origin Combined List),
-! що доступний за адресою: https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/uBO/uBO.txt
-!
-!
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.12.8
-! Last modified: Fri, 13 December 2024 21:18 EET
+! Version: 24.12.14
+! Last modified: Mon, 16 December 2024 01:40 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
 ! Homepage: https://github.com/ukrainianfilters/lists
 ! Issues: https://github.com/ukrainianfilters/lists/issues
 !
+!
+! -------------------------------------------------------------------------------------------------
+! >>>>>  AD FILTERS  >>> https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
+! -------------------------------------------------------------------------------------------------
 !
 ! !!!!!!!!!!!!!!!
 ! ADVERTISING NETWORKS
@@ -147,6 +140,10 @@ forex.ua,gsminfo.com.ua,marketer.ua##div:has(> div > ins.adsbygoogle)
 24tv.ua##div.video-dv-wrapper
 5.ua##div[class^="banner"]:has(div[id^="div-gpt-ad-"])
 5.ua##div[class$="banner"]:has(div[id^="div-gpt-ad-"])
+agro-business.com.ua###pwebbox234
+agro-business.com.ua###sp-breadcrumb
+agro-business.com.ua##div.live__wallper
+agro-business.com.ua##div.remote_ads
 agronews.ua##div[class*="banner"]
 agronews.ua##div[class^="baner-"]
 agropolit.com##div.header__banner-wrap
@@ -218,21 +215,23 @@ dw.com##div.advertisement
 dynamo.kiev.ua##div#corpMagnet
 elitexpert.ua##.leader-wrap-out
 epochtimes.com.ua##aside:has(> iframe[src$="/sinoptik.html"])
-epravda.com.ua,eurointegration.com.ua,pravda.com.ua##[class$="_banner"]:remove()
+epravda.com.ua,eurointegration.com.ua,pravda.com.ua##[class$="_banner"]
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]:remove()
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(PROMOTED))
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(АНОНС))
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(СПЕЦПРОЄКТ))
-epravda.com.ua,pravda.com.ua##div[class*="adv_"]:remove()
-epravda.com.ua,pravda.com.ua##div[class*="banner_"]:remove()
+epravda.com.ua,pravda.com.ua##div[class*="adv_"]
+epravda.com.ua,pravda.com.ua##div[class*="banner_"]
 epravda.com.ua##body > a[href^="https://cutt.ly/"][target="_blank"]:has(picture,img)
 epravda.com.ua##body > a[href$="&utm_medium=anons"][target="_blank"]:has(picture,img)
 epravda.com.ua##body > a[href$="&utm_medium=banner"][target="_blank"]:has(picture,img)
 epravda.com.ua##body > a[href$="&utm_medium=branding"][target="_blank"]:has(picture,img)
 epravda.com.ua##div.article_advertising
+epravda.com.ua##div.article.article_story_grid:has(> div > div > div > span.article_section_adv)
+epravda.com.ua##div.article.article_story_grid:has(> div > div > span.article_section_adv)
 esc.lviv.ua##div.jeg_ad
 espreso.tv##div.news-tape-item:has(div.mark-block:has-text(Партнерський матеріал))
-eurointegration.com.ua,pravda.com.ua##[class$="-banner"]:remove()
+eurointegration.com.ua,pravda.com.ua##[class$="-banner"]
 eurointegration.com.ua##a[href="https://www.ukr.net/"]
 eurointegration.com.ua##p:has(> ins.adsbygoogle)
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
@@ -331,6 +330,7 @@ inforesist.org##.dw_focus_widget_news_ticker
 inforesist.org##[class^="partners"]
 informator.ua##div:has(> script[src*="/js/frontend/ad-loaders/"])
 inshe.tv##div.jeg_ad
+inter.ua##div.clear_40:empty
 interfax.com.ua##div.ad
 interfax.com.ua##div.ads
 internetua.com##div.article-widget-section:has(div.MIXADVERT_NET)
@@ -509,6 +509,8 @@ osvita.ua##div.article__advertising
 osvita.ua##div.banners-groups
 osvita.ua##div[class^="baners-"]
 overclockers.ua##div[class^="ad_slot"]
+parta.com.ua##div:has(> a[href$="&utm_campaign=parta"][target="_blank"])
+parta.com.ua##div[style^="border:1px solid "]:has(img[src^="/edu_image/"])
 patient-docs.com###sidebar_banner
 pidruchnyk.com.ua###sidebar
 pidruchnyk.com.ua##div[id^="admixer_"] + script
@@ -520,10 +522,12 @@ players.com.ua##img[class*="banner-"]
 playua.net##div[class*="-advert"]
 playua.net##div[class*="a_dvert"]
 playua.net##div[class*="google-ad"]
-pravda.com.ua##.unit_sp_place:remove()
+pravda.com.ua##.unit_sp_place
 pravda.com.ua##article.article_pr
+pravda.com.ua##div.article.article_story_grid:has(> div > div.article_content > span.article_label_adv)
 pravda.com.ua##div.container_special
 pravda.com.ua##div.promoted_article
+pravda.com.ua##div.section_articles:has(> div > div > h3 > a[href$="/projects/"])
 pravda.com.ua##div.ym-video--wrapper
 predmety.in.ua##div[style="height:550px; weight:auto;"]:empty
 proidei.com##div.ads-widget-block
@@ -732,6 +736,12 @@ zbirna.com##div.sidebar-home-link:has(img[alt="Найкращі онлайн к�
 zbirna.com##section.best_game_sec
 zhenskiy.kyiv.ua##div.textwidget:has(> a[href*="myblogshop.top"])
 zhenskiy.kyiv.ua##div[data-elementor-type="section"]:has(div.elementor-widget-container > a[href*="myblogshop.top"])
+zi.ua##a[href="https://www.work.ua/"]
+zi.ua##div.banner
+zi.ua##div.footer-partners
+zi.ua##div.partner-news-content
+zi.ua##div.sponsors-holder
+zi.ua##div[style="height:15px;"] + div.unit-rubric__head
 zn.ua##[data-action="banners"]
 zn.ua##aside.content__news > div.news-support
 zn.ua##aside.content__news > div.news-support + div.content-title

@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 24.12.13
-! Last modified: Sat, 14 December 2024 22:22 EET
+! Version: 24.12.14
+! Last modified: Mon, 16 December 2024 01:40 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -13,10 +13,9 @@
 ! If you wish to remove irritating elements on Ukrainian websites (cookie notices, pop-ups, banners, etc.), check out: https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 !
 !
-! ##################
-! >>> AD FILTERS <<<
-! ##################
-!
+! -------------------------------------------------------------------------------------------------
+! >>>>>  AD FILTERS  >>> https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
+! -------------------------------------------------------------------------------------------------
 !
 ! !!!!!!!!!!!!!!!
 ! ADVERTISING NETWORKS
@@ -767,10 +766,9 @@ znoclub.com##a#bg-commercial
 zora-irpin.info##aside.widget_execphp:has(h1.widget-title:has-text(Реклама))
 !
 !
-! #######################
-! >>> PRIVACY FILTERS <<<
-! #######################
-!
+! --------------------------------------------------------------------------------------------------------------
+! >>>>>  PRIVACY FILTERS  >>> https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
+! --------------------------------------------------------------------------------------------------------------
 !
 ! !!!!!!!!!!!!!!!
 ! TRACKERS
@@ -863,10 +861,9 @@ zora-irpin.info##aside.widget_text:has(> div > div#SinoptikInformer)
 real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 !
 !
-! ########################
-! >>> SECURITY FILTERS <<<
-! ########################
-!
+! --------------------------------------------------------------------------------------------------------------------------------
+! >>>>>  SECURITY FILTERS  >>> https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/adblock.txt
+! --------------------------------------------------------------------------------------------------------------------------------
 !
 ! !!!!!!!!!!!!!!!
 ! DOMAIN-BASED BLOCKLIST
