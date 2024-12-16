@@ -33,6 +33,7 @@
 ||mediabrama.com^$third-party
 ||membrana.media^$third-party
 ||misto.travel/templates/js$third-party
+||phoenix-widget.com^$third-party
 ||pixel.tvstitch.com^$third-party
 ||receivedachest.com^$third-party
 ||smi.pp.ua^$third-party
@@ -166,6 +167,8 @@ buhgalter.com.ua,buhgalter911.com##body.access:style(overflow: auto !important; 
 buhgalter.com.ua,buhgalter911.com##div[data-ad="active"]
 buhgalter.com.ua##div.rec
 buhgalter.com.ua##div#top-line
+businessua.com##body:style(background-color: unset !important)
+businessua.com###vedomosti_block:nth-of-type(4)
 censor.net##.right-sidebar div[style^="width: 300px; "]
 censor.net##div.container.d-print-none:has(script[src^="//a4.censor.net/js/"])
 censor.net##div.row.d-print-none:has(script[src^="//a4.censor.net/js/"])
