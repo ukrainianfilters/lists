@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 24.12.14
-! Last modified: Mon, 16 December 2024 01:40 EET
+! Version: 24.12.15
+! Last modified: Mon, 16 December 2024 19:33 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -95,7 +95,7 @@ bigmir.net##div.widget:has(div.widget-socials)
 ! >>>
 ! sinoptik.ua
 ||sinoptik.ua/informers_js.php^$third-party
-expres.online,football-ukraine.com,galinfo.com.ua,gk-press.if.ua,internetua.com,kyiv24.news,magnolia-tv.com,times.zt.ua,tvoemisto.tv,zaxid.net##div#SinoptikInformer
+blitz.if.ua,expres.online,football-ukraine.com,galinfo.com.ua,gk-press.if.ua,internetua.com,kyiv24.news,magnolia-tv.com,times.zt.ua,tvoemisto.tv,zaxid.net##div#SinoptikInformer
 brovary.net.ua##div.elementor-element:has(> div > div > h4:has-text(Погода))
 brovary.net.ua##div.elementor-element:has(> div > div#SinoptikInformer)
 zora-irpin.info##aside.widget_text:has(> div > div#SinoptikInformer)
