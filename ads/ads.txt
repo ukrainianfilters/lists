@@ -159,6 +159,7 @@ autoconsulting.com.ua##td:has(> ins.adsbygoogle)
 babel.ua##aside.c-subs-box.c-subs-social
 bigkyiv.com.ua##div.ads
 bihus.info##div.r-tram_wrap
+blitz.if.ua##.banner:not([href^="http://insn.org.ua"])
 board.if.ua##noindex:has(div > ins.adsbygoogle)
 buhgalter.com.ua,buhgalter911.com##body.access *:style(filter: none !important)
 buhgalter.com.ua,buhgalter911.com##body.access div[id^="access-au"]
