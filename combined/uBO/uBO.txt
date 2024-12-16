@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 24.12.14
-! Last modified: Mon, 16 December 2024 01:40 EET
+! Version: 24.12.15
+! Last modified: Mon, 16 December 2024 19:33 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -24,6 +24,7 @@
 ||a4.censor.net^
 ||ads.informator.ua^
 ||agenteimmobiliare.info^
+||givemelink.cc^
 ||mediatraffic.com.ua^
 ||myblogshop.top^
 ||xcartpro.com^
@@ -36,6 +37,7 @@
 ||mediabrama.com^$third-party
 ||membrana.media^$third-party
 ||misto.travel/templates/js$third-party
+||phoenix-widget.com^$third-party
 ||pixel.tvstitch.com^$third-party
 ||receivedachest.com^$third-party
 ||smi.pp.ua^$third-party
@@ -65,7 +67,7 @@ bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,foot
 5.ua,apostrophe.ua,fakty.com.ua,focus.ua,football.ua,football24.ua,galinfo.com.ua,glavred.net,highload.today,ictv.ua,interfax.com.ua,itc.ua,ivona.ua,kinoafisha.ua,mind.ua,minfin.com.ua,novy.tv,slovnyk.ua,smachno.ua,vikna.tv,zaxid.net##+js(remove-node-text, script, googletag)
 ! >>>
 ! Admixer
-apostrophe.ua,chas.news,dev.ua,internetua.com,mind.ua,mmr.ua,osvita.ua,vogue.ua,weukraine.tv##+js(remove-node-text, script, globalAmlAds)
+apostrophe.ua,businessua.com,chas.news,dev.ua,internetua.com,mind.ua,mmr.ua,osvita.ua,vogue.ua,weukraine.tv##+js(remove-node-text, script, globalAmlAds)
 ! >>>
 ! Mixadvert
 ukr.net##+js(remove-node-text, script, mixadvert)
@@ -162,6 +164,7 @@ autoconsulting.com.ua##td:has(> ins.adsbygoogle)
 babel.ua##aside.c-subs-box.c-subs-social
 bigkyiv.com.ua##div.ads
 bihus.info##div.r-tram_wrap
+blitz.if.ua##.banner
 board.if.ua##noindex:has(div > ins.adsbygoogle)
 buhgalter.com.ua,buhgalter911.com##body.access *:style(filter: none !important)
 buhgalter.com.ua,buhgalter911.com##body.access div[id^="access-au"]
@@ -169,6 +172,10 @@ buhgalter.com.ua,buhgalter911.com##body.access:style(overflow: auto !important; 
 buhgalter.com.ua,buhgalter911.com##div[data-ad="active"]
 buhgalter.com.ua##div.rec
 buhgalter.com.ua##div#top-line
+businessua.com###vedomosti_block:nth-of-type(4)
+businessua.com##body:style(background-color: unset !important)
+businessua.com##div[id^="admixer_"]
+businessua.com##div[id^="adpartner-"]
 censor.net##.right-sidebar div[style^="width: 300px; "]
 censor.net##div.container.d-print-none:has(script[src^="//a4.censor.net/js/"])
 censor.net##div.row.d-print-none:has(script[src^="//a4.censor.net/js/"])
@@ -851,7 +858,7 @@ bigmir.net##div.widget:has(div.widget-socials)
 ! >>>
 ! sinoptik.ua
 ||sinoptik.ua/informers_js.php^$third-party
-expres.online,football-ukraine.com,galinfo.com.ua,gk-press.if.ua,internetua.com,kyiv24.news,magnolia-tv.com,times.zt.ua,tvoemisto.tv,zaxid.net##div#SinoptikInformer
+blitz.if.ua,expres.online,football-ukraine.com,galinfo.com.ua,gk-press.if.ua,internetua.com,kyiv24.news,magnolia-tv.com,times.zt.ua,tvoemisto.tv,zaxid.net##div#SinoptikInformer
 brovary.net.ua##div.elementor-element:has(> div > div > h4:has-text(Погода))
 brovary.net.ua##div.elementor-element:has(> div > div#SinoptikInformer)
 zora-irpin.info##aside.widget_text:has(> div > div#SinoptikInformer)
