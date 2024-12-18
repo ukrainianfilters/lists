@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.12.16
-! Last modified: Mon, 16 December 2024 20:36 EET
+! Version: 24.12.21
+! Last modified: Wed, 18 December 2024 18:59 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -123,13 +123,24 @@ animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.u
 ! div:has(> div > ins.adsbygoogle)
 forex.ua,gsminfo.com.ua,marketer.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
+032.ua##app-ads-teaser
+032.ua##app-block-widget-banner
+032.ua##app-shared-top-companies
+032.ua##app-shift-widget-banner
+032.ua##app-special-link
+032.ua##app-widget-banner
+032.ua##article.article-card:has(> div > div > div > div.article-card__title--toaster:has-text(Партнерський матеріал))
+032.ua##div[class^="banner"]
+032.ua##div[data-current-banner-id]
 1plus1.ua##div.articleHeaderAdv
 1plus1.ua##div.gridSection__list:style(max-width: none !important)
 1plus1.ua##div.idealMedia
 1plus1.ua##div.news__items:style(max-width: none !important)
+1plus1.ua##div.post__partners
 1plus1.ua##div[class*="__adv"]
 1plus1.ua##div[class*="-adv"]
 1plus1.ua##div[class^="banner"]:has(div[id^="div-gpt-ad-"])
+1plus1.ua##div[class^="sidebar-banners"]
 1plus1.video##div.playlist-player:style(max-width: 1155px !important)
 1plus1.video##div.playlist-short-content:style(min-height: unset !important)
 1plus1.video##div[class^="playlist-player-branding"]
@@ -148,6 +159,11 @@ agro-business.com.ua##div.live__wallper
 agro-business.com.ua##div.remote_ads
 agronews.ua##div[class*="banner"]
 agronews.ua##div[class^="baner-"]
+agronomy.com.ua###g-fullwidth:has(div.platform-content:nth-of-type(-n+4))
+agronomy.com.ua###g-header
+agronomy.com.ua###pwebbox272
+agronomy.com.ua##div.live__wallper
+agronomy.com.ua##div[class^="adv_"]
 agropolit.com##div.header__banner-wrap
 agroportal.ua##.fixedBlock
 agroportal.ua##a[href^="/"][target="_blank"]
@@ -222,6 +238,10 @@ dumskaya.net##nav.nav:style(padding-top: 0 !important)
 dumskaya.net##noindex
 dw.com##div.advertisement
 dynamo.kiev.ua##div#corpMagnet
+dyvys.info##.poster-place
+dyvys.info##.widget-poster
+dyvys.info###js__header-banner
+dyvys.info##div.page-section ~ section.page-section:nth-of-type(-n+2)
 elitexpert.ua##.leader-wrap-out
 epochtimes.com.ua##aside:has(> iframe[src$="/sinoptik.html"])
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##[class$="_banner"]
@@ -271,6 +291,7 @@ football.ua##div[id^="zone_"]
 football24.ua##[class*="adv_"]
 football24.ua##[class*="adv-"]
 football24.ua##[id*="AdvWrapper"]
+football24.ua##aside + p:has(> img)
 football24.ua##aside.adv-insert + div.media_embed
 football24.ua##aside.adv-insert + p:empty + div.responsive-embed
 football24.ua##aside.adv-insert + p:has(img)
@@ -531,6 +552,8 @@ players.com.ua##img[class*="banner-"]
 playua.net##div[class*="-advert"]
 playua.net##div[class*="a_dvert"]
 playua.net##div[class*="google-ad"]
+portal.lviv.ua##div[class^="banner"]
+portal.lviv.ua##div[id^="wonderpluginslider-container-"]
 pravda.com.ua##.unit_sp_place
 pravda.com.ua##article.article_pr
 pravda.com.ua##div.article.article_story_grid:has(> div > div.article_content > span.article_label_adv)
@@ -588,6 +611,7 @@ sport24.ua##[class*="adv-"]
 sport24.ua##app-adv-between-news
 sport24.ua##app-default-news:has(app-adv-news-label)
 sport24.ua##div.video-dv-wrapper
+sport24.ua##p:has(> a[href^="https://www.favbet.ua/"][target="_blank"])
 sport24.ua##p:has(> a[target="_blank"] > em:has-text(FAVBET))
 sportanalytic.com##div.block:has-text(Партнер)
 sportanalytic.com##div.fb_iframe_widget
@@ -633,10 +657,11 @@ tribuna.com##div.card__content > div:has(div[class*="Alternative_banner__"])
 tribuna.com##div.card__postscript-banners
 tribuna.com##div[class*="_ads_"]
 tribuna.com##div[class*="_banner_"]
+tribuna.com##div[class*="_ideal-media"]
 tribuna.com##div[class^="CommonLayout_common-layout__right-column_"]:has(div[class*="Alternative_banner__"])
 tribuna.com##div[class^="Home_home-page__right-column_"] > div:nth-of-type(-n+3)
-tribuna.com##div[class^="IdealMedia_ideal-media_"]
 tribuna.com##div[class^="Main_main-layout__empty-block_"]:has(> div[class*="_banner_"])
+tribuna.com##div[data-test="bookie-widget"]
 trueua.info##div.categories__category:has(.okadvertisement)
 trueua.info##div.okadv__block
 trueua.info##div.okadvertisement
@@ -698,8 +723,21 @@ v-variant.com.ua##div.donate-item_articles
 v-variant.com.ua##div.pum-overlay
 v-variant.com.ua##div.top-banner
 varosh.com.ua##div.adv
+varta1.com.ua###article-content > header > h1 + div
+varta1.com.ua##div.content-editor > ins:has(> div[data-name="post-in-text"])
+varta1.com.ua##div.ova-comments + div
+varta1.com.ua##div.tags + div
 vctr.media##.banner-container
 vechirniy.kyiv.ua##div.page-promo
+versii.if.ua###brxe-hzqccr
+versii.if.ua###brxe-tdxgce
+versii.if.ua###brxe-uxwofz
+versii.if.ua###brxe-zckfha > div + a
+versii.if.ua##div.fb-s-blog-two-main__col.brxe-block:style(grid-template-columns: unset !important)
+versii.if.ua##div.fb-sidebar__main > a:has(> img)
+versii.if.ua##nav[aria-label="Post navigation"] + a:has(> img)
+versii.if.ua##span:has-text(реклама)
+versii.if.ua##span:has-text(реклама) + img
 vezha.ua##div.middle_banner
 vikna.tv##div.pip-video-wrapper
 vikna.tv##div[class^="promo-"]
@@ -724,10 +762,14 @@ work.ua##iframe[src*="/b.php?bid="]
 wz.lviv.ua##div:has(> a[href*="peredplata.ukrposhta.ua"])
 wz.lviv.ua##div[class*="uk-visible@m"]:has(> img[aria-hidden="true"])
 xsport.ua##[class^="partners"]
+xsport.ua##div.detail-news__text-holder > hr
 xsport.ua##div.page-section__element--inner-fluent-side:style(max-width: 100% !important; margin-right: 0 !important)
 xsport.ua##div.page-section__element:has(> div[class^="bookmaker"])
 xsport.ua##div.page-section__element:not(:has(div))
 xsport.ua##div.site:style(margin-top: 20px !important)
+xsport.ua##p:has(> a[href^="https://ggbet.ua/"])
+xsport.ua##p:has(> b + a[href^="https://ggbet.ua/"])
+xsport.ua##p:has(> b + a[href^="https://ggbet.ua/"]) + b
 yak-zrobyty.in.ua##aside.widget-area
 yesport.com.ua##app-adv-placeholder
 youcontrol.com.ua##.banner
@@ -736,8 +778,10 @@ youcontrol.com.ua##.banner-new-seo
 youcontrol.com.ua##.banner-register
 youcontrol.com.ua##.banner-yc
 zaxid.net##.news-list-col > .news-list
+zaxid.net##.rek
 zaxid.net##[class*="adv-"]
 zaxid.net##[id*="AdvWrapper"]
+zaxid.net##div.archive_page > div.video-wrapper
 zaxid.net##div[id^="slot300x"]
 zaxid.net##div[id^="slotPromoinformer"]
 zaxid.net##div#header_advt-wrapper
@@ -751,6 +795,9 @@ zi.ua##div.footer-partners
 zi.ua##div.partner-news-content
 zi.ua##div.sponsors-holder
 zi.ua##div[style="height:15px;"] + div.unit-rubric__head
+zmi.ck.ua##div.container:has(> small:has-text(Реклама))
+zmi.ck.ua##small:has-text(Реклама)
+zmi.ck.ua##small:has-text(Реклама) + a
 zn.ua##[data-action="banners"]
 zn.ua##aside.content__news > div.news-support
 zn.ua##aside.content__news > div.news-support + div.content-title
