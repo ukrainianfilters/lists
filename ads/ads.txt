@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.12.22
-! Last modified: Wed, 18 December 2024 19:24 EET
+! Version: 24.12.24
+! Last modified: Thu, 19 December 2024 22:58 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -31,6 +31,8 @@
 ||cdn.umh.ua^$third-party
 ||exchange.informer.ua^$third-party
 ||go2net.com.ua^$third-party
+||holder.com.ua^$third-party
+||ipvertnet.com^$third-party
 ||mediabrama.com^$third-party
 ||membrana.media^$third-party
 ||misto.travel/templates/js$third-party
@@ -221,6 +223,7 @@ detector.media##div.md_banner_zone
 dev.ua##div.afterheader-widget
 dev.ua##div.island:has(> div.island__body > div[data-sender="admixer"])
 dev.ua##div.partners-wrapper
+dou.ua##.promobar
 dou.ua##div.b-adv-events
 dou.ua##div.b-dou-vacancies
 dou.ua##div.b-sponsors
@@ -228,6 +231,8 @@ dou.ua##div#max-header-adv-id:has(a[href^="https://dou.ua/goto/?id="])
 dou.ua##div#topinfo
 dou.ua##li.mini-header:has(a[rel="nofollow"][target="_blank"])
 dovidka.biz.ua##div[class^="b-r b-r--"]
+dp.informator.ua##div[data-widget-id="201"] > div > a[href$="obmin.info?f=informator"]
+dp.informator.ua##div[data-widget-id="201"] > div > div > picture
 dsnews.ua##div:has(> div[data-banner])
 dsnews.ua##div.home-main-ad
 dtkt.ua##div.box-banner
@@ -245,6 +250,7 @@ dyvys.info##div.page-section ~ section.page-section:nth-of-type(-n+2)
 elitexpert.ua##.leader-wrap-out
 epochtimes.com.ua##aside:has(> iframe[src$="/sinoptik.html"])
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##[class$="_banner"]
+epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]:remove()
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(PROMOTED))
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(АНОНС))
@@ -324,6 +330,7 @@ glavred.net##div.bnr-block
 glavred.net##div.bnr-block--gray
 glavred.net##div.main-partners
 glavred.net##div.partner-news
+gloss.ua##div:has(> div.card > div > div > a > h4 > span.mark-ad)
 gordonua.com##div[class^="advertising"]
 gordonua.com##div[data-action="banners"]
 greenforest.com.ua##div.banner-place
@@ -425,6 +432,10 @@ ko.com.ua##div.pad:has(> ul.sponsors)
 ko.com.ua##table.container > tbody > tr > td.left-column
 ko.com.ua##table.container > tbody > tr > td.right-column
 ko.com.ua##td.layout_right_column > p:has(> a[target="_blank"] > img)
+kolobok.ua,tv.ua##div.row:has(> div > div + script)
+kolobok.ua,tv.ua##div.row:has(> div > div.premium-banner)
+kolobok.ua,tv.ua##div.row:has(> div > iframe)
+kolobok.ua,tv.ua##div.row:has(> div > script)
 konkurent.ua##div[class^="banner"]
 konkurent.ua##div[class^="bookmaker"]
 korrespondent.net##.article:has(em.advertising)
@@ -553,6 +564,7 @@ players.com.ua##img[class*="banner-"]
 playua.net##div[class*="-advert"]
 playua.net##div[class*="a_dvert"]
 playua.net##div[class*="google-ad"]
+politeka.net##div.ai-placement
 portal.lviv.ua##div[class^="banner"]
 portal.lviv.ua##div[id^="wonderpluginslider-container-"]
 pravda.com.ua##.unit_sp_place
@@ -654,6 +666,9 @@ texty.org.ua##.ad-banner-aside
 thebuchacity.com##div[style="display: inline-block"]:has(> div > h4 > a:has-text(РЕКЛАМА))
 thepage.ua##div.news-list__item:has(div[class*="news-tag company_news"])
 thepage.ua##div.news-list__item:has(div[class*="news-tag partner_material"])
+tochka.net##div.partner-news
+tochka.net##div.partner-news + div
+tochka.net##div.partner-news + div + div
 tribuna.com##div.card__content > div:has(div[class*="Alternative_banner__"])
 tribuna.com##div.card__postscript-banners
 tribuna.com##div[class*="_ads_"]
@@ -712,6 +727,9 @@ ukurier.gov.ua##div[class^="banner"]
 unian.info,unian.net,unian.ua##.newsfeed__banner
 unian.info,unian.net,unian.ua##.partner-news
 unian.ua##a.support-unian
+unian.ua##div:has(> div[data-ad] + ins)
+unian.ua##div:not([class]):has(> span.newsfeed__ad)
+unian.ua##div.bnr-block
 unian.ua##div.newsfeed-box.banner
 unian.ua##div[class^="banner"]
 unian.ua##li.newsfeed__item:has(span.blue-marker:has-text(НК))
@@ -740,6 +758,11 @@ versii.if.ua##nav[aria-label="Post navigation"] + a:has(> img)
 versii.if.ua##span:has-text(реклама)
 versii.if.ua##span:has-text(реклама) + img
 vezha.ua##div.middle_banner
+vgorode.ua##div.col-lg-4:has(> div > div > div > div > span.mark-ad)
+vgorode.ua##div.col-lg-4:has(> div[data-action="banners"])
+vgorode.ua##div.reclama
+vgorode.ua##div[data-action="banners"]
+vgorode.ua##section.ad-up
 vikna.tv##div.pip-video-wrapper
 vikna.tv##div[class^="promo-"]
 village.com.ua##.post-additions
