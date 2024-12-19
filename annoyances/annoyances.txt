@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.12.23
-! Last modified: Wed, 18 December 2024 19:54 EET
+! Version: 24.12.24
+! Last modified: Thu, 19 December 2024 22:58 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -153,6 +153,7 @@ datagroup.ua###js-cookie-notification
 detector.media##div.msg_cooky_blk
 diia.gov.ua##div.cookies-banner-wrapper
 diiacityunited.org##div.cookies-form
+dnepr.express##div.cookie-consent
 dodam.com.ua##.popup.popup_cookies
 dom.ria.com##div:has(> div.mainContainer > div > div > div > div[data-tm="open-cookies-settings"])
 dom.ria.com##div.c-notifier:has(input[id="gdpr_settings"])
@@ -203,6 +204,7 @@ heygop.com##aside[aria-label="GDPR Cookie Banner"]
 holosameryky.com##div.slide-in-wg
 hotline.finance##div.side-popup
 hotline.finance##div[class^="accept-cookies_modal_"]
+hvylya.net##div.privacy-policy
 i.ua##.Disclaimer
 igns.gov.ua##aside#moove_gdpr_cookie_info_bar
 ilounge.ua##div.signup-form-launcher
@@ -307,6 +309,11 @@ novapay.ua##div.cookies.show-cookies
 novaposhta.ua##div#popup_info
 novosti.dn.ua##div.cookies_accept
 novus.ua##div.nearest-store-popup
+noworries.news##.remodal-is-locked:style(overflow: unset !important)
+noworries.news##div.fixed-tg-row:has(> div > a.fixed-tg-row-link)
+noworries.news##div.main-box-single-video
+noworries.news##div.remodal-overlay
+noworries.news##div.remodal-wrapper
 npshopping.com##div.cookie-alert
 ntn.ua##.warning
 obyava.ua##.cookie-bar
@@ -326,6 +333,7 @@ podorozhnyk.ua##div.cookie-agreement
 podorozhnyk.ua##div.mobile-app-popup
 poehalisnami.ua##.jsAgreeWithCookie
 poetryhome.ua###c_mess
+politeka.net##div.privacy-policy
 portmone.com.ua##.ptm-banner__cat-fish
 portmone.com.ua##app-cookies-modal
 primary.org.ua###cookie-law-info-bar
@@ -433,9 +441,12 @@ ukrzoloto.ua###cban
 umgi.com##div[aria-label="cookieconsent"]
 unilab.kiev.ua##.cookieWrapper
 uspacy.eu,uspacy.ua##div[class^="cookiesNotification_wrapper"]
+uzr.com.ua##div.td-more-articles-box
 vandalvape.life###cookie
 varosh.com.ua##div.helpus
 venus-clinic.com.ua##div.pcb
+vgorode.ua##div.chat-bl
+vgorode.ua##section.chatbot-sec
 vin.gov.ua##.consent-block
 vinga.ua###cookies-banner
 vinnitsa.info##div:has(> div > div > img[alt="App"])
