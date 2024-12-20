@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 24.12.24
-! Last modified: Thu, 19 December 2024 22:58 EET
+! Version: 24.12.25
+! Last modified: Fri, 20 December 2024 21:51 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -82,6 +82,7 @@ dengi.ua##div.fb-social-widget
 ||osvita.ua/clicks/track^
 ||search.com.ua/analytics/js/*^$script,domain=search.com.ua
 ||stat.board.com.ua^
+||uoi.eolymp.space/measure^
 ||vsh.pp.ua/pixel?page=*^
 ||vsh.pp.ua^$third-party
 ||widget.idea-bank.ua/build/*/analytics.html^$subdocument
@@ -95,9 +96,10 @@ bigmir.net##div.widget:has(div.widget-socials)
 ! >>>
 ! sinoptik.ua
 ||sinoptik.ua/informers_js.php^$third-party
-blitz.if.ua,expres.online,football-ukraine.com,galinfo.com.ua,gk-press.if.ua,internetua.com,kyiv24.news,magnolia-tv.com,newformat.info,region.dp.ua,times.zt.ua,tvoemisto.tv,zaxid.net##div#SinoptikInformer
+blitz.if.ua,expres.online,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kyiv24.news,magnolia-tv.com,newformat.info,region.dp.ua,times.zt.ua,tvoemisto.tv,zaxid.net##div#SinoptikInformer
 brovary.net.ua##div.elementor-element:has(> div > div > h4:has-text(Погода))
 brovary.net.ua##div.elementor-element:has(> div > div#SinoptikInformer)
+gazeta-misto.te.ua##div.widget_custom_html:has(> div > div#SinoptikInformer)
 region.dp.ua###custom_html-16
 zora-irpin.info##aside.widget_text:has(> div > div#SinoptikInformer)
 ! >>>
