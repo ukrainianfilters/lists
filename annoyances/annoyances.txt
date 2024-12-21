@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.12.24
-! Last modified: Thu, 19 December 2024 22:58 EET
+! Version: 24.12.26
+! Last modified: Sat, 21 December 2024 21:24 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -85,8 +85,8 @@ privatbank.ua##+js(set-cookie, analytics_allowed, 0)
 privatbank.ua##+js(set-cookie, marketing_allowed, 0)
 puratos.com.ua##+js(set-cookie, functionalCookieAccepted, true)
 ! >>>
-032.ua##app-cookie-consent-popup
-032.ua##div[data-cookie-consent-popup]
+032.ua,048.ua,056.ua,057.ua##app-cookie-consent-popup
+032.ua,048.ua,056.ua,057.ua##div[data-cookie-consent-popup]
 104.ua###privacy-policy
 1kr.ua##noindex:has([class$="cookies-box"])
 3ona51.com##div.cookiesAccept
@@ -95,12 +95,20 @@ accordbank.com.ua###setcookie-agreement
 afishadnepr.com.ua,fitness-class.com.ua,nashemisto.dp.ua,startermedia.com.ua###cookie-law-info-bar
 agrodoctor.ua###cookieswarning_block
 ain.ua##div.cookie-popup
+akzent.zp.ua##div.gsInformer
 alfa-tv.ua##.cook
 anc.ua##div.cookies--popup-background
 anc.ua##div.dropdown-accept-city
 antoshka.ua##div.promotion-popup
 ap-bank.com##div.b-cookieAccept
 aprint.store##div.consent-banner-root
+atn.ua###custom_html-2
+atn.ua###moove_gdpr_cookie_info_bar
+atn.ua###moove_gdpr_cookie_info_bar
+atn.ua###penci_facebook_widget-2
+atn.ua###penci-insta-slider-2
+atn.ua###recent-comments-2
+atn.ua##div.wpb_raw_code:has(> div > div.penci-social-media)
 auchan.ua##div.cookie-agreement-wrapper
 auchan.ua##div.right-banner_root__35ahv
 auto.ria.com###gdpr-notifier
@@ -113,6 +121,7 @@ bastion.tv##div.cookie-wrap
 bastion.tv##div.subscribe-new-container
 bat.ua###sysCookieMessage
 bbc.com##div[class^="bbc-"]:has(> div > div > h2:has-text(файлів cookies))
+bessarabia.ua##div.subscribeTelegramWrap
 bhub.com.ua##.policy-cookies
 bi.ua##div.cookiePopup
 biolights.ua###ct-ultimate-gdpr-cookie-popup
@@ -146,6 +155,9 @@ comfy.ua##div.weblayer--box-subscription-1
 concord.ua##.warning-cookie
 coolinfo.in.ua##aside#rb-privacy
 creativestates.net##div[class^="Cookies_cookies__"]
+cvnews.cv.ua##.remodal-is-locked:style(overflow: unset !important)
+cvnews.cv.ua##div.remodal-overlay
+cvnews.cv.ua##div.remodal-wrapper
 darmut.com##div.wd-cookies-popup
 darnytsia.ua##div[class^="dar-Cookies"]
 darnytsia.ua##div[class^="dar-Popup"]
@@ -191,6 +203,8 @@ founder.ua##div.boxCookies
 fozzyshop.ua###iqitcookielaw
 freelancehunt.com###cookie-bar
 funduk.ua###cookie_inform
+gagadget.com##div.l-container:has(> div > div > a[href$="t.me/gagadget_uk"])
+gagadget.com##div.l-container:has(> div > div.social-likes_gg)
 gorod.dp.ua###myCookieConsent
 gorsovet.com.ua##div.cookie-consent
 greenfort-ua.com##div[data-storage-item*="cookiename_"]
@@ -260,6 +274,9 @@ lorgar.ua,lorgar.com##div.fixed.bottom-0:has(a[href="/privacy-policy"])
 luxoptica.ua##div#yourTown.modal
 lviv.travel##div.c-accept-message
 lvivrada.gov.ua###simpletools_nl_cookie_notice
+lvnews.org.ua##.remodal-is-locked:style(overflow: unset !important)
+lvnews.org.ua##div.remodal-overlay
+lvnews.org.ua##div.remodal-wrapper
 maanimo.ua###cookies
 marchi.com.ua##.basel-cookies-popup
 marketer.ua##div.box-cookies
@@ -273,6 +290,7 @@ meest.com##div.cookies-banner
 megogo.net##div.adl_cmp_consent-dialog-module_backdrop
 mercedes-benz.ua##div[role="dialog"][aria-label="Cookie Consent Banner"]
 meta.ua##div.adl_cmp_consent-dialog-module_backdrop
+meta.ua##div.privacy-policy
 meteoprog.com##div.adl_cmp_consent-dialog-module_backdrop
 metinvest-smc.com###cookieConsentBanner
 metinvest.digital##div.cookie-popup
@@ -347,6 +365,7 @@ radiosvoboda.org##div.slide-in-wg
 radioua.net##.cookie-consent
 raiffeisen.ua###popup-cookies
 rbc.ua##.privacy
+rbc.ua##div.item:has(> a > span.whatsapp)
 ria.com###gdpr-notifier
 rice.ua##.wd-cookies-popup
 ridni.org.ua##aside.cookies-banner
