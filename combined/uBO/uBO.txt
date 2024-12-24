@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 24.12.31
-! Last modified: Mon, 23 December 2024 20:30 EET
+! Version: 24.12.32
+! Last modified: Tue, 24 December 2024 11:21 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -118,6 +118,7 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ! !!!!!!!!!!!!!!!
 !
 /assets/plugin/banners/uploads^$domain=volynnews.com
+/banners/redirect^$document,domain=slk.kh.ua
 /sajax/updatebannerstat^$domain=volynnews.com
 ||1plus1.video/static/js/api.gpt.js^
 ||1plus1.video/ua/ab/?whole^
@@ -160,6 +161,7 @@ forex.ua,gsminfo.com.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoog
 24tv.ua##app-default-publications:has(> h5 > a[href*="24tv.ua/partnerki_tag"])
 24tv.ua##app-main-page-adv-block
 24tv.ua##div.video-dv-wrapper
+2day.kh.ua###block-reklamnyybanner
 4studio.com.ua###custom_html-5
 4studio.com.ua##div.partners_block
 5.ua##div[class^="banner"]:has(div[id^="div-gpt-ad-"])
@@ -213,6 +215,7 @@ champion.com.ua##[class$="_banner"]
 champion.com.ua##div.section_news_adv
 champion.com.ua##div[class*="_banner_"]
 champion.com.ua##div[class^="banner"]
+charivne.info##div[onload^="viewAds"]
 chasdiy.org##div.side-content-wrapper
 chasdiy.org##div.top-content-wrapper
 chasdiy.org##div[class*="__fanner"]
@@ -221,6 +224,11 @@ chytomo.com##div[class^="banner"]
 cloudgaminghub.net.ua##div.banner-promotions-wrapper
 cloudgaminghub.net.ua##div.widget_media_image:has(figure.wp-block-image > a[href*="boosteroid.com/go/"])
 cloudgaminghub.net.ua##div.widget_media_image:has(figure.wp-block-image > a[href*="ukrline.com.ua/?ref="])
+comments.ua###atlanta
+comments.ua##div:has(> a[target="_blank"] > img[src*="comments.ua/adv_img/"])
+comments.ua##div.atlanta
+comments.ua##div.bot_r
+comments.ua##div.tops_r
 cripo.com.ua###custom_html-8
 cvnews.cv.ua##a:has(> img[class*="advert-box"])
 cvnews.cv.ua##div.row.top-post-box
@@ -515,6 +523,7 @@ kyivindependent.com##div.bottomPopupBanner
 kyivindependent.com##iframe[data-engage-slug^="popupjoinus"]
 kyivpost.com##div.col-xl-2.d-xl-block:has(> a > img[alt="Kador Group"])
 kyivpost.com##div.section-title:has-text(Sponsored content)
+kyivpost.com##div.section-wrapper:has(> div > a:has-text(Спонсорований контент))
 kyivpost.com##div[class^="ad-wrapper"]
 lb.ua##[class^="adv-banner"]
 lb.ua##div.cookie-info
@@ -589,6 +598,9 @@ minfin.com.ua##div[data-bn-slot]
 minfin.com.ua##section.special-offers
 moviegram.com.ua##div.elementor-element:has(> div > p > a[href="mailto:redaction@moviegram.com.ua"])
 moviegram.com.ua##section.elementor-section:has(> div > div > div > div.elementor-widget-wp-widget-advads_ad_widget)
+mykharkov.info##.promotion_link
+mykharkov.info###text-4
+mykharkov.info##div.sidebar-block.news-companies
 nachasi.com##div.sticky-zone:has-text(Блоги компаній)
 nachasi.com##div.style_poster__MF3pg:has(.style_content__3CPKg)
 napensii.ua##div.code-block:has(> div > center > a[href*="peredplata.ukrposhta.ua/index.php?"])
@@ -693,8 +705,10 @@ rubryka.com##div[style="padding: 0 0 30px"]
 rud.ua##a.branding__link
 sinoptik.ua##div.informerTop
 sinoptik.ua##head > style:empty:style(all: inherit !important)
+slk.kh.ua##div[class^="specific-content_"]
 slovnyk.ua##section[class^="section-ad"]
 slovoidilo.ua##div.branding-main
+slovoidilo.ua##div.compare-banner
 smachno.ua##div.adv-block_catfish
 socportal.info##div[x-lazyload*='adsbygoogle']
 speka.media##div.max-w-material-l:has(h3.socials__title)
@@ -873,6 +887,8 @@ visnyk-irpin.com.ua##div.widget_media_image
 vogue.ua##div.box__bnr
 vogue.ua##div.timer_block
 vogue.ua##div[data-sender="admixer"]
+volyn.com.ua##a.bg-banner
+volyn.com.ua##div.gpt-main
 volynnews.com##.view_back_margin
 volynnews.com##div[data-view-id]
 volynnews.com##span.view_back
@@ -1037,7 +1053,7 @@ bigmir.net##div.widget:has(div.widget-socials)
 ! >>>
 ! sinoptik.ua
 ||sinoptik.ua/informers_js.php^$third-party
-4studio.com.ua,blitz.if.ua,cripo.com.ua,cvnews.cv.ua,expres.online,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,newformat.info,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,zakarpattya24.com,zaxid.net##div#SinoptikInformer
+4studio.com.ua,blitz.if.ua,cripo.com.ua,cvnews.cv.ua,expres.online,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,zakarpattya24.com,zaxid.net##div#SinoptikInformer
 ! >>>
 4studio.com.ua##div.home_bottom > div > div:nth-child(3)
 brovary.net.ua##div.elementor-element:has(> div > div > h4:has-text(Погода))
