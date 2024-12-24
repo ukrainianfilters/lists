@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 24.12.35
-! Last modified: Tue, 24 December 2024 21:41 EET
+! Version: 24.12.36
+! Last modified: Tue, 24 December 2024 22:47 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -185,6 +185,8 @@ ain.ua##div.branding-top
 ain.ua##div[class^="adsense-"]
 akzent.zp.ua##div.standard_blog + div + div
 akzent.zp.ua##div#main > .vc_row:nth-of-type(2) > div.wpb_column:not(:has(figure > a[href$="facebook.com/71brigade"]))
+apk-inform.com##div.market-btn--advertising
+apk-inform.com##div[class$="-banner"]
 apostrophe.ua##.advertinline
 apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
@@ -310,6 +312,8 @@ expres.online##div.advertisement
 fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"])
 fakty.com.ua##div.pip-video-wrapper
 fakty.com.ua##div[class^="promo-layer"]
+fakty.ua##div:has(> span:has-text(Новини партнерів))
+fakty.ua##div[class^="banner"]
 finance.ua##[data-vr-zone="block special projects list"]
 finance.ua###sticky-wrapper:has(div[id^="div-gpt-ad-"])
 finance.ua##div.bottom_banner
@@ -666,10 +670,12 @@ portal.lviv.ua##div[id^="wonderpluginslider-container-"]
 pravda.com.ua##.unit_sp_place
 pravda.com.ua##article.article_pr
 pravda.com.ua##div.article.article_story_grid:has(> div > div.article_content > span.article_label_adv)
+pravda.com.ua##div.article.article_view_sm:has(> div > div > div > span.article_label_adv)
 pravda.com.ua##div.container_special
 pravda.com.ua##div.promoted_article
 pravda.com.ua##div.section_articles:has(> div > div > h3 > a[href$="/projects/"])
 pravda.com.ua##div.ym-video--wrapper
+pravdatutnews.com##div.views-code:has(> div[id^="newsAd"])
 predmety.in.ua##div[style="height:550px; weight:auto;"]:empty
 proidei.com##div.ads-widget-block
 prolinux.pp.ua##section.widget_block:has(ins.adsbygoogle)
@@ -690,6 +696,9 @@ rbc.ua##[id^="admixer-"]
 rbc.ua##[id^="bn_"]
 realist.online##div.advertising
 risu.ua##div.r22207
+rivne.media##a.a_d_v
+rivne.media##aside.content__aside.content-1__aside:not(:has(div.list-wrapper))
+rivne1.tv##main > div.container > div.info
 rivnepost.rv.ua##a.info[target="_blank"]
 rivnepost.rv.ua##aside > a[target="_blank"]
 rivnepost.rv.ua##aside > p:empty
@@ -741,6 +750,7 @@ stopcor.org##aside.videoOfDay
 stopcor.org##div.idealmedia
 storinka.com.ua##div.share
 storinka.com.ua##div.widget:not([class$="hidden-xs"])
+subota.online##div.banner_wrapper
 sud.ua##div.b-sidebar-adv
 synonimy.info##body:style(background-image: none !important)
 tabletki.ua##div.adunit
@@ -1054,7 +1064,7 @@ bigmir.net##div.widget:has(div.widget-socials)
 ! >>>
 ! sinoptik.ua
 ||sinoptik.ua/informers_js.php^$third-party
-4studio.com.ua,blitz.if.ua,cripo.com.ua,cvnews.cv.ua,expres.online,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,zakarpattya24.com,zaxid.net##div#SinoptikInformer
+4studio.com.ua,blitz.if.ua,cripo.com.ua,cvnews.cv.ua,expres.online,fakty.ua,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,zakarpattya24.com,zaxid.net##div#SinoptikInformer
 ! >>>
 4studio.com.ua##div.home_bottom > div > div:nth-child(3)
 brovary.net.ua##div.elementor-element:has(> div > div > h4:has-text(Погода))
