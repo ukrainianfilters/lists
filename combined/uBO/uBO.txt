@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 24.12.33
-! Last modified: Tue, 24 December 2024 18:06 EET
+! Version: 24.12.35
+! Last modified: Tue, 24 December 2024 21:41 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -32,6 +32,7 @@
 ||2xclick.ru^$third-party
 ||bidder.smartytouch.co^$third-party
 ||cdn.umh.ua^$third-party
+||crashlytics.ru^$third-party
 ||exchange.informer.ua^$third-party
 ||go2net.com.ua^$third-party
 ||holder.com.ua^$third-party
@@ -1635,6 +1636,7 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||olx-ukraine.info^
 ||olx-ukrnp.co.uk^
 ||olx.dp.ua^
+||oneaccs.store^
 ||oneclick-ua.shop^
 ||online1shop.store^
 ||onlinediya.com^
@@ -1647,6 +1649,7 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||online-prizeme.com^
 ||online-raiffeisen.info^
 ||online-shop.store^
+||onlyfans.gd^
 ||on-ua.cloud^
 ||on-ua.info^
 ||on-ua.pro^
@@ -2483,12 +2486,12 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ! PAGE-SPECIFIC FILTERING RULES
 ! !!!!!!!!!!!!!!!
 !
-/egroshi_ua^$document,to=t.me|telegram.me
-/grosgovadopomoga^$document,to=t.me|telegram.me
-/pravovadopomoga24^$document,to=t.me|telegram.me
-/ukrua2023^$document,to=t.me|telegram.me
-/zaluzhny2024bot^$document,to=t.me|telegram.me
-/zayavka_ua_bot^$document,to=t.me|telegram.me
+/egroshi_ua$document,to=t.me|telegram.me
+/grosgovadopomoga$document,to=t.me|telegram.me
+/pravovadopomoga24$document,to=t.me|telegram.me
+/ukrua2023$document,to=t.me|telegram.me
+/zaluzhny2024bot$document,to=t.me|telegram.me
+/zayavka_ua_bot$document,to=t.me|telegram.me
 !
 !
 ! !!!!!!!!!!!!!!!
@@ -2592,8 +2595,49 @@ ukr*pos*.$document,to=info|life|top|xyz
 @@||instagram.com/kyivstar.official^$document
 *kievstar*.*/$document
 ! >>>
+! UAC-0195 (CERT-UA#9565)
+*petition*.*/$document,to=~gov.ua|~e-dem.ua
+petiti*ukr*.*/$document,to=~gov.ua|~e-dem.ua
+petiti*presiden*.*/$document,to=~gov.ua|~e-dem.ua
+presiden*petiti*.*/$document,to=~gov.ua|~e-dem.ua
+! >>>
+! UAC-0195 (CERT-UA#9688)
+/\/jphone/\d{7,}$/$xmlhttprequest
+##html > body:has(div.popup > div.popup-inner > a[href*="/vote"])
+##html > body:has(nav.header__nav > a.header__login[href*="/vote"])
+##html > body:has(form[action="/vote"] > button[name="send_phone"])
+##html > body:has(form[action="/vote/code"] > button[name="send_code"])
+! >>>
+! #TAG-050
+forms.tilda*.*/procces/$xmlhttprequest,domain=fun|online|shop|space|store|uno|website
+/telegram.php$document,xmlhttprequest,domain=fun|online|shop|site|space|store|uno|website
+/mod/project/*/lead/send/*$document,xmlhttprequest
+.lpcdn.site/assets/*$script,xmlhttprequest
+courier.darkleads.pro/data/exchange/extpartner/addorder*$document,xmlhttprequest,script
+/common/php/send-order.php?partnerid=*&lendid=*&offer=*$document,xmlhttprequest
+! >>>
 ! #TAG-064
 *bankid*.*/$document,to=~gov.ua
 *bankld*.*/$document
 *viplata*.*/$document,to=art|au|biz|buzz|cam|cfd|click|cloud|club|com|cyou|digital|eu|fun|fyi|health|help|icu|in|info|me|mobi|net|online|org|pics|pp.ua|pro|pw|shop|site|social|space|store|tech|today|us|website|xyz
 *dopomoga*.*/$document,to=art|au|biz|business|buzz|cfd|click|cloud|club|co|com|eu|fun|health|help|info|live|me|net|online|org|pics|pro|sbs|services|shop|site|space|top|uk|us|website|win|world|xyz
+! >>>
+! #TAG-071
+||api.livechatinc.com$third-party,domain=pages.dev|workers.dev
+||cdn.livechatinc.com$third-party,domain=pages.dev|workers.dev
+/check.php?type=card&id=*&fcard=*&fexpm=*&fexpy=*&fcvc=*&fbalance=*$document,xmlhttprequest
+/3ds$document,to=pages.dev|workers.dev
+/bank$document,to=pages.dev|workers.dev
+/bankLogin$document,to=pages.dev|workers.dev
+/card$document,to=pages.dev|workers.dev
+/link_card$document,to=pages.dev|workers.dev
+/method$document,to=pages.dev|workers.dev
+/submitNewLk$xmlhttprequest,domain=pages.dev|workers.dev
+/api/checkOnline$xmlhttprequest,domain=pages.dev|workers.dev
+/api/checkStatus$xmlhttprequest,domain=pages.dev|workers.dev
+/api/submitCard$xmlhttprequest,domain=pages.dev|workers.dev
+! >>>
+! #TAG-083
+/selectB/?id=$document,to=pages.dev|workers.dev
+! chatrnetquest.click
+api.chatrnetquest.click/chat/chat_receive.php?order_id=$third-party,xmlhttprequest,domain=pages.dev|workers.dev
