@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.12.31
-! Last modified: Mon, 23 December 2024 20:30 EET
+! Version: 24.12.32
+! Last modified: Tue, 24 December 2024 11:21 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -90,6 +90,7 @@ puratos.com.ua##+js(set-cookie, functionalCookieAccepted, true)
 104.ua###privacy-policy
 1kr.ua##noindex:has([class$="cookies-box"])
 24tv.ua##div.player.sticky
+2day.kh.ua###fb-likebox
 3ona51.com##div.cookiesAccept
 a-grade.com.ua##div.modalWindow--cookie
 accordbank.com.ua###setcookie-agreement
@@ -142,6 +143,8 @@ carta.ua##div.carta-policy-bottom
 censor.net##.stpd_cmp
 censor.net###usage_notice
 cersanit.com###cookie-bar
+charivne.info###cookie-bar
+charivne.info###newsticker
 chasdiy.org##div.notifications__bottom
 cip.gov.ua##cookie-law
 city24.ua##div:has(> div > div > div > svg.linkedin)
@@ -154,6 +157,7 @@ columbia.ua###cookies-panel
 comfy.ua##div.ask-city-desktop
 comfy.ua##div.info-popup__content
 comfy.ua##div.weblayer--box-subscription-1
+comments.ua###push_info
 concord.ua##.warning-cookie
 coolinfo.in.ua##aside#rb-privacy
 creativestates.net##div[class^="Cookies_cookies__"]
@@ -394,6 +398,8 @@ sestry.eu##.gl-cookie-consent
 shakhtar.com###using-cookie-warning
 shakhtar.com##div#klaro:has(> div > div.cookie-notice)
 silpo.ua##.cookie-banner
+slk.kh.ua##a.reader-choise__telegram
+slk.kh.ua##div.google-news-sub
 smachno.ua##div.bubleblock_wrapper
 smachno.ua##div.header_top_desctop_bnr:has(div.cookie-pop)
 smarthost.net.ua##div[aria-label="cookieconsent"]
@@ -404,6 +410,7 @@ soroban.ua###policy
 soroban.ua##div#chakra-toast-manager-bottom:has(a[href="/privacy-policy"])
 speka.media##div.js-cookie-banner
 sport.ua##div.adl_cmp_consent-dialog-module_backdrop
+sq.com.ua##div.cookies-accept
 starlight.media##div.cookie_popup
 stat.gov.ua##.consent-modal
 steko.ua##div.cookie-disclaimer
