@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.12.36
-! Last modified: Tue, 24 December 2024 22:47 EET
+! Version: 24.12.37
+! Last modified: Thu, 26 December 2024 20:06 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -129,7 +129,7 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ! >>>
 ! :has(> ins.adsbygoogle)
-1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,novyny.live,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
+1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
 ! :has(> div > ins.adsbygoogle)
 forex.ua,gsminfo.com.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
@@ -256,6 +256,7 @@ dou.ua##.promobar
 dou.ua##div.b-adv-events
 dou.ua##div.b-dou-vacancies
 dou.ua##div.b-sponsors
+dou.ua##div[class^="banner-"]
 dou.ua##div#max-header-adv-id:has(a[href^="https://dou.ua/goto/?id="])
 dou.ua##div#topinfo
 dou.ua##li.mini-header:has(a[rel="nofollow"][target="_blank"])
@@ -459,6 +460,7 @@ itc.ua##div.widget-spec-projects
 itc.ua##div[class*="widget-partners-blogs"]
 itc.ua##div[class^="hidden-sm"]
 itc.ua##div[class^="visible-sm"]
+itc.ua##li.commented-posts-widget:style(margin-top: unset !important; padding-top: unset !important)
 itc.ua##li.widget-container:has(.jobs-vacancy)
 itc.ua##li.widget-container:has(.partner-blog)
 itc.ua##li.widget-sticky:has(div[id^="div-gpt-ad-"])
@@ -719,6 +721,8 @@ slovoidilo.ua##div.compare-banner
 smachno.ua##div.adv-block_catfish
 socportal.info##div[x-lazyload*='adsbygoogle']
 speka.media##div.max-w-material-l:has(h3.socials__title)
+speka.media##div.swiper-wrapper > div.swiper-slide:has(span.talk-swiper__author:has-text(Спекотне промо))
+speka.media##section.news-on-main > div.post-wrapper:has(span.news-item__author > span:has-text(Спекотне промо))
 sport-express.ua##div.sadse
 sport-express.ua##div.widgetBestBookmakers
 sport.ua##[class^="partners"]
