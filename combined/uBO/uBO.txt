@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 24.12.36
-! Last modified: Tue, 24 December 2024 22:47 EET
+! Version: 24.12.37
+! Last modified: Thu, 26 December 2024 20:06 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -132,7 +132,7 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ! >>>
 ! :has(> ins.adsbygoogle)
-1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,novyny.live,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
+1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
 ! :has(> div > ins.adsbygoogle)
 forex.ua,gsminfo.com.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
@@ -259,6 +259,7 @@ dou.ua##.promobar
 dou.ua##div.b-adv-events
 dou.ua##div.b-dou-vacancies
 dou.ua##div.b-sponsors
+dou.ua##div[class^="banner-"]
 dou.ua##div#max-header-adv-id:has(a[href^="https://dou.ua/goto/?id="])
 dou.ua##div#topinfo
 dou.ua##li.mini-header:has(a[rel="nofollow"][target="_blank"])
@@ -462,6 +463,7 @@ itc.ua##div.widget-spec-projects
 itc.ua##div[class*="widget-partners-blogs"]
 itc.ua##div[class^="hidden-sm"]
 itc.ua##div[class^="visible-sm"]
+itc.ua##li.commented-posts-widget:style(margin-top: unset !important; padding-top: unset !important)
 itc.ua##li.widget-container:has(.jobs-vacancy)
 itc.ua##li.widget-container:has(.partner-blog)
 itc.ua##li.widget-sticky:has(div[id^="div-gpt-ad-"])
@@ -722,6 +724,8 @@ slovoidilo.ua##div.compare-banner
 smachno.ua##div.adv-block_catfish
 socportal.info##div[x-lazyload*='adsbygoogle']
 speka.media##div.max-w-material-l:has(h3.socials__title)
+speka.media##div.swiper-wrapper > div.swiper-slide:has(span.talk-swiper__author:has-text(Спекотне промо))
+speka.media##section.news-on-main > div.post-wrapper:has(span.news-item__author > span:has-text(Спекотне промо))
 sport-express.ua##div.sadse
 sport-express.ua##div.widgetBestBookmakers
 sport.ua##[class^="partners"]
@@ -1064,7 +1068,7 @@ bigmir.net##div.widget:has(div.widget-socials)
 ! >>>
 ! sinoptik.ua
 ||sinoptik.ua/informers_js.php^$third-party
-4studio.com.ua,blitz.if.ua,cripo.com.ua,cvnews.cv.ua,expres.online,fakty.ua,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,zakarpattya24.com,zaxid.net##div#SinoptikInformer
+4studio.com.ua,blitz.if.ua,cripo.com.ua,cvnews.cv.ua,expres.online,fakty.ua,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kontrakty.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,zakarpattya24.com,zaxid.net##div#SinoptikInformer
 ! >>>
 4studio.com.ua##div.home_bottom > div > div:nth-child(3)
 brovary.net.ua##div.elementor-element:has(> div > div > h4:has-text(Погода))
@@ -2496,12 +2500,12 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ! PAGE-SPECIFIC FILTERING RULES
 ! !!!!!!!!!!!!!!!
 !
-/egroshi_ua$document,to=t.me|telegram.me
-/grosgovadopomoga$document,to=t.me|telegram.me
-/pravovadopomoga24$document,to=t.me|telegram.me
-/ukrua2023$document,to=t.me|telegram.me
-/zaluzhny2024bot$document,to=t.me|telegram.me
-/zayavka_ua_bot$document,to=t.me|telegram.me
+/egroshi_ua$document,to=t.me|telegram.me|telegram.org
+/grosgovadopomoga$document,to=t.me|telegram.me|telegram.org
+/pravovadopomoga24$document,to=t.me|telegram.me|telegram.org
+/ukrua2023$document,to=t.me|telegram.me|telegram.org
+/zaluzhny2024bot$document,to=t.me|telegram.me|telegram.org
+/zayavka_ua_bot$document,to=t.me|telegram.me|telegram.org
 !
 !
 ! !!!!!!!!!!!!!!!
@@ -2529,6 +2533,12 @@ diia*$document,to=t.me|telegram.me
 e-dopomoga*.*/$document,to=eu|homes|life|lol|mom|pics|shop|world
 *edopomoga$document,to=t.me|telegram.me
 ! >>>
+! APLUS.MOD.GOV.UA
+*aplus*.*/$document,to=~gov.ua
+*armyplus*.*/$document,to=~gov.ua
+*armyplus$document,to=play.google.com
+@@id=ua.gov.armyplus.app^$document,to=play.google.com
+! >>>
 ! RESERVEPLUS.MOD.GOV.UA
 *reserveplus*.*/$document,to=~gov.ua|~reserveplus.app
 *reserveplus$document,to=play.google.com
@@ -2551,11 +2561,11 @@ privatbank.*.$document
 ! >>>
 ! OSCHADBANK.UA
 *oschadbank*.*/$document,to=~oschadbank.ua
-*oschad*.*.$document,to=~oschadbank.ua
-*oshad*.*.$document
-*oshcad*.*.$document
+oschad*.*.$document,to=~oschadbank.ua
 ohsad.*.$document
 ohsad24.*.$document
+oshad*.*.$document
+oshcad*.*.$document
 ! >>>
 ! MONOBANK.UA
 *monobank*.*/$document,to=~monobank.com.ua|~monobank.ua
@@ -2563,10 +2573,9 @@ mono.*.$document
 ! >>>
 ! RAIFFEISEN.UA
 *raiffei*.*/$document,to=~raiffeisen.ua
-*-raif.*.$document
-*aval24*.*.$document
 *avalpay*.*.$document
 *raiffaisen*.*.$document
+aval24*.*.$document
 ra1f.*.$document
 raif-*.*.$document
 raif.*.$document
@@ -2587,7 +2596,6 @@ vostok.*.$document
 ! >>>
 ! UKRPOSHTA.UA
 ukrposhta*.*/$document,to=~ukrposhta.ua
-ukrposhta.*.$document
 *poshta*.*/$document,to=~gov.ua|~ua|buzz|click|co.uk|com|cyou|icu|life|online|sbs|shop|site|space|store|top|uk|world|ws|xyz
 ua*poshta.$document,to=~gov.ua|~ua
 uk*poshta.$document,to=~gov.ua|~ua
@@ -2605,6 +2613,19 @@ ukr*pos*.$document,to=info|life|top|xyz
 @@||instagram.com/kyivstar.official^$document
 *kievstar*.*/$document
 ! >>>
+! UAC-0102 (CERT-UA#6858)
+*ukr.net$document,to=~ukr.net
+passport-ukr-net.$document
+! >>>
+! UAC-0125 (CERT-UA#12559)
+/armyplus.exe$document
+/armyplusinstaller-$document
+! >>>
+! UAC-0185 (CERT-UA#12414)
+mail-gov*.*/$document,to=~gov.ua
+milgov*.*/$document,to=~gov.ua
+telegram*.*/$document,to=~t.me|~telegram.me|~telegram.org
+! >>>
 ! UAC-0195 (CERT-UA#9565)
 *petition*.*/$document,to=~gov.ua|~e-dem.ua
 petiti*ukr*.*/$document,to=~gov.ua|~e-dem.ua
@@ -2617,6 +2638,17 @@ presiden*petiti*.*/$document,to=~gov.ua|~e-dem.ua
 ##html > body:has(nav.header__nav > a.header__login[href*="/vote"])
 ##html > body:has(form[action="/vote"] > button[name="send_phone"])
 ##html > body:has(form[action="/vote/code"] > button[name="send_code"])
+! >>>
+! #TAG-047
+/bank/raif.php?id=$document
+/bank/pumb.php?id=$document
+/bank/ochad.php?id=$document
+/bank/mono.php?id=$document
+/bank/privat24.php?id=$document
+/bank/ukrsibbank.php?id=$document
+/bank/kredobank.php?id=$document
+/bank/credit-agricole.php?id=$document
+/bank/otp.php?id=$document
 ! >>>
 ! #TAG-050
 forms.tilda*.*/procces/$xmlhttprequest,domain=fun|online|shop|space|store|uno|website
