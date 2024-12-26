@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 24.12.32
-! Last modified: Tue, 24 December 2024 11:21 EET
+! Version: 24.12.37
+! Last modified: Thu, 26 December 2024 20:06 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -255,6 +255,10 @@ kinobaza.com.ua##div[role="alert"]
 kivismart.com##div.cookie-offer
 komoraczua.com###overlay:has(> div > div.cookie-policy__container)
 konkurent.ua##div.popupCookie
+kontrakty.ua###sideRight
+kontrakty.ua##div[module="important"]
+kontrakty.ua##div[module="morenews"]
+kontrakty.ua##div[rel="coffe"]
 kontramarka.ua##div.cc-container
 kontramarka.ua##div.promo-line
 koruna.ua###cookies_text
@@ -329,6 +333,7 @@ nethunt.ua##div.section-cookieNotification
 netronic.com.ua##div[class^="style_banner__"]:has(> div > div > h3 > a[href="/privacy"])
 newproducts.com##div.cookies-banner
 nic.ua##div.cookie-alert
+nomoreransom.org##div.cookie-popup
 nova-era.com.ua##div.cookie-popup
 novadigital.com##div.npd-cookies
 novapay.ua##div.cookies.show-cookies
@@ -414,6 +419,7 @@ sq.com.ua##div.cookies-accept
 starlight.media##div.cookie_popup
 stat.gov.ua##.consent-modal
 steko.ua##div.cookie-disclaimer
+stopfraud.com.ua##div.cookie-consent-popup
 stylus.ua##div.cookie-widget
 sud.ua##.bottom_style_bnr
 sud.ua##div.b-bblock
@@ -440,6 +446,8 @@ tefal.ua##div.cookieMessage-root-o1g
 telegraf.com.ua##.c-cookies
 teleportal.ua##.cookie_container
 texty.org.ua##div.donate-banner
+thepage.ua###material-content > p + div.share-block
+thepage.ua##div.sidebar__item:has(> div.project-banner)
 tickets.ua##.app-cookies
 times.zt.ua###eu-cookie-bar
 tipok.com.ua##div#sliding-popup:has(> div.eu-cookie-compliance-banner)
