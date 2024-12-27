@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.12.40
-! Last modified: Fri, 27 December 2024 19:55 EET
+! Version: 24.12.41
+! Last modified: Fri, 27 December 2024 20:35 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -66,7 +66,7 @@
 ! ||*error-report.com/*^$document,subdocument,xmlhttprequest,script
 ! >>>
 ! AdRiver
-||/adriver.core.2.js^
+/adriver.core.2.js$script
 ! >>>
 ! zfctrack.net / znctrack.net
 bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,real-vin.com,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
@@ -129,8 +129,6 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||5.ua/js/banner^
 ||banner.volynnews.com^
 ||informator.ua/js/frontend/ad-loaders^
-||mezha.media/wp-content/uploads/*/1940_180.png^
-||mezha.media/wp-content/uploads/*/640_200.png^
 ||patient-docs.com/theme/js/ads.js^
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ! >>>
@@ -386,6 +384,7 @@ footballhub.ua##div[class^="ads-container"]
 forbes.ua##article:has(span.c-post-author__link:has-text(Партнерський матеріал))
 forbes.ua##div.c-post-additional:has(> div > div > div.c-magazine)
 forbes.ua##div.c-post-subscribe
+forbes.ua##div.l-container.u-mb:has(> div.c-magazine)
 forbes.ua##div[id^="adpartner-"]
 founder.ua##div.boxWidgetBanner
 gagadget.com##.ads
@@ -575,6 +574,8 @@ kyivpost.com##div[class^="ad-wrapper"]
 lb.ua##[class^="adv-banner"]
 lb.ua##div.cookie-info
 lb.ua##div.layout-anons
+ldaily.ua##.partners-section
+ldaily.ua##div.magazine-banner
 liga.net###addBlockModal
 liga.net##a.social-widget
 liga.net##a[class^="top-banner"]
@@ -583,6 +584,7 @@ liga.net##div.ad
 liga.net##div.article-footer__widget.b-blocks
 liga.net##div.article-footer__widget.b-subs
 liga.net##div.banner
+liga.net##div.section-default__col--right-sidebar:has(> div > div.ad)
 ligazakon.net##div.banner_placeholder
 ligazakon.net##div.item_withrekl
 ligazakon.net##div.promoblock
