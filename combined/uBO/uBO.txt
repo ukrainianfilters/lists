@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 24.12.39
-! Last modified: Fri, 27 December 2024 13:59 EET
+! Version: 24.12.40
+! Last modified: Fri, 27 December 2024 19:55 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -31,6 +31,7 @@
 ! >>>
 ||2xclick.ru^$third-party
 ||admixer.net^$third-party
+||adpartner.pro^$third-party
 ||bidder.smartytouch.co^$third-party
 ||cdn.umh.ua^$third-party
 ||crashlytics.ru^$third-party
@@ -73,8 +74,10 @@
 ! zfctrack.net / znctrack.net
 bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,real-vin.com,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
 ! >>>
+beauty.ua,internetua.com,sinoptik.ua##+js(remove-node-text, script, "Shadow, stay, 1)
+! >>>
 ! Google Publisher Tag (GPT)
-5.ua,apostrophe.ua,fakty.com.ua,focus.ua,football.ua,football24.ua,galinfo.com.ua,glavred.net,highload.today,ictv.ua,interfax.com.ua,itc.ua,ivona.ua,kinoafisha.ua,mind.ua,minfin.com.ua,novy.tv,slovnyk.ua,smachno.ua,vikna.tv,zaxid.net##+js(remove-node-text, script, googletag)
+5.ua,apostrophe.ua,fakty.com.ua,focus.ua,football.ua,football24.ua,galinfo.com.ua,glavred.net,highload.today,ictv.ua,interfax.com.ua,itc.ua,ivona.ua,kinoafisha.ua,mind.ua,minfin.com.ua,novy.tv,slovnyk.ua,smachno.ua,vikna.tv,viva.ua,zaxid.net##+js(remove-node-text, script, googletag)
 ! >>>
 ! Admixer
 apostrophe.ua,businessua.com,chas.news,dev.ua,internetua.com,kinofilms.ua,mind.ua,mmr.ua,osvita.ua,vogue.ua,weukraine.tv##+js(remove-node-text, script, globalAmlAds)
@@ -89,13 +92,12 @@ focus.ua,football24.ua##+js(remove-node-text, script, membrana.media)
 football.ua,football24.ua,ivona.ua##+js(remove-node-text, script, /libs/e.js)
 ! >>>
 ! html-load.com / content-loader.com
-||www.*/script/www.pravda.com.ua.js^$script
+! ||www.*/script/www.pravda.com.ua.js^$script
 eurointegration.com.ua,pravda.com.ua##script[onerror*="html-load.com"]:watch-attr(onerror):remove-attr(onerror)
 eurointegration.com.ua,pravda.com.ua##^script[onload*="html-load.com"]
 ! >>>
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 football24.ua##+js(remove-node-text, script, manageMembranaAdvWrappers)
-internetua.com,sinoptik.ua##+js(remove-node-text, script, "Shadow, stay, 1)
 itc.ua##+js(remove-node-text, script, /images/banners/)
 itsider.com.ua##+js(remove-node-text, script, ads_state)
 rivnepost.rv.ua,zn.ua##+js(remove-node-text, script, r23243)
@@ -167,6 +169,14 @@ forex.ua,gsminfo.com.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoog
 24tv.ua##app-main-page-adv-block
 24tv.ua##div.video-dv-wrapper
 2day.kh.ua###block-reklamnyybanner
+4mama.ua##.sb-popular:style(margin-top: 0 !important)
+4mama.ua##.sb-projects
+4mama.ua##.sidebar > div[style="height: 10px;"]
+4mama.ua##div.header-banner
+4mama.ua##div.header-special
+4mama.ua##div[class$="-banner"]
+4mama.ua##div[id^="adpartner-"]
+4mama.ua##div[id^="bn-"]
 4studio.com.ua###custom_html-5
 4studio.com.ua##div.partners_block
 5.ua##div[class^="banner"]:has(div[id^="div-gpt-ad-"])
@@ -185,6 +195,8 @@ agronomy.com.ua##div[class^="adv_"]
 agropolit.com##div.header__banner-wrap
 agroportal.ua##.fixedBlock
 agroportal.ua##a[href^="/"][target="_blank"]
+agrotimes.ua##div.header__banner
+agrotimes.ua##div.widget:has(> div > div[id^="admixer_"])
 ain.ua##div.branding-top
 ain.ua##div[class^="adsense-"]
 akzent.zp.ua##div.standard_blog + div + div
@@ -198,6 +210,12 @@ atn.ua##.ai_widget
 atn.ua##div.code-block:has(> div#ai-block)
 autoconsulting.com.ua##table:has(> tbody > tr > td.title:has-text(Лічильники))
 babel.ua##aside.c-subs-box.c-subs-social
+beauty.ua##.sb-partners
+beauty.ua##.sidebar > .sb-slider1
+beauty.ua##.sidebar > div[style^="margin-top:"]
+beauty.ua##div[class$="-banner"]
+beauty.ua##div[id^="adpartner-"]
+beauty.ua##div[id^="bn-"]
 bessarabia.ua##div.rekBlock
 bigkyiv.com.ua##div.ads
 bihus.info##div.r-tram_wrap
@@ -292,6 +310,10 @@ dyvys.info##.poster-place
 dyvys.info##.widget-poster
 dyvys.info###js__header-banner
 dyvys.info##div.page-section ~ section.page-section:nth-of-type(-n+2)
+edyna.media##div.partner-articles
+edyna.media##div.sb__section:has(> div.sb-partners)
+edyna.media##div[class$="-banner"]
+edyna.media##div[id^="adpartner-"]
 elitexpert.ua##.leader-wrap-out
 elle.ua##div.ad_300x600
 elle.ua##div.ad_article > hr
@@ -400,6 +422,7 @@ glavred.net##div.bnr-block--gray
 glavred.net##div.main-partners
 glavred.net##div.partner-news
 gloss.ua##div:has(> div.card > div > div > a > h4 > span.mark-ad)
+goloskarpat.info##aside:has(> aside > i.fa-rectangle-ad)
 gordonua.com##div[class^="advertising"]
 gordonua.com##div[data-action="banners"]
 greenforest.com.ua##div.banner-place
@@ -542,6 +565,8 @@ kurs.com.ua###catfishWrap
 kurs.com.ua##div:not(div#bottomWrap).advertising
 kyiv24.news##.site-header:style(top: 0 !important)
 kyiv24.news##div.main-wrapper:style(margin-top: 0 !important)
+kyiv24.news##div[class$="-adv-item"]
+kyiv24.news##div[id*="banner-"]
 kyiv24.news##section.google-news
 kyivdictionary.com##div.grafiati-link
 kyivindependent.com##div.bottomPopupBanner
@@ -767,6 +792,7 @@ storinka.com.ua##div.share
 storinka.com.ua##div.widget:not([class$="hidden-xs"])
 subota.online##div.banner_wrapper
 sud.ua##div.b-sidebar-adv
+sumypost.com###aside-poster > div.sb-element.media[style^="padding:0"]
 synonimy.info##body:style(background-image: none !important)
 tabletki.ua##div.adunit
 tabletki.ua##div.col:has(> aside > div.tabletki-adunit)
@@ -910,6 +936,13 @@ village.com.ua##.post-block.post-block-featured:has(.g-sp-badge:has-text('ПРО
 village.com.ua##div[class^="banner"]
 vinnitsa.info##div.advertising-card
 visnyk-irpin.com.ua##div.widget_media_image
+viva.ua##.sb-partners
+viva.ua##div.article-body > p:has(> span:has-text(Матеріал створено за підтримки))
+viva.ua##div.main-content > div.section-3:has(> div > a[href$="/special"])
+viva.ua##div.sb-tabs
+viva.ua##div[class$="-banner"]
+viva.ua##div[id^="adpartner-"]
+viva.ua##section.article-partners
 vogue.ua##div.box__bnr
 vogue.ua##div.timer_block
 vogue.ua##div[data-sender="admixer"]
@@ -1007,9 +1040,9 @@ zz.te.ua##.advads-widget
 ||stattracking.pw^
 ! >>>
 ! Google Tag Manager
-1plus1.video,24tv.ua,add.ua,adidas.ua,agro-business.com.ua,ain.ua,alcomag.ua,arber.ua,ascania.energy,ascania.ua,ascania-auto.com,ascania-ff.com.ua,ascania-flora.ua,ascania-pack.com,ascania-shina.com,atbmarket.com,auchan.ua,avrora.ua,bagatolososia.kiev.ua,bayadera.ua,bihus.info,buhgalter.com.ua,buhgalter911.com,champion.com.ua,chytomo.com,city24.ua,click.ua,codeua.com,colins.ua,ctrs.com.ua,dev.ua,dou.ua,dsnews.ua,dtek.com,dw.com,easypay.ua,epravda.com.ua,espreso.tv,eurolamp.ua,f.ua,fckarpaty.org.ua,fckryvbas.com,finance.ua,forbes.ua,foxtrot.com.ua,fozzyshop.ua,galka.if.ua,gordonua.com,greendayvodka.com,hostiq.ua,hromadske.ua,ideabank.ua,iforum.ua,incrypted.com,informator.ua,inter.ua,intertop.ua,istpravda.com.ua,kasta.ua,klo.ua,kniga.biz.ua,kontramarka.ua,ktc.ua,kvas-bev.com.ua,kyivindependent.com,kyivpost.com,leboutique.com,liga.net,ligazakon.net,maudau.com.ua,maximum.fm,megogo.net,meteo.ua,metinvestholding.com,metinvest-smc.com,mezha.media,mezha.net,mirohost.net,mmr.ua,motto.ua,moyo.ua,myfishka.com,newbalance.ua,novosti.dn.ua,novus.ua,npshopping.com,nv.ua,okko.ua,online.ua,onlyrose.ua,ottry.com,pcweek.ua,platfor.ma,playua.net,polissyafc.com,pravda.com.ua,psm7.com,radiosvoboda.org,rubryka.com,samsungshop.com.ua,shafa.ua,shakhtar.com,shopping.ua,sim23.ua,speka.media,sport.ua,sport24.ua,sushiya.ua,suspilne.media,tefal.ua,telegraf.com.ua,thepage.ua,theukrainians.org,ti.ua,ua.news,uklon.com.ua,ukraine.com.ua,ukrnafta.com,ukrposhta.ua,ukrzoloto.ua,upg.ua,varus.ua,vctr.media,vezha.ua,village.com.ua,vodafone.ua,volia.com,wog.ua,work.ua,xsport.ua,yakaboo.ua,yesport.com.ua,zaborona.com,zakaz.ua,zara.com,znoclub.com##+js(remove-node-text, script, 'googletagmanager.com/gtm.js?id=')
+1plus1.video,4mama.ua,24tv.ua,add.ua,adidas.ua,agrotimes.ua,agro-business.com.ua,ain.ua,alcomag.ua,arber.ua,ascania.energy,ascania.ua,ascania-auto.com,ascania-ff.com.ua,ascania-flora.ua,ascania-pack.com,ascania-shina.com,atbmarket.com,auchan.ua,avrora.ua,bagatolososia.kiev.ua,bayadera.ua,bihus.info,buhgalter.com.ua,buhgalter911.com,champion.com.ua,chytomo.com,city24.ua,click.ua,codeua.com,colins.ua,ctrs.com.ua,dev.ua,dou.ua,dsnews.ua,dtek.com,dw.com,easypay.ua,epravda.com.ua,espreso.tv,eurolamp.ua,f.ua,fckarpaty.org.ua,fckryvbas.com,finance.ua,forbes.ua,foxtrot.com.ua,fozzyshop.ua,galka.if.ua,gordonua.com,greendayvodka.com,hostiq.ua,hromadske.ua,ideabank.ua,iforum.ua,incrypted.com,informator.ua,inter.ua,intertop.ua,istpravda.com.ua,kasta.ua,klo.ua,kniga.biz.ua,kontramarka.ua,ktc.ua,kvas-bev.com.ua,kyivindependent.com,kyivpost.com,leboutique.com,liga.net,ligazakon.net,maudau.com.ua,maximum.fm,megogo.net,meteo.ua,metinvestholding.com,metinvest-smc.com,mezha.media,mezha.net,mirohost.net,mmr.ua,motto.ua,moyo.ua,myfishka.com,newbalance.ua,novosti.dn.ua,novus.ua,npshopping.com,nv.ua,okko.ua,online.ua,onlyrose.ua,ottry.com,pcweek.ua,platfor.ma,playua.net,polissyafc.com,pravda.com.ua,psm7.com,radiosvoboda.org,rubryka.com,samsungshop.com.ua,shafa.ua,shakhtar.com,shopping.ua,sim23.ua,speka.media,sport.ua,sport24.ua,sushiya.ua,suspilne.media,tefal.ua,telegraf.com.ua,thepage.ua,theukrainians.org,ti.ua,ua.news,uklon.com.ua,ukraine.com.ua,ukrnafta.com,ukrposhta.ua,ukrzoloto.ua,unian.ua,upg.ua,varus.ua,vctr.media,vezha.ua,village.com.ua,viva.ua,vodafone.ua,volia.com,wog.ua,work.ua,xsport.ua,yakaboo.ua,yesport.com.ua,zaborona.com,zakaz.ua,zara.com,znoclub.com##+js(remove-node-text, script, 'googletagmanager.com/gtm.js?id=')
 ! >>>
-censor.net##+js(remove-node-text, script, 'googletagmanager.com/gtag/js?id=')
+censor.net,connecting-women.com.ua##+js(remove-node-text, script, 'googletagmanager.com/gtag/js?id=')
 ! >>>
 buki.com.ua,fora.ua,kyivstar.ua,lifecell.ua,socar.ua,thrash.ua,tribuna.com##+js(remove-node-text, script, 'googletagmanager.com/gtm.js?id=', stay, 10000)
 ! >>>
@@ -1082,7 +1115,7 @@ bigmir.net##div.widget:has(div.widget-socials)
 ! >>>
 ! sinoptik.ua
 ||sinoptik.ua/informers_js.php^$third-party
-4studio.com.ua,blitz.if.ua,cripo.com.ua,cvnews.cv.ua,expres.online,fakty.ua,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kontrakty.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,volyninfa.com.ua,zakarpattya24.com,zaxid.net##div#SinoptikInformer
+4studio.com.ua,blitz.if.ua,cripo.com.ua,cvnews.cv.ua,expres.online,fakty.ua,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kontrakty.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,volyninfa.com.ua,zakarpattya24.com,zaxid.net,zib.com.ua##div#SinoptikInformer
 ! >>>
 4studio.com.ua##div.home_bottom > div > div:nth-child(3)
 brovary.net.ua##div.elementor-element:has(> div > div > h4:has-text(Погода))
