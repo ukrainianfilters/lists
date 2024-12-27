@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.12.38
-! Last modified: Thu, 26 December 2024 21:07 EET
+! Version: 24.12.39
+! Last modified: Fri, 27 December 2024 13:59 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -27,18 +27,22 @@
 ||xcartpro.com^
 ! >>>
 ||2xclick.ru^$third-party
+||admixer.net^$third-party
 ||bidder.smartytouch.co^$third-party
 ||cdn.umh.ua^$third-party
 ||crashlytics.ru^$third-party
 ||exchange.informer.ua^$third-party
 ||go2net.com.ua^$third-party
+||goods.redtram.com$third-party
 ||holder.com.ua^$third-party
 ||infocode.tech^$third-party
 ||informer.link^$third-party
 ||ipvertnet.com^$third-party
+||jsc.idealmedia.io^$third-party
 ||mediabrama.com^$third-party
 ||membrana.media^$third-party
 ||misto.travel/templates/js$third-party
+||mixadvert.com^$third-party
 ||newscode.online^$third-party
 ||phoenix-widget.com^$third-party
 ||pixel.tvstitch.com^$third-party
@@ -129,7 +133,7 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ! >>>
 ! :has(> ins.adsbygoogle)
-1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
+1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
 ! :has(> div > ins.adsbygoogle)
 forex.ua,gsminfo.com.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
@@ -224,6 +228,7 @@ chytomo.com##div[class^="banner"]
 cloudgaminghub.net.ua##div.banner-promotions-wrapper
 cloudgaminghub.net.ua##div.widget_media_image:has(figure.wp-block-image > a[href*="boosteroid.com/go/"])
 cloudgaminghub.net.ua##div.widget_media_image:has(figure.wp-block-image > a[href*="ukrline.com.ua/?ref="])
+cntime.cn.ua##div.banner
 comments.ua###atlanta
 comments.ua##div:has(> a[target="_blank"] > img[src*="comments.ua/adv_img/"])
 comments.ua##div.atlanta
@@ -277,12 +282,19 @@ dumskaya.net##div#tops
 dumskaya.net##nav.nav:style(padding-top: 0 !important)
 dumskaya.net##noindex
 dw.com##div.advertisement
+dynamo.kiev.ua##div.content-banner
+dynamo.kiev.ua##div[id="admixer_"]
 dynamo.kiev.ua##div#corpMagnet
 dyvys.info##.poster-place
 dyvys.info##.widget-poster
 dyvys.info###js__header-banner
 dyvys.info##div.page-section ~ section.page-section:nth-of-type(-n+2)
 elitexpert.ua##.leader-wrap-out
+elle.ua##div.ad_300x600
+elle.ua##div.ad_article > hr
+elle.ua##div.ad_top
+elle.ua##div.reklama
+elle.ua##div.tizers
 epochtimes.com.ua##aside:has(> iframe[src$="/sinoptik.html"])
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##[class$="_banner"]
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]
@@ -348,6 +360,7 @@ football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
 football24.ua##p:has(> a[href^="https://tds.favbet.ua/"][target="_blank"])
 football24.ua##p:has(> a[rel*="sponsored"][target="_blank"] > strong)
 football24.ua##p:has(> strong > a[rel*="sponsored"][target="_blank"])
+footballhub.ua##div[class^="ads-container"]
 forbes.ua##article:has(span.c-post-author__link:has-text(Партнерський матеріал))
 forbes.ua##div.c-post-additional:has(> div > div > div.c-magazine)
 forbes.ua##div.c-post-subscribe
@@ -369,6 +382,9 @@ gazeta-misto.te.ua###custom_html-5
 gazeta-misto.te.ua##div.jeg_ad
 gazeta-misto.te.ua##div.widget_jnews_module_element_ads
 gazeta.ua##.informer
+gazetapo.lviv.ua###site:style(margin-top: unset !important)
+gazetapo.lviv.ua##div.topbar-wrap
+gazetapo.lviv.ua##div.widget_custom_html:has(> div > a[target="_blank"])
 gk-press.if.ua##.widget_media_image
 gk-press.if.ua###left-sidebar > .widget_text
 gk-press.if.ua##div[style="text-align: center"] > [href][target="_blank"]
@@ -391,6 +407,7 @@ happymonday.ua##body:style(background-image: none !important; padding-top: 0 !im
 happymonday.ua##div.adv
 happymonday.ua##div.attn_block
 happymonday.ua##div.top-banner
+healthinfo.ua##div.abox
 hi.dn.ua###section-id-1496826235107
 hi.dn.ua###sp-top-banners
 hi.dn.ua###sppb-addon-wrapper-1496985206652
@@ -584,17 +601,9 @@ mezha.media##div:has(> a.banner-link)
 mezha.media##div.news-item:has(a[rel="author"]:has-text(Promoted))
 mil.in.ua##div.ads
 mind.ua###promo-catfish
-mind.ua##article.article_news:has(> object > a.article__adv)
-mind.ua##article.article_news:has(> object > a[href$="/partnership"])
-mind.ua##div.b-info-block:has(> div > div > div > a.b-info-post__brand)
-mind.ua##div.b-info-list__item:has(> a[href$="/companynews"])
-mind.ua##div.b-info-list__item:has(> a[href$="/partnership"])
-mind.ua##div.block_mind_brand
-mind.ua##div.layout_wide.section_link_partner_parent
-mind.ua##div.read-also_banner
-mind.ua##div.section-container.partner
+mind.ua##div.b-info-block__content > div > div:has(> div > a[href$="/ad"])
 mind.ua##div[class*="_banner"]
-mind.ua##h2.b-info-block__title:style(padding-top: 0 !important)
+mind.ua##h2.b-info-block__title:style(padding-top: 10px !important)
 minfin.com.ua##.mfz-post:has([data-link="rubric"]:has-text(Промо))
 minfin.com.ua##[class*="banner"]
 minfin.com.ua###special-product-offer
@@ -687,6 +696,7 @@ protocol.ua##div[class^="baner_"]
 psm7.com##div[class*="-banner"]
 psm7.com##section.psm-header-baner-container
 psm7.com##section[class*="-banner"]
+racurs.ua##div.inner-page-container:has(a.section_title:has-text(Новини партнерів))
 radiotrek.rv.ua##div.ad
 radiotrek.rv.ua##div#ads
 rau.ua##div[class^="advertising_slider"]
@@ -902,6 +912,9 @@ vogue.ua##div.timer_block
 vogue.ua##div[data-sender="admixer"]
 volyn.com.ua##a.bg-banner
 volyn.com.ua##div.gpt-main
+volyninfa.com.ua##aside#sidebar > div > div[id^="media_image-"]
+volyninfa.com.ua##div.main-box.vce-related-box:has(> div > div.MIXADVERT_NET)
+volyninfa.com.ua##div.main-box.vce-related-box:has(> script[src*="goods.redtram.com"])
 volynnews.com##.view_back_margin
 volynnews.com##div[data-view-id]
 volynnews.com##span.view_back
