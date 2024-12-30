@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 24.12.42
-! Last modified: Sat, 28 December 2024 13:10 EET
+! Version: 24.12.43
+! Last modified: Mon, 30 December 2024 20:49 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -1184,6 +1184,9 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||888starz.bet^
 ||accaunt-ua.fun^
 ||accounts-ukr.com^
+||account-guard.site^
+||account-saver.com^
+||account-viewer.com^
 ||ahome.uno^
 ||aid24-ua.online^
 ||aid24-ua.pw^
@@ -1270,6 +1273,7 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||buddy1.bet^
 ||buy-ua.com.ua^
 ||b-twinner.com^
+||captcha-challenge.com^
 ||carcover-ua.store^
 ||carcover-ua.uno^
 ||card-ua.cloud^
@@ -1308,7 +1312,9 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||datacheckqr.net^
 ||data-mails.com^
 ||data-ukr.com^
+||defender-bot.site^
 ||derjavaukraine.cc^
+||derzhposluhy.com^
 ||device-by-apple-ua.store^
 ||de-ukr.net^
 ||diamondclub.casino^
@@ -1382,6 +1388,7 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||epidtrumka.org^
 ||epidtrymka.cloud^
 ||es888starz.com^
+||estofounds.christmas^
 ||europeanchallengeukraine.eu^
 ||events-ukr.site^
 ||everest-bet.com^
@@ -1430,6 +1437,8 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||gingerbread-ua.store^
 ||girlyanda.store^
 ||gizbocasino.com^
+||god-le.com^
+||god-le.net^
 ||gogleeo.shop^
 ||gohelpukraina24.site^
 ||goldcup24.com^
@@ -1444,6 +1453,7 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||grompokerua33.com^
 ||grompokerua.com^
 ||groshinarahunok.com^
+||group-invitation.site^
 ||harpoon.dp.ua^
 ||help24uapay.com^
 ||help24ua.com^
@@ -1488,6 +1498,7 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||ilyukr.site^
 ||info-ukr.charity^
 ||intrestingukrainefun.fun^
+||in-touc.com^
 ||ipay-ua.online^
 ||izzicasino1702.com^
 ||izzicasino1704.com^
@@ -1595,6 +1606,7 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||minmoz.com^
 ||minmoz.org^
 ||mioriginal.fun^
+||mirotrent.com^
 ||mobilluck.com.ua^
 ||mobiplategi.lol^
 ||moda-ua.online^
@@ -1654,10 +1666,12 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||nacionalbankukraine.xyz^
 ||nationalbanking24.shop^
 ||nationalbank.shop^
+||natofounds.digital^
 ||netflx-ua.com^
 ||newcourier.darkleads.pro^
 ||newsukr2023.site^
 ||newsukr2023.space^
+||newyorktlimes.life^
 ||next24-auth.online^
 ||next24-auth.site^
 ||next24-auth.space^
@@ -1668,6 +1682,7 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||noreply-olxpay.com^
 ||novapay-ukr.top^
 ||nova-pay-ua.com^
+||odwebp.com^
 ||okko-bonus.live^
 ||ok-ua.cloud^
 ||ok-ua.info^
@@ -1793,6 +1808,8 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||otto-shop.com.ua^
 ||oukr.net^
 ||outlet-ua.store^
+||outloolc.com^
+||palantir.ink^
 ||panda-sale.com.ua^
 ||parfums.top^
 ||pari1.win^
@@ -1898,6 +1915,7 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||promo-olx-ukrposhta.com^
 ||promo-pay24.win^
 ||prom-pay-ua.host^
+||protect-password.site^
 ||prvt24-vyplat.online^
 ||prytulafoundation.in^
 ||prytulafoundation.net^
@@ -1970,6 +1988,7 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||redcrossukraine.co^
 ||redcrossukraine.top^
 ||redcross-34.site^
+||redirecl.com^
 ||redirect-oschad.online^
 ||regsotsvyplat.online^
 ||relffelsen-ua.com^
@@ -2011,6 +2030,7 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||sendukraine.money^
 ||sendukrainians.money^
 ||set-system.com^
+||share-drive.site^
 ||shop4you.tech^
 ||shop23top.store^
 ||shopingukraine.store^
@@ -2030,6 +2050,7 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||shop-top-ua.store^
 ||shop-ua.space^
 ||shop-ua.top^
+||sign-cert.com^
 ||simpacasino1.com^
 ||simpacasino2.com^
 ||simpacasino.com^
@@ -2092,6 +2113,7 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||termo-ukraine.xyz^
 ||thebestpriceukraine.store^
 ||the-ggbet.com^
+||token-defender.cloud^
 ||topmarketukr.online^
 ||topmatch2.win^
 ||topmatch.win^
@@ -2530,10 +2552,12 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||vyplata-otrymat.online^
 ||watch-ua.space^
 ||wazbee.casino^
+||webappapiservice.life^
 ||winukr-pay.charity^
 ||winwin.bet^
 ||wowukr.store^
 ||wulkan-777.com^
+||wvtmsouaa2gt6jmcuxj5hkfrqdss5lhecoqijt5dl7gfruueu3i5mkad.onion^
 ||wwwolx.site^
 ||www-ua.cloud^
 ||www-ua.info^
@@ -2718,6 +2742,14 @@ courier.darkleads.pro/data/exchange/extpartner/addorder*$document,xmlhttprequest
 *viplata*.*/$document,to=art|au|biz|buzz|cam|cfd|click|cloud|club|com|cyou|digital|eu|fun|fyi|health|help|icu|in|info|me|mobi|net|online|org|pics|pp.ua|pro|pw|shop|site|social|space|store|tech|today|us|website|xyz
 *dopomoga*.*/$document,to=art|au|biz|business|buzz|cfd|click|cloud|club|co|com|eu|fun|health|help|info|live|me|net|online|org|pics|pro|sbs|services|shop|site|space|top|uk|us|website|win|world|xyz
 ! >>>
+! #TAG-065
+web.*.*/get/$document
+web.*.*/pay/order/*$document
+web.*.*/web?id=$document
+web.*.*/web/?id=$document
+web.*.*/api/sendLk$xmlhttprequest
+web.*.*/api/sendValue$xmlhttprequest
+! >>>
 ! #TAG-071
 ||api.livechatinc.com$third-party,domain=pages.dev|workers.dev
 ||cdn.livechatinc.com$third-party,domain=pages.dev|workers.dev
@@ -2737,3 +2769,7 @@ courier.darkleads.pro/data/exchange/extpartner/addorder*$document,xmlhttprequest
 /selectB/?id=$document,to=pages.dev|workers.dev
 ! chatrnetquest.click
 api.chatrnetquest.click/chat/chat_receive.php?order_id=$third-party,xmlhttprequest,domain=pages.dev|workers.dev
+! >>>
+! #TAG-085
+/oschad/oschad.php$xmlhttprequest
+/oschad/fds.php$xmlhttprequest
