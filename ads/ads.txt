@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 24.12.42
-! Last modified: Sat, 28 December 2024 13:10 EET
+! Version: 25.01.1
+! Last modified: Wed, 01 January 2025 20:09 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -19,11 +19,15 @@
 ! !!!!!!!!!!!!!!!
 !
 ||a4.censor.net^
+||ad.luxnet.ua^
 ||ads.informator.ua^
 ||agenteimmobiliare.info^
 ||givemelink.cc^
 ||mediatraffic.com.ua^
 ||myblogshop.top^
+||tracker.multisearch.io^
+||tracker.prom.ua^
+||webvitals.luxnet.ua^
 ||xcartpro.com^
 ! >>>
 ||2xclick.ru^$third-party
@@ -73,9 +77,6 @@ bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,foot
 ! >>>
 beauty.ua,internetua.com,sinoptik.ua##+js(remove-node-text, script, "Shadow, stay, 1)
 ! >>>
-! Google Publisher Tag (GPT)
-5.ua,apostrophe.ua,fakty.com.ua,focus.ua,football.ua,football24.ua,galinfo.com.ua,glavred.net,highload.today,ictv.ua,interfax.com.ua,itc.ua,ivona.ua,kinoafisha.ua,mind.ua,minfin.com.ua,novy.tv,slovnyk.ua,smachno.ua,vikna.tv,viva.ua,zaxid.net##+js(remove-node-text, script, googletag)
-! >>>
 ! Admixer
 ain.ua,apostrophe.ua,businessua.com,chas.news,dev.ua,internetua.com,kinofilms.ua,mind.ua,mmr.ua,osvita.ua,vogue.ua,weukraine.tv##+js(remove-node-text, script, globalAmlAds)
 ! >>>
@@ -114,6 +115,7 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ||click.zfctrack.net^
 ||click.znctrack.net^
 ! >>>
+##.nts-ad
 ##.nts-video-wrapper
 !
 !
@@ -377,6 +379,7 @@ football24.ua##aside.adv-insert + div.media_embed
 football24.ua##aside.adv-insert + p:empty + div.responsive-embed
 football24.ua##aside.adv-insert + p:has(img)
 football24.ua##div.mobileBrandingPlace
+football24.ua##div[id^="desktopBranding"]
 football24.ua##div[id^="zone_"]
 football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
 football24.ua##p:has(> a[href^="https://tds.favbet.ua/"][target="_blank"])
