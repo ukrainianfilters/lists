@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.01.3
-! Last modified: Thu, 02 January 2025 23:08 EET
+! Version: 25.01.4
+! Last modified: Thu, 02 January 2025 23:36 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -476,6 +476,7 @@ it-rating.ua##a.stickybl
 itc.ua##[class^="partners"]
 itc.ua##[data-course]
 itc.ua##a:has(> img.vote-image)
+itc.ua##body.single-post > div > section > div > div > aside > ul > li.commented-posts-widget:style(margin-top: unset !important; padding-top: unset !important)
 itc.ua##div.about-noa:has(> a[href$="/vidklyuchyty-reklamu/"])
 itc.ua##div.carousel-block:has(a:has-text(Огляди партнерів))
 itc.ua##div.featured-in-new > div.row
@@ -494,7 +495,6 @@ itc.ua##div.widget-spec-projects
 itc.ua##div[class*="widget-partners-blogs"]
 itc.ua##div[class^="hidden-sm"]
 itc.ua##div[class^="visible-sm"]
-itc.ua##li.commented-posts-widget:style(margin-top: unset !important; padding-top: unset !important)
 itc.ua##li.widget-container:has(.jobs-vacancy)
 itc.ua##li.widget-container:has(.partner-blog)
 itc.ua##li.widget-sticky:has(div[id^="div-gpt-ad-"])
