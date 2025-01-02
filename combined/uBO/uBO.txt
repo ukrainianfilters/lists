@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.01.4
-! Last modified: Thu, 02 January 2025 23:36 EET
+! Version: 25.01.5
+! Last modified: Fri, 03 January 2025 00:18 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -1059,6 +1059,7 @@ zz.te.ua##.advads-widget
 ||mycounter.com.ua^$third-party
 ||mycounter.ua^$third-party
 ||onthe.io^$third-party
+||sentry.io^$third-party
 ||vk.com/share.php?*$third-party
 ||vsh.pp.ua^$third-party
 ||zmctrack.net^$third-party
@@ -1075,6 +1076,7 @@ zz.te.ua##.advads-widget
 ||redtram.com/px/
 ||uoi.eolymp.space/measure
 ||vsh.pp.ua/pixel?page=
+||work.ua/analytics/
 ! >>>
 /analytics/event
 /gtag/js?
