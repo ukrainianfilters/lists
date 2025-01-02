@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.2
-! Last modified: Wed, 01 January 2025 20:17 EET
+! Version: 25.01.3
+! Last modified: Thu, 02 January 2025 23:08 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -20,11 +20,14 @@
 !
 ||a4.censor.net^
 ||ad.luxnet.ua^
+||ad.mox.tv^
+||adpartner.pro^
 ||ads.informator.ua^
 ||agenteimmobiliare.info^
 ||givemelink.cc^
-||mediatraffic.com.ua^
 ||myblogshop.top^
+||rcvlink.com^
+||rcvlinks.com^
 ||tracker.multisearch.io^
 ||tracker.prom.ua^
 ||webvitals.luxnet.ua^
@@ -32,13 +35,12 @@
 ! >>>
 ||2xclick.ru^$third-party
 ||admixer.net^$third-party
-||adpartner.pro^$third-party
 ||bidder.smartytouch.co^$third-party
+||c.hit.ua^$third-party
 ||cdn.umh.ua^$third-party
 ||crashlytics.ru^$third-party
 ||exchange.informer.ua^$third-party
 ||go2net.com.ua^$third-party
-||goods.redtram.com$third-party
 ||holder.com.ua^$third-party
 ||infocode.tech^$third-party
 ||informer.link^$third-party
@@ -46,67 +48,48 @@
 ||jsc.idealmedia.io^$third-party
 ||mediabrama.com^$third-party
 ||membrana.media^$third-party
+||mgid.com^$third-party
 ||misto.travel/templates/js$third-party
 ||mixadvert.com^$third-party
 ||newscode.online^$third-party
 ||phoenix-widget.com^$third-party
 ||pixel.tvstitch.com^$third-party
 ||receivedachest.com^$third-party
+||redtram.com^$third-party
 ||revive-adserver.net^$third-party
 ||smi.pp.ua^$third-party
 ||stteeruptowind.com^$third-party
 ||traffim.com^$third-party
 ||traffsender.com^$third-party
+||trafmag.com^$third-party
 ||worldwidegg.com^$document,third-party
+! >>>
+||content-loader.com^$document,popup
+||css-load.com^$document,popup
+||html-load.com^$document,popup
+||img-load.com^$document,popup
 !
 !
 ! !!!!!!!!!!!!!!!
 ! SCRIPTS
 ! !!!!!!!!!!!!!!!
 !
-! ||*content-loader.com/*^$script
-! ||*css-load.com/*^$script
-! ||*html-load.com/*^$script
-! ||*img-load.com/*^$script
-! ||*error-report.com/*^$document,subdocument,xmlhttprequest,script
 ! >>>
 ! AdRiver
-/adriver.core.2.js$script
+/adriver.$script
+/adriver_$script
 ! >>>
 ! zfctrack.net / znctrack.net
 bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,real-vin.com,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
 ! >>>
 beauty.ua,internetua.com,sinoptik.ua##+js(remove-node-text, script, "Shadow, stay, 1)
 ! >>>
-! Admixer
-ain.ua,apostrophe.ua,businessua.com,chas.news,dev.ua,internetua.com,kinofilms.ua,mind.ua,mmr.ua,osvita.ua,vogue.ua,weukraine.tv##+js(remove-node-text, script, globalAmlAds)
-! >>>
-! Mixadvert
-ukr.net##+js(remove-node-text, script, mixadvert)
-! >>>
-! Membrana Media
-focus.ua,football24.ua##+js(remove-node-text, script, membrana.media)
-! >>>
-! umh.ua
-football.ua,football24.ua,ivona.ua##+js(remove-node-text, script, /libs/e.js)
-! >>>
 ! html-load.com / content-loader.com
-! ||www.*/script/www.pravda.com.ua.js^$script
 eurointegration.com.ua,pravda.com.ua##script[onerror*="html-load.com"]:watch-attr(onerror):remove-attr(onerror)
 eurointegration.com.ua,pravda.com.ua##^script[onload*="html-load.com"]
 ! >>>
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
-football24.ua##+js(remove-node-text, script, manageMembranaAdvWrappers)
-itc.ua##+js(remove-node-text, script, /images/banners/)
-itsider.com.ua##+js(remove-node-text, script, ads_state)
-rivnepost.rv.ua,zn.ua##+js(remove-node-text, script, r23243)
-sinoptik.ua##+js(remove-node-text, script, adpartner_init)
-sinoptik.ua##+js(remove-node-text, script, AdsLoader)
-starlight.digital##+js(set-constant, Object.prototype.ottExt, null)
-trueua.info##+js(remove-node-text, script, go.rcvlink.com/static/main.js)
-ukr.net##+js(remove-node-text, script, getSectionAdv)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
-zn.ua##+js(remove-node-text, script, banners_types)
 !
 !
 ! !!!!!!!!!!!!!!!
@@ -124,15 +107,16 @@ zn.ua##+js(remove-node-text, script, banners_types)
 ! PAGE-SPECIFIC RULES
 ! !!!!!!!!!!!!!!!
 !
-/assets/plugin/banners/uploads^$domain=volynnews.com
-/banners/redirect^$document,domain=slk.kh.ua
-/sajax/updatebannerstat^$domain=volynnews.com
-||1plus1.video/static/js/api.gpt.js^
-||1plus1.video/ua/ab/?whole^
-||5.ua/js/banner^
-||banner.volynnews.com^
-||informator.ua/js/frontend/ad-loaders^
-||patient-docs.com/theme/js/ads.js^
+/banners/redirect$document,to=slk.kh.ua
+/assets/plugin/banners/uploads$domain=volynnews.com
+/sajax/updatebannerstat$domain=volynnews.com
+! >>>
+||1plus1.video/static/js/api.gpt.js
+||1plus1.video/ua/ab/?whole
+||5.ua/js/banner
+||banner.volynnews.com
+||informator.ua/js/frontend/ad-loaders
+||patient-docs.com/theme/js/ads.js
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ! >>>
 ! :has(> ins.adsbygoogle)
@@ -445,6 +429,7 @@ highload.today##div.mobile-hide
 highload.today##div.mobile-show
 highload.today##div[class^="course-widget-"]
 highload.today##p.intro[style*="background: linear-gradient"]
+hotline.ua##div.banner-advertising
 hromadske.radio##[class$="-banner"]
 hromadske.radio##div.banner-block
 hromadske.radio##div.banner-block-mb
