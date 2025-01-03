@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.4
-! Last modified: Thu, 02 January 2025 23:36 EET
+! Version: 25.01.7
+! Last modified: Fri, 03 January 2025 13:56 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -23,6 +23,7 @@
 ||ad.mox.tv^
 ||adpartner.pro^
 ||ads.informator.ua^
+||adtelligent.com^
 ||agenteimmobiliare.info^
 ||givemelink.cc^
 ||myblogshop.top^
@@ -115,6 +116,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||1plus1.video/ua/ab/?whole
 ||5.ua/js/banner
 ||banner.volynnews.com
+||helsi.me/api/ad/pis/
 ||informator.ua/js/frontend/ad-loaders
 ||patient-docs.com/theme/js/ads.js
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
@@ -205,6 +207,9 @@ bigkyiv.com.ua##div.ads
 bihus.info##div.r-tram_wrap
 blitz.if.ua##.banner
 board.if.ua##noindex:has(div > ins.adsbygoogle)
+bon.ua##div.bottom-card-wrapper > div.banner
+bon.ua##div.container_banner
+bon.ua##noindex:has(> div > div.advert-banner)
 buhgalter.com.ua,buhgalter911.com##body.access *:style(filter: none !important)
 buhgalter.com.ua,buhgalter911.com##body.access div[id^="access-au"]
 buhgalter.com.ua,buhgalter911.com##body.access:style(overflow: auto !important; position: relative !important)
