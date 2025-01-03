@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.01.10
-! Last modified: Fri, 03 January 2025 20:39 EET
+! Version: 25.01.11
+! Last modified: Fri, 03 January 2025 20:53 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -31,14 +31,18 @@
 ||creativecdn.com^
 ||givemelink.cc^
 ||myblogshop.top^
+||protagcdn.com^
 ||rcvlink.com^
 ||rcvlinks.com^
+||stpd.cloud^
 ||tracker.multisearch.io^
 ||tracker.prom.ua^
 ||webvitals.luxnet.ua^
 ||xcartpro.com^
 ! >>>
 ||2xclick.ru^$third-party
+||360playvid.com^$third-party
+||360playvid.info^$third-party
 ||admixer.net^$third-party
 ||bidder.smartytouch.co^$third-party
 ||c.hit.ua^$third-party
@@ -1053,6 +1057,7 @@ zz.te.ua##.advads-widget
 ||pipe-collect.ebu.io^
 ||pla.fwdcdn.com^
 ||player-telemetry.vimeo.com^
+||solutionshindsight.net^
 ||ssc.radiosvoboda.org^
 ||stat.board.com.ua^
 ||stats.wp.com^
@@ -1113,6 +1118,7 @@ zz.te.ua##.advads-widget
 /?sentry_key=$domain=epicentrk.ua
 /ads-blocking-detector.$script,domain=kyivstar.ua
 /analytic_click.js$domain=vodafone.ua
+/analytics.*/event
 /analytics/event
 /frontend-gtag.js
 /frontend-gtag.min.js

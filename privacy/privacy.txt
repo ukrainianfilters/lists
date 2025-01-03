@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.01.10
-! Last modified: Fri, 03 January 2025 20:39 EET
+! Version: 25.01.11
+! Last modified: Fri, 03 January 2025 20:53 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -32,6 +32,7 @@
 ||pipe-collect.ebu.io^
 ||pla.fwdcdn.com^
 ||player-telemetry.vimeo.com^
+||solutionshindsight.net^
 ||ssc.radiosvoboda.org^
 ||stat.board.com.ua^
 ||stats.wp.com^
@@ -92,6 +93,7 @@
 /?sentry_key=$domain=epicentrk.ua
 /ads-blocking-detector.$script,domain=kyivstar.ua
 /analytic_click.js$domain=vodafone.ua
+/analytics.*/event
 /analytics/event
 /frontend-gtag.js
 /frontend-gtag.min.js
