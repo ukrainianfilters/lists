@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.7
-! Last modified: Fri, 03 January 2025 13:56 EET
+! Version: 25.01.8
+! Last modified: Fri, 03 January 2025 19:46 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -25,6 +25,7 @@
 ||ads.informator.ua^
 ||adtelligent.com^
 ||agenteimmobiliare.info^
+||creativecdn.com^
 ||givemelink.cc^
 ||myblogshop.top^
 ||rcvlink.com^
@@ -63,6 +64,7 @@
 ||traffim.com^$third-party
 ||traffsender.com^$third-party
 ||trafmag.com^$third-party
+||vidverto.io^$third-party
 ||worldwidegg.com^$document,third-party
 ! >>>
 ||content-loader.com^$document,popup
@@ -122,7 +124,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ! >>>
 ! :has(> ins.adsbygoogle)
-1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
+1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,one.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
 ! :has(> div > ins.adsbygoogle)
 forex.ua,gsminfo.com.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
