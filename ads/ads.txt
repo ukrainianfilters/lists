@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.13
-! Last modified: Sat, 04 January 2025 19:11 EET
+! Version: 25.01.14
+! Last modified: Sat, 04 January 2025 20:32 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -34,9 +34,6 @@
 ||rcvlink.com^
 ||rcvlinks.com^
 ||stpd.cloud^
-||tracker.multisearch.io^
-||tracker.prom.ua^
-||webvitals.luxnet.ua^
 ||xcartpro.com^
 ! >>>
 ||2xclick.ru^$third-party
@@ -125,6 +122,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||banner.volynnews.com
 ||helsi.me/api/ad/pis/
 ||informator.ua/js/frontend/ad-loaders
+||obyava.ua/js/advert.js
 ||patient-docs.com/theme/js/ads.js
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ||slk.kh.ua/banners/redirect?id=$document
@@ -313,6 +311,9 @@ edyna.media##div.partner-articles
 edyna.media##div.sb__section:has(> div.sb-partners)
 edyna.media##div[class$="-banner"]
 edyna.media##div[id^="adpartner-"]
+ek.ua##div:has(> a[href*="Nadavi_banner"])
+ek.ua##div.banner-topline
+ek.ua##div.bot-brand
 elitexpert.ua##.leader-wrap-out
 elle.ua##div.ad_300x600
 elle.ua##div.ad_article > hr
@@ -679,6 +680,9 @@ obozrevatel.com##aside.headerBiding:has(div[class*="_970"])
 obozrevatel.com##div.recommendation
 obozrevatel.com##div[id^="carouselLast-slide"]:has(article.newsImg > div.banner)
 obozrevatel.com##div[id^="carouselmostViewed-slide"]:has(article.newsImg > div.banner)
+obyava.ua##div.classified-top-banner
+obyava.ua##div.list-header-banner
+obyava.ua##div.other-classifieds-banner
 odessa-life.od.ua##div.code-block
 odessa-life.od.ua##div[class*="adrotate"]
 okino.ua##div:has(> div.bl-item > script)
