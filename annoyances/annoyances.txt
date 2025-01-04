@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.01.8
-! Last modified: Fri, 03 January 2025 19:46 EET
+! Version: 25.01.13
+! Last modified: Sat, 04 January 2025 19:11 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -80,7 +80,6 @@
 js/cookieprompt.js$script,domain=bat.ua
 js/remodal.js$script,domain=agroter.com.ua
 ! >>>
-galka.if.ua##+js(remove-node-text, script, '#fb-modal')
 kyivstar.ua##+js(set-cookie, cookiesAgreement, denied)
 privatbank.ua##+js(set-cookie, analytics_allowed, 0)
 privatbank.ua##+js(set-cookie, marketing_allowed, 0)
@@ -170,6 +169,8 @@ darmut.com##div.wd-cookies-popup
 darnytsia.ua##div[class^="dar-Cookies"]
 darnytsia.ua##div[class^="dar-Popup"]
 datagroup.ua###js-cookie-notification
+defence-ua.com##div.sidebar > :is(.section-title, [class^="journal-"], .publicat, .social-bar)
+defence-ua.com##div.sidebar > .tab-gallery:style(margin-top: 30px !important)
 detector.media##div.msg_cooky_blk
 diia.gov.ua##div.cookies-banner-wrapper
 diiacityunited.org##div.cookies-form
