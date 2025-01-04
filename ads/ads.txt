@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.11
-! Last modified: Fri, 03 January 2025 20:53 EET
+! Version: 25.01.13
+! Last modified: Sat, 04 January 2025 19:11 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -28,6 +28,8 @@
 ||creativecdn.com^
 ||givemelink.cc^
 ||myblogshop.top^
+||optad360.io^
+||optad360.net^
 ||protagcdn.com^
 ||rcvlink.com^
 ||rcvlinks.com^
@@ -114,7 +116,6 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ! PAGE-SPECIFIC RULES
 ! !!!!!!!!!!!!!!!
 !
-/banners/redirect$document,to=slk.kh.ua
 /assets/plugin/banners/uploads$domain=volynnews.com
 /sajax/updatebannerstat$domain=volynnews.com
 ! >>>
@@ -126,6 +127,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||informator.ua/js/frontend/ad-loaders
 ||patient-docs.com/theme/js/ads.js
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
+||slk.kh.ua/banners/redirect?id=$document
 ! >>>
 ! :has(> ins.adsbygoogle)
 1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,one.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
@@ -211,6 +213,7 @@ beauty.ua##div[id^="bn-"]
 bessarabia.ua##div.rekBlock
 bigkyiv.com.ua##div.ads
 bihus.info##div.r-tram_wrap
+blackseanews.net##div.ad
 blitz.if.ua##.banner
 board.if.ua##noindex:has(div > ins.adsbygoogle)
 bon.ua##div.bottom-card-wrapper > div.banner
@@ -250,6 +253,7 @@ comments.ua##div:has(> a[target="_blank"] > img[src*="comments.ua/adv_img/"])
 comments.ua##div.atlanta
 comments.ua##div.bot_r
 comments.ua##div.tops_r
+crimezone.in.ua##div.page-rkl
 cripo.com.ua###custom_html-8
 cvnews.cv.ua##a:has(> img[class*="advert-box"])
 cvnews.cv.ua##div.row.top-post-box
@@ -344,7 +348,7 @@ fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background:
 fakty.com.ua##div.pip-video-wrapper
 fakty.com.ua##div[class^="promo-layer"]
 fakty.ua##div:has(> span:has-text(Новини партнерів))
-fakty.ua##div[class^="banner"]
+fakty.ua##div[class*="banner_"]
 finance.ua##[data-vr-zone="block special projects list"]
 finance.ua###sticky-wrapper:has(div[id^="div-gpt-ad-"])
 finance.ua##div.bottom_banner
@@ -826,6 +830,11 @@ thepage.ua##div.news-list__item:has(div[class*="news-tag partner_material"])
 tochka.net##div.partner-news
 tochka.net##div.partner-news + div
 tochka.net##div.partner-news + div + div
+transkarpatia.net##.tbr-social > span > a:style(color: unset !important)
+transkarpatia.net###sidebar > div.side-widget:has(> a > img[src^="/advertise/"])
+transkarpatia.net###sidebar > div.twitter
+transkarpatia.net###stream + div.side-widget
+transkarpatia.net##body:style(background: unset !important)
 tribuna.com##div.card__content > div:has(div[class*="Alternative_banner__"])
 tribuna.com##div.card__postscript-banners
 tribuna.com##div[class*="_ads_"]
