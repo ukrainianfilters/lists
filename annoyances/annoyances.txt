@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.01.13
-! Last modified: Sat, 04 January 2025 19:11 EET
+! Version: 25.01.17
+! Last modified: Sun, 05 January 2025 16:12 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -285,6 +285,7 @@ ligazakon.net##div[ng-if="showNewDoc"]
 ligazakon.net##section.actualsinglepage_promo_social
 ligazakon.net##section.subscription_block_socials
 ligazakon.net##section#main_popup_modal
+liki24.com##div.city-offer-wrap
 logity.ua##.cookie-banner
 lorgar.ua,lorgar.com##div.fixed.bottom-0:has(a[href="/privacy-policy"])
 luxoptica.ua##div#yourTown.modal
@@ -369,6 +370,7 @@ pasivka.com.ua###cookies-panel:remove()
 pdmsh.ua###cookies-modal
 penguin-team.ua##.coockies__message
 pfbcredit.com.ua###cookieBanner
+platon.ua###popupCookie
 playua.net###mp_form_slide_in1
 podorozhnyk.ua##div.chat-bot
 podorozhnyk.ua##div.cookie-agreement
@@ -464,6 +466,7 @@ times.zt.ua###eu-cookie-bar
 tipok.com.ua##div#sliding-popup:has(> div.eu-cookie-compliance-banner)
 torgsoft.kiev.ua##.cookie-allow-box
 toyota.ua##.cookie-prompt
+tranzzo.com##div[class^="cookies_bannerWrap_"]
 travel-guide.in.ua##div.cookie-message-alert
 triumf.ua##.blur
 truskavetska.com.ua##div.cookiealert
