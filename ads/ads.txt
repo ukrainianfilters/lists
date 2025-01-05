@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.16
-! Last modified: Sun, 05 January 2025 14:53 EET
+! Version: 25.01.17
+! Last modified: Sun, 05 January 2025 16:12 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -82,10 +82,12 @@
 ! SCRIPTS
 ! !!!!!!!!!!!!!!!
 !
-! >>>
-! AdRiver
-/adriver.$script
 /adriver_$script
+/adriver.$script
+/plugins/adrotate-pro/*$script
+/plugins/adrotate/*$script
+/prebid2.$script
+/prebidlink/*$script
 ! >>>
 ! zfctrack.net / znctrack.net
 bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,real-vin.com,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
