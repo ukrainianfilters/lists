@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.19
-! Last modified: Mon, 06 January 2025 15:19 EET
+! Version: 25.01.20
+! Last modified: Tue, 07 January 2025 20:39 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -211,6 +211,9 @@ apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
 atn.ua##.ai_widget
 atn.ua##div.code-block:has(> div#ai-block)
+autocentre.ua##div.ads_aside
+autocentre.ua##div.sidebar_upper
+autocentre.ua##div[id*="-banner"]
 autoconsulting.com.ua##table:has(> tbody > tr > td.title:has-text(Лічильники))
 babel.ua##aside.c-subs-box.c-subs-social
 beauty.ua##.sb-partners
@@ -351,6 +354,7 @@ epravda.com.ua##div.article.article_story_grid:has(> div > div > span.article_se
 epravda.com.ua##div.section_topic.section_topic_adv
 esc.lviv.ua##div.jeg_ad
 espreso.tv##div.news-tape-item:has(div.mark-block:has-text(Партнерський матеріал))
+eurofootball.com.ua##div.banner
 eurointegration.com.ua,pravda.com.ua##[class$="-banner"]
 eurointegration.com.ua##a[href="https://www.ukr.net/"]
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
