@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.01.23
-! Last modified: Wed, 08 January 2025 20:32 EET
+! Version: 25.01.24
+! Last modified: Wed, 08 January 2025 23:52 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -1117,6 +1117,7 @@ zz.te.ua##.advads-widget
 ||amplitude.com^$third-party,domain=favbet.ua
 ||analitycs.net^$third-party
 ||api.country.is^$third-party
+||api.ipify.org^$third-party,domain=netronic.com.ua
 ||artfut.com^$third-party
 ||cdn.onesignal.com^$third-party
 ||chartbeat.com^$third-party
@@ -1133,6 +1134,7 @@ zz.te.ua##.advads-widget
 ||gravitec.net^$third-party
 ||hotjar.com^$third-party
 ||hotjar.io^$third-party
+||ipinfo.io^$third-party,domain=netronic.com.ua
 ||lfeeder.com^$third-party
 ||mediatraffic.com.ua^$third-party
 ||mparticle.com^$third-party,domain=glovoapp.com
@@ -1182,6 +1184,7 @@ zz.te.ua##.advads-widget
 ||rest.comfy.ua/api/logs/log
 ||search.com.ua/analytics/js/
 ||uoi.eolymp.space/measure
+||va.tawk.to/log
 ||vimeo.com/ablincoln/
 ||volia.com/get-my-ip/
 ||vsh.pp.ua/pixel?page=
