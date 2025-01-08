@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.21
-! Last modified: Tue, 07 January 2025 21:04 EET
+! Version: 25.01.22
+! Last modified: Wed, 08 January 2025 18:58 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -22,6 +22,7 @@
 ||ad.luxnet.ua^
 ||ad.mox.tv^
 ||adpartner.pro^
+||ads-twitter.com^
 ||ads.informator.ua^
 ||adtelligent.com^
 ||agenteimmobiliare.info^
@@ -500,6 +501,7 @@ internetua.com##div.left-ban
 internetua.com##div.top-ban
 internetua.com##div[id^="adex-jsunit-"]
 internetua.com##head > style:empty:style(all: inherit !important)
+inventure.com.ua###advertising
 istpravda.com.ua##[class$="_banner"]
 istpravda.com.ua##[class$="-banner"]
 it-rating.ua##.rowBan
@@ -571,6 +573,8 @@ kolobok.ua,tv.ua##div.row:has(> div > div + script)
 kolobok.ua,tv.ua##div.row:has(> div > div.premium-banner)
 kolobok.ua,tv.ua##div.row:has(> div > iframe)
 kolobok.ua,tv.ua##div.row:has(> div > script)
+komersant.info##div.banner
+komersant.info##div.wrapper:has(> p > a[id^="banner-"])
 konkurent.ua##div[class^="banner"]
 konkurent.ua##div[class^="bookmaker"]
 korrespondent.net##.article:has(em.advertising)
@@ -870,14 +874,12 @@ trueua.info##div.categories__category:has(.okadvertisement)
 trueua.info##div.okadv__block
 trueua.info##div.okadvertisement
 trueua.info##div.twitter
-tsn.ua##.c-aside__port
-tsn.ua##aside.c-section:has(h2.c-section__title > a:has-text(Пресрелізи))
-tsn.ua##aside.u-divider--t:has(iframe[src*="/banners/partner-news"])
-tsn.ua##aside.u-hide--sdmd:has(> div:has-text(Реклама))
-tsn.ua##div.l-row.l-flex > div.l-col.l-col--sm.l-gap:has(aside.c-aside__port)
-tsn.ua##div.l-row.l-flex.u-fx--nowrap > div.l-gap.l-col.l-col--sm:has(aside.c-aside__port)
-tsn.ua##div[class*="-sidebar__gap"]:has(iframe[src="https://tsn.ua/banners/sidebar"])
-tsn.ua##section.c-section:has(h2.c-section__title:has-text(Новини партнерів))
+tsn.ua##:is(aside,div):has(> iframe[src*="/banners/"])
+tsn.ua##:is(aside,div).c-aside__port
+tsn.ua##aside:has(> div > h2 > a[href$="pr.tsn.ua"])
+tsn.ua##aside:has(> div[style*="opacity: 40%"])
+tsn.ua##div.l-row.l-flex > div.l-col.l-gap:is(.l-col--sm, .l-col--xs):has(> aside.c-aside__port)
+tsn.ua##section:has(> h2:has-text(Новини партнерів))
 ttt.ua##div.page__big-banner
 tvoemisto.tv##div.ukrnetlinks
 tvoemisto.tv##div[id^="bannplace_"]:has(script)
