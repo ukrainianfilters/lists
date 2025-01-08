@@ -40,9 +40,6 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 
 Наші фільтри вже вбудовані у [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) (вкладка `Filter lists`, розділ `Regions, languages`).
 
-> [!NOTE]
-> Всі фільтри (включно з оновленнями) додаються до uBlock Origin Lite його розробниками в ручному режимі. Після цього створюється нова версія розширення, яка щоразу проходить перевірку в Chrome Web Store. Цей процес може тривати від 5 днів і більше.
-
 ### Adblock, Adblock Plus, AdGuard
 
 Починаючи з версії 0.5, розробники розширення **Adblock** [вирішили прибрати](https://web.archive.org/web/20111206122411/http://adblockplus.org/en/faq_features#siteblock) функцію блокування веб-сторінок (strict blocking). Це означає, що ані **Adblock**, ані **Adblock Plus** не можуть блокувати доступ до веб-ресурсів на рівні доменного ім'я. Розширення **AdGuard** так само має проблеми з обробкою правил фільтрації ([Issue #2760](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2760)), навіть тих, що прописані в документації цього розширення. Відповідно, ці розширення не є сумісними з нашими фільтрами.
@@ -65,6 +62,8 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 ### uBlock Origin Lite
 
 Наші фільтри вже вбудовані у [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) (вкладка `Filter lists`, розділ `Regions, languages`).
+
+Всі фільтри (включно з оновленнями) додаються до uBlock Origin Lite його розробниками в ручному режимі. Після цього створюється нова версія розширення, яка щоразу проходить перевірку в Chrome Web Store. Цей процес може тривати від 5 днів і більше.
 
 ### Brave
 
