@@ -38,7 +38,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 
 ### uBlock Origin Lite
 
-Наші фільтрі вже вбудовані у [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) (вкладка `Filter lists`, розділ `Regions, languages`).
+Наші фільтри вже вбудовані у [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) (вкладка `Filter lists`, розділ `Regions, languages`).
 
 > [!NOTE]
 > Всі фільтри (включно з оновленнями) додаються до uBlock Origin Lite його розробниками в ручному режимі. Після цього створюється нова версія розширення, яка щоразу проходить перевірку в Chrome Web Store. Цей процес може тривати від 5 днів і більше.
@@ -64,7 +64,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 
 ### uBlock Origin Lite
 
-Наші фільтрі вже вбудовані у [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) (вкладка `Filter lists`, розділ `Regions, languages`).
+Наші фільтри вже вбудовані у [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) (вкладка `Filter lists`, розділ `Regions, languages`).
 
 ### Brave
 
