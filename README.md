@@ -63,8 +63,6 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 
 Наші фільтри вже вбудовані у [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) (вкладка `Filter lists`, розділ `Regions, languages`).
 
-Всі фільтри (включно з оновленнями) додаються до uBlock Origin Lite його розробниками в ручному режимі. Після цього створюється нова версія розширення, яка щоразу проходить перевірку в Chrome Web Store. Цей процес може тривати від 5 днів і більше.
-
 ### Brave
 
 Браузер [Brave](https://brave.com/) заснований на [Chromium](https://uk.wikipedia.org/wiki/Chromium), має власний модуль фільтрації контенту з підтримкою [синтаксису фільтрації](https://support.brave.com/hc/en-us/articles/6449369961741-How-do-I-manage-Ad-Block-filters-in-Brave) розширення uBlock Origin. Цей браузер [продовжить підтримувати Manifest V2](https://brave.com/blog/brave-shields-manifest-v3/) та сторонні розширення-блокувальники реклами, включно з uBlock Origin.
@@ -85,6 +83,8 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 
 > [!NOTE]
 > Якщо програмне забезпечення фільтрації контенту підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні. У разі необхідності списки також можна оновлювати вручну.
+>
+> Виключенням є розширення uBlock Origin Lite, оскільки всі фільтри (включно з оновленнями) додаються до нього його розробниками вручну. Після цього створюється нова версія розширення, яка щоразу проходить перевірку в Chrome Web Store. Цей процес може тривати від 5 днів і більше.
 
 ## Співпраця
 
