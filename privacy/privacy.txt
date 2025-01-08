@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.01.22
-! Last modified: Wed, 08 January 2025 18:58 EET
+! Version: 25.01.24
+! Last modified: Wed, 08 January 2025 23:52 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -59,6 +59,7 @@
 ||amplitude.com^$third-party,domain=favbet.ua
 ||analitycs.net^$third-party
 ||api.country.is^$third-party
+||api.ipify.org^$third-party,domain=netronic.com.ua
 ||artfut.com^$third-party
 ||cdn.onesignal.com^$third-party
 ||chartbeat.com^$third-party
@@ -75,6 +76,7 @@
 ||gravitec.net^$third-party
 ||hotjar.com^$third-party
 ||hotjar.io^$third-party
+||ipinfo.io^$third-party,domain=netronic.com.ua
 ||lfeeder.com^$third-party
 ||mediatraffic.com.ua^$third-party
 ||mparticle.com^$third-party,domain=glovoapp.com
@@ -124,6 +126,7 @@
 ||rest.comfy.ua/api/logs/log
 ||search.com.ua/analytics/js/
 ||uoi.eolymp.space/measure
+||va.tawk.to/log
 ||vimeo.com/ablincoln/
 ||volia.com/get-my-ip/
 ||vsh.pp.ua/pixel?page=
