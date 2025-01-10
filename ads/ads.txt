@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.27
-! Last modified: Thu, 09 January 2025 19:39 EET
+! Version: 25.01.28
+! Last modified: Fri, 10 January 2025 13:53 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -26,6 +26,7 @@
 ||ads.informator.ua^
 ||adtelligent.com^
 ||agenteimmobiliare.info^
+||aixcdn.com^
 ||creativecdn.com^
 ||eskimi.com^
 ||givemelink.cc^
@@ -42,6 +43,7 @@
 ||2xclick.ru^$third-party
 ||360playvid.com^$third-party
 ||360playvid.info^$third-party
+||adhigh.net^$third-party
 ||admixer.net^$third-party
 ||bidder.smartytouch.co^$third-party
 ||c.hit.ua^$third-party
@@ -368,12 +370,13 @@ fakty.com.ua##div[class^="promo-layer"]
 fakty.ua##div:has(> span:has-text(Новини партнерів))
 fakty.ua##div[class*="banner_"]
 fco.com.ua##div.ads-block-top
+finance.ua##[data-vr-zone="block featured product list"]
 finance.ua##[data-vr-zone="block special projects list"]
 finance.ua###sticky-wrapper:has(div[id^="div-gpt-ad-"])
 finance.ua##div.bottom_banner
 finance.ua##div.minfin-banner
+finance.ua##div[class*="-commercial-section"]
 finance.ua##div[class^="Advertising"]
-finance.ua##div[data-vr-zone="block featured product list"]
 finance.ua##div[id^="banner-zone"]
 finance.ua##td.h-adv
 firtka.if.ua##[class*="advert"]
@@ -580,6 +583,7 @@ konkurent.ua##div[class^="bookmaker"]
 korrespondent.net##.article:has(em.advertising)
 korrespondent.net##.unit-side-informer
 korrespondent.net##[class$="-banner"]
+kosht.media###block-19
 kp.ua##[class*="banner"]
 kp.ua##[data-action="banners"]
 krymr.com##div.media-block-wrap:has(h2:has-text(НОВИНИ ПАРТНЕРІВ))
