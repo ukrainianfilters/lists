@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.01.29
-! Last modified: Fri, 10 January 2025 19:39 EET
+! Version: 25.01.30
+! Last modified: Fri, 10 January 2025 20:29 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -60,10 +60,12 @@
 ||webvitals.luxnet.ua^
 ||xp.apple.com^
 ! >>>
+||acint.net^$third-party
 ||alfabankua.zendesk.com^$third-party
 ||amplitude.com^$third-party,domain=favbet.ua
 ||analitycs.net^$third-party
 ||api.country.is^$third-party
+||api.ipgeolocation.io^$third-party,domain=trueprice.ua
 ||api.ipify.org^$third-party,domain=netronic.com.ua
 ||artfut.com^$third-party
 ||bpmonline.com^$third-party
@@ -75,6 +77,7 @@
 ||cmp.quantcast.com^$third-party
 ||connect.mail.ru^$third-party
 ||connect.ok.ru^$third-party
+||cralodas.com.ua^$third-party
 ||crazyegg.com^$third-party
 ||demdex.net^$third-party
 ||fixidle.com^$third-party
@@ -126,6 +129,7 @@
 ||elmir.ua/response/update_basket.php?t&gen=
 ||enguide.ua/analytics.js
 ||eva.ua/assets/scripts/multisearch-tracker.js
+||gepur.com/logs
 ||hotline.ua/svc/tracking/
 ||hsforms.com/embed/v3/counters.gif
 ||ideabank.ua/analytics.js
@@ -232,7 +236,7 @@ widget.*/build/*/analytics.html$subdocument
 ||sinoptik.ua/informers_js.php^$third-party
 sinoptik.ua/api/location/recent/
 sinoptik.ua/stats/
-4studio.com.ua,blackseanews.net,blitz.if.ua,cripo.com.ua,cvnews.cv.ua,expres.online,fakty.ua,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kontrakty.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,volyninfa.com.ua,zakarpattya24.com,zaxid.net,zib.com.ua##div#SinoptikInformer
+4studio.com.ua,blackseanews.net,blitz.if.ua,cripo.com.ua,cvnews.cv.ua,expres.online,fakty.ua,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kontrakty.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,volyninfa.com.ua,volynpost.com,zakarpattya24.com,zaxid.net,zib.com.ua##div#SinoptikInformer
 ! >>>
 4studio.com.ua##div.home_bottom > div > div:nth-child(3)
 brovary.net.ua##div.elementor-element:has(> div > div > h4:has-text(Погода))
