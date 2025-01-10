@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.28
-! Last modified: Fri, 10 January 2025 13:53 EET
+! Version: 25.01.29
+! Last modified: Fri, 10 January 2025 19:39 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -38,6 +38,7 @@
 ||rcvlink.com^
 ||rcvlinks.com^
 ||stpd.cloud^
+||trafficdok.com^
 ||xcartpro.com^
 ! >>>
 ||2xclick.ru^$third-party
@@ -62,6 +63,7 @@
 ||misto.travel/templates/js$third-party
 ||mixadvert.com^$third-party
 ||newscode.online^$third-party
+||notsy.io^$third-party
 ||phoenix-widget.com^$third-party
 ||pixel.tvstitch.com^$third-party
 ||receivedachest.com^$third-party
@@ -142,7 +144,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 event=open&action=firebox_trackevent&box=$domain=bigkyiv.com.ua
 ! >>>
 ! :has(> ins.adsbygoogle)
-1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,one.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
+1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,nikvesti.com,one.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
 ! :has(> div > ins.adsbygoogle)
 forex.ua,gsminfo.com.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
@@ -440,10 +442,16 @@ glamour.kyiv.ua##div.textwidget:has(a[href*="myblogshop.top"][rel="nofollow"])
 glamour.kyiv.ua##div.textwidget:has(script)
 glavcom.ua##[data-action="banners"]
 glavcom.ua##div[class^="banner"]
-glavred.net##div.bnr-block
-glavred.net##div.bnr-block--gray
+glavred.info##div:has(> div.bnr-block__ad + div[data-type="bnr"])
+glavred.info##div.light-block:has(> div.bnr-block__bnr)
+glavred.info##div.main-partners
+glavred.info##div.partner-news
+glavred.info##div[class*="bnr-block"]
+glavred.net##div:has(> div.bnr-block__ad + div[data-type="bnr"])
+glavred.net##div.light-block:has(> div.bnr-block__bnr)
 glavred.net##div.main-partners
 glavred.net##div.partner-news
+glavred.net##div[class*="bnr-block"]
 gloss.ua##div:has(> div.card > div > div > a > h4 > span.mark-ad)
 goloskarpat.info##aside:has(> aside > i.fa-rectangle-ad)
 gordonua.com##div[class^="advertising"]
@@ -689,15 +697,20 @@ nezhatin.com.ua##aside.widget_text:has(> div.textwidget > p > img.aligncenter)
 nezhatin.com.ua##div.entry-content > p:empty
 nezhatin.com.ua##div.entry-content > p:has(> img.size-full.aligncenter)
 nezhatin.com.ua##div.entry-content > p:has(ins.adsbygoogle)
+nikvesti.com##div.desc-read-more-adv
+nikvesti.com##li:has(ins.adsbygoogle)
 novosti-n.org##div[class*="banner"]
 novy.tv##div.ads-catfish-container
 novy.tv##div.ads-sidebar
 novy.tv##div#sticky-ads
+novynarnia.com##.border-shadow:style(-webkit-box-shadow: unset !important; box-shadow: unset !important)
 novynarnia.com##div:has(> div#mt_promo_wghot)
 novyny.live##div.section-charter_promo
 noworries.news##.header-baner
 nv.ua##[data-type="advertising"]
 nv.ua##body.branding:style(padding-top: 20px !important)
+nv.ua##div.ad_wrapper
+nv.ua##div.ad-wrapper
 nv.ua##div.feed-item:has(> div + a[href*="&utm_campaign=promosite"])
 nv.ua##div.remp-banner
 obozrevatel.com##.headerBiding
