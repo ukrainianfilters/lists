@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.01.30
-! Last modified: Fri, 10 January 2025 20:29 EET
+! Version: 25.01.33
+! Last modified: Sat, 11 January 2025 21:07 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -150,6 +150,7 @@ charivne.info###newsticker
 chasdiy.org##div.notifications__bottom
 cip.gov.ua##cookie-law
 city24.ua##div:has(> div > div > div > svg.linkedin)
+citysites.ua##div[aria-label="cookieconsent"]
 clhs.com.ua##div[aria-label="cookieconsent"]
 cloud.net.ua##.cookie-modal
 club4paws.ua##div.attention:has(> div > div > button[class$="js-accept-cookies"])
@@ -363,6 +364,7 @@ noworries.news##div.remodal-overlay
 noworries.news##div.remodal-wrapper
 npshopping.com##div.cookie-alert
 ntn.ua##.warning
+obozrevatel.com##div.cookiePolicy
 obyava.ua##.cookie-bar
 odessa-life.od.ua###moove_gdpr_cookie_info_bar
 olx.ua##div[data-testid="cookies-overlay__container"]
@@ -391,6 +393,7 @@ prostavochka.com.ua##.messages_cookies
 prozora.network##div.set-all-components:has(> div[fs-cc="banner"] > div > div.cookies_top)
 psm7.com##.m-cookies
 psm7.com###psm-messenger-subscribe-popup
+psm7.com##a.psm-single-bottom-google-news
 qmall.io##div.vue-notification-group:has(> span > div > div.notification-cookies)
 radiosvoboda.org##div.slide-in-wg
 radioua.net##.cookie-consent
@@ -420,6 +423,7 @@ serpstat.com##.cookie-consent
 sestry.eu##.gl-cookie-consent
 shakhtar.com###using-cookie-warning
 shakhtar.com##div#klaro:has(> div > div.cookie-notice)
+shuba.life##div.c-cookies
 silpo.ua##.cookie-banner
 slk.kh.ua##a.reader-choise__telegram
 slk.kh.ua##div.google-news-sub
