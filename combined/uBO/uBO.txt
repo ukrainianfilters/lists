@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.01.31
-! Last modified: Sat, 11 January 2025 13:35 EET
+! Version: 25.01.32
+! Last modified: Sat, 11 January 2025 19:16 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -53,6 +53,7 @@
 ||bidder.smartytouch.co^$third-party
 ||c.hit.ua^$third-party
 ||cdn.umh.ua^$third-party
+||cdnkma.biz^$third-party
 ||crashlytics.ru^$third-party
 ||exchange.informer.ua^$third-party
 ||go2net.com.ua^$third-party
@@ -61,6 +62,7 @@
 ||informer.link^$third-party
 ||ipvertnet.com^$third-party
 ||jsc.idealmedia.io^$third-party
+||kma.biz^$third-party
 ||mediabrama.com^$third-party
 ||membrana.media^$third-party
 ||mgid.com^$third-party
@@ -221,6 +223,10 @@ apk-inform.com##div[class$="-banner"]
 apostrophe.ua##.advertinline
 apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
+arguments.kyiv.ua,dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,lady.kyiv.ua,medicalanswers.com.ua,news24.in.ua,novosti24.kyiv.ua,ua-novosti.info,ua-vestnik.com,useti.org.ua,womanlife.kyiv.ua,zhenskiy.kyiv.ua##.textwidget:has(> figure > a[rel="nofollow"])
+arguments.kyiv.ua,dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,lady.kyiv.ua,medicalanswers.com.ua,news24.in.ua,novosti24.kyiv.ua,ua-novosti.info,ua-vestnik.com,useti.org.ua,womanlife.kyiv.ua,zhenskiy.kyiv.ua##.textwidget:has(script)
+arguments.kyiv.ua,dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,lady.kyiv.ua,medicalanswers.com.ua,news24.in.ua,novosti24.kyiv.ua,ua-novosti.info,ua-vestnik.com,useti.org.ua,womanlife.kyiv.ua,zhenskiy.kyiv.ua##.widget_block:has(> figure > a[rel="nofollow"])
+arguments.kyiv.ua,dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,lady.kyiv.ua,medicalanswers.com.ua,news24.in.ua,novosti24.kyiv.ua,ua-novosti.info,ua-vestnik.com,useti.org.ua,womanlife.kyiv.ua,zhenskiy.kyiv.ua##[data-elementor-post-type="elementor_library"]
 atn.ua##.ai_widget
 atn.ua##div.code-block:has(> div#ai-block)
 autocentre.ua##div.ads_aside
@@ -285,6 +291,7 @@ cvnews.cv.ua##div.row.top-post-box
 cvnews.cv.ua##hr.base-post-divider + a
 dailylviv.com##.rightBanner
 dailylviv.com##div[id^="google_banner"]
+dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,medicalanswers.com.ua,ua-vestnik.com,useti.org.ua,zhenskiy.kyiv.ua##a:is([href*="kshop2.biz"],[href*="myblogshop.top"])
 defence-ua.com##.share-news
 defence-ua.com##div.content > br:nth-of-type(-n+2)
 defence-ua.com##div.content > hr:nth-of-type(-n+2)
@@ -1132,6 +1139,7 @@ zz.te.ua##.advads-widget
 ||i.posthog.com^
 ||log.pinterest.com^
 ||mmi.bemobile.ua^
+||nothingimportant.pro^
 ||pipe-collect.ebu.io^
 ||pla.fwdcdn.com^
 ||player-telemetry.vimeo.com^
@@ -1149,6 +1157,7 @@ zz.te.ua##.advads-widget
 ||tracker.multisearch.io^
 ||tracker.prom.ua^
 ||tracker.softcube.com^
+||trackerlead.biz^
 ||upstats.yadro.ru^
 ||websdk.appsflyer.com^
 ||webvitals.luxnet.ua^
@@ -1183,6 +1192,7 @@ zz.te.ua##.advads-widget
 ||hotjar.io^$third-party
 ||ipinfo.io^$third-party,domain=netronic.com.ua
 ||lfeeder.com^$third-party
+||mc.yandex.ru^$third-party
 ||mediatraffic.com.ua^$third-party
 ||mouseflow.com^$third-party
 ||mparticle.com^$third-party,domain=glovoapp.com
@@ -1250,6 +1260,7 @@ zz.te.ua##.advads-widget
 ||vsh.pp.ua/pixel?page=
 ||work.ua/analytics/
 ! >>>
+_beacon?
 /?sentry_key=$domain=epicentrk.ua
 /ads-blocking-detector.$script,domain=kyivstar.ua
 /ajax/bz?_
@@ -1288,6 +1299,9 @@ zz.te.ua##.advads-widget
 /wp-statistics-tracker.min.js
 /wp-statistics/assets/js/tracker.js
 /wpr-beacon.min.js
+/yandex-metrica-watch/*
+/yandex-metrika.js
+free*/?channel=*&click=$document
 ! >>>
 ||report.error-report.com^$subdocument
 widget.*/build/*/analytics.html$subdocument
