@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.30
-! Last modified: Fri, 10 January 2025 20:29 EET
+! Version: 25.01.31
+! Last modified: Sat, 11 January 2025 13:35 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -135,6 +135,8 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||gepur.com/js/rtbhouse.js
 ||helsi.me/api/ad/pis/
 ||informator.ua/js/frontend/ad-loaders
+||medicina.ua/adv.php
+||medicina.ua/adv/async.php
 ||obyava.ua/js/advert.js
 ||patient-docs.com/theme/js/ads.js
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
@@ -659,6 +661,9 @@ mc.today##div.company-slider
 mc.today##div.lenta-item:has(> span.cat-label > a[href$="/category/spetsproyekti/"])
 mc.today##div.mobile-hide:not(.widget-popular, .widget-popular-title)
 mc.today##div.widget-vacancy
+medicina.ua##div.aside-context > div.item:has(> a[href^="/adv.php?id="])
+medicina.ua##div[class^="brand_"]
+medicina.ua##noindex:has(> div[class^="banner-"])
 meta.ua##[class^="banner"]
 meta.ua##[class^="bookmaker"]
 meta.ua###meta_banner_center
