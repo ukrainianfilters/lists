@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.01.31
-! Last modified: Sat, 11 January 2025 13:35 EET
+! Version: 25.01.32
+! Last modified: Sat, 11 January 2025 19:16 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -38,6 +38,7 @@
 ||i.posthog.com^
 ||log.pinterest.com^
 ||mmi.bemobile.ua^
+||nothingimportant.pro^
 ||pipe-collect.ebu.io^
 ||pla.fwdcdn.com^
 ||player-telemetry.vimeo.com^
@@ -55,6 +56,7 @@
 ||tracker.multisearch.io^
 ||tracker.prom.ua^
 ||tracker.softcube.com^
+||trackerlead.biz^
 ||upstats.yadro.ru^
 ||websdk.appsflyer.com^
 ||webvitals.luxnet.ua^
@@ -89,6 +91,7 @@
 ||hotjar.io^$third-party
 ||ipinfo.io^$third-party,domain=netronic.com.ua
 ||lfeeder.com^$third-party
+||mc.yandex.ru^$third-party
 ||mediatraffic.com.ua^$third-party
 ||mouseflow.com^$third-party
 ||mparticle.com^$third-party,domain=glovoapp.com
@@ -156,6 +159,7 @@
 ||vsh.pp.ua/pixel?page=
 ||work.ua/analytics/
 ! >>>
+_beacon?
 /?sentry_key=$domain=epicentrk.ua
 /ads-blocking-detector.$script,domain=kyivstar.ua
 /ajax/bz?_
@@ -194,6 +198,9 @@
 /wp-statistics-tracker.min.js
 /wp-statistics/assets/js/tracker.js
 /wpr-beacon.min.js
+/yandex-metrica-watch/*
+/yandex-metrika.js
+free*/?channel=*&click=$document
 ! >>>
 ||report.error-report.com^$subdocument
 widget.*/build/*/analytics.html$subdocument
