@@ -1,7 +1,8 @@
 name: Filter Issue
 description: Here you can report sites for which there are no filtering rules (you see ads, irritating elements, trackers, etc.) or where our filtering rules do not work correctly
-labels: bug
-assignees: serhiyguryev
+labels: ["bug"]
+assignees:
+  - serhiyguryev
 body:
   - type: markdown
     attributes:
@@ -11,6 +12,7 @@ body:
         1) Make sure there are no problems or conflicts with other browser extensions.
         2) Make sure you use only one ad blocking (content filtering) extension.
         3) Disable NoScript, Ghostery, Disconnect, HTTPS Everywhere, Privacy Badger, AntiBanner, VPN extensions and retest (check) the website with which you have problems.
+        <br>
 
   - type: textarea
     attributes:
