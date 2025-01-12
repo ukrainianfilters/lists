@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.01.36
-! Last modified: Sun, 12 January 2025 16:35 EET
+! Version: 25.01.37
+! Last modified: Sun, 12 January 2025 20:00 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -107,6 +107,7 @@
 ||p.nexinsight.com.ua^$third-party
 ||pa-cd.com^$third-party
 ||plerdy.com^$third-party
+||pxf.io^$third-party
 ||scorecardresearch.com^$third-party
 ||sendpulse.com^$third-party
 ||sentry-cdn.com^$third-party,domain=betconstruct.com|vbet.ua
@@ -119,6 +120,7 @@
 ||vk.com/share.php?$third-party
 ||vsh.pp.ua^$third-party
 ||webpushs.com^$third-party
+||zcode17.com^$third-party
 ||zmctrack.net^$third-party
 ||znctrack.net^$third-party
 ! >>>
@@ -180,6 +182,7 @@ _beacon?
 /analytics.*/event
 /analytics.*/track
 /analytics/event
+/breek/assets/images/transparent.gif
 /call.tracker.js
 /cdn-cgi/zaraz/*
 /dist/web-vitals.attribution.iife.js
