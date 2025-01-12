@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.01.33
-! Last modified: Sat, 11 January 2025 21:07 EET
+! Version: 25.01.36
+! Last modified: Sun, 12 January 2025 16:35 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -93,6 +93,7 @@ puratos.com.ua##+js(set-cookie, functionalCookieAccepted, true)
 24tv.ua##div.player.sticky
 2day.kh.ua###fb-likebox
 3ona51.com##div.cookiesAccept
+7eminar.ua##div.cookie-banner
 a-grade.com.ua##div.modalWindow--cookie
 accordbank.com.ua###setcookie-agreement
 afishadnepr.com.ua,fitness-class.com.ua,nashemisto.dp.ua,startermedia.com.ua###cookie-law-info-bar
@@ -137,6 +138,10 @@ bonibons.com##div#epd:has(> div#cookiesdirective)
 brander.ua##div#cookie-consent-popup
 britishbook.ua###politica
 brovary.net.ua##aside#moove_gdpr_cookie_info_bar
+buhgalter.com.ua##div.b-social-groups__item
+buhgalter.com.ua##div.fb-widget__container
+buhplatforma.com.ua##div.cookie-consent
+buhplatforma.com.ua##div.id3-login-root
 buki.com.ua##div[class^="styles_bannerWrapper__"]:has(a[href="/p/cookies/"])
 bvr.ua##.cookie-notify
 canyon.ua##div.cn-cookies
@@ -184,8 +189,10 @@ dom.ria.com##div.c-notifier:has(input[id="gdpr_settings"])
 dostup.org.ua,dostup.pravda.com.ua##.sp-show
 drovae.gov.ua##div[class^="cookies_cookies__"]
 dtek.com###CybotCookiebotDialog
+dtkt.ua##div.article-messengers
 dtkt.ua##div.cookie-message
 dtkt.ua##div.desktop-bottom-navigation
+dtkt.ua##div.subscription-notification
 dyvys.info##aside.cta-telegram
 e-likari.com.ua##div.cookie-notification
 eba.com.ua##div.user-cookie-notice
@@ -199,6 +206,7 @@ eurostudent.ua###cookie-law-info-bar
 everlegal.ua###consent-popup
 evzuttya.com.ua##.modal-consents
 facenews.ua###pblock
+factor.academy##div.cl-floating-box
 farsh.in.ua##.cookies-informer
 fedoriv.com##div.set-all-components-to-display-none-and-use-this-div-to-create-a-symbol:has(div[fs-cc="banner"])
 fex.net##div.layout__cookies-policy-notification
@@ -235,6 +243,7 @@ hotline.finance##div[class^="accept-cookies_modal_"]
 hotline.ua##div.informer-translation-error
 hvylya.net##div.privacy-policy
 i.ua##.Disclaimer
+ibuhgalter.net##div.cl-dialog
 igns.gov.ua##aside#moove_gdpr_cookie_info_bar
 ilounge.ua##div.signup-form-launcher
 incrypted.com##.incrypted-cookie-bar
@@ -547,6 +556,7 @@ zaxid.net###pushNotificationBanner
 zeppelin.ua###cookieNote
 zgraya.digital##div[aria-label="cookieconsent"]
 zillya.ua###gdpr-cookie-message
+zkg.ua##div.cookie-bubble
 znaj.ua##div.privacy-policy
 zootovary.com##div[aria-label="cookieconsent"]
 zootovary.com##span[id^="cookieconsent"]
