@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.34
-! Last modified: Sat, 11 January 2025 21:28 EET
+! Version: 25.01.36
+! Last modified: Sun, 12 January 2025 16:35 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -95,6 +95,7 @@
 !
 /adriver_$script
 /adriver.$script
+/asyncjs.php$script
 /plugins/adrotate-pro/*$script
 /plugins/adrotate/*$script
 /prebid2.$script
@@ -151,7 +152,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 event=open&action=firebox_trackevent&box=$domain=bigkyiv.com.ua
 ! >>>
 ! :has(> ins.adsbygoogle)
-1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,itechua.com,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,nikvesti.com,one.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,psm7.com,rayon.in.ua,sat.net.ua,sensatsiya.com,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,vcf.vn.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
+1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,ibuhgalter.net,itechua.com,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,nikvesti.com,one.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,protocol.ua,psm7.com,rayon.in.ua,sat.net.ua,sensatsiya.com,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,vcf.vn.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
 ! :has(> div > ins.adsbygoogle)
 forex.ua,gsminfo.com.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
@@ -328,6 +329,7 @@ dsnews.ua##div[data-banner]
 dsnews.ua##div[id^="adpartner"]
 dsnews.ua##li.c-feed__list-item:has(> div > div > div[data-banner])
 dtkt.ua##div.box-banner
+dtkt.ua##div.dk-adsbygoogle
 dumka.media###right-specprojects-placeholder
 dumka.media##div.specprojects-widget
 dumskaya.net##div.hideprint
@@ -383,6 +385,7 @@ euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
 euromaidanpress.com##div.kompreno
 exo.in.ua##div.right > div:first-of-type
 expres.online##div.advertisement
+factor.academy##.get_html_banner_for_category
 fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"])
 fakty.com.ua##div.pip-video-wrapper
 fakty.com.ua##div[class^="promo-layer"]
@@ -506,6 +509,9 @@ i.ua##.clear.logo_container
 i.ua##.news_premium_item
 i.ua##.partner_links
 i.ua###Premium
+ibuhgalter.net##div.bottom-banner
+ibuhgalter.net##div.inside_banner
+ibuhgalter.net##div.sidenav_banner > noindex
 ictv.ua##div.partner-news
 imena.ua##section.widget:has(img[src$="banner_300x300.jpg"])
 incrypted.com##.top-banner-airdrops
@@ -797,6 +803,8 @@ proidei.com##div.ads-widget-block
 prolinux.pp.ua##section.widget_block:has(ins.adsbygoogle)
 prom.ua##div[style*="cloud-cgi/static/catalog-ui/js/build/portal-portable/maskWeb-5Wgei.png"]
 proslav.info##div.jeg_ad
+protocol.ua##a.article-hero__advertising-btn
+protocol.ua##div.article-sidebar__adversting-img:has(> script)
 protocol.ua##div.modal_cont:has(> div.streag_close_btn_cont)
 protocol.ua##div.section9_thirdBlock:has(> div > h2:has-text(Партнери))
 protocol.ua##div[class^="baner_"]
