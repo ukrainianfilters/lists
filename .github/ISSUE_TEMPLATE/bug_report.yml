@@ -1,7 +1,9 @@
 name: Проблема з фільтрами
 description: Тут можна повідомити про сайти, для яких відсутні правила фільтрації (ви бачите рекламу, дратівливі елементи, трекери тощо), або на яких наші правила фільтрації працюють некоректно
-labels: bug
-assignees: serhiyguryev
+title: "[Bug]: "
+labels: ["bug"]
+assignees:
+  - serhiyguryev
 body:
   - type: markdown
     attributes:
