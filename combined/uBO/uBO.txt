@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.01.36
-! Last modified: Sun, 12 January 2025 16:35 EET
+! Version: 25.01.37
+! Last modified: Sun, 12 January 2025 20:00 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -21,6 +21,7 @@
 ! ADVERTISING NETWORKS
 ! !!!!!!!!!!!!!!!
 !
+||21wiz.com^
 ||a4.censor.net^
 ||ad.luxnet.ua^
 ||ad.mox.tv^
@@ -30,6 +31,7 @@
 ||adtelligent.com^
 ||agenteimmobiliare.info^
 ||aixcdn.com^
+||aj1907.online^
 ||creativecdn.com^
 ||eskimi.com^
 ||givemelink.cc^
@@ -42,6 +44,7 @@
 ||rcvlink.com^
 ||rcvlinks.com^
 ||stpd.cloud^
+||trafficbass.com^
 ||trafficdok.com^
 ||xcartpro.com^
 ! >>>
@@ -78,6 +81,7 @@
 ||redtram.com^$third-party
 ||revive-adserver.net^$third-party
 ||smi.pp.ua^$third-party
+||stat.hdvbua.pro^$third-party
 ||stteeruptowind.com^$third-party
 ||traffim.com^$third-party
 ||traffsender.com^$third-party
@@ -139,6 +143,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||1plus1.video/ua/ab/?whole
 ||5.ua/js/banner
 ||banner.volynnews.com
+||cdn.hdvbua.pro/amedia/
 ||gepur.com/js/rtbhouse.js
 ||helsi.me/api/ad/pis/
 ||informator.ua/js/frontend/ad-loaders
@@ -361,6 +366,7 @@ elle.ua##div.ad_article > hr
 elle.ua##div.ad_top
 elle.ua##div.reklama
 elle.ua##div.tizers
+eneyida.tv##div.ad_subcontent
 enkorr.ua##div.baner-wrapp
 epochtimes.com.ua##aside:has(> iframe[src$="/sinoptik.html"])
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##[class$="_banner"]
@@ -844,6 +850,8 @@ rubryka.com##div.single-page__social
 rubryka.com##div[class*="advertisment"]
 rubryka.com##div[style="padding: 0 0 30px"]
 rud.ua##a.branding__link
+serialno.tv##body:style(padding-top: unset !important)
+serialno.tv##div[id^="zone_"]
 shuba.life##article[data-partner="silpo"]
 shuba.life##button:has(> img[alt="Silpo"])
 shuba.life##div:has(> div#AdHeader)
@@ -975,6 +983,11 @@ uanews.org.ua##hr.base-post-divider + a
 uapetrol.com##div.sidebar__item:has(div.adv__exam)
 uapress.kyiv.ua###sidebar
 uapress.kyiv.ua##div[data-elementor-post-type="elementor_library"]
+uaserials.pro##.wrap:style(padding-top:20px !important)
+uaserials.pro##div.rek1
+uaserials.pro##ins[data-key]
+ufdub.com##aside.side > div.side-b + a[target="_blank"]
+ufdub.com##div:has(> h4:has-text(Реклама))
 ukr.net##.fixed-block > div[class] ~ div
 ukr.net##div.advertisement-block
 ukr.net##div.placeholder
@@ -1237,6 +1250,7 @@ zz.te.ua##.advads-widget
 ||p.nexinsight.com.ua^$third-party
 ||pa-cd.com^$third-party
 ||plerdy.com^$third-party
+||pxf.io^$third-party
 ||scorecardresearch.com^$third-party
 ||sendpulse.com^$third-party
 ||sentry-cdn.com^$third-party,domain=betconstruct.com|vbet.ua
@@ -1249,6 +1263,7 @@ zz.te.ua##.advads-widget
 ||vk.com/share.php?$third-party
 ||vsh.pp.ua^$third-party
 ||webpushs.com^$third-party
+||zcode17.com^$third-party
 ||zmctrack.net^$third-party
 ||znctrack.net^$third-party
 ! >>>
@@ -1310,6 +1325,7 @@ _beacon?
 /analytics.*/event
 /analytics.*/track
 /analytics/event
+/breek/assets/images/transparent.gif
 /call.tracker.js
 /cdn-cgi/zaraz/*
 /dist/web-vitals.attribution.iife.js
