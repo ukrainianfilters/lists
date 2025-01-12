@@ -1,0 +1,109 @@
+name: Проблема з фільтрами
+description: Тут можна повідомити про сайти, для яких відсутні правила фільтрації (ви бачите рекламу, дратівливі елементи, трекери тощо), або на яких наші правила фільтрації працюють некоректно
+labels: bug
+assignees: serhiyguryev
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Перш, ніж створювати звіт:
+
+        1) Переконайтеся у відсутності проблем або конфліктів з іншими розширеннями веб-браузера.
+        2) Переконайтеся, що ви використовуєте лише одне розширення для блокування реклами (фільтрації контенту).
+        3) Вимкніть NoScript, Ghostery, Disconnect, HTTPS Everywhere, Privacy Badger, AntiBanner, VPN розширення і повторно протестуйте (перевірте) роботу веб-сайту, з яким виникли проблеми.
+
+  - type: textarea
+    attributes:
+      label: Вкажіть веб-сайт(и), з якими у вас виникли проблеми
+      description: |
+        Вкажіть URL-адресу веб-сайту (**ОБОВ'ЯЗКОВО**)
+        Попередьте, якщо мова йде про сайт з **NSFW** контентом
+      placeholder: |
+        https://example.com.ua
+      render: yaml
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Проблема
+      description: Зазначте тип проблеми, з якою ви зіткнулися
+      options:
+        - label: Реклама
+          required: false
+        - label: Дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо)
+          required: false
+        - label: Трекери
+          required: false
+        - label: Шкідливий веб-ресурс (фішинг, онлайн-шахрайство, дропшопінг, шкідливе ПЗ тощо)
+          required: false
+        - label: Технічні проблеми (некоректна робота фільтрів, конфлікти з іншими фільтрами тощо)
+          required: false
+        - label: Інше
+          required: false
+
+  - type: textarea
+    attributes:
+      label: Додатковий опис проблеми
+      description: Якщо у вас є додаткова інформація про проблему, з якою ви зіткнулися, будь ласка, поділіться нею тут
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Скриншот(и)
+      description: |
+        Скриншот(и) для візуального опису проблем
+        Розміщуйте посилання замість вбудованих зображень для скриншотів, що містять матеріали для дорослих
+      value: |
+        <details>
+        <summary>Скриншот(и)</summary>
+
+        <!-- Перетягніть скріншот(и) сюди -->
+        <!-- ⬇️  ⬇️  ⬇️ -->
+
+
+        <!-- ⬆️  ⬆️  ⬆️ -->
+
+        </details>
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Списки фільтрів, які ви використовуєте
+      description: Які саме Ukrainian Filters (Українські фільтри) ви використовуєте?
+      options:
+        - label: Ukrainian Filters (uBlock Origin Combined List)
+          required: false
+        - label: Ukrainian Annoyance Filter
+          required: false
+        - label: Ukrainian Security Filter
+          required: false
+
+  - type: input
+    attributes:
+      label: Операційна система
+      description: |
+      Вкажіть, яку операційну систему ви використовуєте (включно з версією)
+      наприклад, Windows 10 або Android 14
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Браузер
+      description: |
+      Вкажіть, який веб-браузер ви використовуєте (включно з версією)
+      наприклад, Firefox 128.0.3
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Розширення блокування реклами
+      description: |
+      Вкажіть, яке розширення блокування реклами ви використовуєте (включно з версією)
+      наприклад, uBlock Origin 1.59.0
+    validations:
+      required: true
