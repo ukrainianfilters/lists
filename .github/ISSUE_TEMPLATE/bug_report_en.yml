@@ -1,0 +1,109 @@
+name: Filter Issue
+description: Here you can report sites for which there are no filtering rules (you see ads, irritating elements, trackers, etc.) or where our filtering rules do not work correctly
+labels: bug
+assignees: serhiyguryev
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before creating a report:
+
+        1) Make sure there are no problems or conflicts with other browser extensions.
+        2) Make sure you use only one ad blocking (content filtering) extension.
+        3) Disable NoScript, Ghostery, Disconnect, HTTPS Everywhere, Privacy Badger, AntiBanner, VPN extensions and retest (check) the website with which you have problems.
+
+  - type: textarea
+    attributes:
+      label: List the website(s) you're having issues with
+      description: |
+        Website URL is **REQUIRED**
+        Warn if it is a website with **NSFW** content
+      placeholder: |
+        https://example.com.ua
+      render: yaml
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Problem
+      description: Indicate the type of problem you are facing
+      options:
+        - label: Advertising
+          required: false
+        - label: Annoying elements (cookie notifications, pop-ups, banners, etc.)
+          required: false
+        - label: Trackers
+          required: false
+        - label: Malicious website (phishing, online fraud, dropshipping, malware, etc.)
+          required: false
+        - label: Technical issues (filters not working properly, conflicts with other filters, etc.)
+          required: false
+        - label: Other
+          required: false
+
+  - type: textarea
+    attributes:
+      label: Additional description
+      description: If you have additional information about the issue you are facing, please share it here
+    validations:
+      required: false
+
+  - type: textarea
+    attributes:
+      label: Screenshot(s)
+      description: |
+        Screenshot(s) to visually describe the issues
+        Post links instead of inline images for screenshots containing adult material
+      value: |
+        <details>
+        <summary>Screenshot(s)</summary>
+
+        <!-- Drag-and-drop screenshot here -->
+        <!-- ⬇️  ⬇️  ⬇️ -->
+
+
+        <!-- ⬆️  ⬆️  ⬆️ -->
+
+        </details>
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: Filter lists you're using
+      description: Which Ukrainian Filters do you use?
+      options:
+        - label: Ukrainian Filters (uBlock Origin Combined List)
+          required: false
+        - label: Ukrainian Annoyance Filter
+          required: false
+        - label: Ukrainian Security Filter
+          required: false
+
+  - type: input
+    attributes:
+      label: Operating system
+      description: |
+        Indicate which operating system you are using (including version)
+        for example, **Windows 10** or **Android 14**
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Web browser
+      description: |
+        Specify which web browser you are using (including version)
+        for example, **Firefox 128.0.3**
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: Ad block extension
+      description: |
+        Specify which ad blocking extension you are using (including version)
+        for example, **uBlock Origin 1.59.0**
+    validations:
+      required: true
