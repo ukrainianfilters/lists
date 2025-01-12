@@ -86,7 +86,7 @@ body:
       label: Операційна система
       description: |
         Вкажіть, яку операційну систему ви використовуєте (включно з версією)
-        наприклад, Windows 10 або Android 14
+        наприклад, **Windows 10** або **Android 14**
     validations:
       required: true
 
@@ -95,7 +95,7 @@ body:
       label: Браузер
       description: |
         Вкажіть, який веб-браузер ви використовуєте (включно з версією)
-        наприклад, Firefox 128.0.3
+        наприклад, **Firefox 128.0.3**
     validations:
       required: true
 
@@ -104,6 +104,6 @@ body:
       label: Розширення блокування реклами
       description: |
         Вкажіть, яке розширення блокування реклами ви використовуєте (включно з версією)
-        наприклад, uBlock Origin 1.59.0
+        наприклад, **uBlock Origin 1.59.0**
     validations:
       required: true
