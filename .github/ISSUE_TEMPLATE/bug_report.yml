@@ -93,6 +93,7 @@ body:
         - Android
         - iOS
         - Інше
+      default: 0
     validations:
       required: true
 
@@ -115,6 +116,7 @@ body:
         - Chrome for Mobile
         - Opera for Mobile
         - Інше
+      default: 0
     validations:
       required: true
 
