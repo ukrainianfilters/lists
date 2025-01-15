@@ -16,9 +16,8 @@ body:
 
   - type: textarea
     attributes:
-      label: List the website(s) you're having issues with
+      label: List the website(s) you're having issues with (without code blocks)
       description: |
-        Website URL is **REQUIRED**
         Warn if it is a website with **NSFW** content
       placeholder: |
         https://example.com.ua
