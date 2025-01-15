@@ -83,21 +83,39 @@ body:
         - label: Ukrainian Security Filter
           required: false
 
-  - type: input
+  - type: dropdown
     attributes:
       label: Operating system
-      description: |
-        Indicate which operating system you are using (including version)
-        for example, **Windows 10** or **Android 14**
+      description: Indicate which operating system you are using
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Android
+        - iOS
+        - Other
     validations:
       required: true
 
-  - type: input
+  - type: dropdown
     attributes:
       label: Web browser
-      description: |
-        Specify which web browser you are using (including version)
-        for example, **Firefox 128.0.3**
+      description: Specify which web browser you are using
+      options:
+        - Mozilla Firefox
+        - Google Chrome
+        - Apple Safari
+        - Microsoft Edge
+        - Opera
+        - Brave
+        - Vivaldi
+        - DuckDuckGo Browser
+        - Android Browser
+        - Samsung Internet
+        - Firefox for Mobile
+        - Chrome for Mobile
+        - Opera for Mobile
+        - Other
     validations:
       required: true
 
