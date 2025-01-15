@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.01.36
-! Last modified: Sun, 12 January 2025 16:35 EET
+! Version: 25.01.39
+! Last modified: Wed, 15 January 2025 15:42 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -148,6 +148,7 @@ canyon.ua##div.cn-cookies
 carforhero.com###sliding-popup:has(> div.eu-cookie-compliance-banner)
 carta.ua##div.carta-policy-bottom
 censor.net##.stpd_cmp
+censor.net###notification-area
 censor.net###usage_notice
 cersanit.com###cookie-bar
 charivne.info###cookie-bar
@@ -359,6 +360,7 @@ nethunt.ua##div.section-cookieNotification
 netronic.com.ua##div[class^="style_banner__"]:has(> div > div > h3 > a[href="/privacy"])
 newproducts.com##div.cookies-banner
 nic.ua##div.cookie-alert
+nikopolnews.net###wp-bottom-menu
 nomoreransom.org##div.cookie-popup
 nova-era.com.ua##div.cookie-popup
 novadigital.com##div.npd-cookies
