@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.01.38
-! Last modified: Sun, 12 January 2025 23:17 EET
+! Version: 25.01.39
+! Last modified: Wed, 15 January 2025 15:42 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -109,7 +109,7 @@
 /prebidlink/*$script
 ! >>>
 ! zfctrack.net / znctrack.net
-bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,real-vin.com,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
+bigmir.net,businessua.com,censor.net,dengi.ua,epravda.com.ua,f1analytic.com,football24.ua,footballgazeta.com,football-ukraine.com,gazeta.ua,glianec.com,gorod.dp.ua,i.ua,inforesist.org,isport.ua,ivona.ua,liga.net,meteofor.com.ua,pravda.com.ua,real-vin.com,sportanalytic.com,tochka.net,tv.ua,ukr.net,viva.ua##+js(remove-node-text, script, 0x0)
 ! >>>
 beauty.ua,internetua.com,sinoptik.ua##+js(remove-node-text, script, "Shadow, stay, 1)
 ! >>>
@@ -118,6 +118,7 @@ eurointegration.com.ua,pravda.com.ua##script[onerror*="html-load.com"]:watch-att
 eurointegration.com.ua,pravda.com.ua##^script[onload*="html-load.com"]
 ! >>>
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
+glianec.com##+js(remove-node-text, script, location.reload)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 !
 !
@@ -274,6 +275,7 @@ businessua.com##div[data-sender="go2net"]
 businessua.com##div[id^="admixer_"]
 businessua.com##div[id^="adpartner-"]
 censor.net##.right-sidebar div[style^="width: 300px; "]
+censor.net##aside[role="complementary"]:has(> script[src^="//a4.censor.net/js/"])
 censor.net##div.container.d-print-none:has(script[src^="//a4.censor.net/js/"])
 censor.net##div.row.d-print-none:has(script[src^="//a4.censor.net/js/"])
 champion.com.ua##[class$="_banner"]
@@ -439,6 +441,7 @@ football24.ua##p:has(> a[href^="https://tds.favbet.ua/"][target="_blank"])
 football24.ua##p:has(> a[rel*="sponsored"][target="_blank"] > strong)
 football24.ua##p:has(> strong > a[rel*="sponsored"][target="_blank"])
 footballhub.ua##div[class^="ads-container"]
+footballtransfer.com.ua##div.news > center:has(> a[target="_blank"])
 forbes.ua##article:has(span.c-post-author__link:has-text(Партнерський матеріал))
 forbes.ua##div.c-post-additional:has(> div > div > div.c-magazine)
 forbes.ua##div.c-post-subscribe
@@ -481,6 +484,9 @@ glavred.net##div.light-block:has(> div.bnr-block__bnr)
 glavred.net##div.main-partners
 glavred.net##div.partner-news
 glavred.net##div[class*="bnr-block"]
+glianec.com#?##col-left > div.contest-bl:has(> h4:has-text(/новин/i))
+glianec.com#?##col-right > div.bl-middle2:has(> h4 >:has-text(/новини|додати|погода|гороскоп/i))
+glianec.com##div._reachbanner_ + br + b
 gloss.ua##div:has(> div.card > div > div > a > h4 > span.mark-ad)
 goloskarpat.info##aside:has(> aside > i.fa-rectangle-ad)
 gordonua.com##div[class^="advertising"]
@@ -738,6 +744,9 @@ nezhatin.com.ua##aside.widget_text:has(> div.textwidget > p > img.aligncenter)
 nezhatin.com.ua##div.entry-content > p:empty
 nezhatin.com.ua##div.entry-content > p:has(> img.size-full.aligncenter)
 nezhatin.com.ua##div.entry-content > p:has(ins.adsbygoogle)
+nikopolnews.net###post-area > div:has(> p.im > a[target="_blank"])
+nikopolnews.net###sidebar-wrap > div:is(.side-widget, .widget_text):has(h4 > span:has-text(/партнерів|реклама|Новини України/i))
+nikopolnews.net##div[class^="ai-viewport-"]:has(> div > a[target="_blank"])
 nikvesti.com##div.desc-read-more-adv
 nikvesti.com##li:has(ins.adsbygoogle)
 novosti-n.org##div[class*="banner"]
@@ -1366,6 +1375,7 @@ _beacon?
 /wp-statistics-tracker.min.js
 /wp-statistics/assets/js/tracker.js
 /wpr-beacon.min.js
+/xgemius.js
 /yandex-metrica-watch/*
 /yandex-metrika.js
 free*/?channel=*&click=$document
@@ -1411,7 +1421,7 @@ widget.*/build/*/analytics.html$subdocument
 ||sinoptik.ua/informers_js.php^$third-party
 sinoptik.ua/api/location/recent/
 sinoptik.ua/stats/
-4studio.com.ua,blackseanews.net,blitz.if.ua,cripo.com.ua,cvnews.cv.ua,expres.online,fakty.ua,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kontrakty.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,volyninfa.com.ua,volynpost.com,zakarpattya24.com,zaxid.net,zib.com.ua##div#SinoptikInformer
+4studio.com.ua,blackseanews.net,blitz.if.ua,cripo.com.ua,cvnews.cv.ua,expres.online,fakty.ua,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kontrakty.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,nikopolnews.net,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,volyninfa.com.ua,volynpost.com,zakarpattya24.com,zaxid.net,zib.com.ua##div#SinoptikInformer
 ! >>>
 4studio.com.ua##div.home_bottom > div > div:nth-child(3)
 brovary.net.ua##div.elementor-element:has(> div > div > h4:has-text(Погода))
@@ -2983,6 +2993,7 @@ ukr*pos*.$document,to=info|life|top|xyz
 ! >>>
 ! UAC-0102 (CERT-UA#6858)
 *ukr.net$document,to=~ukr.net
+@@||?traffic_source=ukr.net
 passport-ukr-net.$document
 ! >>>
 ! UAC-0125 (CERT-UA#12559)
