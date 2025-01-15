@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.41
-! Last modified: Wed, 15 January 2025 16:51 EET
+! Version: 25.01.42
+! Last modified: Wed, 15 January 2025 19:58 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -159,7 +159,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 event=open&action=firebox_trackevent&box=$domain=bigkyiv.com.ua
 ! >>>
 ! :has(> ins.adsbygoogle)
-1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,ibuhgalter.net,itechua.com,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,nikvesti.com,one.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,protocol.ua,psm7.com,rayon.in.ua,sat.net.ua,sensatsiya.com,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,vcf.vn.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
+1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,cikavopro.com,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,ibuhgalter.net,interes-fakti.com,itechua.com,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,nikvesti.com,one.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,protocol.ua,psm7.com,rayon.in.ua,sat.net.ua,sensatsiya.com,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,vcf.vn.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
 ! :has(> div > ins.adsbygoogle)
 forex.ua,gsminfo.com.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
@@ -287,6 +287,7 @@ chasdiy.org##div.top-content-wrapper
 chasdiy.org##div[class*="__fanner"]
 chasdiy.org##div[class*="fanner__"]
 chytomo.com##div[class^="banner"]
+cikavopro.com###adsense
 cloudgaminghub.net.ua##div.banner-promotions-wrapper
 cloudgaminghub.net.ua##div.widget_media_image:has(figure.wp-block-image > a[href*="boosteroid.com/go/"])
 cloudgaminghub.net.ua##div.widget_media_image:has(figure.wp-block-image > a[href*="ukrline.com.ua/?ref="])
@@ -321,6 +322,9 @@ dev.ua##div.island:has(> div.island__body > div[data-sender="admixer"])
 dev.ua##div.partners-wrapper
 dialog.ua##div.banner
 dialog.ua##div.news-content-ad
+dnipro-day.com,frankivsk-day.com,kharkiv-day.com,khmelnitsk-day.com,kyiv-day.com,lutsk-day.com,lviv-day.com,odesa-day.com,poltava-day.com,rivne-day.com,ternopil-day.com,ukr-day.com,uzhgorod-day.com,vinnitsa-day.com,zhytomyr-day.com##div:has(> a > img:is([alt*="baner"], [alt*="banner"], [src*="banner"]))
+dnipro-day.com,frankivsk-day.com,kharkiv-day.com,khmelnitsk-day.com,kyiv-day.com,lutsk-day.com,lviv-day.com,odesa-day.com,poltava-day.com,rivne-day.com,ternopil-day.com,ukr-day.com,uzhgorod-day.com,vinnitsa-day.com,zhytomyr-day.com##div.merimag-ad-section
+dnipro-day.com,frankivsk-day.com##div:has(> figure> a > img[src*="banner"])
 dou.ua##.promobar
 dou.ua##div.b-adv-events
 dou.ua##div.b-dou-vacancies
@@ -542,6 +546,7 @@ inforesist.org##[class^="partners"]
 informator.ua##div:has(> script[src*="/js/frontend/ad-loaders/"])
 inshe.tv##div.jeg_ad
 inter.ua##div.clear_40:empty
+interes-fakti.com##div:has(> p > ins.adsbygoogle)
 interfax.com.ua##div.ad
 interfax.com.ua##div.ads
 internetua.com##div.article-widget-section:has(div.MIXADVERT_NET)
@@ -640,6 +645,7 @@ krymr.com##div.wsw__embed:has(div.promo)
 ktc.ua##div.decor-banner:has(a[href*="ktc.ua/edilo__"])
 kurs.com.ua###catfishWrap
 kurs.com.ua##div:not(div#bottomWrap).advertising
+kyiv-day.com##div.merimag-widget-container:has(> div > div > script[src*="pagead2.googlesyndication.com"])
 kyiv24.news##.site-header:style(top: 0 !important)
 kyiv24.news##div.main-wrapper:style(margin-top: 0 !important)
 kyiv24.news##div[class$="-adv-item"]
@@ -648,6 +654,7 @@ kyiv24.news##section.google-news
 kyivdictionary.com##div.grafiati-link
 kyivindependent.com##div.bottomPopupBanner
 kyivindependent.com##iframe[data-engage-slug^="popupjoinus"]
+kyivmaps.com##div[class^="section-google"]
 kyivpost.com##div.col-xl-2.d-xl-block:has(> a > img[alt="Kador Group"])
 kyivpost.com##div.section-title:has-text(Sponsored content)
 kyivpost.com##div.section-wrapper:has(> div > a:has-text(Спонсорований контент))
@@ -725,6 +732,7 @@ minfin.com.ua###special-product-offer
 minfin.com.ua##div.aside-pull-right-block:has(> div[id^="premium-"])
 minfin.com.ua##div[data-bn-slot]
 minfin.com.ua##section.special-offers
+miyklas.com.ua##div.sc-wrap
 mmr.net.ua##div.code-block:has(script)
 moviegram.com.ua##div.elementor-element:has(> div > p > a[href="mailto:redaction@moviegram.com.ua"])
 moviegram.com.ua##section.elementor-section:has(> div > div > div > div.elementor-widget-wp-widget-advads_ad_widget)
@@ -755,6 +763,9 @@ novy.tv##div#sticky-ads
 novynarnia.com##.border-shadow:style(-webkit-box-shadow: unset !important; box-shadow: unset !important)
 novynarnia.com##div:has(> div#mt_promo_wghot)
 novyny.live##div.section-charter_promo
+novyny.pro###idealmedia
+novyny.pro##div.adv
+novyny.pro##div.banner_container
 noworries.news##.header-baner
 nv.ua##[data-type="advertising"]
 nv.ua##body.branding:style(padding-top: 20px !important)
@@ -806,6 +817,7 @@ pn.com.ua##div:has(> a[href^="/click/br/"])
 politeka.net##div.ai-placement
 portal.lviv.ua##div[class^="banner"]
 portal.lviv.ua##div[id^="wonderpluginslider-container-"]
+poznavayka.org##aside.widget:has(div > div.rek_bok)
 pravda.com.ua##.unit_sp_place
 pravda.com.ua##article.article_pr
 pravda.com.ua##div.article.article_story_grid:has(> div > div.article_content > span.article_label_adv)
@@ -999,6 +1011,7 @@ uaserials.pro##div.rek1
 uaserials.pro##ins[data-key]
 ufdub.com##aside.side > div.side-b + a[target="_blank"]
 ufdub.com##div:has(> h4:has-text(Реклама))
+ukr-day.com##div.merimag-widget-container:has(> div > a[target="_blank"] > img)
 ukr.net##.fixed-block > div[class] ~ div
 ukr.net##div.advertisement-block
 ukr.net##div.placeholder

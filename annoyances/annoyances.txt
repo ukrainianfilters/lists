@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.01.39
-! Last modified: Wed, 15 January 2025 15:42 EET
+! Version: 25.01.42
+! Last modified: Wed, 15 January 2025 19:58 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -184,6 +184,7 @@ detector.media##div.msg_cooky_blk
 diia.gov.ua##div.cookies-banner-wrapper
 diiacityunited.org##div.cookies-form
 dnepr.express##div.cookie-consent
+dnipro-day.com,frankivsk-day.com,kharkiv-day.com,khmelnitsk-day.com,kyiv-day.com,lutsk-day.com,lviv-day.com,odesa-day.com,poltava-day.com,rivne-day.com,ternopil-day.com,ukr-day.com,uzhgorod-day.com,vinnitsa-day.com,zhytomyr-day.com###telegram-window
 dodam.com.ua##.popup.popup_cookies
 dom.ria.com##div:has(> div.mainContainer > div > div > div > div[data-tm="open-cookies-settings"])
 dom.ria.com##div.c-notifier:has(input[id="gdpr_settings"])
@@ -252,12 +253,14 @@ indigo.co.ua###cookie_notification
 inksystem.biz##div.fixed_bottom
 inshe.tv##div.jnews_popup_post_container
 inter.ua##.warning
+interes-fakti.com###cookie-law-info-bar
 interflora.com.ua###cookies-policy
 interkassa.com##div.cookie-consent
 intertop.ua##div.agreement
 itest.com.ua###clearfy-cookie
 itest.com.ua##div.mypopup-modal-container
 ithillel.ua##.cookie-ntf
+itstep.org##div.cookies-new
 ivaniura.org.ua###accept_cookies
 iveco.com###CybotCookiebotDialog
 jakosport.com.ua##div.notice-module
