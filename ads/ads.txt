@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.40
-! Last modified: Wed, 15 January 2025 16:07 EET
+! Version: 25.01.41
+! Last modified: Wed, 15 January 2025 16:51 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -155,6 +155,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 /assets/plugin/banners/uploads$domain=volynnews.com
 /js/firebox.js$domain=bigkyiv.com.ua
 /sajax/updatebannerstat$domain=volynnews.com
+/so-banners/ajax$domain=stroyobzor.ua
 event=open&action=firebox_trackevent&box=$domain=bigkyiv.com.ua
 ! >>>
 ! :has(> ins.adsbygoogle)
@@ -903,6 +904,8 @@ stopcor.org##aside.videoOfDay
 stopcor.org##div.idealmedia
 storinka.com.ua##div.share
 storinka.com.ua##div.widget:not([class$="hidden-xs"])
+stroyobzor.ua##.bnr-placeholder
+stroyobzor.ua##.bnr-section
 studopedia.com.ua##noindex:has(ins.adsbygoogle)
 subota.online##div.banner_wrapper
 sud.ua##div.b-sidebar-adv
@@ -955,6 +958,7 @@ tribuna.com##div[data-test="bookie-widget"]
 trueua.info###spn-popover-container
 trueua.info##div.categories__category:has(.okadvertisement)
 trueua.info##div.col-12:has(> div > div.tui_title:has-text(Реклама))
+trueua.info##div.container > div.row > div.front-content > div.tui_section__pad:last-child
 trueua.info##div.okadv__block
 trueua.info##div.okadvertisement
 trueua.info##div.twitter
