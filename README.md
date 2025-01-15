@@ -12,7 +12,7 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 ###  Ukrainian Filters (uBlock Origin Combined List)
 
-Список фільтрів, призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо). Розділ `SECURITY FILTERS` містить правила фільтрації, що імпортовані з [Українського безпекового фільтра](https://github.com/braveinnovators/ukrainian-security-filter).
+Список фільтрів (Ads + Privacy + Security), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо). Розділ `SECURITY FILTERS` містить правила фільтрації, що імпортовані з [Українського безпекового фільтра](https://github.com/braveinnovators/ukrainian-security-filter).
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/uBO/uBO.txt
@@ -37,6 +37,10 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 ### Adblock, Adblock Plus, AdGuard
 
 Починаючи з версії 0.5, розробники розширення **Adblock** [вирішили прибрати](https://web.archive.org/web/20111206122411/http://adblockplus.org/en/faq_features#siteblock) функцію блокування веб-сторінок (strict blocking). Це означає, що ані **Adblock**, ані **Adblock Plus** не можуть блокувати доступ до веб-ресурсів на рівні доменного ім'я. Розширення **AdGuard** так само має проблеми з обробкою правил фільтрації ([Issue #2760](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2760)), навіть тих, що прописані в документації цього розширення. Відповідно, ці розширення не є сумісними з нашими фільтрами.
+
+### Brave
+
+Наші фільтри сумісні з модулем фільтрації контенту браузера [Brave](https://brave.com/), оскільки він підтримує [синтаксис фільтрації](https://support.brave.com/hc/en-us/articles/6449369961741-How-do-I-manage-Ad-Block-filters-in-Brave) розширення uBlock Origin.
 
 ### Google Chrome
 
