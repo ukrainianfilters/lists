@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.42
-! Last modified: Wed, 15 January 2025 19:58 EET
+! Version: 25.01.43
+! Last modified: Thu, 16 January 2025 20:40 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -705,6 +705,7 @@ mc.today##div.widget-vacancy
 medicina.ua##div.aside-context > div.item:has(> a[href^="/adv.php?id="])
 medicina.ua##div[class^="brand_"]
 medicina.ua##noindex:has(> div[class^="banner-"])
+medplatforma.com.ua##a[href*="/?utm_source=medplatforma.com.ua"]
 meta.ua##[class^="banner"]
 meta.ua##[class^="bookmaker"]
 meta.ua###meta_banner_center
@@ -829,6 +830,7 @@ pravda.com.ua##div.ym-video--wrapper
 pravdatutnews.com##div.views-code:has(> div[id^="newsAd"])
 predmety.in.ua##div[style="height:550px; weight:auto;"]:empty
 proidei.com##div.ads-widget-block
+prokadry.com.ua##a[href*="/?utm_source=prokadry.com.ua"]
 prolinux.pp.ua##section.widget_block:has(ins.adsbygoogle)
 prom.ua##div[style*="cloud-cgi/static/catalog-ui/js/build/portal-portable/maskWeb-5Wgei.png"]
 proslav.info##div.jeg_ad
