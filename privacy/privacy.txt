@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.01.42
-! Last modified: Wed, 15 January 2025 19:58 EET
+! Version: 25.01.45
+! Last modified: Sun, 26 January 2025 15:38 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -273,7 +273,8 @@ widget.*/build/*/analytics.html$subdocument
 ||sinoptik.ua/informers_js.php^$third-party
 sinoptik.ua/api/location/recent/
 sinoptik.ua/stats/
-4studio.com.ua,blackseanews.net,blitz.if.ua,cripo.com.ua,cvnews.cv.ua,expres.online,fakty.ua,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kontrakty.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,nikopolnews.net,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,volyninfa.com.ua,volynpost.com,zakarpattya24.com,zaxid.net,zib.com.ua##div#SinoptikInformer
+
+4studio.com.ua,blackseanews.net,blitz.if.ua,budport.com.ua,cripo.com.ua,cvnews.cv.ua,expres.online,fakty.ua,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kontrakty.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,nikopolnews.net,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,volyninfa.com.ua,volynpost.com,zakarpattya24.com,zaxid.net,zib.com.ua##div#SinoptikInformer
 ! >>>
 4studio.com.ua##div.home_bottom > div > div:nth-child(3)
 brovary.net.ua##div.elementor-element:has(> div > div > h4:has-text(Погода))
