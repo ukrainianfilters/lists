@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.45
-! Last modified: Sun, 26 January 2025 15:38 EET
+! Version: 25.01.46
+! Last modified: Mon, 27 January 2025 19:54 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -161,7 +161,7 @@ event=open&action=firebox_trackevent&box=$domain=bigkyiv.com.ua
 ! :has(> ins.adsbygoogle)
 1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,cikavopro.com,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,ibuhgalter.net,interes-fakti.com,itechua.com,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,nikvesti.com,one.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,protocol.ua,psm7.com,rayon.in.ua,sat.net.ua,sensatsiya.com,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,vcf.vn.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
 ! :has(> div > ins.adsbygoogle)
-forex.ua,gsminfo.com.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
+forex.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
 032.ua,048.ua,056.ua,057.ua##app-ads-teaser
 032.ua,048.ua,056.ua,057.ua##app-block-widget-banner
