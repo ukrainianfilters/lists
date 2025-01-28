@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.47
-! Last modified: Mon, 27 January 2025 20:00 EET
+! Version: 25.01.48
+! Last modified: Tue, 28 January 2025 21:45 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -129,6 +129,8 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||google.com/adsense/search/ads.js
 ||google.com/adsense/search/async-ads.js
 ! >>>
+/mod_ijoomla_adagency_zone/*$~xmlhttprequest
+! >>>
 ##.nts-ad
 ##.nts-video-wrapper
 !
@@ -156,6 +158,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 /js/firebox.js$domain=bigkyiv.com.ua
 /sajax/updatebannerstat$domain=volynnews.com
 /so-banners/ajax$domain=stroyobzor.ua
+=adagencyAds&task=remote_ad$domain=agro-business.com.ua
 event=open&action=firebox_trackevent&box=$domain=bigkyiv.com.ua
 ! >>>
 ! :has(> ins.adsbygoogle)
@@ -210,6 +213,7 @@ forex.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 5.ua##div[class$="banner"]:has(div[id^="div-gpt-ad-"])
 agro-business.com.ua###pwebbox234
 agro-business.com.ua###sp-breadcrumb
+agro-business.com.ua##div.apm-container:has(script[src*="&task=remote_ad"])
 agro-business.com.ua##div.live__wallper
 agro-business.com.ua##div.remote_ads
 agronews.ua##div[class*="banner"]
@@ -403,6 +407,9 @@ eurointegration.com.ua##a[href="https://www.ukr.net/"]
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
 euromaidanpress.com##div.kompreno
 exo.in.ua##div.right > div:first-of-type
+expert.com.ua##div:has(> a[target="_blank"] > img[src*="/images/referral/"])
+expert.com.ua##div:has(> div > div.wpb_wrapper > div > a[target="_blank"] > img[src*="_banner-"])
+expert.com.ua##div.nadavi-widget
 expres.online##div.advertisement
 factor.academy##.get_html_banner_for_category
 fakty.com.ua##div.hide-mobile:has(div.adaptive-iframe-wrapper[style="background: black;"])
