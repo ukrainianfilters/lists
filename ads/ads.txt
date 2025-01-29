@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.01.48
-! Last modified: Tue, 28 January 2025 21:45 EET
+! Version: 25.01.49
+! Last modified: Wed, 29 January 2025 22:47 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -131,8 +131,11 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ! >>>
 /mod_ijoomla_adagency_zone/*$~xmlhttprequest
 ! >>>
+##.ad-300
 ##.nts-ad
 ##.nts-video-wrapper
+##ins.adsbygoogle[data-ad-client]
+##ins.adsbygoogle[data-ad-slot]
 !
 !
 ! !!!!!!!!!!!!!!!
@@ -162,7 +165,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 event=open&action=firebox_trackevent&box=$domain=bigkyiv.com.ua
 ! >>>
 ! :has(> ins.adsbygoogle)
-1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,cikavopro.com,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,ibuhgalter.net,interes-fakti.com,itechua.com,itsider.com.ua,learn-english.net.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,nikvesti.com,one.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,protocol.ua,psm7.com,rayon.in.ua,sat.net.ua,sensatsiya.com,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,vcf.vn.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
+1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,cikavopro.com,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,ibuhgalter.net,interes-fakti.com,itechua.com,itsider.com.ua,learn-english.net.ua,life.kyiv.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,nikvesti.com,one.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,protocol.ua,psm7.com,rayon.in.ua,sat.net.ua,sensatsiya.com,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,vcf.vn.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
 ! :has(> div > ins.adsbygoogle)
 forex.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
@@ -694,6 +697,9 @@ ligazakon.net##div.texts
 ligazakon.net##section.actualsinglepage_promo_product
 ligazakon.net##section.jurist_firm_sidebar_block
 ligazakon.net##section.promo_block_placeholder
+lvivport.com##div.adlinks
+lvivport.com##div.topbanner
+lvivport.com##div[class^="categoryad"]
 lvnews.org.ua##a:has(> img[class*="advert-box"])
 lvnews.org.ua##div.row.top-post-box
 lvnews.org.ua##hr.base-post-divider + a
@@ -811,9 +817,11 @@ ostro.org##div.press-reliz
 ostro.org##div[class^="banner-"]
 ostro.org##div[id^="banner-"]
 osvita.ua##div:has(> div.blosk-advertising-google)
+osvita.ua##div.artbanner
 osvita.ua##div.article__advertising
 osvita.ua##div.banners-groups
 osvita.ua##div[class^="baners-"]
+osvita.ua##div[data-sender="admixer"]
 overclockers.ua##div[class^="ad_slot"]
 parta.com.ua##div:has(> a[href$="&utm_campaign=parta"][target="_blank"])
 parta.com.ua##div[style^="border:1px solid "]:has(img[src^="/edu_image/"])
@@ -938,6 +946,7 @@ stroyobzor.ua##.bnr-section
 studopedia.com.ua##noindex:has(ins.adsbygoogle)
 subota.online##div.banner_wrapper
 sud.ua##div.b-sidebar-adv
+sum.in.ua##div.ad
 sumypost.com###aside-poster > div.sb-element.media[style^="padding:0"]
 synonimy.info##body:style(background-image: none !important)
 tabletki.ua##div.adunit
@@ -1029,6 +1038,9 @@ uaserials.pro##ins[data-key]
 ufdub.com##aside.side > div.side-b + a[target="_blank"]
 ufdub.com##div:has(> h4:has-text(Реклама))
 ukr-day.com##div.merimag-widget-container:has(> div > a[target="_blank"] > img)
+ukr-mova.in.ua##div.container:has(> ins.adsbygoogle)
+ukr-mova.in.ua##div.row:has(> div.cloud > ins.adsbygoogle)
+ukr-mova.in.ua##div.row:has(> ins.adsbygoogle)
 ukr.net##.fixed-block > div[class] ~ div
 ukr.net##div.advertisement-block
 ukr.net##div.placeholder
@@ -1113,6 +1125,9 @@ viva.ua##section.article-partners
 vogue.ua##div.box__bnr
 vogue.ua##div.timer_block
 vogue.ua##div[data-sender="admixer"]
+volkswagen.lviv.ua##div.adlinks
+volkswagen.lviv.ua##div.topbanner
+volkswagen.lviv.ua##div[class^="categoryad"]
 volyn.com.ua##a.bg-banner
 volyn.com.ua##div.gpt-main
 volyninfa.com.ua##aside#sidebar > div > div[id^="media_image-"]
@@ -1127,6 +1142,8 @@ vseazs.com##div.center_container
 vseazs.com##p[align="center"]:has-text(Наші партнери)
 vynnyky-visnyk.com.ua##div.wpb_single_image:has(> figure > div > img.vc_single_image-img)
 weukraine.tv##div[data-action="banners"]
+womo.ua##div[class*="-banner"]
+womo.ua##div[data-sender="admixer"]
 work.ua###react-video-player
 work.ua##div.hidden-print:has(> a[onclick="openReactVideoPlayer()"])
 work.ua##iframe + div.h-exception
