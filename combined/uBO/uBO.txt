@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.01.49
-! Last modified: Wed, 29 January 2025 22:47 EET
+! Version: 25.02.50
+! Last modified: Sat, 01 February 2025 20:32 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -137,6 +137,8 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ##.ad-300
 ##.nts-ad
 ##.nts-video-wrapper
+##div[id*="MarketGid"]
+##div[id*="ScriptRoot"]
 ##ins.adsbygoogle[data-ad-client]
 ##ins.adsbygoogle[data-ad-slot]
 !
@@ -848,6 +850,7 @@ pravda.com.ua##.unit_sp_place
 pravda.com.ua##article.article_pr
 pravda.com.ua##div.article.article_story_grid:has(> div > div.article_content > span.article_label_adv)
 pravda.com.ua##div.article.article_view_sm:has(> div > div > div > span.article_label_adv)
+pravda.com.ua##div.block_header:has-text(IDEALMEDIA)
 pravda.com.ua##div.container_special
 pravda.com.ua##div.promoted_article
 pravda.com.ua##div.section_articles:has(> div > div > h3 > a[href$="/projects/"])
