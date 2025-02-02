@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.01.45
-! Last modified: Sun, 26 January 2025 15:38 EET
+! Version: 25.02.2
+! Last modified: Sun, 02 February 2025 20:59 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -198,6 +198,7 @@ dtkt.ua##div.subscription-notification
 dyvys.info##aside.cta-telegram
 e-likari.com.ua##div.cookie-notification
 eba.com.ua##div.user-cookie-notice
+ecommercebridge.co.ua##div#cc-main:has(> div > div > div > div > div > button[data-role="all"])
 ecomodule.com.ua##div.l-cookie
 elfashop.ua###cookies
 eobuv.com.ua##.modal-consents
@@ -224,6 +225,7 @@ forbes.ua##div.modal:has(img[src*="paywall.forbes.ua/static/content/"])
 founder.ua##div.boxCookies
 fozzyshop.ua###iqitcookielaw
 freelancehunt.com###cookie-bar
+friendsclub.com.ua##div[class*="__CookiesBanner--"]
 funduk.ua###cookie_inform
 gagadget.com##div.l-container:has(> div > div > a[href$="t.me/gagadget_uk"])
 gagadget.com##div.l-container:has(> div > div.social-likes_gg)
@@ -233,6 +235,7 @@ greenfort-ua.com##div[data-storage-item*="cookiename_"]
 gsm.in.ua##.notice--cookie
 gsminfo.com.ua###share-buttons-top
 gsminfo.com.ua##div.code-block:has(> div.wenews)
+gymbeam.ua##div:has(> div > a[title="privacy policy"])
 harveast.com##div.cookie_notice
 harvest-clothing.com.ua###policy
 hellohelen.com##div.cookie-box
@@ -250,6 +253,7 @@ igns.gov.ua##aside#moove_gdpr_cookie_info_bar
 ilounge.ua##div.signup-form-launcher
 incrypted.com##.incrypted-cookie-bar
 indigo.co.ua###cookie_notification
+infoit.com.ua###cookie-law-info-bar
 inksystem.biz##div.fixed_bottom
 inshe.tv##div.jnews_popup_post_container
 inter.ua##.warning
@@ -260,6 +264,8 @@ intertop.ua##div.agreement
 itest.com.ua###clearfy-cookie
 itest.com.ua##div.mypopup-modal-container
 ithillel.ua##.cookie-ntf
+ithillel.ua##div.consent-banner
+ithillel.ua##div.widget-sprint-magnet
 itstep.org##div.cookies-new
 ivaniura.org.ua###accept_cookies
 iveco.com###CybotCookiebotDialog
@@ -344,6 +350,8 @@ mills.com.ua##div.modal__accept__cookies
 mind.ua##div.follow_us_buttons
 mind.ua##div.post__frame:has(> p > b > em > a[href$="+hXSbS73Cx0g5MmQy"])
 mind.ua##div.right_column > div.b-info-block_secondary:has(> h2[onclick*="mind.ua/vacancies"])
+mizol.ua##div.soglashenie
+mizol.ua##div.soglashenie_back
 mmr.ua##div.facebook-suggest
 mmr.ua##div.new-video-block
 mmr.ua##div.telegram-suggest
