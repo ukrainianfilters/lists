@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.02.1
-! Last modified: Sat, 01 February 2025 20:35 EET
+! Version: 25.02.2
+! Last modified: Sun, 02 February 2025 20:59 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -43,6 +43,7 @@
 ||stpd.cloud^
 ||trafficbass.com^
 ||trafficdok.com^
+||wpadmngr.com^
 ||xcartpro.com^
 ! >>>
 ||2xclick.ru^$third-party
@@ -54,6 +55,7 @@
 ||c.hit.ua^$third-party
 ||cdn.umh.ua^$third-party
 ||cdnkma.biz^$third-party
+||clickua200.pp.ua^$third-party
 ||crashlytics.ru^$third-party
 ||exchange.informer.ua^$third-party
 ||go2net.com.ua^$third-party
@@ -131,9 +133,18 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ! >>>
 /mod_ijoomla_adagency_zone/*$~xmlhttprequest
 ! >>>
+###td-ad-placeholder
+! >>>
 ##.ad-300
+##.adx_center
 ##.nts-ad
 ##.nts-video-wrapper
+##.td-a-rec-id-custom_ad_1
+##.td-a-rec-id-custom_ad_2
+##.td-a-rec-id-custom_ad_3
+##.td-a-rec-id-custom_ad_4
+##.td-a-rec-id-custom_ad_5
+! >>>
 ##div[id*="MarketGid"]
 ##div[id*="ScriptRoot"]
 ##ins.adsbygoogle[data-ad-client]
@@ -311,6 +322,9 @@ comments.ua##div:has(> a[target="_blank"] > img[src*="comments.ua/adv_img/"])
 comments.ua##div.atlanta
 comments.ua##div.bot_r
 comments.ua##div.tops_r
+contentwriter.com.ua##div.side-banner
+contentwriter.com.ua##div.side-banner-carrier
+contentwriter.com.ua##div.side-banner-training
 crimezone.in.ua##div.page-rkl
 cripo.com.ua###custom_html-8
 cvnews.cv.ua##a:has(> img[class*="advert-box"])
@@ -558,6 +572,7 @@ infocar.ua###contentbg:style(margin-top: 35px !important)
 infocar.ua###premban
 infocar.ua###totalbg:style(background-image: unset !important)
 infocar.ua###vipbottombanner
+infoit.com.ua##aside.widget:has(> center > ins.adsbygoogle)
 inforesist.org##.advert
 inforesist.org##.dw_focus_widget_news_ticker
 inforesist.org##[class^="partners"]
@@ -609,6 +624,7 @@ itc.ua##li[id^="partner-posts"]
 itc.ua##p.intro:has(a[href*="?utm_source=itc.ua&utm_medium=branding"])
 itc.ua##p.intro[style*="background: linear-gradient"]
 itechua.com##div.td_block_wrap:has(> div > p > span:has-text(Реклама))
+itnet.com.ua###reply-title
 itsider.com.ua##div.xjo:has(> div[data-type="custom_code"])
 itvua.tv##.adwrapper
 itvua.tv##[class*="banner"]
@@ -898,6 +914,7 @@ rubryka.com##div.single-page__social
 rubryka.com##div[class*="advertisment"]
 rubryka.com##div[style="padding: 0 0 30px"]
 rud.ua##a.branding__link
+scanprice.com.ua##div.product-list-item.item:has(> ins.adsbygoogle)
 serialno.tv##body:style(padding-top: unset !important)
 serialno.tv##div[id^="zone_"]
 shuba.life##article[data-partner="silpo"]
