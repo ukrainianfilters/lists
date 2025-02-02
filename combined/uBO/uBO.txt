@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.02.1
-! Last modified: Sat, 01 February 2025 20:35 EET
+! Version: 25.02.2
+! Last modified: Sun, 02 February 2025 20:59 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -46,6 +46,7 @@
 ||stpd.cloud^
 ||trafficbass.com^
 ||trafficdok.com^
+||wpadmngr.com^
 ||xcartpro.com^
 ! >>>
 ||2xclick.ru^$third-party
@@ -57,6 +58,7 @@
 ||c.hit.ua^$third-party
 ||cdn.umh.ua^$third-party
 ||cdnkma.biz^$third-party
+||clickua200.pp.ua^$third-party
 ||crashlytics.ru^$third-party
 ||exchange.informer.ua^$third-party
 ||go2net.com.ua^$third-party
@@ -134,9 +136,18 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ! >>>
 /mod_ijoomla_adagency_zone/*$~xmlhttprequest
 ! >>>
+###td-ad-placeholder
+! >>>
 ##.ad-300
+##.adx_center
 ##.nts-ad
 ##.nts-video-wrapper
+##.td-a-rec-id-custom_ad_1
+##.td-a-rec-id-custom_ad_2
+##.td-a-rec-id-custom_ad_3
+##.td-a-rec-id-custom_ad_4
+##.td-a-rec-id-custom_ad_5
+! >>>
 ##div[id*="MarketGid"]
 ##div[id*="ScriptRoot"]
 ##ins.adsbygoogle[data-ad-client]
@@ -314,6 +325,9 @@ comments.ua##div:has(> a[target="_blank"] > img[src*="comments.ua/adv_img/"])
 comments.ua##div.atlanta
 comments.ua##div.bot_r
 comments.ua##div.tops_r
+contentwriter.com.ua##div.side-banner
+contentwriter.com.ua##div.side-banner-carrier
+contentwriter.com.ua##div.side-banner-training
 crimezone.in.ua##div.page-rkl
 cripo.com.ua###custom_html-8
 cvnews.cv.ua##a:has(> img[class*="advert-box"])
@@ -561,6 +575,7 @@ infocar.ua###contentbg:style(margin-top: 35px !important)
 infocar.ua###premban
 infocar.ua###totalbg:style(background-image: unset !important)
 infocar.ua###vipbottombanner
+infoit.com.ua##aside.widget:has(> center > ins.adsbygoogle)
 inforesist.org##.advert
 inforesist.org##.dw_focus_widget_news_ticker
 inforesist.org##[class^="partners"]
@@ -612,6 +627,7 @@ itc.ua##li[id^="partner-posts"]
 itc.ua##p.intro:has(a[href*="?utm_source=itc.ua&utm_medium=branding"])
 itc.ua##p.intro[style*="background: linear-gradient"]
 itechua.com##div.td_block_wrap:has(> div > p > span:has-text(Реклама))
+itnet.com.ua###reply-title
 itsider.com.ua##div.xjo:has(> div[data-type="custom_code"])
 itvua.tv##.adwrapper
 itvua.tv##[class*="banner"]
@@ -901,6 +917,7 @@ rubryka.com##div.single-page__social
 rubryka.com##div[class*="advertisment"]
 rubryka.com##div[style="padding: 0 0 30px"]
 rud.ua##a.branding__link
+scanprice.com.ua##div.product-list-item.item:has(> ins.adsbygoogle)
 serialno.tv##body:style(padding-top: unset !important)
 serialno.tv##div[id^="zone_"]
 shuba.life##article[data-partner="silpo"]
@@ -1235,6 +1252,7 @@ zz.te.ua##.advads-widget
 ||c.bigmir.net^
 ||c.mgid.com^
 ||clarity.ms^
+||counter.mirohost.net^
 ||counter.nv.ua^
 ||counter.ukr.net^
 ||counter.yadro.ru^
@@ -1281,7 +1299,7 @@ zz.te.ua##.advads-widget
 ||analitycs.net^$third-party
 ||api.country.is^$third-party
 ||api.ipgeolocation.io^$third-party,domain=trueprice.ua
-||api.ipify.org^$third-party,domain=netronic.com.ua
+||api.ipify.org^$third-party,domain=friendsclub.com.ua|netronic.com.ua
 ||artfut.com^$third-party
 ||bpmonline.com^$third-party
 ||cdn.onesignal.com^$third-party
@@ -1296,11 +1314,13 @@ zz.te.ua##.advads-widget
 ||cralodas.com.ua^$third-party
 ||crazyegg.com^$third-party
 ||demdex.net^$third-party
+||dev.visualwebsiteoptimizer.com^$third-party
 ||fixidle.com^$third-party
 ||getpush.net^$third-party
 ||getstat.net^$third-party
 ||googleoptimize.com^$third-party,domain=censor.net|ua.puma.com
 ||gravitec.net^$third-party
+||handler.wt0.me^$third-party
 ||histats.com^$third-party
 ||hotjar.com^$third-party
 ||hotjar.io^$third-party
@@ -1318,7 +1338,9 @@ zz.te.ua##.advads-widget
 ||onthe.io^$third-party
 ||p.nexinsight.com.ua^$third-party
 ||pa-cd.com^$third-party
+||pixel.lun.ua^$third-party
 ||plerdy.com^$third-party
+||psh.one^$third-party
 ||pxf.io^$third-party
 ||scorecardresearch.com^$third-party
 ||sendpulse.com^$third-party
@@ -1341,7 +1363,9 @@ zz.te.ua##.advads-widget
 ||analytics.*/collect
 ||analytics.nikvesti.com/matomo.js
 ||api-iam.intercom.io/messenger/web/metrics
+||apkcafe.com.ua/stat/
 ||bitrix.info/ba.js
+||bucha.com.ua/mirolog.js
 ||buki.com.ua/scripts/pixel.js
 ||clickiocdn.com/clickiotag_log/
 ||clickiocdn.com/consent/log/
@@ -1359,6 +1383,8 @@ zz.te.ua##.advads-widget
 ||hotline.ua/svc/tracking/
 ||hsforms.com/embed/v3/counters.gif
 ||itstep.org/js/sentry.js
+||locator.ua/js/stat.js
+||locator.ua/report.php
 ||mate.academy/amplitude/
 ||mate.academy/dwh
 ||moonanime.art/api/stats/
@@ -1391,14 +1417,17 @@ zz.te.ua##.advads-widget
 ||yesport.com.ua/counter/
 ! >>>
 _beacon?
-/?sentry_key=$domain=epicentrk.ua
+/?sentry_key=$domain=epicentrk.ua|gymbeam.ua
 /ads-blocking-detector.$script,domain=kyivstar.ua
 /ajax/bz?_
 /analytic_click.js$domain=vodafone.ua
+/analytics.*/collect
 /analytics.*/event
+/analytics.*/ping/?
 /analytics.*/track
 /analytics.js$domain=enguide.ua|ideabank.ua|prometheus.org.ua
 /analytics/?event=
+/analytics/add$domain=ithillel.ua
 /analytics/event
 /breek/assets/images/transparent.gif
 /call.tracker.js
@@ -1408,6 +1437,7 @@ _beacon?
 /dist/web-vitals.iife.js
 /fbevents.js
 /fbevents.min.js
+/fingerprint2.min.js$domain=locator.ua
 /frontend-gtag.js
 /frontend-gtag.min.js
 /fusion/lucid/data/*
