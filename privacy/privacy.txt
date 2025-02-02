@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.01.49
-! Last modified: Wed, 29 January 2025 22:47 EET
+! Version: 25.02.2
+! Last modified: Sun, 02 February 2025 20:59 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -25,6 +25,7 @@
 ||c.bigmir.net^
 ||c.mgid.com^
 ||clarity.ms^
+||counter.mirohost.net^
 ||counter.nv.ua^
 ||counter.ukr.net^
 ||counter.yadro.ru^
@@ -71,7 +72,7 @@
 ||analitycs.net^$third-party
 ||api.country.is^$third-party
 ||api.ipgeolocation.io^$third-party,domain=trueprice.ua
-||api.ipify.org^$third-party,domain=netronic.com.ua
+||api.ipify.org^$third-party,domain=friendsclub.com.ua|netronic.com.ua
 ||artfut.com^$third-party
 ||bpmonline.com^$third-party
 ||cdn.onesignal.com^$third-party
@@ -86,11 +87,13 @@
 ||cralodas.com.ua^$third-party
 ||crazyegg.com^$third-party
 ||demdex.net^$third-party
+||dev.visualwebsiteoptimizer.com^$third-party
 ||fixidle.com^$third-party
 ||getpush.net^$third-party
 ||getstat.net^$third-party
 ||googleoptimize.com^$third-party,domain=censor.net|ua.puma.com
 ||gravitec.net^$third-party
+||handler.wt0.me^$third-party
 ||histats.com^$third-party
 ||hotjar.com^$third-party
 ||hotjar.io^$third-party
@@ -108,7 +111,9 @@
 ||onthe.io^$third-party
 ||p.nexinsight.com.ua^$third-party
 ||pa-cd.com^$third-party
+||pixel.lun.ua^$third-party
 ||plerdy.com^$third-party
+||psh.one^$third-party
 ||pxf.io^$third-party
 ||scorecardresearch.com^$third-party
 ||sendpulse.com^$third-party
@@ -131,7 +136,9 @@
 ||analytics.*/collect
 ||analytics.nikvesti.com/matomo.js
 ||api-iam.intercom.io/messenger/web/metrics
+||apkcafe.com.ua/stat/
 ||bitrix.info/ba.js
+||bucha.com.ua/mirolog.js
 ||buki.com.ua/scripts/pixel.js
 ||clickiocdn.com/clickiotag_log/
 ||clickiocdn.com/consent/log/
@@ -149,6 +156,8 @@
 ||hotline.ua/svc/tracking/
 ||hsforms.com/embed/v3/counters.gif
 ||itstep.org/js/sentry.js
+||locator.ua/js/stat.js
+||locator.ua/report.php
 ||mate.academy/amplitude/
 ||mate.academy/dwh
 ||moonanime.art/api/stats/
@@ -181,14 +190,17 @@
 ||yesport.com.ua/counter/
 ! >>>
 _beacon?
-/?sentry_key=$domain=epicentrk.ua
+/?sentry_key=$domain=epicentrk.ua|gymbeam.ua
 /ads-blocking-detector.$script,domain=kyivstar.ua
 /ajax/bz?_
 /analytic_click.js$domain=vodafone.ua
+/analytics.*/collect
 /analytics.*/event
+/analytics.*/ping/?
 /analytics.*/track
 /analytics.js$domain=enguide.ua|ideabank.ua|prometheus.org.ua
 /analytics/?event=
+/analytics/add$domain=ithillel.ua
 /analytics/event
 /breek/assets/images/transparent.gif
 /call.tracker.js
@@ -198,6 +210,7 @@ _beacon?
 /dist/web-vitals.iife.js
 /fbevents.js
 /fbevents.min.js
+/fingerprint2.min.js$domain=locator.ua
 /frontend-gtag.js
 /frontend-gtag.min.js
 /fusion/lucid/data/*
