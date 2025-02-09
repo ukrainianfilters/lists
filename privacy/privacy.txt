@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.02.2
-! Last modified: Sun, 02 February 2025 20:59 EET
+! Version: 25.02.3
+! Last modified: Sun, 09 February 2025 16:23 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -42,6 +42,7 @@
 ||log.pinterest.com^
 ||mmi.bemobile.ua^
 ||nothingimportant.pro^
+||panorama.wixapps.net^
 ||pipe-collect.ebu.io^
 ||pla.fwdcdn.com^
 ||player-telemetry.vimeo.com^
@@ -89,6 +90,7 @@
 ||demdex.net^$third-party
 ||dev.visualwebsiteoptimizer.com^$third-party
 ||fixidle.com^$third-party
+||frog.wix.com^$image,ping,xmlhttprequest
 ||getpush.net^$third-party
 ||getstat.net^$third-party
 ||googleoptimize.com^$third-party,domain=censor.net|ua.puma.com
@@ -194,6 +196,7 @@ _beacon?
 /ads-blocking-detector.$script,domain=kyivstar.ua
 /ajax/bz?_
 /analytic_click.js$domain=vodafone.ua
+/analytics-reporter/*
 /analytics.*/collect
 /analytics.*/event
 /analytics.*/ping/?
@@ -238,6 +241,7 @@ _beacon?
 /track/__cool.gif?data=
 /utag.sync.js$domain=holosameryky.com|radiosvoboda.org
 /visitor.min.js
+/wix-engage-visitors-
 /wp-statistics-tracker.min.js
 /wp-statistics/assets/js/tracker.js
 /wpr-beacon.min.js
