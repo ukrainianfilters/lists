@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.02.3
-! Last modified: Sun, 09 February 2025 16:23 EET
+! Version: 25.02.4
+! Last modified: Sun, 23 February 2025 21:51 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -85,6 +85,7 @@
 ||smi.pp.ua^$third-party
 ||stat.hdvbua.pro^$third-party
 ||stteeruptowind.com^$third-party
+||topadsua.xyz^$third-party
 ||traffim.com^$third-party
 ||traffsender.com^$third-party
 ||trafmag.com^$third-party
@@ -149,6 +150,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ##.td-a-rec-id-custom_ad_4
 ##.td-a-rec-id-custom_ad_5
 ! >>>
+##[data-revive-zoneid]
 ##div[id*="MarketGid"]
 ##div[id*="ScriptRoot"]
 ##ins.adsbygoogle[data-ad-client]
@@ -762,6 +764,7 @@ meteoprog.com##div[id^="mp_banner_"]
 mezha.media##.block-novyny-partneriv
 mezha.media##div:has(> a.banner-link)
 mezha.media##div.news-item:has(a[rel="author"]:has-text(Promoted))
+mezha.media##div.section_news_adv
 mil.in.ua##div.ads
 mind.ua###promo-catfish
 mind.ua##div.b-info-block__content > div > div:has(> div > a[href$="/ad"])
@@ -940,7 +943,10 @@ speka.media##div.max-w-material-l:has(h3.socials__title)
 speka.media##div.swiper-wrapper > div.swiper-slide:has(span.talk-swiper__author:has-text(Спекотне промо))
 speka.media##section.news-on-main > div.post-wrapper:has(span.news-item__author > span:has-text(Спекотне промо))
 sport-express.ua##div.sadse
+sport-express.ua##div.sidebar-home-link:has(> span > a[target="_blank"])
+sport-express.ua##div.widgetAffiliatesArticles
 sport-express.ua##div.widgetBestBookmakers
+sport-express.ua##div.widgetBestBookmakersNews
 sport.ua##[class^="partners"]
 sport.ua##div.best_bookies
 sport.ua##div.item:has-text(СТАВКА ДНЯ)
@@ -1078,6 +1084,9 @@ ukranews.com##noindex:has(.advertising)
 ukranews.com##noindex:has(> div[class*="-banner"])
 ukrdz.in.ua##section.widget:has(script[src*="//jsc.mgid.com"])
 ukrfootball.ua##.saduf:has(iframe)
+ukrfootball.ua##aside.right_column > section:has(div.top_bookmaker_w)
+ukrfootball.ua##div.shortcode:has(> div > div a[href*="/bookmaker/"])
+ukrfootball.ua##div.widgetBestBookmakersNews
 ukrfootball.ua##section.best_game_sec
 ukrinform.ua##[class*="banner"]
 ukrinform.ua##[id*="banner"]
