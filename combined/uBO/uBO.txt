@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.03.3
-! Last modified: Fri, 07 March 2025 19:19 EET
+! Version: 25.03.4
+! Last modified: Fri, 07 March 2025 20:14 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -55,6 +55,7 @@
 ||adhigh.net^$third-party
 ||admixer.net^$third-party
 ||bidder.smartytouch.co^$third-party
+||bodis.com^$third-party
 ||c.hit.ua^$third-party
 ||cdn.umh.ua^$third-party
 ||cdnkma.biz^$third-party
@@ -180,6 +181,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||informator.ua/js/frontend/ad-loaders
 ||medicina.ua/adv.php
 ||medicina.ua/adv/async.php
+||momondo.ua/ugtm/
 ||obyava.ua/js/advert.js
 ||patient-docs.com/theme/js/ads.js
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
@@ -187,6 +189,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||tsn.ua/static/pub/js/advertize.js
 ||tsn.ua/static/pub/js/membrana-video.js
 ! >>>
+/ads/dfp$domain=momondo.ua
 /assets/plugin/banners/uploads$domain=volynnews.com
 /js/firebox.js$domain=bigkyiv.com.ua
 /sajax/updatebannerstat$domain=volynnews.com
@@ -1336,11 +1339,13 @@ zz.te.ua##.advads-widget
 ||alfabankua.zendesk.com^$third-party
 ||amplitude.com^$third-party,domain=favbet.ua
 ||analitycs.net^$third-party
+||analytics.omnimind.ai^$third-party
 ||api.country.is^$third-party
 ||api.ipgeolocation.io^$third-party,domain=trueprice.ua
 ||api.ipify.org^$third-party,domain=friendsclub.com.ua|netronic.com.ua
 ||artfut.com^$third-party
 ||bpmonline.com^$third-party
+||c.apserver.org.ua^$third-party
 ||cdn.onesignal.com^$third-party
 ||chartbeat.com^$third-party
 ||clicksfordsm.com^$third-party
@@ -1406,6 +1411,7 @@ zz.te.ua##.advads-widget
 ||api-iam.intercom.io/messenger/web/metrics
 ||apkcafe.com.ua/stat/
 ||bitrix.info/ba.js
+||booknet.ua/tracker/
 ||bucha.com.ua/mirolog.js
 ||buki.com.ua/scripts/pixel.js
 ||clickiocdn.com/clickiotag_log/
@@ -1417,13 +1423,17 @@ zz.te.ua##.advads-widget
 ||dou.ua/ajax-impressions-track/
 ||dsp.gov.ua/wp-content/plugins/wp-accessibility/js/fingerprint.min.js
 ||duckduckgo.com/t/
+||ek.ua/img/p.gif
 ||elmir.ua/response/th.php?i=
 ||elmir.ua/response/update_basket.php?t&gen=
 ||eva.ua/assets/scripts/multisearch-tracker.js
 ||gepur.com/logs
 ||hotline.ua/svc/tracking/
 ||hsforms.com/embed/v3/counters.gif
+||i.factor.ua/js/analytics_factor.js
 ||itstep.org/js/sentry.js
+||langlover.com.ua/api/countview/
+||langlover.com.ua/api/proxy/honeycomb
 ||locator.ua/js/stat.js
 ||locator.ua/report.php
 ||mate.academy/amplitude/
@@ -1444,6 +1454,8 @@ zz.te.ua##.advads-widget
 ||shareaholic.com/analytics_
 ||shareaholic.com/partners.js
 ||stat.techomsend.com/stat.svg?p=
+||tdl.com.ua/user_stat.php
+||teach-inf.com.ua/stat/
 ||tiktok.com/web/report?
 ||tiktokv.com/monitor_browser/
 ||top-js-metrics.top.my.ua/script.js
@@ -1477,6 +1489,7 @@ _beacon?
 /breek/assets/images/transparent.gif
 /call.tracker.js
 /cdn-cgi/zaraz/*
+/client/index.gif$domain=dom.ria.com
 /dist/web-vitals.attribution.iife.js
 /dist/web-vitals.attribution.js
 /dist/web-vitals.iife.js
@@ -1494,6 +1507,8 @@ _beacon?
 /images/pixel.png$domain=wayforpay.com
 /insights-collector.
 /li.lms-analytics/insight.min.js$domain=betconstruct.com
+/log?format=
+/log/client/messages
 /log/error?
 /OtAutoBlock.js$domain=glovoapp.com
 /peach-collector.min.js
@@ -1505,6 +1520,7 @@ _beacon?
 /rum.min.js
 /rum/events
 /ruxitagentjs_$domain=kyivstar.ua
+/s/vestigo/measure
 /spacer.gif?$domain=nabu.ua
 /stats.*/hits/*
 /track/__cool.gif?data=
@@ -1520,6 +1536,7 @@ _beacon?
 free*/?channel=*&click=$document
 ! >>>
 ||report.error-report.com^$subdocument
+||widget-cz.ukc.gov.ua/build/*/analytics.html$subdocument
 widget.*/build/*/analytics.html$subdocument
 ! >>>
 ||cdn.segment.com/analytics.js/$script,domain=helsi.me
