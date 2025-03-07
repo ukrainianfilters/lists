@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.03.1
-! Last modified: Fri, 07 March 2025 18:59 EET
+! Version: 25.03.3
+! Last modified: Fri, 07 March 2025 19:19 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -171,6 +171,7 @@ comments.ua###push_info
 concord.ua##.warning-cookie
 coolinfo.in.ua##aside#rb-privacy
 creativestates.net##div[class^="Cookies_cookies__"]
+crezu.com.ua##div.push
 cvnews.cv.ua##.remodal-is-locked:style(overflow: unset !important)
 cvnews.cv.ua##div.remodal-overlay
 cvnews.cv.ua##div.remodal-wrapper
@@ -229,9 +230,11 @@ friendsclub.com.ua##div[class*="__CookiesBanner--"]
 funduk.ua###cookie_inform
 gagadget.com##div.l-container:has(> div > div > a[href$="t.me/gagadget_uk"])
 gagadget.com##div.l-container:has(> div > div.social-likes_gg)
+getsmart.com.ua##div.sccm
 gorod.dp.ua###myCookieConsent
 gorsovet.com.ua##div.cookie-consent
 greenfort-ua.com##div[data-storage-item*="cookiename_"]
+greenpost.ua###cookie-popup
 gsm.in.ua##.notice--cookie
 gsminfo.com.ua###share-buttons-top
 gsminfo.com.ua##div.code-block:has(> div.wenews)
@@ -280,6 +283,7 @@ kg.ua###slidebox45
 kidstaff.com.ua###gdpr_panel
 kinobaza.com.ua##div[role="alert"]
 kivismart.com##div.cookie-offer
+kniazha.ua##div.cookietxt
 knuba.edu.ua##.cookie-notice
 komoraczua.com###overlay:has(> div > div.cookie-policy__container)
 konkurent.ua##div.popupCookie
@@ -447,6 +451,7 @@ roshen.com##div.cookies-popup
 roshen.com##div.fixed-bottom-banner
 rud.ua##div.subscription-module--popup
 runy.org.ua##.cookieWrapper
+ruport.com.ua##div.banner_area
 samsung.com##div.cookie-bar
 santen.ua##div.gdpr_v2
 search.com.ua##.cookie-policy-notice
@@ -462,6 +467,7 @@ slk.kh.ua##div.google-news-sub
 smachno.ua##div.bubleblock_wrapper
 smachno.ua##div.header_top_desctop_bnr:has(div.cookie-pop)
 smarthost.net.ua##div[aria-label="cookieconsent"]
+smk-retail.com.ua##div.cookies_accept_popup
 solarpath.com.ua##aside#moove_gdpr_cookie_info_bar
 songs.in.ua##div.widget_eu_cookie_law_widget
 sony.ua##div:has(> div.privacy_prompt)
@@ -573,6 +579,7 @@ work.ua##div.design-decor:style(background: unset !important)
 work.ua##div.design-inverse:style(background: unset !important)
 work.ua##div.music-plugin
 work.ua##header.header-default:style(background-image: unset !important)
+yakty.com.ua##div.cookie-banner
 yasensvit.ua##.coockies
 yasensvit.ua##.popup--tgBot__wrap
 zadarma.com##div.cookie-tooltip
