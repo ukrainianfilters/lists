@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.03.2
-! Last modified: Fri, 07 March 2025 19:05 EET
+! Version: 25.03.4
+! Last modified: Fri, 07 March 2025 20:14 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -52,6 +52,7 @@
 ||adhigh.net^$third-party
 ||admixer.net^$third-party
 ||bidder.smartytouch.co^$third-party
+||bodis.com^$third-party
 ||c.hit.ua^$third-party
 ||cdn.umh.ua^$third-party
 ||cdnkma.biz^$third-party
@@ -177,6 +178,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||informator.ua/js/frontend/ad-loaders
 ||medicina.ua/adv.php
 ||medicina.ua/adv/async.php
+||momondo.ua/ugtm/
 ||obyava.ua/js/advert.js
 ||patient-docs.com/theme/js/ads.js
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
@@ -184,6 +186,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||tsn.ua/static/pub/js/advertize.js
 ||tsn.ua/static/pub/js/membrana-video.js
 ! >>>
+/ads/dfp$domain=momondo.ua
 /assets/plugin/banners/uploads$domain=volynnews.com
 /js/firebox.js$domain=bigkyiv.com.ua
 /sajax/updatebannerstat$domain=volynnews.com
