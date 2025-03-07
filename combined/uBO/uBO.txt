@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.02.4
-! Last modified: Sun, 23 February 2025 21:51 EET
+! Version: 25.03.1
+! Last modified: Fri, 07 March 2025 18:59 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -137,10 +137,19 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ! >>>
 /mod_ijoomla_adagency_zone/*$~xmlhttprequest
 ! >>>
+###ad_top
+###ad_Top
+###AD_Top
+###ad-lead
+###homead
+###homeAd
 ###td-ad-placeholder
 ! >>>
 ##.ad-300
+##.ads-content
+##.ads300
 ##.adx_center
+##.header-adv
 ##.newspack_global_ad
 ##.nts-ad
 ##.nts-video-wrapper
@@ -175,6 +184,8 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||patient-docs.com/theme/js/ads.js
 ||safeview.ukr.net/frame/desktop-top-banner.html$subdocument
 ||slk.kh.ua/banners/redirect?id=$document
+||tsn.ua/static/pub/js/advertize.js
+||tsn.ua/static/pub/js/membrana-video.js
 ! >>>
 /assets/plugin/banners/uploads$domain=volynnews.com
 /js/firebox.js$domain=bigkyiv.com.ua
@@ -184,7 +195,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 event=open&action=firebox_trackevent&box=$domain=bigkyiv.com.ua
 ! >>>
 ! :has(> ins.adsbygoogle)
-1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,cikavopro.com,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,ibuhgalter.net,interes-fakti.com,itechua.com,itsider.com.ua,learn-english.net.ua,life.kyiv.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,nikvesti.com,one.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,protocol.ua,psm7.com,rayon.in.ua,sat.net.ua,sensatsiya.com,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,vcf.vn.ua,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
+1kr.ua,animal.in.ua,bibliotech.com.ua,blogchain.com.ua,cikavopro.com,daytoday.ua,defence-ua.com,dev.ua,druzy.com.ua,dynamo.kiev.ua,esc.lviv.ua,gsminfo.com.ua,gurman.co.ua,ibuhgalter.net,interes-fakti.com,itechua.com,itsider.com.ua,learn-english.net.ua,life.kyiv.ua,meteo.ua,meteopost.com,mezha.net,mind.ua,mobanking.com.ua,monobankinfo.com.ua,moyaosvita.com.ua,museumkiev.org,mykniga.com.ua,napensii.ua,nikvesti.com,one.ua,osvita.ua,pingvin.pro,pogliad.ua,predmety.in.ua,protocol.ua,psm7.com,rayon.in.ua,sat.net.ua,sensatsiya.com,sharkus.top,slovoidilo.ua,sportnews.com.ua,synonimy.info,teg.com.ua,tribun.com.ua,tsikavi-fakty.com.ua,uagolos.com,uahistory.co,uman24.org.ua,vcf.vn.ua,vidhuk.ua,vidpoviday.com,wz.lviv.ua,yak-zrobyty.in.ua##div:has(> ins.adsbygoogle)
 ! :has(> div > ins.adsbygoogle)
 forex.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
@@ -791,6 +802,8 @@ napensii.ua##div.code-block:has(> div > center > a[href*="peredplata.ukrposhta.u
 napensii.ua##div[class*="td-a-rec-id-"]
 nauka.ua##div.banner-vertical
 nauka.ua##div.banner-wrapper
+newsroom.kh.ua##div.related-posts + script + div
+newsroom.kh.ua##div.sidebar-widget:has(> a[target="_blank"])
 nezhatin.com.ua###text-4
 nezhatin.com.ua##aside:has(> div > div.reklammma)
 nezhatin.com.ua##aside.widget_text:has(> div.textwidget > p > img.aligncenter)
@@ -852,6 +865,7 @@ overclockers.ua##div[class^="ad_slot"]
 parta.com.ua##div:has(> a[href$="&utm_campaign=parta"][target="_blank"])
 parta.com.ua##div[style^="border:1px solid "]:has(img[src^="/edu_image/"])
 patient-docs.com###sidebar_banner
+photo-lviv.in.ua##:is(div.td-ss-main-sidebar, div.vc_widget_sidebar) > :is([id^="media_image-"],[id^="custom_html-"])
 pidruchnyk.com.ua###sidebar
 pidruchnyk.com.ua##div[id^="admixer_"] + script
 pingvin.pro##div.col-lg-4:has(> div > div > ins.adsbygoogle)
@@ -864,6 +878,7 @@ playua.net##div[class*="a_dvert"]
 playua.net##div[class*="google-ad"]
 pn.com.ua##div:has(> a[href^="/click/br/"])
 politeka.net##div.ai-placement
+poltava.to##div.bn
 portal.lviv.ua##div[class^="banner"]
 portal.lviv.ua##div[id^="wonderpluginslider-container-"]
 poznavayka.org##aside.widget:has(div > div.rek_bok)
@@ -928,10 +943,13 @@ serialno.tv##body:style(padding-top: unset !important)
 serialno.tv##div[id^="zone_"]
 shuba.life##article[data-partner="silpo"]
 shuba.life##button:has(> img[alt="Silpo"])
+shuba.life##div:has(> a[data-top-banner])
 shuba.life##div:has(> div#AdHeader)
 shuba.life##div[data-membrana-container]
 sinoptik.ua##div.informerTop
 sinoptik.ua##head > style:empty:style(all: inherit !important)
+site.ua##div[id^="adpartner-"]
+site.ua##div[id^="adv-"]
 slk.kh.ua##div[class^="specific-content_"]
 slovnyk.ua##section[class^="section-ad"]
 slovoidilo.ua##div.branding-main
@@ -1010,6 +1028,9 @@ thepage.ua##div.news-list__item:has(div[class*="news-tag partner_material"])
 tochka.net##div.partner-news
 tochka.net##div.partner-news + div
 tochka.net##div.partner-news + div + div
+tomato.ua##div.ad_googletag
+tomato.ua##div.filters_adv
+tomato.ua##div[class*="reklama_container"]
 transkarpatia.net##.tbr-social > span > a:style(color: unset !important)
 transkarpatia.net###sidebar > div.side-widget:has(> a > img[src^="/advertise/"])
 transkarpatia.net###sidebar > div.twitter
@@ -1142,6 +1163,8 @@ vgorode.ua##div[data-action="banners"]
 vgorode.ua##section.ad-up
 vgoru.org##div.banner
 vgoru.org##script[src*="mediabrama.com/shop/"] + div
+vidhuk.ua##[class^="banner_"]
+vidhuk.ua###google_recommended
 vikna.tv##div.pip-video-wrapper
 vikna.tv##div[class^="promo-"]
 village.com.ua##.post-additions
@@ -1176,6 +1199,7 @@ vseazs.com##a.vseosago
 vseazs.com##div.center_container
 vseazs.com##p[align="center"]:has-text(Наші партнери)
 vynnyky-visnyk.com.ua##div.wpb_single_image:has(> figure > div > img.vc_single_image-img)
+we.org.ua##[id^="ad_300"]
 weukraine.tv##div[data-action="banners"]
 womo.ua##div[class*="-banner"]
 womo.ua##div[data-sender="admixer"]
@@ -1423,6 +1447,7 @@ zz.te.ua##.advads-widget
 ||twitter.com/i/jot
 ||ukr.net/_events/
 ||uoi.eolymp.space/measure
+||usercentrics.eu/session/$image
 ||va.tawk.to/log
 ||vimeo.com/ablincoln/
 ||volia.com/get-my-ip/
