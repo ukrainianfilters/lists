@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.03.4
-! Last modified: Fri, 07 March 2025 20:14 EET
+! Version: 25.03.5
+! Last modified: Wed, 12 March 2025 22:12 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -362,6 +362,7 @@ defence-ua.com##div.news-sm-block.border-top-block.mt-280:style(margin-top: 0px 
 defence-ua.com##div[class^="banner"]
 defence-ua.com##section[class^="banner"]
 delo.ua##a.s-content__subscribe
+delo.ua##div.c-support:has(> div > a[href*="&utm_medium=promo"])
 delo.ua##div[data-banner]
 delo.ua##div[data-sender="admixer"]
 dengi.ua##div.banner
@@ -785,6 +786,7 @@ mind.ua###promo-catfish
 mind.ua##div.b-info-block__content > div > div:has(> div > a[href$="/ad"])
 mind.ua##div.block_content.block_mind_brand:has(> a.brand__info)
 mind.ua##div.layout_content:style(margin-top: 50px !important)
+mind.ua##div.section_link_partner_parent
 mind.ua##div[class*="_banner"]
 mind.ua##h2.b-info-block__title:style(padding-top: 10px !important)
 minfin.com.ua##.mfz-post:has([data-link="rubric"]:has-text(Промо))
