@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.03.6
-! Last modified: Sun, 16 March 2025 16:35 EET
+! Version: 25.03.7
+! Last modified: Sun, 16 March 2025 20:55 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -55,6 +55,7 @@
 ||360playvid.info^$third-party
 ||adhigh.net^$third-party
 ||admixer.net^$third-party
+||adwadvert.com.ua^$third-party
 ||bidder.smartytouch.co^$third-party
 ||bodis.com^$third-party
 ||c.hit.ua^$third-party
@@ -123,6 +124,7 @@ beauty.ua,internetua.com,sinoptik.ua##+js(remove-node-text, script, "Shadow, sta
 eurointegration.com.ua,pravda.com.ua##script[onerror*="html-load.com"]:watch-attr(onerror):remove-attr(onerror)
 eurointegration.com.ua,pravda.com.ua##^script[onload*="html-load.com"]
 ! >>>
+agronews.ua,agroreview.com##+js(remove-node-text, script, adId)
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 glianec.com##+js(remove-node-text, script, location.reload)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
@@ -192,6 +194,9 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||tsn.ua/static/pub/js/membrana-video.js
 ||widgets.coingecko.com/coingecko-coin-list-widget.js^$domain=psm7.com
 ! >>>
+||bbc.com/ukrainian/$removeparam=xtor
+||magnolia-tv.com^$removeparam=prov
+! >>>
 /ads/dfp$domain=momondo.ua
 /assets/plugin/banners/uploads$domain=volynnews.com
 /js/firebox.js$domain=bigkyiv.com.ua
@@ -256,6 +261,7 @@ agro-business.com.ua###sp-breadcrumb
 agro-business.com.ua##div.apm-container:has(script[src*="&task=remote_ad"])
 agro-business.com.ua##div.live__wallper
 agro-business.com.ua##div.remote_ads
+agronews.ua,agroreview.com##body:style(background-image: unset !important)
 agronews.ua##div[class*="banner"]
 agronews.ua##div[class^="baner-"]
 agronomy.com.ua###g-fullwidth:has(div.platform-content:nth-of-type(-n+4))
@@ -266,8 +272,10 @@ agronomy.com.ua##div[class^="adv_"]
 agropolit.com##div.header__banner-wrap
 agroportal.ua##.fixedBlock
 agroportal.ua##a[href^="/"][target="_blank"]
+agroter.com.ua##div.entry-content-wrap > a[target="blank"]
 agrotimes.ua##div.header__banner
 agrotimes.ua##div.widget:has(> div > div[id^="admixer_"])
+agroweek.com##main.site-main > div[style="margin-top: 20px;"]
 ain.ua##:is(main, div.article-content__widgets) > article.widget:has(ul.widget__header_tags > li > :is(a[href$="/promo/"], a[href$="/special/"]))
 ain.ua##div.article-content__widgets > article.widget:has(a.widget__header_author[href="/author/advbot/"])
 ain.ua##div.branding-top
@@ -336,6 +344,9 @@ chasdiy.org##div.side-content-wrapper
 chasdiy.org##div.top-content-wrapper
 chasdiy.org##div[class*="__fanner"]
 chasdiy.org##div[class*="fanner__"]
+che.cn.ua##div.custom:has(> div > a[target="_blank"])
+che.cn.ua##div.ot-mod-outer:has(> div > h3 > span:has-text(Наші партнери))
+che.cn.ua##div.ot-mod-outer:has(div.bannergroup)
 chytomo.com##div[class^="banner"]
 cikavopro.com###adsense
 cloudgaminghub.net.ua##div.banner-promotions-wrapper
@@ -463,6 +474,9 @@ fakty.com.ua##div.pip-video-wrapper
 fakty.com.ua##div[class^="promo-layer"]
 fakty.ua##div:has(> span:has-text(Новини партнерів))
 fakty.ua##div[class*="banner_"]
+fbc.biz.ua##div.baner
+fbc.biz.ua##div.main_header_bottom + a[target="_blank"]
+fbc.biz.ua##div.sidebar > a[target="_blank"]
 fco.com.ua##div.ads-block-top
 finance.ua##[data-vr-zone="block featured product list"]
 finance.ua##[data-vr-zone="block special projects list"]
@@ -535,6 +549,8 @@ glamour.kyiv.ua##div.textwidget:has(a[href*="myblogshop.top"][rel="nofollow"])
 glamour.kyiv.ua##div.textwidget:has(script)
 glavcom.ua##[data-action="banners"]
 glavcom.ua##div[class^="banner"]
+glavnoe.in.ua##a[href="/gambling"]
+glavnoe.in.ua##a[href="/gambling"] + div
 glavred.info##div:has(> div.bnr-block__ad + div[data-type="bnr"])
 glavred.info##div.light-block:has(> div.bnr-block__bnr)
 glavred.info##div.main-partners
@@ -590,6 +606,10 @@ ibuhgalter.net##div.bottom-banner
 ibuhgalter.net##div.inside_banner
 ibuhgalter.net##div.sidenav_banner > noindex
 ictv.ua##div.partner-news
+ifnews.org.ua##a:has(> img[class*="advert-box"])
+ifnews.org.ua##div:has(> a[target="_blank"] > img[src*="/assets/advert/"])
+ifnews.org.ua##div.row.top-post-box
+ifnews.org.ua##hr.base-post-divider + a
 ilenta.com##div:has(> img[alt="Ads"])
 ilenta.com##div.nadavi-widget
 imena.ua##section.widget:has(img[src$="banner_300x300.jpg"])
@@ -906,6 +926,11 @@ pravda.com.ua##div.container_special
 pravda.com.ua##div.promoted_article
 pravda.com.ua##div.section_articles:has(> div > div > h3 > a[href$="/projects/"])
 pravda.com.ua##div.ym-video--wrapper
+pravda.if.ua##div.brxe-block:has(> a[href*="&utm_medium=banner"])
+pravda.if.ua##div.brxe-block:has(> div.ads-p)
+pravda.if.ua##div.brxe-block:has(> h2:has-text(Реклама))
+pravda.if.ua##div.footer-11__container-menu > section:nth-of-type(3)
+pravda.if.ua##section.brxe-section:has(> div > div > span:has-text(Реклама:))
 pravdatutnews.com##div.views-code:has(> div[id^="newsAd"])
 predmety.in.ua##div[style="height:550px; weight:auto;"]:empty
 proidei.com##div.ads-widget-block
@@ -954,14 +979,22 @@ rubryka.com##div.single-page__social
 rubryka.com##div[class*="advertisment"]
 rubryka.com##div[style="padding: 0 0 30px"]
 rud.ua##a.branding__link
+rvnews.rv.ua##a:has(> img[class*="advert-box"])
+rvnews.rv.ua##div:has(> a[target="_blank"] > img[src*="/assets/advert/"])
+rvnews.rv.ua##div.row.top-post-box
+rvnews.rv.ua##hr.base-post-divider + a
 scanprice.com.ua##div.product-list-item.item:has(> ins.adsbygoogle)
 serialno.tv##body:style(padding-top: unset !important)
 serialno.tv##div[id^="zone_"]
+shuba.life##a[href$="/ingredients/buy"]
 shuba.life##article[data-partner="silpo"]
 shuba.life##button:has(> img[alt="Silpo"])
 shuba.life##div:has(> a[data-top-banner])
 shuba.life##div:has(> div#AdHeader)
+shuba.life##div.c-heading__stats-card > div > dl.c-tag
 shuba.life##div[data-membrana-container]
+shuba.life##picture[data-discount-banner]
+shuba.life##section[data-feed-gallery]
 sinoptik.ua##div.informerTop
 sinoptik.ua##head > style:empty:style(all: inherit !important)
 site.ua##div[id^="adpartner-"]
@@ -985,8 +1018,10 @@ sport.ua##[class^="partners"]
 sport.ua##div.best_bookies
 sport.ua##div.item:has-text(СТАВКА ДНЯ)
 sport.ua##div.news-promo-feed
+sport.ua##div.notifications__content.forecasts
 sport.ua##div.wrap > center:has(div[id^="zone_"])
 sport.ua##div#footer__text
+sport.ua##span.news-match__bottom > :is(.news-match__coefficient, .news-match__bet)
 sport24.ua##[class*="adv-"]
 sport24.ua##app-adv-between-news
 sport24.ua##app-default-news:has(app-adv-news-label)
@@ -1002,6 +1037,10 @@ sportarena.com##div.nomobile:style(margin-top: unset !important)
 sportnews.com.ua###sidebar > div:nth-child(n+2)
 sportnews.com.ua##div[class^="ads-"]
 sq.com.ua##sq-ad-banners
+statbet.com##a.gift-box > div
+statbet.com##div.secondary-block:has(> div > strong:has-text(Букмекери))
+statbet.com##div.secondary-block:has(> div > ul:is(.top-bookmakers-casino, .top-offers))
+statbet.com##div[class*="-banner"]
 stopcor.org##aside.banner
 stopcor.org##aside.videoOfDay
 stopcor.org##div.idealmedia
@@ -1029,6 +1068,10 @@ telegraf.com.ua##[data-text="Реклама"]
 telegraf.com.ua##div.c-r:has([data-text="Реклама"])
 telegraf.com.ua##div.s-content__ratio:has(script[id^="_vidverto-"])
 telegraf.com.ua##div[data-text="Новини партнерів"]
+tenews.org.ua###left-container
+tenews.org.ua###right-container
+tenews.org.ua##a[target="_blank"]:has(> img)
+tenews.org.ua##img[src*="/assets/img/ads/"]
 ternopoliany.te.ua###pp
 ternopoliany.te.ua###pp-bg
 ternopoliany.te.ua##div:has(> div.rek)
@@ -1132,6 +1175,9 @@ ukrinform.ua##div[data-name="int_scroll"]
 ukrinform.ua##div[id*="adex-branding-"]
 ukrlib.com.ua##div.supertext2
 ukrlib.com.ua##div.thebestofthebest:has(> div > span:has-text(друзі та партнери))
+ukrsport.pro##.cs-banner-entry
+ukrsport.pro##.elementor-widget-cs-banner
+ukrsport.pro##div.cs-sidebar__inner > div.widget.widget_block:has(> div > div > figure > figure > a[target="_blank"])
 ukurier.gov.ua##div[class^="banner"]
 uman24.org.ua##div.adsgoogle
 uman24.org.ua##div.sample-posts
@@ -1360,6 +1406,7 @@ zz.te.ua##.advads-widget
 ||artfut.com^$third-party
 ||bpmonline.com^$third-party
 ||c.apserver.org.ua^$third-party
+||cdn.debugbear.com^$third-party
 ||cdn.onesignal.com^$third-party
 ||chartbeat.com^$third-party
 ||clicksfordsm.com^$third-party
@@ -1460,6 +1507,7 @@ zz.te.ua##.advads-widget
 ||obozrevatel.com/pixel.png
 ||osvita.ua/clicks/track
 ||otpbank.com.ua/bitrix/tools/conversion/ajax_counter.php
+||pa.tns-ua.com/bug/pic.gif?siteid=
 ||ph.liki24.me/e/?
 ||ph.liki24.me/engage/?ip
 ||play.google.com/log
@@ -1470,6 +1518,7 @@ zz.te.ua##.advads-widget
 ||search.com.ua/analytics/js/
 ||shareaholic.com/analytics_
 ||shareaholic.com/partners.js
+||sport.ua/pixel/
 ||stat.techomsend.com/stat.svg?p=
 ||tdl.com.ua/user_stat.php
 ||teach-inf.com.ua/stat/
@@ -1478,6 +1527,7 @@ zz.te.ua##.advads-widget
 ||top-js-metrics.top.my.ua/script.js
 ||twitter.com/i/jot
 ||ukr.net/_events/
+||ukr.net/click/
 ||uoi.eolymp.space/measure
 ||usercentrics.eu/session/$image
 ||va.tawk.to/log
@@ -1488,7 +1538,7 @@ zz.te.ua##.advads-widget
 ||yesport.com.ua/counter/
 ! >>>
 _beacon?
-/?sentry_key=$domain=dom.ria.com|epicentrk.ua|gymbeam.ua
+/?sentry_key=$domain=dom.ria.com|epicentrk.ua|gymbeam.ua|statbet.com
 /action/location/common/geolocate^$domain=bild.ua
 /ads-blocking-detector.$script,domain=kyivstar.ua
 /ajax/bz?_
@@ -1528,6 +1578,7 @@ _beacon?
 /log/client/messages
 /log/error?
 /OtAutoBlock.js$domain=glovoapp.com
+/pagespeed_static/*.gif$domain=root-nation.com
 /peach-collector.min.js
 /personification$domain=vodafone.ua
 /piwik.js$domain=tsn.ua
@@ -1600,6 +1651,7 @@ sinoptik.ua/stats/
 4studio.com.ua##div.home_bottom > div > div:nth-child(3)
 brovary.net.ua##div.elementor-element:has(> div > div > h4:has-text(Погода))
 brovary.net.ua##div.elementor-element:has(> div > div#SinoptikInformer)
+che.cn.ua##div.ot-mod-outer:has(> div > div > div > div#SinoptikInformer)
 gazeta-misto.te.ua##div.widget_custom_html:has(> div > div#SinoptikInformer)
 gorod.dp.ua##div.weather
 region.dp.ua###custom_html-16
