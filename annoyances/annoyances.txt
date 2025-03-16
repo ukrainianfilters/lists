@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.03.4
-! Last modified: Fri, 07 March 2025 20:14 EET
+! Version: 25.03.6
+! Last modified: Sun, 16 March 2025 16:35 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -86,8 +86,8 @@ privatbank.ua##+js(set-cookie, analytics_allowed, 0)
 privatbank.ua##+js(set-cookie, marketing_allowed, 0)
 puratos.com.ua##+js(set-cookie, functionalCookieAccepted, true)
 ! >>>
-032.ua,048.ua,056.ua,057.ua##app-cookie-consent-popup
-032.ua,048.ua,056.ua,057.ua##div[data-cookie-consent-popup]
+032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##app-cookie-consent-popup
+032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##div[data-cookie-consent-popup]
 104.ua###privacy-policy
 1kr.ua##noindex:has([class$="cookies-box"])
 24tv.ua##div.player.sticky
@@ -261,6 +261,7 @@ ilounge.ua##div.signup-form-launcher
 incrypted.com##.incrypted-cookie-bar
 indigo.co.ua###cookie_notification
 infoit.com.ua###cookie-law-info-bar
+inforoom.com.ua##div.widget_text.privacy
 inksystem.biz##div.fixed_bottom
 inshe.tv##div.jnews_popup_post_container
 inter.ua##.warning
@@ -400,6 +401,7 @@ ntn.ua##.warning
 oblikbudget.com.ua##div.cookie-consent
 oblikbudget.com.ua##div.id3-login-root
 obozrevatel.com##div.cookiePolicy
+obozrevatel.com##footer[data-tilda-cookie]
 obyava.ua##.cookie-bar
 odessa-life.od.ua###moove_gdpr_cookie_info_bar
 olx.ua##div[data-testid="cookies-overlay__container"]
@@ -440,6 +442,7 @@ radioua.net##.cookie-consent
 raiffeisen.ua###popup-cookies
 rbc.ua##.privacy
 rbc.ua##div.item:has(> a > span.whatsapp)
+ria-m.tv###cookie-msg
 ria.com###gdpr-notifier
 rice.ua##.wd-cookies-popup
 ridni.org.ua##aside.cookies-banner
@@ -538,6 +541,7 @@ ukraina.info##div.CookieConsent
 ukraina.info##div.x-iaky6s
 ukraine-gta.com.ua##div.u-bottomFixer:has(> ul > li.notice--cookie)
 ukraine.com.ua###gdpr-banner-cookie
+ukrainepuls.com###moove_gdpr_cookie_info_bar
 ukravto.ua##div.popup_cookies
 ukrgasbank.com##div.cookies-popup
 ukrpol.ua##.notifier
