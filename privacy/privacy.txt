@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.03.6
-! Last modified: Sun, 16 March 2025 16:35 EET
+! Version: 25.03.7
+! Last modified: Sun, 16 March 2025 20:55 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -80,6 +80,7 @@
 ||artfut.com^$third-party
 ||bpmonline.com^$third-party
 ||c.apserver.org.ua^$third-party
+||cdn.debugbear.com^$third-party
 ||cdn.onesignal.com^$third-party
 ||chartbeat.com^$third-party
 ||clicksfordsm.com^$third-party
@@ -180,6 +181,7 @@
 ||obozrevatel.com/pixel.png
 ||osvita.ua/clicks/track
 ||otpbank.com.ua/bitrix/tools/conversion/ajax_counter.php
+||pa.tns-ua.com/bug/pic.gif?siteid=
 ||ph.liki24.me/e/?
 ||ph.liki24.me/engage/?ip
 ||play.google.com/log
@@ -190,6 +192,7 @@
 ||search.com.ua/analytics/js/
 ||shareaholic.com/analytics_
 ||shareaholic.com/partners.js
+||sport.ua/pixel/
 ||stat.techomsend.com/stat.svg?p=
 ||tdl.com.ua/user_stat.php
 ||teach-inf.com.ua/stat/
@@ -198,6 +201,7 @@
 ||top-js-metrics.top.my.ua/script.js
 ||twitter.com/i/jot
 ||ukr.net/_events/
+||ukr.net/click/
 ||uoi.eolymp.space/measure
 ||usercentrics.eu/session/$image
 ||va.tawk.to/log
@@ -208,7 +212,7 @@
 ||yesport.com.ua/counter/
 ! >>>
 _beacon?
-/?sentry_key=$domain=dom.ria.com|epicentrk.ua|gymbeam.ua
+/?sentry_key=$domain=dom.ria.com|epicentrk.ua|gymbeam.ua|statbet.com
 /action/location/common/geolocate^$domain=bild.ua
 /ads-blocking-detector.$script,domain=kyivstar.ua
 /ajax/bz?_
@@ -248,6 +252,7 @@ _beacon?
 /log/client/messages
 /log/error?
 /OtAutoBlock.js$domain=glovoapp.com
+/pagespeed_static/*.gif$domain=root-nation.com
 /peach-collector.min.js
 /personification$domain=vodafone.ua
 /piwik.js$domain=tsn.ua
@@ -320,6 +325,7 @@ sinoptik.ua/stats/
 4studio.com.ua##div.home_bottom > div > div:nth-child(3)
 brovary.net.ua##div.elementor-element:has(> div > div > h4:has-text(Погода))
 brovary.net.ua##div.elementor-element:has(> div > div#SinoptikInformer)
+che.cn.ua##div.ot-mod-outer:has(> div > div > div > div#SinoptikInformer)
 gazeta-misto.te.ua##div.widget_custom_html:has(> div > div#SinoptikInformer)
 gorod.dp.ua##div.weather
 region.dp.ua###custom_html-16
