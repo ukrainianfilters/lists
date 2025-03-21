@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.03.8
-! Last modified: Fri, 21 March 2025 17:17 EET
+! Version: 25.03.9
+! Last modified: Fri, 21 March 2025 18:53 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -33,6 +33,7 @@
 ||agenteimmobiliare.info^
 ||aixcdn.com^
 ||aj1907.online^
+||banners.doc.ua^
 ||creativecdn.com^
 ||eskimi.com^
 ||givemelink.cc^
@@ -70,6 +71,7 @@
 ||informer.link^$third-party
 ||ipvertnet.com^$third-party
 ||jsc.idealmedia.io^$third-party
+||kl89regular.com^$third-party
 ||kma.biz^$third-party
 ||mediabrama.com^$third-party
 ||membrana.media^$third-party
@@ -127,6 +129,7 @@ eurointegration.com.ua,pravda.com.ua##^script[onload*="html-load.com"]
 agronews.ua,agroreview.com##+js(remove-node-text, script, adId)
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 glianec.com##+js(remove-node-text, script, location.reload)
+rup.com.ua##+js(remove-node-text, script, bdca)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 !
 !
@@ -180,6 +183,8 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||5.ua/js/banner
 ||banner.volynnews.com
 ||cdn.hdvbua.pro/amedia/
+||ek.ua/gb.php
+||ek.ua/pst.php
 ||gepur.com/js/rtbhouse.js
 ||helsi.me/api/ad/pis/
 ||informator.ua/js/frontend/ad-loaders
@@ -199,6 +204,11 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ! >>>
 /ads/dfp$domain=momondo.ua
 /assets/plugin/banners/uploads$domain=volynnews.com
+/i/ads$domain=minfin.com.ua
+/images/banners$domain=osvita.ua
+/js/1custom.js$domain=osvita.ua
+/js/banners_multi.js$domain=osvita.ua
+/js/banners-groups.js$domain=osvita.ua
 /js/firebox.js$domain=bigkyiv.com.ua
 /sajax/updatebannerstat$domain=volynnews.com
 /so-banners/ajax$domain=stroyobzor.ua
@@ -370,6 +380,7 @@ dailylviv.com##.rightBanner
 dailylviv.com##div[id^="google_banner"]
 dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,medicalanswers.com.ua,ua-vestnik.com,useti.org.ua,woman24.kyiv.ua,zhenskiy.kyiv.ua##a:is([href*="kshop2.biz"],[href*="myblogshop.top"])
 day.kyiv.ua##div[class^="_ads-"]
+deepstatemap.live##div.drawer-block:has(> div > a.drawer-partner)
 defence-ua.com##.share-news
 defence-ua.com##div.content > br:nth-of-type(-n+2)
 defence-ua.com##div.content > hr:nth-of-type(-n+2)
@@ -568,6 +579,9 @@ gloss.ua##div:has(> div.card > div > div > a > h4 > span.mark-ad)
 goloskarpat.info##aside:has(> aside > i.fa-rectangle-ad)
 gordonua.com##div[class^="advertising"]
 gordonua.com##div[data-action="banners"]
+gosta.media##div.crypto-block
+gosta.media##div.gosta-ads
+gosta.media##div[class^="ads-banner-"]
 greenforest.com.ua##div.banner-place
 gsminfo.com.ua###text-html-widget-2
 gsminfo.com.ua##div.theiaStickySidebar:has(> div > div > ins.adsbygoogle)
@@ -722,6 +736,7 @@ konkurent.ua##div[class^="bookmaker"]
 korrespondent.net##.article:has(em.advertising)
 korrespondent.net##.unit-side-informer
 korrespondent.net##[class$="-banner"]
+korusno-znatu.in.ua##header#masthead > div.container
 kosht.media###block-19
 kp.ua##[class*="banner"]
 kp.ua##[data-action="banners"]
@@ -822,6 +837,7 @@ minfin.com.ua##.mfz-post:has([data-link="rubric"]:has-text(Промо))
 minfin.com.ua##[class*="banner"]
 minfin.com.ua###special-product-offer
 minfin.com.ua##div.aside-pull-right-block:has(> div[id^="premium-"])
+minfin.com.ua##div.c-content-bn-slot-content
 minfin.com.ua##div[data-bn-slot]
 minfin.com.ua##section.special-offers
 miyklas.com.ua##div.sc-wrap
@@ -850,6 +866,9 @@ nikopolnews.net###sidebar-wrap > div:is(.side-widget, .widget_text):has(h4 > spa
 nikopolnews.net##div[class^="ai-viewport-"]:has(> div > a[target="_blank"])
 nikvesti.com##div.desc-read-more-adv
 nikvesti.com##li:has(ins.adsbygoogle)
+novadoba.com.ua###adsense
+novadoba.com.ua##div[class*="advertising-block"]
+novadoba.com.ua##section:has(a[title="Реклама"])
 novosti-n.org##div[class*="banner"]
 novy.tv##div.ads-catfish-container
 novy.tv##div.ads-sidebar
@@ -1385,6 +1404,7 @@ zz.te.ua##.advads-widget
 ||stats.wp.com^
 ||statsjs.klevu.com^
 ||stattracking.pw^
+||steadfastsystem.com^
 ||to.getnitropack.com^
 ||track.mailerlite.com^
 ||tracker.multisearch.io^
@@ -1431,6 +1451,7 @@ zz.te.ua##.advads-widget
 ||histats.com^$third-party
 ||hotjar.com^$third-party
 ||hotjar.io^$third-party
+||influ2.com^$third-party
 ||ipinfo.io^$third-party,domain=netronic.com.ua
 ||lfeeder.com^$third-party
 ||matomo.factor.ua^$third-party
@@ -1526,6 +1547,7 @@ zz.te.ua##.advads-widget
 ||tiktok.com/web/report?
 ||tiktokv.com/monitor_browser/
 ||top-js-metrics.top.my.ua/script.js
+||trustpilot.com/stats/
 ||twitter.com/i/jot
 ||ukr.net/_events/
 ||ukr.net/click/
@@ -1614,7 +1636,7 @@ widget.*/build/*/analytics.html$subdocument
 ||ws.sharethis.com^$script
 ! >>>
 ! Google Tag Manager
-||googletagmanager.com^$third-party,domain=1plus1.video|2ip.ua|4mama.ua|5.ua|24tv.ua|accordbank.com.ua|add.ua|adidas.ua|agroportal.ua|agrotimes.ua|agro-business.com.ua|ain.ua|alcomag.ua|allo.ua|apostrophe.ua|arber.ua|army.gov.ua|armyinform.com.ua|ascania.energy|ascania.ua|ascania-auto.com|ascania-ff.com.ua|ascania-flora.ua|ascania-pack.com|ascania-shina.com|asviobank.ua|atbmarket.com|auchan.ua|avrora.ua|a-bank.com.ua|babel.ua|bagatolososia.kiev.ua|bank.com.ua|bank.gov.ua|banklviv.com|bankvostok.com.ua|bayadera.ua|bigkyiv.com.ua|bigmir.net|bihus.info|bon.ua|brain.com.ua|buhgalter.com.ua|buhgalter911.com|buki.com.ua|bukvy.org|censor.net|champion.com.ua|chytomo.com|city24.ua|clhs.com.ua|click.ua|codeua.com|colins.ua|comfy.ua|connecting-women.com.ua|creditdnepr.com.ua|creditwest.ua|credit-agricole.ua|crystalbank.com.ua|ctrs.com.ua|defence-blog.com|defence-ua.com|delo.ua|detector.media|dev.ua|diia.gov.ua|donatello.to|dou.ua|dsnews.ua|dsp.gov.ua|dtek.com|dtek-kem.com.ua|dtkt.ua|dw.com|easypay.ua|ek.ua|elmir.ua|epravda.com.ua|espreso.tv|eurolamp.ua|eva.ua|eximb.com|f.ua|fakty.com.ua|fakty.ua|fcdynamo.com|fckarpaty.org.ua|fckryvbas.com|fedoriv.com|finance.ua|focus.ua|football.ua|football24.ua|fora.ua|forbes.ua|foxtrot.com.ua|fozzyshop.ua|galinfo.com.ua|galka.if.ua|gazeta.ua|gerc.ua|glavred.info|glavred.net|globusbank.com.ua|glovoapp.com|gordonua.com|greendayvodka.com|gwaramedia.com|happymonday.ua|heel-apteka.com.ua|highload.today|holosameryky.com|hostiq.ua|hromadske.ua|i.ua|ictv.ua|id.gov.ua|ideabank.ua|iforum.ua|incrypted.com|industrialbank.ua|informator.ua|inter.ua|interfax.com.ua|intertop.ua|istpravda.com.ua|itc.ua|itechua.com|ivona.ua|karton.ua|kasta.ua|kibernetiki.com.ua|kinoafisha.ua|kinobaza.com.ua|klo.ua|kniga.biz.ua|kontramarka.ua|kredobank.com.ua|ktc.ua|kvas-bev.com.ua|kyivindependent.com|kyivpost.com|kyivstar.ua|lb.ua|leboutique.com|lifecell.ua|liga.net|ligazakon.net|liki24.com|maudau.com.ua|maximum.fm|medicina.ua|megogo.net|meta.ua|meteo.ua|meteoprog.com|metinvestholding.com|metinvest-smc.com|mezha.media|mezha.net|mind.ua|minfin.com.ua|mirohost.net|mmr.net.ua|mmr.ua|mod.gov.ua|money24.kiev.ua|monobank.ua|motto.ua|moyo.ua|mtb.ua|myfishka.com|newbalance.ua|nikvesti.com|nkveres.com|novosti.dn.ua|novus.ua|novy.tv|novynarnia.com|npshopping.com|nv.ua|obolon.ua|oboz.ua|obozrevatel.com|obyava.ua|okko.ua|one.ua|online.ua|onlyrose.ua|oschadbank.ua|otpbank.com.ua|ottry.com|pcweek.ua|piraeusbank.ua|platfor.ma|playua.net|polissyafc.com|portmone.com.ua|pravda.com.ua|pravex.com.ua|privatbank.ua|prometheus.org.ua|protocol.ua|prozora.network|psm7.com|pumb.ua|radiosvoboda.org|raiffeisen.ua|rbc.ua|ria.com|rieltor.ua|robota.ua|rozetka.ua|rubryka.com|samsungshop.com.ua|scm.com.ua|sensebank.ua|shafa.ua|shakhtar.com|shopping.ua|silpo.ua|sim23.ua|sinoptik.ua|slk.kh.ua|slovnyk.ua|slovoidilo.ua|smachno.ua|socar.ua|speka.media|sport.ua|sport24.ua|sud.ua|sushiya.ua|suspilne.media|tascombank.ua|tefal.ua|telegraf.com.ua|thepage.ua|theukrainians.org|thrash.ua|ti.ua|transkarpatia.net|tribuna.com|tsn.ua|ttt.ua|ua.news|uapay.ua|ubki.ua|uklon.com.ua|ukr.net|ukraine.com.ua|ukrgasbank.com|ukrnafta.com|ukrposhta.ua|ukrsibbank.com|ukrzoloto.ua|unexbank.ua|unian.ua|universalbank.com.ua|unn.ua|upg.ua|upl.ua|uz.gov.ua|varus.ua|vbet.ua|vctr.media|vezha.ua|vikna.tv|village.com.ua|viva.ua|vodafone.ua|volia.com|vostok.bank|wayforpay.com|wog.ua|work.ua|xsport.ua|yakaboo.ua|yesport.com.ua|youcontrol.com.ua|zaborona.com|zakaz.ua|zara.com|zaxid.net|znaj.ua|znoclub.com
+||googletagmanager.com^$third-party,domain=1plus1.video|2ip.ua|4mama.ua|5.ua|24tv.ua|accordbank.com.ua|add.ua|adidas.ua|agroportal.ua|agrotimes.ua|agro-business.com.ua|ain.ua|alcomag.ua|allo.ua|apostrophe.ua|arber.ua|army.gov.ua|armyinform.com.ua|ascania.energy|ascania.ua|ascania-auto.com|ascania-ff.com.ua|ascania-flora.ua|ascania-pack.com|ascania-shina.com|asviobank.ua|atbmarket.com|auchan.ua|avrora.ua|a-bank.com.ua|babel.ua|bagatolososia.kiev.ua|bank.com.ua|bank.gov.ua|banklviv.com|bankvostok.com.ua|bayadera.ua|bigkyiv.com.ua|bigmir.net|bihus.info|bon.ua|brain.com.ua|buhgalter.com.ua|buhgalter911.com|buki.com.ua|bukvy.org|censor.net|champion.com.ua|chytomo.com|city24.ua|clhs.com.ua|click.ua|codeua.com|colins.ua|comfy.ua|connecting-women.com.ua|creditdnepr.com.ua|creditwest.ua|credit-agricole.ua|crystalbank.com.ua|ctrs.com.ua|deepstatemap.live|defence-blog.com|defence-ua.com|delo.ua|detector.media|dev.ua|diia.gov.ua|donatello.to|dou.ua|dsnews.ua|dsp.gov.ua|dtek.com|dtek-kem.com.ua|dtkt.ua|dw.com|easypay.ua|ek.ua|elmir.ua|epravda.com.ua|espreso.tv|eurolamp.ua|eva.ua|eximb.com|f.ua|fakty.com.ua|fakty.ua|fcdynamo.com|fckarpaty.org.ua|fckryvbas.com|fedoriv.com|finance.ua|focus.ua|football.ua|football24.ua|fora.ua|forbes.ua|foxtrot.com.ua|fozzyshop.ua|galinfo.com.ua|galka.if.ua|gazeta.ua|gerc.ua|glavred.info|glavred.net|globusbank.com.ua|glovoapp.com|gordonua.com|greendayvodka.com|gwaramedia.com|happymonday.ua|heel-apteka.com.ua|highload.today|holosameryky.com|hostiq.ua|hromadske.ua|i.ua|ictv.ua|id.gov.ua|ideabank.ua|iforum.ua|incrypted.com|industrialbank.ua|informator.ua|inter.ua|interfax.com.ua|intertop.ua|istpravda.com.ua|itc.ua|itechua.com|ivona.ua|karton.ua|kasta.ua|kibernetiki.com.ua|kinoafisha.ua|kinobaza.com.ua|klo.ua|kniga.biz.ua|kontramarka.ua|kredobank.com.ua|ktc.ua|kvas-bev.com.ua|kyivindependent.com|kyivpost.com|kyivstar.ua|lb.ua|leboutique.com|lifecell.ua|liga.net|ligazakon.net|liki24.com|maudau.com.ua|maximum.fm|medicina.ua|megogo.net|meta.ua|meteo.ua|meteoprog.com|metinvestholding.com|metinvest-smc.com|mezha.media|mezha.net|mind.ua|minfin.com.ua|mirohost.net|mmr.net.ua|mmr.ua|mod.gov.ua|money24.kiev.ua|monobank.ua|motto.ua|moyo.ua|mtb.ua|myfishka.com|newbalance.ua|nikvesti.com|nkveres.com|novosti.dn.ua|novus.ua|novy.tv|novynarnia.com|npshopping.com|nv.ua|obolon.ua|oboz.ua|obozrevatel.com|obyava.ua|okko.ua|one.ua|online.ua|onlyrose.ua|oschadbank.ua|otpbank.com.ua|ottry.com|pcweek.ua|piraeusbank.ua|platfor.ma|playua.net|polissyafc.com|portmone.com.ua|pravda.com.ua|pravex.com.ua|privatbank.ua|prometheus.org.ua|protocol.ua|prozora.network|psm7.com|pumb.ua|radiosvoboda.org|raiffeisen.ua|rbc.ua|ria.com|rieltor.ua|robota.ua|rozetka.ua|rubryka.com|samsungshop.com.ua|scm.com.ua|sensebank.ua|shafa.ua|shakhtar.com|shopping.ua|silpo.ua|sim23.ua|sinoptik.ua|slk.kh.ua|slovnyk.ua|slovoidilo.ua|smachno.ua|socar.ua|speka.media|sport.ua|sport24.ua|sud.ua|sushiya.ua|suspilne.media|tascombank.ua|tefal.ua|telegraf.com.ua|thepage.ua|theukrainians.org|thrash.ua|ti.ua|transkarpatia.net|tribuna.com|tsn.ua|ttt.ua|ua.news|uapay.ua|ubki.ua|uklon.com.ua|ukr.net|ukraine.com.ua|ukrgasbank.com|ukrnafta.com|ukrposhta.ua|ukrsibbank.com|ukrzoloto.ua|unexbank.ua|unian.ua|universalbank.com.ua|unn.ua|upg.ua|upl.ua|uz.gov.ua|varus.ua|vbet.ua|vctr.media|vezha.ua|vikna.tv|village.com.ua|viva.ua|vodafone.ua|volia.com|vostok.bank|wayforpay.com|wog.ua|work.ua|xsport.ua|yakaboo.ua|yesport.com.ua|youcontrol.com.ua|zaborona.com|zakaz.ua|zara.com|zaxid.net|znaj.ua|znoclub.com
 ! >>>
 ! googleadservices.com
 ||googleadservices.com^$third-party,domain=brain.com.ua|maudau.com.ua|newbalance.ua
