@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.03.7
-! Last modified: Sun, 16 March 2025 20:55 EET
+! Version: 25.03.9
+! Last modified: Fri, 21 March 2025 18:53 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -30,6 +30,7 @@
 ||agenteimmobiliare.info^
 ||aixcdn.com^
 ||aj1907.online^
+||banners.doc.ua^
 ||creativecdn.com^
 ||eskimi.com^
 ||givemelink.cc^
@@ -67,6 +68,7 @@
 ||informer.link^$third-party
 ||ipvertnet.com^$third-party
 ||jsc.idealmedia.io^$third-party
+||kl89regular.com^$third-party
 ||kma.biz^$third-party
 ||mediabrama.com^$third-party
 ||membrana.media^$third-party
@@ -124,6 +126,7 @@ eurointegration.com.ua,pravda.com.ua##^script[onload*="html-load.com"]
 agronews.ua,agroreview.com##+js(remove-node-text, script, adId)
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 glianec.com##+js(remove-node-text, script, location.reload)
+rup.com.ua##+js(remove-node-text, script, bdca)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 !
 !
@@ -177,6 +180,8 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||5.ua/js/banner
 ||banner.volynnews.com
 ||cdn.hdvbua.pro/amedia/
+||ek.ua/gb.php
+||ek.ua/pst.php
 ||gepur.com/js/rtbhouse.js
 ||helsi.me/api/ad/pis/
 ||informator.ua/js/frontend/ad-loaders
@@ -196,6 +201,11 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ! >>>
 /ads/dfp$domain=momondo.ua
 /assets/plugin/banners/uploads$domain=volynnews.com
+/i/ads$domain=minfin.com.ua
+/images/banners$domain=osvita.ua
+/js/1custom.js$domain=osvita.ua
+/js/banners_multi.js$domain=osvita.ua
+/js/banners-groups.js$domain=osvita.ua
 /js/firebox.js$domain=bigkyiv.com.ua
 /sajax/updatebannerstat$domain=volynnews.com
 /so-banners/ajax$domain=stroyobzor.ua
@@ -367,6 +377,7 @@ dailylviv.com##.rightBanner
 dailylviv.com##div[id^="google_banner"]
 dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,medicalanswers.com.ua,ua-vestnik.com,useti.org.ua,woman24.kyiv.ua,zhenskiy.kyiv.ua##a:is([href*="kshop2.biz"],[href*="myblogshop.top"])
 day.kyiv.ua##div[class^="_ads-"]
+deepstatemap.live##div.drawer-block:has(> div > a.drawer-partner)
 defence-ua.com##.share-news
 defence-ua.com##div.content > br:nth-of-type(-n+2)
 defence-ua.com##div.content > hr:nth-of-type(-n+2)
@@ -565,6 +576,9 @@ gloss.ua##div:has(> div.card > div > div > a > h4 > span.mark-ad)
 goloskarpat.info##aside:has(> aside > i.fa-rectangle-ad)
 gordonua.com##div[class^="advertising"]
 gordonua.com##div[data-action="banners"]
+gosta.media##div.crypto-block
+gosta.media##div.gosta-ads
+gosta.media##div[class^="ads-banner-"]
 greenforest.com.ua##div.banner-place
 gsminfo.com.ua###text-html-widget-2
 gsminfo.com.ua##div.theiaStickySidebar:has(> div > div > ins.adsbygoogle)
@@ -719,6 +733,7 @@ konkurent.ua##div[class^="bookmaker"]
 korrespondent.net##.article:has(em.advertising)
 korrespondent.net##.unit-side-informer
 korrespondent.net##[class$="-banner"]
+korusno-znatu.in.ua##header#masthead > div.container
 kosht.media###block-19
 kp.ua##[class*="banner"]
 kp.ua##[data-action="banners"]
@@ -819,6 +834,7 @@ minfin.com.ua##.mfz-post:has([data-link="rubric"]:has-text(Промо))
 minfin.com.ua##[class*="banner"]
 minfin.com.ua###special-product-offer
 minfin.com.ua##div.aside-pull-right-block:has(> div[id^="premium-"])
+minfin.com.ua##div.c-content-bn-slot-content
 minfin.com.ua##div[data-bn-slot]
 minfin.com.ua##section.special-offers
 miyklas.com.ua##div.sc-wrap
@@ -847,6 +863,9 @@ nikopolnews.net###sidebar-wrap > div:is(.side-widget, .widget_text):has(h4 > spa
 nikopolnews.net##div[class^="ai-viewport-"]:has(> div > a[target="_blank"])
 nikvesti.com##div.desc-read-more-adv
 nikvesti.com##li:has(ins.adsbygoogle)
+novadoba.com.ua###adsense
+novadoba.com.ua##div[class*="advertising-block"]
+novadoba.com.ua##section:has(a[title="Реклама"])
 novosti-n.org##div[class*="banner"]
 novy.tv##div.ads-catfish-container
 novy.tv##div.ads-sidebar
