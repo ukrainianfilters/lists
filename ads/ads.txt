@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.03.15
-! Last modified: Thu, 27 March 2025 19:29 EET
+! Version: 25.03.16
+! Last modified: Thu, 27 March 2025 20:13 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -128,6 +128,7 @@ eurointegration.com.ua,pravda.com.ua##^script[onload*="html-load.com"]
 agronews.ua,agroreview.com##+js(remove-node-text, script, adId)
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 glianec.com##+js(remove-node-text, script, location.reload)
+proagro.com.ua##+js(remove-node-text, script, wpsite_clickable_data)
 rup.com.ua##+js(remove-node-text, script, bdca)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 !
@@ -165,6 +166,9 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ##.td-a-rec-id-custom_ad_3
 ##.td-a-rec-id-custom_ad_4
 ##.td-a-rec-id-custom_ad_5
+##.td-ad-m
+##.td-ad-p
+##.td-ad-tp
 ! >>>
 ##[data-revive-zoneid]
 ##div[id*="MarketGid"]
@@ -202,6 +206,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||magnolia-tv.com^$removeparam=prov
 ! >>>
 /ads/dfp$domain=momondo.ua
+/advanced-ads-$script,stylesheet,domain=proagro.com.ua
 /assets/plugin/banners/uploads$domain=volynnews.com
 /i/ads$domain=minfin.com.ua
 /images/banners$domain=osvita.ua
@@ -209,6 +214,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 /js/banners_multi.js$domain=osvita.ua
 /js/banners-groups.js$domain=osvita.ua
 /js/firebox.js$domain=bigkyiv.com.ua
+/plugins/advanced-ads/*$domain=proagro.com.ua
 /sajax/updatebannerstat$domain=volynnews.com
 /so-banners/ajax$domain=stroyobzor.ua
 =adagencyAds&task=remote_ad$domain=agro-business.com.ua
@@ -382,6 +388,7 @@ dailylviv.com##.rightBanner
 dailylviv.com##div[id^="google_banner"]
 dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,medicalanswers.com.ua,ua-vestnik.com,useti.org.ua,woman24.kyiv.ua,zhenskiy.kyiv.ua##a:is([href*="kshop2.biz"],[href*="myblogshop.top"])
 day.kyiv.ua##div[class^="_ads-"]
+debaty.sumy.ua###advertisement
 deepstatemap.live##div.drawer-block:has(> div > a.drawer-partner)
 defence-ua.com##.share-news
 defence-ua.com##div.content > br:nth-of-type(-n+2)
@@ -490,6 +497,7 @@ fakty.ua##div[class*="banner_"]
 fbc.biz.ua##div.baner
 fbc.biz.ua##div.main_header_bottom + a[target="_blank"]
 fbc.biz.ua##div.sidebar > a[target="_blank"]
+fbc.biz.ua##div.sidebar_list_item:has(> a[target="_blank"][href*="?utm_source=banner_"])
 fco.com.ua##div.ads-block-top
 finance.ua##[data-vr-zone="block featured product list"]
 finance.ua##[data-vr-zone="block special projects list"]
@@ -877,6 +885,7 @@ novy.tv##div.ads-sidebar
 novy.tv##div#sticky-ads
 novynarnia.com##.border-shadow:style(-webkit-box-shadow: unset !important; box-shadow: unset !important)
 novynarnia.com##div:has(> div#mt_promo_wghot)
+novyny.live##div.adv-sidebars
 novyny.live##div.section-charter_promo
 novyny.pro###idealmedia
 novyny.pro##div.adv
@@ -955,6 +964,9 @@ pravda.if.ua##div.footer-11__container-menu > section:nth-of-type(3)
 pravda.if.ua##section.brxe-section:has(> div > div > span:has-text(Реклама:))
 pravdatutnews.com##div.views-code:has(> div[id^="newsAd"])
 predmety.in.ua##div[style="height:550px; weight:auto;"]:empty
+proagro.com.ua##div.td-outer-container:style(background-image: unset !important; cursor: unset !important)
+procherk.info###rt-content-bottom
+procherk.info##div.zone:has(> div > div > div > div > span:has-text(реклама))
 proidei.com##div.ads-widget-block
 prokadry.com.ua##a[href*="/?utm_source=prokadry.com.ua"]
 prolinux.pp.ua##section.widget_block:has(ins.adsbygoogle)
