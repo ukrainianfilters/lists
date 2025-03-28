@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.03.16
-! Last modified: Thu, 27 March 2025 20:13 EET
+! Version: 25.03.17
+! Last modified: Fri, 28 March 2025 13:27 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -3172,7 +3172,7 @@ gov*-ukr*.*/$document,to=~gov.ua
 govua*.*/$document,to=~gov.ua
 ! >>>
 ! DIIA.GOV.UA
-diia*.*/$document,to=~gov.ua|~diiacityunited.org|~fedoriv.com|~spivdiia.com|~spivdiia.org.ua
+diia*.*/$document,to=~gov.ua|~diia.app|~diiacityunited.org|~fedoriv.com|~spivdiia.com|~spivdiia.org.ua
 @@||facebook.com/diia.gov.ua^$document
 @@||instagram.com/diia.gov.ua^$document
 diia*$document,to=t.me|telegram.me
