@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.03.19
-! Last modified: Fri, 28 March 2025 22:08 EET
+! Version: 25.03.20
+! Last modified: Sun, 30 March 2025 21:34 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -77,6 +77,7 @@
 !
 ||consent.dw.com/delivery
 ||hu-manity.co^$third-party,domain=root-nation.com
+||osano.com^$third-party,domain=metlife.ua
 ! >>>
 /js/app-cookies.js$domain=kvitka.house
 /js/remodal.js$script,domain=agroter.com.ua
@@ -359,6 +360,8 @@ meteoprog.com##div.adl_cmp_consent-dialog-module_backdrop
 metinvest-smc.com###cookieConsentBanner
 metinvest.digital##div.cookie-popup
 metinvestholding.com###cookieConsentBanner
+metlife.ua##a[href="#skiptomaincontent"]
+metlife.ua##div.osano-cm-window:has(div[aria-label="Cookie Consent Banner"])
 metro.ua##body:style(overflow: unset !important)
 metro.ua##div.row > div > div.consent-disclaimer:has(a[href="/cookies"])
 mgmotor.com.ua##div.cookie-show
