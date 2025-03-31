@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.03.18
-! Last modified: Fri, 28 March 2025 21:50 EET
+! Version: 25.03.21
+! Last modified: Mon, 31 March 2025 20:49 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -214,6 +214,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 /js/banners_multi.js$domain=osvita.ua
 /js/banners-groups.js$domain=osvita.ua
 /js/firebox.js$domain=bigkyiv.com.ua
+/media/ads$image,domain=interfax.com.ua
 /plugins/advanced-ads/*$domain=proagro.com.ua
 /sajax/updatebannerstat$domain=volynnews.com
 /so-banners/ajax$domain=stroyobzor.ua
