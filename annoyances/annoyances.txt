@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.03.20
-! Last modified: Sun, 30 March 2025 21:34 EEST
+! Version: 25.04.1
+! Last modified: Tue, 01 April 2025 20:24 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -150,6 +150,7 @@ buhgalter.com.ua##div.fb-widget__container
 buhplatforma.com.ua##div.cookie-consent
 buhplatforma.com.ua##div.id3-login-root
 buki.com.ua##div[class^="styles_bannerWrapper__"]:has(a[href="/p/cookies/"])
+bukischool.com.ua##div.styles_bannerWrapper__yRpsJ
 bvr.ua##.cookie-notify
 canyon.ua##div.cn-cookies
 carforhero.com###sliding-popup:has(> div.eu-cookie-compliance-banner)
@@ -175,6 +176,7 @@ comfy.ua##div.ask-city-desktop
 comfy.ua##div.info-popup__content
 comfy.ua##div.weblayer--box-subscription-1
 comments.ua###push_info
+computools.ua##section.jquery_cookie
 concord.ua##.warning-cookie
 coolinfo.in.ua##aside#rb-privacy
 creativestates.net##div[class^="Cookies_cookies__"]
@@ -189,6 +191,7 @@ datagroup.ua###js-cookie-notification
 defence-ua.com##div.sidebar > :is(.section-title, [class^="journal-"], .publicat, .social-bar)
 defence-ua.com##div.sidebar > .tab-gallery:style(margin-top: 30px !important)
 detector.media##div.msg_cooky_blk
+dev.ua##div.cookie-dialog
 diia.gov.ua##div.cookies-banner-wrapper
 diiacityunited.org##div.cookies-form
 dnepr.express##div.cookie-consent
@@ -240,6 +243,7 @@ founder.ua##div.boxCookies
 fozzyshop.ua###iqitcookielaw
 freelancehunt.com###cookie-bar
 friendsclub.com.ua##div[class*="__CookiesBanner--"]
+front-u.com##div.consent-banner-root
 funduk.ua###cookie_inform
 gagadget.com##div.l-container:has(> div > div > a[href$="t.me/gagadget_uk"])
 gagadget.com##div.l-container:has(> div > div.social-likes_gg)
@@ -461,6 +465,7 @@ rice.ua##.wd-cookies-popup
 ridni.org.ua##aside.cookies-banner
 riel.ua##div.cookie-notice
 risu.ua###cookies-popup
+riyukraine.com##div.consent-banner-root
 robota.ua##.custom-vacancy-background:style(background-image: none !important; background-color: rgb(242, 245, 248) !important)
 robota.ua##alliance-blured-vacancy
 robota.ua##alliance-clubs-banners-about
@@ -476,6 +481,7 @@ runy.org.ua##.cookieWrapper
 ruport.com.ua##div.banner_area
 samsung.com##div.cookie-bar
 santen.ua##div.gdpr_v2
+savelife.in.ua###cookie-consent-banner
 search.com.ua##.cookie-policy-notice
 seminarov.net##div.cookie-banner
 serpstat.com##.cookie-consent
@@ -579,6 +585,7 @@ vin.gov.ua##.consent-block
 vinga.ua###cookies-banner
 vinnitsa.info##div:has(> div > div > img[alt="App"])
 vinnitsa.info##div.CookieConsent
+visitukraine.today##div.cookie-consent-wrapper
 vitaello.com.ua###consent
 vitagro.com.ua##div.cookie-alert
 volia.com##.agreeCookie\.component__cookieWrapper
