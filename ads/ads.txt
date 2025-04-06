@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.03.21
-! Last modified: Mon, 31 March 2025 20:49 EEST
+! Version: 25.04.2
+! Last modified: Sun, 06 April 2025 14:38 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -368,6 +368,9 @@ che.cn.ua##div.ot-mod-outer:has(> div > h3 > span:has-text(Наші партне
 che.cn.ua##div.ot-mod-outer:has(div.bannergroup)
 chytomo.com##div[class^="banner"]
 cikavopro.com###adsense
+clarity-project.info##div.block-banner
+clarity-project.info##div.entity-header:style(margin-top: 5px !important)
+clarity-project.info##div.internal-banner-wrap
 cloudgaminghub.net.ua##div.banner-promotions-wrapper
 cloudgaminghub.net.ua##div.widget_media_image:has(figure.wp-block-image > a[href*="boosteroid.com/go/"])
 cloudgaminghub.net.ua##div.widget_media_image:has(figure.wp-block-image > a[href*="ukrline.com.ua/?ref="])
@@ -834,6 +837,7 @@ meteofor.com.ua##section.section-media:has(div[id^="div-gpt-ad-"])
 meteofor.com.ua##section.section-rss
 meteoprog.com##div[id^="mp_banner_"]
 mezha.media##.block-novyny-partneriv
+mezha.media##body > div:has(> a[href*="&utm_medium=branding&utm_campaign="])
 mezha.media##div:has(> a.banner-link)
 mezha.media##div.news-item:has(a[rel="author"]:has-text(Promoted))
 mezha.media##div.section_news_adv
@@ -1328,6 +1332,7 @@ youcontrol.com.ua##.banner-more
 youcontrol.com.ua##.banner-new-seo
 youcontrol.com.ua##.banner-register
 youcontrol.com.ua##.banner-yc
+youcontrol.com.ua##div.partner-banner
 zakarpattya.net.ua##div:has(> a > img[src^="/_adv/"]:not(img[src="/_adv/20220308233032.jpg"]))
 zakarpattya.net.ua##div:has(> img[src^="/_adv/"])
 zakarpattya24.com##div.mh-home-sidebar > div.widget_block:has(> figure > a)
