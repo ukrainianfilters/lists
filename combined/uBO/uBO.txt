@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.04.3
-! Last modified: Sun, 06 April 2025 15:22 EEST
+! Version: 25.04.4
+! Last modified: Sun, 06 April 2025 16:24 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -33,12 +33,16 @@
 ||agenteimmobiliare.info^
 ||aixcdn.com^
 ||aj1907.online^
+||api.median-ads.com^
 ||banners.doc.ua^
 ||creativecdn.com^
 ||eskimi.com^
+||franecki.net^
+||getter.cfd^
 ||givemelink.cc^
 ||lenmit.com^
 ||myblogshop.top^
+||myroledance.com^
 ||ogads-pa.googleapis.com^
 ||optad360.io^
 ||optad360.net^
@@ -47,6 +51,7 @@
 ||push-sdk.net^
 ||rcvlink.com^
 ||rcvlinks.com^
+||srv224.com^
 ||stpd.cloud^
 ||trafficbass.com^
 ||trafficdok.com^
@@ -62,11 +67,13 @@
 ||bidder.smartytouch.co^$third-party
 ||bodis.com^$third-party
 ||c.hit.ua^$third-party
+||c8.net.ua^$third-party
 ||cdn.umh.ua^$third-party
 ||cdnkma.biz^$third-party
 ||clickua200.pp.ua^$third-party
 ||crashlytics.ru^$third-party
 ||exchange.informer.ua^$third-party
+||fundingchoicesmessages.google.com^$third-party,domain=ukranews.com
 ||go2net.com.ua^$third-party
 ||holder.com.ua^$third-party
 ||infocode.tech^$third-party
@@ -148,6 +155,9 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ! >>>
 /mod_ijoomla_adagency_zone/*$~xmlhttprequest
 ! >>>
+##.bannerAside
+##.headad
+##.headAd
 ###ad_top
 ###ad_Top
 ###AD_Top
@@ -203,6 +213,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||slk.kh.ua/banners/redirect?id=$document
 ||tsn.ua/static/pub/js/advertize.js
 ||tsn.ua/static/pub/js/membrana-video.js
+||ukranews.com/banners.json
 ||widgets.coingecko.com/coingecko-coin-list-widget.js^$domain=psm7.com
 ! >>>
 ||bbc.com/ukrainian/$removeparam=xtor
@@ -258,6 +269,7 @@ forex.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 24tv.ua##app-main-page-adv-block
 24tv.ua##div.video-container:has(> app-adv-video-placeholder)
 24tv.ua##div.video-dv-wrapper
+24tv.ua##div#idealMediaWrapper
 2day.kh.ua###block-reklamnyybanner
 2ip.ua##a.nobanner
 2ip.ua##div[class^="hmi-"]:has(> a[href*="/?utm_source=2ip.ua&"])
@@ -325,7 +337,10 @@ beauty.ua##div[id^="adpartner-"]
 beauty.ua##div[id^="bn-"]
 bessarabia.ua##div.rekBlock
 bigkyiv.com.ua###turnkey-credit
+bigkyiv.com.ua##div:has(> div#banner-body)
 bigkyiv.com.ua##div.ads
+bigkyiv.com.ua##div[id^="banner-sidebar-"]
+bigkyiv.com.ua##div#banner-four-cols
 bihus.info##div.r-tram_wrap
 bild.ua##div:has(> div:is(.blockProjects,.blockPProjectBottom2))
 blackseanews.net##div.ad
@@ -336,6 +351,9 @@ bon.ua##div.container_banner
 bon.ua##noindex:has(> div > div.advert-banner)
 book-ye.com.ua##div.bb-left > div.banner-conatiner
 book-ye.com.ua##div.bb-right > div.banner-conatiner
+borgexpert.com##div.home-banner-mob
+borgexpert.com##div.widget-banner
+borgexpert.com##li.li-banner-mobile
 brokker.news##div.container-bn
 budport.com.ua##div.banner_bg
 budport.com.ua##div.tm-banner-slider
@@ -466,6 +484,9 @@ elle.ua##div.reklama
 elle.ua##div.tizers
 eneyida.tv##div.ad_subcontent
 enkorr.ua##div.baner-wrapp
+enovosty.com##div.asp-widget-ads
+enovosty.com##div.banner-in-news
+enovosty.com##div[id^="admixer_"]
 epochtimes.com.ua##aside:has(> iframe[src$="/sinoptik.html"])
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##[class$="_banner"]
 epravda.com.ua,eurointegration.com.ua,pravda.com.ua##div[class^="advtext"]
@@ -863,6 +884,8 @@ miyklas.com.ua##div.sc-wrap
 mmr.net.ua##div.code-block:has(script)
 moviegram.com.ua##div.elementor-element:has(> div > p > a[href="mailto:redaction@moviegram.com.ua"])
 moviegram.com.ua##section.elementor-section:has(> div > div > div > div.elementor-widget-wp-widget-advads_ad_widget)
+mydim.ua##div.e-left-banners
+mydim.ua##div.e-right-banners
 mykharkov.info##.promotion_link
 mykharkov.info###text-4
 mykharkov.info##div.sidebar-block.news-companies
@@ -900,6 +923,7 @@ novyny.pro###idealmedia
 novyny.pro##div.adv
 novyny.pro##div.banner_container
 noworries.news##.header-baner
+noworries.news##div.advertising-box
 nv.ua##[data-type="advertising"]
 nv.ua##body.branding:style(padding-top: 20px !important)
 nv.ua##div.ad_wrapper
@@ -952,6 +976,7 @@ playua.net##div[class*="-advert"]
 playua.net##div[class*="a_dvert"]
 playua.net##div[class*="google-ad"]
 pn.com.ua##div:has(> a[href^="/click/br/"])
+podrobnosti.ua##div[id^="adex-jsunit-"]
 politeka.net##div.ai-placement
 poltava.to##div.bn
 portal.lviv.ua##div[class^="banner"]
@@ -1111,6 +1136,7 @@ tabloid.pravda.com.ua##.background-video[data-video-urls*="legend-transcode"]
 tabloid.pravda.com.ua##.koz-box
 tabloid.pravda.com.ua##.kr-loo-box
 tabloid.pravda.com.ua##div.layout_split_sidebar:has(.article_pr + .article_pr + .article_pr + .article_pr + .article_pr + .article_pr)
+telefonnyjdovidnyk.com.ua##div.ad
 telegraf.com.ua##[data-text="Реклама"]
 telegraf.com.ua##div.c-r:has([data-text="Реклама"])
 telegraf.com.ua##div.s-content__ratio:has(script[id^="_vidverto-"])
@@ -1119,6 +1145,9 @@ tenews.org.ua###left-container
 tenews.org.ua###right-container
 tenews.org.ua##a[target="_blank"]:has(> img)
 tenews.org.ua##img[src*="/assets/img/ads/"]
+terazus.com##div.banner
+terazus.com##div.top_banner
+terazus.com##div[class^="footer_banners_area_"]
 ternopoliany.te.ua###pp
 ternopoliany.te.ua###pp-bg
 ternopoliany.te.ua##div:has(> div.rek)
@@ -1184,12 +1213,15 @@ ua-vestnik.com##div.elementor-widget-container:has(> figure > a[href*="myblogsho
 ua.news##aside[class^="promo"]
 uagolos.com##div.container.header-container > div > div:nth-of-type(2)
 uagolos.com##div.widget_block:has(> script[src*="jsc.idealmedia.io/"])
+uainfo.org##div:has(> div[id^="MIXADV_"])
+uakino.me##div.side-content-adblock
 uanews.kharkiv.ua##div.int
 uanews.org.ua##a:has(> img[class*="advert-box"])
 uanews.org.ua##div:has(> a[target="_blank"] > img[src*="/assets/advert/"])
 uanews.org.ua##div.row.top-post-box
 uanews.org.ua##hr.base-post-divider + a
 uapetrol.com##div.sidebar__item:has(div.adv__exam)
+uaportal.com##.banner
 uapress.kyiv.ua###sidebar
 uapress.kyiv.ua##div[data-elementor-post-type="elementor_library"]
 uaserials.pro##.wrap:style(padding-top:20px !important)
@@ -1202,10 +1234,13 @@ ukr-mova.in.ua##div.container:has(> ins.adsbygoogle)
 ukr-mova.in.ua##div.row:has(> div.cloud > ins.adsbygoogle)
 ukr-mova.in.ua##div.row:has(> ins.adsbygoogle)
 ukr.net##.fixed-block > div[class] ~ div
+ukr.net##div.adsense
 ukr.net##div.advertisement-block
 ukr.net##div.placeholder
 ukr.net##div[class$="-banner"]
 ukranews.com##.mailing-block
+ukranews.com##div.b-banner
+ukranews.com##div[class*="ad-id-"]
 ukranews.com##div#container[data-detachable-player]:has-text(Зараз дивляться)
 ukranews.com##noindex:has(.ad)
 ukranews.com##noindex:has(.advertising)
@@ -1336,6 +1371,9 @@ youcontrol.com.ua##.banner-new-seo
 youcontrol.com.ua##.banner-register
 youcontrol.com.ua##.banner-yc
 youcontrol.com.ua##div.partner-banner
+ysc.kiev.ua##div:has(> div.ai-rotate)
+ysc.kiev.ua##div:has(> div[id^="adex-jsunit-"])
+ysc.kiev.ua##div[id^="ai_widget-"]
 zakarpattya.net.ua##div:has(> a > img[src^="/_adv/"]:not(img[src="/_adv/20220308233032.jpg"]))
 zakarpattya.net.ua##div:has(> img[src^="/_adv/"])
 zakarpattya24.com##div.mh-home-sidebar > div.widget_block:has(> figure > a)
@@ -1517,6 +1555,7 @@ zz.te.ua##.advads-widget
 ||survey.clarity-project.info^$xmlhttprequest
 ||top.my.ua^$third-party
 ||trackcmp.net^$third-party
+||uptolike.com^$third-party
 ||usocial.pro^$third-party,domain=uanews.org.ua
 ||veon-analytics.digital.medallia.eu^$third-party
 ||veon-udc.digital.medallia.eu^$third-party
