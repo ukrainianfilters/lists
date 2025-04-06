@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.04.4
-! Last modified: Sun, 06 April 2025 16:24 EEST
+! Version: 25.04.5
+! Last modified: Sun, 06 April 2025 16:53 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -1490,6 +1490,7 @@ zz.te.ua##.advads-widget
 ||xp.apple.com^
 ! >>>
 ||acint.net^$third-party
+||ahrefs.com^$third-party
 ||alfabankua.zendesk.com^$third-party
 ||amplitude.com^$third-party,domain=favbet.ua
 ||analitycs.net^$third-party
@@ -1497,7 +1498,9 @@ zz.te.ua##.advads-widget
 ||api.country.is^$third-party
 ||api.ipgeolocation.io^$third-party,domain=trueprice.ua
 ||api.ipify.org^$third-party,domain=friendsclub.com.ua|netronic.com.ua
+||api.median-grp.com/partners^$third-party
 ||artfut.com^$third-party
+||bidata.store^$third-party
 ||bpmonline.com^$third-party
 ||c.apserver.org.ua^$third-party
 ||cdn.debugbear.com^$third-party
@@ -1516,6 +1519,7 @@ zz.te.ua##.advads-widget
 ||demdex.net^$third-party
 ||dev.visualwebsiteoptimizer.com^$third-party
 ||fixidle.com^$third-party
+||flxr.myplan-c.com^$third-party
 ||frog.wix.com^$image,ping,xmlhttprequest
 ||getpush.net^$third-party
 ||getstat.net^$third-party
@@ -1555,6 +1559,8 @@ zz.te.ua##.advads-widget
 ||survey.clarity-project.info^$xmlhttprequest
 ||top.my.ua^$third-party
 ||trackcmp.net^$third-party
+||tracker.esputnik.com^$third-party
+||tracker.profit.store^$third-party
 ||uptolike.com^$third-party
 ||usocial.pro^$third-party,domain=uanews.org.ua
 ||veon-analytics.digital.medallia.eu^$third-party
@@ -1571,6 +1577,7 @@ zz.te.ua##.advads-widget
 ||analytics.*/collect
 ||analytics.nikvesti.com/matomo.js
 ||api-iam.intercom.io/messenger/web/metrics
+||api.drukarnia.com.ua/api/stats/
 ||apkcafe.com.ua/stat/
 ||bitrix.info/ba.js
 ||booknet.ua/tracker/
@@ -1589,13 +1596,18 @@ zz.te.ua##.advads-widget
 ||elmir.ua/response/th.php?i=
 ||elmir.ua/response/update_basket.php?t&gen=
 ||eva.ua/assets/scripts/multisearch-tracker.js
+||eva.ua/assets/scripts/uxlens.js
 ||gepur.com/logs
 ||hotline.ua/svc/tracking/
 ||hsforms.com/embed/v3/counters.gif
+||hutils.loxal.net/whois
 ||i.factor.ua/js/analytics_factor.js
 ||itstep.org/js/sentry.js
+||ivona.ua/click/
+||k.cackle.me/widget/*/count
 ||langlover.com.ua/api/countview/
 ||langlover.com.ua/api/proxy/honeycomb
+||lens.eva.ua^
 ||locator.ua/js/stat.js
 ||locator.ua/report.php
 ||mate.academy/amplitude/
@@ -1618,12 +1630,16 @@ zz.te.ua##.advads-widget
 ||shareaholic.com/analytics_
 ||shareaholic.com/partners.js
 ||sport.ua/pixel/
+||sst.buki.com.ua^
+||sst.bukischool.com.ua^
 ||stat.techomsend.com/stat.svg?p=
 ||tdl.com.ua/user_stat.php
 ||teach-inf.com.ua/stat/
 ||tiktok.com/web/report?
 ||tiktokv.com/monitor_browser/
 ||top-js-metrics.top.my.ua/script.js
+||tracker.shafa.ua^
+||travelpayouts.com/pixel.png?
 ||trustpilot.com/stats/
 ||twitter.com/i/jot
 ||ukr.net/_events/
@@ -1639,6 +1655,7 @@ zz.te.ua##.advads-widget
 ! >>>
 _beacon?
 /?sentry_key=$domain=dom.ria.com|epicentrk.ua|gymbeam.ua|statbet.com
+/?sentry_version=
 /action/location/common/geolocate^$domain=bild.ua
 /ads-blocking-detector.$script,domain=kyivstar.ua
 /ajax/analytics$domain=nashformat.ua
