@@ -52,11 +52,11 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 
 [uBlock Origin](https://ublockorigin.com/) (uBO) — платформонезалежне розширення фільтрації контенту для Firefox та інших браузерів, що засновані на [Chromium](https://uk.wikipedia.org/wiki/Chromium) (зокрема, Google Chrome, Opera, Microsoft Edge, Brave). Переваги цього розширення: вільне програмне забезпечення з відкритим кодом, ефективне використання процесора та пам'яті, об'єктивно найкращий вибір з точки зору функціональних можливостей та гнучкості налаштувань.
 
-Фільтри Ads + Privacy + Security вже вбудовані у uBlock Origin (вкладка `Filter lists`, розділ `Regions, languages` → `ua: Ukrainian Filters`).
+Фільтри Ads + Privacy + Security вже вбудовані у uBlock Origin (вкладка `Filter lists`, розділ `Regions, languages` → `🇺🇦 ua: Ukrainian Filters`).
 
 ### uBlock Origin Lite
 
-Фільтри Ads + Privacy + Security вже вбудовані у [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) (вкладка `Filter lists`, розділ `Regions, languages` → `ua: Ukrainian Filters`).
+Фільтри Ads + Privacy + Security вже вбудовані у [uBlock Origin Lite](https://github.com/uBlockOrigin/uBOL-home) (вкладка `Filter lists`, розділ `Regions, languages` → `🇺🇦 ua: Ukrainian Filters`).
 
 ### Brave
 
