@@ -432,7 +432,7 @@ dialog.ua##div.news-content-ad
 dnipro-day.com,frankivsk-day.com,kharkiv-day.com,khmelnitsk-day.com,kyiv-day.com,lutsk-day.com,lviv-day.com,odesa-day.com,poltava-day.com,rivne-day.com,ternopil-day.com,ukr-day.com,uzhgorod-day.com,vinnitsa-day.com,zhytomyr-day.com##div:has(> a > img:is([alt*="baner"], [alt*="banner"], [src*="banner"]))
 dnipro-day.com,frankivsk-day.com,kharkiv-day.com,khmelnitsk-day.com,kyiv-day.com,lutsk-day.com,lviv-day.com,odesa-day.com,poltava-day.com,rivne-day.com,ternopil-day.com,ukr-day.com,uzhgorod-day.com,vinnitsa-day.com,zhytomyr-day.com##div.merimag-ad-section
 dnipro-day.com,frankivsk-day.com##div:has(> figure> a > img[src*="banner"])
-dou.ua##.promobarc
+dou.ua##.promobar
 dou.ua###max-header-adv-id
 dou.ua###topinfo
 dou.ua##div.b-adv-events
