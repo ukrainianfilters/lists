@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.04.6
-! Last modified: Mon, 07 April 2025 12:09 EEST
+! Version: 25.04.7
+! Last modified: Fri, 11 April 2025 14:19 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -436,12 +436,12 @@ dnipro-day.com,frankivsk-day.com,kharkiv-day.com,khmelnitsk-day.com,kyiv-day.com
 dnipro-day.com,frankivsk-day.com,kharkiv-day.com,khmelnitsk-day.com,kyiv-day.com,lutsk-day.com,lviv-day.com,odesa-day.com,poltava-day.com,rivne-day.com,ternopil-day.com,ukr-day.com,uzhgorod-day.com,vinnitsa-day.com,zhytomyr-day.com##div.merimag-ad-section
 dnipro-day.com,frankivsk-day.com##div:has(> figure> a > img[src*="banner"])
 dou.ua##.promobar
+dou.ua###max-header-adv-id
+dou.ua###topinfo
 dou.ua##div.b-adv-events
 dou.ua##div.b-dou-vacancies
 dou.ua##div.b-sponsors
 dou.ua##div[class^="banner-"]
-dou.ua##div#max-header-adv-id:has(a[href^="https://dou.ua/goto/?id="])
-dou.ua##div#topinfo
 dou.ua##li.mini-header:has(a[rel="nofollow"][target="_blank"])
 dovidka.biz.ua##div[class^="b-r b-r--"]
 dp.informator.ua##div[data-widget-id="201"] > div > a[href$="obmin.info?f=informator"]
@@ -507,7 +507,9 @@ esc.lviv.ua##div.jeg_ad
 espreso.tv##div.news-tape-item:has(div.mark-block:has-text(Партнерський матеріал))
 eurofootball.com.ua##div.banner
 eurointegration.com.ua,pravda.com.ua##[class$="-banner"]
+eurointegration.com.ua###footer:style(margin-bottom: unset !important)
 eurointegration.com.ua##a[href="https://www.ukr.net/"]
+eurointegration.com.ua##header > div.layout:style(margin-top: unset !important)
 euromaidanpress.com##div.code-block:has(div[id^="admixer-"])
 euromaidanpress.com##div.kompreno
 exo.in.ua##div.right > div:first-of-type
@@ -860,10 +862,13 @@ meteofor.com.ua##section.section-media:has(div[id^="div-gpt-ad-"])
 meteofor.com.ua##section.section-rss
 meteoprog.com##div[id^="mp_banner_"]
 mezha.media##.block-novyny-partneriv
+mezha.media##.section_article_adv
 mezha.media##body > div:has(> a[href*="&utm_medium=branding&utm_campaign="])
 mezha.media##div:has(> a.banner-link)
+mezha.media##div.article_story_list:has(> div > div > div > a > span.article_label_adv)
 mezha.media##div.news-item:has(a[rel="author"]:has-text(Promoted))
 mezha.media##div.section_news_adv
+mezha.media##div.section_topic_b:has(> div > h3 > a[href$="/special-project/"])
 mil.in.ua##div.ads
 mind.ua###promo-catfish
 mind.ua##div.b-info-block__content > div > div:has(> div > a[href$="/ad"])
