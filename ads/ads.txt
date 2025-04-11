@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.04.7
-! Last modified: Fri, 11 April 2025 14:19 EEST
+! Version: 25.04.9
+! Last modified: Fri, 11 April 2025 21:03 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -60,6 +60,7 @@
 ||360playvid.info^$third-party
 ||adhigh.net^$third-party
 ||admixer.net^$third-party
+||adskeeper.com^$third-party
 ||adwadvert.com.ua^$third-party
 ||bidder.smartytouch.co^$third-party
 ||bodis.com^$third-party
@@ -108,6 +109,7 @@
 ||content-loader.com^$document,popup
 ||css-load.com^$document,popup
 ||html-load.com^$document,popup
+||html-load.com^$font,ping
 ||img-load.com^$document,popup
 !
 !
@@ -135,6 +137,8 @@ eurointegration.com.ua,pravda.com.ua##^script[onload*="html-load.com"]
 agronews.ua,agroreview.com##+js(remove-node-text, script, adId)
 eurointegration.com.ua##+js(remove-node-text, script, moveTopBanner)
 glianec.com##+js(remove-node-text, script, location.reload)
+newsyou.info##+js(remove-node-text, script, "/loader.min.js, stay, 1)
+newsyou.info##+js(remove-node-text, script, ads.offsetHeight)
 proagro.com.ua##+js(remove-node-text, script, wpsite_clickable_data)
 rup.com.ua##+js(remove-node-text, script, bdca)
 zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
@@ -152,9 +156,16 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ! >>>
 /mod_ijoomla_adagency_zone/*$~xmlhttprequest
 ! >>>
+##.ads-header
+##.advtext
+##.advText
 ##.bannerAside
 ##.headad
 ##.headAd
+##.side_ad
+##.site-header__ads
+##.td-a-ad
+##.td-adspot-title
 ###ad_top
 ###ad_Top
 ###AD_Top
@@ -200,6 +211,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||ek.ua/pst.php
 ||gepur.com/js/rtbhouse.js
 ||helsi.me/api/ad/pis/
+||html-load.com/loader.min.js^$domain=newsyou.info
 ||informator.ua/js/frontend/ad-loaders
 ||medicina.ua/adv.php
 ||medicina.ua/adv/async.php
@@ -300,6 +312,9 @@ agronomy.com.ua##div[class^="adv_"]
 agropolit.com##div.header__banner-wrap
 agroportal.ua##.fixedBlock
 agroportal.ua##a[href^="/"][target="_blank"]
+agroreview.com##div.bnrs
+agroreview.com##div[class^="banner"]
+agroreview.com##div[id^="aw-ad-baner-"]
 agroter.com.ua##div.entry-content-wrap > a[target="blank"]
 agrotimes.ua##div.header__banner
 agrotimes.ua##div.widget:has(> div > div[id^="admixer_"])
@@ -810,6 +825,7 @@ liga.net##div.ad
 liga.net##div.article-footer__widget.b-blocks
 liga.net##div.article-footer__widget.b-subs
 liga.net##div.banner
+liga.net##div.remp-banner
 liga.net##div.section-default__col--right-sidebar:has(> div > div.ad)
 ligazakon.net##div.banner_placeholder
 ligazakon.net##div.item_withrekl
@@ -927,6 +943,7 @@ noworries.news##.header-baner
 noworries.news##div.advertising-box
 nv.ua##[data-type="advertising"]
 nv.ua##body.branding:style(padding-top: 20px !important)
+nv.ua##div:is(.feed-item, .row-result):has(div.spec-label:has-text(/Новини компаній|PR|Реклама|Партнерський проєкт|Позиція/i))
 nv.ua##div.ad_wrapper
 nv.ua##div.ad-wrapper
 nv.ua##div.feed-item:has(> div + a[href*="&utm_campaign=promosite"])
@@ -982,6 +999,8 @@ politeka.net##div.ai-placement
 poltava.to##div.bn
 portal.lviv.ua##div[class^="banner"]
 portal.lviv.ua##div[id^="wonderpluginslider-container-"]
+portaltele.com.ua##div.header-main > div.container > div.row:style(min-height: unset !important)
+portaltele.com.ua##div.top-ads-links
 poznavayka.org##aside.widget:has(div > div.rek_bok)
 pravda.com.ua##.unit_sp_place
 pravda.com.ua##article.article_pr
@@ -1101,10 +1120,19 @@ sport24.ua##app-default-news:has(app-adv-news-label)
 sport24.ua##div.video-dv-wrapper
 sport24.ua##p:has(> a[href^="https://www.favbet.ua/"][target="_blank"])
 sport24.ua##p:has(> a[target="_blank"] > em:has-text(FAVBET))
+sportanalytic.com##.block_project_menu
+sportanalytic.com##.common_content_choice__inner::after:style(border-bottom: unset !important)
+sportanalytic.com##.common_content_choice__inner:style(margin-bottom: unset !important)
+sportanalytic.com###footer:style(margin-bottom: unset !important)
+sportanalytic.com##a.button.button_more + br + center
+sportanalytic.com##a.button.button_more + center
+sportanalytic.com##div.block__head
 sportanalytic.com##div.block:has-text(Партнер)
 sportanalytic.com##div.fb_iframe_widget
 sportanalytic.com##div.wblock:has-text(Інші новини)
+sportanalytic.com##div[class*="-banner"]
 sportanalytic.com##div#news:has-text(Картина дня)
+sportanalytic.com##header > div.layout:style(margin-top: unset !important)
 sportarena.com##[data-partner]
 sportarena.com##div.nomobile:style(margin-top: unset !important)
 sportnews.com.ua###sidebar > div:nth-child(n+2)
@@ -1239,6 +1267,8 @@ ukr.net##div.adsense
 ukr.net##div.advertisement-block
 ukr.net##div.placeholder
 ukr.net##div[class$="-banner"]
+ukragroconsult.com##div.bans
+ukragroconsult.com##div.free-consultation
 ukranews.com##.mailing-block
 ukranews.com##div.b-banner
 ukranews.com##div[class*="ad-id-"]
