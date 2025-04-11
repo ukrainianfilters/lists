@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.04.7
-! Last modified: Fri, 11 April 2025 14:19 EEST
+! Version: 25.04.9
+! Last modified: Fri, 11 April 2025 21:03 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -103,6 +103,7 @@ a-grade.com.ua##div.modalWindow--cookie
 accordbank.com.ua###setcookie-agreement
 afishadnepr.com.ua,fitness-class.com.ua,nashemisto.dp.ua,startermedia.com.ua###cookie-law-info-bar
 agrodoctor.ua###cookieswarning_block
+agroreview.com##div.read-us
 ain.ua##div.cookie-popup
 akzent.zp.ua##div.gsInformer
 alfa-tv.ua##.cook
@@ -218,6 +219,7 @@ ecomodule.com.ua##div.l-cookie
 ecopolitic.com.ua##div.cookie-banner
 ecopolitic.com.ua##div.cursor-follower
 elfashop.ua###cookies
+elitexpert.ua##center:has(> a[target="_blank"])
 eobuv.com.ua##.modal-consents
 epravda.com.ua,pravda.com.ua##div#checkUPcookies
 eridon.ua##div.cook
@@ -330,7 +332,7 @@ lemtrans.com.ua##div.cookie_bar
 lexus.ua##section:has(> div.cookies-consent)
 lgseeds.com.ua###cookieModal:remove()
 librarius.pro##div[class^="CookieBanner_wrap"]
-liga.net##div.article-body > div.social-widget.news-list-page__card
+liga.net##div.article-body > div > div.social-widget.news-list-page__card
 liga.net##div#cookie-reminder
 ligazakon.net##div.wrapper-banner-by-tag
 ligazakon.net##div[ng-if="showNewDoc"]
@@ -405,6 +407,7 @@ nashformat.ua##div.header_esupport
 nethunt.ua##div.section-cookieNotification
 netronic.com.ua##div[class^="style_banner__"]:has(> div > div > h3 > a[href="/privacy"])
 newproducts.com##div.cookies-banner
+newsyou.info##div.pum.pum-overlay
 nic.ua##div.cookie-alert
 nikopolnews.net###wp-bottom-menu
 nomoreransom.org##div.cookie-popup
