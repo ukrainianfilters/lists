@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.04.9
-! Last modified: Fri, 11 April 2025 21:03 EEST
+! Version: 25.04.11
+! Last modified: Fri, 18 April 2025 21:47 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -443,8 +443,10 @@ dengi.ua##div.banner
 detector.media##div.banner_brend
 detector.media##div.md_banner_zone
 dev.ua##div.afterheader-widget
+dev.ua##div.article-section__currency-banner
 dev.ua##div.island:has(> div.island__body > div[data-sender="admixer"])
 dev.ua##div.partners-wrapper
+dev.ua##figure[data-article-global-incut-target="incut"]:has(div[data-sender="admixer"])
 dialog.ua##div.banner
 dialog.ua##div.news-content-ad
 dnipro-day.com,frankivsk-day.com,kharkiv-day.com,khmelnitsk-day.com,kyiv-day.com,lutsk-day.com,lviv-day.com,odesa-day.com,poltava-day.com,rivne-day.com,ternopil-day.com,ukr-day.com,uzhgorod-day.com,vinnitsa-day.com,zhytomyr-day.com##div:has(> a > img:is([alt*="baner"], [alt*="banner"], [src*="banner"]))
@@ -476,6 +478,10 @@ dumskaya.net##div#tops
 dumskaya.net##nav.nav:style(padding-top: 0 !important)
 dumskaya.net##noindex
 dw.com##div.advertisement
+dynamo.kiev.ua###dynamo_interstitial
+dynamo.kiev.ua###dynamo_premium
+dynamo.kiev.ua###dynamo_premium_com
+dynamo.kiev.ua###js-preload-banner
 dynamo.kiev.ua##div.content-banner
 dynamo.kiev.ua##div[id="admixer_"]
 dynamo.kiev.ua##div#corpMagnet
@@ -650,13 +656,14 @@ healthinfo.ua##div.abox
 hi.dn.ua###section-id-1496826235107
 hi.dn.ua###sp-top-banners
 hi.dn.ua###sppb-addon-wrapper-1496985206652
-highload.today##[class^="partners"]
-highload.today##div:has(> img[src*="/images/banners/"])
-highload.today##div.mobile-hide:not(:has(> a[href*="/tretya-shturmova-ogoloshuye-zbir-"]))
-highload.today##div.mobile-show:not(:has(> a[href*="/tretya-shturmova-ogoloshuye-zbir-"]))
-highload.today##div.post-content > div > div.text-center-block:has(> div.widget-spec-projects)
-highload.today##div[class^="course-widget-"]
-highload.today##p.intro[style*="background: linear-gradient"]
+highload.tech,highload.today##[class^="partners"]
+highload.tech,highload.today##aside.banner-agency
+highload.tech,highload.today##div:has(> img[src*="/images/banners/"])
+highload.tech,highload.today##div.mobile-hide:not(:has(> a[href*="/tretya-shturmova-ogoloshuye-zbir-"]))
+highload.tech,highload.today##div.mobile-show:not(:has(> a[href*="/tretya-shturmova-ogoloshuye-zbir-"]))
+highload.tech,highload.today##div.post-content > div > div.text-center-block:has(> div.widget-spec-projects)
+highload.tech,highload.today##div[class^="course-widget-"]
+highload.tech,highload.today##p.intro[style*="background: linear-gradient"]
 hotline.ua##div.banner-advertising
 hrinchenko.com##div.green_add
 hrinchenko.com##div[class^="adsense_"]
@@ -1386,6 +1393,7 @@ work.ua###react-video-player
 work.ua##div.hidden-print:has(> a[onclick="openReactVideoPlayer()"])
 work.ua##iframe + div.h-exception
 work.ua##iframe[src*="/b.php?bid="]
+wtg.com.ua##div[class^="styles_ads__"]
 wz.lviv.ua##div:has(> a[href*="peredplata.ukrposhta.ua"])
 wz.lviv.ua##div[class*="uk-visible@m"]:has(> img[aria-hidden="true"])
 xsport.ua##[class^="partners"]
