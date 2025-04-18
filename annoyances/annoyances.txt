@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.04.9
-! Last modified: Fri, 11 April 2025 21:03 EEST
+! Version: 25.04.10
+! Last modified: Fri, 18 April 2025 21:21 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -157,6 +157,8 @@ buhplatforma.com.ua##div.id3-login-root
 buki.com.ua##div[class^="styles_bannerWrapper__"]:has(a[href="/p/cookies/"])
 bukischool.com.ua##div.styles_bannerWrapper__yRpsJ
 bvr.ua##.cookie-notify
+cambridge.ua###cookies-consent-modal
+cambridge.ua##body:style(overflow-y: unset !important)
 canyon.ua##div.cn-cookies
 carforhero.com###sliding-popup:has(> div.eu-cookie-compliance-banner)
 carta.ua##div.carta-policy-bottom
@@ -256,6 +258,8 @@ gagadget.com##div.l-container:has(> div > div.social-likes_gg)
 getsmart.com.ua##div.sccm
 gorod.dp.ua###myCookieConsent
 gorsovet.com.ua##div.cookie-consent
+grade.ua###cookies-consent-modal
+grade.ua##body:style(overflow-y: unset !important)
 greenfort-ua.com##div[data-storage-item*="cookiename_"]
 greenpost.ua###cookie-popup
 gsm.in.ua##.notice--cookie
@@ -457,6 +461,7 @@ primary.org.ua###cookie-law-info-bar
 probitcoin.com.ua##.js-lwpcngNotice
 prokadry.com.ua##div.cookie-consent
 prokadry.com.ua##div.id3-login-root
+proosbb.info##div.eu-cookie-compliance-banner
 propertytimes.com.ua##p:has(> a[href$="t.me/propertytimes"])
 prostavochka.com.ua##.messages_cookies
 prozora.network##div.set-all-components:has(> div[fs-cc="banner"] > div > div.cookies_top)
@@ -505,6 +510,7 @@ slk.kh.ua##div.google-news-sub
 smachno.ua##div.bubleblock_wrapper
 smachno.ua##div.header_top_desctop_bnr:has(div.cookie-pop)
 smarthost.net.ua##div[aria-label="cookieconsent"]
+smile-ukraine.com##div.eu-cookie-compliance-banner
 smk-retail.com.ua##div.cookies_accept_popup
 solarpath.com.ua##aside#moove_gdpr_cookie_info_bar
 songs.in.ua##div.widget_eu_cookie_law_widget
@@ -568,6 +574,7 @@ uatv.ua##div.playerlive
 uatv.ua##div.privacy-policy-block
 ucu.edu.ua###cookieNotice
 ucu.edu.ua###sp-cookie-consent
+ueex.com.ua###gdpr-cookie-message
 ukraina.info##div.CookieConsent
 ukraina.info##div.x-iaky6s
 ukraine-gta.com.ua##div.cookie-container
