@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.04.11
-! Last modified: Fri, 18 April 2025 21:47 EEST
+! Version: 25.04.12
+! Last modified: Thu, 24 April 2025 21:28 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -884,6 +884,7 @@ meteoprog.com##div[id^="mp_banner_"]
 mezha.media##.block-novyny-partneriv
 mezha.media##.section_article_adv
 mezha.media##body > div:has(> a[href*="&utm_medium=branding&utm_campaign="])
+mezha.media##body > div:has(> a[target="_blank"] > picture)
 mezha.media##div:has(> a.banner-link)
 mezha.media##div.article_story_list:has(> div > div > div > a > span.article_label_adv)
 mezha.media##div.news-item:has(a[rel="author"]:has-text(Promoted))
