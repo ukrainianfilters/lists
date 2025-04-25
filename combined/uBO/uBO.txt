@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.04.14
-! Last modified: Thu, 24 April 2025 22:53 EEST
+! Version: 25.04.15
+! Last modified: Fri, 25 April 2025 21:37 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -1502,7 +1502,7 @@ zz.te.ua##.advads-widget
 ! !!!!!!!!!!!!!!!
 ! TRACKERS
 ! !!!!!!!!!!!!!!!
-!
+!c
 ||analytics.shareaholic.com^
 ||analytics.tiktok.com^
 ||analytics.trbna.com^
@@ -1511,10 +1511,13 @@ zz.te.ua##.advads-widget
 ||c.bigmir.net^
 ||c.mgid.com^
 ||clarity.ms^
+||counter.1gb.ua^
+||counter.best.cv.ua^
 ||counter.champion.com.ua^
 ||counter.epravda.com.ua^
 ||counter.mezha.media^
 ||counter.mirohost.net^
+||counter.nplu.org^
 ||counter.nv.ua^
 ||counter.pravda.com.ua^
 ||counter.ukr.net^
@@ -1547,12 +1550,16 @@ zz.te.ua##.advads-widget
 ||ssc.radiosvoboda.org^
 ||st.hbrd.io^
 ||stat.board.com.ua^
+||stat24.meta.ua^
+||stats.hurtom.com^
+||stats.itc.ua^
 ||stats.wp.com^
 ||statsjs.klevu.com^
 ||stattracking.pw^
 ||steadfastsystem.com^
 ||to.getnitropack.com^
 ||track.mailerlite.com^
+||tracker.bigl.ua^
 ||tracker.multisearch.io^
 ||tracker.prom.ua^
 ||tracker.softcube.com^
@@ -1673,6 +1680,7 @@ zz.te.ua##.advads-widget
 ||eva.ua/assets/scripts/uxlens.js
 ||gepur.com/logs
 ||googleapis.com^*/gen_204?
+||gotcha-server.evo.run/metrics
 ||hotline.ua/svc/tracking/
 ||hsforms.com/embed/v3/counters.gif
 ||hutils.loxal.net/whois
@@ -1730,6 +1738,7 @@ zz.te.ua##.advads-widget
 ||youtube.com/youtubei/v1/log_event?
 ! >>>
 _beacon?
+.js?id=GTM-
 /?sentry_key=$domain=dom.ria.com|epicentrk.ua|gymbeam.ua|statbet.com
 /?sentry_version=
 /action/location/common/geolocate^$domain=bild.ua
@@ -1781,6 +1790,8 @@ _beacon?
 /piwik.js$domain=tsn.ua
 /pixel/?token=$domain=obozrevatel.com
 /plugins/exactmetrics-
+/ps/track_informer_click?token=$domain=bigl.ua
+/ps/track_informer_views$domain=bigl.ua
 /rum-track?
 /rum.gif?
 /rum.min.js
@@ -1793,6 +1804,7 @@ _beacon?
 /utag.sync.js$domain=holosameryky.com|radiosvoboda.org
 /visitor.min.js
 /wix-engage-visitors-
+/wp-json/sage/v1/analytics-data$domain=cambridge.ua|grade.ua
 /wp-statistics-tracker.min.js
 /wp-statistics/assets/js/tracker.js
 /wpr-beacon.min.js
