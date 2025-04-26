@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.04.14
-! Last modified: Thu, 24 April 2025 22:53 EEST
+! Version: 25.04.17
+! Last modified: Sat, 26 April 2025 19:38 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -162,20 +162,10 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 /mod_ijoomla_adagency_zone/*$~xmlhttprequest
 /www/delivery/*$script,subdocument
 ! >>>
-##.ads-header
-##.advtext
-##.advText
-##.bannerAds
-##.bannerAside
-##.headad
-##.headAd
-##.side_ad
-##.site-header__ads
-##.td-a-ad
-##.td-adspot-title
 ###ad_top
 ###ad_Top
 ###AD_Top
+###ad-300
 ###ad-lead
 ###homead
 ###homeAd
@@ -183,12 +173,24 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ! >>>
 ##.ad-300
 ##.ads-content
+##.ads-header
 ##.ads300
+##.advert-container
+##.advert-text
+##.advtext
+##.advText
 ##.adx_center
+##.bannerAds
+##.bannerAside
+##.headad
+##.headAd
 ##.header-adv
 ##.newspack_global_ad
 ##.nts-ad
 ##.nts-video-wrapper
+##.side_ad
+##.site-header__ads
+##.td-a-ad
 ##.td-a-rec-id-custom_ad_1
 ##.td-a-rec-id-custom_ad_2
 ##.td-a-rec-id-custom_ad_3
@@ -197,6 +199,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ##.td-ad-m
 ##.td-ad-p
 ##.td-ad-tp
+##.td-adspot-title
 ! >>>
 ##[data-revive-zoneid]
 ##div[id*="MarketGid"]
@@ -366,6 +369,7 @@ bigkyiv.com.ua##div#banner-four-cols
 bihus.info##div.r-tram_wrap
 bild.ua##div:has(> div:is(.blockProjects,.blockPProjectBottom2))
 blackseanews.net##div.ad
+blik.ua##.sadse
 blitz.if.ua##.banner
 board.if.ua##noindex:has(div > ins.adsbygoogle)
 bon.ua##div.bottom-card-wrapper > div.banner
@@ -1126,6 +1130,7 @@ slovoidilo.ua##div.branding-main
 slovoidilo.ua##div.compare-banner
 slovopedia.org.ua##div.word_adv
 smachno.ua##div.adv-block_catfish
+socportal.info##.bg-logo-ads
 socportal.info##div[x-lazyload*='adsbygoogle']
 speka.media##div.max-w-material-l:has(h3.socials__title)
 speka.media##div.swiper-wrapper > div.swiper-slide:has(span.talk-swiper__author:has-text(Спекотне промо))
