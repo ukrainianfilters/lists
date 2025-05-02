@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.04.17
-! Last modified: Sat, 26 April 2025 19:38 EEST
+! Version: 25.05.1
+! Last modified: Fri, 02 May 2025 20:05 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -238,7 +238,12 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||widgets.coingecko.com/coingecko-coin-list-widget.js^$domain=psm7.com
 ! >>>
 ||bbc.com/ukrainian/$removeparam=xtor
+||kinoafisha.ua^$removeparam=utm_campaign
+||kinoafisha.ua^$removeparam=utm_medium
+||kinoafisha.ua^$removeparam=utm_source
 ||magnolia-tv.com^$removeparam=prov
+||orakul.com^$removeparam=utm_medium
+||orakul.com^$removeparam=utm_source
 ! >>>
 /ads/dfp$domain=momondo.ua
 /advanced-ads-$script,stylesheet,domain=proagro.com.ua
@@ -998,6 +1003,8 @@ okino.ua##div#okino_interstitial
 opendatabot.ua##aside#odb-open-in-app
 opentalk.org.ua##div:has(> div.ad56)
 oplatforma.com.ua##p:has(> a[href*="?utm_source=oplatforma.com.ua"] > img)
+orakul.com##div.ad-header-place
+orakul.com##head > iframe[name^="_m"]:remove()
 ostro.org##div.page-wrapper.hide-mob:has(div.container.page-container)
 ostro.org##div.press-reliz
 ostro.org##div[class^="banner-"]
@@ -1020,6 +1027,7 @@ pidruchnyk.com.ua##div[id^="admixer_"] + script
 pingvin.pro##div.col-lg-4:has(> div > div > ins.adsbygoogle)
 pingvin.pro##div.col-lg-4.col-md-6:has(> div.card > div.card-body > a[href$="/category/blogy/offers"])
 pisni.ua##div.header-banner
+playboy.ua##li.menu_item:has(> a[href$="/casino"])
 players.com.ua##a[class*="banner-"]
 players.com.ua##img[class*="banner-"]
 playua.net##div.head-ad_vert
@@ -1036,7 +1044,6 @@ portaltele.com.ua##div.header-main > div.container > div.row:style(min-height: u
 portaltele.com.ua##div.top-ads-links
 poznavayka.org##aside.widget:has(div > div.rek_bok)
 pravda.com.ua##.unit_sp_place
-pravda.com.ua##article.article_pr
 pravda.com.ua##div.article.article_story_grid:has(> div > div.article_content > span.article_label_adv)
 pravda.com.ua##div.article.article_view_sm:has(> div > div > div > span.article_label_adv)
 pravda.com.ua##div.block_header:has-text(IDEALMEDIA)
