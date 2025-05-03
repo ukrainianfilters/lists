@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.05.1
-! Last modified: Fri, 02 May 2025 20:05 EEST
+! Version: 25.05.6
+! Last modified: Sat, 03 May 2025 23:42 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -916,11 +916,12 @@ mezha.media##div.section_news_adv
 mezha.media##div.section_topic_b:has(> div > h3 > a[href$="/special-project/"])
 mil.in.ua##div.ads
 mind.ua###promo-catfish
-mind.ua##div.b-info-block__content > div > div:has(> div > a[href$="/ad"])
 mind.ua##div.block_content.block_mind_brand:has(> a.brand__info)
 mind.ua##div.layout_content:style(margin-top: 50px !important)
 mind.ua##div.section_link_partner_parent
 mind.ua##div[class*="_banner"]
+mind.ua##div[class^="b-info-"]:has(> a.b-marker[href$="/ad"])
+mind.ua##div[class^="b-info-"]:has(> div > a.b-marker[href$="/ad"])
 mind.ua##h2.b-info-block__title:style(padding-top: 10px !important)
 minfin.com.ua##.mfz-post:has([data-link="rubric"]:has-text(Промо))
 minfin.com.ua##[class*="banner"]
