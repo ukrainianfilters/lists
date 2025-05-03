@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.04.10
-! Last modified: Fri, 18 April 2025 21:21 EEST
+! Version: 25.05.2
+! Last modified: Sat, 03 May 2025 20:55 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -628,6 +628,8 @@ work.ua##div.design-decor:style(background: unset !important)
 work.ua##div.design-inverse:style(background: unset !important)
 work.ua##div.music-plugin
 work.ua##header.header-default:style(background-image: unset !important)
+y.ua##div.cl-dialog
+y.ua##div.cl-launcher
 yakty.com.ua##div.cookie-banner
 yasensvit.ua##.coockies
 yasensvit.ua##.popup--tgBot__wrap
