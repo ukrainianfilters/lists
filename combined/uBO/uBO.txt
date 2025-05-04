@@ -1,8 +1,8 @@
 ! [uBlock Origin; Adblock Plus 3.2]
 ! Title: Ukrainian Filters (uBlock Origin Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.05.6
-! Last modified: Sat, 03 May 2025 23:42 EEST
+! Version: 25.05.7
+! Last modified: Sun, 04 May 2025 14:47 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -3320,6 +3320,8 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 ||zoloto-loto.net^
 ! >>>
 ||devtome.top^$document,xmlhttprequest
+! >>>
+/console-ban.min.js$third-party,xmlhttprequest,script
 !
 !
 ! !!!!!!!!!!!!!!!
@@ -3332,189 +3334,3 @@ real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 /ukrua2023$document,to=t.me|telegram.me|telegram.org
 /zaluzhny2024bot$document,to=t.me|telegram.me|telegram.org
 /zayavka_ua_bot$document,to=t.me|telegram.me|telegram.org
-!
-!
-! !!!!!!!!!!!!!!!
-! PATTERN-BASED FILTERING RULES
-! !!!!!!!!!!!!!!!
-!
-/console-ban.min.js$third-party,xmlhttprequest,script
-! >>>
-! .GOV.UA
-gov*-ua*.*/$document,to=~gov.ua
-gov*-ukr*.*/$document,to=~gov.ua
-govua*.*/$document,to=~gov.ua
-! >>>
-! DIIA.GOV.UA
-diia*.*/$document,to=~gov.ua|~diia.app|~diiacityunited.org|~fedoriv.com|~spivdiia.com|~spivdiia.org.ua
-@@||facebook.com/diia.gov.ua^$document
-@@||instagram.com/diia.gov.ua^$document
-diia*$document,to=t.me|telegram.me
-@@/diia_gov^$document,to=t.me|telegram.me
-@@/diia_help_bot^$document,to=t.me|telegram.me
-! >>>
-! EDOPOMOGA.GOV.UA
-*edopomoga*.*/$document,to=~gov.ua
-@@||instagram.com/edopomoga.gov.ua^$document
-e-dopomoga*.*/$document,to=eu|homes|life|lol|mom|pics|shop|world
-*edopomoga$document,to=t.me|telegram.me
-! >>>
-! APLUS.MOD.GOV.UA
-*aplus*.*/$document,to=~gov.ua
-*armyplus*.*/$document,to=~gov.ua
-*armyplus$document,to=play.google.com
-@@id=ua.gov.armyplus.app^$document,to=play.google.com
-! >>>
-! RESERVEPLUS.MOD.GOV.UA
-*reserveplus*.*/$document,to=~gov.ua|~reserveplus.app
-*reserveplus$document,to=play.google.com
-@@id=ua.gov.reserveplus^$document,to=play.google.com
-*reserveplus$document,to=viber.com
-@@/reserveplusbot^$document,to=viber.com
-! >>>
-! PROZORRO.GOV.UA / UAC-0180
-*prozorro*.*/$document,to=~gov.ua|~prozorro.ua|~prozorro.org|~prozorro.sale
-! >>>
-! PRIVATBANK.UA
-*privatbank*.*/$document,to=~privat24.ua|~privatbank.ua
-*privat24*.*/$document,to=~privat24.ua|~privatbank.ua
-24-next.*.$document
-24next.*.$document
-next24.*.$document
-privat-ua.*.$document
-privat.*.$document,to=~privat24.ua|~privatbank.ua
-privatbank.*.$document,to=~privat24.ua|~privatbank.ua
-! >>>
-! OSCHADBANK.UA
-*oschadbank*.*/$document,to=~oschadbank.ua|~bank.gov.ua
-oschad*.*.$document,to=~oschadbank.ua|~bank.gov.ua
-ohsad.*.$document
-ohsad24.*.$document
-oshad*.*.$document,to=~bank.gov.ua
-oshcad*.*.$document
-! >>>
-! MONOBANK.UA
-*monobank*.*/$document,to=~monobank.com.ua|~monobank.ua
-mono.*.$document
-! >>>
-! RAIFFEISEN.UA
-*raiffei*.*/$document,to=~raiffeisen.ua
-*avalpay*.*.$document
-*raiffaisen*.*.$document
-aval24*.*.$document
-ra1f.*.$document
-raif-*.*.$document,to=~raiffeisen.ua
-raif.*.$document
-! >>>
-! UKRSIBBANK.COM
-*ukrsibbank*.*/$document,to=~ukrsibbank.com
-*ukrsib*.*.$document,to=~ukrsibbank.com|~bank.gov.ua
-*ukersb24*.*.$document
-*ukersib*.*.$document
-us1b.*.$document
-! >>>
-! PUMB.UA
-*pumb*.*.$document,to=~pumb.ua|~bank.gov.ua
-bumb.*.$document
-! >>>
-! BANKVOSTOK.COM.UA
-vostok.*.$document,to=~bankvostok.com.ua|~vostok.bank
-! >>>
-! UKRPOSHTA.UA
-ukrposhta*.*/$document,to=~ukrposhta.ua
-*poshta*.*/$document,to=~gov.ua|~ua|buzz|click|co.uk|com|cyou|icu|life|online|sbs|shop|site|space|store|top|uk|world|ws|xyz
-ua*poshta.$document,to=~gov.ua|~ua
-uk*poshta.$document,to=~gov.ua|~ua
-postukr.$document,to=info|life|top|xyz
-ukr*pos*.$document,to=info|life|top|xyz
-! >>>
-! NOVAPOSHTA.UA
-*novaposhta*.*/$document,to=~novaposhta.education|~novaposhta.ua|~novaposhtaglobal.ua
-*nova-poshta*.*/$document,to=~novaposhta.education|~novaposhta.ua|~novaposhtaglobal.ua
-@@||instagram.com/novaposhta.official^$document
-@@||tiktok.com/@novaposhta.official^$document
-! >>>
-! KYIVSTAR.UA
-*kyivstar*.*/$document,to=~kyivstar.ua
-@@||instagram.com/kyivstar.official^$document
-*kievstar*.*/$document
-! >>>
-! UAC-0102 (CERT-UA#6858)
-*ukr.net$document,to=~ukr.net
-@@||?traffic_source=ukr.net
-@@||?utm_source=ukr.net
-passport-ukr-net.$document
-! >>>
-! UAC-0125 (CERT-UA#12559)
-/armyplus.exe$document
-/armyplusinstaller-$document
-! >>>
-! UAC-0195 (CERT-UA#9565)
-*petition*.*/$document,to=~competitions.obozrevatel.com|~e-dem.ua|~gov.ua
-petiti*ukr*.*/$document,to=~gov.ua|~e-dem.ua
-petiti*presiden*.*/$document,to=~gov.ua|~e-dem.ua
-presiden*petiti*.*/$document,to=~gov.ua|~e-dem.ua
-! >>>
-! UAC-0195 (CERT-UA#9688)
-/\/jphone/\d{7,}$/$xmlhttprequest
-##html > body:has(div.popup > div.popup-inner > a[href*="/vote"])
-##html > body:has(nav.header__nav > a.header__login[href*="/vote"])
-##html > body:has(form[action="/vote"] > button[name="send_phone"])
-##html > body:has(form[action="/vote/code"] > button[name="send_code"])
-! >>>
-! #TAG-047
-/bank/raif.php?id=$document
-/bank/pumb.php?id=$document
-/bank/ochad.php?id=$document
-/bank/mono.php?id=$document
-/bank/privat24.php?id=$document
-/bank/ukrsibbank.php?id=$document
-/bank/kredobank.php?id=$document
-/bank/credit-agricole.php?id=$document
-/bank/otp.php?id=$document
-! >>>
-! #TAG-050
-forms.tilda*.*/procces/$xmlhttprequest,domain=fun|online|shop|space|store|uno|website
-/telegram.php$document,xmlhttprequest,domain=fun|online|shop|site|space|store|uno|website
-/mod/project/*/lead/send/*$document,xmlhttprequest
-.lpcdn.site/assets/*$script,xmlhttprequest
-courier.darkleads.pro/data/exchange/extpartner/addorder*$document,xmlhttprequest,script
-/common/php/send-order.php?partnerid=*&lendid=*&offer=*$document,xmlhttprequest
-! >>>
-! #TAG-064
-*bankid*.*/$document,to=~accordbank.com.ua|~altbank.ua|~asviobank.ua|~a-bank.com.ua|~bank.com.ua|~bank34.ua|~bankalliance.ua|~banklviv.com|~bankvostok.com.ua|~bisbank.com.ua|~cib.com.ua|~clearinghouse.com.ua|~creditdnepr.com|~credit-agricole.ua|~crystalbank.com.ua|~eximb.com|~globusbank.ua|~gov.ua|~grant.ua|~ideaonline.ua|~industrialbank.ua|~izibank.com.ua|~kredobank.com.ua|~monobank.com.ua|~monobank.ua|~motor-bank.ua|~mtb.ua|~oschadbank.ua|~otpbank.com.ua|~piraeusbank.ua|~poltavabank.com|~pravex.com.ua|~privat24.ua|~privatbank.ua|~pumb.ua|~radabank.com.ua|~raiffeisen.ua|~rwsbank.com.ua|~sensebank.com.ua|~tascombank.ua|~ukrgasbank.com|~ukrsibbank.com|~unexbank.ua|~vostok.bank
-*bankld*.*/$document
-*viplata*.*/$document,to=art|au|biz|buzz|cam|cfd|click|cloud|club|com|cyou|digital|eu|fun|fyi|health|help|icu|in|info|me|mobi|net|online|org|pics|pp.ua|pro|pw|shop|site|social|space|store|tech|today|us|website|xyz
-*dopomoga*.*/$document,to=art|au|biz|business|buzz|cfd|click|cloud|club|co|com|eu|fun|health|help|info|live|me|net|online|org|pics|pro|sbs|services|shop|site|space|top|uk|us|website|win|world|xyz
-! >>>
-! #TAG-065
-web.*.*/get/$document
-web.*.*/pay/order/*$document
-web.*.*/web?id=$document
-web.*.*/web/?id=$document
-web.*.*/api/sendLk$xmlhttprequest
-web.*.*/api/sendValue$xmlhttprequest
-! >>>
-! #TAG-071
-||api.livechatinc.com$third-party,domain=pages.dev|workers.dev
-||cdn.livechatinc.com$third-party,domain=pages.dev|workers.dev
-/check.php?type=card&id=*&fcard=*&fexpm=*&fexpy=*&fcvc=*&fbalance=*$document,xmlhttprequest
-/3ds$document,to=pages.dev|workers.dev
-/bank$document,to=pages.dev|workers.dev
-/bankLogin$document,to=pages.dev|workers.dev
-/card$document,to=pages.dev|workers.dev
-/link_card$document,to=pages.dev|workers.dev
-/method$document,to=pages.dev|workers.dev
-/submitNewLk$xmlhttprequest,domain=pages.dev|workers.dev
-/api/checkOnline$xmlhttprequest,domain=pages.dev|workers.dev
-/api/checkStatus$xmlhttprequest,domain=pages.dev|workers.dev
-/api/submitCard$xmlhttprequest,domain=pages.dev|workers.dev
-! >>>
-! #TAG-083
-/selectB/?id=$document,to=pages.dev|workers.dev
-! chatrnetquest.click
-api.chatrnetquest.click/chat/chat_receive.php?order_id=$third-party,xmlhttprequest,domain=pages.dev|workers.dev
-! >>>
-! #TAG-085
-/oschad/oschad.php$xmlhttprequest
-/oschad/fds.php$xmlhttprequest
