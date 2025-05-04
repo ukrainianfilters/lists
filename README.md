@@ -35,7 +35,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.tx
 
 ### 🍪 Ukrainian Annoyance Filter
 
-Фільтр блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо).
+Фільтр для блокування дратівливих елементів (повідомлень про файли cookie, спливні вікна та банери тощо).
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
