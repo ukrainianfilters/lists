@@ -44,7 +44,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 <details>
 <summary>Windows, macOS та Linux</summary>
 
-1. У розділі Privacy protection увімкнути опцію навпроти Custom Filters та перейти у цей розділ
+1. У розділі `Privacy protection` увімкнути опцію навпроти `Custom Filters` та перейти у цей розділ
 
 2. Скопіювати вміст об'єднаного списку фільтрів у текстове поле:
 
