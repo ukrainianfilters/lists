@@ -10,7 +10,7 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 ###  Ukrainian Filters (Combined List)
 
-Об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо). Розділ `SECURITY FILTERS` містить правила фільтрації, що імпортовані з [Українського безпекового фільтра](https://github.com/braveinnovators/ukrainian-security-filter).
+Об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо).
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
@@ -31,8 +31,8 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 | :---------------------- | :--------- | :------- |
 | [Ghostery (Privacy Ad Blocker)](https://www.ghostery.com/ghostery-ad-blocker) | Повна | Рекомендуємо ознайомитися з умовами користування та відключити опцію надсилання інформації про використання розширення на етапі його активації |
 | uBlock Origin, uBlock Origin Lite | Повна | 04.05.2025 Raymond Hill, головний розробник uBlock Origin, без жодних пояснень [видалив наші фільтри](https://github.com/gorhill/uBlock/commit/3cd04c3806faed1b4dc840b05a2b75a352ccefef) з розділу регіональних. Жодних критичних нарікань на якість фільтрів з боку українських користувачів не було, виявлені проблеми виправлялися оперативно. Проте, нікому з розробників uBlock Origin, схоже, це не цікаво. Нас також обурює позиція розробників щодо [політично вмотивованих блокувань](https://github.com/uBlockOrigin/uBlock-issues/issues/2692#issuecomment-2848742489) з боку московитських розробників фільтрів. Тому наша команда більше не розглядає це розширення у якості базового для наших фільтрів |
-| Adblock, Adblock Plus | Відсутня | Відсутність функції блокування веб-сторінок ([strict blocking](https://web.archive.org/web/20111206122411/http://adblockplus.org/en/faq_features#siteblock)) |
-| AdGuard | Відсутня | Московитське походження, проблеми з обробкою правил фільтрації ([Issue #2760](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2760)) |
+| Adblock, Adblock Plus | Обмежена | Відсутність функції блокування веб-сторінок ([strict blocking](https://web.archive.org/web/20111206122411/http://adblockplus.org/en/faq_features#siteblock)) |
+| AdGuard | Обмежена | Московитське походження, проблеми з обробкою правил фільтрації ([Issue #2760](https://github.com/AdguardTeam/AdguardBrowserExtension/issues/2760)) |
 | [Brave](https://brave.com/uk/) | Повна | Має власний модуль фільтрації контенту |
 | [Google Chrome](https://www.google.com/intl/uk/chrome/) | Обмежена | У 2025 році розширення, які не підтримують [Manifest V3](https://blog.chromium.org/2024/05/manifest-v2-phase-out-begins.html), більше не функціонуватимуть у Google Chrome. Це означає, що жоден блокувальник реклами [не зможе повноцінно працювати](https://www.theverge.com/2024/5/30/24168057/google-chrome-extension-change-manifest-v3-ad-blockers) з цим браузером. Альтернативою може стати або Firefox, або браузери на основі [Chromium](https://uk.wikipedia.org/wiki/Chromium), які продовжать підтримувати Manifest V2 та сторонні блокувальники реклами |
 
@@ -44,7 +44,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 <details>
 <summary>Windows, macOS та Linux</summary>
 
-1. У розділі `Privacy protection` увімкнути опцію навпроти `Custom Filters` та перейти у цей розділ
+1. У розділі `Privacy protection` увімкнути перемикач навпроти `Custom Filters` та перейти у цей розділ
 
 2. Скопіювати вміст об'єднаного списку фільтрів у текстове поле:
 
