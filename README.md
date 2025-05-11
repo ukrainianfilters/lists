@@ -28,19 +28,11 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 ## Сумісність з браузерами та розширеннями
 
-Нижче наведено перелік браузерів з вбудованими модулями фільтрації контенту та сторонніх розширень з якими сумісні наші фільтри.
-
-#### Браузери
-
-* [Brave](https://brave.com/uk/)
-* [Opera](https://www.opera.com/uk)
-* [Vivaldi](https://vivaldi.com/uk/)
-
-#### Розширення
-
-* [Adblock Plus](https://adblockplus.org/)
-* [Ghostery](https://www.ghostery.com/ghostery-ad-blocker)
-* [uBlock Origin](https://ublockorigin.com/)
+| Браузери з вбудованими модулями фільтрації контенту   | Розширення                                                 |
+| :---                                                  | :---                                                       |
+| [Brave](https://brave.com/uk/)                        | [Adblock Plus](https://adblockplus.org/)                   |
+| [Opera](https://www.opera.com/uk)                     | [Ghostery](https://www.ghostery.com/ghostery-ad-blocker)   |
+| [Vivaldi](https://vivaldi.com/uk/)                    | [uBlock Origin](https://ublockorigin.com/)                 |
 
 
 ## Зворотний зв'язок
@@ -57,8 +49,8 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 Ви можете підтримати подальший розвиток цього проєкту, обравши зручний для вас спосіб пожертвування:
 
-* **Bitcoin (BTC)**: `bc1q6qtnwc2pdktvl48mr9hf0qmhaxfm7xseftp78a`
-* **Ether (ETH)**: `0x185e4FB1f662223B011dedbBd42A444891b094f5`
+* **Bitcoin (BTC)**: bc1q6qtnwc2pdktvl48mr9hf0qmhaxfm7xseftp78a
+* **Ether (ETH)**: 0x185e4FB1f662223B011dedbBd42A444891b094f5
 
 
 ## Ліцензія
