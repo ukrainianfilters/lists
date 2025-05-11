@@ -21,7 +21,7 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 | Фільтр   | Веб-посилання   | Опис   |
 | :---     | :---            | :---   |
-| Ukrainian Filters `Combined List`   | [GitHub](https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt)   | Об'єднаний список фільтрів (Реклама + Приватність + Безпека)   |
+| Ukrainian Filters Combined List   | [GitHub](https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt)   | Об'єднаний список фільтрів (Реклама + Приватність + Безпека)   |
 | Ukrainian Annoyance Filter   | [GitHub](https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt)   | Фільтр блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо)   |
 | Ukrainian Ad Filter `standalone версія`   | [GitHub](https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt)   | Фільтр видаляє рекламу з українських сайтів   |
 | Ukrainian Privacy Filter `standalone версія`   | [GitHub](https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt)   | Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті   |
