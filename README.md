@@ -21,34 +21,31 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 ### Основні списки фільтрів
 
-<ins>**Ukrainian Filters Combined List**</ins>: об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо).
+**Ukrainian Filters Combined List**: об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо).
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
 ```
 
-<ins>**Ukrainian Annoyance Filter**</ins>: блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо).
+**Ukrainian Annoyance Filter**: блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо).
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 ```
-<br>
 
 ### Окремі (standalone) списки фільтрів
 
-<ins>**Ukrainian Ad Filter**</ins>: видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List).
+**Ukrainian Ad Filter**: видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List).
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 ```
 
-<ins>**Ukrainian Privacy Filter**</ins>: блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List).
+**Ukrainian Privacy Filter**: блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List).
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
 ```
-
-<br>
 
 > [!NOTE]
 > Якщо програмне забезпечення фільтрації контенту підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні.
