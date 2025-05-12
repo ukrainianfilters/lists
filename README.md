@@ -23,33 +23,33 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 Об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо). Розділ `SECURITY FILTERS` містить правила фільтрації, що імпортовані з [Українського безпекового фільтра](https://github.com/braveinnovators/ukrainian-security-filter).
 
-```
-https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
-```
+| Сервер   | Веб-посилання                                                                            |
+| :---     | :---                                                                                     |
+| GitHub   | https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt      |
 
 ### Ukrainian Annoyance Filter
 
 Фільтр блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо)
 
-```
-https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
-```
+| Сервер   | Веб-посилання                                                                             |
+| :---     | :---                                                                                      |
+| GitHub   | https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt   |
 
 ### Ukrainian Ad Filter (standalone версія)
 
 Фільтр видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List)
 
-```
-https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
-```
+| Сервер   | Веб-посилання                                                                             |
+| :---     | :---                                                                                      |
+| GitHub   | https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt                 |
 
 ### Ukrainian Privacy Filter (standalone версія)
 
 Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List)
 
-```
-https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
-```
+| Сервер   | Веб-посилання                                                                             |
+| :---     | :---                                                                                      |
+| GitHub   | https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt         |
 
 > [!NOTE]
 > Якщо програмне забезпечення фільтрації контенту підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні (у разі необхідності списки також можна оновлювати вручну).
