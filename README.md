@@ -21,17 +21,13 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 ### Основні списки фільтрів
 
-#### Ukrainian Filters Combined List
-
-Об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо).
+**Ukrainian Filters Combined List**: об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо).
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
 ```
 
-#### Ukrainian Annoyance Filter
-
-Фільтр блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо).
+**Ukrainian Annoyance Filter**: блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо).
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
@@ -39,17 +35,13 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 
 ### Окремі (standalone) списки фільтрів
 
-#### Ukrainian Ad Filter
-
-Фільтр видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List).
+**Ukrainian Ad Filter**: видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List).
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 ```
 
-#### Ukrainian Privacy Filter
-
-Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List).
+**Ukrainian Privacy Filter**: блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List).
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
