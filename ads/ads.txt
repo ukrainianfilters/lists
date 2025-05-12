@@ -1,8 +1,8 @@
 ! [Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.05.10
-! Last modified: Mon, 12 May 2025 14:04 EEST
+! Version: 25.05.11
+! Last modified: Mon, 12 May 2025 19:50 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -26,6 +26,7 @@
 ||adriver.ru^
 ||ads-twitter.com^
 ||ads.informator.ua^
+||ads.ligazakon.net^
 ||adtelligent.com^
 ||agenteimmobiliare.info^
 ||aixcdn.com^
@@ -484,6 +485,7 @@ dsnews.ua##div.home-main-ad
 dsnews.ua##div[data-banner]
 dsnews.ua##div[id^="adpartner"]
 dsnews.ua##li.c-feed__list-item:has(> div > div > div[data-banner])
+dtkt.ua###trial-subscribe-widget
 dtkt.ua##div.box-banner
 dtkt.ua##div.dk-adsbygoogle
 dumka.media###right-specprojects-placeholder
@@ -897,6 +899,8 @@ medicina.ua##div.aside-context > div.item:has(> a[href^="/adv.php?id="])
 medicina.ua##div[class^="brand_"]
 medicina.ua##noindex:has(> div[class^="banner-"])
 medplatforma.com.ua##a[href*="/?utm_source=medplatforma.com.ua"]
+medplatforma.com.ua##div.action:has(> p > a[href*="&utm_medium=referral"])
+medplatforma.com.ua##p > a[href*="&utm_medium=referral"]
 meta.ua##[class^="banner"]
 meta.ua##[class^="bookmaker"]
 meta.ua###meta_banner_center
