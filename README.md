@@ -1,6 +1,6 @@
 # Ukrainian Filters
 
-Ukrainian Filters (Українські фільтри) — це веб-фільтри, які автоматично видаляють небажаний контент з українських сайтів, включно з рекламою, дратівливими елементами, трекерами та шкідливими скриптами.
+Ukrainian Filters (Українські фільтри) — це веб-фільтри, які видаляють небажаний контент з українських сайтів, включно з рекламою, дратівливими елементами, трекерами та шкідливими скриптами.
 
 Правила фільтрації створюються індивідуально для кожного веб-ресурсу, що належить до українського сегменту інтернету. Для нас важливіша якість, ніж кількість, тому ми дбаємо про те, щоб наші фільтри працювали максимально ефективно на популярних сайтах, особливо новинних.
 
@@ -55,14 +55,13 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.tx
 > Якщо програмне забезпечення фільтрації контенту підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні (у разі необхідності списки також можна оновлювати вручну).
 
 
-## Сумісність з браузерами [^1] та розширеннями
+## Сумісність з браузерами та розширеннями
 
-| Браузери                             | Розширення                                                 |
-| :---                                 | :---                                                       |
-| [Brave](https://brave.com/uk/)       | [Adblock Plus](https://adblockplus.org/)                   |
-| [Opera](https://www.opera.com/uk)    | [Ghostery](https://www.ghostery.com/ghostery-ad-blocker)   |
-| [Vivaldi](https://vivaldi.com/uk/)   | [uBlock Origin](https://ublockorigin.com/)                 |
-
+| Браузери з вбудованим блокуванням реклами   | Розширення                                                 |
+| :---                                        | :---                                                       |
+| [Brave](https://brave.com/uk/)              | [Adblock Plus](https://adblockplus.org/)                   |
+| [Opera](https://www.opera.com/uk)           | [Ghostery](https://www.ghostery.com/ghostery-ad-blocker)   |
+| [Vivaldi](https://vivaldi.com/uk/)          | [uBlock Origin](https://ublockorigin.com/)                 |
 
 ## Зворотний зв'язок
 
@@ -87,6 +86,3 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.tx
 ## Ліцензія
 
 Ukrainian Filters (Українські фільтри) поширюються за умовами ліцензії [GNU General Public License v3.0](https://github.com/ukrainianfilters/lists/blob/main/LICENSE)
-
-
-[^1]: браузери з вбудованим блокуванням реклами
