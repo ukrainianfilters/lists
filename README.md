@@ -32,7 +32,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 ```
-<hr>
+<br>
 
 ### Окремі (standalone) списки фільтрів
 
@@ -47,6 +47,8 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
 ```
+
+<br>
 
 > [!NOTE]
 > Якщо програмне забезпечення фільтрації контенту підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні.
