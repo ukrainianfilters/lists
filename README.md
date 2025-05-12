@@ -32,6 +32,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 ```
+<br>
 
 ### Окремі (standalone) списки фільтрів
 
