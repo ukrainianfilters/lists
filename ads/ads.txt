@@ -1,8 +1,8 @@
 ! [Adblock Plus 3.2]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.05.9
-! Last modified: Sun, 11 May 2025 21:42 EEST
+! Version: 25.05.10
+! Last modified: Mon, 12 May 2025 14:04 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -679,7 +679,9 @@ highload.tech,highload.today##div:has(> img[src*="/images/banners/"])
 highload.tech,highload.today##div.mobile-hide:not(:has(> a[href*="/tretya-shturmova-ogoloshuye-zbir-"]))
 highload.tech,highload.today##div.mobile-show:not(:has(> a[href*="/tretya-shturmova-ogoloshuye-zbir-"]))
 highload.tech,highload.today##div.post-content > div > div.text-center-block:has(> div.widget-spec-projects)
+highload.tech,highload.today##div.widget-spec-projects
 highload.tech,highload.today##div[class^="course-widget-"]
+highload.tech,highload.today##div[id^="div-gpt-ad-"]
 highload.tech,highload.today##p.intro[style*="background: linear-gradient"]
 hotline.ua##div.banner-advertising
 hrinchenko.com##div.green_add
