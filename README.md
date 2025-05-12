@@ -26,7 +26,7 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
 ```
-<br>
+<hr>
 
 ### Ukrainian Annoyance Filter
 
@@ -36,7 +36,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 ```
 
-<br>
+<hr>
 
 ### Ukrainian Ad Filter (standalone версія)
 
@@ -46,7 +46,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 ```
 
-<br>
+<hr>
 
 ### Ukrainian Privacy Filter (standalone версія)
 
