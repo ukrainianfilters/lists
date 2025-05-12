@@ -26,6 +26,7 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
 ```
+<br>
 
 ### Ukrainian Annoyance Filter
 
@@ -35,6 +36,8 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 ```
 
+<br>
+
 ### Ukrainian Ad Filter (standalone версія)
 
 Фільтр видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List)
@@ -43,6 +46,8 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 ```
 
+<br>
+
 ### Ukrainian Privacy Filter (standalone версія)
 
 Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List)
@@ -50,6 +55,8 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
 ```
+
+<br>
 
 > [!NOTE]
 > Якщо програмне забезпечення фільтрації контенту підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні (у разі необхідності списки також можна оновлювати вручну).
