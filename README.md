@@ -21,9 +21,9 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 ### Ukrainian Filters Combined List
 
-Об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо). Розділ `SECURITY FILTERS` містить правила фільтрації, що імпортовані з [Українського безпекового фільтра](https://github.com/braveinnovators/ukrainian-security-filter).
+Об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо).
 
-```hosts
+```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
 ```
 
@@ -31,7 +31,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.
 
 Фільтр блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо)
 
-```hosts
+```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 ```
 
@@ -39,7 +39,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 
 Фільтр видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List)
 
-```hosts
+```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 ```
 
@@ -47,11 +47,9 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 
 Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List)
 
-```hosts
+```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
 ```
-
-<br>
 
 > [!NOTE]
 > Якщо програмне забезпечення фільтрації контенту підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні (у разі необхідності списки також можна оновлювати вручну).
