@@ -35,7 +35,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 
 ## Окремі (standalone) версії фільтрів
 
-### Ukrainian Ad Filter
+#### Ukrainian Ad Filter
 
 Видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List).
 
@@ -43,7 +43,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyan
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 ```
 
-### Ukrainian Privacy Filter
+#### Ukrainian Privacy Filter
 
 Блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List).
 
