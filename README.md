@@ -51,14 +51,6 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 Щоб додати правила фільтрації до розділу `SECURITY FILTERS`, необхідно перейти до репозиторію [Ukrainian Security Filter](https://github.com/braveinnovators/ukrainian-security-filter) (це окремий проєкт, ми лише імпортуємо звідти правила фільтрації).
 
 
-## Підтримати проєкт
-
-Ви можете підтримати подальший розвиток цього проєкту, обравши зручний для вас спосіб пожертвування:
-
-* **Bitcoin (BTC)**: bc1q6qtnwc2pdktvl48mr9hf0qmhaxfm7xseftp78a
-* **Ether (ETH)**: 0x185e4FB1f662223B011dedbBd42A444891b094f5
-
-
 ## Ліцензія
 
 Ukrainian Filters (Українські фільтри) поширюються за умовами ліцензії [GNU General Public License v3.0](https://github.com/ukrainianfilters/lists/blob/main/LICENSE)
