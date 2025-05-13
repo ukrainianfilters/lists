@@ -21,13 +21,13 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 Об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо). Розділ `SECURITY FILTERS` містить правила фільтрації, що імпортовані з [Українського безпекового фільтра](https://github.com/braveinnovators/ukrainian-security-filter).
 
-Веб-посилання (GitHub): https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
+Веб-посилання: https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
 
 ### Ukrainian Annoyance Filter
 
 Блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо).
 
-Веб-посилання (GitHub): https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
+Веб-посилання: https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 
 
 ## Сумісність з браузерами та розширеннями
