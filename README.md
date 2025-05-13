@@ -15,27 +15,35 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 * **Надмірність**: ці два списки одночасно містять правила фільтрації для Росії (як основної країни), України, Білорусі, Казахстану, Узбекистану, Азербайджану та інших країн пострадянського простору, що, у свою чергу, впливає на ефективність, адже користувач завантажує тисячі правил фільтрації для сайтів іноземних країн, які навряд чи коли-небудь відвідає.
 
 
-## Списки фільтрів
+## Ukrainian Filters (Combined List)
 
-**Ukrainian Filters (Combined List)**: об'єднаний список фільтрів (Реклама + Приватність + Безпека)
+Об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо).
+
+Розділ `SECURITY FILTERS` містить правила фільтрації, що імпортовані з [Українського безпекового фільтра](https://github.com/braveinnovators/ukrainian-security-filter).
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
 ```
 
-**Ukrainian Annoyance Filter**: блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо)
+## Ukrainian Annoyance Filter
+
+Блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо)
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 ```
 
-**Ukrainian Ad Filter (standalone версія)**: видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List)
+## Ukrainian Ad Filter (standalone версія)
+
+Видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List)
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 ```
 
-**Ukrainian Privacy Filter (standalone версія)**: блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List)
+## Ukrainian Privacy Filter (standalone версія)
+
+Блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List)
 
 ```
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
