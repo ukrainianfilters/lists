@@ -17,39 +17,17 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 ## Списки фільтрів
 
-#### Ukrainian Filters (Combined List)
+### Ukrainian Filters (Combined List)
 
 Об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо). Розділ `SECURITY FILTERS` містить правила фільтрації, що імпортовані з [Українського безпекового фільтра](https://github.com/braveinnovators/ukrainian-security-filter).
 
-```
-https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
-```
+Веб-посилання (GitHub): https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
 
-#### Ukrainian Annoyance Filter
+### Ukrainian Annoyance Filter
 
 Блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо).
 
-```
-https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
-```
-
-## Окремі (standalone) версії фільтрів
-
-#### Ukrainian Ad Filter
-
-Видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List).
-
-```
-https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
-```
-
-#### Ukrainian Privacy Filter
-
-Блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List).
-
-```
-https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
-```
+Веб-посилання (GitHub): https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 
 
 ## Сумісність з браузерами та розширеннями
@@ -66,8 +44,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.tx
 * [Ghostery](https://www.ghostery.com/ghostery-ad-blocker)
 * [uBlock Origin](https://ublockorigin.com/)
 
-> [!NOTE]
-> Якщо браузер або розширення для браузера підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні.
+Якщо браузер або розширення для браузера підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні.
 
 ## Зворотний зв'язок
 
