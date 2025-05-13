@@ -49,9 +49,6 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
 ```
 
-> [!NOTE]
-> Якщо програмне забезпечення фільтрації контенту підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні
-
 
 ## Сумісність з браузерами та розширеннями
 
@@ -61,6 +58,8 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.tx
 | [Opera](https://www.opera.com/uk)           | [Ghostery](https://www.ghostery.com/ghostery-ad-blocker)   |
 | [Vivaldi](https://vivaldi.com/uk/)          | [uBlock Origin](https://ublockorigin.com/)                 |
 
+> [!NOTE]
+> Якщо програмне забезпечення фільтрації контенту підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні
 
 ## Зворотний зв'язок
 
