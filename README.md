@@ -52,19 +52,20 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.tx
 
 ## Сумісність з браузерами та розширеннями
 
-Браузери з вбудованим блокуванням реклами:
+#### Браузери з вбудованим блокуванням реклами:
 
 * [Brave](https://brave.com/uk/)
 * [Opera](https://www.opera.com/uk)
 * [Vivaldi](https://vivaldi.com/uk/)
 
-Розширення для браузерів:
+#### Розширення для браузерів:
 
 * [Adblock Plus](https://adblockplus.org/)
 * [Ghostery](https://www.ghostery.com/ghostery-ad-blocker)
 * [uBlock Origin](https://ublockorigin.com/)
 
-Якщо браузер або розширення для браузера підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні
+> [!NOTE]
+> Якщо браузер або розширення для браузера підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні.
 
 ## Зворотний зв'язок
 
