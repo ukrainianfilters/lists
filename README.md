@@ -4,40 +4,70 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 Правила фільтрації створюються індивідуально для кожного веб-ресурсу, що належить до українського сегменту інтернету. Для нас важливіша якість, ніж кількість, тому ми дбаємо про те, щоб наші фільтри працювали максимально ефективно на популярних сайтах, особливо новинних.
 
-Дізнатися більше про проєкт, його особливості та переваги можна [тут](https://mastodon.online/@myroslavandriychuk/112880678611736243).
+#### Щодо списків AdGuard Ukrainian та RU AdList
 
-#### Щодо RU AdList та AdGuard Ukrainian
+Ці списки фільтрів, упорядкуванням яких займаються росіяни, тривалий час були єдиними доступними рішеннями для українських користувачів. Ми вирішили створити альтернативу цим спискам і ось чому:
 
-Ці списки фільтрів, упорядкуванням яких займаються московитські команди, тривалий час були єдиними доступними варіантами для українських користувачів. Ми вирішили створити альтернативу цим спискам і ось чому:
+* **Низька якість правил фільтрації**: ні AdGuard Ukrainian, ні RU AdList [не видаляють](https://mastodon.online/@myroslavandriychuk/112880684064496638) на 100% рекламні блоки, навіть, на провідних українських [новинних ресурсах](https://mastodon.online/@yaryna/112892310921396229).
 
-* Низька якість правил фільтрації: ні RU AdList, ні AdGuard Ukrainian [не видаляють](https://mastodon.online/@myroslavandriychuk/112880684064496638) на 100% рекламні блоки, навіть, на провідних українських [новинних ресурсах](https://mastodon.online/@yaryna/112892310921396229).
+* **Політично вмотивовані правила фільтрації**: RU AdList містить правила, що [цілеспрямовано блокують банери](https://github.com/uBlockOrigin/uBlock-issues/issues/2692#issuecomment-2849079284) українських благодійних фондів які допомагають Силам безпеки та оборони України.
 
-* Політично вмотивовані правила фільтрації: RU AdList містить правила, що [цілеспрямовано блокують банери](https://github.com/uBlockOrigin/uBlock-issues/issues/2692#issuecomment-2849079284) українських благодійних фондів які допомагають Силам безпеки та оборони України.
-
-* Надмірність: ці два списки одночасно містять правила фільтрації для Московії (як основної країни), України, Білорусі, Казахстану, Узбекистану, Азербайджану та інших країн пострадянського простору, що, у свою чергу, впливає на ефективність, адже користувач завантажує тисячі правил фільтрації для сайтів іноземних країн, які навряд чи коли-небудь відвідає.
+* **Надмірність**: ці два списки одночасно містять правила фільтрації для Росії (як основної країни), України, Білорусі, Казахстану, Узбекистану, Азербайджану та інших країн пострадянського простору, що, у свою чергу, впливає на ефективність, адже користувач завантажує тисячі правил фільтрації для сайтів іноземних країн, які навряд чи коли-небудь відвідає.
 
 
-## Фільтри
+## Списки фільтрів
 
-| Фільтр   | Веб-посилання   | Опис   |
-| :---     | :---            | :---   |
-| Ukrainian Filters (Combined List)   | [GitHub](https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt)   | Об'єднаний список фільтрів (Реклама + Приватність + Безпека)   |
-| Ukrainian Annoyance Filter   | [GitHub](https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt)   | Фільтр блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо)   |
-| Ukrainian Ad Filter (standalone версія)   | [GitHub](https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt)   | Фільтр видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List)   |
-| Ukrainian Privacy Filter (standalone версія)   | [GitHub](https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt)   | Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List)   |
+#### Ukrainian Filters (Combined List)
 
-> [!NOTE]
-> Якщо програмне забезпечення фільтрації контенту підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні
+Об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо). Розділ `SECURITY FILTERS` містить правила фільтрації, що імпортовані з [Українського безпекового фільтра](https://github.com/braveinnovators/ukrainian-security-filter).
+
+```
+https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
+```
+
+#### Ukrainian Annoyance Filter
+
+Блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо).
+
+```
+https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
+```
+
+## Окремі (standalone) версії фільтрів
+
+#### Ukrainian Ad Filter
+
+Видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List).
+
+```
+https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
+```
+
+#### Ukrainian Privacy Filter
+
+Блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List).
+
+```
+https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
+```
 
 
 ## Сумісність з браузерами та розширеннями
 
-| Браузери з вбудованим блокуванням реклами   | Розширення                                                 |
-| :---                                        | :---                                                       |
-| [Brave](https://brave.com/uk/)              | [Adblock Plus](https://adblockplus.org/)                   |
-| [Opera](https://www.opera.com/uk)           | [Ghostery](https://www.ghostery.com/ghostery-ad-blocker)   |
-| [Vivaldi](https://vivaldi.com/uk/)          | [uBlock Origin](https://ublockorigin.com/)                 |
+#### Браузери з вбудованим блокуванням реклами:
 
+* [Brave](https://brave.com/uk/)
+* [Opera](https://www.opera.com/uk)
+* [Vivaldi](https://vivaldi.com/uk/)
+
+#### Розширення для браузерів:
+
+* [Adblock Plus](https://adblockplus.org/)
+* [Ghostery](https://www.ghostery.com/ghostery-ad-blocker)
+* [uBlock Origin](https://ublockorigin.com/)
+
+> [!NOTE]
+> Якщо браузер або розширення для браузера підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні.
 
 ## Зворотний зв'язок
 
@@ -49,14 +79,6 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 Якщо ви створили правила фільтрації та бажаєте, щоб вони були додані до списків з відповідними фільтрами, будь ласка, ознайомтеся зі [стандартами упорядкування](https://github.com/ukrainianfilters/lists/blob/main/CONTRIBUTING.md) списків та порядком роботи з пісочницею проєкту.
 
 Щоб додати правила фільтрації до розділу `SECURITY FILTERS`, необхідно перейти до репозиторію [Ukrainian Security Filter](https://github.com/braveinnovators/ukrainian-security-filter) (це окремий проєкт, ми лише імпортуємо звідти правила фільтрації).
-
-
-## Підтримати проєкт
-
-Ви можете підтримати подальший розвиток цього проєкту, обравши зручний для вас спосіб пожертвування:
-
-* **Bitcoin (BTC)**: bc1q6qtnwc2pdktvl48mr9hf0qmhaxfm7xseftp78a
-* **Ether (ETH)**: 0x185e4FB1f662223B011dedbBd42A444891b094f5
 
 
 ## Ліцензія

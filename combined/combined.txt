@@ -1,8 +1,8 @@
 ! [Adblock Plus 3.2]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.05.11
-! Last modified: Mon, 12 May 2025 19:50 EEST
+! Version: 25.05.12
+! Last modified: Tue, 13 May 2025 20:12 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -1259,9 +1259,11 @@ tribuna.com##div.card__postscript-banners
 tribuna.com##div[class*="_ads_"]
 tribuna.com##div[class*="_banner_"]
 tribuna.com##div[class*="_ideal-media"]
+tribuna.com##div[class*="common-layout__bonuses-widget--"]
 tribuna.com##div[class^="CommonLayout_common-layout__right-column_"]:has(div[class*="Alternative_banner__"])
 tribuna.com##div[class^="Home_home-page__right-column_"] > div:nth-of-type(-n+3)
 tribuna.com##div[class^="Main_main-layout__"][class*="__empty-block__"]
+tribuna.com##div[class^="StickyButton-module_sticky-block_"]:has(> div > a[href*="/betting/bookmakers/"])
 tribuna.com##div[data-test="bookie-widget"]
 trueua.info###spn-popover-container
 trueua.info##div.categories__category:has(.okadvertisement)
