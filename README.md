@@ -64,8 +64,7 @@ https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.tx
 * [Ghostery](https://www.ghostery.com/ghostery-ad-blocker)
 * [uBlock Origin](https://ublockorigin.com/)
 
-> [!NOTE]
-> Якщо браузер або розширення для браузера підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні
+Якщо браузер або розширення для браузера підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні
 
 ## Зворотний зв'язок
 
