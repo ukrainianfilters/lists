@@ -8,21 +8,38 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 Ці списки фільтрів, упорядкуванням яких займаються росіяни, тривалий час були єдиними доступними рішеннями для українських користувачів. Ми вирішили створити альтернативу цим спискам і ось чому:
 
-* **Низька якість правил фільтрації**: ні RU AdList, ні AdGuard Ukrainian [не видаляють](https://mastodon.online/@myroslavandriychuk/112880684064496638) на 100% рекламні блоки, навіть, на провідних українських [новинних ресурсах](https://mastodon.online/@yaryna/112892310921396229).
+* **Низька якість правил фільтрації**: ні AdGuard Ukrainian, ні RU AdList [не видаляють](https://mastodon.online/@myroslavandriychuk/112880684064496638) на 100% рекламні блоки, навіть, на провідних українських [новинних ресурсах](https://mastodon.online/@yaryna/112892310921396229).
 
 * **Політично вмотивовані правила фільтрації**: RU AdList містить правила, що [цілеспрямовано блокують банери](https://github.com/uBlockOrigin/uBlock-issues/issues/2692#issuecomment-2849079284) українських благодійних фондів які допомагають Силам безпеки та оборони України.
 
 * **Надмірність**: ці два списки одночасно містять правила фільтрації для Росії (як основної країни), України, Білорусі, Казахстану, Узбекистану, Азербайджану та інших країн пострадянського простору, що, у свою чергу, впливає на ефективність, адже користувач завантажує тисячі правил фільтрації для сайтів іноземних країн, які навряд чи коли-небудь відвідає.
 
 
-## Фільтри
+## Списки фільтрів
 
-| Фільтр   | Веб-посилання   | Опис   |
-| :---     | :---            | :---   |
-| Ukrainian Filters (Combined List)   | [GitHub](https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt)   | Об'єднаний список фільтрів (Реклама + Приватність + Безпека)   |
-| Ukrainian Annoyance Filter   | [GitHub](https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt)   | Фільтр блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо)   |
-| Ukrainian Ad Filter (standalone версія)   | [GitHub](https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt)   | Фільтр видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List)   |
-| Ukrainian Privacy Filter (standalone версія)   | [GitHub](https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt)   | Фільтр блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List)   |
+**Ukrainian Filters (Combined List)**: об'єднаний список фільтрів (Реклама + Приватність + Безпека)
+
+```
+https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
+```
+
+**Ukrainian Annoyance Filter**: блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо)
+
+```
+https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
+```
+
+**Ukrainian Ad Filter (standalone версія)**: видаляє рекламу з українських сайтів (включено до Ukrainian Filters Combined List)
+
+```
+https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
+```
+
+**Ukrainian Privacy Filter (standalone версія)**: блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті (включено до Ukrainian Filters Combined List)
+
+```
+https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
+```
 
 > [!NOTE]
 > Якщо програмне забезпечення фільтрації контенту підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні
