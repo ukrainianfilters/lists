@@ -1,8 +1,8 @@
 ! [Adblock Plus 3.2]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.05.12
-! Last modified: Tue, 13 May 2025 20:12 EEST
+! Version: 25.05.13
+! Last modified: Thu, 15 May 2025 14:53 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -1365,11 +1365,13 @@ urok.in.ua##section:has(> p > ins.adsbygoogle)
 uspih.in.ua##p:has(> script[src*="//jsc.idealmedia.io"])
 uspih.in.ua##p:has(> script[src*="//jsc.mgid.com"])
 v-variant.com.ua##div.donate-item_articles
+v-variant.com.ua##div.header-subscribe_banner
 v-variant.com.ua##div.pum-overlay
 v-variant.com.ua##div.sidebar-banner
 v-variant.com.ua##div.single-banners
 v-variant.com.ua##div.small-banner
 v-variant.com.ua##div.top-banner
+v-variant.com.ua##html:style(overflow: unset !important)
 varosh.com.ua##div.adv
 varta1.com.ua###article-content > header > h1 + div
 varta1.com.ua##div.content-editor > ins:has(> div[data-name="post-in-text"])
@@ -1437,6 +1439,7 @@ we.org.ua##[id^="ad_300"]
 weukraine.tv##div[data-action="banners"]
 womo.ua##div[class*="-banner"]
 womo.ua##div[data-sender="admixer"]
+work.ua###careerFestivalBanner
 work.ua###react-video-player
 work.ua##div.hidden-print:has(> a[onclick="openReactVideoPlayer()"])
 work.ua##iframe + div.h-exception
