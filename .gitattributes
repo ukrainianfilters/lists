@@ -1,4 +1,5 @@
 ads/*.txt linguist-language=adblock linguist-detectable
 annoyances/*.txt linguist-language=adblock linguist-detectable
-privacy/*.txt linguist-language=adblock linguist-detectable
 combined/*.txt linguist-language=adblock linguist-detectable
+privacy-extended/*.txt linguist-language=adblock linguist-detectable
+privacy/*.txt linguist-language=adblock linguist-detectable
