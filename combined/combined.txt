@@ -1,8 +1,8 @@
 ! [Adblock Plus 3.2]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.05.13
-! Last modified: Thu, 15 May 2025 14:53 EEST
+! Version: 25.05.15
+! Last modified: Fri, 16 May 2025 15:39 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -316,8 +316,10 @@ forex.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 4mama.ua##div[id^="bn-"]
 4studio.com.ua###custom_html-5
 4studio.com.ua##div.partners_block
+5.ua##[data-type="_mgwidget"]
 5.ua##div[class^="banner"]:has(div[id^="div-gpt-ad-"])
 5.ua##div[class$="banner"]:has(div[id^="div-gpt-ad-"])
+5.ua##section.article-related + h2
 agro-business.com.ua###pwebbox234
 agro-business.com.ua###sp-breadcrumb
 agro-business.com.ua##div.apm-container:has(script[src*="&task=remote_ad"])
@@ -1277,6 +1279,7 @@ trueua.info##div[id^="adex-jsunit-"]
 trueua.info##div[style^="--tui_banner-move"]
 tsn.ua##:is(aside,div):has(> iframe[src*="/banners/"])
 tsn.ua##:is(aside,div).c-aside__port
+tsn.ua##[data-ad-container]
 tsn.ua##aside:has(> div > h2 > a[href$="pr.tsn.ua"])
 tsn.ua##aside:has(> div[style*="opacity: 40%"])
 tsn.ua##div.l-row.l-flex > div.l-col.l-gap:is(.l-col--sm, .l-col--xs):has(> aside.c-aside__port)
