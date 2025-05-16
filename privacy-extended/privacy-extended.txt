@@ -1,8 +1,8 @@
 ! [Adblock Plus 3.2]
 ! Title: Ukrainian Privacy Filter (extended version)
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.05.14
-! Last modified: Fri, 16 May 2025 15:35 EEST
+! Version: 25.05.17
+! Last modified: Fri, 16 May 2025 15:58 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -29,7 +29,7 @@
 !
 ! >>>
 ! disqus.com
-||disqus.com^$third-party,domain=itc.ua
+||disqus.com^$third-party,domain=itc.ua|mezha.media
 !
 ! >>>
 user/js/glavcom_komments.min.js$script,domain=glavcom.ua
@@ -67,7 +67,6 @@ krymr.com##div#comments
 krymr.com##p.link-comments
 kyivpost.com##.comments-block
 liga.net###fb-comm-block
-mezha.media###comments
 mil.in.ua##.fb-comments
 mind.ua###comments_anchor
 minfin.com.ua###gotoComment
