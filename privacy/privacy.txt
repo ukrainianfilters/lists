@@ -1,8 +1,8 @@
-! [Adblock Plus 3.2]
+! [Adblock Plus 4.20]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.05.9
-! Last modified: Sun, 11 May 2025 21:42 EEST
+! Version: 25.05.22
+! Last modified: Sat, 17 May 2025 20:30 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -352,6 +352,15 @@ widget.*/build/*/analytics.html$subdocument
 ||connect.facebook.net^*/fbds.js$third-party
 ||connect.facebook.net^*/pcm.js$third-party
 ! >>>
+! sharethis.com
+||count-server.sharethis.com^
+||l.sharethis.com^
+||seg.sharethis.com^
+||sharethis.com/increment_clicks?
+||sharethis.com/pageviews?
+||t.sharethis.com^
+||ws.sharethis.com^$script
+! >>>
 ! gemius.pl
 ||gemius.pl^$third-party
 @@||gemius.pl/gplayer.js$domain=tsn.ua
@@ -370,7 +379,6 @@ widget.*/build/*/analytics.html$subdocument
 ||sinoptik.ua/informers_js.php^$third-party
 sinoptik.ua/api/location/recent/
 sinoptik.ua/stats/
-
 4studio.com.ua,blackseanews.net,blitz.if.ua,budport.com.ua,cripo.com.ua,cvnews.cv.ua,expres.online,fakty.ua,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kontrakty.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,nikopolnews.net,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,volyninfa.com.ua,volynpost.com,zakarpattya24.com,zaxid.net,zib.com.ua##div#SinoptikInformer
 ! >>>
 4studio.com.ua##div.home_bottom > div > div:nth-child(3)
