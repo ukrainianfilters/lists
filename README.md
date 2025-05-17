@@ -24,20 +24,20 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 
 Наведені нижче списки фільтрів вже включені до об’єднаного списку фільтрів `Ukrainian Filters Combined List`, однак, якщо ви з якихось причин бажаєте використовувати лише окремі списки, ви зможете їх встановити окремо.
 
-**Ukrainian Ad Filter (standalone версія)** — видаляє рекламу з українських сайтів:
-* https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
+1. **Ukrainian Ad Filter (standalone версія)** — видаляє рекламу з українських сайтів:
+    - https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 
-**Ukrainian Privacy Filter** — блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті:
-* https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
+2. **Ukrainian Privacy Filter** — блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті:
+    - https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
 
-**Ukrainian Annoyance Filter** — блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо):
-* https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
+3. **Ukrainian Annoyance Filter** — блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо):
+    - https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 
 
 ## Розширені (extended) списки фільтрів
 
-**Ukrainian Filters (Extended List): Comments** — видаляє коментарі з українських сайтів разом з трекерами, що вбудовані у популярні системи коментування як-от disqus.com, забезпечуючи приватність, зменшення ризику переходу за фішинговими посиланнями та захист від токсичного контенту (тролінг, дезінформація тощо):
-* https://raw.githubusercontent.com/ukrainianfilters/lists/main/extended/comments.txt
+1. **Ukrainian Filters (Extended List): Comments** — видаляє коментарі з українських сайтів разом з трекерами, що вбудовані у популярні системи коментування як-от disqus.com, забезпечуючи приватність, зменшення ризику переходу за фішинговими посиланнями та захист від токсичного контенту (тролінг, дезінформація тощо):
+    - https://raw.githubusercontent.com/ukrainianfilters/lists/main/extended/comments.txt
 
 
 ## Сумісність з браузерами та розширеннями
