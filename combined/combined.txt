@@ -1,16 +1,13 @@
-! [Adblock Plus 3.2]
+! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.05.19
-! Last modified: Fri, 16 May 2025 16:10 EEST
+! Version: 25.05.22
+! Last modified: Sat, 17 May 2025 20:30 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
 ! Homepage: https://github.com/ukrainianfilters/lists
 ! Issues: https://github.com/ukrainianfilters/lists/issues
-!
-!
-! If you wish to remove irritating elements on Ukrainian websites (cookie notices, pop-ups, banners, etc.), check out: https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 !
 !
 ! -------------------------------------------------------------------------------------------------
@@ -1866,6 +1863,15 @@ widget.*/build/*/analytics.html$subdocument
 ||connect.facebook.net^*/fbds.js$third-party
 ||connect.facebook.net^*/pcm.js$third-party
 ! >>>
+! sharethis.com
+||count-server.sharethis.com^
+||l.sharethis.com^
+||seg.sharethis.com^
+||sharethis.com/increment_clicks?
+||sharethis.com/pageviews?
+||t.sharethis.com^
+||ws.sharethis.com^$script
+! >>>
 ! gemius.pl
 ||gemius.pl^$third-party
 @@||gemius.pl/gplayer.js$domain=tsn.ua
@@ -1884,7 +1890,6 @@ widget.*/build/*/analytics.html$subdocument
 ||sinoptik.ua/informers_js.php^$third-party
 sinoptik.ua/api/location/recent/
 sinoptik.ua/stats/
-
 4studio.com.ua,blackseanews.net,blitz.if.ua,budport.com.ua,cripo.com.ua,cvnews.cv.ua,expres.online,fakty.ua,football-ukraine.com,galinfo.com.ua,gazeta-misto.te.ua,gk-press.if.ua,internetua.com,kharkiv.ua,kontrakty.ua,kyiv24.news,lvnews.org.ua,magnolia-tv.com,mykharkov.info,newformat.info,nikopolnews.net,rbc.ua,region.dp.ua,rivnepost.rv.ua,sfera-tv.com.ua,sq.com.ua,times.zt.ua,tvoemisto.tv,uanews.org.ua,volyninfa.com.ua,volynpost.com,zakarpattya24.com,zaxid.net,zib.com.ua##div#SinoptikInformer
 ! >>>
 4studio.com.ua##div.home_bottom > div > div:nth-child(3)
@@ -1902,6 +1907,645 @@ zora-irpin.info##aside.widget_text:has(> div > div#SinoptikInformer)
 ! pogodnik.com
 ||pogodnik.com^$third-party
 real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
+!
+!
+! -----------------------------------------------------------------------------------------------------------------------
+! >>>>>  ANNOYANCE FILTERS  >>> https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
+! -----------------------------------------------------------------------------------------------------------------------
+!
+! !!!!!!!!!!!!!!!
+! GENERAL RULES
+! !!!!!!!!!!!!!!!
+!
+! >>>
+! COOKIE CONSENT BANNERS
+! >>>
+! OneTrust
+###onetrust-consent-sdk
+||cdn.cookielaw.org^$script
+! >>>
+! Cookiebot
+||consent.cookiebot.com^$script
+! >>>
+! Pop-up messages on websites built on the dosvit web platform
+##div[class^="div-root-"]:has(> div > p > a[href$="wiki/%D0%9A%D1%83%D0%BA%D0%B8"])
+! >>>
+##.cky-consent-container
+##.cky-overlay
+##.cookie
+##.cookie_banner
+##.cookie-label
+##.cookie-label-wrapprer
+##.cookie-toast
+##.cookie-toast-wrap
+##.cookie-toaster
+##.cookies
+##.cookies-wrap
+##.cookies-wrapper
+##.CookieWarning
+##.js-cookie
+##.js-cookies
+##[data-testid="consent-banner"]
+##[type="cookie-notification"]
+###cl-consent
+###cmplz-cookiebanner-container
+###cookie-banner
+###cookie-consent
+###cookie-notice
+###cookieBar
+###cookieBox
+###cookieChoiceInfo
+###cookieconsent
+###cookieConsent
+###cookiePopupWrapper
+###cookiePrompt
+###cookiePromptWrapper
+###cookiesdiv
+###CookiesDiv
+###EU_Cookie_Message
+###gdpr-disclaimer
+##dialog.cookie-policy
+! >>>
+! "SIGN IN WITH GOOGLE" POP-UP CONTAINER
+###credential_picker_container
+!
+!
+! !!!!!!!!!!!!!!!
+! PAGE-SPECIFIC RULES
+! !!!!!!!!!!!!!!!
+!
+||api.poool.fr^$third-party,domain=kyivindependent.com
+||assets.poool.fr^$third-party,domain=kyivindependent.com
+||consent.dw.com/delivery
+||frontend.poool.fr^$third-party,domain=kyivindependent.com
+||hu-manity.co^$third-party,domain=root-nation.com
+||osano.com^$third-party,domain=metlife.ua
+! >>>
+/js/app-cookies.js$domain=kvitka.house
+/js/remodal.js$script,domain=agroter.com.ua
+! >>>
+banklviv.com##+js(set-cookie, clicklink, yes)
+kyivstar.ua##+js(set-cookie, cookiesAgreement, denied)
+privatbank.ua##+js(set-cookie, analytics_allowed, 0)
+privatbank.ua##+js(set-cookie, marketing_allowed, 0)
+puratos.com.ua##+js(set-cookie, functionalCookieAccepted, true)
+! >>>
+032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##app-cookie-consent-popup
+032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##div[data-cookie-consent-popup]
+104.ua###privacy-policy
+1kr.ua##noindex:has([class$="cookies-box"])
+24tv.ua##div.player.sticky
+2day.kh.ua###fb-likebox
+3ona51.com##div.cookiesAccept
+7eminar.ua##div.cookie-banner
+a-grade.com.ua##div.modalWindow--cookie
+accordbank.com.ua###setcookie-agreement
+afishadnepr.com.ua,fitness-class.com.ua,nashemisto.dp.ua,startermedia.com.ua###cookie-law-info-bar
+agrodoctor.ua###cookieswarning_block
+agroreview.com##div.read-us
+ain.ua##div.cookie-popup
+akzent.zp.ua##div.gsInformer
+alfa-tv.ua##.cook
+anc.ua##div.cookies--popup-background
+anc.ua##div.dropdown-accept-city
+antoshka.ua##div.promotion-popup
+ap-bank.com##div.b-cookieAccept
+aprint.store##div.consent-banner-root
+atn.ua###custom_html-2
+atn.ua###moove_gdpr_cookie_info_bar
+atn.ua###moove_gdpr_cookie_info_bar
+atn.ua###penci_facebook_widget-2
+atn.ua###penci-insta-slider-2
+atn.ua###recent-comments-2
+atn.ua##div.wpb_raw_code:has(> div > div.penci-social-media)
+auchan.ua##div.cookie-agreement-wrapper
+auchan.ua##div.right-banner_root__35ahv
+auto.ria.com###gdpr-notifier
+avk.ua##div.coocie-pop
+avrora.ua##div.av-cac--confirm:has(> div > div.av-cac--confirm--txt:has-text(Це твоє місто -))
+avtodozor-gps.com.ua##div.t972:has(> div[class$="__banner"])
+babel.ua##.js-cookies-modal:has(.c-cookies-box)
+bankvostok.com.ua##div.cookies-accept-block
+bastion.tv##div.cookie-wrap
+bastion.tv##div.subscribe-new-container
+bat.ua###sysCookieMessage
+bbc.com##div[class^="bbc-"]:has(> div > div > h2:has-text(файлів cookies))
+bessarabia.ua##div.subscribeTelegramWrap
+bhub.com.ua##.policy-cookies
+bi.ua##div.cookiePopup
+bigkyiv.com.ua###headlessui-portal-root
+biolights.ua###ct-ultimate-gdpr-cookie-popup
+bmw.ua##div.container:has(> div.cookies-content)
+bmw.ua##epaas-consent-drawer-shell
+board.com.ua##div.cook_ann
+board.if.ua###cookieslayer
+bon.ua###cookie-bottom
+bonibons.com##div#epd:has(> div#cookiesdirective)
+booknet.ua##div.bn_cookies
+brander.ua##div#cookie-consent-popup
+britishbook.ua###politica
+brokker.news###modalNewsletter
+brokker.news##body:style(overflow: unset !important)
+brokker.news##div.cookies-warning
+brokker.news##div.modal-backdrop
+brovary.net.ua##aside#moove_gdpr_cookie_info_bar
+buhgalter.com.ua##div.b-social-groups__item
+buhgalter.com.ua##div.fb-widget__container
+buhplatforma.com.ua##div.cookie-consent
+buhplatforma.com.ua##div.id3-login-root
+buki.com.ua##div[class^="styles_bannerWrapper__"]:has(a[href="/p/cookies/"])
+bukischool.com.ua##div.styles_bannerWrapper__yRpsJ
+bvr.ua##.cookie-notify
+cambridge.ua###cookies-consent-modal
+cambridge.ua##body:style(overflow-y: unset !important)
+canyon.ua##div.cn-cookies
+carforhero.com###sliding-popup:has(> div.eu-cookie-compliance-banner)
+carta.ua##div.carta-policy-bottom
+censor.net##.stpd_cmp
+censor.net###notification-area
+censor.net###usage_notice
+cersanit.com###cookie-bar
+charivne.info###cookie-bar
+charivne.info###newsticker
+chasdiy.org##div.notifications__bottom
+cip.gov.ua##cookie-law
+city24.ua##div:has(> div > div > div > svg.linkedin)
+citysites.ua##div[aria-label="cookieconsent"]
+clhs.com.ua##div[aria-label="cookieconsent"]
+cloud.net.ua##.cookie-modal
+club4paws.ua##div.attention:has(> div > div > button[class$="js-accept-cookies"])
+codan.com.ua##div.cookies-bar
+codes.com.ua##div.fixed-bottom:has(> div#cookie)
+colins.ua##div.cookies-container
+columbia.ua###cookies-panel
+comfy.ua##div.ask-city-desktop
+comfy.ua##div.info-popup__content
+comfy.ua##div.weblayer--box-subscription-1
+comments.ua###push_info
+computools.ua##section.jquery_cookie
+concord.ua##.warning-cookie
+coolinfo.in.ua##aside#rb-privacy
+creativestates.net##div[class^="Cookies_cookies__"]
+crezu.com.ua##div.push
+cvnews.cv.ua##.remodal-is-locked:style(overflow: unset !important)
+cvnews.cv.ua##div.remodal-overlay
+cvnews.cv.ua##div.remodal-wrapper
+darmut.com##div.wd-cookies-popup
+darnytsia.ua##div[class^="dar-Cookies"]
+darnytsia.ua##div[class^="dar-Popup"]
+datagroup.ua###js-cookie-notification
+defence-ua.com##div.sidebar > :is(.section-title, [class^="journal-"], .publicat, .social-bar)
+defence-ua.com##div.sidebar > .tab-gallery:style(margin-top: 30px !important)
+detector.media##div.msg_cooky_blk
+dev.ua##div.cookie-dialog
+diia.gov.ua##div.cookies-banner-wrapper
+diiacityunited.org##div.cookies-form
+dnepr.express##div.cookie-consent
+dnipro-day.com,frankivsk-day.com,kharkiv-day.com,khmelnitsk-day.com,kyiv-day.com,lutsk-day.com,lviv-day.com,odesa-day.com,poltava-day.com,rivne-day.com,ternopil-day.com,ukr-day.com,uzhgorod-day.com,vinnitsa-day.com,zhytomyr-day.com###telegram-window
+dodam.com.ua##.popup.popup_cookies
+dom.ria.com##div:has(> div.mainContainer > div > div > div > div[data-tm="open-cookies-settings"])
+dom.ria.com##div.c-notifier:has(input[id="gdpr_settings"])
+dostup.org.ua,dostup.pravda.com.ua##.sp-show
+drovae.gov.ua##div[class^="cookies_cookies__"]
+dtek.com###CybotCookiebotDialog
+dtkt.ua##div.article-messengers
+dtkt.ua##div.cookie-message
+dtkt.ua##div.desktop-bottom-navigation
+dtkt.ua##div.subscription-notification
+dyvys.info##aside.cta-telegram
+e-likari.com.ua##div.cookie-notification
+eba.com.ua##div.user-cookie-notice
+ecommercebridge.co.ua##div#cc-main:has(> div > div > div > div > div > button[data-role="all"])
+ecomodule.com.ua##div.l-cookie
+ecopolitic.com.ua##div.cookie-banner
+ecopolitic.com.ua##div.cursor-follower
+elfashop.ua###cookies
+elitexpert.ua##center:has(> a[target="_blank"])
+eobuv.com.ua##.modal-consents
+epravda.com.ua,pravda.com.ua##div#checkUPcookies
+eridon.ua##div.cook
+euromix.in.ua###lqd-gdpr
+eurostudent.ua###cookie-law-info-bar
+everlegal.ua###consent-popup
+evzuttya.com.ua##.modal-consents
+facenews.ua###pblock
+factor.academy##div.cl-floating-box
+factor.ua###access-auth
+factor.ua###access-overlay
+factor.ua##body:style(position: unset !important; left: unset !important; top: unset !important; right: unset !important)
+farsh.in.ua##.cookies-informer
+fbc.biz.ua##div.shareaholic-share-buttons-container
+fedoriv.com##div.set-all-components-to-display-none-and-use-this-div-to-create-a-symbol:has(div[fs-cc="banner"])
+fex.net##div.layout__cookies-policy-notification
+fiatprofessional.ua###trackingCookie
+fint8.com##div[fs-cc="banner"]
+flashscore.ua##div.otPlaceholder
+fonarik.ua##.cl-floating-bar
+fonarik.ua##.notification-pechenki
+football24.ua##.privete-polisy
+fora.ua##.jss93
+fora.ua##div.cookie-banner
+forbes.ua##div.modal:has(img[src*="paywall.forbes.ua/static/content/"])
+founder.ua##div.boxCookies
+fozzyshop.ua###iqitcookielaw
+freelancehunt.com###cookie-bar
+friendsclub.com.ua##div[class*="__CookiesBanner--"]
+front-u.com##div.consent-banner-root
+funduk.ua###cookie_inform
+gagadget.com##div.l-container:has(> div > div > a[href$="t.me/gagadget_uk"])
+gagadget.com##div.l-container:has(> div > div.social-likes_gg)
+getsmart.com.ua##div.sccm
+gorod.dp.ua###myCookieConsent
+gorsovet.com.ua##div.cookie-consent
+grade.ua###cookies-consent-modal
+grade.ua##body:style(overflow-y: unset !important)
+greenfort-ua.com##div[data-storage-item*="cookiename_"]
+greenpost.ua###cookie-popup
+gsm.in.ua##.notice--cookie
+gsminfo.com.ua###share-buttons-top
+gsminfo.com.ua##div.code-block:has(> div.wenews)
+gymbeam.ua##div:has(> div > a[title="privacy policy"])
+harveast.com##div.cookie_notice
+harvest-clothing.com.ua###policy
+hellohelen.com##div.cookie-box
+hexagon.agency###cks
+heygop.com##aside[aria-label="GDPR Cookie Banner"]
+hmarochos.kiev.ua###custom-notification-overlay
+holosameryky.com##div.slide-in-wg
+hotline.finance##div.side-popup
+hotline.finance##div[class^="accept-cookies_modal_"]
+hotline.ua##div.informer-translation-error
+hvylya.net##div.privacy-policy
+i.ua##.Disclaimer
+ibuhgalter.net##div.cl-dialog
+igns.gov.ua##aside#moove_gdpr_cookie_info_bar
+ilounge.ua##div.signup-form-launcher
+incrypted.com##.incrypted-cookie-bar
+indigo.co.ua###cookie_notification
+infoit.com.ua###cookie-law-info-bar
+inforoom.com.ua##div.widget_text.privacy
+inksystem.biz##div.fixed_bottom
+inshe.tv##div.jnews_popup_post_container
+inter.ua##.warning
+interes-fakti.com###cookie-law-info-bar
+interflora.com.ua###cookies-policy
+interkassa.com##div.cookie-consent
+intertop.ua##div.agreement
+itc.ua###long-comments-block
+itest.com.ua###clearfy-cookie
+itest.com.ua##div.mypopup-modal-container
+ithillel.ua##.cookie-ntf
+ithillel.ua##div.consent-banner
+ithillel.ua##div.widget-sprint-magnet
+itstep.org##div.cookies-new
+ivaniura.org.ua###accept_cookies
+iveco.com###CybotCookiebotDialog
+jakosport.com.ua##div.notice-module
+jakosport.com.ua##div[aria-label="cookieconsent"]
+juscutum.com##div.popup__wrapper:has(> div > div > div.cookie-modal_component)
+kaercher.com##div.fg-cookiesdirective
+kanaldim.tv##div.privacy-policy-block
+kasta.ua##div[role="dialog"]:has(a[href$="/cookiepolicy/"])
+kernel.ua##div[role="dialog"]:has(div#modal-cookie-policy)
+kg.ua###slidebox45
+kidstaff.com.ua###gdpr_panel
+kindgeek.com##div[class^="CookiesBanner_cookie-banner-container__"]
+kinobaza.com.ua##div[role="alert"]
+kivismart.com##div.cookie-offer
+kniazha.ua##div.cookietxt
+knuba.edu.ua##.cookie-notice
+komoraczua.com###overlay:has(> div > div.cookie-policy__container)
+konkurent.ua##div.popupCookie
+kontrakty.ua###sideRight
+kontrakty.ua##div[module="important"]
+kontrakty.ua##div[module="morenews"]
+kontrakty.ua##div[rel="coffe"]
+kontramarka.ua##div.cc-container
+kontramarka.ua##div.promo-line
+koruna.ua###cookies_text
+kp.ua##.modal_policy
+kredobank.com.ua##div.cookies-modal
+kyivdictionary.com###cookies-banner-wrap
+kyivindependent.com##iframe[data-engage-slug="ukraine-daily-newsletter-popup"]
+kyivpost.com##.stpd_cmp
+kyivstar.ua##div[class*="RegionalityPopover_regionality"]
+landrover.ua##section[data-cy="cookie-banner"]
+legalitgroup.com##div#cookies-banner
+legs.com.ua##.cookie-modal
+lemtrans.com.ua##div.cookie_bar
+lexus.ua##section:has(> div.cookies-consent)
+lgseeds.com.ua###cookieModal:remove()
+librarius.pro##div[class^="CookieBanner_wrap"]
+liga.net##div.article-body > div.social-widget.news-list-page__card
+liga.net##div#cookie-reminder
+ligazakon.net##div.wrapper-banner-by-tag
+ligazakon.net##div[ng-if="showNewDoc"]
+ligazakon.net##section.actualsinglepage_promo_social
+ligazakon.net##section.subscription_block_socials
+ligazakon.net##section#main_popup_modal
+liki24.com##div.city-offer-wrap
+logity.ua##.cookie-banner
+lorgar.ua,lorgar.com##div.fixed.bottom-0:has(a[href="/privacy-policy"])
+luxoptica.ua##div#yourTown.modal
+lviv.travel##div.c-accept-message
+lvivrada.gov.ua###simpletools_nl_cookie_notice
+lvnews.org.ua##.remodal-is-locked:style(overflow: unset !important)
+lvnews.org.ua##div.remodal-overlay
+lvnews.org.ua##div.remodal-wrapper
+maanimo.ua###cookies
+malimista.in.ua###rb-privacy
+marchi.com.ua##.basel-cookies-popup
+marketer.ua##div.box-cookies
+marykay.ua##.cookie-wrapper
+marykayintouch.ua##div.ui-widget:has(> c-cmt-cookie-consent)
+maudau.com.ua##div:has(> div > p:has-text(cookies))
+mazda.ua##div.b-header-cookie:remove()
+mc.today##article[data-io-article-url] > div:has(> a[title="Google News"])
+mc.today##div.social-blue
+mc.today##div.social-lenta
+medis.com.ua##div.privacy-policy
+medplatforma.com.ua##div.cookie-consent
+medplatforma.com.ua##div.id3-login-root
+medspace.lviv.ua##div[aria-label="cookieconsent"]
+meest.com##div.cookies-banner
+megogo.net##div.adl_cmp_consent-dialog-module_backdrop
+mercedes-benz.ua##div[role="dialog"][aria-label="Cookie Consent Banner"]
+meta.ua##div.adl_cmp_consent-dialog-module_backdrop
+meta.ua##div.privacy-policy
+meteoprog.com##div.adl_cmp_consent-dialog-module_backdrop
+metinvest-smc.com###cookieConsentBanner
+metinvest.digital##div.cookie-popup
+metinvestholding.com###cookieConsentBanner
+metlife.ua##a[href="#skiptomaincontent"]
+metlife.ua##div.osano-cm-window:has(div[aria-label="Cookie Consent Banner"])
+metro.ua##body:style(overflow: unset !important)
+metro.ua##div.row > div > div.consent-disclaimer:has(a[href="/cookies"])
+mgmotor.com.ua##div.cookie-show
+mhp.com.ua##.cookie-modal
+mills.com.ua##div.modal__accept__cookies
+mind.ua##div.follow_us_buttons
+mind.ua##div.post__frame:has(> p > b > em > a[href$="+hXSbS73Cx0g5MmQy"])
+mind.ua##div.right_column > div.b-info-block_secondary:has(> h2[onclick*="mind.ua/vacancies"])
+mizol.ua##div.soglashenie
+mizol.ua##div.soglashenie_back
+mmr.ua##div.facebook-suggest
+mmr.ua##div.new-video-block
+mmr.ua##div.telegram-suggest
+mobizon.ua##.confirm-cookie-block
+mod.gov.ua##div[class^="fixed bottom-"]:has(a[href*="cookies-policy"])
+molliua.com###cookies-panel
+moneyveo.ua##app-cookie-agreement
+moonart.net.ua###cookiesPopup
+morshynska.ua##div.cookie_block
+mriia.gov.ua##app-cookie-dialog
+mtb.ua##div.cookies-disclaimer
+mvs.gov.ua##div.cookie-message
+my.ua##[data-policy-wrapper]
+mycity.one##app-cookie-concept
+myfishka.com##div[aria-label="cookieconsent"]
+mywatershop.com.ua##section.modal_cookies
+nasha-farba.com.ua##.cookieWrapper
+nashformat.ua##.special-wrapper
+nashformat.ua###cookies
+nashformat.ua##div.header_esupport
+nethunt.ua##div.section-cookieNotification
+netronic.com.ua##div[class^="style_banner__"]:has(> div > div > h3 > a[href="/privacy"])
+newproducts.com##div.cookies-banner
+newsyou.info##div.pum.pum-overlay
+nic.ua##div.cookie-alert
+nikopolnews.net###wp-bottom-menu
+nomoreransom.org##div.cookie-popup
+nova-era.com.ua##div.cookie-popup
+novadigital.com##div.npd-cookies
+novapay.ua##div.cookies.show-cookies
+novaposhta.ua##div#popup_info
+novosti.dn.ua##div.cookies_accept
+novus.ua##div.nearest-store-popup
+noworries.news##.remodal-is-locked:style(overflow: unset !important)
+noworries.news##div.fixed-tg-row:has(> div > a.fixed-tg-row-link)
+noworries.news##div.main-box-single-video
+noworries.news##div.remodal-overlay
+noworries.news##div.remodal-wrapper
+npshopping.com##div.cookie-alert
+ntn.ua##.warning
+oblikbudget.com.ua##div.cookie-consent
+oblikbudget.com.ua##div.id3-login-root
+obozrevatel.com##div.cookiePolicy
+obozrevatel.com##footer[data-tilda-cookie]
+obyava.ua##.cookie-bar
+odessa-life.od.ua###moove_gdpr_cookie_info_bar
+olx.ua##div[data-testid="cookies-overlay__container"]
+one.ua##div.privacy
+openeyesfund.com##div.cookie-consent
+opentalk.org.ua###popup-9095
+oplatforma.com.ua##div.cookie-consent
+oplatforma.com.ua##div.id3-login-root
+osvitoria.org##div.b-cookie
+ottry.com##div#cc--main:has(h2#c-ttl:has-text(cookie!))
+pasivka.com.ua###cookies-panel:remove()
+pdmsh.ua###cookies-modal
+penguin-team.ua##.coockies__message
+pfbcredit.com.ua###cookieBanner
+platon.ua###popupCookie
+playua.net###mp_form_slide_in1
+podorozhnyk.ua##div.chat-bot
+podorozhnyk.ua##div.cookie-agreement
+podorozhnyk.ua##div.mobile-app-popup
+podrobnosti.ua##div[aria-label="cookieconsent"]
+poehalisnami.ua##.jsAgreeWithCookie
+poetryhome.ua###c_mess
+politeka.net##div.privacy-policy
+portmone.com.ua##.ptm-banner__cat-fish
+portmone.com.ua##app-cookies-modal
+primary.org.ua###cookie-law-info-bar
+probitcoin.com.ua##.js-lwpcngNotice
+prokadry.com.ua##div.cookie-consent
+prokadry.com.ua##div.id3-login-root
+proosbb.info##div.eu-cookie-compliance-banner
+propertytimes.com.ua##p:has(> a[href$="t.me/propertytimes"])
+prostavochka.com.ua##.messages_cookies
+prozora.network##div.set-all-components:has(> div[fs-cc="banner"] > div > div.cookies_top)
+psm7.com##.m-cookies
+psm7.com###psm-messenger-subscribe-popup
+psm7.com##a.psm-single-bottom-google-news
+qmall.io##div.vue-notification-group:has(> span > div > div.notification-cookies)
+radiosvoboda.org##div.slide-in-wg
+radioua.net##.cookie-consent
+raiffeisen.ua###popup-cookies
+rbc.ua##.privacy
+rbc.ua##div.item:has(> a > span.whatsapp)
+ria-m.tv###cookie-msg
+ria.com###gdpr-notifier
+rice.ua##.wd-cookies-popup
+ridni.org.ua##aside.cookies-banner
+riel.ua##div.cookie-notice
+risu.ua###cookies-popup
+riyukraine.com##div.consent-banner-root
+robota.ua##.custom-vacancy-background:style(background-image: none !important; background-color: rgb(242, 245, 248) !important)
+robota.ua##alliance-blured-vacancy
+robota.ua##alliance-clubs-banners-about
+robota.ua##alliance-resume-update-block
+robota.ua##alliance-telegram-bot-promo
+robota.ua##alliance-vacancies-company-carousel
+robota.ua##div.card-banner > img
+root-nation.com##div.hu-wrapper[aria-labelledby="hu-cookies-notice-message"]
+roshen.com##div.cookies-popup
+roshen.com##div.fixed-bottom-banner
+rud.ua##div.subscription-module--popup
+runy.org.ua##.cookieWrapper
+ruport.com.ua##div.banner_area
+samsung.com##div.cookie-bar
+santen.ua##div.gdpr_v2
+savelife.in.ua###cookie-consent-banner
+search.com.ua##.cookie-policy-notice
+seminarov.net##div.cookie-banner
+serpstat.com##.cookie-consent
+sestry.eu##.gl-cookie-consent
+shakhtar.com###using-cookie-warning
+shakhtar.com##div#klaro:has(> div > div.cookie-notice)
+shuba.life##div.c-cookies
+silpo.ua##.cookie-banner
+slk.kh.ua##a.reader-choise__telegram
+slk.kh.ua##div.google-news-sub
+smachno.ua##div.bubleblock_wrapper
+smachno.ua##div.header_top_desctop_bnr:has(div.cookie-pop)
+smarthost.net.ua##div[aria-label="cookieconsent"]
+smile-ukraine.com##div.eu-cookie-compliance-banner
+smk-retail.com.ua##div.cookies_accept_popup
+solarpath.com.ua##aside#moove_gdpr_cookie_info_bar
+songs.in.ua##div.widget_eu_cookie_law_widget
+sony.ua##div:has(> div.privacy_prompt)
+soroban.ua###policy
+soroban.ua##div#chakra-toast-manager-bottom:has(a[href="/privacy-policy"])
+speka.media##div.js-cookie-banner
+sport.ua##div.adl_cmp_consent-dialog-module_backdrop
+sq.com.ua##div.cookies-accept
+starlight.media##div.cookie_popup
+stat.gov.ua##.consent-modal
+steko.ua##div.cookie-disclaimer
+stopfraud.com.ua##div.cookie-consent-popup
+stopfraud.gov.ua##div.cookie-consent-popup
+stylus.ua##div.cookie-widget
+sud.ua##.bottom_style_bnr
+sud.ua##div.b-bblock
+sud.ua##div.b-bblock-social:remove()
+sud.ua##div.b-blog-sidebar
+sud.ua##div.b-content-holder-in:style(margin-right: 200px !important)
+sud.ua##div.b-news-list:has-text(Сьогодні день народження)
+sud.ua##div.bbone-list
+sud.ua##div.col.sidebar > div > div.b-news-publist
+sud.ua##ul > li > div.b-news-item:has(a[href="https://t.me/sudua"])
+suspilne.media##div.cookies-popup-suspilne
+suzuki.ua##div[class^="CookiesPopup_"]
+svitovederevo.com.ua###oct-policy
+sweet.tv##div.cookie__popup
+tabletki.ua##div.app-link.active
+tabletki.ua##div.faq-page-link.active
+tabletki.ua##div.video-link.active
+taps.org.ua##div[data-role="cookieconsent"]
+taps.org.ua##div#overlay
+tascombank.ua##div.cookie-message
+tcc.ua##.tm-cookies
+tdl.com.ua###bottom_message
+tefal.ua##div.cookieMessage-root-o1g
+telegraf.com.ua##.c-cookies
+teleportal.ua##.cookie_container
+texty.org.ua##div.donate-banner
+thepage.ua###material-content > p + div.share-block
+thepage.ua##div.sidebar__item:has(> div.project-banner)
+tickets.ua##.app-cookies
+times.zt.ua###eu-cookie-bar
+tipok.com.ua##div#sliding-popup:has(> div.eu-cookie-compliance-banner)
+torgsoft.kiev.ua##.cookie-allow-box
+toyota.ua##.cookie-prompt
+tranzzo.com##div[class^="cookies_bannerWrap_"]
+travel-guide.in.ua##div.cookie-message-alert
+triumf.ua##.blur
+truskavetska.com.ua##div.cookiealert
+trusteeglobal.com##div#cc--main:has(> div > div > div > div > h2:has-text(cookies))
+tsn.ua##div.c-cookies
+tucha.ua##.bl-vcustom-cookies
+turbogroshi.com.ua###cookiesModal
+tydyvy.com###popupContainer
+u24.gov.ua##app-cookie-dialog
+ua.shell##div.evidon-banner
+ua.shell##div[aria-label="Інформація щодо файлів cookie на цьому сайті"]
+uaplantbased.com.ua###policy_popup
+uaserials.pro##div:has(> div#ask_modal_overlay)
+uatv.ua##div.playerlive
+uatv.ua##div.privacy-policy-block
+ucu.edu.ua###cookieNotice
+ucu.edu.ua###sp-cookie-consent
+ueex.com.ua###gdpr-cookie-message
+ukraina.info##div.CookieConsent
+ukraina.info##div.x-iaky6s
+ukraine-gta.com.ua##div.cookie-container
+ukraine-gta.com.ua##div.u-bottomFixer:has(> ul > li.notice--cookie)
+ukraine.com.ua###gdpr-banner-cookie
+ukrainepuls.com###moove_gdpr_cookie_info_bar
+ukravto.ua##div.popup_cookies
+ukrgasbank.com##div.cookies-popup
+ukrpol.ua##.notifier
+ukrposhta.ua##.cookie-message
+ukrzoloto.ua###cban
+umgi.com##div[aria-label="cookieconsent"]
+unian.ua##div.social-btn-bottom
+unilab.kiev.ua##.cookieWrapper
+uspacy.eu,uspacy.ua##div[class^="cookiesNotification_wrapper"]
+uzr.com.ua##div.td-more-articles-box
+vandalvape.life###cookie
+varosh.com.ua##div.helpus
+venus-clinic.com.ua##div.pcb
+vgorode.ua##div.chat-bl
+vgorode.ua##section.chatbot-sec
+vgoru.org##div.popup
+vidhuk.ua###usercentrics-root
+vin.gov.ua##.consent-block
+vinga.ua###cookies-banner
+vinnitsa.info##div:has(> div > div > img[alt="App"])
+vinnitsa.info##div.CookieConsent
+visitukraine.today##div.cookie-consent-wrapper
+vitaello.com.ua###consent
+vitagro.com.ua##div.cookie-alert
+volia.com##.agreeCookie\.component__cookieWrapper
+vostok.bank##div.cookies-accept-block
+vseosvita.ua##.bottom-banner
+vseosvita.ua##.vo-banner
+vseosvita.ua###vr-n-sharick-open
+wayforpay.com###cookiesNoticeContainer
+we.org.ua###cookie-law-info-bar
+web-promo.ua###cookies_popup
+webspark.ua##div.cookie-popup
+weukraine.tv##div.eael-sticky-video-player2.out:style(position: unset !important)
+weukraine.tv##div.elementor-widget:has(> div > div > a > img[alt="Telegram"])
+whitebit.com##div#cc-main:has(> div > div > div > div > p > a[href$="/terms/cookies"])
+whiteweb.ua##div[aria-label="cookieconsent"]
+winstore.com.ua##div.cookie_block
+womo.ua##div.promo-block-subscribe
+work.ua###bBlockingCompany
+work.ua###resume-publish-inset
+work.ua##div:has(> img[alt="Банер"])
+work.ua##div.card:has(div.gamification-progress-content)
+work.ua##div.design-decor:style(background: unset !important)
+work.ua##div.design-inverse:style(background: unset !important)
+work.ua##div.music-plugin
+work.ua##header.header-default:style(background-image: unset !important)
+y.ua##div.cl-dialog
+y.ua##div.cl-launcher
+yakty.com.ua##div.cookie-banner
+yasensvit.ua##.coockies
+yasensvit.ua##.popup--tgBot__wrap
+zadarma.com##div.cookie-tooltip
+zapchasti.ria.com###gdpr-notifier
+zaxid.net###pushNotificationBanner
+zeppelin.ua###cookieNote
+zgraya.digital##div[aria-label="cookieconsent"]
+zillya.ua###gdpr-cookie-message
+zkg.ua##div.cookie-bubble
+znaj.ua##div.privacy-policy
+zootovary.com##div[aria-label="cookieconsent"]
+zootovary.com##span[id^="cookieconsent"]
+вулик.петрівка.укр##div.hu-wrapper[aria-labelledby="hu-cookies-notice-message"]
 !
 !
 ! --------------------------------------------------------------------------------------------------------------------------------
