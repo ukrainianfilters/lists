@@ -15,27 +15,26 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 * **Надмірність**: ці два списки одночасно містять правила фільтрації для Росії (як основної країни), України, Білорусі, Казахстану, Узбекистану, Азербайджану та інших країн пострадянського простору, що, у свою чергу, впливає на ефективність, адже користувач завантажує тисячі правил фільтрації для сайтів іноземних країн, які навряд чи коли-небудь відвідає.
 
 
-## Списки фільтрів
+## Ukrainian Filters (Combined List)
 
-### Ukrainian Filters (Combined List)
-
-Об'єднаний список фільтрів (Реклама + Приватність + Безпека), призначений для видалення реклами з українських сайтів, блокування трекерів, шкідливих скриптів та небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо). Розділ `SECURITY FILTERS` містить правила фільтрації, що імпортовані з [Українського безпекового фільтра](https://github.com/braveinnovators/ukrainian-security-filter).
+Об'єднаний список фільтрів (Реклама + Приватність + Дратівливі елементи + Безпека), призначений для видалення реклами та дратівливих елементів з українських сайтів, блокування трекерів, шкідливих скриптів й небезпечних веб-ресурсів (фішинг, онлайн-шахрайство, дропшопінг, шкідливе програмне забезпечення тощо). Розділ `SECURITY FILTERS` містить правила фільтрації, що імпортовані з [Українського безпекового фільтра](https://github.com/braveinnovators/ukrainian-security-filter).
 
 Веб-посилання:
+* https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
 
-```
-https://raw.githubusercontent.com/ukrainianfilters/lists/main/combined/combined.txt
-```
 
-### Ukrainian Annoyance Filter
+## Окремі (standalone) списки фільтрів
 
-Блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо).
+Наведені нижче списки фільтрів вже включені до об’єднаного списку фільтрів `Ukrainian Filters Combined List`, однак, якщо ви з якихось причин бажаєте використовувати лише окремі списки, ви зможете їх встановити окремо.
 
-Веб-посилання:
+**Ukrainian Ad Filter (standalone версія)** — видаляє рекламу з українських сайтів:
+* https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
 
-```
-https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
-```
+**Ukrainian Privacy Filter** — блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті:
+* https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
+
+**Ukrainian Annoyance Filter** — блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо):
+* https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 
 
 ## Сумісність з браузерами та розширеннями
