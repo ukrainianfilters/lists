@@ -34,6 +34,12 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 * https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
 
 
+## Розширені (extended) списки фільтрів
+
+**Ukrainian Filters (Extended List): Comments** — видаляє коментарі з українських сайтів разом з трекерами, що вбудовані у популярні системи коментування як-от disqus.com, забезпечуючи приватність, зменшення ризику переходу за фішинговими посиланнями та захист від токсичного контенту (тролінг, дезінформація тощо):
+* https://raw.githubusercontent.com/ukrainianfilters/lists/main/extended/comments.txt
+
+
 ## Сумісність з браузерами та розширеннями
 
 #### Браузери з вбудованим блокуванням реклами:
