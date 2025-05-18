@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.05.22
-! Last modified: Sat, 17 May 2025 20:30 EEST
+! Version: 25.05.24
+! Last modified: Sun, 18 May 2025 14:52 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -297,6 +297,7 @@ forex.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 24tv.ua##app-main-page-adv-block
 24tv.ua##div.video-container:has(> app-adv-video-placeholder)
 24tv.ua##div.video-dv-wrapper
+24tv.ua##div[id^="adv"]
 24tv.ua##div#idealMediaWrapper
 2day.kh.ua###block-reklamnyybanner
 2ip.ua##a.nobanner
