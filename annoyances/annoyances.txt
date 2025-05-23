@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.05.24
-! Last modified: Sun, 18 May 2025 14:52 EEST
+! Version: 25.05.25
+! Last modified: Fri, 23 May 2025 10:23 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -156,6 +156,7 @@ buhplatforma.com.ua##div.cookie-consent
 buhplatforma.com.ua##div.id3-login-root
 buki.com.ua##div[class^="styles_bannerWrapper__"]:has(a[href="/p/cookies/"])
 bukischool.com.ua##div.styles_bannerWrapper__yRpsJ
+businessua.com###vedomosti_block
 bvr.ua##.cookie-notify
 cambridge.ua###cookies-consent-modal
 cambridge.ua##body:style(overflow-y: unset !important)
@@ -276,6 +277,9 @@ holosameryky.com##div.slide-in-wg
 hotline.finance##div.side-popup
 hotline.finance##div[class^="accept-cookies_modal_"]
 hotline.ua##div.informer-translation-error
+hromadske.radio##aside[class*="BannerButkevich_butkevich_banner_"]
+hromadske.radio##aside[class^="FollowBanner_"]
+hromadske.radio##aside[class^="PatreonBanner_patreon_support_"]
 hvylya.net##div.privacy-policy
 i.ua##.Disclaimer
 ibuhgalter.net##div.cl-dialog
@@ -469,6 +473,7 @@ psm7.com##.m-cookies
 psm7.com###psm-messenger-subscribe-popup
 psm7.com##a.psm-single-bottom-google-news
 qmall.io##div.vue-notification-group:has(> span > div > div.notification-cookies)
+radiosvoboda.org##a[class^="banner__"]
 radiosvoboda.org##div.slide-in-wg
 radioua.net##.cookie-consent
 raiffeisen.ua###popup-cookies
@@ -637,6 +642,9 @@ yakty.com.ua##div.cookie-banner
 yasensvit.ua##.coockies
 yasensvit.ua##.popup--tgBot__wrap
 zadarma.com##div.cookie-tooltip
+zahidfront.com.ua##div.mfp-bg
+zahidfront.com.ua##div.mfp-wrap
+zahidfront.com.ua##html:style(overflow: unset !important)
 zapchasti.ria.com###gdpr-notifier
 zaxid.net###pushNotificationBanner
 zeppelin.ua###cookieNote
