@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Extended List): Comments
 ! Description: Removes comments from Ukrainian websites
-! Version: 25.05.24
-! Last modified: Sun, 18 May 2025 14:52 EEST
+! Version: 25.05.25
+! Last modified: Fri, 23 May 2025 10:23 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -77,5 +77,6 @@ ua-football.com##div.own-comm-widget
 uaprogaming.com.ua##div#comments
 ukurier.gov.ua##.article-comments
 xsport.ua###comment-block
+zahidfront.com.ua###reviewrp
 zaxid.net##.facebook-comments
 zn.ua##.comments-box
