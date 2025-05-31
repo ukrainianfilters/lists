@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.05.25
-! Last modified: Fri, 23 May 2025 10:23 EEST
+! Version: 25.05.27
+! Last modified: Sat, 31 May 2025 20:31 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -86,7 +86,7 @@
 /js/remodal.js$script,domain=agroter.com.ua
 ! >>>
 banklviv.com##+js(set-cookie, clicklink, yes)
-kyivstar.ua##+js(set-cookie, cookiesAgreement, denied)
+kyivstar.ua##+js(set-cookie, cookies_agreement, denied)
 privatbank.ua##+js(set-cookie, analytics_allowed, 0)
 privatbank.ua##+js(set-cookie, marketing_allowed, 0)
 puratos.com.ua##+js(set-cookie, functionalCookieAccepted, true)
