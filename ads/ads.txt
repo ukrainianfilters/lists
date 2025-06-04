@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.05.26
-! Last modified: Fri, 23 May 2025 19:42 EEST
+! Version: 25.06.2
+! Last modified: Wed, 04 June 2025 18:31 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -636,6 +636,11 @@ gazeta.ua##.informer
 gazetapo.lviv.ua###site:style(margin-top: unset !important)
 gazetapo.lviv.ua##div.topbar-wrap
 gazetapo.lviv.ua##div.widget_custom_html:has(> div > a[target="_blank"])
+gecid.com##.content_top_banner
+gecid.com###bottom_branding
+gecid.com##body:remove-attr(onclick)
+gecid.com##body:style(background-image: unset !important; cursor: unset !important)
+gecid.com##div[class^="banner_"]
 gk-press.if.ua##.widget_media_image
 gk-press.if.ua###left-sidebar > .widget_text
 gk-press.if.ua##div[style="text-align: center"] > [href][target="_blank"]
