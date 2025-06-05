@@ -25,6 +25,7 @@
 ||adpartner.pro^
 ||adriver.ru^
 ||ads-twitter.com^
+||ads.go2net.com.ua^
 ||ads.informator.ua^
 ||ads.ligazakon.net^
 ||adtelligent.com^
@@ -32,15 +33,18 @@
 ||aixcdn.com^
 ||aj1907.online^
 ||api.median-ads.com^
+||banstat.nadavi.net^
 ||banners.doc.ua^
 ||creativecdn.com^
 ||eskimi.com^
 ||franecki.net^
 ||getter.cfd^
+||getter.fun^
 ||givemelink.cc^
 ||lenmit.com^
 ||myblogshop.top^
 ||myroledance.com^
+||nadavi.com.ua^
 ||ogads-pa.googleapis.com^
 ||optad360.io^
 ||optad360.net^
@@ -224,6 +228,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||helsi.me/api/ad/pis/
 ||html-load.com/loader.min.js^$domain=newsyou.info
 ||informator.ua/js/frontend/ad-loaders
+||mazepa.to/styles/js/ed*.js
 ||medicina.ua/adv.php
 ||medicina.ua/adv/async.php
 ||momondo.ua/ugtm/
