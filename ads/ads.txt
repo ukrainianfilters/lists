@@ -25,7 +25,6 @@
 ||adpartner.pro^
 ||adriver.ru^
 ||ads-twitter.com^
-||ads.go2net.com.ua^
 ||ads.informator.ua^
 ||ads.ligazakon.net^
 ||adtelligent.com^
