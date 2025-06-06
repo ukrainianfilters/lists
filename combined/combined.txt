@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.06.2
-! Last modified: Wed, 04 June 2025 18:31 EEST
+! Version: 25.06.3
+! Last modified: Fri, 06 June 2025 18:22 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -189,6 +189,10 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ##.newspack_global_ad
 ##.nts-ad
 ##.nts-video-wrapper
+##.penci-ad_box
+##.penci-ad-box
+##.penci-google-adsense
+##.penci-promo-link
 ##.side_ad
 ##.site-header__ads
 ##.td-a-ad
@@ -2123,6 +2127,7 @@ dtkt.ua##div.desktop-bottom-navigation
 dtkt.ua##div.subscription-notification
 dyvys.info##aside.cta-telegram
 e-likari.com.ua##div.cookie-notification
+east-fruit.com##div.penci-wrap-gprd-law
 eba.com.ua##div.user-cookie-notice
 ecommercebridge.co.ua##div#cc-main:has(> div > div > div > div > div > button[data-role="all"])
 ecomodule.com.ua##div.l-cookie
