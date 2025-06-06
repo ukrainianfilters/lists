@@ -37,7 +37,7 @@
 ||counter.pravda.com.ua^
 ||counter.ukr.net^
 ||counter.yadro.ru^
-||dom.ria.com/slonik^
+||counter24.luxnet.ua^
 ||doubleclick.com^
 ||doubleclick.net^
 ||edge.adobedc.net^
@@ -48,6 +48,7 @@
 ||hs-analytics.net^
 ||hs-banner.com^
 ||i.posthog.com^
+||lens.eva.ua^
 ||log.cookieyes.com^
 ||log.pinterest.com^
 ||metrics.brightcove.com^
@@ -129,7 +130,6 @@
 ||ipinfo.io^$third-party,domain=netronic.com.ua
 ||js.hs-scripts.com^$third-party,domain=gwaramedia.com
 ||lfeeder.com^$third-party
-||matomo.factor.ua^$third-party
 ||mc.yandex.ru^$third-party
 ||mediatraffic.com.ua^$third-party
 ||mouseflow.com^$third-party
@@ -171,7 +171,6 @@
 ! >>>
 ||adservice.google.
 ||analytics.*/collect
-||analytics.nikvesti.com/matomo.js
 ||api-iam.intercom.io/messenger/web/metrics
 ||api.drukarnia.com.ua/api/stats/
 ||apkcafe.com.ua/stat/
@@ -182,15 +181,15 @@
 ||clickiocdn.com/clickiotag_log/
 ||clickiocdn.com/consent/log/
 ||clickiocdn.com/utr/
-||counter.unian.net/matomo.js
 ||crm-tracker-prod.liga.net/track/
 ||data-api.eva.ua/api
+||dom.ria.com/slonik
 ||dou.ua/ajax-impressions-track/
 ||dsp.gov.ua/wp-content/plugins/wp-accessibility/js/fingerprint.min.js
 ||duckduckgo.com/t/
 ||ek.ua/img/p.gif
 ||elmir.ua/response/th.php?i=
-||elmir.ua/response/update_basket.php?t&gen=
+||elmir.ua/response/update_basket.php
 ||eva.ua/assets/scripts/multisearch-tracker.js
 ||eva.ua/assets/scripts/uxlens.js
 ||gepur.com/logs
@@ -205,14 +204,13 @@
 ||k.cackle.me/widget/*/count
 ||langlover.com.ua/api/countview/
 ||langlover.com.ua/api/proxy/honeycomb
-||lens.eva.ua^
 ||locator.ua/js/stat.js
 ||locator.ua/report.php
 ||mate.academy/amplitude/
 ||mate.academy/dwh
 ||moonanime.art/api/stats/
 ||msecnd.net/scripts/b/ai.
-||obozrevatel.com/api/news/ukr/pixel/
+||obozrevatel.com/api/news/*/pixel/
 ||obozrevatel.com/pixel.png
 ||osvita.ua/clicks/track
 ||otpbank.com.ua/bitrix/tools/conversion/ajax_counter.php
@@ -298,11 +296,14 @@ _beacon?
 /log?format=
 /log/client/messages
 /log/error?
+/matomo.js
+/matomo.php
 /OtAutoBlock.js$domain=glovoapp.com
 /pagespeed_static/*.gif$domain=root-nation.com
 /peach-collector.min.js
 /personification$domain=vodafone.ua
-/piwik.js$domain=tsn.ua
+/piwik.js
+/piwik.php
 /pixel/?token=$domain=obozrevatel.com
 /plugins/exactmetrics-
 /ps/track_informer_click?token=$domain=bigl.ua
@@ -395,4 +396,3 @@ zora-irpin.info##aside.widget_text:has(> div > div#SinoptikInformer)
 ! >>>
 ! pogodnik.com
 ||pogodnik.com^$third-party
-real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
