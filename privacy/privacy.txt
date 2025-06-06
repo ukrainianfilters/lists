@@ -22,6 +22,7 @@
 ||analytics.tiktok.com^
 ||analytics.trbna.com^
 ||analytics.webpushr.com^
+||banstat.nadavi.net^
 ||c.bigmir.net^
 ||c.mgid.com^
 ||clarity.ms^

@@ -33,7 +33,6 @@
 ||aixcdn.com^
 ||aj1907.online^
 ||api.median-ads.com^
-||banstat.nadavi.net^
 ||banners.doc.ua^
 ||creativecdn.com^
 ||eskimi.com^
@@ -44,7 +43,6 @@
 ||lenmit.com^
 ||myblogshop.top^
 ||myroledance.com^
-||nadavi.com.ua^
 ||ogads-pa.googleapis.com^
 ||optad360.io^
 ||optad360.net^
