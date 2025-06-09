@@ -130,6 +130,7 @@
 ||ipinfo.io^$third-party,domain=netronic.com.ua
 ||js.hs-scripts.com^$third-party,domain=gwaramedia.com
 ||lfeeder.com^$third-party
+||matomo.factor.ua^$third-party
 ||mc.yandex.ru^$third-party
 ||mediatraffic.com.ua^$third-party
 ||mouseflow.com^$third-party
@@ -171,6 +172,7 @@
 ! >>>
 ||adservice.google.
 ||analytics.*/collect
+||analytics.nikvesti.com/matomo.js
 ||api-iam.intercom.io/messenger/web/metrics
 ||api.drukarnia.com.ua/api/stats/
 ||apkcafe.com.ua/stat/
@@ -181,6 +183,7 @@
 ||clickiocdn.com/clickiotag_log/
 ||clickiocdn.com/consent/log/
 ||clickiocdn.com/utr/
+||counter.unian.net/matomo.js
 ||crm-tracker-prod.liga.net/track/
 ||data-api.eva.ua/api
 ||dom.ria.com/slonik
