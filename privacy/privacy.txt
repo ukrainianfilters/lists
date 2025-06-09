@@ -296,14 +296,11 @@ _beacon?
 /log?format=
 /log/client/messages
 /log/error?
-/matomo.js
-/matomo.php
 /OtAutoBlock.js$domain=glovoapp.com
 /pagespeed_static/*.gif$domain=root-nation.com
 /peach-collector.min.js
 /personification$domain=vodafone.ua
-/piwik.js
-/piwik.php
+/piwik.js$domain=tsn.ua
 /pixel/?token=$domain=obozrevatel.com
 /plugins/exactmetrics-
 /ps/track_informer_click?token=$domain=bigl.ua
