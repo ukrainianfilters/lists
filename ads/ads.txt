@@ -328,7 +328,7 @@ agro-business.com.ua###sp-breadcrumb
 agro-business.com.ua##div.apm-container:has(script[src*="&task=remote_ad"])
 agro-business.com.ua##div.live__wallper
 agro-business.com.ua##div.remote_ads
-agronews.ua,agroreview.com##body:style(background-image: none !important)
+agronews.ua,agroreview.com##body:style(background-image: unset !important)
 agronews.ua##div[class*="banner"]
 agronews.ua##div[class^="baner-"]
 agronomy.com.ua###g-fullwidth:has(div.platform-content:nth-of-type(-n+4))
@@ -641,7 +641,7 @@ gazetapo.lviv.ua##div.widget_custom_html:has(> div > a[target="_blank"])
 gecid.com##.content_top_banner
 gecid.com###bottom_branding
 gecid.com##body:remove-attr(onclick)
-gecid.com##body:style(background-image: none !important; background-color: transparent !important; cursor: default !important)
+gecid.com##body:style(background-image: unset !important; background-color: transparent !important; cursor: default !important)
 gecid.com##div[class^="banner_"]
 gk-press.if.ua##.widget_media_image
 gk-press.if.ua###left-sidebar > .widget_text
@@ -727,7 +727,7 @@ incrypted.com##section.widget_text:has(> div > div.incrypted-banner)
 infocar.ua###brandlink
 infocar.ua###contentbg:style(margin-top: 35px !important)
 infocar.ua###premban
-infocar.ua###totalbg:style(background-image: none !important)
+infocar.ua###totalbg:style(background-image: unset !important)
 infocar.ua###vipbottombanner
 infoit.com.ua##aside.widget:has(> center > ins.adsbygoogle)
 inforesist.org##.advert
@@ -804,7 +804,7 @@ kinoafisha.ua##div.banner
 kinoafisha.ua##div[class^="adpartner-"]
 kinoafisha.ua##div[class^="promo"]
 kinofilms.ua###KFheader-adtop
-kinofilms.ua###sitewrap:style(background-image: none !important; background-color: transparent !important)
+kinofilms.ua###sitewrap:style(background-image: unset !important; background-color: transparent !important)
 kinofilms.ua##a:has(> img.brandtopimg)
 kinofilms.ua##aside:has(> div#banner)
 kinofilms.ua##aside:has(> ins.adsbygoogle)
@@ -812,7 +812,7 @@ kinofilms.ua##div[data-sender="admixer"]
 kinofilms.ua##iframe[title="FPV"]
 ko.com.ua##a[href$="oki.com/ua/printing"]
 ko.com.ua##body > a[target="_blank"][style*="height: 100%"]
-ko.com.ua##body:style(background-image: none !important)
+ko.com.ua##body:style(background-image: unset !important)
 ko.com.ua##div.content > p:has(> strong > a[style="color: #d00;"])
 ko.com.ua##div.gbg > center:has(> a[target="_blank"] > img[src^="/files/region_banners/"])
 ko.com.ua##div.gbg:style(top: unset !important)
@@ -1077,7 +1077,7 @@ pravda.if.ua##div.footer-11__container-menu > section:nth-of-type(3)
 pravda.if.ua##section.brxe-section:has(> div > div > span:has-text(Реклама:))
 pravdatutnews.com##div.views-code:has(> div[id^="newsAd"])
 predmety.in.ua##div[style="height:550px; weight:auto;"]:empty
-proagro.com.ua##div.td-outer-container:style(background-image: none !important; cursor: default !important)
+proagro.com.ua##div.td-outer-container:style(background-image: unset !important; cursor: default !important)
 procherk.info###rt-content-bottom
 procherk.info##div.zone:has(> div > div > div > div > span:has-text(реклама))
 proidei.com##div.ads-widget-block
