@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.05.22
-! Last modified: Sat, 17 May 2025 20:30 EEST
+! Version: 25.06.4
+! Last modified: Wed, 11 June 2025 20:28 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -48,7 +48,6 @@
 ||hs-analytics.net^
 ||hs-banner.com^
 ||i.posthog.com^
-||lens.eva.ua^
 ||log.cookieyes.com^
 ||log.pinterest.com^
 ||metrics.brightcove.com^
@@ -192,9 +191,10 @@
 ||duckduckgo.com/t/
 ||ek.ua/img/p.gif
 ||elmir.ua/response/th.php?i=
-||elmir.ua/response/update_basket.php
+||elmir.ua/response/update_basket.php?t&gen=
 ||eva.ua/assets/scripts/multisearch-tracker.js
 ||eva.ua/assets/scripts/uxlens.js
+||gecid.com/inc/bstat.php
 ||gepur.com/logs
 ||googleapis.com^*/gen_204?
 ||gotcha-server.evo.run/metrics
@@ -207,13 +207,13 @@
 ||k.cackle.me/widget/*/count
 ||langlover.com.ua/api/countview/
 ||langlover.com.ua/api/proxy/honeycomb
+||lens.eva.ua^
 ||locator.ua/js/stat.js
 ||locator.ua/report.php
 ||mate.academy/amplitude/
 ||mate.academy/dwh
 ||moonanime.art/api/stats/
 ||msecnd.net/scripts/b/ai.
-||obozrevatel.com/api/news/*/pixel/
 ||obozrevatel.com/pixel.png
 ||osvita.ua/clicks/track
 ||otpbank.com.ua/bitrix/tools/conversion/ajax_counter.php
