@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.06.3
-! Last modified: Fri, 06 June 2025 18:22 EEST
+! Version: 25.06.4
+! Last modified: Wed, 11 June 2025 20:28 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -217,6 +217,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ! PAGE-SPECIFIC RULES
 ! !!!!!!!!!!!!!!!
 !
+||1plus1.ua/widgets/idealmedia.html
 ||1plus1.video/static/js/api.gpt.js
 ||1plus1.video/ua/ab/?whole
 ||5.ua/js/banner
@@ -224,10 +225,13 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ||cdn.hdvbua.pro/amedia/
 ||ek.ua/gb.php
 ||ek.ua/pst.php
+||gecid.com/data/adbn/
+||gecid.com/inc/getBanIf.php
 ||gepur.com/js/rtbhouse.js
 ||helsi.me/api/ad/pis/
 ||html-load.com/loader.min.js^$domain=newsyou.info
 ||informator.ua/js/frontend/ad-loaders
+||mazepa.to/styles/js/ed
 ||medicina.ua/adv.php
 ||medicina.ua/adv/async.php
 ||momondo.ua/ugtm/
@@ -284,13 +288,10 @@ forex.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##div[data-current-banner-id]
 1plus1.ua##div.articleHeaderAdv
 1plus1.ua##div.banner-catfish
-1plus1.ua##div.gridSection__list:style(max-width: none !important)
-1plus1.ua##div.idealMedia
-1plus1.ua##div.news__items:style(max-width: none !important)
+1plus1.ua##div.google-intext
+1plus1.ua##div.idealMediaContainer
+1plus1.ua##div.news__items:style(max-width: unset !important)
 1plus1.ua##div.post__partners
-1plus1.ua##div[class*="__adv"]
-1plus1.ua##div[class*="-adv"]
-1plus1.ua##div[class^="banner"]:has(div[id^="div-gpt-ad-"])
 1plus1.ua##div[class^="sidebar-banners"]
 1plus1.video##div.playlist-player:style(max-width: 1155px !important)
 1plus1.video##div.playlist-short-content:style(min-height: unset !important)
@@ -643,7 +644,7 @@ gazetapo.lviv.ua##div.widget_custom_html:has(> div > a[target="_blank"])
 gecid.com##.content_top_banner
 gecid.com###bottom_branding
 gecid.com##body:remove-attr(onclick)
-gecid.com##body:style(background-image: unset !important; cursor: unset !important)
+gecid.com##body:style(background-image: unset !important; background-color: transparent !important; cursor: unset !important)
 gecid.com##div[class^="banner_"]
 gk-press.if.ua##.widget_media_image
 gk-press.if.ua###left-sidebar > .widget_text
@@ -806,7 +807,7 @@ kinoafisha.ua##div.banner
 kinoafisha.ua##div[class^="adpartner-"]
 kinoafisha.ua##div[class^="promo"]
 kinofilms.ua###KFheader-adtop
-kinofilms.ua###sitewrap:style(background-image: unset !important)
+kinofilms.ua###sitewrap:style(background-image: unset !important; background-color: unset !important)
 kinofilms.ua##a:has(> img.brandtopimg)
 kinofilms.ua##aside:has(> div#banner)
 kinofilms.ua##aside:has(> ins.adsbygoogle)
@@ -817,7 +818,7 @@ ko.com.ua##body > a[target="_blank"][style*="height: 100%"]
 ko.com.ua##body:style(background-image: unset !important)
 ko.com.ua##div.content > p:has(> strong > a[style="color: #d00;"])
 ko.com.ua##div.gbg > center:has(> a[target="_blank"] > img[src^="/files/region_banners/"])
-ko.com.ua##div.gbg:style(top:unset !important)
+ko.com.ua##div.gbg:style(top: unset !important)
 ko.com.ua##div.pad + p
 ko.com.ua##div.pad:has(> ul.sponsors)
 ko.com.ua##table.container > tbody > tr > td.left-column
@@ -1153,6 +1154,11 @@ sinoptik.ua##div.informerTop
 sinoptik.ua##head > style:empty:style(all: inherit !important)
 site.ua##div[id^="adpartner-"]
 site.ua##div[id^="adv-"]
+slavutych.info##.frik
+slavutych.info##div:has(> div.frik-inner)
+slavutych.info##div.friks__list
+slavutych.info##div.friks-row
+slavutych.info##div.friks-sidebar
 slk.kh.ua##div[class^="specific-content_"]
 slovnyk.ua##section[class^="section-ad"]
 slovoidilo.ua##div.branding-main
@@ -1559,7 +1565,7 @@ zz.te.ua##.advads-widget
 ||counter.pravda.com.ua^
 ||counter.ukr.net^
 ||counter.yadro.ru^
-||dom.ria.com/slonik^
+||counter24.luxnet.ua^
 ||doubleclick.com^
 ||doubleclick.net^
 ||edge.adobedc.net^
@@ -1707,6 +1713,7 @@ zz.te.ua##.advads-widget
 ||counter.unian.net/matomo.js
 ||crm-tracker-prod.liga.net/track/
 ||data-api.eva.ua/api
+||dom.ria.com/slonik
 ||dou.ua/ajax-impressions-track/
 ||dsp.gov.ua/wp-content/plugins/wp-accessibility/js/fingerprint.min.js
 ||duckduckgo.com/t/
@@ -1715,6 +1722,7 @@ zz.te.ua##.advads-widget
 ||elmir.ua/response/update_basket.php?t&gen=
 ||eva.ua/assets/scripts/multisearch-tracker.js
 ||eva.ua/assets/scripts/uxlens.js
+||gecid.com/inc/bstat.php
 ||gepur.com/logs
 ||googleapis.com^*/gen_204?
 ||gotcha-server.evo.run/metrics
@@ -1734,7 +1742,6 @@ zz.te.ua##.advads-widget
 ||mate.academy/dwh
 ||moonanime.art/api/stats/
 ||msecnd.net/scripts/b/ai.
-||obozrevatel.com/api/news/ukr/pixel/
 ||obozrevatel.com/pixel.png
 ||osvita.ua/clicks/track
 ||otpbank.com.ua/bitrix/tools/conversion/ajax_counter.php
@@ -1917,7 +1924,6 @@ zora-irpin.info##aside.widget_text:has(> div > div#SinoptikInformer)
 ! >>>
 ! pogodnik.com
 ||pogodnik.com^$third-party
-real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
 !
 !
 ! -----------------------------------------------------------------------------------------------------------------------
