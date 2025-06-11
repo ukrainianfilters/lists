@@ -37,7 +37,7 @@
 ||counter.pravda.com.ua^
 ||counter.ukr.net^
 ||counter.yadro.ru^
-||dom.ria.com/slonik^
+||counter24.luxnet.ua^
 ||doubleclick.com^
 ||doubleclick.net^
 ||edge.adobedc.net^
@@ -48,6 +48,7 @@
 ||hs-analytics.net^
 ||hs-banner.com^
 ||i.posthog.com^
+||lens.eva.ua^
 ||log.cookieyes.com^
 ||log.pinterest.com^
 ||metrics.brightcove.com^
@@ -185,12 +186,13 @@
 ||counter.unian.net/matomo.js
 ||crm-tracker-prod.liga.net/track/
 ||data-api.eva.ua/api
+||dom.ria.com/slonik
 ||dou.ua/ajax-impressions-track/
 ||dsp.gov.ua/wp-content/plugins/wp-accessibility/js/fingerprint.min.js
 ||duckduckgo.com/t/
 ||ek.ua/img/p.gif
 ||elmir.ua/response/th.php?i=
-||elmir.ua/response/update_basket.php?t&gen=
+||elmir.ua/response/update_basket.php
 ||eva.ua/assets/scripts/multisearch-tracker.js
 ||eva.ua/assets/scripts/uxlens.js
 ||gepur.com/logs
@@ -205,14 +207,13 @@
 ||k.cackle.me/widget/*/count
 ||langlover.com.ua/api/countview/
 ||langlover.com.ua/api/proxy/honeycomb
-||lens.eva.ua^
 ||locator.ua/js/stat.js
 ||locator.ua/report.php
 ||mate.academy/amplitude/
 ||mate.academy/dwh
 ||moonanime.art/api/stats/
 ||msecnd.net/scripts/b/ai.
-||obozrevatel.com/api/news/ukr/pixel/
+||obozrevatel.com/api/news/*/pixel/
 ||obozrevatel.com/pixel.png
 ||osvita.ua/clicks/track
 ||otpbank.com.ua/bitrix/tools/conversion/ajax_counter.php
@@ -395,4 +396,3 @@ zora-irpin.info##aside.widget_text:has(> div > div#SinoptikInformer)
 ! >>>
 ! pogodnik.com
 ||pogodnik.com^$third-party
-real-vin.com##center:has(script[src^="https://pogodnik.com/uk/content/js/"])
