@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.06.5
-! Last modified: Wed, 11 June 2025 20:35 EEST
+! Version: 25.07.1
+! Last modified: Sun, 13 July 2025 14:38 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -168,6 +168,7 @@ zaxid.net##+js(remove-node-text, script, mobileBrandingMainInited)
 ###AD_Top
 ###ad-300
 ###ad-lead
+###ad-slot
 ###homead
 ###homeAd
 ###td-ad-placeholder
@@ -325,6 +326,7 @@ forex.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 5.ua##div[class^="banner"]:has(div[id^="div-gpt-ad-"])
 5.ua##div[class$="banner"]:has(div[id^="div-gpt-ad-"])
 5.ua##section.article-related + h2
+agrarii-razom.com.ua##div[id^="ac-adv-block-"]
 agro-business.com.ua###pwebbox234
 agro-business.com.ua###sp-breadcrumb
 agro-business.com.ua##div.apm-container:has(script[src*="&task=remote_ad"])
@@ -763,6 +765,7 @@ itc.ua##[class^="partners"]
 itc.ua##[data-course]
 itc.ua##a:has(> img.vote-image)
 itc.ua##body.single-post > div > section > div > div > aside > ul > li.commented-posts-widget:style(margin-top: unset !important; padding-top: unset !important)
+itc.ua##div:has(> a[id^="web3-link"] > img)
 itc.ua##div.about-noa:has(> a[href$="/vidklyuchyty-reklamu/"])
 itc.ua##div.carousel-block:has(a:has-text(Огляди партнерів))
 itc.ua##div.featured-in-new > div.row
@@ -771,6 +774,7 @@ itc.ua##div.hidden-sm:has(div[id*="-banner-"])
 itc.ua##div.hidden-sm:has(img[src*="/images/banners/"])
 itc.ua##div.jobs-vacancy
 itc.ua##div.popup-bottom:has(script)
+itc.ua##div.post-txt > aside:has(> div.partners)
 itc.ua##div.post-txt > p:has(> a > img[src*="/images/banners/"])
 itc.ua##div.post-txt > p.intro:has(> a[href$="-kryptobum-2025/"])
 itc.ua##div.post-txt > p.intro:has(> a[href$="/?r=zcA3y4iWZOb"])
@@ -786,8 +790,6 @@ itc.ua##li.widget-container:has(.partner-blog)
 itc.ua##li.widget-sticky:has(div[id^="div-gpt-ad-"])
 itc.ua##li[class*="widget_execphp"]
 itc.ua##li[id^="partner-posts"]
-itc.ua##p.intro:has(a[href*="?utm_source=itc.ua&utm_medium=branding"])
-itc.ua##p.intro[style*="background: linear-gradient"]
 itechua.com##div.td_block_wrap:has(> div > p > span:has-text(Реклама))
 itnet.com.ua###reply-title
 itsider.com.ua##div.xjo:has(> div[data-type="custom_code"])
@@ -1225,6 +1227,8 @@ subota.online##div.banner_wrapper
 sud.ua##div.b-sidebar-adv
 sum.in.ua##div.ad
 sumypost.com###aside-poster > div.sb-element.media[style^="padding:0"]
+superagronom.com##a.branding
+superagronom.com##div[class*="banner"]
 synonimy.info##body:style(background-image: none !important)
 tabletki.ua##div.adunit
 tabletki.ua##div.col:has(> aside > div.tabletki-adunit)
