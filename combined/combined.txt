@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.07.1
-! Last modified: Sun, 13 July 2025 14:38 EEST
+! Version: 25.08.1
+! Last modified: Thu, 14 August 2025 15:17 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -611,6 +611,7 @@ football24.ua##aside.adv-insert + div.media_embed
 football24.ua##aside.adv-insert + p:empty + div.responsive-embed
 football24.ua##aside.adv-insert + p:has(img)
 football24.ua##div.mobileBrandingPlace
+football24.ua##div[id^="between-wrapper-"]:has(> div > div > div.bookmakers-header)
 football24.ua##div[id^="desktopBranding"]
 football24.ua##div[id^="zone_"]
 football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
@@ -695,6 +696,7 @@ hi.dn.ua###sppb-addon-wrapper-1496985206652
 highload.tech,highload.today##[class^="partners"]
 highload.tech,highload.today##aside.banner-agency
 highload.tech,highload.today##div:has(> img[src*="/images/banners/"])
+highload.tech,highload.today##div.content-inner > aside[data-nosnippet=""]
 highload.tech,highload.today##div.mobile-hide:not(:has(> a[href*="/tretya-shturmova-ogoloshuye-zbir-"]))
 highload.tech,highload.today##div.mobile-show:not(:has(> a[href*="/tretya-shturmova-ogoloshuye-zbir-"]))
 highload.tech,highload.today##div.post-content > div > div.text-center-block:has(> div.widget-spec-projects)
@@ -775,6 +777,7 @@ itc.ua##div.hidden-sm:has(img[src*="/images/banners/"])
 itc.ua##div.jobs-vacancy
 itc.ua##div.popup-bottom:has(script)
 itc.ua##div.post-txt > aside:has(> div.partners)
+itc.ua##div.post-txt > aside[data-nosnippet=""]
 itc.ua##div.post-txt > p:has(> a > img[src*="/images/banners/"])
 itc.ua##div.post-txt > p.intro:has(> a[href$="-kryptobum-2025/"])
 itc.ua##div.post-txt > p.intro:has(> a[href$="/?r=zcA3y4iWZOb"])
@@ -864,6 +867,8 @@ kyivpost.com##div.col-xl-2.d-xl-block:has(> a > img[alt="Kador Group"])
 kyivpost.com##div.section-title:has-text(Sponsored content)
 kyivpost.com##div.section-wrapper:has(> div > a:has-text(Спонсорований контент))
 kyivpost.com##div[class^="ad-wrapper"]
+latifundist.com##a.branding_link
+latifundist.com##div.sidebar_slide_block:has(> div > div[id^="div-gpt-ad-"])
 lb.ua##[class^="adv-banner"]
 lb.ua##div.cookie-info
 lb.ua##div.layout-anons
@@ -1288,6 +1293,8 @@ tribuna.com##div[class^="Home_home-page__right-column_"] > div:nth-of-type(-n+3)
 tribuna.com##div[class^="Main_main-layout__"][class*="__empty-block__"]
 tribuna.com##div[class^="StickyButton-module_sticky-block_"]:has(> div > a[href*="/betting/bookmakers/"])
 tribuna.com##div[data-test="bookie-widget"]
+tripoli.land##div.static-banner
+tripoli.land##tr.banner-colspan
 trueua.info###spn-popover-container
 trueua.info##div.categories__category:has(.okadvertisement)
 trueua.info##div.col-12:has(> div > div.tui_title:has-text(Реклама))
