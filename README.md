@@ -55,7 +55,8 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 * [Ghostery](https://www.ghostery.com/ghostery-ad-blocker)
 * [uBlock Origin](https://ublockorigin.com/)
 
-Докладні інструкції з встановлення фільтрів доступні за [цим посиланням](https://github.com/ukrainianfilters/lists/wiki).
+> [!NOTE]
+> Докладні інструкції з встановлення фільтрів доступні за [цим посиланням](https://github.com/ukrainianfilters/lists/wiki).
 
 > [!IMPORTANT]
 > Якщо браузер або розширення для браузера підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні.
