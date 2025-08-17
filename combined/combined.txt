@@ -942,9 +942,7 @@ mezha.media##body > div:has(> a[target="_blank"] > picture)
 mezha.media##div:has(> a.banner-link)
 mezha.media##div.article_story_list:has(> div > div > div > a > span.article_label_adv)
 mezha.media##div.news-item:has(a[rel="author"]:has-text(Promoted))
-mezha.media##div.section_articles_list_wrapper > div.article_story_list:has(a[href*="/special-project/"])
 mezha.media##div.section_news_adv
-mezha.media##div.section_topic_b:has(> div > h3 > a[href$="/special-project/"])
 mil.in.ua##div.ads
 mind.ua###promo-catfish
 mind.ua##div.block_content.block_mind_brand:has(> a.brand__info)
