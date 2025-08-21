@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.08.2
-! Last modified: Sun, 17 August 2025 21:08 EEST
+! Version: 25.08.3
+! Last modified: Thu, 21 August 2025 13:05 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -868,6 +868,7 @@ kyivpost.com##div.section-title:has-text(Sponsored content)
 kyivpost.com##div.section-wrapper:has(> div > a:has-text(Спонсорований контент))
 kyivpost.com##div[class^="ad-wrapper"]
 latifundist.com##a.branding_link
+latifundist.com##div:has(> div.rcl-label + div[id^="div-gpt-ad-"])
 latifundist.com##div.sidebar_slide_block:has(> div > div[id^="div-gpt-ad-"])
 lb.ua##[class^="adv-banner"]
 lb.ua##div.cookie-info
