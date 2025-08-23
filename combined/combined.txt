@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.08.3
-! Last modified: Thu, 21 August 2025 13:05 EEST
+! Version: 25.08.4
+! Last modified: Sat, 23 August 2025 15:44 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -618,6 +618,7 @@ football24.ua##div[style="min-height: 600px;"]:has(div[id^="div-gpt-ad-"])
 football24.ua##p:has(> a[href^="https://tds.favbet.ua/"][target="_blank"])
 football24.ua##p:has(> a[rel*="sponsored"][target="_blank"] > strong)
 football24.ua##p:has(> strong > a[rel*="sponsored"][target="_blank"])
+football24.ua##ul.news-list > li:has(> article > a > img[alt^="Favbet × Spinner"])
 footballhub.ua##div[class^="ads-container"]
 footballtransfer.com.ua##div.news > center:has(> a[target="_blank"])
 forbes.ua##article:has(span.c-post-author__link:has-text(Партнерський матеріал))
@@ -1195,6 +1196,7 @@ sport.ua##span.news-match__bottom > :is(.news-match__coefficient, .news-match__b
 sport24.ua##[class*="adv-"]
 sport24.ua##app-adv-between-news
 sport24.ua##app-default-news:has(app-adv-news-label)
+sport24.ua##article.news-item.ng-star-inserted:has(> div.photo > div.image-wrapper > app-image > span > img[alt^="Favbet × Spinner"])
 sport24.ua##div.video-dv-wrapper
 sport24.ua##p:has(> a[href^="https://www.favbet.ua/"][target="_blank"])
 sport24.ua##p:has(> a[target="_blank"] > em:has-text(FAVBET))
