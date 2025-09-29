@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.08.4
-! Last modified: Sat, 23 August 2025 15:44 EEST
+! Version: 25.09.5
+! Last modified: Mon, 29 September 2025 18:14 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -1830,6 +1830,7 @@ _beacon?
 /frontend-gtag.min.js
 /fusion/lucid/data/*
 /generate_204?$image
+/get-contact-data-by-country-ip^$domain=flowers.ua
 /gtag/js?
 /gtm.js
 /gtm.min.js
@@ -1857,6 +1858,7 @@ _beacon?
 /rum/events
 /ruxitagentjs_$domain=kyivstar.ua
 /s/vestigo/measure
+/should-ask-consent-for-collecting-user-data^$domain=flowers.ua
 /spacer.gif?$domain=nabu.ua
 /stats.*/hits/*
 /track/__cool.gif?data=
@@ -2062,6 +2064,7 @@ bastion.tv##div.cookie-wrap
 bastion.tv##div.subscribe-new-container
 bat.ua###sysCookieMessage
 bbc.com##div[class^="bbc-"]:has(> div > div > h2:has-text(файлів cookies))
+beetroot.academy##div:has(> div > p:has-text(This website uses cookies))
 bessarabia.ua##div.subscribeTelegramWrap
 bhub.com.ua##.policy-cookies
 bi.ua##div.cookiePopup
@@ -2101,6 +2104,7 @@ cersanit.com###cookie-bar
 charivne.info###cookie-bar
 charivne.info###newsticker
 chasdiy.org##div.notifications__bottom
+chnu.edu.ua###privacyPolicyBanner
 cip.gov.ua##cookie-law
 city24.ua##div:has(> div > div > div > svg.linkedin)
 citysites.ua##div[aria-label="cookieconsent"]
@@ -2118,6 +2122,7 @@ comments.ua###push_info
 computools.ua##section.jquery_cookie
 concord.ua##.warning-cookie
 coolinfo.in.ua##aside#rb-privacy
+corruptor.com.ua##div:has(> div > div > button.privacy-policy__btn)
 creativestates.net##div[class^="Cookies_cookies__"]
 crezu.com.ua##div.push
 cvnews.cv.ua##.remodal-is-locked:style(overflow: unset !important)
@@ -2141,6 +2146,7 @@ dom.ria.com##div:has(> div.mainContainer > div > div > div > div[data-tm="open-c
 dom.ria.com##div.c-notifier:has(input[id="gdpr_settings"])
 dostup.org.ua,dostup.pravda.com.ua##.sp-show
 drovae.gov.ua##div[class^="cookies_cookies__"]
+dspace.krok.edu.ua,dspace.nuft.edu.ua,eknuir.karazin.ua,repository.kpi.kharkov.ua###orejime
 dtek.com###CybotCookiebotDialog
 dtkt.ua##div.article-messengers
 dtkt.ua##div.cookie-message
@@ -2154,6 +2160,7 @@ ecommercebridge.co.ua##div#cc-main:has(> div > div > div > div > div > button[da
 ecomodule.com.ua##div.l-cookie
 ecopolitic.com.ua##div.cookie-banner
 ecopolitic.com.ua##div.cursor-follower
+eir.nuos.edu.ua,ekmair.ukma.edu.ua,er.auk.edu.ua,ir.ugi.edu.ua,repository.pdmu.edu.ua,dspace.pau.edu.ua###klaro
 elfashop.ua###cookies
 elitexpert.ua##center:has(> a[target="_blank"])
 eobuv.com.ua##.modal-consents
@@ -2244,6 +2251,8 @@ jakosport.com.ua##div[aria-label="cookieconsent"]
 juscutum.com##div.popup__wrapper:has(> div > div > div.cookie-modal_component)
 kaercher.com##div.fg-cookiesdirective
 kanaldim.tv##div.privacy-policy-block
+karabas.com##div.cookie_banner__popup__overlay
+karabas.com##div.kr-banner-widget.running-line
 kasta.ua##div[role="dialog"]:has(a[href$="/cookiepolicy/"])
 kernel.ua##div[role="dialog"]:has(div#modal-cookie-policy)
 kg.ua###slidebox45
@@ -2587,6 +2596,7 @@ zgraya.digital##div[aria-label="cookieconsent"]
 zillya.ua###gdpr-cookie-message
 zkg.ua##div.cookie-bubble
 znaj.ua##div.privacy-policy
+zolotiyvik.ua##div[data-amcookie-js]
 zootovary.com##div[aria-label="cookieconsent"]
 zootovary.com##span[id^="cookieconsent"]
 вулик.петрівка.укр##div.hu-wrapper[aria-labelledby="hu-cookies-notice-message"]
