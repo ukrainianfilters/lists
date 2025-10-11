@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.08.4
-! Last modified: Sat, 23 August 2025 15:44 EEST
+! Version: 25.10.3
+! Last modified: Sat, 11 October 2025 18:22 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -326,6 +326,7 @@ forex.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 5.ua##div[class^="banner"]:has(div[id^="div-gpt-ad-"])
 5.ua##div[class$="banner"]:has(div[id^="div-gpt-ad-"])
 5.ua##section.article-related + h2
+aggeek.net##p:has(> a[title="послуги"])
 agrarii-razom.com.ua##div[id^="ac-adv-block-"]
 agro-business.com.ua###pwebbox234
 agro-business.com.ua###sp-breadcrumb
@@ -340,6 +341,7 @@ agronomy.com.ua###g-header
 agronomy.com.ua###pwebbox272
 agronomy.com.ua##div.live__wallper
 agronomy.com.ua##div[class^="adv_"]
+agropolit.com##a.branding
 agropolit.com##div.header__banner-wrap
 agroportal.ua##.fixedBlock
 agroportal.ua##a[href^="/"][target="_blank"]
@@ -1519,6 +1521,10 @@ zaxid.net##div[id^="slotPromoinformer"]
 zaxid.net##div#header_advt-wrapper
 zbirna.com##div.sidebar-home-link:has(img[alt="Найкращі онлайн казино України"])
 zbirna.com##section.best_game_sec
+zerno-ua.com##div.branding_place
+zerno-ua.com##div.brending_mobile_version
+zerno-ua.com##div.premium_mobile_version
+zerno-ua.com##div[class^="banner-panel"]
 zhenskiy.kyiv.ua##div.textwidget:has(> a[href*="myblogshop.top"])
 zhenskiy.kyiv.ua##div[data-elementor-type="section"]:has(div.elementor-widget-container > a[href*="myblogshop.top"])
 zi.ua##a[href="https://www.work.ua/"]
