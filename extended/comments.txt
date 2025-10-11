@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Extended List): Comments
 ! Description: Removes comments from Ukrainian websites
-! Version: 25.08.1
-! Last modified: Thu, 14 August 2025 15:17 EEST
+! Version: 25.10.4
+! Last modified: Sat, 11 October 2025 18:29 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -17,6 +17,8 @@
 ! >>>
 ! disqus.com
 ||disqus.com^$third-party,domain=itc.ua|mezha.media
+! >>>
+||commento.pravda.com.ua^
 ! >>>
 user/js/glavcom_komments.min.js$script,domain=glavcom.ua
 ! >>>
@@ -66,6 +68,7 @@ nachasi.com##div[id*="comments-"]
 playua.net##div.article-comments
 pravda.com.ua##.post__comments
 pravda.com.ua##.post_comments
+pravda.com.ua##comentario-comments
 pravda.com.ua##div.fb-comments
 radiosvoboda.org###comments
 rayon.in.ua##div.comments-publication
