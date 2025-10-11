@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.09.5
-! Last modified: Mon, 29 September 2025 18:14 EEST
+! Version: 25.10.1
+! Last modified: Sat, 11 October 2025 17:50 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -18,6 +18,7 @@
 ! TRACKERS
 ! !!!!!!!!!!!!!!!
 !
+||analytics.makeup.global^
 ||analytics.shareaholic.com^
 ||analytics.tiktok.com^
 ||analytics.trbna.com^
@@ -38,6 +39,9 @@
 ||counter.ukr.net^
 ||counter.yadro.ru^
 ||counter24.luxnet.ua^
+||direct-collect.dy-api.com^
+||direct-collect.dy-api.eu^
+||direct.dy-api.eu^
 ||doubleclick.com^
 ||doubleclick.net^
 ||edge.adobedc.net^
@@ -101,6 +105,7 @@
 ||cdn.debugbear.com^$third-party
 ||cdn.onesignal.com^$third-party
 ||chartbeat.com^$third-party
+||clerk.c.prom.st^$third-party
 ||clicksfordsm.com^$third-party
 ||cloudflareinsights.com^$third-party
 ||cmp.inmobi.com^$third-party
@@ -189,6 +194,13 @@
 ||dou.ua/ajax-impressions-track/
 ||dsp.gov.ua/wp-content/plugins/wp-accessibility/js/fingerprint.min.js
 ||duckduckgo.com/t/
+||dynamicyield.com/batch?
+||dynamicyield.com/clog
+||dynamicyield.com/dpx?
+||dynamicyield.com/imp?
+||dynamicyield.com/rcomEvent?
+||dynamicyield.com/uia?
+||dynamicyield.com/var?
 ||ek.ua/img/p.gif
 ||elmir.ua/response/th.php?i=
 ||elmir.ua/response/update_basket.php?t&gen=
@@ -255,12 +267,14 @@
 ! >>>
 _beacon?
 .js?id=GTM-
+/_form/log$domain=y.ua
 /?sentry_key=$domain=dom.ria.com|epicentrk.ua|gymbeam.ua|statbet.com
 /?sentry_version=
 /action/location/common/geolocate^$domain=bild.ua
 /ads-blocking-detector.$script,domain=kyivstar.ua
 /ajax/analytics$domain=nashformat.ua
 /ajax/bz?_
+/amasty_fbpixel$domain=book-ye.com.ua|prostor.ua
 /analytic_click.js$domain=vodafone.ua
 /analytics-reporter/*
 /analytics.*/collect
@@ -271,6 +285,8 @@ _beacon?
 /analytics/?event=
 /analytics/add$domain=ithillel.ua
 /analytics/event
+/api/ext/log$domain=varus.ua
+/arturgolubev.ecommerce/getscripts_v2.php$domain=bookchef.ua
 /assets/analytics/analytics.js
 /auth/getUserData^$domain=bild.ua
 /breek/assets/images/transparent.gif
@@ -280,6 +296,8 @@ _beacon?
 /dist/web-vitals.attribution.iife.js
 /dist/web-vitals.attribution.js
 /dist/web-vitals.iife.js
+/exponea.min.js
+/fb_api/page_view$domain=f.ua
 /fbevents.js
 /fbevents.min.js
 /fingerprint2.min.js$domain=locator.ua
@@ -330,6 +348,7 @@ _beacon?
 /yandex-metrica-watch/*
 /yandex-metrika.js
 &l=dataLayer&cx=c
+=amfacebook-pixel$domain=book-ye.com.ua|prostor.ua
 free*/?channel=*&click=$document
 ! >>>
 ||report.error-report.com^$subdocument
