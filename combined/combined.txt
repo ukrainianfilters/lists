@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.10.3
-! Last modified: Sat, 11 October 2025 18:22 EEST
+! Version: 25.10.5
+! Last modified: Sat, 25 October 2025 14:06 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -603,6 +603,8 @@ football.ua##.banner ~ .separator
 football.ua##[class$="-banner"]
 football.ua##div[class^="banner"]
 football.ua##div[id^="zone_"]
+football24.ua##.betking-insert-block
+football24.ua##.legal
 football24.ua##[class*="adv_"]
 football24.ua##[class*="adv-"]
 football24.ua##[id*="AdvWrapper"]
@@ -939,15 +941,15 @@ meteofor.com.ua##div.placeholder.h1:has(div[id^="div-gpt-ad-"])
 meteofor.com.ua##section.section-media:has(div[id^="div-gpt-ad-"])
 meteofor.com.ua##section.section-rss
 meteoprog.com##div[id^="mp_banner_"]
-mezha.media##.block-novyny-partneriv
-mezha.media##.section_article_adv
-mezha.media##body > div:has(> a[href*="&utm_medium=branding&utm_campaign="])
-mezha.media##body > div:has(> a[target="_blank"] > picture)
-mezha.media##div:has(> a.banner-link)
-mezha.media##div.article_story_list:has(> div > div > div > a > span.article_label_adv)
-mezha.media##div.news-item:has(a[rel="author"]:has-text(Promoted))
-mezha.media##div.section_articles_list_wrapper > div.section_topic_b:has(> div > h3 > a[href$="/special-project/"])
-mezha.media##div.section_news_adv
+mezha.media,mezha.ua##.block-novyny-partneriv
+mezha.media,mezha.ua##.section_article_adv
+mezha.media,mezha.ua##body > div:has(> a[href*="&utm_medium=branding&utm_campaign="])
+mezha.media,mezha.ua##body > div:has(> a[target="_blank"] > picture)
+mezha.media,mezha.ua##div:has(> a.banner-link)
+mezha.media,mezha.ua##div.article_story_list:has(> div > div > div > a > span.article_label_adv)
+mezha.media,mezha.ua##div.news-item:has(a[rel="author"]:has-text(Promoted))
+mezha.media,mezha.ua##div.section_articles_list_wrapper > div.section_topic_b:has(> div > h3 > a[href$="/special-project/"])
+mezha.media,mezha.ua##div.section_news_adv
 mil.in.ua##div.ads
 mind.ua###promo-catfish
 mind.ua##div.block_content.block_mind_brand:has(> a.brand__info)
