@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.10.5
-! Last modified: Sat, 25 October 2025 14:06 EEST
+! Version: 25.11.1
+! Last modified: Sat, 15 November 2025 22:15 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -548,10 +548,7 @@ epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(АНОНС))
 epravda.com.ua,pravda.com.ua##div.article_news:has(a:has-text(СПЕЦПРОЄКТ))
 epravda.com.ua,pravda.com.ua##div[class*="adv_"]
 epravda.com.ua,pravda.com.ua##div[class*="banner_"]
-epravda.com.ua##body > a[href^="https://cutt.ly/"][target="_blank"]:has(picture,img)
-epravda.com.ua##body > a[href$="&utm_medium=anons"][target="_blank"]:has(picture,img)
-epravda.com.ua##body > a[href$="&utm_medium=banner"][target="_blank"]:has(picture,img)
-epravda.com.ua##body > a[href$="&utm_medium=branding"][target="_blank"]:has(picture,img)
+epravda.com.ua##a[href*="&utm_medium=banner"][target="_blank"]
 epravda.com.ua##div.article_advertising
 epravda.com.ua##div.article.article_story_grid:has(> div > div > div > span.article_section_adv)
 epravda.com.ua##div.article.article_story_grid:has(> div > div > span.article_section_adv)
