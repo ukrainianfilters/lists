@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.11.1
-! Last modified: Sat, 15 November 2025 22:15 EET
+! Version: 25.11.2
+! Last modified: Sun, 16 November 2025 18:19 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -475,6 +475,7 @@ detector.media##div.banner_brend
 detector.media##div.md_banner_zone
 dev.ua##div.afterheader-widget
 dev.ua##div.article-section__currency-banner
+dev.ua##div.header-banner
 dev.ua##div.island:has(> div.island__body > div[data-sender="admixer"])
 dev.ua##div.partners-wrapper
 dev.ua##figure[data-article-global-incut-target="incut"]:has(div[data-sender="admixer"])
