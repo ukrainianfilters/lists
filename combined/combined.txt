@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.11.2
-! Last modified: Sun, 16 November 2025 18:19 EET
+! Version: 25.11.3
+! Last modified: Sun, 16 November 2025 18:36 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -2263,6 +2263,7 @@ interflora.com.ua###cookies-policy
 interkassa.com##div.cookie-consent
 intertop.ua##div.agreement
 itc.ua###age-popup-overlay
+itc.ua##aside.widget_telegram
 itc.ua##body:style(overflow: unset !important)
 itest.com.ua###clearfy-cookie
 itest.com.ua##div.mypopup-modal-container
