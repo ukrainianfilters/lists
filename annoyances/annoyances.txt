@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Annoyance Filter
 ! Description: Blocks irritating elements on Ukrainian websites (cookie notices, pop-ups, banners etc.)
-! Version: 25.10.1
-! Last modified: Sat, 11 October 2025 17:50 EEST
+! Version: 25.11.3
+! Last modified: Sun, 16 November 2025 18:36 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -305,6 +305,7 @@ interflora.com.ua###cookies-policy
 interkassa.com##div.cookie-consent
 intertop.ua##div.agreement
 itc.ua###age-popup-overlay
+itc.ua##aside.widget_telegram
 itc.ua##body:style(overflow: unset !important)
 itest.com.ua###clearfy-cookie
 itest.com.ua##div.mypopup-modal-container
