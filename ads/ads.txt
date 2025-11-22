@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 25.11.2
-! Last modified: Sun, 16 November 2025 18:19 EET
+! Version: 25.11.4
+! Last modified: Sat, 22 November 2025 19:21 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -607,6 +607,8 @@ football24.ua##[class*="adv_"]
 football24.ua##[class*="adv-"]
 football24.ua##[id*="AdvWrapper"]
 football24.ua##a[rel*="sponsored"]
+football24.ua##app-main-page-adv-block
+football24.ua##app-simple-membrana-adv-block
 football24.ua##aside + p:has(> a.img-wrapping-link[target="_blank"])
 football24.ua##aside + p:has(> img)
 football24.ua##aside.adv-insert + div.media_embed
