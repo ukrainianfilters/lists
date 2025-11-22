@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.11.4
-! Last modified: Sat, 22 November 2025 19:21 EET
+! Version: 25.11.5
+! Last modified: Sat, 22 November 2025 19:26 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -2128,6 +2128,8 @@ censor.net##.stpd_cmp
 censor.net###notification-area
 censor.net###usage_notice
 cersanit.com###cookie-bar
+champion.com.ua###modal21Overlay
+champion.com.ua##body:style(overflow: unset !important; pointer-events: unset !important)
 charivne.info###cookie-bar
 charivne.info###newsticker
 chasdiy.org##div.notifications__bottom
@@ -2212,6 +2214,7 @@ flashscore.ua##div.otPlaceholder
 fonarik.ua##.cl-floating-bar
 fonarik.ua##.notification-pechenki
 football24.ua##.privete-polisy
+football24.ua##app-view-interceptor
 fora.ua##.jss93
 fora.ua##div.cookie-banner
 forbes.ua##div.modal:has(img[src*="paywall.forbes.ua/static/content/"])
