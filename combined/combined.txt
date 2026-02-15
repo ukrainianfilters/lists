@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 25.11.7
-! Last modified: Thu, 27 November 2025 18:35 EET
+! Version: 26.02.1
+! Last modified: Sun, 15 February 2026 14:59 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -2635,6 +2635,13 @@ zolotiyvik.ua##div[data-amcookie-js]
 zootovary.com##div[aria-label="cookieconsent"]
 zootovary.com##span[id^="cookieconsent"]
 вулик.петрівка.укр##div.hu-wrapper[aria-labelledby="hu-cookies-notice-message"]
+!
+!
+! !!!!!!!!!!!!!!!
+! EXCEPTIONS
+! !!!!!!!!!!!!!!!
+!
+~rada.gov.ua##.cookies
 !
 !
 ! --------------------------------------------------------------------------------------------------------------------------------
