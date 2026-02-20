@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 25.10.2
-! Last modified: Sat, 11 October 2025 18:20 EEST
+! Version: 26.02.2
+! Last modified: Fri, 20 February 2026 22:04 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -350,6 +350,7 @@ _beacon?
 &l=dataLayer&cx=c
 =amfacebook-pixel$domain=book-ye.com.ua|prostor.ua
 free*/?channel=*&click=$document
+posthog.$script,domain=~posthog.com
 ! >>>
 ||report.error-report.com^$subdocument
 ||widget-cz.ukc.gov.ua/build/*/analytics.html$subdocument
