@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 26.02.2
-! Last modified: Fri, 20 February 2026 22:04 EET
+! Version: 26.03.1
+! Last modified: Sun, 29 March 2026 19:42 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -529,6 +529,7 @@ edyna.media##div[id^="adpartner-"]
 ek.ua##div:has(> a[href*="Nadavi_banner"])
 ek.ua##div.banner-topline
 ek.ua##div.bot-brand
+elevatorist.com##a.branding_link
 elitexpert.ua##.leader-wrap-out
 elle.ua##div.ad_300x600
 elle.ua##div.ad_article > hr
@@ -1065,6 +1066,8 @@ patient-docs.com###sidebar_banner
 photo-lviv.in.ua##:is(div.td-ss-main-sidebar, div.vc_widget_sidebar) > :is([id^="media_image-"],[id^="custom_html-"])
 pidruchnyk.com.ua###sidebar
 pidruchnyk.com.ua##div[id^="admixer_"] + script
+pigua.info##div:has(> a >img[src$=".gif"])
+pigua.info##div.sponsors-warehouse
 pingvin.pro##div.col-lg-4:has(> div > div > ins.adsbygoogle)
 pingvin.pro##div.col-lg-4.col-md-6:has(> div.card > div.card-body > a[href$="/category/blogy/offers"])
 pisni.ua##div.header-banner
@@ -1108,6 +1111,11 @@ prolinux.pp.ua##section.widget_block:has(ins.adsbygoogle)
 prom.ua##div[style*="cloud-cgi/static/catalog-ui/js/build/portal-portable/maskWeb-5Wgei.png"]
 propertytimes.com.ua##div.banner-box
 propertytimes.com.ua##div.header_topimage:has(> div > a > img[src^="/uploaded/banners/"])
+propozitsiya.com###block-partners
+propozitsiya.com###block-popup-banner
+propozitsiya.com##div.block-type-banner-multi
+propozitsiya.com##div.site-content__banner-wide
+propozitsiya.com##div.site-header__top-line
 proslav.info##div.jeg_ad
 protocol.ua##a.article-hero__advertising-btn
 protocol.ua##div.article-sidebar__adversting-img:has(> script)
@@ -1286,6 +1294,8 @@ tochka.net##div.partner-news + div + div
 tomato.ua##div.ad_googletag
 tomato.ua##div.filters_adv
 tomato.ua##div[class*="reklama_container"]
+traktorist.ua##a[href*="?utm_source=banner"]
+traktorist.ua##a[href$="&utm_medium=branding"]
 transkarpatia.net##.tbr-social > span > a:style(color: unset !important)
 transkarpatia.net###sidebar > div.side-widget:has(> a > img[src^="/advertise/"])
 transkarpatia.net###sidebar > div.twitter
@@ -1303,6 +1313,7 @@ tribuna.com##div[class^="Home_home-page__right-column_"] > div:nth-of-type(-n+3)
 tribuna.com##div[class^="Main_main-layout__"][class*="__empty-block__"]
 tribuna.com##div[class^="StickyButton-module_sticky-block_"]:has(> div > a[href*="/betting/bookmakers/"])
 tribuna.com##div[data-test="bookie-widget"]
+tripoli.land##div.banner-item
 tripoli.land##div.static-banner
 tripoli.land##tr.banner-colspan
 trueua.info###spn-popover-container
@@ -1527,6 +1538,7 @@ zaxid.net##div[id^="slotPromoinformer"]
 zaxid.net##div#header_advt-wrapper
 zbirna.com##div.sidebar-home-link:has(img[alt="Найкращі онлайн казино України"])
 zbirna.com##section.best_game_sec
+zemliak.com##a.branding_link
 zerno-ua.com##div.branding_place
 zerno-ua.com##div.brending_mobile_version
 zerno-ua.com##div.premium_mobile_version
