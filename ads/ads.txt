@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 26.04.2
-! Last modified: Thu, 02 April 2026 19:50 EEST
+! Version: 26.07.1
+! Last modified: Sun, 12 July 2026 15:59 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -363,6 +363,7 @@ apk-inform.com##div[class$="-banner"]
 apostrophe.ua##.advertinline
 apostrophe.ua##.bnr
 apostrophe.ua##.newscomp
+apostrophe.ua##div.sunsite_actions[data-action="banners"]
 arguments.kyiv.ua,dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,lady.kyiv.ua,medicalanswers.com.ua,news24.in.ua,novosti24.kyiv.ua,ua-novosti.info,ua-vestnik.com,useti.org.ua,woman24.kyiv.ua,womanlife.kyiv.ua,zhenskiy.kyiv.ua##.textwidget:has(> figure > a[rel="nofollow"])
 arguments.kyiv.ua,dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,lady.kyiv.ua,medicalanswers.com.ua,news24.in.ua,novosti24.kyiv.ua,ua-novosti.info,ua-vestnik.com,useti.org.ua,woman24.kyiv.ua,womanlife.kyiv.ua,zhenskiy.kyiv.ua##.textwidget:has(script)
 arguments.kyiv.ua,dailynews.kyiv.ua,elegantwoman.kyiv.ua,glamour.kyiv.ua,lady.kyiv.ua,medicalanswers.com.ua,news24.in.ua,novosti24.kyiv.ua,ua-novosti.info,ua-vestnik.com,useti.org.ua,woman24.kyiv.ua,womanlife.kyiv.ua,zhenskiy.kyiv.ua##.widget_block:has(> figure > a[rel="nofollow"])
@@ -1148,10 +1149,9 @@ rivnepost.rv.ua##aside > a[target="_blank"]
 rivnepost.rv.ua##aside > p:empty
 rivnepost.rv.ua##div.header-info
 rivnepost.rv.ua##div.r23243
-root-nation.com##div.backstretch
-root-nation.com##div.tdc-row:has(div[class*="rn-desktop-top-banner"])
-root-nation.com##div.tdc-row:has(div[class*="rn-mobile-branding"])
-root-nation.com##div.vc_row_inner:has(center > ins.adsbygoogle)
+root-nation.com##body:style(background-image: none !important)
+root-nation.com##div.rn-review-bg-click
+root-nation.com##div.vc_row:has(> div > div.wpb_wrapper > div > div.rn-desktop-top-banner)
 rubryka.com##div.single-page__banners
 rubryka.com##div.single-page__social
 rubryka.com##div[class*="advertisment"]
