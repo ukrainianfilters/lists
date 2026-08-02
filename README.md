@@ -18,27 +18,36 @@ Ukrainian Filters (Українські фільтри) — це веб-філь
 ## Об'єднані (Combined) списки фільтрів
 
 1. **Ukrainian Filters (Combined List)** — об'єднаний список фільтрів (Реклама + Приватність + Дратівливі елементи), призначений для видалення реклами та дратівливих елементів з українських сайтів, блокування трекерів, шкідливих скриптів й небезпечних веб-ресурсів:
-    - https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/combined/combined.txt
-
+```
+https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/combined/combined.txt
+```
 
 ## Окремі (standalone) списки фільтрів
 
 Наведені нижче списки фільтрів вже включені до об’єднаного списку фільтрів `Ukrainian Filters Combined List`, проте, якщо з певних причин ви хочете використовувати лише окремі списки, їх можна встановити індивідуально.
 
 1. **Ukrainian Ad Filter** — видаляє рекламу з українських сайтів:
-    - https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/ads/ads.txt
+```
+https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/ads/ads.txt
+```
 
-2. **Ukrainian Privacy Filter** — блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті:
-    - https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/privacy/privacy.txt
+3. **Ukrainian Privacy Filter** — блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті:
+```
+https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/privacy/privacy.txt
+```
 
-3. **Ukrainian Annoyance Filter** — блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо):
-    - https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/annoyances/annoyances.txt
+5. **Ukrainian Annoyance Filter** — блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо):
+```
+https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/annoyances/annoyances.txt
+```
 
 
 ## Розширені (extended) списки фільтрів
 
 1. **Ukrainian Filters (Extended List): Comments** — видаляє коментарі з українських сайтів разом з трекерами, що вбудовані у популярні системи коментування як-от disqus.com, забезпечуючи приватність, зменшення ризику переходу за фішинговими посиланнями та захист від токсичного контенту (тролінг, дезінформація тощо):
-    - https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/extended/comments.txt
+```
+https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/extended/comments.txt
+```
 
 
 ## Сумісність з браузерами та розширеннями
