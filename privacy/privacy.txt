@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Privacy Filter
 ! Description: Blocks trackers and harmful scripts, reduces the ability of third parties to collect data about your browsing behavior
-! Version: 26.02.2
-! Last modified: Fri, 20 February 2026 22:04 EET
+! Version: 26.08.2
+! Last modified: Sun, 02 August 2026 18:12 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -418,3 +418,11 @@ zora-irpin.info##aside.widget_text:has(> div > div#SinoptikInformer)
 ! >>>
 ! pogodnik.com
 ||pogodnik.com^$third-party
+!
+!
+! !!!!!!!!!!!!!!!
+! MISC
+! !!!!!!!!!!!!!!!
+!
+! >>>
+/console-ban.min.js$third-party,xmlhttprequest,script
