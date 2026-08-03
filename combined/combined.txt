@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Filters (Combined List)
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 26.08.4
-! Last modified: Mon, 03 August 2026 20:32 EEST
+! Version: 26.08.5
+! Last modified: Mon, 03 August 2026 22:47 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -278,11 +278,11 @@ event=open&action=firebox_trackevent&box=$domain=bigkyiv.com.ua
 forex.ua,marketer.ua,uman24.org.ua##div:has(> div > ins.adsbygoogle)
 ! >>>
 032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##app-ads-teaser
-032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##app-stretching-banners-place-widget
 032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##app-shared-top-companies
 032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##app-shift-widget-banner
 032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##app-special-link
 032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##app-standalone-banners-place
+032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##app-stretching-banners-place-widget
 032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##app-widget-banner
 032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##article.article-card:has(> div > div > div > div.article-card__title--toaster:has-text(Партнерський матеріал))
 032.ua,44.ua,048.ua,056.ua,057.ua,061.ua,62.ua,0312.ua,0332.ua,0342.ua,0352.ua,0362.ua,0372.ua,0382.ua,0412.ua,0432.ua,0462.ua,0472.ua,0512.com.ua,0522.ua,0532.ua,0542.ua,0552.ua,0564.ua,0566.com.ua,0569.com.ua,0619.com.ua,0623.com.ua,0629.com.ua,0642.ua,0652.ua,0692.ua,3849.com.ua,04141.com.ua,04563.com.ua,4594.com.ua,04596.com.ua,04597.com.ua,04598.com.ua,04868.com.ua,05136.com.ua,05161.com.ua,05366.com.ua,05447.com.ua,5692.com.ua,06153.com.ua,06236.com.ua,06237.com.ua,06239.com.ua,06242.ua,06252.com.ua,6262.com.ua,6264.com.ua,06267.com.ua,06272.com.ua,06274.com.ua,06277.com.ua,06452.com.ua##div[class^="banner"]
@@ -1287,6 +1287,7 @@ ternopoliany.te.ua##div.rekinfoblock1top
 ternopoliany.te.ua##div.rekinfoblock2top
 texty.org.ua##.ad-banner-aside
 thebuchacity.com##div[style="display: inline-block"]:has(> div > h4 > a:has-text(РЕКЛАМА))
+thepage.ua##div:has(> div.TPA_VIDEO)
 thepage.ua##div.news-list__item:has(div[class*="news-tag company_news"])
 thepage.ua##div.news-list__item:has(div[class*="news-tag partner_material"])
 tochka.net##div.partner-news
@@ -2529,7 +2530,7 @@ songs.in.ua##div.widget_eu_cookie_law_widget
 sony.ua##div:has(> div.privacy_prompt)
 soroban.ua###policy
 soroban.ua##div#chakra-toast-manager-bottom:has(a[href="/privacy-policy"])
-speka.media##div.js-cookie-banner
+speka.ua##div.js-cookie-banner
 sport.ua##div.adl_cmp_consent-dialog-module_backdrop
 sq.com.ua##div.cookies-accept
 starlight.media##div.cookie_popup
@@ -2661,7 +2662,6 @@ znaj.ua##div.privacy-policy
 zolotiyvik.ua##div[data-amcookie-js]
 zootovary.com##div[aria-label="cookieconsent"]
 zootovary.com##span[id^="cookieconsent"]
-вулик.петрівка.укр##div.hu-wrapper[aria-labelledby="hu-cookies-notice-message"]
 !
 !
 ! !!!!!!!!!!!!!!!
