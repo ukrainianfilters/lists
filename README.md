@@ -1,3 +1,5 @@
+![Project Banner](./assets/banners/banner_github.png)
+
 # Ukrainian Ad & Privacy Filters
 
 Ukrainian Ad & Privacy Filters — це веб-фільтри, які видаляють небажаний контент з українських сайтів, включно з рекламою, дратівливими елементами, трекерами та шкідливими скриптами.
