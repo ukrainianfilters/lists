@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Ad & Privacy Filters
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 26.08.6
-! Last modified: Sun, 30 August 2026 19:44 EEST
+! Version: 26.08.7
+! Last modified: Sun, 30 August 2026 19:55 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -11,7 +11,7 @@
 !
 !
 ! -------------------------------------------------------------------------------------------------
-! >>>>>  AD FILTERS  >>> https://raw.githubusercontent.com/ukrainianfilters/lists/main/ads/ads.txt
+! >>>>>  AD FILTERS  >>> https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/ads/ads.txt
 ! -------------------------------------------------------------------------------------------------
 !
 ! !!!!!!!!!!!!!!!
@@ -1580,7 +1580,7 @@ zz.te.ua##.advads-widget
 !
 !
 ! --------------------------------------------------------------------------------------------------------------
-! >>>>>  PRIVACY FILTERS  >>> https://raw.githubusercontent.com/ukrainianfilters/lists/main/privacy/privacy.txt
+! >>>>>  PRIVACY FILTERS  >>> hhttps://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/privacy/privacy.txt
 ! --------------------------------------------------------------------------------------------------------------
 !
 ! !!!!!!!!!!!!!!!
@@ -1998,7 +1998,7 @@ zora-irpin.info##aside.widget_text:has(> div > div#SinoptikInformer)
 !
 !
 ! -----------------------------------------------------------------------------------------------------------------------
-! >>>>>  ANNOYANCE FILTERS  >>> https://raw.githubusercontent.com/ukrainianfilters/lists/main/annoyances/annoyances.txt
+! >>>>>  ANNOYANCE FILTERS  >>> https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/annoyances/annoyances.txt
 ! -----------------------------------------------------------------------------------------------------------------------
 !
 ! !!!!!!!!!!!!!!!
