@@ -75,11 +75,9 @@ body:
       label: Списки фільтрів, які ви використовуєте
       description: Які саме Ukrainian Filters (Українські фільтри) ви використовуєте?
       options:
-        - label: Ukrainian Filters (uBlock Origin Combined List)
+        - label: Ukrainian Ad & Privacy Filters
           required: false
-        - label: Ukrainian Annoyance Filter
-          required: false
-        - label: Ukrainian Security Filter
+        - label: Ukrainian Ad & Privacy Filters - Comments
           required: false
 
   - type: dropdown
