@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Ad Filter
 ! Description: Removes ads from Ukrainian websites
-! Version: 26.08.5
-! Last modified: Mon, 03 August 2026 22:47 EEST
+! Version: 26.08.6
+! Last modified: Sun, 30 August 2026 19:44 EEST
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
