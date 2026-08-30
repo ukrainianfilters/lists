@@ -57,11 +57,9 @@ https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/extended/comments.txt
 #### Браузери з вбудованим блокуванням реклами:
 
 * [Brave](https://brave.com/uk/)
+* [Brave Origin](https://brave.com/origin/)
 * [Opera](https://www.opera.com/uk)
 * [Vivaldi](https://vivaldi.com/uk/)
-
-> [!TIP]
-> Через обмеження [Manifest V3](https://www.eff.org/deeplinks/2021/12/googles-manifest-v3-still-hurts-privacy-security-innovation) розширення для блокування реклами втратили значну частину своїх можливостей. Для найкращої фільтрації рекомендуємо використовувати браузери із вбудованими модулями. Вбудоване блокування працює на рівні браузера й не залежить від обмежень для розширень.
 
 #### Розширення для браузерів:
 
@@ -69,8 +67,10 @@ https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/extended/comments.txt
 * [Ghostery](https://www.ghostery.com/ghostery-ad-blocker)
 * [uBlock Origin](https://ublockorigin.com/)
 
-> [!NOTE]
-> Докладні інструкції з встановлення фільтрів доступні за [цим посиланням](https://github.com/ukrainianfilters/lists/wiki).
+Докладні інструкції з встановлення фільтрів доступні за [цим посиланням](https://github.com/ukrainianfilters/lists/wiki).
+
+> [!TIP]
+> Через обмеження [Manifest V3](https://www.eff.org/deeplinks/2021/12/googles-manifest-v3-still-hurts-privacy-security-innovation) розширення для блокування реклами втратили значну частину своїх можливостей. Для найкращої фільтрації рекомендуємо використовувати браузери із вбудованими модулями як-от Brave / Brave Origin. Вбудоване блокування працює на рівні браузера й не залежить від обмежень для розширень.
 
 > [!IMPORTANT]
 > Якщо браузер або розширення для браузера підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні.
