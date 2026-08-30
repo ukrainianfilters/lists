@@ -75,11 +75,9 @@ body:
       label: Filter lists you're using
       description: Which Ukrainian Filters do you use?
       options:
-        - label: Ukrainian Filters (uBlock Origin Combined List)
+        - label: Ukrainian Ad & Privacy Filters
           required: false
-        - label: Ukrainian Annoyance Filter
-          required: false
-        - label: Ukrainian Security Filter
+        - label: Ukrainian Ad & Privacy Filters - Comments
           required: false
 
   - type: dropdown
