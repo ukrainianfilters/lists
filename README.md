@@ -24,13 +24,13 @@ Ukrainian Ad & Privacy Filters — це веб-фільтри, які видал
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/combined/combined.txt
 ```
 
-#### Pi-hole (окрема версія)
+#### Pi-hole (адаптований формат правил)
 
 ```
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/pi-hole/pi-hole.txt
 ```
 
-#### Hosts (окрема версія)
+#### Hosts (адаптований формат правил)
 
 ```
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/hosts/hosts.txt
