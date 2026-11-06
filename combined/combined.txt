@@ -1,8 +1,8 @@
 ! [Adblock Plus 4.20]
 ! Title: Ukrainian Ad & Privacy Filters
 ! Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
-! Version: 26.09.9
-! Last modified: Tue, 08 September 2026 19:45 EEST
+! Version: 26.11.11
+! Last modified: Fri, 06 November 2026 19:20 EET
 ! Expires: 2 days
 ! Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
 !
@@ -1581,7 +1581,7 @@ zz.te.ua##.advads-widget
 !
 !
 ! --------------------------------------------------------------------------------------------------------------
-! >>>>>  PRIVACY FILTERS  >>> hhttps://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/privacy/privacy.txt
+! >>>>>  PRIVACY FILTERS  >>> https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/privacy/privacy.txt
 ! --------------------------------------------------------------------------------------------------------------
 !
 ! !!!!!!!!!!!!!!!
