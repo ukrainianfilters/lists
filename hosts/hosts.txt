@@ -1,0 +1,127 @@
+# [Hosts]
+# Title: Ukrainian Ad & Privacy Filters
+# Description: Filter list designed to remove ads from Ukrainian websites, block trackers, harmful scripts and malicious web resources (phishing, online fraud, malware, and more)
+# Version: 26.11.1
+# Last modified: Fri, 06 November 2026 18:59 EEST
+# Licence: https://github.com/ukrainianfilters/lists/blob/main/LICENSE
+#
+# Homepage: https://github.com/ukrainianfilters/lists
+# Issues: https://github.com/ukrainianfilters/lists/issues
+#
+#
+# -------------------------------------------------------------------------------------------------
+# >>>>>  ADVERTISING NETWORKS  >>> https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/ads/ads.txt
+# -------------------------------------------------------------------------------------------------
+0.0.0.0 21wiz.com
+0.0.0.0 a4.censor.net
+0.0.0.0 ad.luxnet.ua
+0.0.0.0 ad.mox.tv
+0.0.0.0 adpartner.pro
+0.0.0.0 adriver.ru
+0.0.0.0 ads-twitter.com
+0.0.0.0 ads.informator.ua
+0.0.0.0 ads.ligazakon.net
+0.0.0.0 adtelligent.com
+0.0.0.0 agenteimmobiliare.info
+0.0.0.0 aixcdn.com
+0.0.0.0 aj1907.online
+0.0.0.0 api.median-ads.com
+0.0.0.0 banners.doc.ua
+0.0.0.0 creativecdn.com
+0.0.0.0 eskimi.com
+0.0.0.0 franecki.net
+0.0.0.0 getter.cfd
+0.0.0.0 givemelink.cc
+0.0.0.0 lenmit.com
+0.0.0.0 myblogshop.top
+0.0.0.0 myroledance.com
+0.0.0.0 ogads-pa.googleapis.com
+0.0.0.0 optad360.io
+0.0.0.0 optad360.net
+0.0.0.0 partners-show.com
+0.0.0.0 protagcdn.com
+0.0.0.0 push-sdk.com
+0.0.0.0 push-sdk.net
+0.0.0.0 rcvlink.com
+0.0.0.0 rcvlinks.com
+0.0.0.0 srv224.com
+0.0.0.0 stpd.cloud
+0.0.0.0 trafficbass.com
+0.0.0.0 trafficdok.com
+0.0.0.0 trck.house
+0.0.0.0 wpadmngr.com
+0.0.0.0 xcartpro.com
+#
+#
+# -------------------------------------------------------------------------------------------------
+# >>>>>  TRACKERS  >>> https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/privacy/privacy.txt
+# -------------------------------------------------------------------------------------------------
+0.0.0.0 analytics.makeup.global
+0.0.0.0 analytics.shareaholic.com
+0.0.0.0 analytics.tiktok.com
+0.0.0.0 analytics.trbna.com
+0.0.0.0 analytics.webpushr.com
+0.0.0.0 banstat.nadavi.net
+0.0.0.0 c.bigmir.net
+0.0.0.0 c.mgid.com
+0.0.0.0 clarity.ms
+0.0.0.0 counter.1gb.ua
+0.0.0.0 counter.best.cv.ua
+0.0.0.0 counter.champion.com.ua
+0.0.0.0 counter.epravda.com.ua
+0.0.0.0 counter.mezha.media
+0.0.0.0 counter.mirohost.net
+0.0.0.0 counter.nplu.org
+0.0.0.0 counter.nv.ua
+0.0.0.0 counter.pravda.com.ua
+0.0.0.0 counter.ukr.net
+0.0.0.0 counter.yadro.ru
+0.0.0.0 counter24.luxnet.ua
+0.0.0.0 direct-collect.dy-api.com
+0.0.0.0 direct-collect.dy-api.eu
+0.0.0.0 direct.dy-api.eu
+0.0.0.0 doubleclick.com
+0.0.0.0 doubleclick.net
+0.0.0.0 edge.adobedc.net
+0.0.0.0 et.megogo.net
+0.0.0.0 events.getsitectrl.com
+0.0.0.0 g4p.redtram.com
+0.0.0.0 go-mpulse.net
+0.0.0.0 hs-analytics.net
+0.0.0.0 hs-banner.com
+0.0.0.0 i.posthog.com
+0.0.0.0 log.cookieyes.com
+0.0.0.0 log.pinterest.com
+0.0.0.0 metrics.brightcove.com
+0.0.0.0 mmi.bemobile.ua
+0.0.0.0 nothingimportant.pro
+0.0.0.0 panorama.wixapps.net
+0.0.0.0 pipe-collect.ebu.io
+0.0.0.0 pla.fwdcdn.com
+0.0.0.0 player-telemetry.vimeo.com
+0.0.0.0 quantserve.com
+0.0.0.0 rum.corewebvitals.io
+0.0.0.0 rum.hlx.page
+0.0.0.0 solutionshindsight.net
+0.0.0.0 ssc.holosameryky.com
+0.0.0.0 ssc.radiosvoboda.org
+0.0.0.0 st.hbrd.io
+0.0.0.0 stat.board.com.ua
+0.0.0.0 stat24.meta.ua
+0.0.0.0 stats.hurtom.com
+0.0.0.0 stats.itc.ua
+0.0.0.0 stats.wp.com
+0.0.0.0 statsjs.klevu.com
+0.0.0.0 stattracking.pw
+0.0.0.0 steadfastsystem.com
+0.0.0.0 to.getnitropack.com
+0.0.0.0 track.mailerlite.com
+0.0.0.0 tracker.bigl.ua
+0.0.0.0 tracker.multisearch.io
+0.0.0.0 tracker.prom.ua
+0.0.0.0 tracker.softcube.com
+0.0.0.0 trackerlead.biz
+0.0.0.0 upstats.yadro.ru
+0.0.0.0 websdk.appsflyer.com
+0.0.0.0 webvitals.luxnet.ua
+0.0.0.0 xp.apple.com
