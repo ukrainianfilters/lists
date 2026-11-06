@@ -24,6 +24,19 @@ Ukrainian Ad & Privacy Filters — це веб-фільтри, які видал
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/combined/combined.txt
 ```
 
+#### Pi-hole (окрема версія)
+
+```
+https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/pi-hole/pi-hole.txt
+```
+
+#### Hosts (окрема версія)
+
+```
+https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/hosts/hosts.txt
+```
+
+
 ## Окремі (standalone) списки фільтрів
 
 Наведені нижче списки фільтрів вже включені до об’єднаного списку фільтрів `Ukrainian Ad & Privacy Filters`, проте, якщо з певних причин ви хочете використовувати лише окремі списки, їх можна встановити індивідуально.
