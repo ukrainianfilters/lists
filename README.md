@@ -19,21 +19,9 @@ Ukrainian Ad & Privacy Filters — це веб-фільтри, які видал
 
 ## Об'єднані (Combined) списки фільтрів
 
-1. **Ukrainian Ad & Privacy Filters** — об'єднаний список фільтрів (Реклама + Приватність + Дратівливі елементи), призначений для видалення реклами та дратівливих елементів з українських сайтів, блокування трекерів, шкідливих скриптів й небезпечних веб-ресурсів:
+**Ukrainian Ad & Privacy Filters** — об'єднаний список фільтрів (Реклама + Приватність + Дратівливі елементи), призначений для видалення реклами та дратівливих елементів з українських сайтів, блокування трекерів, шкідливих скриптів й небезпечних веб-ресурсів:
 ```
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/combined/combined.txt
-```
-
-#### Pi-hole (адаптований формат правил)
-
-```
-https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/pi-hole/pi-hole.txt
-```
-
-#### Hosts (адаптований формат правил)
-
-```
-https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/hosts/hosts.txt
 ```
 
 
@@ -41,17 +29,17 @@ https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/hosts/hosts.txt
 
 Наведені нижче списки фільтрів вже включені до об’єднаного списку фільтрів `Ukrainian Ad & Privacy Filters`, проте, якщо з певних причин ви хочете використовувати лише окремі списки, їх можна встановити індивідуально.
 
-1. **Ukrainian Ad Filter** — видаляє рекламу з українських сайтів:
+**Ukrainian Ad Filter** — видаляє рекламу з українських сайтів:
 ```
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/ads/ads.txt
 ```
 
-3. **Ukrainian Privacy Filter** — блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті:
+**Ukrainian Privacy Filter** — блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті:
 ```
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/privacy/privacy.txt
 ```
 
-5. **Ukrainian Annoyance Filter** — блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо):
+**Ukrainian Annoyance Filter** — блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо):
 ```
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/annoyances/annoyances.txt
 ```
@@ -59,10 +47,30 @@ https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/annoyances/annoyances.tx
 
 ## Розширені (extended) списки фільтрів
 
-1. **Ukrainian Ad & Privacy Filters: Comments** — видаляє коментарі з українських сайтів разом з трекерами, що вбудовані у популярні системи коментування як-от disqus.com, забезпечуючи приватність, зменшення ризику переходу за фішинговими посиланнями та захист від токсичного контенту (тролінг, дезінформація тощо):
+**Ukrainian Ad & Privacy Filters: Comments** — видаляє коментарі з українських сайтів разом з трекерами, що вбудовані у популярні системи коментування як-от disqus.com, забезпечуючи приватність, зменшення ризику переходу за фішинговими посиланнями та захист від токсичного контенту (тролінг, дезінформація тощо):
 ```
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/extended/comments.txt
 ```
+
+
+## Адаптовані формати правил
+
+Якщо ви використовуєте блокування на рівні мережі або операційної системи, скористайтеся цими посиланнями.
+
+#### Pi-hole
+
+```
+https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/pi-hole/pi-hole.txt
+```
+
+#### Hosts
+
+```
+https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/hosts/hosts.txt
+```
+
+> [!IMPORTANT]
+> DNS-блокувальники працюють лише з [доменними іменами](https://github.com/ukrainianfilters/lists/issues/297), а не з кодом вебсторінок. Через це списки не містять косметичних фільтрів, правил блокування стороннього вмісту (third-party) та правил фільтрації за заданими патернами HTTP-запитів.
 
 
 ## Сумісність з браузерами та розширеннями
@@ -85,7 +93,7 @@ https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/extended/comments.txt
 > [!TIP]
 > Через обмеження [Manifest V3](https://www.eff.org/deeplinks/2021/12/googles-manifest-v3-still-hurts-privacy-security-innovation) розширення для блокування реклами втратили значну частину своїх можливостей. Для найкращої фільтрації рекомендуємо використовувати браузери із вбудованими модулями як-от Brave / Brave Origin. Вбудоване блокування працює на рівні браузера й не залежить від обмежень для розширень.
 
-> [!IMPORTANT]
+> [!NOTE]
 > Якщо браузер або розширення для браузера підтримує функцію автооновлення імпортованих списків, списки фільтрів будуть оновлюватися автоматично кожні 2 дні.
 
 ## Зворотний зв'язок
@@ -100,4 +108,4 @@ https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/extended/comments.txt
 
 ## Ліцензія
 
-Ukrainian Filters (Українські фільтри) поширюються за умовами ліцензії [GNU General Public License v3.0](https://github.com/ukrainianfilters/lists/blob/main/LICENSE)
+Ukrainian Ad & Privacy Filters поширюються за умовами ліцензії [GNU General Public License v3.0](https://github.com/ukrainianfilters/lists/blob/main/LICENSE)
