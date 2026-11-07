@@ -19,7 +19,7 @@ Ukrainian Ad & Privacy Filters — це веб-фільтри, які видал
 
 ## Об'єднані (Combined) списки фільтрів
 
-1. **Ukrainian Ad & Privacy Filters** — об'єднаний список фільтрів (Реклама + Приватність + Дратівливі елементи), призначений для видалення реклами та дратівливих елементів з українських сайтів, блокування трекерів, шкідливих скриптів й небезпечних веб-ресурсів:
+**Ukrainian Ad & Privacy Filters** — об'єднаний список фільтрів (Реклама + Приватність + Дратівливі елементи), призначений для видалення реклами та дратівливих елементів з українських сайтів, блокування трекерів, шкідливих скриптів й небезпечних веб-ресурсів:
 ```
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/combined/combined.txt
 ```
@@ -29,17 +29,17 @@ https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/combined/combined.txt
 
 Наведені нижче списки фільтрів вже включені до об’єднаного списку фільтрів `Ukrainian Ad & Privacy Filters`, проте, якщо з певних причин ви хочете використовувати лише окремі списки, їх можна встановити індивідуально.
 
-1. **Ukrainian Ad Filter** — видаляє рекламу з українських сайтів:
+**Ukrainian Ad Filter** — видаляє рекламу з українських сайтів:
 ```
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/ads/ads.txt
 ```
 
-3. **Ukrainian Privacy Filter** — блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті:
+**Ukrainian Privacy Filter** — блокує трекери та шкідливі скрипти, зменшує можливість третіх сторін збирати дані про вашу поведінку в інтернеті:
 ```
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/privacy/privacy.txt
 ```
 
-5. **Ukrainian Annoyance Filter** — блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо):
+**Ukrainian Annoyance Filter** — блокує дратівливі елементи (повідомлення про файли cookie, спливаючі вікна, банери тощо):
 ```
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/annoyances/annoyances.txt
 ```
@@ -47,7 +47,7 @@ https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/annoyances/annoyances.tx
 
 ## Розширені (extended) списки фільтрів
 
-1. **Ukrainian Ad & Privacy Filters: Comments** — видаляє коментарі з українських сайтів разом з трекерами, що вбудовані у популярні системи коментування як-от disqus.com, забезпечуючи приватність, зменшення ризику переходу за фішинговими посиланнями та захист від токсичного контенту (тролінг, дезінформація тощо):
+**Ukrainian Ad & Privacy Filters: Comments** — видаляє коментарі з українських сайтів разом з трекерами, що вбудовані у популярні системи коментування як-от disqus.com, забезпечуючи приватність, зменшення ризику переходу за фішинговими посиланнями та захист від токсичного контенту (тролінг, дезінформація тощо):
 ```
 https://cdn.jsdelivr.net/gh/ukrainianfilters/lists@main/extended/comments.txt
 ```
